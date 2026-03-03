@@ -162,7 +162,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@autoproctor.co"
+        "href": "mailto:hello@autoproctor.co"
       }
     ],
     "primary": {
@@ -171,10 +171,5 @@
       "href": "https://www.autoproctor.co"
     }
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/autoproctor",
-      "linkedin": "https://linkedin.com/company/autoproctor"
-    }
-  }
+  "footer": {}
 }
