@@ -1,13 +1,28 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "AutoProctor Help Center",
   "colors": {
-    "primary": "#2563EB",
-    "light": "#3B82F6",
-    "dark": "#1D4ED8"
+    "primary": "#1f398a",
+    "light": "#5dbd84",
+    "dark": "#1f398a"
   },
   "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "decoration": "grid"
+  },
+  "font": {
+    "headings": {
+      "family": "DM Sans",
+      "weight": 700
+    },
+    "body": {
+      "family": "Inter"
+    }
+  },
   "seo": {
     "metatags": {
       "og:site_name": "AutoProctor Help Center"
