@@ -1,0 +1,45 @@
+---
+title: "Trust Score"
+description: "Entenda como o Trust Score do AutoProctor funciona, como é calculado e o que constitui uma boa pontuação."
+---
+
+O AutoProctor atribui um Trust Score (0–100%) a cada relatório de supervisão. A pontuação fornece um resumo rápido da probabilidade de o candidato ter mantido a integridade durante o teste.
+
+<Frame>
+  <img src="/images/getting-started/trustscore.png" alt="Exibição do Trust Score em um relatório de supervisão do AutoProctor" />
+</Frame>
+
+Quanto mais baixo o Trust Score, mais provável é que o AutoProctor tenha detectado comportamento suspeito durante o teste.
+
+<Warning>
+Sempre revise as evidências de apoio antes de tirar conclusões. **Não** se baseie apenas no Trust Score — revise as evidências reais das infrações para determinar se houve conduta indevida.
+</Warning>
+
+## Como o Trust Score é calculado
+
+O AutoProctor monitora os candidatos em tempo real por meio de múltiplos canais (dependendo das configurações do seu teste):
+
+- Câmera
+- Microfone
+- Atividade da tela
+
+O algoritmo avalia as infrações com base em três fatores:
+
+1. **Tipo de infração** — a troca de aba tem maior peso do que a detecção de ruído
+2. **Frequência das infrações** — mais incidentes resultam em uma pontuação mais baixa
+3. **Duração das infrações** — infrações prolongadas têm um impacto maior do que as breves
+
+## O que é um bom Trust Score?
+
+Como referência geral, revise as evidências de qualquer candidato com um Trust Score **inferior a 85%**. Esse limite é destinado à revisão, não como prova de conduta indevida.
+
+<Note>
+Fatores ambientais podem afetar significativamente a pontuação. Por exemplo, o ruído ambiente do trânsito poderia reduzir uma pontuação a 0% mesmo quando nenhum tipo de trapaça ocorreu.
+</Note>
+
+## Recursos relacionados
+
+- [O que é monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis
+- [Resultados de supervisão](/results/proctoring-results) — Como ver as evidências de infrações e os relatórios
+- [Nenhum rosto detectado ou múltiplos rostos detectados](/candidate-issues/no-face-or-multiple-faces) — Por que a detecção facial pode gerar falsos positivos
+- [Infração falsa de troca de aplicativo](/candidate-issues/false-app-switch) — Entendendo as sinalizações de infrações falsas

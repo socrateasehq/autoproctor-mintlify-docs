@@ -1,0 +1,40 @@
+---
+title: "Modo de apresentação de perguntas"
+description: "Controle como as perguntas são apresentadas aos candidatos -- todas de uma vez, uma por uma com navegação ou uma por uma sem navegação."
+---
+
+A definição do modo de apresentação de perguntas nos questionários Socratease controla como as perguntas aparecem para os participantes. Existem três opções de apresentação disponíveis.
+
+## Modos de apresentação
+
+### 1. Todas de uma vez (estilo Google Forms)
+
+Os candidatos veem todas as perguntas ao mesmo tempo, uma abaixo da outra, como num Google Form. O temporizador aplica-se ao **teste completo**.
+
+### 2. Uma por uma com navegação (estilo Typeform)
+
+Os candidatos veem uma pergunta de cada vez e podem navegar para a frente e para trás entre as perguntas. O temporizador aplica-se ao **teste completo**, não às perguntas individuais.
+
+### 3. Uma por uma sem navegação
+
+Os candidatos veem uma pergunta de cada vez. Depois de enviar uma pergunta (ao respondê-la ou ignorá-la), **NÃO PODEM voltar a ela**. O temporizador é definido **por pergunta**, não para todo o teste.
+
+<Frame>
+  <img src="/images/socratease/question-display-mode.png" alt="Configurações do modo de apresentação de perguntas" />
+</Frame>
+
+## Diferenças principais
+
+| Característica | Todas de uma vez | Uma por uma com nav. | Uma por uma sem nav. |
+|---|:---:|:---:|:---:|
+| Âmbito do temporizador | Teste completo | Teste completo | Por pergunta |
+| Pode voltar atrás | Sim | Sim | Não |
+| Instruções personalizadas | Sim | Não | Não |
+
+## Quando usar "Uma por uma sem navegação"
+
+A opção sem navegação é especialmente útil por motivos de segurança. Isto dá ao participante menos tempo para fazer fraude numa pergunta, uma vez que a qualquer momento só pode ver uma pergunta, por um tempo limitado.
+
+<Warning>
+Ao usar **uma por uma sem navegação**, certas definições do temporizador ao nível do teste deixam de estar disponíveis. Os parâmetros de **Duração** e **Deve enviar até** passam para o nível da pergunta, e a função de **envio automático** aplica-se automaticamente quando o tempo por pergunta expira.
+</Warning>

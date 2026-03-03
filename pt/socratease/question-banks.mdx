@@ -1,0 +1,61 @@
+---
+title: "Bancos de perguntas"
+description: "Crie grandes conjuntos de perguntas e ofereça subconjuntos aleatórios aos candidatos utilizando os bancos de perguntas."
+---
+
+<Note>
+Os bancos de perguntas são uma funcionalidade **Elite**. Precisa de um plano Elite para utilizar os bancos de perguntas e os questionários de bancos de perguntas.
+</Note>
+
+## O que são bancos de perguntas?
+
+Os bancos de perguntas são um grande conjunto de perguntas. Os candidatos verão um subconjunto aleatório das perguntas, com base no banco de perguntas selecionado e no nível de dificuldade. Isto torna o teste de cada candidato único, reduzindo a possibilidade de fraude.
+
+## Como funcionam os bancos de perguntas
+
+Um banco de perguntas (BP) é uma coleção de perguntas organizadas por disciplina ou tema. Cada pergunta no banco pode ter um valor de pontos e um nível de dificuldade diferente.
+
+<Frame>
+  <img src="/images/socratease/question-bank-overview.png" alt="Vista geral do banco de perguntas" />
+</Frame>
+
+### Exemplo: Testes de física e química
+
+Imagine que tem dois bancos de perguntas:
+- **Banco de perguntas de física** -- 100 perguntas
+- **Banco de perguntas de química** -- 100 perguntas
+
+Pode criar diferentes questionários que extraiam destes bancos com diferentes ponderações:
+
+- **Questionário de especialidade em física**: 40 perguntas de física de dois pontos + 10 perguntas de química de um ponto
+- **Questionário de especialidade em química**: 40 perguntas de química de dois pontos + 10 perguntas de física de um ponto
+
+Cada candidato recebe um subconjunto aleatório diferente de perguntas dos respetivos bancos, mas a estrutura geral (número de perguntas, pontos, distribuição de dificuldade) mantém-se consistente.
+
+<Frame>
+  <img src="/images/socratease/question-bank-example.png" alt="Exemplo de banco de perguntas com física e química" />
+</Frame>
+
+## Questionários de bancos de perguntas (QBP)
+
+Os candidatos não podem realizar um banco de perguntas diretamente. Deve criar um **questionário de banco de perguntas (QBP)** e adicioná-lo a um teste do AutoProctor.
+
+Um questionário de banco de perguntas especifica:
+- De que bancos de perguntas as perguntas são extraídas
+- Quantas perguntas incluir de cada banco
+- Os níveis de dificuldade a incluir
+
+<Frame>
+  <img src="/images/socratease/question-bank-quiz-config.png" alt="Configuração do questionário de banco de perguntas" />
+</Frame>
+
+<Warning>
+Os candidatos não podem realizar um banco de perguntas diretamente. Deve criar um questionário de banco de perguntas e adicioná-lo a um teste do AutoProctor para que os candidatos o realizem.
+</Warning>
+
+## Recursos relacionados
+
+- [Por que Socratease?](/socratease/why-socratease) — Benefícios de usar o Socratease
+- [Importação em massa a partir de Excel](/socratease/bulk-import-from-excel) — Importe perguntas em massa
+- [Tipos de perguntas](/socratease/question-types) — Formatos de perguntas disponíveis
+- [Funcionalidades Elite](/pricing/elite-features) — Conheça as funcionalidades do plano Elite

@@ -1,0 +1,58 @@
+---
+title: "Concurrencia - Máximo de candidatos simultáneos"
+description: "Comprenda los límites de concurrencia de AutoProctor que controlan cuántos candidatos pueden iniciar pruebas simultáneamente en una ventana de 60 segundos."
+---
+
+La concurrencia se refiere al número de candidatos que pueden iniciar cualquier prueba bajo su cuenta dentro de la misma ventana de 60 segundos. Comprender estos límites le ayuda a planificar sesiones de prueba a gran escala y evitar retrasos inesperados para los candidatos.
+
+## ¿Qué es la concurrencia máxima?
+
+La concurrencia máxima es el número máximo de candidatos que pueden comenzar una prueba dentro de cualquier período continuo de 60 segundos. Este límite se aplica a todas las pruebas de su cuenta, no a cada prueba individual.
+
+<Note>
+Si tiene tres pruebas activas y un límite de concurrencia de 1.000, el límite de 1.000 se comparte entre las tres pruebas combinadas.
+</Note>
+
+## Límites de concurrencia por plan
+
+### Pruebas con supervisión habilitada
+
+| Plan | Concurrencia máxima |
+|---|---|
+| Standard | 1.000 candidatos/minuto |
+| Premium | 2.000 candidatos/minuto |
+| Elite | 5.000 candidatos/minuto |
+
+### Pruebas sin supervisión
+
+| Plan | Concurrencia máxima |
+|---|---|
+| Standard | 50 candidatos/minuto |
+| Premium | 100 candidatos/minuto |
+| Elite | 150 candidatos/minuto |
+
+## Escalonamiento automático
+
+Cuando la demanda supera la capacidad de su plan, AutoProctor escalona automáticamente el ingreso de los candidatos. Los candidatos que excedan el límite ven un botón con una cuenta regresiva de hasta 60 segundos antes de poder acceder a la prueba.
+
+<Note>
+Si hay configurada una duración de la prueba, el temporizador del candidato se ajusta automáticamente para compensar los retrasos por escalonamiento. Ningún candidato pierde tiempo de prueba debido a los límites de concurrencia.
+</Note>
+
+## Usuarios del SDK
+
+Si utiliza el SDK de JavaScript de AutoProctor en su propio sitio web, recibe un límite predeterminado de 5.000 candidatos por minuto. Debe gestionar la limitación de velocidad de forma independiente en su implementación.
+
+## Cómo aumentar sus límites
+
+Si necesita límites de concurrencia más altos, comuníquese con el equipo de AutoProctor:
+
+- **Aumento temporal** -- Aproximadamente $500 por cada incremento de 500 candidatos/minuto (tarifa única)
+- **Aumento permanente** -- Aproximadamente $2.500 por mes por cada incremento de 500 candidatos/minuto (se requiere compromiso anual)
+
+## Recursos relacionados
+
+- [Configuración de la prueba](/creating-tests/test-settings) -- Configurar la duración de la prueba y otras opciones
+- [Pagos y créditos](/pricing/payments-and-credits) -- Detalles del plan e información de precios
+- [Mejores prácticas para creadores de pruebas](/results/best-practices-for-teachers) -- Consejos para una administración de pruebas sin inconvenientes
+- [Cosas que necesita saber](/results/things-you-need-to-know) -- Requisitos esenciales para usar AutoProctor

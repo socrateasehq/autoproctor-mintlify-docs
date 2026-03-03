@@ -1,0 +1,39 @@
+---
+title: "O que significa 'Ficou offline'?"
+description: "Compreenda o que a entrada 'Ficou offline' no relatório de supervisão significa, como AutoProctor monitoriza a conectividade à internet e o que isso implica."
+---
+
+"Ficou offline durante 120 segundos" significa que o candidato não esteve conectado à internet durante 120 segundos do exame. Esta entrada aparece no relatório de supervisão sempre que AutoProctor deteta uma interrupção na conectividade.
+
+## Como AutoProctor monitoriza a conectividade à internet
+
+AutoProctor supervisiona a conectividade através de pings contínuos ao servidor enviados a partir do navegador do candidato em intervalos regulares (aproximadamente a cada 5 segundos). Quando os pings estão em falta, o sistema infere que o candidato perdeu a conectividade.
+
+**Exemplo:** Se os pings falharam às 11:00:30, 11:00:35 e 11:00:40 mas foram retomados às 11:00:45, o relatório indicaria um período offline de aproximadamente 10 segundos.
+
+<Frame caption="Entrada de desconexão mostrada num relatório de supervisão">
+  <img src="/images/candidate-issues/went-offline-report.png" alt="Entrada de duração offline exibida num relatório de supervisão de AutoProctor" />
+</Frame>
+
+## Perguntas frequentes
+
+<AccordionGroup>
+  <Accordion title="Os candidatos podem responder a perguntas enquanto estão offline?">
+    Sim. Todas as perguntas são carregadas antes de o exame começar, de modo que os candidatos podem continuar a responder perguntas sem uma conexão ativa à internet. A conectividade só é necessária ao carregar novas perguntas (se apresentadas sequencialmente) ou ao enviar o exame.
+  </Accordion>
+  <Accordion title="Como a supervisão continua quando o candidato está offline?">
+    Todo o código de deteção de infrações é descarregado antes de o exame começar. Isso permite que AutoProctor continue a monitorizar infrações (como mudanças de separador e deteção facial) mesmo quando o candidato está desconectado da internet.
+  </Accordion>
+  <Accordion title="Ficar offline prova que houve fraude?">
+    Não. Um estado offline apenas confirma que o candidato perdeu a conectividade à internet -- não indica a razão. Pode ser uma desconexão intencional ou um problema técnico genuíno. Distinguir entre ambos requer o seu julgamento ao rever o relatório completo.
+  </Accordion>
+</AccordionGroup>
+
+## Recursos relacionados
+
+- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
+- [O que é monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que AutoProctor supervisiona
+- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
+- [O exame está lento](/candidate-issues/slow-and-laggy) -- Problemas de desempenho que podem estar relacionados com a conectividade
+- [Compatibilidade de dispositivos](/getting-started/device-compatibility) -- Consulte os navegadores e dispositivos compatíveis
+- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda

@@ -1,0 +1,39 @@
+---
+title: "¿Qué significa 'Se desconectó'?"
+description: "Comprenda qué significa la entrada 'Se desconectó' en el informe de supervisión, cómo AutoProctor monitorea la conectividad a internet y qué implica."
+---
+
+"Se desconectó durante 120 segundos" significa que el candidato no estuvo conectado a internet durante 120 segundos del examen. Esta entrada aparece en el informe de supervisión cada vez que AutoProctor detecta una interrupción en la conectividad.
+
+## Cómo AutoProctor monitorea la conectividad a internet
+
+AutoProctor supervisa la conectividad mediante pings continuos al servidor enviados desde el navegador del candidato a intervalos regulares (aproximadamente cada 5 segundos). Cuando los pings faltan, el sistema infiere que el candidato perdió la conectividad.
+
+**Ejemplo:** Si los pings fallaron a las 11:00:30, 11:00:35 y 11:00:40 pero se reanudaron a las 11:00:45, el informe indicaría un período sin conexión de aproximadamente 10 segundos.
+
+<Frame caption="Entrada de desconexión mostrada en un informe de supervisión">
+  <img src="/images/candidate-issues/went-offline-report.png" alt="Entrada de duración de desconexión mostrada en un informe de supervisión de AutoProctor" />
+</Frame>
+
+## Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="¿Pueden los candidatos responder preguntas mientras están sin conexión?">
+    Sí. Todas las preguntas se cargan antes de que comience el examen, por lo que los candidatos pueden continuar respondiendo preguntas sin una conexión activa a internet. La conectividad solo es necesaria al cargar nuevas preguntas (si se presentan de forma secuencial) o al enviar el examen.
+  </Accordion>
+  <Accordion title="¿Cómo continúa la supervisión cuando el candidato está sin conexión?">
+    Todo el código de detección de infracciones se descarga antes de que comience el examen. Esto permite que AutoProctor continúe monitoreando infracciones (como cambios de pestaña y detección facial) incluso cuando el candidato está desconectado de internet.
+  </Accordion>
+  <Accordion title="¿Estar sin conexión demuestra que hubo fraude?">
+    No. Un estado sin conexión solo confirma que el candidato perdió la conectividad a internet; no indica la razón. Podría ser una desconexión intencional o un problema técnico genuino. Distinguir entre ambos requiere su juicio al revisar el informe completo.
+  </Accordion>
+</AccordionGroup>
+
+## Recursos relacionados
+
+- [Comprensión del Trust Score](/getting-started/trust-score) -- Cómo se calculan los Trust Score
+- [Qué se monitorea](/getting-started/what-gets-tracked) -- Todos los eventos que AutoProctor supervisa
+- [Resultados de supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
+- [El examen está lento](/candidate-issues/slow-and-laggy) -- Problemas de rendimiento que pueden estar relacionados con la conectividad
+- [Compatibilidad de dispositivos](/getting-started/device-compatibility) -- Consulte los navegadores y dispositivos compatibles
+- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda

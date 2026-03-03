@@ -1,0 +1,40 @@
+---
+title: "No se puede hacer clic en las respuestas del formulario del examen"
+description: "Solucione el problema en el que el formulario del examen carga pero no se puede hacer clic en las preguntas ni seleccionar respuestas. Generalmente es causado por la cuenta de Google incorrecta."
+---
+
+Si puede ver el formulario del examen pero no puede hacer clic en las preguntas ni seleccionar respuestas, lo más probable es que haya iniciado sesión con una cuenta de Google que no tiene permiso para interactuar con el formulario.
+
+## ¿Por qué sucede esto?
+
+Cuando un formulario de Google Forms está restringido a direcciones de correo electrónico específicas, se carga en un modo de solo lectura para las cuentas no autorizadas. Usted puede ver las preguntas pero no puede interactuar con ellas. Dado que AutoProctor incorpora el formulario de Google Forms, esta restricción aparece dentro de la interfaz de AutoProctor.
+
+<Frame caption="Formulario del examen cargado en modo de solo lectura debido a una cuenta de Google incorrecta">
+  <img src="/images/candidate-issues/cannot-click-form.png" alt="Formulario de Google Forms en AutoProctor en el que no se puede hacer clic porque la cuenta de Google incorrecta está activa" />
+</Frame>
+
+## Cómo solucionarlo
+
+<Steps>
+  <Step title="Cierre sesión en todas las cuentas de Google">
+    Visite [https://accounts.google.com/Logout](https://accounts.google.com/Logout) y cierre sesión en todas sus cuentas.
+  </Step>
+  <Step title="Inicie sesión con la cuenta correcta">
+    Inicie sesión nuevamente con la cuenta de Google que tiene acceso al examen. Consulte con su administrador de exámenes si no está seguro de qué cuenta usar.
+  </Step>
+  <Step title="Recargue el examen">
+    Vuelva al enlace del examen y cárguelo de nuevo. Ahora debería poder hacer clic en las preguntas y seleccionar respuestas.
+  </Step>
+</Steps>
+
+<Note>
+Si no está seguro de qué cuenta de Google tiene acceso, comuníquese con su administrador de exámenes. Ellos pueden confirmar la dirección de correo electrónico que recibió permiso para realizar el examen.
+</Note>
+
+## Recursos relacionados
+
+- [Página en blanco o pantalla gris](/candidate-issues/blank-page-grey-screen) -- Problema similar causado por la cuenta de Google incorrecta
+- [No se pueden ver las preguntas en Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Restricciones de acceso a Google Forms
+- [Instrucciones para realizar un examen supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración con sección de cuentas de Google
+- [Compatibilidad de dispositivos](/getting-started/device-compatibility) -- Consulte los navegadores y dispositivos compatibles
+- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda

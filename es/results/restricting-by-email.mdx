@@ -1,0 +1,52 @@
+---
+title: "Restringir el acceso a la prueba por dirección de correo electrónico"
+description: "Limite quién puede realizar su prueba restringiendo el acceso a dominios de correo electrónico específicos o direcciones individuales mediante Restricciones de inicio de sesión."
+---
+
+Puede controlar qué candidatos tienen permitido realizar su prueba restringiendo el acceso en función de criterios de correo electrónico. Esto impide que usuarios no autorizados accedan a la prueba incluso si disponen del enlace.
+
+## Cómo configurar las restricciones por correo electrónico
+
+<Steps>
+  <Step title="Abra la configuración de la prueba">
+    Navegue a la prueba en su panel de AutoProctor y abra su **Configuración de la prueba**.
+  </Step>
+  <Step title="Vaya a Configuración avanzada">
+    Desplácese hacia abajo hasta la sección **Configuración avanzada** y ubique los campos de **Restricciones de inicio de sesión**.
+  </Step>
+  <Step title="Agregue restricciones de dominio o correo electrónico">
+    Introduzca los dominios de correo electrónico o las direcciones de correo electrónico específicas que desea permitir. Puede combinar ambos tipos de restricciones (vea los ejemplos a continuación).
+  </Step>
+  <Step title="Guarde la prueba">
+    Haga clic en **Crear** o **Actualizar** para aplicar las restricciones.
+  </Step>
+</Steps>
+
+## Restricciones basadas en dominio
+
+Restrinja el acceso a candidatos cuyas direcciones de correo electrónico terminen con dominios específicos. Por ejemplo, al introducir `@abc.com` y `@xyz.com`, solo los candidatos con esos dominios de correo electrónico podrán realizar la prueba.
+
+<Frame>
+  <img src="/images/results/login-restrictions-domain.png" alt="Campo de Restricciones de inicio de sesión que muestra restricciones basadas en dominio con @abc.com y @xyz.com" />
+</Frame>
+
+## Restricciones por correo electrónico específico
+
+También puede permitir direcciones de correo electrónico individuales junto con las restricciones de dominio. Esto es útil cuando la mayoría de los candidatos comparten un dominio pero algunos participantes externos necesitan acceso.
+
+Por ejemplo, puede permitir a todos los usuarios cuyo correo electrónico termine en `@abc.com` más direcciones de correo electrónico individuales específicas como `guest@gmail.com`.
+
+<Frame>
+  <img src="/images/results/login-restrictions-email.png" alt="Campo de Restricciones de inicio de sesión que muestra una combinación de restricciones de dominio y de correo electrónico individual" />
+</Frame>
+
+<Note>
+Las restricciones por correo electrónico funcionan en conjunto con el [método de inicio de sesión](/results/candidate-login-methods) del candidato. El candidato debe iniciar sesión con una dirección de correo electrónico que coincida con uno de los dominios o direcciones permitidos.
+</Note>
+
+## Recursos relacionados
+
+- [Métodos de inicio de sesión para candidatos](/results/candidate-login-methods) -- Conozca las opciones de autenticación disponibles
+- [Restringir el acceso a usuarios específicos](/results/restricting-to-some-users) -- Otros métodos para limitar el acceso a la prueba
+- [Invitar candidatos por correo electrónico](/results/inviting-candidates-via-email) -- Generar enlaces de prueba únicos por candidato
+- [Configuración de la prueba](/creating-tests/test-settings) -- Configurar todas las opciones de la prueba

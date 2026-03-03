@@ -1,0 +1,67 @@
+---
+title: "Retoma de testes de Google Forms"
+description: "Configure se os candidatos podem retomar testes de Google Forms após fechá-los a meio da tentativa, gerindo as opções de gravação automática e retoma automática."
+---
+
+Os testes de Google Forms requerem que duas definições estejam alinhadas para que o comportamento de retoma funcione corretamente: a definição de **gravação automática** no Google Forms e a definição de **retoma automática** no AutoProctor. Este guia explica como configurar ambas.
+
+<Note>
+Duas definições controlam a retoma de testes de Google Forms:
+1. **Desativar gravação automática** no Google Forms -- Controla se os rascunhos de respostas são guardados à medida que o candidato preenche o formulário.
+2. **Ativar retoma automática** no AutoProctor -- Controla se o AutoProctor carrega a tentativa anterior quando um candidato regressa à ligação do teste.
+
+Ambas as definições devem estar alinhadas para obter o comportamento desejado.
+</Note>
+
+## Para permitir a retoma do teste
+
+Se deseja que os candidatos continuem de onde pararam após fechar o teste:
+
+<Steps>
+  <Step title="Mantenha ativada a gravação automática no Google Forms">
+    Certifique-se de que a funcionalidade **Desativar gravação automática** está **DESLIGADA** nas definições do teste de Google Forms (esta é a opção predefinida).
+
+    <Frame>
+      <img src="/images/results/gforms-autosave-enabled.png" alt="Definições do teste de Google Forms que mostram Desativar gravação automática desligada, mantendo a gravação automática ativa" />
+    </Frame>
+  </Step>
+  <Step title="Ative a retoma automática no AutoProctor">
+    Ative a definição **Enable Auto-resume** nas definições do teste do AutoProctor.
+
+    <Frame>
+      <img src="/images/results/gforms-autoresume-enabled.png" alt="Definições do teste do AutoProctor que mostram Enable Auto-resume ativado" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Para impedir a retoma do teste
+
+Se deseja que cada visita à ligação do teste crie uma nova tentativa em branco:
+
+<Steps>
+  <Step title="Desative a gravação automática no Google Forms">
+    Ative a funcionalidade **Desativar gravação automática** nas definições do teste de Google Forms.
+
+    <Frame>
+      <img src="/images/results/gforms-autosave-disabled.png" alt="Definições do teste de Google Forms que mostram Desativar gravação automática ligada, desativando a gravação automática" />
+    </Frame>
+  </Step>
+  <Step title="Desative a retoma automática no AutoProctor">
+    Desative a opção **Resume Unsubmitted Test** nas definições do teste do AutoProctor.
+
+    <Frame>
+      <img src="/images/results/gforms-autoresume-disabled.png" alt="Definições do teste do AutoProctor que mostram Resume Unsubmitted Test desativado" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Warning>
+Se as duas definições não coincidirem (por exemplo, a gravação automática está ativada mas a retoma automática está desativada), os candidatos podem experimentar um comportamento inesperado, como ver um formulário parcialmente preenchido numa nova tentativa ou perder o progresso guardado.
+</Warning>
+
+## Recursos relacionados
+
+- [Retoma de tentativas de teste](/results/resuming-test-attempts) -- Comportamento geral de retoma em todos os tipos de teste
+- [Tentativas máximas](/results/maximum-attempts) -- Configurar quantas tentativas são permitidas aos candidatos
+- [Testes não submetidos](/results/unsubmitted-tests) -- Ver testes iniciados mas não submetidos
+- [Definições do teste](/creating-tests/test-settings) -- Configurar todas as opções do teste

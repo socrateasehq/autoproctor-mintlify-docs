@@ -1,0 +1,36 @@
+---
+title: "Imagens e gravações em falta no relatório"
+description: "Compreenda por que imagens ou gravações de áudio podem não aparecer no relatório do exame de um candidato apesar de as infrações estarem listadas, e como resolver."
+---
+
+Se consegue ver infrações listadas no relatório do exame de um candidato mas não consegue ver a evidência de suporte (imagens ou gravações de áudio), existem dois cenários possíveis, cada um com uma causa e resolução diferente.
+
+## Cenário 1: Sem imagens nem gravações de todo
+
+Se nenhuma imagem ou gravação aparece apesar de as infrações estarem listadas, a funcionalidade de gravação de evidência provavelmente foi desativada nas configurações do seu exame.
+
+<Steps>
+  <Step title="Verifique as configurações do seu exame">
+    Navegue até à configuração de supervisão do seu exame no painel de AutoProctor e verifique que a gravação de evidência está ativada. Consulte [Configurações do exame](/creating-tests/test-settings) para detalhes sobre cada opção.
+  </Step>
+  <Step title="Ative a gravação de evidência para futuros exames">
+    Se a gravação de evidência estava desativada, ative-a para futuros exames. Note que esta alteração não adicionará retroativamente evidência a exames que já foram realizados.
+  </Step>
+</Steps>
+
+## Cenário 2: Algumas infrações têm evidência, outras não
+
+Se algumas infrações mostram ficheiros de evidência enquanto outras não, esse é o comportamento esperado. AutoProctor armazena um número fixo (aproximadamente 20) de imagens e ficheiros de áudio por tentativa de exame. Quando as infrações excedem esse limite, nem todas as infrações terão um ficheiro de evidência associado.
+
+<Warning>
+**Todas as infrações são registadas e afetam o Trust Score**, mesmo quando os ficheiros de evidência não são armazenados para visualização. Os ficheiros de evidência são um subconjunto -- existem para que você possa rever o que aconteceu, mas o cálculo do Trust Score considera cada infração detetada independentemente de a evidência ter sido armazenada.
+</Warning>
+
+## Recursos relacionados
+
+- [Configurações do exame](/creating-tests/test-settings) -- Configure o armazenamento de evidência e as opções de supervisão
+- [Evidência de infrações em falta](/candidate-issues/missing-violation-evidence) -- Explicação detalhada dos limites de armazenamento de evidência
+- [Fotos aleatórias em falta](/candidate-issues/missing-random-photos) -- Por que as fotos aleatórias podem estar ausentes
+- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
+- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
+- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda

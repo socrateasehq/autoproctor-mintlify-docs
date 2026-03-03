@@ -1,0 +1,39 @@
+---
+title: "Falso 'Mudou para outra aplicação'"
+description: "Por que a infração 'Mudou para outra aplicação' pode aparecer falsamente nos relatórios e por que não afeta o Trust Score em exames reais."
+---
+
+Você pode notar uma infração de "Mudou para outra aplicação" a aparecer num relatório de supervisão mesmo que o candidato não tenha efetivamente mudado de aplicação. Este é um caso limite conhecido que tem um impacto insignificante nas pontuações de exames reais.
+
+## Por que ocorrem falsos positivos?
+
+AutoProctor deteta mudanças de aplicação através do monitoramento de eventos de foco do navegador e mudanças no estado de visibilidade. Os falsos positivos podem ocorrer devido a:
+
+- **Notificações do sistema operativo** -- notificações recebidas (como lembretes de calendário ou atualizações do sistema) podem desviar momentaneamente o foco do navegador
+- **Janelas emergentes do navegador** -- diálogos de permissão, solicitações de transferência ou sugestões de preenchimento automático podem acionar um evento de mudança de foco
+- **Atividade de dispositivos periféricos** -- ligar ou desligar dispositivos USB, auscultadores ou monitores externos pode interromper brevemente o foco do navegador
+- **Configurações com múltiplos monitores** -- mover o cursor perto das bordas do ecrã em configurações com múltiplos monitores pode acionar deteções falsas em alguns sistemas operativos
+
+Esses eventos são registados como uma "mudança de aplicação" mesmo que o candidato nunca tenha abandonado o exame intencionalmente.
+
+## Por que isso não afeta as pontuações de exames reais
+
+Um exame real dura pelo menos vários minutos. Mesmo que AutoProctor detete falsamente um único evento de "Mudou para outra aplicação", o seu impacto no Trust Score é insignificante porque a pontuação pondera as infrações relativamente à duração total do exame.
+
+Nos exames de demonstração, que duram apenas alguns segundos, uma única deteção falsa pode reduzir notavelmente o Trust Score. Isso acontece simplesmente porque o exame é demasiado curto para que a pontuação o absorva.
+
+<Note>
+Se vir esta infração num exame de demonstração, não se preocupe. Em exames reais com duração de vários minutos ou mais, uma única deteção falsa não tem um impacto significativo no Trust Score.
+</Note>
+
+## Como deve interpretar esta infração?
+
+Se o relatório de um candidato mostra apenas um ou dois eventos de "Mudou para outra aplicação" juntamente com um Trust Score alto, é muito provável que seja um falso positivo. Se o relatório mostra muitos eventos deste tipo ou eles ocorrem juntamente com outras infrações, justifica-se uma revisão mais detalhada.
+
+## Recursos relacionados
+
+- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
+- [O que é monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que AutoProctor supervisiona
+- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
+- [Sem rosto ou múltiplos rostos detetados](/candidate-issues/no-face-or-multiple-faces) -- Outro cenário comum de falso positivo
+- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda

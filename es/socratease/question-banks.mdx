@@ -1,0 +1,61 @@
+---
+title: "Bancos de preguntas"
+description: "Cree grandes conjuntos de preguntas y ofrezca subconjuntos aleatorios a los candidatos utilizando los bancos de preguntas."
+---
+
+<Note>
+Los bancos de preguntas son una función **Elite**. Necesita un plan Elite para utilizar los bancos de preguntas y los cuestionarios de bancos de preguntas.
+</Note>
+
+## ¿Qué son los bancos de preguntas?
+
+Los bancos de preguntas son un gran conjunto de preguntas. Los candidatos verán un subconjunto aleatorio de las preguntas, basado en el banco de preguntas seleccionado y el nivel de dificultad. Esto hace que la prueba de cada candidato sea única, reduciendo la posibilidad de hacer trampa.
+
+## Cómo funcionan los bancos de preguntas
+
+Un banco de preguntas (BP) es una colección de preguntas organizadas por materia o tema. Cada pregunta en el banco puede tener un valor de puntos y un nivel de dificultad diferente.
+
+<Frame>
+  <img src="/images/socratease/question-bank-overview.png" alt="Vista general del banco de preguntas" />
+</Frame>
+
+### Ejemplo: Pruebas de física y química
+
+Imagine que tiene dos bancos de preguntas:
+- **Banco de preguntas de física** -- 100 preguntas
+- **Banco de preguntas de química** -- 100 preguntas
+
+Puede crear diferentes cuestionarios que extraigan de estos bancos con distintas ponderaciones:
+
+- **Cuestionario de especialidad en física**: 40 preguntas de física de dos puntos + 10 preguntas de química de un punto
+- **Cuestionario de especialidad en química**: 40 preguntas de química de dos puntos + 10 preguntas de física de un punto
+
+Cada candidato recibe un subconjunto aleatorio diferente de preguntas de los respectivos bancos, pero la estructura general (número de preguntas, puntos, distribución de dificultad) se mantiene consistente.
+
+<Frame>
+  <img src="/images/socratease/question-bank-example.png" alt="Ejemplo de banco de preguntas con física y química" />
+</Frame>
+
+## Cuestionarios de bancos de preguntas (CBP)
+
+Los candidatos no pueden realizar un banco de preguntas directamente. Debe crear un **cuestionario de banco de preguntas (CBP)** y agregarlo a una prueba de AutoProctor.
+
+Un cuestionario de banco de preguntas especifica:
+- De qué bancos de preguntas se extraen las preguntas
+- Cuántas preguntas incluir de cada banco
+- Los niveles de dificultad a incluir
+
+<Frame>
+  <img src="/images/socratease/question-bank-quiz-config.png" alt="Configuración de cuestionario de banco de preguntas" />
+</Frame>
+
+<Warning>
+Los candidatos no pueden realizar un banco de preguntas directamente. Debe crear un cuestionario de banco de preguntas y agregarlo a una prueba de AutoProctor para que los candidatos lo realicen.
+</Warning>
+
+## Recursos relacionados
+
+- [¿Por qué Socratease?](/socratease/why-socratease) — Beneficios de usar Socratease
+- [Importación masiva desde Excel](/socratease/bulk-import-from-excel) — Importe preguntas de forma masiva
+- [Tipos de preguntas](/socratease/question-types) — Formatos de preguntas disponibles
+- [Funciones Elite](/pricing/elite-features) — Conozca las funciones del plan Elite

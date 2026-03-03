@@ -1,0 +1,100 @@
+---
+title: "Configuración de pruebas"
+description: "Configure nombres de pruebas, ventanas de tiempo, opciones de supervisión y configuraciones avanzadas para sus pruebas de AutoProctor."
+---
+
+La página de Configuración de pruebas de AutoProctor le permite configurar nombres de pruebas, ventanas de tiempo, duración, opciones de supervisión y métodos de inicio de sesión para los candidatos. Acceda a la configuración haciendo clic en el botón **Settings** en su panel de control.
+
+<Frame>
+  <img src="/images/creating-tests/test-settings-button.png" alt="Botón de configuración de pruebas en el panel de control de AutoProctor" />
+</Frame>
+
+<Note>
+La Configuración de pruebas controla únicamente la supervisión y la configuración de la prueba; no controla la configuración de las preguntas del cuestionario. Para la configuración de cuestionarios de Socratease, consulte [Configuración del cuestionario](/socratease/quiz-settings).
+</Note>
+
+<Frame>
+  <img src="/images/creating-tests/settings-sections.png" alt="Vista general de las cuatro secciones de configuración" />
+</Frame>
+
+## Configuración principal
+
+- **Test Link** — copie el enlace de la prueba, vea los resultados o archive la prueba
+- **Enable Timer** — activa las condiciones relacionadas con el tiempo
+- **Enable Proctor** — activa o desactiva la funcionalidad de supervisión
+- **Enable Auto-resume** — permite a los candidatos reanudar pruebas cerradas
+- **Max Attempts** — limita los intentos de prueba por candidato
+- **Test Title** — nombra la prueba para su panel de control y para los candidatos
+
+## Configuración del temporizador
+
+<Frame>
+  <img src="/images/creating-tests/timer-settings.png" alt="Panel de configuración del temporizador" />
+</Frame>
+
+- **Duration** — tiempo máximo permitido para un intento de prueba
+- **Auto-submit Test** — envía automáticamente cuando la duración finaliza
+- **Can't Start Before** — fecha y hora más temprana en que los candidatos pueden comenzar
+- **Can't Start After** — fecha y hora más tardía en que los candidatos pueden comenzar
+- **Must Submit By** — fecha límite estricta de entrega
+- **Buffer Time** — período de gracia para demostración y configuración (por defecto 5 minutos cuando se establecen horarios de inicio/fin)
+
+<Warning>
+Para cuestionarios que no son de Socratease, el envío automático solo envía la sesión de supervisión, no las respuestas del cuestionario. Las respuestas no contestadas pueden perderse sin un envío manual.
+</Warning>
+
+## Configuración de supervisión
+
+<Frame>
+  <img src="/images/creating-tests/proctoring-settings.png" alt="Panel de configuración de supervisión" />
+</Frame>
+
+**Opciones básicas:**
+- Detección de cambio de pestaña
+- Detección de monitores múltiples
+- Monitoreo de cámara
+- Monitoreo de micrófono
+- Captura aleatoria de fotos
+- Modo de pantalla completa obligatorio
+- Solo escritorio obligatorio
+- Foto antes de iniciar la prueba
+- Mensaje personalizado (Premium)
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Configuración de supervisión mejorada" />
+</Frame>
+
+**Opciones mejoradas** (4 créditos por intento):
+- Verificación de tarjeta de identidad
+- Detección de suplantación de identidad
+- Dispositivo auxiliar (supervisión de 360 grados)
+- Grabación de sesión
+
+**Configuración de comunicación:**
+- Almacenar evidencia para revisión posterior
+- Informar a los candidatos sobre las infracciones durante la prueba
+
+## Configuración avanzada
+
+<Frame>
+  <img src="/images/creating-tests/advanced-settings.png" alt="Panel de configuración avanzada" />
+</Frame>
+
+- **Login Providers** — Google, Microsoft o correo electrónico
+- **Login Restrictions** — filtrado basado en correo electrónico
+- **Google Sheets URL** — exportación automática de resultados a una hoja de cálculo
+- **Collaborators** — comparta el acceso de gestión de la prueba
+- **Unique URL per candidate** (Elite)
+- **Gather Additional Details** (Premium)
+- **Additional Instructions** (Elite)
+
+<Note>
+Las conversiones de zona horaria se manejan automáticamente. Se permite un máximo de 10 campos de información personalizada para la función de recopilar detalles adicionales.
+</Note>
+
+## Recursos relacionados
+
+- [Proveedores de cuestionarios](/creating-tests/quiz-providers) — Plataformas de cuestionarios compatibles
+- [Agregar colaboradores](/creating-tests/adding-collaborators) — Comparta el acceso a la prueba con su equipo
+- [Restricción por correo electrónico](/results/restricting-by-email) — Limite quién puede realizar su prueba
+- [Qué se supervisa](/getting-started/what-gets-tracked) — Todas las capacidades de supervisión

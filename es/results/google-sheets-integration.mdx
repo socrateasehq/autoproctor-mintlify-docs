@@ -1,0 +1,53 @@
+---
+title: "Escribir resultados automáticamente en Google Sheets"
+description: "Configure la exportación automática de resultados de pruebas de AutoProctor a Google Sheets para que los datos fluyan en tiempo real sin descargas manuales."
+---
+
+En lugar de descargar archivos de Excel manualmente después de cada prueba, puede configurar AutoProctor para que escriba automáticamente los resultados de la prueba en una hoja de Google Sheets. Los resultados aparecen en la hoja a medida que los candidatos completan sus pruebas.
+
+<Note>
+Esta es una **Función Premium** y requiere una suscripción Premium o Elite. Consulte [Pagos y créditos](/pricing/payments-and-credits) para obtener detalles del plan.
+</Note>
+
+## Instrucciones de configuración
+
+<Steps>
+  <Step title="Abra la configuración de la prueba">
+    Visite la **Configuración de la prueba** de una prueba nueva o existente en su panel de AutoProctor.
+  </Step>
+  <Step title="Ubique el campo ID de Google Sheets">
+    Desplácese hacia abajo hasta la sección **Configuración avanzada** y ubique el campo **Google Sheets ID**.
+  </Step>
+  <Step title="Cree una hoja de Google Sheets en blanco">
+    Cree una hoja de Google Sheets vacía en su Google Drive.
+  </Step>
+  <Step title="Conceda acceso de escritura">
+    Comparta la hoja de Google Sheets con `hello@autoproctor.co` y otorgue permisos de **Editor**. Esto permite que AutoProctor escriba datos en la hoja.
+  </Step>
+  <Step title="Pegue la URL de la hoja de Google Sheets">
+    Copie la URL de su hoja de Google Sheets y péguela en el campo **Google Sheets ID** en la configuración de la prueba de AutoProctor.
+  </Step>
+  <Step title="Guarde la prueba">
+    Haga clic en **Crear** o **Actualizar** para guardar la configuración de la prueba.
+  </Step>
+  <Step title="Verifique la integración">
+    Complete un intento de prueba. Aparecerá automáticamente una nueva pestaña denominada **AutoProctor** en su hoja de Google Sheets con los datos de resultados.
+  </Step>
+</Steps>
+
+Los intentos de prueba posteriores llenan automáticamente la misma hoja de Google Sheets sin necesidad de configuración adicional.
+
+## Integración con Socratease Quizzes
+
+Para Socratease Quizzes, el sistema escribe tanto las puntuaciones de supervisión como las puntuaciones del cuestionario en la hoja. Sin embargo, las preguntas y respuestas individuales no se incluyen; solo aparecen los datos de puntuación agregados.
+
+<Note>
+Si necesita datos detallados a nivel de pregunta para Socratease Quizzes, utilice la vista de [entregas individuales](/results/individual-submissions) en el panel de AutoProctor.
+</Note>
+
+## Recursos relacionados
+
+- [Exportar a Excel](/results/export-to-excel) -- Descargar resultados manualmente como hoja de cálculo
+- [Configuración de la prueba](/creating-tests/test-settings) -- Configurar todas las opciones de la prueba, incluidas las integraciones
+- [Cómo ver los resultados en AutoProctor](/results/how-to-see-results) -- Descripción general de los resultados de la prueba frente a los resultados de supervisión
+- [Pagos y créditos](/pricing/payments-and-credits) -- Detalles del plan y disponibilidad de funciones

@@ -1,0 +1,45 @@
+---
+title: "Trust Score"
+description: "Comprenda cómo funciona el Trust Score de AutoProctor, cómo se calcula y qué constituye una buena puntuación."
+---
+
+AutoProctor asigna un Trust Score (0–100%) a cada informe de supervisión. La puntuación proporciona un resumen rápido de la probabilidad de que el candidato haya mantenido la integridad durante la prueba.
+
+<Frame>
+  <img src="/images/getting-started/trustscore.png" alt="Visualización del Trust Score en un informe de supervisión de AutoProctor" />
+</Frame>
+
+Cuanto más bajo sea el Trust Score, más probable es que AutoProctor haya detectado un comportamiento sospechoso durante la prueba.
+
+<Warning>
+Siempre revise la evidencia de respaldo antes de sacar conclusiones. **No** se base únicamente en el Trust Score — revise la evidencia real de las infracciones para determinar si se produjo una conducta indebida.
+</Warning>
+
+## Cómo se calcula el Trust Score
+
+AutoProctor monitorea a los candidatos en tiempo real a través de múltiples canales (dependiendo de la configuración de su prueba):
+
+- Cámara
+- Micrófono
+- Actividad de la pantalla
+
+El algoritmo evalúa las infracciones con base en tres factores:
+
+1. **Tipo de infracción** — el cambio de pestaña tiene mayor peso que la detección de ruido
+2. **Frecuencia de las infracciones** — más incidentes resultan en una puntuación más baja
+3. **Duración de las infracciones** — las infracciones prolongadas tienen un mayor impacto que las breves
+
+## ¿Qué es un buen Trust Score?
+
+Como referencia general, revise la evidencia de cualquier candidato con un Trust Score **inferior al 85%**. Este umbral está pensado para revisión, no como prueba de conducta indebida.
+
+<Note>
+Los factores ambientales pueden afectar significativamente la puntuación. Por ejemplo, el ruido ambiental del tráfico podría reducir una puntuación al 0% incluso cuando no se produjo ningún tipo de trampa.
+</Note>
+
+## Recursos relacionados
+
+- [Qué se monitorea](/getting-started/what-gets-tracked) — Todas las capacidades de monitoreo disponibles
+- [Resultados de supervisión](/results/proctoring-results) — Cómo ver la evidencia de infracciones y los informes
+- [No se detectó ningún rostro o se detectaron múltiples rostros](/candidate-issues/no-face-or-multiple-faces) — Por qué la detección facial puede generar falsos positivos
+- [Infracción falsa de cambio de aplicación](/candidate-issues/false-app-switch) — Comprensión de las señalizaciones de infracciones falsas

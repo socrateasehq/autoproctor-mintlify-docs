@@ -1,0 +1,61 @@
+---
+title: "Uso de LaTeX para ecuaciones matemáticas"
+description: "Agregue ecuaciones matemáticas a sus cuestionarios Socratease utilizando la sintaxis LaTeX."
+---
+
+<Note>
+El soporte de ecuaciones LaTeX es exclusivo de los **Socratease Quizzes** de AutoProctor.
+</Note>
+
+## ¿Por qué LaTeX?
+
+Con plataformas como Google Forms y herramientas similares, si desea incluir una ecuación matemática en un examen, debe insertar imágenes de ecuaciones o usar notación de texto simplificada (como `a^2` o `3/4`). Esto es engorroso y difícil de leer.
+
+**LaTeX es el estándar global utilizado para escribir ecuaciones matemáticas**, presente en publicaciones académicas, libros de texto y trabajos de investigación en todo el mundo.
+
+## Cómo usar LaTeX
+
+Para incluir una ecuación LaTeX en su cuestionario, encierre la ecuación entre `\(` y `\)`.
+
+**Ejemplo:**
+
+```
+\(a^2 + b^2 = c^2\)
+```
+
+Esto se renderiza como el conocido teorema de Pitágoras: a al cuadrado más b al cuadrado es igual a c al cuadrado.
+
+## Qué admite LaTeX
+
+LaTeX puede renderizar cualquier notación matemática, incluyendo:
+
+- **Aritmética básica**: `\(a + b = c\)`
+- **Exponentes y subíndices**: `\(x^2\)`, `\(a_n\)`
+- **Fracciones**: `\(\frac{a}{b}\)`
+- **Raíces cuadradas**: `\(\sqrt{x}\)`
+- **Integrales**: `\(\int_0^1 x^2 dx\)`
+- **Sumatorias**: `\(\sum_{i=1}^{n} i\)`
+- **Letras griegas**: `\(\alpha, \beta, \gamma\)`
+- Y cualquier otra notación matemática avanzada
+
+## Habilitar LaTeX
+
+<Steps>
+  <Step title="Abrir su cuestionario">
+    Abra su cuestionario Socratease en AutoProctor.
+  </Step>
+  <Step title="Ir a la configuración">
+    Haga clic en el ícono de **Configuración**.
+  </Step>
+  <Step title="Habilitar el soporte de LaTeX">
+    Active la opción **Soporte de LaTeX**.
+  </Step>
+  <Step title="Escribir ecuaciones">
+    Escriba sus ecuaciones en el texto de las preguntas utilizando los delimitadores `\(` y `\)`.
+  </Step>
+</Steps>
+
+## Pruébelo
+
+Puede ver un cuestionario de ejemplo que demuestra la representación de ecuaciones LaTeX en:
+[autoproctor.co/tests/ifvJRDE1qf/load/](https://www.autoproctor.co/tests/ifvJRDE1qf/load/)

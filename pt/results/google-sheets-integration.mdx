@@ -1,0 +1,53 @@
+---
+title: "Escrever resultados automaticamente no Google Sheets"
+description: "Configure a exportação automática de resultados de testes do AutoProctor para o Google Sheets para que os dados fluam em tempo real sem transferências manuais."
+---
+
+Em vez de transferir ficheiros de Excel manualmente após cada teste, pode configurar o AutoProctor para escrever automaticamente os resultados do teste numa folha de Google Sheets. Os resultados aparecem na folha à medida que os candidatos concluem os seus testes.
+
+<Note>
+Esta é uma **Funcionalidade Premium** e requer uma subscrição Premium ou Elite. Consulte [Pagamentos e créditos](/pricing/payments-and-credits) para obter detalhes do plano.
+</Note>
+
+## Instruções de configuração
+
+<Steps>
+  <Step title="Abra as definições do teste">
+    Visite as **Definições do teste** de um teste novo ou existente no seu painel do AutoProctor.
+  </Step>
+  <Step title="Localize o campo ID do Google Sheets">
+    Desloque-se até à secção **Definições avançadas** e localize o campo **Google Sheets ID**.
+  </Step>
+  <Step title="Crie uma folha de Google Sheets em branco">
+    Crie uma folha de Google Sheets vazia no seu Google Drive.
+  </Step>
+  <Step title="Conceda acesso de escrita">
+    Partilhe a folha de Google Sheets com `hello@autoproctor.co` e conceda permissões de **Editor**. Isto permite que o AutoProctor escreva dados na folha.
+  </Step>
+  <Step title="Cole o URL da folha de Google Sheets">
+    Copie o URL da sua folha de Google Sheets e cole-o no campo **Google Sheets ID** nas definições do teste do AutoProctor.
+  </Step>
+  <Step title="Guarde o teste">
+    Clique em **Criar** ou **Atualizar** para guardar a configuração do teste.
+  </Step>
+  <Step title="Verifique a integração">
+    Complete uma tentativa de teste. Aparecerá automaticamente um novo separador denominado **AutoProctor** na sua folha de Google Sheets com os dados dos resultados.
+  </Step>
+</Steps>
+
+As tentativas de teste subsequentes preenchem automaticamente a mesma folha de Google Sheets sem necessidade de configuração adicional.
+
+## Integração com Socratease Quizzes
+
+Para Socratease Quizzes, o sistema escreve tanto as pontuações de supervisão como as pontuações do questionário na folha. No entanto, as perguntas e respostas individuais não são incluídas; apenas aparecem os dados de pontuação agregados.
+
+<Note>
+Se necessita de dados detalhados ao nível da pergunta para Socratease Quizzes, utilize a vista de [submissões individuais](/results/individual-submissions) no painel do AutoProctor.
+</Note>
+
+## Recursos relacionados
+
+- [Exportar para Excel](/results/export-to-excel) -- Transferir resultados manualmente como folha de cálculo
+- [Definições do teste](/creating-tests/test-settings) -- Configurar todas as opções do teste, incluindo integrações
+- [Como ver os resultados no AutoProctor](/results/how-to-see-results) -- Descrição geral dos resultados do teste versus resultados de supervisão
+- [Pagamentos e créditos](/pricing/payments-and-credits) -- Detalhes do plano e disponibilidade de funcionalidades

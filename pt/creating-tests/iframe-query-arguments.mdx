@@ -1,0 +1,42 @@
+---
+title: "Argumentos de consulta do iframe"
+description: "Adicione parâmetros de consulta às URLs de iframe nas Configurações avançadas do AutoProctor para personalizar o conteúdo integrado."
+---
+
+Ao utilizar o provedor de questionários **IFrame/Other**, você pode adicionar parâmetros de consulta à URL do seu questionário integrado através das **Configurações avançadas** do AutoProctor. Isso permite personalizar como o conteúdo integrado é exibido sem modificar a URL original.
+
+## Como funciona
+
+Se a sua URL original é:
+```
+www.website.com
+```
+
+E você deseja adicionar parâmetros para que fique:
+```
+www.website.com?key1=val1&key2=val2
+```
+
+Insira o seguinte no campo **Query Arguments** nas Configurações avançadas:
+```
+key1=val1&key2=val2
+```
+
+O AutoProctor constrói automaticamente a URL completa adicionando os seus parâmetros.
+
+## Exemplos comuns
+
+| Parâmetro | Finalidade |
+|---|---|
+| `hl=en` | Exibir um Google Form em inglês |
+| `hl=fr` | Exibir um Google Form em francês |
+| `embedded=true` | Forçar o modo integrado em certas plataformas |
+
+<Note>
+Não inclua o prefixo `?` — o AutoProctor o adiciona automaticamente ao construir a URL.
+</Note>
+
+## Recursos relacionados
+
+- [Provedores de questionários](/creating-tests/quiz-providers) — Todas as plataformas de questionários compatíveis
+- [Configurações de prova](/creating-tests/test-settings) — Configure a prova e as Configurações avançadas

@@ -1,0 +1,49 @@
+---
+title: "No se puede ver la respuesta en Google Forms"
+description: "Comprenda por qué las respuestas pueden aparecer en AutoProctor pero no en Google Forms, o viceversa. Generalmente es causado por omitir uno de los dos botones de envío."
+---
+
+Si puede ver la respuesta de un candidato en AutoProctor pero no en Google Forms (o viceversa), lo más probable es que el candidato haya omitido uno de los dos botones de envío requeridos.
+
+## Comprensión de los dos botones de envío
+
+Los candidatos deben hacer clic en **dos botones de envío separados** para completar un examen supervisado basado en Google Forms:
+
+1. **Botón de envío morado** (dentro del formulario de Google Forms) -- envía las respuestas a la sección de Respuestas de Google Forms
+2. **Botón de envío verde** (en la parte superior de la página) -- envía la sesión de supervisión a AutoProctor
+
+<Frame caption="Los dos botones de envío: morado para Google Forms, verde para AutoProctor">
+  <img src="/images/candidate-issues/google-forms-submit-buttons.png" alt="Botón de envío morado de Google Forms y botón de envío verde de AutoProctor mostrados en un examen supervisado" />
+</Frame>
+
+### Si el candidato omite el botón de envío verde
+
+Usted verá las respuestas del candidato en la sección de **Respuestas de Google Forms** pero no verá ningún resultado en AutoProctor. La sesión de supervisión no fue finalizada.
+
+### Si el candidato omite el botón de envío morado
+
+Usted verá el examen marcado como enviado en **AutoProctor**, pero las respuestas del candidato no aparecerán en las Respuestas de Google Forms. Las respuestas del formulario nunca fueron enviadas a Google.
+
+<Warning>
+Debido a restricciones de privacidad, Google no permite que AutoProctor detecte si se hizo clic en el botón de envío morado. No hay forma de que AutoProctor aplique este paso automáticamente.
+</Warning>
+
+## Asegúrese de compartir el enlace de AutoProctor
+
+Usted debe enviar a los candidatos el **enlace de AutoProctor** (que contiene `autoproctor.co` en la URL). Si envía el enlace directo de Google Forms en su lugar, los candidatos omitirán AutoProctor por completo y no se registrarán datos de supervisión.
+
+## ¿Por qué AutoProctor no puede solucionar esto?
+
+AutoProctor incorpora los formularios de Google Forms de manera similar a como los sitios web incorporan videos de YouTube. Google no permite que AutoProctor acceda ni controle nada de lo que sucede dentro del formulario. Si ocurre un problema de envío dentro del formulario de Google Forms, solo Google controla ese comportamiento.
+
+<Note>
+Para evitar la confusión con dos botones de envío, considere usar [cuestionarios de Socratease](/socratease/why-socratease) en lugar de Google Forms. Socratease tiene un solo botón de envío que maneja tanto las respuestas del cuestionario como la supervisión en un solo paso.
+</Note>
+
+## Recursos relacionados
+
+- [No se pueden ver las preguntas en Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Problemas de acceso a Google Forms
+- [Resultados de supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
+- [Configuración del examen](/creating-tests/test-settings) -- Configure los ajustes de su examen
+- [¿Por qué Socratease?](/socratease/why-socratease) -- Beneficios de usar Socratease en lugar de Google Forms
+- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda

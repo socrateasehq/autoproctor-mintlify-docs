@@ -1,0 +1,59 @@
+---
+title: "Reanudación de intentos de prueba"
+description: "Comprenda cómo AutoProctor gestiona la reanudación de pruebas cuando los candidatos se desconectan, cierran el navegador o abandonan una prueba a mitad del intento."
+---
+
+Cuando un candidato abandona una prueba a mitad del intento, ya sea por un fallo del navegador, un problema de red o un cierre accidental, AutoProctor determina si debe reanudar el intento anterior o crear uno nuevo. El comportamiento depende del tipo de prueba y de su configuración.
+
+## Comportamiento de reanudación por tipo de prueba
+
+| Tipo de prueba | Comportamiento de reanudación |
+|---|---|
+| Socratease Quiz | Siempre reanuda -- carga las respuestas anteriores automáticamente |
+| Microsoft Forms | Nunca reanuda -- crea un nuevo intento cada vez |
+| Google Forms | Configurable (ver más abajo) |
+| Pruebas con IFrame | Configurable (ver más abajo) |
+
+## Configuración de la función de reanudación
+
+Para Google Forms y pruebas con IFrame, puede controlar el comportamiento de reanudación mediante la opción **Habilitar reanudación automática** en la configuración de la prueba.
+
+<Steps>
+  <Step title="Abra la configuración de la prueba">
+    Navegue a su prueba en el panel de AutoProctor y abra su **Configuración de la prueba**.
+  </Step>
+  <Step title="Active la opción Habilitar reanudación automática">
+    En la configuración, busque y habilite o deshabilite la opción **Enable Auto Resume**.
+
+    <Frame>
+      <img src="/images/results/enable-auto-resume.png" alt="Opción de Enable Auto Resume en la configuración de la prueba de AutoProctor" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>
+Para Google Forms, también debe mantener habilitada la función de **Guardar borrador** (autoguardado) en el propio Google Forms para que la reanudación funcione correctamente. Consulte [Reanudación de pruebas de Google Forms](/results/resuming-google-forms) para obtener una configuración detallada.
+</Note>
+
+## Cómo interactúan los temporizadores con la reanudación
+
+Si tiene configuraciones de temporizador, estas afectan el funcionamiento de la reanudación.
+
+### Duración de la prueba
+
+El tiempo restante del intento original se transfiere. Por ejemplo, si un candidato comienza una prueba de 60 minutos a las 10:00 a. m. y se desconecta a las 10:30 a. m., al reanudar a las 10:50 a. m. le quedarán solo 10 minutos. Una vez que la duración total expire, la prueba ya no se puede reanudar.
+
+### No puede iniciar antes / No puede iniciar después
+
+Estas restricciones se aplican a la hora de inicio original, no a la hora de reconexión. Un candidato que inició antes de la fecha límite puede reanudar después de esta, siempre que la duración de la prueba no haya expirado.
+
+### Debe entregar antes de
+
+Esta fecha límite se aplica estrictamente en el momento de la reconexión. Si la fecha límite de **Debe entregar antes de** ya pasó antes de que el candidato intente reanudar, la prueba no se carga, incluso si el candidato inició originalmente antes de la fecha límite.
+
+## Recursos relacionados
+
+- [Reanudación de pruebas de Google Forms](/results/resuming-google-forms) -- Configuración detallada de la reanudación en Google Forms
+- [Intentos máximos](/results/maximum-attempts) -- Cómo los límites de intentos interactúan con la reanudación
+- [Pruebas no enviadas](/results/unsubmitted-tests) -- Ver detalles de pruebas iniciadas pero no enviadas
+- [Configuración de la prueba](/creating-tests/test-settings) -- Configurar todas las opciones de la prueba, incluidos los temporizadores

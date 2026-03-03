@@ -1,0 +1,40 @@
+---
+title: "Modo de visualización de preguntas"
+description: "Controle cómo se muestran las preguntas a los candidatos: todas a la vez, una por una con navegación o una por una sin navegación."
+---
+
+La configuración del modo de visualización de preguntas en los cuestionarios Socratease controla cómo aparecen las preguntas para los participantes. Hay tres opciones de visualización disponibles.
+
+## Modos de visualización
+
+### 1. Todas a la vez (estilo Google Forms)
+
+Los candidatos ven todas las preguntas al mismo tiempo, una debajo de otra, como en un Google Form. El temporizador se aplica a la **prueba completa**.
+
+### 2. Una por una con navegación (estilo Typeform)
+
+Los candidatos ven una pregunta a la vez y pueden navegar hacia adelante y hacia atrás entre las preguntas. El temporizador se aplica a la **prueba completa**, no a las preguntas individuales.
+
+### 3. Una por una sin navegación
+
+Los candidatos ven una pregunta a la vez. Una vez que envían una pregunta (al responderla u omitirla), **NO PUEDEN volver a ella**. El temporizador se establece **por pregunta**, no para toda la prueba.
+
+<Frame>
+  <img src="/images/socratease/question-display-mode.png" alt="Configuración del modo de visualización de preguntas" />
+</Frame>
+
+## Diferencias principales
+
+| Característica | Todas a la vez | Una por una con nav. | Una por una sin nav. |
+|---|:---:|:---:|:---:|
+| Alcance del temporizador | Prueba completa | Prueba completa | Por pregunta |
+| Puede volver atrás | Sí | Sí | No |
+| Instrucciones personalizadas | Sí | No | No |
+
+## Cuándo usar "Una por una sin navegación"
+
+La opción sin navegación es especialmente útil por motivos de seguridad. Esto le da al participante menos tiempo para hacer trampa en una pregunta, ya que en cualquier momento solo puede ver una pregunta, por un tiempo limitado.
+
+<Warning>
+Al usar **una por una sin navegación**, ciertas configuraciones del temporizador a nivel de prueba dejan de estar disponibles. Los parámetros de **Duración** y **Debe enviar antes de** se trasladan al nivel de la pregunta, y la función de **envío automático** se aplica automáticamente cuando el tiempo por pregunta expira.
+</Warning>

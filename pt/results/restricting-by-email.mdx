@@ -1,0 +1,52 @@
+---
+title: "Restringir o acesso ao teste por endereço de correio eletrónico"
+description: "Limite quem pode realizar o seu teste restringindo o acesso a domínios de correio eletrónico específicos ou endereços individuais através de Restrições de início de sessão."
+---
+
+Pode controlar quais candidatos têm permissão para realizar o seu teste, restringindo o acesso com base em critérios de correio eletrónico. Isto impede que utilizadores não autorizados acedam ao teste mesmo que disponham da ligação.
+
+## Como configurar as restrições por correio eletrónico
+
+<Steps>
+  <Step title="Abra as definições do teste">
+    Navegue até ao teste no seu painel do AutoProctor e abra as suas **Definições do teste**.
+  </Step>
+  <Step title="Aceda às Definições avançadas">
+    Desloque-se até à secção **Definições avançadas** e localize os campos de **Restrições de início de sessão**.
+  </Step>
+  <Step title="Adicione restrições de domínio ou correio eletrónico">
+    Introduza os domínios de correio eletrónico ou os endereços de correio eletrónico específicos que deseja permitir. Pode combinar ambos os tipos de restrições (veja os exemplos abaixo).
+  </Step>
+  <Step title="Guarde o teste">
+    Clique em **Criar** ou **Atualizar** para aplicar as restrições.
+  </Step>
+</Steps>
+
+## Restrições baseadas em domínio
+
+Restrinja o acesso a candidatos cujos endereços de correio eletrónico terminem com domínios específicos. Por exemplo, ao introduzir `@abc.com` e `@xyz.com`, apenas os candidatos com esses domínios de correio eletrónico poderão realizar o teste.
+
+<Frame>
+  <img src="/images/results/login-restrictions-domain.png" alt="Campo de Restrições de início de sessão que mostra restrições baseadas em domínio com @abc.com e @xyz.com" />
+</Frame>
+
+## Restrições por correio eletrónico específico
+
+Também pode permitir endereços de correio eletrónico individuais juntamente com as restrições de domínio. Isto é útil quando a maioria dos candidatos partilha um domínio mas alguns participantes externos necessitam de acesso.
+
+Por exemplo, pode permitir todos os utilizadores cujo correio eletrónico termine em `@abc.com` mais endereços de correio eletrónico individuais específicos como `guest@gmail.com`.
+
+<Frame>
+  <img src="/images/results/login-restrictions-email.png" alt="Campo de Restrições de início de sessão que mostra uma combinação de restrições de domínio e de correio eletrónico individual" />
+</Frame>
+
+<Note>
+As restrições por correio eletrónico funcionam em conjunto com o [método de início de sessão](/results/candidate-login-methods) do candidato. O candidato deve iniciar sessão com um endereço de correio eletrónico que corresponda a um dos domínios ou endereços permitidos.
+</Note>
+
+## Recursos relacionados
+
+- [Métodos de início de sessão para candidatos](/results/candidate-login-methods) -- Conheça as opções de autenticação disponíveis
+- [Restringir o acesso a utilizadores específicos](/results/restricting-to-some-users) -- Outros métodos para limitar o acesso ao teste
+- [Convidar candidatos por correio eletrónico](/results/inviting-candidates-via-email) -- Gerar ligações de teste únicas por candidato
+- [Definições do teste](/creating-tests/test-settings) -- Configurar todas as opções do teste

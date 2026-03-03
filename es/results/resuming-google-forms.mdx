@@ -1,0 +1,67 @@
+---
+title: "Reanudación de pruebas de Google Forms"
+description: "Configure si los candidatos pueden reanudar pruebas de Google Forms después de cerrarlas a mitad del intento, gestionando las opciones de autoguardado y reanudación automática."
+---
+
+Las pruebas de Google Forms requieren que dos configuraciones estén alineadas para que el comportamiento de reanudación funcione correctamente: la configuración de **autoguardado** en Google Forms y la configuración de **reanudación automática** en AutoProctor. Esta guía explica cómo configurar ambas.
+
+<Note>
+Dos configuraciones controlan la reanudación de pruebas de Google Forms:
+1. **Deshabilitar autoguardado** en Google Forms -- Controla si se guardan los borradores de respuestas a medida que el candidato completa el formulario.
+2. **Habilitar reanudación automática** en AutoProctor -- Controla si AutoProctor carga el intento anterior cuando un candidato regresa al enlace de la prueba.
+
+Ambas configuraciones deben estar alineadas para obtener el comportamiento deseado.
+</Note>
+
+## Para permitir la reanudación de la prueba
+
+Si desea que los candidatos continúen donde lo dejaron después de cerrar la prueba:
+
+<Steps>
+  <Step title="Mantenga habilitado el autoguardado en Google Forms">
+    Asegúrese de que la función **Deshabilitar autoguardado** esté **DESACTIVADA** en la configuración de la prueba de Google Forms (esta es la opción predeterminada).
+
+    <Frame>
+      <img src="/images/results/gforms-autosave-enabled.png" alt="Configuración de la prueba de Google Forms que muestra Deshabilitar autoguardado desactivado, manteniendo el autoguardado activo" />
+    </Frame>
+  </Step>
+  <Step title="Habilite la reanudación automática en AutoProctor">
+    Active la configuración **Enable Auto-resume** en la configuración de la prueba de AutoProctor.
+
+    <Frame>
+      <img src="/images/results/gforms-autoresume-enabled.png" alt="Configuración de la prueba de AutoProctor que muestra Enable Auto-resume activado" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Para impedir la reanudación de la prueba
+
+Si desea que cada visita al enlace de la prueba cree un nuevo intento en blanco:
+
+<Steps>
+  <Step title="Deshabilite el autoguardado en Google Forms">
+    Active la función **Deshabilitar autoguardado** en la configuración de la prueba de Google Forms.
+
+    <Frame>
+      <img src="/images/results/gforms-autosave-disabled.png" alt="Configuración de la prueba de Google Forms que muestra Deshabilitar autoguardado activado, deshabilitando el autoguardado" />
+    </Frame>
+  </Step>
+  <Step title="Deshabilite la reanudación automática en AutoProctor">
+    Desactive la opción **Resume Unsubmitted Test** en la configuración de la prueba de AutoProctor.
+
+    <Frame>
+      <img src="/images/results/gforms-autoresume-disabled.png" alt="Configuración de la prueba de AutoProctor que muestra Resume Unsubmitted Test desactivado" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Warning>
+Si las dos configuraciones no coinciden (por ejemplo, el autoguardado está habilitado pero la reanudación automática está deshabilitada), los candidatos pueden experimentar un comportamiento inesperado, como ver un formulario parcialmente completado en un nuevo intento o perder el progreso guardado.
+</Warning>
+
+## Recursos relacionados
+
+- [Reanudación de intentos de prueba](/results/resuming-test-attempts) -- Comportamiento general de reanudación en todos los tipos de prueba
+- [Intentos máximos](/results/maximum-attempts) -- Configurar cuántos intentos se permiten a los candidatos
+- [Pruebas no enviadas](/results/unsubmitted-tests) -- Ver pruebas iniciadas pero no enviadas
+- [Configuración de la prueba](/creating-tests/test-settings) -- Configurar todas las opciones de la prueba

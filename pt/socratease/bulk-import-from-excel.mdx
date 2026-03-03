@@ -1,0 +1,48 @@
+---
+title: "Importação em massa de perguntas a partir de Excel"
+description: "Importe perguntas de escolha múltipla a partir de um ficheiro Excel para o seu questionário Socratease."
+---
+
+<Note>
+A importação em massa está disponível apenas para clientes do **plano Elite**.
+</Note>
+
+A funcionalidade de importação em massa permite-lhe importar perguntas de escolha múltipla a partir de um ficheiro Excel para os questionários Socratease. Isto é útil quando tem muitas perguntas em formato Excel ou Word, ou quando várias pessoas colaboram num grande conjunto de perguntas.
+
+## Como importar perguntas
+
+<Steps>
+  <Step title="Descarregar o modelo">
+    Descarregue o modelo de Excel a partir do editor de questionários. Este modelo contém os cabeçalhos de coluna e a formatação necessários.
+  </Step>
+  <Step title="Adicionar perguntas ao ficheiro Excel">
+    Preencha o modelo com as suas perguntas, opções de resposta e indicadores de resposta correta. Consulte a referência de colunas abaixo para mais detalhes.
+  </Step>
+  <Step title="Carregar o ficheiro Excel">
+    Carregue o ficheiro Excel preenchido no seu questionário. As perguntas serão importadas automaticamente.
+  </Step>
+</Steps>
+
+## Referência de colunas do modelo Excel
+
+| Coluna | Obrigatória | Descrição |
+|---|:---:|---|
+| **Question Type** | Sim | `MCQ` para uma única resposta correta, ou `MCA` para múltiplas respostas corretas |
+| **Question** | Sim | O texto da pergunta |
+| **Opt1 -- Opt5** | Não | Opções de resposta. Utilize apenas as necessárias (por exemplo, se tem 3 opções, preencha Opt1, Opt2, Opt3 e deixe Opt4 e Opt5 em branco) |
+| **CorrectAnsInd** | Sim | Para MCQ: um único número indicando a opção correta (por exemplo, `2` para Opt2). Para MCA: números separados por vírgulas sem espaços (por exemplo, `2,3` para Opt2 e Opt3) |
+| **Markdown** | Não | Insira `1` para formatar o texto da pergunta como Markdown |
+| **Points** | Não | Valor em pontos por uma resposta correta |
+| **Time (seconds)** | Não | Limite de tempo por pergunta, em segundos |
+| **Image** | Não | Um URL direto para um ficheiro de imagem (.jpg, .png, etc.) para apresentar junto com a pergunta |
+
+<Warning>
+A coluna **Image** requer um URL direto para o ficheiro de imagem. As hiperligações de partilha do Google Drive **não** são suportadas. Utilize uma hiperligação direta que termine numa extensão de ficheiro como `.jpg` ou `.png`.
+</Warning>
+
+## Dicas
+
+- Os campos marcados com **Obrigatória: Sim** devem ser preenchidos para cada pergunta.
+- Pode deixar as colunas opcionais em branco se não forem necessárias.
+- Certifique-se de que os cabeçalhos de coluna correspondem exatamente ao modelo -- não renomeie nem reordene as colunas.
+- Se estiver a importar uma grande quantidade de perguntas, considere dividi-las em lotes mais pequenos para facilitar a resolução de problemas.

@@ -1,0 +1,55 @@
+---
+title: "Métodos de início de sessão para candidatos"
+description: "Conheça os métodos de autenticação disponíveis para os candidatos que realizam testes no AutoProctor e como os métodos de início de sessão variam consoante o tipo de teste."
+---
+
+Os candidatos devem iniciar sessão no AutoProctor antes de poderem realizar um teste. A autenticação é necessária para identificar de forma única cada candidato, prevenir a usurpação de identidade e acompanhar com precisão as tentativas de teste em diferentes dispositivos.
+
+## Por que é necessário iniciar sessão
+
+Sem o início de sessão, o AutoProctor não consegue distinguir entre diferentes candidatos que acedem à mesma ligação do teste. O início de sessão permite ao sistema:
+
+- Associar os dados de supervisão a um candidato específico
+- Aplicar os [limites de tentativas máximas](/results/maximum-attempts)
+- Acompanhar a [retoma do teste](/results/resuming-test-attempts) entre sessões
+- Aplicar as [restrições de acesso baseadas em correio eletrónico](/results/restricting-by-email)
+
+## Métodos de início de sessão disponíveis
+
+O AutoProctor oferece três opções de autenticação:
+
+1. **Iniciar sessão com Google** -- Utiliza a conta Google do candidato
+2. **Iniciar sessão com Microsoft** -- Utiliza a conta Microsoft do candidato
+3. **Iniciar sessão com correio eletrónico** -- Envia um código de verificação de uso único para o correio eletrónico do candidato
+
+<Frame>
+  <img src="/images/results/login-methods.png" alt="Ecrã de início de sessão do AutoProctor que mostra as opções de início de sessão com Google, Microsoft e correio eletrónico" />
+</Frame>
+
+## Métodos de início de sessão por tipo de teste
+
+Os métodos de início de sessão disponíveis dependem do tipo de teste que está a administrar.
+
+| Tipo de teste | Métodos de início de sessão disponíveis |
+|---|---|
+| Socratease Quizzes | Google, Microsoft, correio eletrónico |
+| Google Forms | Apenas Google |
+| Microsoft Forms | Apenas Microsoft |
+| Testes com IFrame | Google, Microsoft, correio eletrónico |
+
+<Warning>
+Os testes de Google Forms requerem que os candidatos iniciem sessão com Google, e os testes de Microsoft Forms requerem o início de sessão com Microsoft. Se os seus candidatos possuem apenas um tipo de conta, escolha a plataforma de questionários adequadamente.
+</Warning>
+
+## Impacto no acompanhamento de tentativas
+
+O AutoProctor acompanha as tentativas de teste pelo endereço de correio eletrónico utilizado para iniciar sessão. Se um candidato iniciar sessão com diferentes endereços de correio eletrónico (por exemplo, utilizando o início de sessão com Google uma vez e o início de sessão com correio eletrónico outra vez), cada correio eletrónico é tratado como um candidato independente. Isto pode contornar os [limites de tentativas máximas](/results/maximum-attempts).
+
+Para prevenir isto, considere restringir o início de sessão a um único método, escolhendo um tipo de teste que suporte apenas uma opção de início de sessão, ou utilizando [restrições baseadas em correio eletrónico](/results/restricting-by-email).
+
+## Recursos relacionados
+
+- [Tentativas máximas](/results/maximum-attempts) -- Configurar quantas vezes os candidatos podem realizar um teste
+- [Restringir o acesso ao teste por endereço de correio eletrónico](/results/restricting-by-email) -- Limitar o acesso por domínio ou endereço de correio eletrónico
+- [Convidar candidatos por correio eletrónico](/results/inviting-candidates-via-email) -- Gerar ligações de teste únicas por candidato
+- [Restringir o acesso a candidatos específicos](/results/restricting-to-some-users) -- Outros métodos para limitar o acesso ao teste
