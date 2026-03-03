@@ -1,6 +1,93 @@
 ---
 title: "AutoProctor Test Settings"
-description: "Configure all available settings for your AutoProctor tests."
+description: "Configure test, timer, proctoring, and advanced settings for your AutoProctor tests."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor's Test Settings page lets you configure test names, time windows, duration, proctoring options, and candidate login methods. Access settings via the **Settings** button on your dashboard.
+
+<Frame>
+  <img src="/images/creating-tests/test-settings-button.png" alt="Test Settings button on the dashboard" />
+</Frame>
+
+<Note>
+Test Settings control proctoring and test configuration only — they do not control quiz question settings.
+</Note>
+
+<Frame>
+  <img src="/images/creating-tests/settings-sections.png" alt="Overview of settings sections" />
+</Frame>
+
+## Main Settings
+
+- **Test Link** — copy the test link, view results, or archive the test
+- **Enable Timer** — activates time-related conditions
+- **Enable Proctor** — toggles proctoring functionality
+- **Enable Auto-resume** — allows candidates to resume closed tests
+- **Max Attempts** — limits test attempts per candidate
+- **Test Title** — names the test for your dashboard and for candidates
+
+## Timer Settings
+
+<Frame>
+  <img src="/images/creating-tests/timer-settings.png" alt="Timer settings configuration" />
+</Frame>
+
+- **Duration** — maximum time for a test attempt
+- **Auto-submit Test** — automatically submits when duration ends
+- **Can't Start Before** — earliest date/time candidates can begin
+- **Can't Start After** — latest date/time candidates can begin
+- **Must Submit By** — submission deadline
+- **Buffer Time** — grace period for demo and setup (defaults to 5 minutes if start/end times are set)
+
+<Warning>
+For non-Socratease quizzes, auto-submit only submits the proctoring, not the questions. Unanswered responses may be lost without manual submission.
+</Warning>
+
+## Proctoring Settings
+
+<Frame>
+  <img src="/images/creating-tests/proctoring-settings.png" alt="Proctoring settings" />
+</Frame>
+
+**Basic options:**
+- Tab Switching detection
+- Multiple Monitor detection
+- Camera monitoring
+- Microphone monitoring
+- Random photo capture
+- Full Screen enforcement
+- Desktop-only enforcement
+- Photo Before Test Start
+- Customize Message (Premium)
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Enhanced proctoring settings" />
+</Frame>
+
+**Enhanced options** (4 credits each):
+- ID Card Verification
+- Impersonation Detection
+- Auxiliary Device (360° proctoring)
+- Session Recording
+
+**Communication settings:**
+- Store evidence for later review
+- Inform candidates of violations during the test
+
+## Advanced Settings
+
+<Frame>
+  <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings" />
+</Frame>
+
+- **Login Providers** — Google, Microsoft, or Email
+- **Login Restrictions** — email-based filtering
+- **Google Sheets URL** — auto-export results
+- **Collaborators** — share test management access
+- **Unique URL per test taker** (Elite)
+- **Gather Additional Details** (Premium)
+- **Additional Instructions** (Elite)
+
+<Note>
+Timezone conversions are handled automatically. Maximum 10 custom information fields are allowed.
+</Note>

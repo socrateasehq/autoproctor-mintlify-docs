@@ -1,6 +1,61 @@
 ---
 title: "Using LaTeX for Math Equations"
-description: "Add mathematical equations using LaTeX syntax."
+description: "Add mathematical equations to your Socratease quizzes using LaTeX syntax."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+<Note>
+LaTeX equation support is exclusive to AutoProctor's **Socratease Quizzes**.
+</Note>
+
+## Why LaTeX?
+
+With platforms like Google Forms and similar tools, if you want to include a mathematical equation in an exam, you must either insert equation images or use simplified text notation (like `a^2` or `3/4`). This is cumbersome and difficult to read.
+
+**LaTeX is the global standard language used to write mathematical equations**, found in academic publications, textbooks, and research papers worldwide.
+
+## How to Use LaTeX
+
+To include a LaTeX equation in your quiz, enclose the equation between `\(` and `\)`.
+
+**Example:**
+
+```
+\(a^2 + b^2 = c^2\)
+```
+
+This renders as the familiar Pythagorean theorem: a squared plus b squared equals c squared.
+
+## What LaTeX Supports
+
+LaTeX can render any mathematical notation, including:
+
+- **Basic arithmetic**: `\(a + b = c\)`
+- **Exponents and subscripts**: `\(x^2\)`, `\(a_n\)`
+- **Fractions**: `\(\frac{a}{b}\)`
+- **Square roots**: `\(\sqrt{x}\)`
+- **Integrals**: `\(\int_0^1 x^2 dx\)`
+- **Summations**: `\(\sum_{i=1}^{n} i\)`
+- **Greek letters**: `\(\alpha, \beta, \gamma\)`
+- And any other advanced mathematical notation
+
+## Enabling LaTeX
+
+<Steps>
+  <Step title="Open Your Quiz">
+    Open your Socratease Quiz on AutoProctor.
+  </Step>
+  <Step title="Go to Settings">
+    Click the **Settings** icon.
+  </Step>
+  <Step title="Enable LaTeX Support">
+    Toggle on the **LaTeX Support** setting.
+  </Step>
+  <Step title="Write Equations">
+    Write your equations in question text using the `\(` and `\)` delimiters.
+  </Step>
+</Steps>
+
+## Try It Out
+
+You can see a sample quiz demonstrating LaTeX equation rendering at:
+[autoproctor.co/tests/ifvJRDE1qf/load/](https://www.autoproctor.co/tests/ifvJRDE1qf/load/)

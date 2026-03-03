@@ -1,6 +1,48 @@
 ---
 title: "Bulk Import Questions from Excel"
-description: "Import questions in bulk using an Excel spreadsheet."
+description: "Import multiple-choice questions from an Excel file into your Socratease quiz."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+<Note>
+Bulk Import is available to **Elite Plan** customers only.
+</Note>
+
+The Bulk Import feature allows you to import multiple-choice questions from an Excel file into Socratease Quizzes. This is useful when you have many questions in an Excel or Word format, or when multiple people are collaborating on a large question set.
+
+## How to Import Questions
+
+<Steps>
+  <Step title="Download the Template">
+    Download the Excel template from within the quiz editor. This template contains the required column headers and formatting.
+  </Step>
+  <Step title="Add Questions to the Excel File">
+    Fill in the template with your questions, answer choices, and correct answer indicators. See the column reference below for details.
+  </Step>
+  <Step title="Upload the Excel File">
+    Upload the completed Excel file to your quiz. The questions will be imported automatically.
+  </Step>
+</Steps>
+
+## Excel Template Column Reference
+
+| Column | Required | Description |
+|---|:---:|---|
+| **Question Type** | Yes | `MCQ` for single correct answer, or `MCA` for multiple correct answers |
+| **Question** | Yes | The question text |
+| **Opt1 -- Opt5** | No | Answer choices. Use only as many as needed (e.g., if you have 3 options, fill Opt1, Opt2, Opt3 and leave Opt4 and Opt5 blank) |
+| **CorrectAnsInd** | Yes | For MCQ: a single number indicating the correct option (e.g., `2` for Opt2). For MCA: comma-separated numbers without spaces (e.g., `2,3` for Opt2 and Opt3) |
+| **Markdown** | No | Enter `1` to format the question text as Markdown |
+| **Points** | No | Point value for a correct answer |
+| **Time (seconds)** | No | Time limit per question, in seconds |
+| **Image** | No | A direct URL to an image file (.jpg, .png, etc.) to display with the question |
+
+<Warning>
+The **Image** column requires a direct URL to the image file. Google Drive sharing links are **not** supported. Use a direct link that ends in a file extension like `.jpg` or `.png`.
+</Warning>
+
+## Tips
+
+- Fields marked with **Required: Yes** must be filled in for every question.
+- You can leave optional columns blank if they are not needed.
+- Make sure the column headers match the template exactly -- do not rename or reorder columns.
+- If you are importing a large number of questions, consider breaking them into smaller batches to make troubleshooting easier.

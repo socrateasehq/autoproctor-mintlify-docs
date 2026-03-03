@@ -1,6 +1,61 @@
 ---
 title: "Showing Results to Candidates"
-description: "Control what results candidates see after submission."
+description: "Control when and how candidates see their quiz scores and results in Socratease."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+You can control if and when candidates see their quiz scores and the correct answers. This is configured in the quiz settings.
+
+## Result Release Options
+
+There are four ways to release scores and results to candidates:
+
+### 1. Immediately, on Submission
+
+Candidates see their score immediately after they submit the quiz. For auto-evaluated questions (such as MCQ, MCA, etc.), they can also see the correct answers and whether they got each question right.
+
+### 2. When Individual Score is Released
+
+You can click on a button within each candidate's results to release the score and results to that specific candidate. This lets you review and release results one by one.
+
+### 3. When All Scores are Released
+
+You can release the scores for all candidates of the test at once. This is useful when you want everyone to see their results at the same time, such as after grading is complete.
+
+### 4. They Never See the Results
+
+Once candidates submit the quiz, they are told that they can close the tab. The results are never revealed to them.
+
+<Frame>
+  <img src="/images/socratease/result-release-options.png" alt="Result release options" />
+</Frame>
+
+## Hiding Questions and Answers from Candidate Report
+
+When results are visible to candidates (i.e., any option other than "never"), you can optionally choose to **hide the specific questions and answers** while still displaying the score. This means candidates can see their results, but not see the questions and answers.
+
+<Note>
+This option is unavailable when you select "They never see the results," since the candidate report is not shown at all in that case.
+</Note>
+
+<Frame>
+  <img src="/images/socratease/hide-questions-option.png" alt="Hide questions and answers option" />
+</Frame>
+
+## Candidate Access
+
+Candidates can view their attempted quizzes at [autoproctor.co/account/socratease-history/](https://www.autoproctor.co/account/socratease-history/). What they see depends on the score release status you have configured.
+
+## How to Set the Release Method
+
+<Steps>
+  <Step title="Open Quiz Settings">
+    Open the quiz that contains your questions and click the **Settings** icon.
+  </Step>
+  <Step title="Select Release Method">
+    Choose your preferred release method from the dropdown menu. The setting updates immediately.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/socratease/quiz-settings.png" alt="Quiz settings for result release" />
+</Frame>

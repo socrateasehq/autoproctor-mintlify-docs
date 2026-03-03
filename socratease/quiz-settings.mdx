@@ -1,6 +1,49 @@
 ---
 title: "Socratease Quiz Settings"
-description: "Configure settings specific to Socratease quizzes."
+description: "Configure your Socratease quiz with settings for display mode, result visibility, randomization, and more."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+Socratease has its own set of configurable settings, distinct from the general Timer and Proctor settings on AutoProctor. These settings control how the quiz behaves for your candidates.
+
+## Available Settings
+
+### 1. Question Display Mode
+
+Display questions one-by-one (with or without navigation) or all-at-once. This controls how candidates navigate through the quiz.
+
+For more details, see [Question Display Mode](/socratease/question-display-mode).
+
+### 2. Result Visibility
+
+Control when candidates see their scores and results:
+- **Immediately** after submission
+- **At your discretion** (release individually or all at once)
+- **Never** -- results are withheld entirely
+
+For more details, see [Showing Results to Candidates](/socratease/showing-results-to-candidates).
+
+### 3. Question Randomization
+
+Randomize the order of questions for each candidate. What Candidate 1 sees as Question 1 may be Question 10 to Candidate 2. This helps reduce the opportunity for candidates to share answers during a test.
+
+### 4. Choice Shuffling
+
+For MCQ and MCA type questions, you can randomize the order of answer options across candidates. This means even if two candidates see the same question, the choices will appear in a different order.
+
+### 5. Copy and Paste Restriction
+
+When enabled, candidates cannot copy the question text from the quiz. They also cannot paste text from a different tab or application into the quiz. This reduces reliance on external tools and AI assistants.
+
+### 6. Tab-Switch Auto-Submit
+
+Set the maximum number of tab switches permitted during the test. If a candidate exceeds this limit, their test is automatically submitted. This discourages candidates from switching to other tabs to look up answers.
+
+### 7. Custom Instructions
+
+Add general test guidance that is displayed to candidates before they start the quiz. This is available only when using the **all-at-once** question display mode.
+
+### 8. LaTeX Support
+
+If you want to include mathematical equations, write them using LaTeX syntax and they are automatically rendered as formatted equations. Enable this setting to activate LaTeX rendering in your quiz.
+
+For more details, see [Using LaTeX for Math Equations](/socratease/latex-math-equations).

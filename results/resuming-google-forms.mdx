@@ -1,6 +1,34 @@
 ---
 title: "Resuming Google Forms Tests"
-description: "Resume tests that use Google Forms."
+description: "Configure whether candidates can resume Google Forms tests after closing them mid-attempt."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+This guide explains how to manage test resumption settings when candidates close Google Forms tests mid-attempt.
+
+<Note>
+The default setting on Google Forms is that the Autosave feature is enabled. The default setting on AutoProctor for Google Forms tests is that Resume Unsubmitted Attempts is enabled.
+</Note>
+
+## To allow test resumption
+
+If you want candidates to be able to resume their test after closing it:
+
+1. Keep the **Disable Autosave** feature **OFF** in Google Forms
+
+   ![Autosave enabled](/images/results/gforms-autosave-enabled.png)
+
+2. Enable the **Enable Auto-resume** setting in AutoProctor test settings
+
+   ![Auto-resume enabled](/images/results/gforms-autoresume-enabled.png)
+
+## To prevent test resumption
+
+If you want each visit to create a new attempt:
+
+1. Turn **ON** the **Disable Autosave** feature for Google Forms
+
+   ![Autosave disabled](/images/results/gforms-autosave-disabled.png)
+
+2. Disable **Resume Unsubmitted Test** in AutoProctor settings
+
+   ![Auto-resume disabled](/images/results/gforms-autoresume-disabled.png)

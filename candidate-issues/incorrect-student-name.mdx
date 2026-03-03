@@ -1,6 +1,31 @@
 ---
 title: "Incorrect Student Name in Results"
-description: "Fix student names showing incorrectly in results or Excel exports."
+description: "Fix incorrect student names showing in the results page or Excel export."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor does not request name input from users directly. If a student's name appears incorrectly on results, it is because of one of the following reasons:
+
+1. The name they have chosen on their Google Account is wrong.
+2. They have used the wrong email ID while attempting the test.
+
+<img src="/images/candidate-issues/incorrect-student-name.png" alt="Example of incorrect student name in AutoProctor results" />
+
+## How to fix it
+
+To correct the name in reports, the student must update their profile on AutoProctor. Once they modify their name, the change automatically reflects across all reports.
+
+<Steps>
+  <Step title="Identify the student's email">
+    Find the email address associated with the student's test attempt in the results page.
+  </Step>
+  <Step title="Direct the student to update their profile">
+    Have the student navigate to [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) and update their name.
+  </Step>
+  <Step title="Changes sync automatically">
+    Once the student updates their name on their profile, the change will automatically be reflected across all existing test reports.
+  </Step>
+</Steps>
+
+<Note>
+For example, if a report shows "Cedric Daniels" but the correct name is "Jimmy McNulty" for the account jimmy@thewire.com, the student needs to visit the profile edit page and update their name. The change will then appear on all reports automatically.
+</Note>

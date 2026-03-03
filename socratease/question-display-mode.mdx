@@ -1,6 +1,40 @@
 ---
 title: "Question Display Mode"
-description: "Choose how questions are displayed to candidates."
+description: "Control how questions are displayed to candidates -- all at once, one-by-one with navigation, or one-by-one without navigation."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+The Question Display Mode setting in Socratease Quizzes controls how questions appear to test takers. There are three display options available.
+
+## Display Modes
+
+### 1. All-at-once (Google Forms style)
+
+Candidates see all the questions at the same time, one below the other, like a Google Form. The timer applies to the **entire test**.
+
+### 2. One-by-one with navigation (Typeform style)
+
+Candidates see one question at a time, and can navigate back-and-forth between questions. The timer applies to the **entire test**, not to individual questions.
+
+### 3. One-by-one without navigation
+
+Candidates see one question at a time. Once they submit a question (by attempting or skipping it), they **CANNOT go back to it**. The timer is set **per question**, not for the entire test.
+
+<Frame>
+  <img src="/images/socratease/question-display-mode.png" alt="Question display mode settings" />
+</Frame>
+
+## Key Differences
+
+| Feature | All-at-once | One-by-one with nav | One-by-one without nav |
+|---|:---:|:---:|:---:|
+| Timer scope | Entire test | Entire test | Per question |
+| Can go back | Yes | Yes | No |
+| Custom instructions | Yes | No | No |
+
+## When to Use One-by-one Without Navigation
+
+The no-navigation option is especially useful for security purposes. This gives the test taker less time to cheat on a question, as at any given time, they can view only one question, for a limited amount of time.
+
+<Warning>
+When using **one-by-one without navigation**, certain test-level timer settings become unavailable. The **Duration** and **Must Submit By** parameters shift to the question level, and the **Auto-Submit** function applies automatically when the per-question time expires.
+</Warning>

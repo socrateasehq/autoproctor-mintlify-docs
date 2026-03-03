@@ -1,6 +1,22 @@
 ---
-title: "No Face or Multiple Faces Detected"
-description: "Why face detection may be inaccurate and how to fix it."
+title: "No Face or Multiple Faces Detected Incorrectly"
+description: "Understand why AutoProctor's AI may incorrectly report face detection violations and how to interpret these results."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor uses AI for face detection, and **AI gets it wrong sometimes**. You may see "No Face Detected" or "Multiple Faces Detected" violations in a report even though the evidence clearly shows only one face. This is because AI isn't 100% accurate.
+
+## Why does this happen?
+
+Our AI models are trained on thousands of faces, but they may fail when confronted with scenarios unlike their training data. The three most common reasons for incorrect face detection are:
+
+1. **Complex backgrounds** -- Colorful or busy background elements can confuse the AI algorithms into thinking there are additional faces or no face at all.
+2. **Head positioning** -- Candidates looking away from the screen or looking downward rather than directly at the camera can cause the AI to miss their face.
+3. **Reflective eyewear** -- Glasses that reflect light or obscure the eyes can make it difficult for the detection system to identify a face.
+
+## How should you interpret these violations?
+
+AutoProctor provides evidence (photos) alongside violations specifically so that you can independently verify the AI's determinations. The AI is a helpful tool, but it is not infallible.
+
+<Warning>
+Always review the full report and the provided evidence before concluding whether a candidate cheated. Do not rely solely on automated Trust Scores -- use them as a guide alongside the evidence.
+</Warning>

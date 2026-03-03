@@ -1,6 +1,29 @@
 ---
-title: "IFrame Query Arguments"
-description: "How to add query arguments to IFrames on AutoProctor."
+title: "How to Add Query Arguments to IFrames"
+description: "Append query parameters to iframe URLs in AutoProctor's Advanced Settings."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+You can add query parameters to your iframe URLs through AutoProctor's **Advanced Settings** to customize how embedded content is displayed.
+
+## How It Works
+
+If your original URL is:
+```
+www.website.com
+```
+
+And you want to add parameters to make it:
+```
+www.website.com?key1=val1&key2=val2
+```
+
+Enter the following in the **Query Arguments** field:
+```
+key1=val1&key2=val2
+```
+
+AutoProctor automatically constructs the complete URL with your parameters.
+
+## Example: Changing Language
+
+To render a Google Form in English, add `hl=en` to the Query Arguments field. For French, use `hl=fr`.

@@ -1,6 +1,37 @@
 ---
 title: "Missing Violation Evidence"
-description: "Why some violations show without evidence."
+description: "Learn why some violations in the proctoring report may not have associated evidence files."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+Each test attempt has a maximum number of evidence files it can store. If some violations have missing evidence files, the total number of violations exceeded this maximum number.
+
+## Understanding violations vs. evidence
+
+<CardGroup cols={2}>
+  <Card title="Violation">
+    An event that AutoProctor detects which is anomalous. For example, if there is no face being detected on the camera feed, or if a test taker switches to a different tab.
+  </Card>
+  <Card title="Evidence">
+    Supporting documentation of the violation. For example, a photo of the camera feed when no face was detected, or a screenshot of the tab the test taker visited when they switched the tab.
+  </Card>
+</CardGroup>
+
+The Trust Score is calculated on the basis of the (i) type, (ii) frequency, and (iii) duration of violations. The evidence files are made available in the Proctoring Report so that the test administrator can review what may have happened.
+
+## Three reasons for missing evidence
+
+### 1. Not enough storage URLs (most common)
+
+When a test starts, AutoProctor allocates a fixed number of storage URLs for evidence. Once this capacity is reached, the system randomly decides whether to overwrite existing evidence or skip storing new evidence (50% probability each).
+
+<Note>
+The Trust Score depends on violations, not on whether evidence is stored. All violations are tracked and affect the Trust Score even when evidence files are not available.
+</Note>
+
+### 2. Device or internet issues
+
+The candidate's device or internet connection may have prevented the screenshot from being captured or transmitted to AutoProctor's servers.
+
+### 3. Test's proctoring settings
+
+The test administrator may have disabled evidence storage through the test's proctoring configuration settings.

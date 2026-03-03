@@ -1,6 +1,22 @@
 ---
 title: "Missing Images and Recordings"
-description: "Fix missing media in student test reports."
+description: "Understand why images or audio recordings may not appear in a student's test report despite violations being listed."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+If you can see violations listed in a student's test report but cannot see the supporting evidence (images or audio recordings), there are two possible scenarios.
+
+## Scenario 1: No images or recordings at all
+
+If no images or recordings appear at all despite violations being listed, the "Me after the test" recording feature was likely disabled in the test settings.
+
+<Note>
+Check your test's proctoring settings to ensure evidence recording is enabled. See [AutoProctor Test Settings](/creating-tests/test-settings) for more information about the different settings and what they mean.
+</Note>
+
+## Scenario 2: Some violations have evidence, others don't
+
+If some violations show evidence files while others don't, this is expected behavior. AutoProctor stores a fixed number (around 20) of images and audio files per test attempt.
+
+<Warning>
+**ALL violations are tracked and affect the Trust Score**, even when evidence files are not stored for viewing. The evidence files are a subset -- they exist so that administrators can review what happened, but the Trust Score calculation considers every detected violation regardless of whether evidence was stored.
+</Warning>

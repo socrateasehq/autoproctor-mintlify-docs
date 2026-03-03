@@ -1,6 +1,42 @@
 ---
 title: "Inviting Candidates via Email"
-description: "Send test invitations to candidates by email."
+description: "Generate unique invitation links tied to specific email addresses for controlled test access."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+<Note>
+This feature is available only on the **Elite Plan** and works exclusively with **Socratease Quizzes** and **IFrame Tests**. It is not compatible with Google Forms or Microsoft Forms, as those require Login with Google/Microsoft.
+</Note>
+
+## How it works
+
+This feature enables controlled test access by generating unique invitation links tied to specific email addresses. When candidates access their unique link, the system sends a one-time verification code to their associated email address before test access is granted.
+
+## Setup process
+
+<Steps>
+  <Step title="Enable Unique URL">
+    Enable the **Unique URL** option within your test settings.
+  </Step>
+  <Step title="Upload email IDs">
+    Upload email IDs via a CSV file. You can upload a maximum of 1,000 email IDs at once.
+  </Step>
+  <Step title="Get the generated links">
+    You will receive a text output containing email IDs and their corresponding test links as columns.
+  </Step>
+  <Step title="Format the data">
+    Paste the data into a spreadsheet, splitting on the comma separator to organize email addresses and links into columns.
+  </Step>
+  <Step title="Distribute links">
+    Send the unique links to your candidates via your preferred method.
+  </Step>
+</Steps>
+
+## Important limitations
+
+- **Direct URL disabled** -- Once you enable this feature, the direct (common) URL is no longer valid. Only the unique per-candidate URLs will work.
+- **No revocation** -- It is currently not possible to invalidate sent invitations.
+- **No free trial** -- Testing this feature before purchasing the Elite Plan is not available.
+
+## Bulk email service
+
+For large-scale campaigns exceeding 5,000 candidates, AutoProctor offers an email distribution service at $100 per 5,000 messages. This requires sufficient account balance and submission of CSV and email content.

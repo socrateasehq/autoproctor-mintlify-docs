@@ -1,6 +1,18 @@
 ---
-title: "Restricting Tests by Email ID"
-description: "Limit test access to specific email addresses."
+title: "Restricting the Test Based on Email ID"
+description: "Limit test access to specific email domains or individual email addresses using Login Restrictions."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+You can control who takes your tests by restricting access based on email criteria. This is done through the **Login Restrictions** section in **Advanced Settings**.
+
+## Domain-based restrictions
+
+You can set restrictions to allow only email addresses ending with specific domains. For example, you can restrict access to only users with `@abc.com` and `@xyz.com` email addresses.
+
+![Login restrictions by domain](/images/results/login-restrictions-domain.png)
+
+## Specific email restrictions
+
+Beyond domain limitations, you can also permit individual email addresses. This allows you to combine domain-level and individual-level restrictions. For example, you can allow all users whose email ends with `@abc.com` as well as specific individual email addresses.
+
+![Login restrictions with specific email IDs](/images/results/login-restrictions-email.png)

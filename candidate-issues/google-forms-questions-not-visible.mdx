@@ -1,6 +1,20 @@
 ---
-title: "Cannot See Google Forms Questions"
-description: "Fix issues where Google Forms questions do not appear."
+title: "Cannot See Questions on Google Forms"
+description: "Understand why questions may not be visible on a Google Form loaded through AutoProctor."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor works by loading a Google Form on its own site. So, if the Google Form doesn't load properly for some reason, whatever error message Google Forms shows, the same will be shown on the AutoProctor site too.
+
+## Example: Access restricted
+
+For example, as you see in the image below, AutoProctor has loaded a Form but the Form is complaining that only users in the organisation can view it. This means that either you must log in with the right email ID or the person who created the form must allow others to access it.
+
+<img src="/images/candidate-issues/google-forms-access-restricted.png" alt="Google Form showing access restriction message on AutoProctor" />
+
+## Why can't AutoProctor fix this?
+
+Due to privacy reasons, Google doesn't allow AutoProctor to know what is inside the form. So, if you face an error like this, we will not be able to tell you why the error is being caused. You will have to contact the person who created the form. There is nothing we can do from our end to fix it.
+
+<Note>
+AutoProctor can only ensure that a Google Form loads successfully. The message or content inside the Form cannot be controlled by AutoProctor. So, if you face issues there, you must contact your teacher or the Form creator.
+</Note>

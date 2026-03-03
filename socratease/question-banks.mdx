@@ -1,6 +1,54 @@
 ---
 title: "Question Banks"
-description: "Organize and reuse questions with question banks."
+description: "Create large pools of questions and serve randomized subsets to candidates using Question Banks."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+<Note>
+Question Banks are an **Elite** feature. You need an Elite plan to use Question Banks and Question Bank Quizzes.
+</Note>
+
+## What are Question Banks?
+
+Question Banks are a large pool of questions. Candidates will see a random subset of the questions, based on the Question Bank chosen and difficulty level. This makes each candidate's test unique, reducing the chance of cheating.
+
+## How Question Banks Work
+
+A Question Bank (QB) is a collection of questions organized by subject or topic. Each question in the bank can have a different point value and difficulty level.
+
+<Frame>
+  <img src="/images/socratease/question-bank-overview.png" alt="Question Bank overview" />
+</Frame>
+
+### Example: Physics and Chemistry Tests
+
+Imagine you have two Question Banks:
+- **Physics Question Bank** -- 100 questions
+- **Chemistry Question Bank** -- 100 questions
+
+You can create different quizzes that draw from these banks with different weightings:
+
+- **Physics Major Quiz**: 40 two-point physics questions + 10 one-point chemistry questions
+- **Chemistry Major Quiz**: 40 two-point chemistry questions + 10 one-point physics questions
+
+Each candidate receives a different random subset of questions from the respective banks, but the overall structure (number of questions, points, difficulty distribution) remains consistent.
+
+<Frame>
+  <img src="/images/socratease/question-bank-example.png" alt="Question Bank example with Physics and Chemistry" />
+</Frame>
+
+## Question Bank Quizzes (QBQ)
+
+Your candidates cannot attempt a Question Bank directly. You must create a **Question Bank Quiz (QBQ)** and add it to an AutoProctor test.
+
+A Question Bank Quiz specifies:
+- Which Question Banks to draw questions from
+- How many questions to include from each bank
+- The difficulty levels to include
+
+<Frame>
+  <img src="/images/socratease/question-bank-quiz-config.png" alt="Question Bank Quiz configuration" />
+</Frame>
+
+<Warning>
+Candidates cannot attempt a Question Bank directly. You must create a Question Bank Quiz and add it to an AutoProctor test for candidates to take.
+</Warning>

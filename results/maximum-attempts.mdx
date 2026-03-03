@@ -1,6 +1,27 @@
 ---
 title: "Maximum Attempts for a Test"
-description: "Set and manage the number of allowed test attempts."
+description: "Configure how many times candidates can attempt a test on AutoProctor."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+The **Max Attempts** setting in AutoProctor's **Main Settings** allows you to limit how many times candidates can take a test. When a candidate exceeds this limit, they receive a notification blocking further attempts.
+
+![Maximum number of attempts setting](/images/results/max-attempts-setting.png)
+
+When a candidate tries to exceed their allowed attempts, they see a restriction message:
+
+![Candidate blocked message](/images/results/max-attempts-blocked.png)
+
+## Recommended configuration
+
+<Note>
+For Google Forms and Socratease Quizzes, set **Max Attempts to 1**. AutoProctor automatically resumes these tests if candidates reload the page or revisit the link, so multiple attempts are not needed for resumption.
+</Note>
+
+## How attempts are tracked
+
+The system tracks attempts per AutoProctor account email address. Be aware of the following:
+
+- If someone logs in with different email addresses, each is treated as a separate candidate account, bypassing attempt restrictions.
+- Multiple submissions from one email typically occur when candidates use different login methods (such as "Sign in with Google" versus "Sign in with Email").
+
+To prevent this, restrict the login method to a single option. See [Candidate Login Methods](/results/candidate-login-methods) for more details.

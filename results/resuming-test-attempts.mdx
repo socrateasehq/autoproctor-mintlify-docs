@@ -1,6 +1,41 @@
 ---
 title: "Resuming Test Attempts"
-description: "How candidates can resume interrupted tests."
+description: "Understand how AutoProctor handles test resumption when candidates disconnect or leave mid-test."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor typically creates a new test attempt each time a test taker opens a test link. However, when a test taker leaves mid-test and returns later, the system must decide whether to resume the previous attempt or create a new one.
+
+## Resume behavior by test type
+
+| Test Type | Resume Behavior |
+|---|---|
+| Socratease Quiz | Always resumes -- loads previous responses automatically |
+| Microsoft Form | Never resumes -- creates a new attempt each time |
+| Google Form | Configurable (see below) |
+| IFrame Test | Configurable (see below) |
+
+## Configuring the resume feature
+
+For Google Forms and IFrame tests, you can toggle the **Enable Auto Resume** option in your test settings.
+
+![Enable Auto Resume setting](/images/results/enable-auto-resume.png)
+
+<Note>
+For Google Forms, you must also enable the **Save Draft** setting for resume functionality to work properly.
+</Note>
+
+## How timers interact with resumption
+
+If you have timer settings configured, they affect how resumption works:
+
+### Test duration
+
+The remaining time from the original attempt applies. For example, if a 60-minute test starts at 10:00 AM and the candidate disconnects at 10:30 AM, resuming at 10:50 AM gives them only 10 minutes remaining. Once the full duration expires, the test can no longer be resumed.
+
+### Cannot start before / Cannot start after
+
+These constraints apply to the original start time, not the reconnection time. A candidate who started before the deadline can still resume after it, as long as the test duration has not expired.
+
+### Must submit by
+
+This deadline is strictly enforced at reconnection time. If the "must submit by" deadline has passed before the candidate tries to resume, the test will not load -- even if they originally started before the deadline.

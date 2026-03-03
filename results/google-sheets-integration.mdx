@@ -1,6 +1,42 @@
 ---
-title: "Google Sheets Integration"
-description: "Automatically write test results to Google Sheets."
+title: "Automatically Write Test Results to Google Sheets"
+description: "Set up automatic export of AutoProctor test results to Google Sheets instead of manually downloading Excel files."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+<Note>
+This is a **Premium Feature** and requires a Premium or Elite subscription.
+</Note>
+
+Instead of manually downloading Excel files, you can configure AutoProctor to automatically write test results to a Google Sheet.
+
+## Setup instructions
+
+<Steps>
+  <Step title="Open test settings">
+    Visit the **Test Settings** for a new or existing test.
+  </Step>
+  <Step title="Find the Google Sheets ID field">
+    Scroll down to the **Advanced Settings** section where it says **Google Sheets ID**.
+  </Step>
+  <Step title="Create a blank Google Sheet">
+    Create an empty Google Sheet on your Google Drive.
+  </Step>
+  <Step title="Grant write access">
+    Share the Google Sheet with `hello@autoproctor.co` and grant it **Editor** permissions so AutoProctor can write data to the sheet.
+  </Step>
+  <Step title="Paste the Google Sheet URL">
+    Copy the URL of the Google Sheet and paste it into the **Google Sheets ID** field in AutoProctor's Test Settings.
+  </Step>
+  <Step title="Save the test">
+    Click **Create** or **Update** to save your test configuration.
+  </Step>
+  <Step title="Verify the integration">
+    Complete a test attempt. A new sheet labeled **AutoProctor** will automatically appear in your Google Sheet with the results data.
+  </Step>
+</Steps>
+
+Subsequent test attempts will automatically populate the same Google Sheet without requiring any additional setup.
+
+## Socratease Quiz integration
+
+For Socratease Quiz integrations, the system writes both proctoring scores and quiz scores to the sheet. However, individual questions and answers are not included -- only aggregate scoring is displayed.

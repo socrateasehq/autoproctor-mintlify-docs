@@ -1,6 +1,45 @@
 ---
-title: "Concurrency: Maximum Simultaneous Candidates"
-description: "Understand limits on simultaneous test takers."
+title: "Concurrency - Maximum Simultaneous Candidates"
+description: "Understand AutoProctor's concurrency limits and how many test-takers can start exams simultaneously."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+## What is max concurrency?
+
+Max concurrency is the number of candidates who can start any test under your account within the same 60-second window. The limit is calculated per billing account across all tests, not individually per test.
+
+## Concurrency limits
+
+### Tests on AutoProctor website with proctoring enabled
+
+| Plan | Max Concurrency |
+|---|---|
+| Standard | 1,000 candidates/minute |
+| Premium | 2,000 candidates/minute |
+| Elite | 5,000 candidates/minute |
+
+### Tests on AutoProctor website without proctoring
+
+| Plan | Max Concurrency |
+|---|---|
+| Standard | 50 candidates/minute |
+| Premium | 100 candidates/minute |
+| Elite | 150 candidates/minute |
+
+## Automated staggering
+
+When demand exceeds your plan's capacity, the system automatically staggers candidate entry. Candidates who exceed the limit see a button with a countdown of up to 60 seconds before gaining access.
+
+<Note>
+If a test duration is set, the candidate's end time is automatically adjusted to ensure no time is lost due to staggering.
+</Note>
+
+## SDK users
+
+If you are using AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. You must handle rate-limiting independently in your implementation.
+
+## Increasing your limits
+
+If you need higher concurrency limits:
+
+- **Temporary increase** -- Approximately $500 per 500 candidates/minute increment (one-time fee)
+- **Permanent increase** -- Approximately $2,500 per month per 500 candidates/minute increment (annual commitment required)

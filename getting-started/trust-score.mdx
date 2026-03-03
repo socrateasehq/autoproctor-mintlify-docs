@@ -1,6 +1,38 @@
 ---
 title: "Trust Score"
-description: "Understand what the Trust Score is, how it is calculated, and what makes a good score."
+description: "What the Trust Score is, how it's calculated, and what constitutes a good score."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+AutoProctor displays a Trust Score (0–100%) on each proctoring report.
+
+<Frame>
+  <img src="/images/getting-started/trustscore.png" alt="Trust Score display in AutoProctor report" />
+</Frame>
+
+The lower the trust score, the more likely AutoProctor thinks the candidate cheated on the test.
+
+<Warning>
+You **must** review the supporting evidence before making any conclusions. **DO NOT** rely solely on the Trust Score — always review the actual evidence to determine if cheating occurred.
+</Warning>
+
+## How Is the Trust Score Calculated?
+
+AutoProctor monitors candidates in real-time across multiple channels (depending on your settings):
+
+- Camera feed
+- Microphone feed
+- Screen activity
+
+The algorithm evaluates violations based on three factors:
+
+1. **Type of violation** — tab switching is weighted more heavily than noise detection
+2. **Frequency of violations** — 10 incidents scores lower than 5
+3. **Duration of violations** — extended violations have a greater impact
+
+## What Is a Good Trust Score?
+
+As a general guideline, if the Trust Score is **lower than 85%**, you may want to review the evidence. However, this is a threshold for review, not proof of misconduct.
+
+<Note>
+Environmental factors significantly impact scoring. For example, ambient noise from traffic could lower scores to 0% despite no actual cheating occurring.
+</Note>

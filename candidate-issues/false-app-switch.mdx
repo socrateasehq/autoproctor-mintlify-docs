@@ -1,6 +1,16 @@
 ---
-title: "False App Switch Detection"
-description: "Why switched to different application may show incorrectly."
+title: "False 'Switched to Different Application' in Report"
+description: "Why the 'Switched to different application' violation may appear falsely and why it does not affect your Trust Score on real tests."
 ---
 
-{/* TODO: Migrate content from Crisp helpdesk */}
+You may notice a "Switched to different application" violation appearing in the report, particularly when using demo tests. This can noticeably impact Trust Scores on brief tests that last only a few seconds.
+
+## Don't worry about this event
+
+An actual test lasts at least several minutes, and even if the AutoProctor system falsely detects a "Switched to different application" event, **it will not affect your Trust Score**.
+
+The reason this may appear on demo tests is because demo tests are very short (only a few seconds), so even a single false detection can have a noticeable impact on the Trust Score. On real tests that last several minutes or longer, a single false detection has a negligible effect.
+
+<Note>
+If you see this violation on a demo test, don't worry about it. On actual tests, this will not have any meaningful impact on the Trust Score.
+</Note>
