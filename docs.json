@@ -1,68 +1,124 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "AutoProctor Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/what-gets-tracked",
+              "getting-started/device-compatibility",
+              "getting-started/faqs",
+              "getting-started/trust-score",
+              "getting-started/instructions-page-for-candidates",
+              "getting-started/booking-a-demo",
+              "getting-started/video-recording",
+              "getting-started/contact-us"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Creating Tests",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "creating-tests/test-settings",
+              "creating-tests/quiz-providers",
+              "creating-tests/adding-collaborators",
+              "creating-tests/archiving-and-deleting-tests",
+              "creating-tests/iframe-query-arguments",
+              "creating-tests/add-on-error"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Socratease Quizzes",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "socratease/why-socratease",
+              "socratease/creating-a-quiz",
+              "socratease/question-types",
+              "socratease/question-type-availability",
+              "socratease/quiz-settings",
+              "socratease/showing-results-to-candidates",
+              "socratease/question-banks",
+              "socratease/bulk-import-from-excel",
+              "socratease/question-display-mode",
+              "socratease/using-tags",
+              "socratease/latex-math-equations"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Taking Tests",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "taking-tests/proctored-test-instructions",
+              "taking-tests/timed-test-instructions",
+              "taking-tests/proctored-socratease-instructions",
+              "taking-tests/timed-socratease-instructions",
+              "taking-tests/submit-button",
+              "taking-tests/candidate-login-methods",
+              "taking-tests/how-to-logout",
+              "taking-tests/why-equip-for-hiring"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Results & Reports",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "results/how-to-see-results",
+              "results/proctoring-results",
+              "results/individual-submissions",
+              "results/export-to-excel",
+              "results/google-sheets-integration",
+              "results/sharing-test-results",
+              "results/restricting-by-email",
+              "results/restricting-to-some-users",
+              "results/candidate-login-methods",
+              "results/inviting-candidates-via-email",
+              "results/maximum-attempts",
+              "results/concurrency",
+              "results/resuming-test-attempts",
+              "results/resuming-google-forms",
+              "results/unsubmitted-tests",
+              "results/things-you-need-to-know",
+              "results/best-practices-for-teachers"
+            ]
+          },
+          {
+            "group": "Candidate Issues",
+            "pages": [
+              "candidate-issues/loading-screen",
+              "candidate-issues/blank-page-grey-screen",
+              "candidate-issues/slow-and-laggy",
+              "candidate-issues/cannot-click-answer",
+              "candidate-issues/google-forms-questions-not-visible",
+              "candidate-issues/google-forms-response-not-visible",
+              "candidate-issues/false-app-switch",
+              "candidate-issues/no-face-or-multiple-faces",
+              "candidate-issues/missing-violation-evidence",
+              "candidate-issues/missing-random-photos",
+              "candidate-issues/missing-images-and-recordings",
+              "candidate-issues/went-offline-meaning",
+              "candidate-issues/incorrect-student-name"
+            ]
+          },
+          {
+            "group": "Pricing & Account",
+            "pages": [
+              "pricing/payments-and-credits",
+              "pricing/teams",
+              "pricing/elite-features",
+              "pricing/one-time-subscription",
+              "pricing/cancel-subscription",
+              "pricing/purchased-packs-not-visible",
+              "pricing/track-test-pack-usage",
+              "pricing/invoices",
+              "pricing/billing-information"
             ]
           }
         ]
@@ -71,14 +127,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "AutoProctor",
+          "href": "https://www.autoproctor.co",
+          "icon": "globe"
         }
       ]
     }
@@ -91,32 +142,19 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@autoproctor.co"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Go to AutoProctor",
+      "href": "https://www.autoproctor.co"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/autoproctor",
+      "linkedin": "https://linkedin.com/company/autoproctor"
     }
   }
 }
