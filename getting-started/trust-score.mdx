@@ -1,23 +1,23 @@
 ---
 title: "Trust Score"
-description: "What the Trust Score is, how it's calculated, and what constitutes a good score."
+description: "Understand how AutoProctor's Trust Score works, how it is calculated, and what constitutes a good score."
 ---
 
-AutoProctor displays a Trust Score (0–100%) on each proctoring report.
+AutoProctor assigns a Trust Score (0–100%) to each proctoring report. The score provides a quick summary of how likely it is that a candidate maintained test integrity.
 
 <Frame>
-  <img src="/images/getting-started/trustscore.png" alt="Trust Score display in AutoProctor report" />
+  <img src="/images/getting-started/trustscore.png" alt="Trust Score display in an AutoProctor proctoring report" />
 </Frame>
 
-The lower the trust score, the more likely AutoProctor thinks the candidate cheated on the test.
+The lower the Trust Score, the more likely AutoProctor detected suspicious behavior during the test.
 
 <Warning>
-You **must** review the supporting evidence before making any conclusions. **DO NOT** rely solely on the Trust Score — always review the actual evidence to determine if cheating occurred.
+Always review the supporting evidence before drawing conclusions. **Do not** rely solely on the Trust Score — review the actual violation evidence to determine whether misconduct occurred.
 </Warning>
 
-## How Is the Trust Score Calculated?
+## How the Trust Score Is Calculated
 
-AutoProctor monitors candidates in real-time across multiple channels (depending on your settings):
+AutoProctor monitors candidates in real-time across multiple channels (depending on your test settings):
 
 - Camera feed
 - Microphone feed
@@ -26,13 +26,20 @@ AutoProctor monitors candidates in real-time across multiple channels (depending
 The algorithm evaluates violations based on three factors:
 
 1. **Type of violation** — tab switching is weighted more heavily than noise detection
-2. **Frequency of violations** — 10 incidents scores lower than 5
-3. **Duration of violations** — extended violations have a greater impact
+2. **Frequency of violations** — more incidents result in a lower score
+3. **Duration of violations** — extended violations have a greater impact than brief ones
 
 ## What Is a Good Trust Score?
 
-As a general guideline, if the Trust Score is **lower than 85%**, you may want to review the evidence. However, this is a threshold for review, not proof of misconduct.
+As a general guideline, review the evidence for any candidate with a Trust Score **below 85%**. This threshold is meant for review, not as proof of misconduct.
 
 <Note>
-Environmental factors significantly impact scoring. For example, ambient noise from traffic could lower scores to 0% despite no actual cheating occurring.
+Environmental factors can significantly impact scoring. For example, ambient noise from traffic could lower a score to 0% even when no actual cheating occurred.
 </Note>
+
+## Related Resources
+
+- [What Gets Tracked](/getting-started/what-gets-tracked) — All monitoring capabilities available
+- [Proctoring Results](/results/proctoring-results) — How to view violation evidence and reports
+- [No Face or Multiple Faces Detected](/candidate-issues/no-face-or-multiple-faces) — Why face detection may flag false positives
+- [False App Switch Violation](/candidate-issues/false-app-switch) — Understanding false violation flags

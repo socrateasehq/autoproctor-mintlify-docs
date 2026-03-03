@@ -1,31 +1,42 @@
 ---
-title: "What Gets Tracked and Recorded During Proctoring?"
-description: "Learn about the data feeds, detection capabilities, and recording features available in AutoProctor's proctoring system."
+title: "What Gets Tracked During Proctoring"
+description: "Learn about the data feeds, detection capabilities, and evidence recording available in AutoProctor's proctoring system."
 ---
 
-AutoProctor's proctoring settings are highly configurable, allowing test creators to determine which aspects of the exam environment require tracking.
+AutoProctor's proctoring settings are highly configurable, allowing you to determine exactly which aspects of the exam environment require monitoring. Rather than recording full video sessions, AutoProctor detects violations and captures evidence only when something is flagged.
 
 ## Data Feeds
 
-AutoProctor can access the following feeds on the test-taking device:
+AutoProctor can access the following feeds on the candidate's device:
 
 - **Camera feed** — monitors the candidate's face and surroundings
 - **Microphone feed** — detects background noise and audio cues
 - **Screen share feed** — captures screen activity during the test
 - **Auxiliary device camera feed** — monitors via a paired secondary device (e.g., phone)
 
-## What We Detect and Record
+## What AutoProctor Detects and Records
 
-Unlike traditional proctoring platforms that record full video/audio sessions, AutoProctor detects violations and shows you evidence of only those violations — so you don't spend hours reviewing each candidate's attempt.
+Unlike traditional proctoring platforms that record full video and audio sessions, AutoProctor detects violations and shows you evidence of only those violations — so you do not spend hours reviewing each candidate's attempt.
 
-Our tracking capabilities include:
+Tracking capabilities include:
 
-- **Background audio detection** — recording noise and audio cues
-- **Face detection** — capturing photos when no face or multiple faces are detected
-- **Tab/app switching** — capturing screenshots when candidates switch tabs or applications
-- **Random photos** — taking photos at random intervals throughout the exam
-- **Multiple monitor detection** — identifying when additional screens are connected
-- **Pre-test face capture** — taking a candidate's photo before the test starts
-- **Full-screen enforcement** — ensuring the test runs in full-screen mode
-- **Session action recording** — logging mouse clicks and keyboard activity
-- **Auxiliary device pairing** — monitoring via a paired phone to detect keyboard usage
+- **Background audio detection** — records noise and audio cues
+- **Face detection** — captures photos when no face or multiple faces are detected
+- **Tab/app switching** — captures screenshots when candidates switch tabs or applications
+- **Random photos** — takes photos at random intervals throughout the exam
+- **Multiple monitor detection** — identifies when additional screens are connected
+- **Pre-test face capture** — takes a candidate's photo before the test starts
+- **Full-screen enforcement** — ensures the test runs in full-screen mode
+- **Session action recording** — logs mouse clicks and keyboard activity
+- **Auxiliary device pairing** — monitors via a paired phone to detect keyboard usage
+
+<Note>
+All tracking features are configurable per test. Enable only what you need in your [test settings](/creating-tests/test-settings).
+</Note>
+
+## Related Resources
+
+- [Trust Score](/getting-started/trust-score) — How AutoProctor scores candidate integrity
+- [Test Settings](/creating-tests/test-settings) — Configure which proctoring features to enable
+- [Proctoring Results](/results/proctoring-results) — View violation evidence and reports
+- [Video Recording](/getting-started/video-recording) — Why AutoProctor does not record full video

@@ -1,9 +1,9 @@
 ---
-title: "How to Add Query Arguments to IFrames"
-description: "Append query parameters to iframe URLs in AutoProctor's Advanced Settings."
+title: "IFrame Query Arguments"
+description: "Append query parameters to iframe URLs in AutoProctor's Advanced Settings to customize embedded content."
 ---
 
-You can add query parameters to your iframe URLs through AutoProctor's **Advanced Settings** to customize how embedded content is displayed.
+When using the **IFrame/Other** quiz provider, you can append query parameters to your embedded quiz URL through AutoProctor's **Advanced Settings**. This lets you customize how the embedded content is displayed without modifying the original URL.
 
 ## How It Works
 
@@ -17,13 +17,26 @@ And you want to add parameters to make it:
 www.website.com?key1=val1&key2=val2
 ```
 
-Enter the following in the **Query Arguments** field:
+Enter the following in the **Query Arguments** field under Advanced Settings:
 ```
 key1=val1&key2=val2
 ```
 
-AutoProctor automatically constructs the complete URL with your parameters.
+AutoProctor automatically constructs the complete URL by appending your parameters.
 
-## Example: Changing Language
+## Common Examples
 
-To render a Google Form in English, add `hl=en` to the Query Arguments field. For French, use `hl=fr`.
+| Parameter | Purpose |
+|---|---|
+| `hl=en` | Render a Google Form in English |
+| `hl=fr` | Render a Google Form in French |
+| `embedded=true` | Force embedded mode on certain platforms |
+
+<Note>
+Do not include the `?` prefix — AutoProctor adds it automatically when constructing the URL.
+</Note>
+
+## Related Resources
+
+- [Quiz Providers](/creating-tests/quiz-providers) — All supported quiz platforms
+- [Test Settings](/creating-tests/test-settings) — Configure test and Advanced Settings

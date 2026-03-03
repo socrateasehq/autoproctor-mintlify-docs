@@ -1,22 +1,40 @@
 ---
-title: "Cannot Click on Answer"
-description: "Fix the issue where the test form loads but you cannot click on questions or answers."
+title: "Cannot Click on Answers in Test Form"
+description: "Fix the issue where your test form loads but you cannot click on questions or select answers. Usually caused by the wrong Google account."
 ---
 
-If you see a form like the one below, where you cannot click on the questions or select answers, this is typically caused by being logged into the wrong Google account.
+If you can see the test form but cannot click on questions or select answers, you are most likely signed into a Google account that does not have permission to interact with the form.
 
-<img src="/images/candidate-issues/cannot-click-form.png" alt="Form that cannot be clicked due to incorrect Google account" />
+## Why does this happen?
+
+When a Google Form is restricted to specific email addresses, it loads in a read-only preview mode for unauthorized accounts. You can see the questions but cannot interact with them. Since AutoProctor embeds the Google Form, this restriction appears within the AutoProctor interface.
+
+<Frame caption="Test form loaded in read-only mode due to incorrect Google account">
+  <img src="/images/candidate-issues/cannot-click-form.png" alt="Google Form in AutoProctor that cannot be clicked because the wrong Google account is active" />
+</Frame>
 
 ## How to fix it
 
 <Steps>
   <Step title="Log out of all Google accounts">
-    Visit [https://accounts.google.com/Logout](https://accounts.google.com/Logout) and log out of all your accounts.
+    Visit [https://accounts.google.com/Logout](https://accounts.google.com/Logout) and sign out of all your accounts.
   </Step>
-  <Step title="Sign in with the correct Gmail account">
-    Sign back in with the correct Gmail account that has been granted access to the test.
+  <Step title="Sign in with the correct account">
+    Sign back in with the Google account that has been granted access to the test. Check with your test administrator if you are unsure which account to use.
   </Step>
   <Step title="Reload the test">
-    Try loading the test again after signing in with the correct account.
+    Navigate back to the test link and load it again. You should now be able to click on questions and select answers.
   </Step>
 </Steps>
+
+<Note>
+If you are unsure which Google account has access, contact your test administrator. They can confirm the email address that was granted permission to take the test.
+</Note>
+
+## Related Resources
+
+- [Blank Page or Grey Screen](/candidate-issues/blank-page-grey-screen) -- Similar issue caused by wrong Google account
+- [Cannot See Questions on Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Google Form access restrictions
+- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide with Google Accounts section
+- [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

@@ -1,15 +1,21 @@
 ---
-title: "Concurrency - Maximum Simultaneous Candidates"
-description: "Understand AutoProctor's concurrency limits and how many test-takers can start exams simultaneously."
+title: "Concurrency - Max Simultaneous Candidates"
+description: "Understand AutoProctor's concurrency limits that control how many candidates can start tests simultaneously within a 60-second window."
 ---
 
-## What is max concurrency?
+Concurrency refers to the number of candidates who can start any test under your account within the same 60-second window. Understanding these limits helps you plan large-scale test sessions and avoid unexpected delays for candidates.
 
-Max concurrency is the number of candidates who can start any test under your account within the same 60-second window. The limit is calculated per billing account across all tests, not individually per test.
+## What Is Max Concurrency?
 
-## Concurrency limits
+Max concurrency is the maximum number of candidates who can begin a test within any rolling 60-second period. This limit applies across all tests on your account, not per individual test.
 
-### Tests on AutoProctor website with proctoring enabled
+<Note>
+If you have three active tests and a concurrency limit of 1,000, the 1,000 limit is shared across all three tests combined.
+</Note>
+
+## Concurrency Limits by Plan
+
+### Tests with Proctoring Enabled
 
 | Plan | Max Concurrency |
 |---|---|
@@ -17,7 +23,7 @@ Max concurrency is the number of candidates who can start any test under your ac
 | Premium | 2,000 candidates/minute |
 | Elite | 5,000 candidates/minute |
 
-### Tests on AutoProctor website without proctoring
+### Tests Without Proctoring
 
 | Plan | Max Concurrency |
 |---|---|
@@ -25,21 +31,28 @@ Max concurrency is the number of candidates who can start any test under your ac
 | Premium | 100 candidates/minute |
 | Elite | 150 candidates/minute |
 
-## Automated staggering
+## Automated Staggering
 
-When demand exceeds your plan's capacity, the system automatically staggers candidate entry. Candidates who exceed the limit see a button with a countdown of up to 60 seconds before gaining access.
+When demand exceeds your plan's capacity, AutoProctor automatically staggers candidate entry. Candidates who exceed the limit see a button with a countdown of up to 60 seconds before they can access the test.
 
 <Note>
-If a test duration is set, the candidate's end time is automatically adjusted to ensure no time is lost due to staggering.
+If a test duration is configured, the candidate's timer is automatically adjusted to account for staggering delays. No candidate loses test time due to concurrency limits.
 </Note>
 
-## SDK users
+## SDK Users
 
-If you are using AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. You must handle rate-limiting independently in your implementation.
+If you use AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. You must handle rate-limiting independently in your implementation.
 
-## Increasing your limits
+## Increasing Your Limits
 
-If you need higher concurrency limits:
+If you need higher concurrency limits, contact the AutoProctor team:
 
 - **Temporary increase** -- Approximately $500 per 500 candidates/minute increment (one-time fee)
 - **Permanent increase** -- Approximately $2,500 per month per 500 candidates/minute increment (annual commitment required)
+
+## Related Resources
+
+- [Test Settings](/creating-tests/test-settings) -- Configure test duration and other options
+- [Payments and Credits](/pricing/payments-and-credits) -- Plan details and pricing information
+- [Best Practices for Test Creators](/results/best-practices-for-teachers) -- Tips for smooth test administration
+- [Things You Need to Know](/results/things-you-need-to-know) -- Critical requirements for using AutoProctor

@@ -1,14 +1,33 @@
 ---
-title: "Missing Random Photos"
-description: "Understand why random photos may not appear in a candidate's proctoring report."
+title: "Missing Random Photos in Report"
+description: "Understand why random photos may not appear in a candidate's proctoring report and how the random photo capture system works during tests."
 ---
 
-Random photos are taken at random times throughout the test. The system selects unpredictable moments during the exam to capture photos of the test taker.
+Random photos are captured at unpredictable moments during a test to provide unbiased evidence of the candidate's environment and behavior. If you do not see random photos in a proctoring report, the candidate likely submitted the test before the system had a chance to capture them.
+
+## Why random photos matter
+
+Random photos serve as an independent verification tool. Unlike violation-triggered photos (which are taken when an anomaly is detected), random photos capture the candidate at arbitrary moments. This helps you verify that the candidate was present, alone, and following test rules throughout the entire session -- not just when a violation occurred.
 
 ## Why are random photos missing?
 
-If a test has a duration of 5 minutes, the system may decide to take 3 photos at 2:00, 4:15, and 4:45. If the candidate submits their test at 1:30, the system hasn't had enough time to take the first photo. So, you won't find any random photos in the report.
+AutoProctor schedules random photo captures at unpredictable times throughout the test duration. If a candidate submits the test before any of the scheduled capture times, no random photos will be recorded.
+
+**Example:** For a test with a 5-minute duration, the system might schedule photo captures at 2:00, 4:15, and 4:45. If the candidate submits the test at 1:30, the system has not yet reached any of the scheduled capture times. As a result, no random photos appear in the report.
 
 <Note>
-Random photos will only appear if the candidate was actively taking the test at the time the system scheduled the photo captures. If the test was submitted before any scheduled captures, no random photos will be available.
+Random photos only appear if the candidate was actively taking the test at the time the system scheduled the photo capture. If the test was submitted before any scheduled captures, no random photos will be available.
 </Note>
+
+## How to reduce the chance of missing random photos
+
+If random photos are important for your proctoring workflow, consider setting a minimum test duration or adding more questions to your test. Longer tests give the system more opportunities to capture random photos.
+
+## Related Resources
+
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All events AutoProctor monitors during a test
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Missing Violation Evidence](/candidate-issues/missing-violation-evidence) -- Why violation evidence may be absent
+- [Missing Images and Recordings](/candidate-issues/missing-images-and-recordings) -- Other causes of missing media
+- [Test Settings](/creating-tests/test-settings) -- Configure proctoring options for your test
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

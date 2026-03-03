@@ -1,30 +1,49 @@
 ---
 title: "Test Stuck at Loading Screen"
-description: "Fix tests that are stuck on the loading screen due to device or browser compatibility issues."
+description: "Fix tests that are stuck on the loading screen. Learn why device or browser compatibility issues cause loading failures and how to resolve them."
 ---
 
-AutoProctor uses quite modern technologies to detect and analyse anomalies. This requires modern browsers and adequate device hardware specifications.
+AutoProctor uses advanced technologies for real-time proctoring, which require a modern browser and adequate device hardware. If your test is stuck at the loading screen, your setup likely does not meet these requirements.
 
-## Why is my test stuck at loading?
+## Why is your test stuck at loading?
 
-AutoProctor employs advanced technologies for proctoring, which means your browser and device need to meet certain minimum requirements. If the test is stuck at the loading screen, it typically means your device or browser is not fully compatible.
+AutoProctor runs AI-powered video capture and analysis directly in your browser. This demands significantly more processing power than typical web applications. The loading screen appears when your browser or device cannot initialize these proctoring components.
 
-<img src="/images/candidate-issues/loading-screen-demo.png" alt="AutoProctor loading screen" />
+Common causes include:
+
+- **Outdated browser** -- older browser versions lack the APIs AutoProctor needs
+- **Insufficient hardware** -- low-end devices may not support real-time video processing
+- **Browser extensions** -- certain extensions can block AutoProctor's scripts from loading
+
+<Frame caption="AutoProctor loading screen indicating a compatibility issue">
+  <img src="/images/candidate-issues/loading-screen-demo.png" alt="AutoProctor loading screen stuck due to device or browser compatibility" />
+</Frame>
 
 ## How to fix it
 
 <Steps>
-  <Step title="Try the demo test">
-    Take the demo test to check if your device and browser are compatible with AutoProctor. This helps confirm whether the issue is with your device setup.
+  <Step title="Take the demo test">
+    Visit the [AutoProctor demo test](https://www.autoproctor.co/demo) to verify that your device and browser are compatible. This confirms whether the issue is with your setup.
   </Step>
   <Step title="Use a modern browser">
-    Ensure you are using the latest version of a modern browser such as Google Chrome, Microsoft Edge, or Firefox.
+    Ensure you are running the latest version of **Google Chrome**, **Microsoft Edge**, or **Firefox**. Update your browser if it is not current.
   </Step>
-  <Step title="Check your device">
-    If the test doesn't load despite you following all the instructions, it means that your device isn't supported, and you will need a higher-end device.
+  <Step title="Disable conflicting extensions">
+    Temporarily disable browser extensions, especially ad blockers and privacy tools, that may interfere with AutoProctor's scripts.
+  </Step>
+  <Step title="Use a higher-end device if needed">
+    If the test still does not load after following the steps above, your device does not meet the minimum hardware requirements. You will need to switch to a more powerful device.
   </Step>
 </Steps>
 
 <Warning>
-If the test does not load even after following the steps above, your device does not meet the minimum hardware requirements for AutoProctor. You will need to use a different, higher-end device.
+If the demo test also fails to load, your device does not support AutoProctor. You will need to use a different device with better hardware specifications.
 </Warning>
+
+## Related Resources
+
+- [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
+- [Test is Slow and Laggy](/candidate-issues/slow-and-laggy) -- Troubleshoot performance issues
+- [Blank Page or Grey Screen](/candidate-issues/blank-page-grey-screen) -- Fix blank screen issues
+- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide for candidates
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

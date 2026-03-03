@@ -1,25 +1,25 @@
 ---
 title: "Candidate Login Methods"
-description: "Available login options for candidates taking tests on AutoProctor."
+description: "Understand the available login options for candidates and which methods work with each quiz provider."
 ---
 
-Candidates must log in before attempting any test on AutoProctor. This is required to differentiate between submissions when multiple candidates use the same test link.
+Candidates must log in before attempting any test on AutoProctor. Login is required to differentiate between submissions when multiple candidates use the same test link.
 
 <Frame>
-  <img src="/images/taking-tests/login-methods.png" alt="AutoProctor login options" />
+  <img src="/images/taking-tests/login-methods.png" alt="AutoProctor login options showing Google, Microsoft, and Email sign-in" />
 </Frame>
 
 ## Available Login Methods
 
-- **Sign in with Google**
-- **Sign in with Microsoft**
-- **Sign in with Email**
+- **Sign in with Google** — uses the candidate's Google account
+- **Sign in with Microsoft** — uses the candidate's Microsoft account
+- **Sign in with Email** — candidate enters their email address directly
 
-## Login Methods by Test Type
+## Login Methods by Quiz Provider
 
-The available sign-in methods depend on the quiz provider:
+The available sign-in methods depend on which quiz provider you use:
 
-| Test Type | Available Sign-in Methods |
+| Quiz Provider | Available Sign-in Methods |
 |---|---|
 | Socratease Quizzes | Google, Microsoft, Email |
 | Google Forms | Google only |
@@ -27,5 +27,11 @@ The available sign-in methods depend on the quiz provider:
 | IFrame Tests | Google, Microsoft, Email |
 
 <Note>
-Google Forms tests only allow Google sign-in, and Microsoft Forms tests only allow Microsoft sign-in. Socratease and IFrame tests support all three methods.
+Google Forms tests require Google sign-in because AutoProctor needs to pass the candidate's Google identity to the form. The same applies to Microsoft Forms with Microsoft sign-in. Socratease and IFrame tests have no such restriction.
 </Note>
+
+## Related Resources
+
+- [How to Logout](/taking-tests/how-to-logout) — Switch between accounts
+- [Restricting by Email](/results/restricting-by-email) — Limit who can access your test
+- [Candidate Login Methods (Admin View)](/results/candidate-login-methods) — Configure login settings for your test

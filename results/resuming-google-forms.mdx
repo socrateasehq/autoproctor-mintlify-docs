@@ -1,34 +1,67 @@
 ---
 title: "Resuming Google Forms Tests"
-description: "Configure whether candidates can resume Google Forms tests after closing them mid-attempt."
+description: "Configure whether candidates can resume Google Forms tests after closing them mid-attempt by managing autosave and auto-resume settings."
 ---
 
-This guide explains how to manage test resumption settings when candidates close Google Forms tests mid-attempt.
+Google Forms tests require two settings to be aligned for resume behavior to work correctly: the **autosave** setting in Google Forms and the **auto-resume** setting in AutoProctor. This guide explains how to configure both.
 
 <Note>
-The default setting on Google Forms is that the Autosave feature is enabled. The default setting on AutoProctor for Google Forms tests is that Resume Unsubmitted Attempts is enabled.
+Two settings control Google Forms test resumption:
+1. **Disable Autosave** in Google Forms -- Controls whether draft responses are saved as the candidate fills out the form.
+2. **Enable Auto-resume** in AutoProctor -- Controls whether AutoProctor loads the previous attempt when a candidate returns to the test link.
+
+Both settings must be configured together for the intended behavior.
 </Note>
 
-## To allow test resumption
+## To Allow Test Resumption
 
-If you want candidates to be able to resume their test after closing it:
+If you want candidates to pick up where they left off after closing the test:
 
-1. Keep the **Disable Autosave** feature **OFF** in Google Forms
+<Steps>
+  <Step title="Keep autosave enabled in Google Forms">
+    Make sure the **Disable Autosave** feature is **OFF** in your Google Forms test settings (this is the default).
 
-   ![Autosave enabled](/images/results/gforms-autosave-enabled.png)
+    <Frame>
+      <img src="/images/results/gforms-autosave-enabled.png" alt="Google Forms test settings showing Disable Autosave toggled OFF, keeping autosave active" />
+    </Frame>
+  </Step>
+  <Step title="Enable auto-resume in AutoProctor">
+    Turn on the **Enable Auto-resume** setting in your AutoProctor test settings.
 
-2. Enable the **Enable Auto-resume** setting in AutoProctor test settings
+    <Frame>
+      <img src="/images/results/gforms-autoresume-enabled.png" alt="AutoProctor test settings showing Enable Auto-resume toggled ON" />
+    </Frame>
+  </Step>
+</Steps>
 
-   ![Auto-resume enabled](/images/results/gforms-autoresume-enabled.png)
+## To Prevent Test Resumption
 
-## To prevent test resumption
+If you want each visit to the test link to create a new, blank attempt:
 
-If you want each visit to create a new attempt:
+<Steps>
+  <Step title="Disable autosave in Google Forms">
+    Turn **ON** the **Disable Autosave** feature in your Google Forms test settings.
 
-1. Turn **ON** the **Disable Autosave** feature for Google Forms
+    <Frame>
+      <img src="/images/results/gforms-autosave-disabled.png" alt="Google Forms test settings showing Disable Autosave toggled ON, disabling autosave" />
+    </Frame>
+  </Step>
+  <Step title="Disable auto-resume in AutoProctor">
+    Turn **OFF** the **Resume Unsubmitted Test** option in your AutoProctor test settings.
 
-   ![Autosave disabled](/images/results/gforms-autosave-disabled.png)
+    <Frame>
+      <img src="/images/results/gforms-autoresume-disabled.png" alt="AutoProctor test settings showing Resume Unsubmitted Test toggled OFF" />
+    </Frame>
+  </Step>
+</Steps>
 
-2. Disable **Resume Unsubmitted Test** in AutoProctor settings
+<Warning>
+If the two settings are mismatched (for example, autosave is enabled but auto-resume is disabled), candidates may experience unexpected behavior such as seeing a partially filled form on a new attempt or losing their saved progress.
+</Warning>
 
-   ![Auto-resume disabled](/images/results/gforms-autoresume-disabled.png)
+## Related Resources
+
+- [Resuming Test Attempts](/results/resuming-test-attempts) -- General resume behavior across all test types
+- [Maximum Attempts](/results/maximum-attempts) -- Configure how many attempts candidates are allowed
+- [Unsubmitted Tests](/results/unsubmitted-tests) -- View tests started but not submitted
+- [Test Settings](/creating-tests/test-settings) -- Configure all test options

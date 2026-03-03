@@ -1,41 +1,59 @@
 ---
 title: "Resuming Test Attempts"
-description: "Understand how AutoProctor handles test resumption when candidates disconnect or leave mid-test."
+description: "Understand how AutoProctor handles test resumption when candidates disconnect, close the browser, or leave a test mid-attempt."
 ---
 
-AutoProctor typically creates a new test attempt each time a test taker opens a test link. However, when a test taker leaves mid-test and returns later, the system must decide whether to resume the previous attempt or create a new one.
+When a candidate leaves a test mid-attempt -- whether due to a browser crash, network issue, or accidental closure -- AutoProctor determines whether to resume the previous attempt or create a new one. The behavior depends on your test type and settings.
 
-## Resume behavior by test type
+## Resume Behavior by Test Type
 
 | Test Type | Resume Behavior |
 |---|---|
 | Socratease Quiz | Always resumes -- loads previous responses automatically |
-| Microsoft Form | Never resumes -- creates a new attempt each time |
-| Google Form | Configurable (see below) |
-| IFrame Test | Configurable (see below) |
+| Microsoft Forms | Never resumes -- creates a new attempt each time |
+| Google Forms | Configurable (see below) |
+| IFrame Tests | Configurable (see below) |
 
-## Configuring the resume feature
+## Configuring the Resume Feature
 
-For Google Forms and IFrame tests, you can toggle the **Enable Auto Resume** option in your test settings.
+For Google Forms and IFrame tests, you can control resume behavior through the **Enable Auto Resume** toggle in your test settings.
 
-![Enable Auto Resume setting](/images/results/enable-auto-resume.png)
+<Steps>
+  <Step title="Open test settings">
+    Navigate to your test on the AutoProctor dashboard and open its **Test Settings**.
+  </Step>
+  <Step title="Toggle Enable Auto Resume">
+    In the settings, find and enable or disable the **Enable Auto Resume** option.
+
+    <Frame>
+      <img src="/images/results/enable-auto-resume.png" alt="Enable Auto Resume toggle in AutoProctor test settings" />
+    </Frame>
+  </Step>
+</Steps>
 
 <Note>
-For Google Forms, you must also enable the **Save Draft** setting for resume functionality to work properly.
+For Google Forms, you must also keep the **Save Draft** (autosave) setting enabled in Google Forms itself for resume to work properly. See [Resuming Google Forms Tests](/results/resuming-google-forms) for detailed configuration.
 </Note>
 
-## How timers interact with resumption
+## How Timers Interact with Resumption
 
-If you have timer settings configured, they affect how resumption works:
+If you have timer settings configured, they affect how resumption works.
 
-### Test duration
+### Test Duration
 
-The remaining time from the original attempt applies. For example, if a 60-minute test starts at 10:00 AM and the candidate disconnects at 10:30 AM, resuming at 10:50 AM gives them only 10 minutes remaining. Once the full duration expires, the test can no longer be resumed.
+The remaining time from the original attempt carries over. For example, if a candidate starts a 60-minute test at 10:00 AM and disconnects at 10:30 AM, resuming at 10:50 AM gives them only 10 minutes remaining. Once the full duration expires, the test can no longer be resumed.
 
-### Cannot start before / Cannot start after
+### Cannot Start Before / Cannot Start After
 
 These constraints apply to the original start time, not the reconnection time. A candidate who started before the deadline can still resume after it, as long as the test duration has not expired.
 
-### Must submit by
+### Must Submit By
 
-This deadline is strictly enforced at reconnection time. If the "must submit by" deadline has passed before the candidate tries to resume, the test will not load -- even if they originally started before the deadline.
+This deadline is strictly enforced at reconnection time. If the **Must Submit By** deadline has passed before the candidate tries to resume, the test does not load -- even if the candidate originally started before the deadline.
+
+## Related Resources
+
+- [Resuming Google Forms Tests](/results/resuming-google-forms) -- Detailed Google Forms resume configuration
+- [Maximum Attempts](/results/maximum-attempts) -- How attempt limits interact with resumption
+- [Unsubmitted Tests](/results/unsubmitted-tests) -- View details of tests started but not submitted
+- [Test Settings](/creating-tests/test-settings) -- Configure all test options including timers

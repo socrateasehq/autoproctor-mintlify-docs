@@ -1,31 +1,44 @@
 ---
-title: "Incorrect Student Name in Results"
-description: "Fix incorrect student names showing in the results page or Excel export."
+title: "Incorrect Candidate Name in Results"
+description: "Fix incorrect candidate names showing in the results page or Excel export. Names are pulled from the candidate's linked Google or Microsoft account."
 ---
 
-AutoProctor does not request name input from users directly. If a student's name appears incorrectly on results, it is because of one of the following reasons:
+AutoProctor does not ask candidates to type their name directly. Instead, it pulls the name from the account used to sign in. If a candidate's name appears incorrectly in results, the issue originates from their account profile.
 
-1. The name they have chosen on their Google Account is wrong.
-2. They have used the wrong email ID while attempting the test.
+## Why does this happen?
 
-<img src="/images/candidate-issues/incorrect-student-name.png" alt="Example of incorrect student name in AutoProctor results" />
+AutoProctor retrieves candidate names from the authentication provider they used to sign in:
+
+- **Google account** -- the display name set in [Google Account settings](https://myaccount.google.com/personal-info)
+- **Microsoft account** -- the display name set in [Microsoft Account settings](https://account.microsoft.com/profile)
+
+If the name on their Google or Microsoft account is incorrect, misspelled, or uses a nickname, that same name will appear in AutoProctor results.
+
+<Note>
+AutoProctor pulls candidate names directly from their Google or Microsoft account profile. If the name is wrong in results, the candidate needs to update their profile -- either on their Google/Microsoft account or on AutoProctor directly.
+</Note>
+
+<Frame caption="Example of an incorrect candidate name displayed in AutoProctor results">
+  <img src="/images/candidate-issues/incorrect-student-name.png" alt="Incorrect candidate name shown in AutoProctor results page" />
+</Frame>
 
 ## How to fix it
 
-To correct the name in reports, the student must update their profile on AutoProctor. Once they modify their name, the change automatically reflects across all reports.
-
 <Steps>
-  <Step title="Identify the student's email">
-    Find the email address associated with the student's test attempt in the results page.
+  <Step title="Identify the candidate's email">
+    Find the email address associated with the candidate's test attempt on the results page.
   </Step>
-  <Step title="Direct the student to update their profile">
-    Have the student navigate to [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) and update their name.
+  <Step title="Direct the candidate to update their profile">
+    Have the candidate visit [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) and update their name.
   </Step>
-  <Step title="Changes sync automatically">
-    Once the student updates their name on their profile, the change will automatically be reflected across all existing test reports.
+  <Step title="Verify the change">
+    Once the candidate updates their name on their profile, the change automatically reflects across all existing test reports. No further action is needed from the test administrator.
   </Step>
 </Steps>
 
-<Note>
-For example, if a report shows "Cedric Daniels" but the correct name is "Jimmy McNulty" for the account jimmy@thewire.com, the student needs to visit the profile edit page and update their name. The change will then appear on all reports automatically.
-</Note>
+## Related Resources
+
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Test Settings](/creating-tests/test-settings) -- Configure your test settings
+- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide for candidates
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

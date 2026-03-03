@@ -1,22 +1,36 @@
 ---
-title: "Missing Images and Recordings"
-description: "Understand why images or audio recordings may not appear in a student's test report despite violations being listed."
+title: "Missing Images and Recordings in Report"
+description: "Understand why images or audio recordings may not appear in a candidate's test report despite violations being listed, and how to fix it."
 ---
 
-If you can see violations listed in a student's test report but cannot see the supporting evidence (images or audio recordings), there are two possible scenarios.
+If you can see violations listed in a candidate's test report but cannot see the supporting evidence (images or audio recordings), there are two possible scenarios, each with a different cause and resolution.
 
 ## Scenario 1: No images or recordings at all
 
-If no images or recordings appear at all despite violations being listed, the "Me after the test" recording feature was likely disabled in the test settings.
+If no images or recordings appear despite violations being listed, the evidence recording feature was likely disabled in your test settings.
 
-<Note>
-Check your test's proctoring settings to ensure evidence recording is enabled. See [AutoProctor Test Settings](/creating-tests/test-settings) for more information about the different settings and what they mean.
-</Note>
+<Steps>
+  <Step title="Check your test settings">
+    Navigate to your test's proctoring configuration in the AutoProctor dashboard and verify that evidence recording is enabled. See [Test Settings](/creating-tests/test-settings) for details on each option.
+  </Step>
+  <Step title="Enable evidence recording for future tests">
+    If evidence recording was disabled, enable it for future tests. Note that this change will not retroactively add evidence to tests that have already been taken.
+  </Step>
+</Steps>
 
 ## Scenario 2: Some violations have evidence, others don't
 
-If some violations show evidence files while others don't, this is expected behavior. AutoProctor stores a fixed number (around 20) of images and audio files per test attempt.
+If some violations show evidence files while others do not, this is expected behavior. AutoProctor stores a fixed number (approximately 20) of images and audio files per test attempt. When violations exceed this limit, not every violation will have an associated evidence file.
 
 <Warning>
-**ALL violations are tracked and affect the Trust Score**, even when evidence files are not stored for viewing. The evidence files are a subset -- they exist so that administrators can review what happened, but the Trust Score calculation considers every detected violation regardless of whether evidence was stored.
+**All violations are tracked and affect the Trust Score**, even when evidence files are not stored for viewing. The evidence files are a subset -- they exist so you can review what happened, but the Trust Score calculation considers every detected violation regardless of whether evidence was stored.
 </Warning>
+
+## Related Resources
+
+- [Test Settings](/creating-tests/test-settings) -- Configure evidence storage and proctoring options
+- [Missing Violation Evidence](/candidate-issues/missing-violation-evidence) -- Detailed explanation of evidence storage limits
+- [Missing Random Photos](/candidate-issues/missing-random-photos) -- Why random photos may be absent
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

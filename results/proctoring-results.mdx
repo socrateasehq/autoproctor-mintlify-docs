@@ -1,24 +1,49 @@
 ---
 title: "Where Can I See Proctoring Results?"
-description: "Learn how to access and view proctoring results for your tests on AutoProctor."
+description: "Access and review proctoring results for your tests on AutoProctor, including Trust Scores, violation details, and candidate-level reports."
 ---
 
-## Viewing proctoring results
+After candidates complete a proctored test, AutoProctor compiles their monitoring data into a proctoring report. This guide walks you through accessing and interpreting those results.
+
+<Note>
+Proctoring results are only generated when proctoring is enabled in your [test settings](/creating-tests/test-settings). If you configured your test with only a timer, no proctoring data is available.
+</Note>
+
+## Viewing Proctoring Results
 
 <Steps>
   <Step title="Open the results page">
-    Navigate to your dashboard and click the **Results** button corresponding to the test you want to review.
+    Navigate to your AutoProctor dashboard and click the **Results** button for the test you want to review.
 
-    ![Results button on dashboard](/images/results/results-button-dashboard.png)
+    <Frame>
+      <img src="/images/results/results-button-dashboard.png" alt="Results button highlighted on the AutoProctor dashboard" />
+    </Frame>
   </Step>
   <Step title="Review the results table">
-    The results page displays a table containing all submissions. You can see when the test taker started and finished the test, along with their trust score. For Socratease Quizzes, quiz scores are also visible.
+    The results page displays a table listing all submissions. Each row includes:
 
-    ![Results table](/images/results/results-table.png)
+    - Candidate name and email address
+    - Test start and finish time
+    - Trust Score (indicating proctoring integrity)
+    - Quiz score (for Socratease Quizzes only)
+
+    <Frame>
+      <img src="/images/results/results-table.png" alt="Results table showing candidate submissions with Trust Scores" />
+    </Frame>
   </Step>
   <Step title="View the proctoring summary">
-    Click on the **Trust Score** to view the proctoring summary. This page lists any violations committed during the test.
+    Click on a candidate's **Trust Score** to open their detailed proctoring summary. This page lists all violations detected during the test, including screenshots, timestamps, and evidence.
 
-    ![Proctoring summary](/images/results/proctoring-summary.png)
+    <Frame>
+      <img src="/images/results/proctoring-summary.png" alt="Proctoring summary page showing detected violations and evidence" />
+    </Frame>
   </Step>
 </Steps>
+
+## Related Resources
+
+- [How to See Results on AutoProctor](/results/how-to-see-results) -- Overview of test results vs. proctoring results
+- [Trust Score Explained](/getting-started/trust-score) -- How Trust Scores are calculated
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- What AutoProctor monitors during a proctored test
+- [Export to Excel](/results/export-to-excel) -- Download proctoring results as a spreadsheet
+- [Unsubmitted Tests](/results/unsubmitted-tests) -- View details of tests started but not submitted

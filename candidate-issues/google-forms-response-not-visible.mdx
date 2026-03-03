@@ -1,39 +1,49 @@
 ---
 title: "Cannot See Response in Google Form"
-description: "Understand why responses may appear on AutoProctor but not in Google Forms, and how to fix it."
+description: "Understand why responses may appear on AutoProctor but not in Google Forms, or vice versa. Usually caused by missing one of the two submit buttons."
 ---
 
-We get asked this question a lot. There is **only one reason** you aren't able to see Responses in Google Forms, and are able to see the Response on AutoProctor: **the test taker has not clicked on the Purple Submit button**.
+If you can see a candidate's response on AutoProctor but not in Google Forms (or vice versa), the candidate most likely skipped one of the two required submit buttons.
 
-## Understanding the two Submit buttons
+## Understanding the two submit buttons
 
-The test taker has to click on **two Submit buttons** to finish the test:
+Candidates must click **two separate submit buttons** to complete a Google Forms-based proctored test:
 
-1. **Purple Submit button** (inside the Google Form) -- This submits the answers to the Responses section on Google Forms.
-2. **Green Submit button** (at the top of the page) -- This updates the results on AutoProctor.
+1. **Purple Submit button** (inside the Google Form) -- submits answers to the Google Forms Responses section
+2. **Green Submit button** (at the top of the page) -- submits the proctoring session to AutoProctor
 
-<img src="/images/candidate-issues/google-forms-submit-buttons.png" alt="Purple and Green submit buttons on AutoProctor with Google Forms" />
+<Frame caption="The two submit buttons: Purple for Google Forms, Green for AutoProctor">
+  <img src="/images/candidate-issues/google-forms-submit-buttons.png" alt="Purple Google Forms submit button and Green AutoProctor submit button shown on a proctored test" />
+</Frame>
 
-### If the student skips the Green Submit button
+### If the candidate skips the Green Submit button
 
-If the student does not click the Green Submit button at the top, you will only see their answers in the Google Forms Responses section but will not see anything on AutoProctor.
+You will see the candidate's answers in the **Google Forms Responses** section but will not see any results on AutoProctor. The proctoring session was not finalized.
 
-### If the student skips the Purple Submit button
+### If the candidate skips the Purple Submit button
 
-If the test taker clicks only on the Green Submit button at the top and not the Google Forms Purple Submit button, you will see it says the test has been submitted on AutoProctor, but will not be able to see the responses on Google Forms.
+You will see the test marked as submitted on **AutoProctor**, but the candidate's answers will not appear in Google Forms Responses. The form answers were never sent to Google.
 
 <Warning>
-Due to privacy reasons, Google doesn't let AutoProctor know if the Purple Submit button has been clicked or not, so unfortunately, there is nothing we can do about it.
+Due to privacy restrictions, Google does not let AutoProctor detect whether the Purple Submit button was clicked. There is no way for AutoProctor to enforce this step automatically.
 </Warning>
 
-## Important: Use the AutoProctor link
+## Ensure you share the AutoProctor link
 
-Ensure that you have sent the **AutoProctor link** to the test takers. It should have the word `autoproctor.co` in it. If you send them the Google Form link (like you would without AutoProctor), you will not see the results on AutoProctor.
+You must send candidates the **AutoProctor link** (containing `autoproctor.co` in the URL). If you send the direct Google Form link instead, candidates will bypass AutoProctor entirely and no proctoring data will be recorded.
 
 ## Why can't AutoProctor fix this?
 
-AutoProctor loading a Google Form within its site is similar to how YouTube videos and tweets from Twitter are loaded on other sites. If you click on a YouTube video on a different site and there is an error loading the video, you will correctly conclude that the error is with YouTube. Similarly, if you face any issue with a Google Form on AutoProctor, the issue is with Google Forms. There is literally nothing we can do, as Google doesn't allow us to access what happens within a Google Form.
+AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. Google does not allow AutoProctor to access or control anything that happens inside the form. If a submission issue occurs within the Google Form, only Google controls that behavior.
 
 <Note>
-To avoid issues with Google Forms submissions, we recommend using [Socratease tests](/socratease/why-socratease) with AutoProctor instead of Google Forms.
+To avoid confusion with two submit buttons, consider using [Socratease quizzes](/socratease/why-socratease) instead of Google Forms. Socratease has a single submit button that handles both quiz answers and proctoring in one step.
 </Note>
+
+## Related Resources
+
+- [Cannot See Questions on Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Google Form access issues
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Test Settings](/creating-tests/test-settings) -- Configure your test settings
+- [Why Socratease?](/socratease/why-socratease) -- Benefits of using Socratease over Google Forms
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

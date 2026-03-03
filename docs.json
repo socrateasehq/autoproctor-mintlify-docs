@@ -8,15 +8,29 @@
     "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "og:site_name": "AutoProctor Help Center"
+    }
+  },
+  "feedback": {
+    "thumbsRating": true
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Overview",
             "pages": [
-              "index",
+              "index"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
               "getting-started/what-gets-tracked",
               "getting-started/device-compatibility",
               "getting-started/faqs",
@@ -29,6 +43,7 @@
           },
           {
             "group": "Creating Tests",
+            "icon": "square-plus",
             "pages": [
               "creating-tests/test-settings",
               "creating-tests/quiz-providers",
@@ -40,6 +55,7 @@
           },
           {
             "group": "Socratease Quizzes",
+            "icon": "graduation-cap",
             "pages": [
               "socratease/why-socratease",
               "socratease/creating-a-quiz",
@@ -56,6 +72,7 @@
           },
           {
             "group": "Taking Tests",
+            "icon": "pen-to-square",
             "pages": [
               "taking-tests/proctored-test-instructions",
               "taking-tests/timed-test-instructions",
@@ -69,6 +86,7 @@
           },
           {
             "group": "Results & Reports",
+            "icon": "chart-bar",
             "pages": [
               "results/how-to-see-results",
               "results/proctoring-results",
@@ -91,6 +109,7 @@
           },
           {
             "group": "Candidate Issues",
+            "icon": "wrench",
             "pages": [
               "candidate-issues/loading-screen",
               "candidate-issues/blank-page-grey-screen",
@@ -109,6 +128,7 @@
           },
           {
             "group": "Pricing & Account",
+            "icon": "credit-card",
             "pages": [
               "pricing/payments-and-credits",
               "pricing/teams",

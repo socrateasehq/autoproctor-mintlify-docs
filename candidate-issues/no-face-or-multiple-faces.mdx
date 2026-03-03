@@ -1,22 +1,35 @@
 ---
 title: "No Face or Multiple Faces Detected Incorrectly"
-description: "Understand why AutoProctor's AI may incorrectly report face detection violations and how to interpret these results."
+description: "Understand why AutoProctor's AI may incorrectly report face detection violations and how to properly interpret these results in proctoring reports."
 ---
 
-AutoProctor uses AI for face detection, and **AI gets it wrong sometimes**. You may see "No Face Detected" or "Multiple Faces Detected" violations in a report even though the evidence clearly shows only one face. This is because AI isn't 100% accurate.
+AutoProctor uses AI for face detection, and AI is not 100% accurate. You may see "No Face Detected" or "Multiple Faces Detected" violations in a report even when the evidence photo clearly shows a single face.
 
 ## Why does this happen?
 
-Our AI models are trained on thousands of faces, but they may fail when confronted with scenarios unlike their training data. The three most common reasons for incorrect face detection are:
+AutoProctor's AI models are trained on thousands of faces, but they can fail in scenarios that differ from their training data. The three most common causes of incorrect face detection are:
 
-1. **Complex backgrounds** -- Colorful or busy background elements can confuse the AI algorithms into thinking there are additional faces or no face at all.
-2. **Head positioning** -- Candidates looking away from the screen or looking downward rather than directly at the camera can cause the AI to miss their face.
-3. **Reflective eyewear** -- Glasses that reflect light or obscure the eyes can make it difficult for the detection system to identify a face.
+1. **Complex backgrounds** -- busy or colorful backgrounds can confuse the AI into detecting extra faces or missing the real one
+2. **Head positioning** -- candidates looking away from the screen, looking downward, or tilting their head can cause the AI to miss their face
+3. **Reflective eyewear** -- glasses that reflect light or obscure the eyes make it harder for the detection system to identify a face
 
 ## How should you interpret these violations?
 
-AutoProctor provides evidence (photos) alongside violations specifically so that you can independently verify the AI's determinations. The AI is a helpful tool, but it is not infallible.
+AutoProctor provides evidence photos alongside every violation so that you can independently verify the AI's determination. When reviewing face detection violations:
+
+- **Check the evidence photo** -- does the photo actually show no face, multiple faces, or is the AI clearly wrong?
+- **Look at the pattern** -- a single incorrect detection among many correct ones is likely a false positive
+- **Consider the context** -- poor lighting, unusual angles, or busy backgrounds explain most false detections
 
 <Warning>
-Always review the full report and the provided evidence before concluding whether a candidate cheated. Do not rely solely on automated Trust Scores -- use them as a guide alongside the evidence.
+Always review the full report and the provided evidence before concluding whether a candidate cheated. Do not rely solely on automated Trust Scores -- use them as a guide alongside the photographic evidence.
 </Warning>
+
+## Related Resources
+
+- [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All events AutoProctor monitors
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Missing Violation Evidence](/candidate-issues/missing-violation-evidence) -- Why some violations lack evidence photos
+- [False 'Switched to Different Application'](/candidate-issues/false-app-switch) -- Another common false positive scenario
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

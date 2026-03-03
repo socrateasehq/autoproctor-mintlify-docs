@@ -1,20 +1,20 @@
 ---
-title: "AutoProctor Test Settings"
-description: "Configure test, timer, proctoring, and advanced settings for your AutoProctor tests."
+title: "Test Settings"
+description: "Configure test names, time windows, proctoring options, and advanced settings for your AutoProctor tests."
 ---
 
-AutoProctor's Test Settings page lets you configure test names, time windows, duration, proctoring options, and candidate login methods. Access settings via the **Settings** button on your dashboard.
+AutoProctor's Test Settings page lets you configure test names, time windows, duration, proctoring options, and candidate login methods. Access settings by clicking the **Settings** button on your dashboard.
 
 <Frame>
-  <img src="/images/creating-tests/test-settings-button.png" alt="Test Settings button on the dashboard" />
+  <img src="/images/creating-tests/test-settings-button.png" alt="Test Settings button on the AutoProctor dashboard" />
 </Frame>
 
 <Note>
-Test Settings control proctoring and test configuration only — they do not control quiz question settings.
+Test Settings control proctoring and test configuration only — they do not control quiz question settings. For Socratease quiz settings, see [Quiz Settings](/socratease/quiz-settings).
 </Note>
 
 <Frame>
-  <img src="/images/creating-tests/settings-sections.png" alt="Overview of settings sections" />
+  <img src="/images/creating-tests/settings-sections.png" alt="Overview of the four settings sections" />
 </Frame>
 
 ## Main Settings
@@ -29,24 +29,24 @@ Test Settings control proctoring and test configuration only — they do not con
 ## Timer Settings
 
 <Frame>
-  <img src="/images/creating-tests/timer-settings.png" alt="Timer settings configuration" />
+  <img src="/images/creating-tests/timer-settings.png" alt="Timer settings configuration panel" />
 </Frame>
 
-- **Duration** — maximum time for a test attempt
-- **Auto-submit Test** — automatically submits when duration ends
-- **Can't Start Before** — earliest date/time candidates can begin
-- **Can't Start After** — latest date/time candidates can begin
-- **Must Submit By** — submission deadline
-- **Buffer Time** — grace period for demo and setup (defaults to 5 minutes if start/end times are set)
+- **Duration** — maximum time allowed for a test attempt
+- **Auto-submit Test** — automatically submits when the duration ends
+- **Can't Start Before** — earliest date and time candidates can begin
+- **Can't Start After** — latest date and time candidates can begin
+- **Must Submit By** — hard submission deadline
+- **Buffer Time** — grace period for demo and setup (defaults to 5 minutes when start/end times are set)
 
 <Warning>
-For non-Socratease quizzes, auto-submit only submits the proctoring, not the questions. Unanswered responses may be lost without manual submission.
+For non-Socratease quizzes, auto-submit only submits the proctoring session, not the quiz answers. Unanswered responses may be lost without manual submission.
 </Warning>
 
 ## Proctoring Settings
 
 <Frame>
-  <img src="/images/creating-tests/proctoring-settings.png" alt="Proctoring settings" />
+  <img src="/images/creating-tests/proctoring-settings.png" alt="Proctoring settings configuration panel" />
 </Frame>
 
 **Basic options:**
@@ -64,10 +64,10 @@ For non-Socratease quizzes, auto-submit only submits the proctoring, not the que
   <img src="/images/creating-tests/enhanced-proctoring.png" alt="Enhanced proctoring settings" />
 </Frame>
 
-**Enhanced options** (4 credits each):
+**Enhanced options** (4 credits per attempt):
 - ID Card Verification
 - Impersonation Detection
-- Auxiliary Device (360° proctoring)
+- Auxiliary Device (360-degree proctoring)
 - Session Recording
 
 **Communication settings:**
@@ -77,17 +77,24 @@ For non-Socratease quizzes, auto-submit only submits the proctoring, not the que
 ## Advanced Settings
 
 <Frame>
-  <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings" />
+  <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings configuration panel" />
 </Frame>
 
 - **Login Providers** — Google, Microsoft, or Email
 - **Login Restrictions** — email-based filtering
-- **Google Sheets URL** — auto-export results
+- **Google Sheets URL** — auto-export results to a spreadsheet
 - **Collaborators** — share test management access
-- **Unique URL per test taker** (Elite)
+- **Unique URL per candidate** (Elite)
 - **Gather Additional Details** (Premium)
 - **Additional Instructions** (Elite)
 
 <Note>
-Timezone conversions are handled automatically. Maximum 10 custom information fields are allowed.
+Timezone conversions are handled automatically. A maximum of 10 custom information fields are allowed for the Gather Additional Details feature.
 </Note>
+
+## Related Resources
+
+- [Quiz Providers](/creating-tests/quiz-providers) — Supported quiz platforms
+- [Adding Collaborators](/creating-tests/adding-collaborators) — Share test access with your team
+- [Restricting by Email](/results/restricting-by-email) — Limit who can take your test
+- [What Gets Tracked](/getting-started/what-gets-tracked) — All proctoring capabilities

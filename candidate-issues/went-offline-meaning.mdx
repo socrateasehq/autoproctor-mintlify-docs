@@ -1,28 +1,39 @@
 ---
 title: "What Does 'Went Offline' Mean?"
-description: "Understand what the 'Went Offline' entry in the proctoring report means and how internet connectivity is tracked."
+description: "Understand what the 'Went Offline' entry in the proctoring report means, how AutoProctor tracks internet connectivity, and what it implies."
 ---
 
-"Went offline for 120 seconds" means that a candidate was not connected to the internet for 120 seconds.
+"Went offline for 120 seconds" means that the candidate was not connected to the internet for 120 seconds during the test. This entry appears in the proctoring report whenever AutoProctor detects a gap in connectivity.
 
 ## How AutoProctor tracks internet connectivity
 
-AutoProctor monitors connectivity through continuous server pings sent from the candidate's browser at regular intervals (approximately every 5 seconds). When pings are missing, the system infers that the candidate has lost connectivity.
+AutoProctor monitors connectivity through continuous server pings sent from the candidate's browser at regular intervals (approximately every 5 seconds). When pings are missing, the system infers that the candidate lost connectivity.
 
 **Example:** If pings failed at 11:00:30, 11:00:35, and 11:00:40 but resumed at 11:00:45, the report would indicate an offline period of approximately 10 seconds.
 
-<img src="/images/candidate-issues/went-offline-report.png" alt="Went offline entry in the proctoring report" />
+<Frame caption="Went offline entry shown in a proctoring report">
+  <img src="/images/candidate-issues/went-offline-report.png" alt="Went offline duration entry displayed in an AutoProctor proctoring report" />
+</Frame>
 
 ## Frequently asked questions
 
 <AccordionGroup>
   <Accordion title="Can candidates answer questions while offline?">
-    Yes. All questions are loaded before the test begins, so candidates can continue answering questions without an active internet connection. Internet connectivity is only required when loading new questions (if presented sequentially) or when submitting the test.
+    Yes. All questions are loaded before the test begins, so candidates can continue answering questions without an active internet connection. Connectivity is only required when loading new questions (if presented sequentially) or when submitting the test.
   </Accordion>
   <Accordion title="How does proctoring continue when the candidate is offline?">
     All violation-detection code is downloaded before the test starts. This enables AutoProctor to continue monitoring for violations (such as tab switches and face detection) even when the candidate is disconnected from the internet.
   </Accordion>
   <Accordion title="Does going offline prove cheating?">
-    No. An offline status only confirms that the candidate lost internet connectivity -- it does not indicate the reason. It could be an intentional disconnection or a genuine technical issue. Distinguishing between the two requires the instructor's judgment when reviewing the full report.
+    No. An offline status only confirms that the candidate lost internet connectivity -- it does not indicate the reason. It could be an intentional disconnection or a genuine technical issue. Distinguishing between the two requires your judgment when reviewing the full report.
   </Accordion>
 </AccordionGroup>
+
+## Related Resources
+
+- [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All events AutoProctor monitors
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [Test is Slow and Laggy](/candidate-issues/slow-and-laggy) -- Performance issues that may relate to connectivity
+- [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

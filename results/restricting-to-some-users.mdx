@@ -1,16 +1,57 @@
 ---
-title: "How to Restrict AutoProctor to Only Some Users"
-description: "Learn how to limit test participation to specific students on AutoProctor."
+title: "Restrict Test Access to Specific Candidates"
+description: "Limit test participation to specific candidates on AutoProctor using link distribution, email restrictions, or platform access controls."
 ---
 
-Students access AutoProctor tests through a shared link, and anyone with the link can take the test. However, there are scenarios where you may need to limit participation to specific students.
+Candidates access AutoProctor tests through a shared link, and by default anyone with the link can take the test. However, there are several methods to limit participation to only the candidates you choose.
 
-## Method 1: Selective link distribution
+## Method 1: Selective Link Distribution
 
-The simplest approach is to ensure that the test link is not available to all users. If your class has 20 students but only 15 should take the test, share the link exclusively with those 15 students.
+The simplest approach is to share the test link only with the candidates who should take the test.
 
-## Method 2: Google Form access restrictions
+<Steps>
+  <Step title="Identify eligible candidates">
+    Determine which candidates should have access to the test.
+  </Step>
+  <Step title="Share the link privately">
+    Send the test link only to those candidates via email, your learning management system, or another private channel. Avoid posting the link publicly.
+  </Step>
+</Steps>
 
-If you are concerned about students sharing the link with others, you can restrict the Google Form itself rather than the AutoProctor link. While students can still open the AutoProctor link, they will not be able to proceed if Google Form access is blocked. This effectively prevents test completion without blocking the initial link access.
+<Note>
+This method relies on candidates not sharing the link with others. If you need stronger access control, use one of the methods below.
+</Note>
 
-For implementation details on restricting access to Google Forms, refer to [this guide on restricting Google Form access](https://www.bettercloud.com/monitor/the-academy/restrict-access-to-google-forms/).
+## Method 2: Email-Based Restrictions
+
+Use AutoProctor's built-in **Login Restrictions** to allow only specific email domains or individual email addresses. See [Restrict Test Access by Email Address](/results/restricting-by-email) for full setup instructions.
+
+## Method 3: Unique Invitation Links
+
+Generate unique per-candidate URLs tied to specific email addresses. Each candidate receives their own link with email verification. See [Inviting Candidates via Email](/results/inviting-candidates-via-email) for details.
+
+<Note>
+Unique invitation links are available only on the **Elite Plan** and work with Socratease Quizzes and IFrame Tests.
+</Note>
+
+## Method 4: Google Forms Access Restrictions
+
+If you use Google Forms, you can restrict access at the Google Forms level instead of (or in addition to) AutoProctor restrictions. Candidates can still open the AutoProctor link, but they cannot proceed if Google Forms blocks their access.
+
+<Steps>
+  <Step title="Open your Google Form settings">
+    In Google Forms, click the **Settings** gear icon.
+  </Step>
+  <Step title="Restrict to your organization">
+    Enable the option to restrict responses to users in your organization. This limits access to candidates with email addresses under your Google Workspace domain.
+  </Step>
+</Steps>
+
+For more details, refer to [Google's guide on restricting form access](https://www.bettercloud.com/monitor/the-academy/restrict-access-to-google-forms/).
+
+## Related Resources
+
+- [Restrict Test Access by Email Address](/results/restricting-by-email) -- Set up domain and email-based restrictions
+- [Inviting Candidates via Email](/results/inviting-candidates-via-email) -- Generate unique per-candidate test links
+- [Candidate Login Methods](/results/candidate-login-methods) -- Understand available authentication options
+- [Test Settings](/creating-tests/test-settings) -- Configure all test options

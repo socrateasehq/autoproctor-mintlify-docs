@@ -1,16 +1,39 @@
 ---
-title: "False 'Switched to Different Application' in Report"
-description: "Why the 'Switched to different application' violation may appear falsely and why it does not affect your Trust Score on real tests."
+title: "False 'Switched to Different Application'"
+description: "Why the 'Switched to different application' violation may appear falsely in reports and why it does not affect Trust Scores on real tests."
 ---
 
-You may notice a "Switched to different application" violation appearing in the report, particularly when using demo tests. This can noticeably impact Trust Scores on brief tests that last only a few seconds.
+You may notice a "Switched to different application" violation appearing in a proctoring report even though the candidate did not actually switch applications. This is a known edge case that has negligible impact on real test scores.
 
-## Don't worry about this event
+## Why do false positives happen?
 
-An actual test lasts at least several minutes, and even if the AutoProctor system falsely detects a "Switched to different application" event, **it will not affect your Trust Score**.
+AutoProctor detects application switches by monitoring browser focus events and visibility state changes. False positives can occur due to:
 
-The reason this may appear on demo tests is because demo tests are very short (only a few seconds), so even a single false detection can have a noticeable impact on the Trust Score. On real tests that last several minutes or longer, a single false detection has a negligible effect.
+- **Operating system notifications** -- incoming notifications (such as calendar reminders or system updates) can momentarily shift focus away from the browser
+- **Browser-level popups** -- permission dialogs, download prompts, or autofill suggestions can trigger a focus change event
+- **Peripheral device activity** -- connecting or disconnecting USB devices, headphones, or external monitors can briefly interrupt browser focus
+- **Multi-monitor setups** -- moving the cursor near screen edges on multi-monitor configurations may trigger false detections on some operating systems
+
+These events register as an "app switch" even though the candidate never intentionally left the test.
+
+## Why this does not affect real test scores
+
+An actual test lasts at least several minutes. Even if AutoProctor falsely detects a single "Switched to different application" event, its impact on the Trust Score is negligible because the score weighs violations relative to the total test duration.
+
+On demo tests, which last only a few seconds, a single false detection can noticeably lower the Trust Score. This is simply because the test is too short for the score to absorb it.
 
 <Note>
-If you see this violation on a demo test, don't worry about it. On actual tests, this will not have any meaningful impact on the Trust Score.
+If you see this violation on a demo test, do not worry about it. On actual tests lasting several minutes or longer, a single false detection has no meaningful impact on the Trust Score.
 </Note>
+
+## How should you interpret this violation?
+
+If a candidate's report shows only one or two "Switched to different application" events alongside a high Trust Score, it is very likely a false positive. If the report shows many such events or they occur alongside other violations, it warrants further review.
+
+## Related Resources
+
+- [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All events AutoProctor monitors
+- [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
+- [No Face or Multiple Faces Detected](/candidate-issues/no-face-or-multiple-faces) -- Another common false positive scenario
+- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help

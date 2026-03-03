@@ -1,37 +1,59 @@
 ---
-title: "Best Practices for Teachers"
-description: "Guidance for educators implementing AutoProctor's proctoring feature to ensure successful test administration."
+title: "Best Practices for Test Creators"
+description: "Follow these best practices when administering proctored tests on AutoProctor to ensure a smooth experience for you and your candidates."
 ---
 
-Follow these best practices to ensure a smooth testing experience for both you and your students when using AutoProctor's proctoring feature.
+Smooth test administration requires preparation. Follow these best practices to minimize technical issues and ensure your candidates have a successful testing experience.
 
-## Have students complete a demo test
+## Pre-Test Checklist
 
-You absolutely must have students complete a demo test before the actual exam. The demo test helps students understand the platform and confirms their device meets technical requirements.
+<Steps>
+  <Step title="Have candidates complete a demo test">
+    Share the demo test link with candidates at least **24 hours** before the actual exam. The demo helps candidates understand the platform and confirms their device meets technical requirements.
 
-Use this demo link: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+    Demo link: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
 
-<Note>
-The demo test does not consume test attempts from your account. Share it with students at least **24 hours** before the actual test.
-</Note>
+    <Note>
+    The demo test does not consume test attempts from your account. Candidates can take it as many times as they need.
+    </Note>
+  </Step>
+  <Step title="Share instructions with candidates">
+    Distribute the appropriate instructions page based on your test configuration:
 
-## Configure test timing with buffer
+    - [Proctored test instructions](/taking-tests/proctored-test-instructions) -- For tests with proctoring enabled
+    - [Timed test instructions](/taking-tests/timed-test-instructions) -- For tests with only a timer
+  </Step>
+  <Step title="Verify your account has sufficient credits">
+    Ensure your account has enough test attempts available. If candidates try to load a test and your account has no credits, they cannot proceed. See [Payments and Credits](/pricing/payments-and-credits).
+  </Step>
+  <Step title="Configure test timing with buffer">
+    When scheduling timed tests with both a duration and a time window, allocate extra buffer time. For example, if your test runs for 15 minutes, set the window to at least 30 minutes to account for candidate setup and technical delays.
+  </Step>
+</Steps>
 
-When scheduling timed tests with both a duration and a time window, allow extra buffer time. For example, if your test runs for 15 minutes with a scheduled window, allocate 30 minutes total between the start and end times to account for technical delays and student setup.
+## Distributing Test Links
 
-## Share links properly
+- Use **Gmail** or **Google Classroom** to distribute test links. Avoid sharing links through messaging apps (such as Telegram or Facebook) whose in-app browsers may cause compatibility issues.
+- If candidates receive links through messaging apps, advise them to copy the link and open it directly in **Chrome** or **Firefox**.
+- Send the demo link at least 24 hours before the actual test, and the real test link closer to the scheduled time.
 
-- Use **Gmail** or **Google Classroom** to distribute test links rather than in-app browsers (such as Telegram or Facebook), which may cause compatibility issues.
-- Advise students to open links directly in **Chrome** or **Firefox** if they receive them through messaging apps with built-in browsers.
-- Distribute the demo link at least 24 hours before the actual test.
+## During the Test
 
-## Be available during the test
+- **Be available** -- Remain accessible via a chat application (such as Google Meet or WhatsApp) during testing so candidates can reach you if they encounter technical issues.
+- **Monitor results** -- Keep your AutoProctor dashboard open to monitor submissions as they come in.
 
-Remain available via a chat application (such as Google Meet or WhatsApp) during testing so students can reach you if they encounter technical issues.
+## After the Test
 
-## Clarify results and grading
+- **Review proctoring results** -- Check [Trust Scores](/getting-started/trust-score) and proctoring reports for each candidate.
+- **Clarify result sources** -- AutoProctor provides Trust Scores only. Actual grades and scores appear in your quiz platform (Google Forms, Microsoft Forms, or Socratease). Make sure candidates understand that:
+  - Technical issues should be directed to AutoProctor support
+  - Academic questions and grade inquiries should be directed to you, the test creator
 
-The AutoProctor tool provides **Trust Scores only** -- actual grades and points appear in your Google Form responses (or your respective quiz platform). Make sure students understand that:
+## Related Resources
 
-- Technical issues should be directed to AutoProctor support
-- Academic questions and grade inquiries should be directed to you, the instructor
+- [Things You Need to Know](/results/things-you-need-to-know) -- Critical requirements for using AutoProctor
+- [How to See Results on AutoProctor](/results/how-to-see-results) -- Overview of test results vs. proctoring results
+- [Trust Score Explained](/getting-started/trust-score) -- How Trust Scores are calculated
+- [Test Settings](/creating-tests/test-settings) -- Configure all test options
+- [Concurrency](/results/concurrency) -- Understand simultaneous candidate limits
+- [Device Compatibility](/getting-started/device-compatibility) -- Supported browsers and devices
