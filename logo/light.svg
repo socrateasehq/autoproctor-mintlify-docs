@@ -5,5 +5,5 @@
     <path d="M31.4834 32.0038L30.9922 25.4339C35.174 25.122 43.0075 23.193 43.0075 19.9399C43.0075 14.8787 31.3735 14.8469 31.2636 14.8469V8.23242C40.1766 8.23242 49.697 11.3073 49.697 19.9399C49.6712 30.3932 33.3448 31.8702 31.4834 32.0038Z" fill="white"/>
     <path d="M16.0506 23.3732L14.4531 27.7461L25.248 31.572L26.8454 27.1991L16.0506 23.3732Z" fill="white"/>
   </g>
-  <text x="48" y="28" font-family="'DM Sans', system-ui, sans-serif" font-size="20" font-weight="700" fill="#111827">AutoProctor</text>
+  <text x="48" y="28" font-family="'DM Sans', system-ui, sans-serif" font-size="20" font-weight="600" fill="#1f2937">AutoProctor</text>
 </svg>
