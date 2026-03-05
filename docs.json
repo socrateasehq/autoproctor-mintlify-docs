@@ -444,5 +444,10 @@
       "href": "https://www.autoproctor.co"
     }
   },
-  "footer": {}
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/autoproctorhq/",
+      "youtube": "https://www.youtube.com/@autoproctor1043"
+    }
+  }
 }

@@ -1,0 +1,18 @@
+/* Hide "Powered by Mintlify" footer branding */
+footer a[href*="mintlify.com"] {
+  display: none !important;
+}
+
+/* Hide navbar links from sidebar bottom (maple theme duplicates them there) */
+#sidebar a[href="mailto:hello@autoproctor.co"],
+#sidebar a[href="https://www.autoproctor.co"] {
+  display: none !important;
+}
+aside a[href="mailto:hello@autoproctor.co"],
+aside a[href="https://www.autoproctor.co"] {
+  display: none !important;
+}
+nav:not([class*="navbar"]) a[href="mailto:hello@autoproctor.co"],
+nav:not([class*="navbar"]) a[href="https://www.autoproctor.co"] {
+  display: none !important;
+}
