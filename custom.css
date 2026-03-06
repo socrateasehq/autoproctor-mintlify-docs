@@ -2,24 +2,3 @@
 footer a[href*="mintlify.com"] {
   display: none !important;
 }
-
-/* Collapse sidebar groups — show only headings by default */
-ul.sidebar-group {
-  display: none !important;
-}
-
-/* Always show the group containing the current active page */
-ul.sidebar-group:has(.text-primary) {
-  display: block !important;
-}
-
-/* Show a group's pages on header hover or when hovering the list itself */
-.sidebar-group-header:hover + ul.sidebar-group,
-ul.sidebar-group:hover {
-  display: block !important;
-}
-
-/* Make group headers look clickable */
-.sidebar-group-header {
-  cursor: pointer;
-}
