@@ -3,44 +3,103 @@ title: "Frequently Asked Questions"
 description: "Answers to the most common questions about AutoProctor's proctoring platform, pricing, and capabilities."
 ---
 
-Find answers to the most frequently asked questions about AutoProctor below.
+Find answers to the most frequently asked questions about AutoProctor below. If your question is not covered here, [contact our support team](/support/contact-us).
 
 <AccordionGroup>
   <Accordion title="How does AutoProctor ensure the integrity of online tests?">
-    AutoProctor uses AI monitoring that accesses cameras, microphones, and screens to detect problematic behaviors like unauthorized persons or test navigation violations. These incidents generate detailed reports with evidence for test creators to review.
+    AutoProctor uses on-device AI monitoring that accesses cameras, microphones, and screens (with the candidate's permission) to detect problematic behaviors. These include unauthorized persons in the frame, background noise, and attempts to navigate away from the test screen. Each incident generates a detailed violation report with evidence for you to review.
 
     Learn more about [what gets tracked](/getting-started/what-gets-tracked) during proctoring.
   </Accordion>
 
   <Accordion title="How do I create and manage tests on AutoProctor?">
-    The process involves five steps:
+    You create a proctored test in five steps:
 
-    1. Create a quiz using Google Forms, Microsoft Forms, or [Socratease](/socratease/why-socratease)
-    2. Register on AutoProctor with your test URL
-    3. Configure your [proctoring settings](/creating-tests/test-settings)
-    4. Share the unique test link with candidates
-    5. Review [violation reports](/results/proctoring-results) afterward
+    <Steps>
+      <Step title="Create a quiz">
+        Build your quiz using Google Forms, Microsoft Forms, or [Socratease](/socratease/why-socratease).
+      </Step>
+      <Step title="Register the test on AutoProctor">
+        Sign in to AutoProctor and register your quiz URL, or create a Socratease quiz directly on the platform.
+      </Step>
+      <Step title="Configure your proctoring settings">
+        Set up camera tracking, microphone monitoring, screen sharing, and other options in your [proctoring settings](/settings/proctoring-settings).
+      </Step>
+      <Step title="Share the test link with candidates">
+        Distribute the unique AutoProctor test link to your candidates via email, LMS, or any messaging tool.
+      </Step>
+      <Step title="Review violation reports">
+        After the test, review [proctoring results](/results/proctoring-results) and [Trust Scores](/getting-started/trust-score) for each candidate.
+      </Step>
+    </Steps>
+
+    For a full walkthrough, see the [Quickstart guide](/getting-started/quickstart).
   </Accordion>
 
   <Accordion title="What are the pricing plans for AutoProctor?">
     AutoProctor offers three subscription tiers:
 
-    - **Standard** — 150 proctored credits per billing cycle
-    - **Premium** — Standard features plus team collaboration
-    - **Elite** — Premium features, advanced question types, and API access
+    | Plan | What You Get |
+    |---|---|
+    | **Standard** | 150 proctored credits per billing cycle, plus unlimited timer-only attempts |
+    | **Premium** | Standard features plus team collaboration capabilities |
+    | **Elite** | Premium features plus advanced question types, question banks, and API/SDK access |
 
-    All plans include a 10-credit free trial with no credit card required. Visit the [pricing page](https://www.autoproctor.co/pricing) for current rates.
+    All plans include a **10-credit free trial** with no credit card required. You can cancel anytime.
+
+    Visit the [pricing page](https://www.autoproctor.co/pricing) for current rates, or see [Payments and Credits](/pricing/payments-and-credits) for details on how credits work.
   </Accordion>
 
   <Accordion title="How many candidates can take a proctored test simultaneously?">
-    AutoProctor supports up to **10,000 concurrent candidates**. If you anticipate larger volumes, contact us in advance so we can prepare our infrastructure.
+    AutoProctor supports up to **10,000 concurrent candidates** on a single test.
 
-    Learn more about [concurrency limits](/results/concurrency).
+    <Note>
+    If you anticipate more than 10,000 candidates taking a test at the same time, [contact us](/support/contact-us) at least two business days in advance so we can prepare our infrastructure.
+    </Note>
+
+    Learn more about [concurrency limits](/settings/concurrency).
   </Accordion>
 
   <Accordion title="How does AutoProctor protect user privacy and data?">
-    AutoProctor collects names, emails, images, and audio recordings exclusively for test integrity purposes and never sells data to third parties. All monitoring happens on the candidate's device — no full video recordings are uploaded to servers.
+    AutoProctor collects names, email addresses, images, and audio recordings exclusively for test integrity purposes. The company does not sell personal information or share it with third parties beyond necessary subprocessors.
 
-    Candidates under 18 require parental consent.
+    Key privacy facts:
+    - All AI monitoring happens **on the candidate's device** -- no full video recordings are uploaded to servers
+    - Data is used solely for generating proctoring reports
+    - Candidates under 18 require parental or guardian consent
+
+    <Note>
+    AutoProctor does not record full video. See [Does AutoProctor Record Video?](/getting-started/video-recording) for details on how the on-device monitoring approach protects candidate privacy.
+    </Note>
+  </Accordion>
+
+  <Accordion title="What quiz platforms does AutoProctor support?">
+    AutoProctor works with the following quiz platforms:
+
+    - **Google Forms**
+    - **Microsoft Forms**
+    - **Socratease** (AutoProctor's built-in quiz platform)
+    - **Any web-based quiz** via iframe embedding
+
+    See [Quiz Providers](/creating-tests/quiz-providers) for setup instructions for each platform.
+  </Accordion>
+
+  <Accordion title="Can I restrict who can take my test?">
+    Yes. AutoProctor offers several access control options:
+
+    - **[Restrict by email domain](/settings/restricting-by-email)** -- Allow only candidates with specific email domains (e.g., @university.edu)
+    - **[Restrict to specific users](/settings/restricting-to-some-users)** -- Allow only a pre-approved list of email addresses
+    - **[Invite candidates via email](/settings/inviting-candidates-via-email)** -- Send direct invitations to specific candidates
+
+    You configure these options in your [advanced settings](/settings/advanced-settings).
   </Accordion>
 </AccordionGroup>
+
+## Related Resources
+
+- [Quickstart](/getting-started/quickstart) -- Create your first proctored test in under 5 minutes
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All monitoring capabilities available
+- [Trust Score](/getting-started/trust-score) -- How AutoProctor scores candidate integrity
+- [Device Compatibility](/getting-started/device-compatibility) -- Supported browsers and devices
+- [Contact Us](/support/contact-us) -- Get help from the AutoProctor support team
+- [Book a Demo](/support/booking-a-demo) -- Schedule a live walkthrough of AutoProctor

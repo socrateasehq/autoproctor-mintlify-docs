@@ -1,42 +1,65 @@
 ---
-title: "Argumentos de consulta del iframe"
-description: "Agregue parámetros de consulta a las URL de iframe en la Configuración avanzada de AutoProctor para personalizar el contenido integrado."
+title: "Argumentos de Consulta del IFrame"
+description: "Agregue parámetros de consulta a las URL de iframe en la Configuración Avanzada de AutoProctor para personalizar el contenido incorporado."
 ---
 
-Al utilizar el proveedor de cuestionarios **IFrame/Other**, puede agregar parámetros de consulta a la URL de su cuestionario integrado a través de la **Configuración avanzada** de AutoProctor. Esto le permite personalizar cómo se muestra el contenido integrado sin modificar la URL original.
+Al usar el proveedor de cuestionarios **IFrame/Otros**, puede agregar parámetros de consulta a la URL de su cuestionario incorporado a través de la **Configuración Avanzada** de AutoProctor. Esto le permite personalizar cómo se comporta el contenido incorporado — por ejemplo, forzar un idioma específico o habilitar el modo incorporado — sin modificar la URL original.
 
-## Cómo funciona
+## Cómo Funciona
+
+AutoProctor construye la URL final agregando sus argumentos de consulta a la URL original del cuestionario. Usted proporciona solo los parámetros; AutoProctor agrega el prefijo `?` automáticamente.
+
+<Steps>
+  <Step title="Abra la Configuración Avanzada">
+    Navegue a su examen y abra la sección de **Configuración Avanzada**.
+
+    {/* TODO: Add screenshot of Advanced Settings with the Query Arguments field visible */}
+  </Step>
+  <Step title="Ingrese Sus Argumentos de Consulta">
+    Escriba sus parámetros en el campo **Argumentos de Consulta**. Use el formato `key1=val1&key2=val2`.
+  </Step>
+  <Step title="Guarde la Configuración">
+    Guarde la configuración de su examen. AutoProctor agrega sus parámetros a la URL del cuestionario al renderizar el iframe.
+  </Step>
+</Steps>
+
+### Ejemplo
 
 Si su URL original es:
+
 ```
 www.website.com
 ```
 
-Y desea agregar parámetros para que sea:
-```
-www.website.com?key1=val1&key2=val2
-```
+Y usted ingresa lo siguiente en el campo **Argumentos de Consulta**:
 
-Ingrese lo siguiente en el campo **Query Arguments** en la Configuración avanzada:
 ```
 key1=val1&key2=val2
 ```
 
-AutoProctor construye automáticamente la URL completa agregando sus parámetros.
+AutoProctor renderiza el iframe como:
 
-## Ejemplos comunes
-
-| Parámetro | Propósito |
-|---|---|
-| `hl=en` | Mostrar un Google Form en inglés |
-| `hl=fr` | Mostrar un Google Form en francés |
-| `embedded=true` | Forzar el modo integrado en ciertas plataformas |
+```
+www.website.com?key1=val1&key2=val2
+```
 
 <Note>
-No incluya el prefijo `?` — AutoProctor lo agrega automáticamente al construir la URL.
+No incluya el prefijo `?` en sus argumentos de consulta. AutoProctor lo agrega automáticamente al construir la URL.
 </Note>
 
-## Recursos relacionados
+## Parámetros Comunes
 
-- [Proveedores de cuestionarios](/creating-tests/quiz-providers) — Todas las plataformas de cuestionarios compatibles
-- [Configuración de pruebas](/creating-tests/test-settings) — Configure la prueba y la Configuración avanzada
+| Parámetro | Propósito | Ejemplo de Uso |
+|---|---|---|
+| `hl=en` | Establecer el idioma a inglés | Renderizar un Google Form en inglés para candidatos internacionales |
+| `hl=fr` | Establecer el idioma a francés | Renderizar un Google Form en francés |
+| `embedded=true` | Forzar modo incorporado | Asegurar que ciertas plataformas se muestren correctamente dentro del iframe |
+
+{/* TODO: Add screenshot showing the Query Arguments field with an example value entered */}
+
+## Recursos Relacionados
+
+- [Proveedores de Cuestionarios](/creating-tests/quiz-providers) — Todas las plataformas de cuestionarios compatibles
+- [Configuración Avanzada](/settings/advanced-settings) — Proveedores de inicio de sesión, colaboradores y otras opciones avanzadas
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/settings/proctoring-settings) — Opciones de cámara, micrófono y cambio de pestaña

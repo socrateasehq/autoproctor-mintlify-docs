@@ -3,23 +3,33 @@ title: "No Face or Multiple Faces Detected Incorrectly"
 description: "Understand why AutoProctor's AI may incorrectly report face detection violations and how to properly interpret these results in proctoring reports."
 ---
 
-AutoProctor uses AI for face detection, and AI is not 100% accurate. You may see "No Face Detected" or "Multiple Faces Detected" violations in a report even when the evidence photo clearly shows a single face.
+AutoProctor uses AI for face detection, and AI is not 100% accurate. You may see "No Face Detected" or "Multiple Faces Detected" violations in a report even when the evidence photo clearly shows a single face present.
 
-## Why does this happen?
+## Why This Happens
 
 AutoProctor's AI models are trained on thousands of faces, but they can fail in scenarios that differ from their training data. The three most common causes of incorrect face detection are:
 
-1. **Complex backgrounds** -- busy or colorful backgrounds can confuse the AI into detecting extra faces or missing the real one
-2. **Head positioning** -- candidates looking away from the screen, looking downward, or tilting their head can cause the AI to miss their face
-3. **Reflective eyewear** -- glasses that reflect light or obscure the eyes make it harder for the detection system to identify a face
+| Cause | Description |
+|---|---|
+| Complex backgrounds | Busy or colorful backgrounds can confuse the AI into detecting extra faces or missing the real one |
+| Head positioning | Candidates looking away from the screen, looking downward, or tilting their head can cause the AI to miss their face |
+| Reflective eyewear | Glasses that reflect light or obscure the eyes make it harder for the detection system to identify a face |
 
-## How should you interpret these violations?
+## How to Interpret These Violations
 
 AutoProctor provides evidence photos alongside every violation so that you can independently verify the AI's determination. When reviewing face detection violations:
 
-- **Check the evidence photo** -- does the photo actually show no face, multiple faces, or is the AI clearly wrong?
-- **Look at the pattern** -- a single incorrect detection among many correct ones is likely a false positive
-- **Consider the context** -- poor lighting, unusual angles, or busy backgrounds explain most false detections
+<Steps>
+  <Step title="Check the evidence photo">
+    Look at the photo associated with the violation. Does it actually show no face, multiple faces, or is the AI clearly wrong?
+  </Step>
+  <Step title="Look at the pattern">
+    A single incorrect detection among many correct ones is likely a false positive. Multiple consecutive detections may warrant closer review.
+  </Step>
+  <Step title="Consider the context">
+    Poor lighting, unusual angles, or busy backgrounds explain most false detections. Factor in the testing environment before drawing conclusions.
+  </Step>
+</Steps>
 
 <Warning>
 Always review the full report and the provided evidence before concluding whether a candidate cheated. Do not rely solely on automated Trust Scores -- use them as a guide alongside the photographic evidence.
@@ -32,4 +42,4 @@ Always review the full report and the provided evidence before concluding whethe
 - [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
 - [Missing Violation Evidence](/candidate-issues/missing-violation-evidence) -- Why some violations lack evidence photos
 - [False 'Switched to Different Application'](/candidate-issues/false-app-switch) -- Another common false positive scenario
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

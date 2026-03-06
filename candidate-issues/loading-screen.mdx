@@ -3,47 +3,56 @@ title: "Test Stuck at Loading Screen"
 description: "Fix tests that are stuck on the loading screen. Learn why device or browser compatibility issues cause loading failures and how to resolve them."
 ---
 
-AutoProctor uses advanced technologies for real-time proctoring, which require a modern browser and adequate device hardware. If your test is stuck at the loading screen, your setup likely does not meet these requirements.
+AutoProctor uses advanced browser technologies for real-time proctoring, which require a modern browser and adequate device hardware. If your test is stuck at the loading screen, your setup likely does not meet these requirements.
 
-## Why is your test stuck at loading?
+## Why Your Test Is Stuck at Loading
 
 AutoProctor runs AI-powered video capture and analysis directly in your browser. This demands significantly more processing power than typical web applications. The loading screen appears when your browser or device cannot initialize these proctoring components.
 
 Common causes include:
 
 - **Outdated browser** -- older browser versions lack the APIs AutoProctor needs
-- **Insufficient hardware** -- low-end devices may not support real-time video processing
-- **Browser extensions** -- certain extensions can block AutoProctor's scripts from loading
+- **Insufficient hardware** -- low-end or older devices may not support real-time video processing
+- **Browser extensions** -- certain extensions (especially ad blockers and privacy tools) can block AutoProctor's scripts from loading
+
+{/* TODO: Add screenshot of AutoProctor loading screen indicating a compatibility issue */}
 
 <Frame caption="AutoProctor loading screen indicating a compatibility issue">
-  <img src="/images/candidate-issues/loading-screen-demo.png" alt="AutoProctor loading screen stuck due to device or browser compatibility" />
+  <img src="/images/candidate-issues/loading-screen-demo.png" alt="AutoProctor loading screen stuck due to device or browser compatibility issue" />
 </Frame>
 
-## How to fix it
+## How to Fix It
 
 <Steps>
   <Step title="Take the demo test">
-    Visit the [AutoProctor demo test](https://www.autoproctor.co/demo) to verify that your device and browser are compatible. This confirms whether the issue is with your setup.
+    Visit the [AutoProctor demo test](https://www.autoproctor.co/demo) to verify that your device and browser are compatible. If the demo also fails to load, your device does not support AutoProctor.
   </Step>
   <Step title="Use a modern browser">
-    Ensure you are running the latest version of **Google Chrome**, **Microsoft Edge**, or **Firefox**. Update your browser if it is not current.
+    Ensure you are running the latest version of **Google Chrome** (version 83+) on Windows, Android, or Mac, or **Safari** (version 13+) on iPhone or iPad. Update your browser if it is not current.
   </Step>
   <Step title="Disable conflicting extensions">
     Temporarily disable browser extensions, especially ad blockers and privacy tools, that may interfere with AutoProctor's scripts.
   </Step>
-  <Step title="Use a higher-end device if needed">
-    If the test still does not load after following the steps above, your device does not meet the minimum hardware requirements. You will need to switch to a more powerful device.
+  <Step title="Close other applications">
+    Close all unnecessary applications and browser tabs to free up processing power and memory for AutoProctor.
+  </Step>
+  <Step title="Switch to a different device if needed">
+    If the test still does not load after following the steps above, your device does not meet the minimum hardware requirements. You will need to switch to a more powerful device. Your device may run everyday apps like YouTube and social media perfectly, but AutoProctor's AI processing demands significantly more resources.
   </Step>
 </Steps>
 
 <Warning>
-If the demo test also fails to load, your device does not support AutoProctor. You will need to use a different device with better hardware specifications.
+If the demo test also fails to load, your device does not support AutoProctor. You will need to use a different device with better hardware specifications. There is nothing AutoProctor can do from its end to resolve hardware limitations.
 </Warning>
+
+<Note>
+If one test loads on your device, all other tests will load too. The demo test is the best way to verify compatibility.
+</Note>
 
 ## Related Resources
 
-- [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
+- [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and minimum device specs
 - [Test is Slow and Laggy](/candidate-issues/slow-and-laggy) -- Troubleshoot performance issues
 - [Blank Page or Grey Screen](/candidate-issues/blank-page-grey-screen) -- Fix blank screen issues
 - [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide for candidates
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

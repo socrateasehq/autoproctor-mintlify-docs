@@ -1,0 +1,74 @@
+---
+title: "Configuración del Temporizador"
+description: "Configure la duración del examen, el comportamiento de envío automático, las ventanas de tiempo y el tiempo de gracia para sus exámenes de AutoProctor."
+---
+
+La Configuración del Temporizador le permite controlar cuándo los candidatos pueden iniciar un examen, cuánto tiempo tienen para completarlo y qué sucede cuando se agota el tiempo. Acceda a estos ajustes desde el botón **Configuración** en su panel de control.
+
+{/* TODO: Add screenshot of the Timer Settings section in the test settings page */}
+
+<Frame>
+  <img src="/images/creating-tests/timer-settings.png" alt="Panel de configuración del temporizador" />
+</Frame>
+
+<Note>
+Los horarios que establezca están en su zona horaria local. AutoProctor maneja todas las conversiones de zona horaria automáticamente — si sus candidatos están en una zona horaria diferente, verán la hora local correcta en su dispositivo.
+</Note>
+
+## Cómo Configurar el Temporizador
+
+<Steps>
+  <Step title="Active el Temporizador">
+    En la página de Configuración del Examen, marque la casilla **Activar Temporizador**. Esto activa todos los ajustes relacionados con el tiempo para su examen. Desmarcar esta casilla desactiva todas las verificaciones relacionadas con el tiempo.
+  </Step>
+  <Step title="Establezca la Duración">
+    Ingrese el tiempo máximo que un candidato tiene para completar el examen. La cuenta regresiva comienza cuando el examen se carga y el candidato ve las preguntas.
+  </Step>
+  <Step title="Configure el Envío Automático (Opcional)">
+    Active **Envío Automático del Examen** para enviar automáticamente el examen cuando se agote la duración. Si se desactiva, los candidatos tienen tiempo ilimitado para enviar después de que el temporizador se agote.
+
+    <Warning>
+    Para cuestionarios que no sean de Socratease, el envío automático solo envía la sesión de supervisión — no las respuestas del cuestionario. Si un candidato no ha enviado manualmente sus respuestas, **todas las respuestas se perderán**. Para cuestionarios de Socratease, tanto las respuestas como los datos de supervisión se envían automáticamente.
+    </Warning>
+  </Step>
+  <Step title="Establezca una Ventana de Inicio (Opcional)">
+    Use **No Puede Iniciar Antes** y **No Puede Iniciar Después** para definir cuándo los candidatos pueden comenzar el examen:
+    - **No Puede Iniciar Antes** — la fecha y hora más temprana en que un candidato puede comenzar
+    - **No Puede Iniciar Después** — la fecha y hora más tardía en que un candidato puede comenzar
+
+    Si establece una fecha sin hora, se usa la medianoche como valor predeterminado.
+  </Step>
+  <Step title="Establezca una Fecha Límite de Entrega (Opcional)">
+    **Debe Enviar Antes** establece una fecha límite estricta para el envío. Si un candidato inicia el examen cerca de esta fecha límite, su tiempo disponible se reduce proporcionalmente.
+
+    Por ejemplo, si la duración del examen es de 30 minutos y la hora de Debe Enviar Antes es 12:30 PM, un candidato que inicie a las 12:15 PM tendrá solo 15 minutos. Esta configuración usa la misma fecha que **No Puede Iniciar Después**.
+  </Step>
+  <Step title="Configure el Tiempo de Gracia (Opcional)">
+    El **Tiempo de Gracia** es un período adicional después de la hora de No Puede Iniciar Después que permite a los candidatos completar el examen de demostración y configurar su dispositivo. AutoProctor agrega un tiempo de gracia predeterminado de 5 minutos cuando se establecen los horarios de inicio/fin.
+
+    <Note>
+    El tiempo de gracia no se aplica a la fecha límite de Debe Enviar Antes.
+    </Note>
+  </Step>
+</Steps>
+
+## Referencia de Configuración del Temporizador
+
+| Configuración | Descripción | Valor Predeterminado |
+|---|---|---|
+| **Duración** | Tiempo máximo para un intento de examen | Sin límite |
+| **Envío Automático del Examen** | Enviar automáticamente cuando se agote el tiempo | Desactivado |
+| **No Puede Iniciar Antes** | Fecha y hora de inicio más temprana | Sin restricción |
+| **No Puede Iniciar Después** | Fecha y hora de inicio más tardía | Sin restricción |
+| **Debe Enviar Antes** | Fecha límite estricta de envío | No establecida |
+| **Tiempo de Gracia** | Período adicional para configuración después de No Puede Iniciar Después | 5 min (cuando se establecen horarios) |
+
+{/* TODO: Add GIF showing the timer countdown experience from the candidate's perspective */}
+
+## Recursos Relacionados
+
+- [Configuración de Supervisión](/settings/proctoring-settings) — Configure cámara, micrófono y detección de cambio de pestaña
+- [Configuración Avanzada](/settings/advanced-settings) — Proveedores de inicio de sesión, restricciones e integraciones
+- [Configuración del Cuestionario](/socratease/quiz-settings) — Para configuraciones específicas de cuestionarios Socratease, consulte la página de Configuración del Cuestionario de Socratease
+- [Reanudar Intentos de Examen](/settings/resuming-test-attempts) — Cómo funciona la reanudación automática con exámenes cronometrados
+- [Qué Se Monitorea](/getting-started/what-gets-tracked) — Descripción general de todas las capacidades de supervisión

@@ -1,0 +1,89 @@
+---
+title: "Reanudación de Exámenes de Google Forms"
+description: "Configure si los candidatos pueden reanudar exámenes de Google Forms después de cerrarlos a mitad del intento, gestionando las opciones de autoguardado y reanudación automática."
+---
+
+Los exámenes de Google Forms requieren que dos configuraciones funcionen juntas para un comportamiento de reanudación correcto: la configuración de **autoguardado** en Google Forms y la configuración de **reanudación automática** en AutoProctor. Una discrepancia entre estas configuraciones causa un comportamiento inesperado para los candidatos.
+
+<Note>
+Dos configuraciones controlan la reanudación de exámenes de Google Forms:
+1. **Deshabilitar Autoguardado** en Google Forms — Controla si se guardan los borradores de respuestas a medida que el candidato completa el formulario.
+2. **Habilitar Reanudación Automática** en AutoProctor — Controla si AutoProctor carga el intento anterior cuando un candidato regresa al enlace del examen.
+
+Debe configurar ambas opciones juntas para obtener el comportamiento deseado.
+</Note>
+
+## Para Permitir la Reanudación del Examen
+
+Si desea que los candidatos continúen donde lo dejaron después de cerrar el examen:
+
+<Steps>
+  <Step title="Mantenga habilitado el autoguardado en Google Forms">
+    Asegúrese de que la función **Deshabilitar Autoguardado** esté **DESACTIVADA** en la configuración de su examen de Google Forms. Esta es la configuración predeterminada, por lo que solo necesita verificar que no se haya cambiado.
+
+    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled OFF */}
+
+    <Frame>
+      <img src="/images/settings/gforms-autosave-enabled.png" alt="Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado desactivado, manteniendo el autoguardado activo" />
+    </Frame>
+  </Step>
+  <Step title="Active la reanudación automática en AutoProctor">
+    Active la configuración **Habilitar Reanudación Automática** en la configuración de su examen de AutoProctor.
+
+    {/* TODO: Add screenshot of AutoProctor test settings showing Enable Auto-resume toggled ON */}
+
+    <Frame>
+      <img src="/images/settings/gforms-autoresume-enabled.png" alt="Configuración del examen de AutoProctor mostrando Habilitar Reanudación Automática activado" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Para Impedir la Reanudación del Examen
+
+Si desea que cada visita al enlace del examen cree un nuevo intento en blanco:
+
+<Steps>
+  <Step title="Deshabilite el autoguardado en Google Forms">
+    Active la función **Deshabilitar Autoguardado** en la configuración de su examen de Google Forms. Esto impide que Google Forms guarde borradores de respuestas.
+
+    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled ON */}
+
+    <Frame>
+      <img src="/images/settings/gforms-autosave-disabled.png" alt="Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado activado, deshabilitando el autoguardado" />
+    </Frame>
+  </Step>
+  <Step title="Desactive la reanudación automática en AutoProctor">
+    Desactive la opción **Reanudar Examen No Enviado** en la configuración de su examen de AutoProctor.
+
+    {/* TODO: Add screenshot of AutoProctor test settings showing Resume Unsubmitted Test toggled OFF */}
+
+    <Frame>
+      <img src="/images/settings/gforms-autoresume-disabled.png" alt="Configuración del examen de AutoProctor mostrando Reanudar Examen No Enviado desactivado" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Referencia de Combinaciones de Configuración
+
+| Deshabilitar Autoguardado (Google Forms) | Habilitar Reanudación Automática (AutoProctor) | Resultado |
+|---|---|---|
+| DESACTIVADO (predeterminado) | ACTIVADO (predeterminado) | Los candidatos reanudan donde lo dejaron |
+| ACTIVADO | DESACTIVADO | Cada visita inicia un intento nuevo y en blanco |
+| DESACTIVADO | DESACTIVADO | Se carga un nuevo intento, pero Google Forms puede mostrar respuestas guardadas previamente — confuso para los candidatos |
+| ACTIVADO | ACTIVADO | AutoProctor intenta reanudar, pero Google Forms no tiene borrador guardado — el candidato ve un formulario en blanco con tiempo reducido |
+
+<Warning>
+Si las dos configuraciones no coinciden (por ejemplo, el autoguardado está habilitado pero la reanudación automática está deshabilitada), los candidatos pueden experimentar un comportamiento inesperado, como ver un formulario parcialmente completado en un nuevo intento o perder su progreso guardado. Siempre configure ambas opciones para que coincidan.
+</Warning>
+
+## Configuración Predeterminada
+
+Google Forms tiene el autoguardado habilitado por defecto, y la configuración predeterminada correspondiente de AutoProctor permite reanudar intentos de examen no enviados. Esto significa que los exámenes se reanudan por defecto a menos que usted cambie explícitamente alguna de las configuraciones.
+
+## Recursos Relacionados
+
+- [Reanudación de Intentos de Examen](/settings/resuming-test-attempts) — Comportamiento general de reanudación en todos los tipos de exámenes
+- [Intentos Máximos](/settings/maximum-attempts) — Configure cuántos intentos se permiten a los candidatos
+- [Exámenes No Enviados](/results/unsubmitted-tests) — Ver exámenes iniciados pero no enviados
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Mejores Prácticas para Docentes](/getting-started/best-practices-for-teachers) — Consejos para una administración de exámenes fluida

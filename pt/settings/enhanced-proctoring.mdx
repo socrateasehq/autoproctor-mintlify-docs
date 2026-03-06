@@ -1,0 +1,87 @@
+---
+title: "Supervisão Avançada"
+description: "Configure verificação de identidade, detecção de impostor, supervisão em 360 graus e gravação de sessão para proteção avançada contra fraudes."
+---
+
+A Supervisão Avançada adiciona recursos avançados de verificação de identidade e monitoramento além da supervisão padrão. Esses recursos ajudam a prevenir a personificação, detectar ferramentas de IA e criar um registro completo de cada tentativa de teste.
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Painel de configurações de supervisão avançada" />
+</Frame>
+
+<Note>
+Cada recurso de supervisão avançada requer **4 créditos adicionais por tentativa**. Se você ativar múltiplos recursos avançados, o custo de créditos é cumulativo. Por exemplo, ativar a Verificação de Identidade e a Gravação de Sessão custa 8 créditos adicionais por tentativa de candidato.
+</Note>
+
+## Recursos Disponíveis
+
+### Verificação de Identidade
+
+A Verificação de Identidade confirma a identidade do candidato comparando seu documento de identidade enviado com a foto do teste e o nome inserido.
+
+<Steps>
+  <Step title="Ativar a Verificação de Identidade">
+    Ative a opção **ID Card Verification** na seção de Supervisão Avançada das configurações do teste.
+  </Step>
+  <Step title="O candidato faz upload do documento">
+    Ao iniciar o teste, o candidato é solicitado a fazer upload de uma foto do seu documento de identidade. Documentos aceitos incluem carteiras de estudante, passaportes, carteiras de motorista e documentos emitidos pelo governo.
+  </Step>
+  <Step title="O AutoProctor verifica a identidade">
+    O sistema compara a foto e o nome no documento de identidade com a Foto Antes do Início do Teste e o nome que o candidato inseriu na plataforma.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the ID card upload screen from the candidate's perspective */}
+
+<Note>
+A **Foto Antes do Início do Teste** deve estar ativada nas configurações básicas de supervisão para que a Verificação de Identidade funcione efetivamente.
+</Note>
+
+### Detecção de Impostor
+
+A Detecção de Impostor monitora se alguém diferente do candidato original tenta ou continua o teste. O AutoProctor compara fotos periódicas tiradas durante o teste com a foto inicial para detectar mudanças de rosto.
+
+{/* TODO: Add screenshot of an impersonation detection alert in the proctoring report */}
+
+### Dispositivo Auxiliar (Supervisão em 360°)
+
+O recurso de Dispositivo Auxiliar permite a supervisão em 360 graus emparelhando o celular do candidato com o laptop. Isso fornece um ângulo de câmera secundário que captura o ambiente físico do candidato.
+
+<Steps>
+  <Step title="Ativar o Dispositivo Auxiliar">
+    Ative a opção **Auxiliary Device** nas configurações de Supervisão Avançada.
+  </Step>
+  <Step title="O candidato emparelha o celular">
+    Quando o teste começa, o candidato escaneia um código QR na tela do laptop usando a câmera do celular. Isso emparelha os dois dispositivos.
+  </Step>
+  <Step title="O celular fornece monitoramento secundário">
+    A câmera do celular captura a mesa, o ambiente e a tela do candidato de um ângulo diferente. Isso também ajuda a detectar ferramentas de IA que exibem respostas como sobreposições na tela.
+  </Step>
+</Steps>
+
+{/* TODO: Add video walkthrough of the auxiliary device pairing and 360° proctoring setup */}
+
+### Gravação de Sessão
+
+A Gravação de Sessão captura um registro completo da atividade na tela do candidato durante todo o teste, incluindo cliques do mouse e entrada do teclado. Isso cria uma linha do tempo revisável de toda a tentativa de teste.
+
+{/* TODO: Add screenshot of a session recording playback in the results page */}
+
+## Resumo de Custos de Créditos
+
+| Recurso | Créditos por Tentativa |
+|---|---|
+| Verificação de Identidade | 4 |
+| Detecção de Impostor | 4 |
+| Dispositivo Auxiliar (360°) | 4 |
+| Gravação de Sessão | 4 |
+| Todos os 4 recursos combinados | 16 |
+
+## Recursos Relacionados
+
+- [Configurações de Supervisão](/settings/proctoring-settings) — Opções básicas de supervisão (câmera, microfone, troca de aba)
+- [Trust Score](/getting-started/trust-score) — Como os dados de supervisão avançada afetam o Trust Score
+- [Resultados de Supervisão](/results/proctoring-results) — Revisando os resultados de supervisão avançada
+- [Envios Individuais](/results/individual-submissions) — Visualizando dados detalhados de cada candidato
+- [Pagamentos e Créditos](/pricing/payments-and-credits) — Entendendo o uso e a compra de créditos
+- [Recursos Elite](/pricing/elite-features) — Visão geral dos recursos Premium e Elite

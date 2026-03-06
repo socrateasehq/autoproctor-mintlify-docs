@@ -3,7 +3,7 @@ title: "Automatically Write Results to Google Sheets"
 description: "Set up automatic export of AutoProctor test results to Google Sheets so data flows in real time without manual downloads."
 ---
 
-Instead of manually downloading Excel files after each test, you can configure AutoProctor to automatically write test results to a Google Sheet. Results appear in the sheet as candidates complete their tests.
+Instead of manually downloading Excel files after each test, you can configure AutoProctor to automatically write test results to a Google Sheet. Results appear in the sheet as candidates complete their tests, keeping your data current without any extra effort.
 
 <Note>
 This is a **Premium Feature** and requires a Premium or Elite subscription. See [Payments and Credits](/pricing/payments-and-credits) for plan details.
@@ -14,15 +14,23 @@ This is a **Premium Feature** and requires a Premium or Elite subscription. See 
 <Steps>
   <Step title="Open test settings">
     Visit the **Test Settings** for a new or existing test on your AutoProctor dashboard.
+
+    {/* TODO: Add screenshot of the Test Settings page showing Advanced Settings section */}
   </Step>
   <Step title="Find the Google Sheets ID field">
     Scroll down to the **Advanced Settings** section and locate the **Google Sheets ID** field.
+
+    {/* TODO: Add screenshot of the Google Sheets ID field in Advanced Settings */}
   </Step>
   <Step title="Create a blank Google Sheet">
-    Create an empty Google Sheet in your Google Drive.
+    Create an empty Google Sheet in your Google Drive. You will use this sheet to receive AutoProctor results.
   </Step>
   <Step title="Grant write access">
     Share the Google Sheet with `hello@autoproctor.co` and grant **Editor** permissions. This allows AutoProctor to write data to the sheet.
+
+    <Warning>
+    If you do not share the sheet with `hello@autoproctor.co` as an Editor, AutoProctor cannot write results to it. Make sure you grant Editor access, not just Viewer.
+    </Warning>
   </Step>
   <Step title="Paste the Google Sheet URL">
     Copy the URL of your Google Sheet and paste it into the **Google Sheets ID** field in AutoProctor's test settings.
@@ -48,6 +56,7 @@ If you need detailed question-level data for Socratease Quizzes, use the [indivi
 ## Related Resources
 
 - [Export to Excel](/results/export-to-excel) -- Manually download results as a spreadsheet
-- [Test Settings](/creating-tests/test-settings) -- Configure all test options including integrations
+- [Checking Individual Submissions](/results/individual-submissions) -- View detailed per-candidate responses
 - [How to See Results on AutoProctor](/results/how-to-see-results) -- Overview of test results vs. proctoring results
 - [Payments and Credits](/pricing/payments-and-credits) -- Plan details and feature availability
+- [Sharing Test Results](/results/sharing-test-results) -- Grant other users access to test results

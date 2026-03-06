@@ -3,40 +3,63 @@ title: "IFrame Query Arguments"
 description: "Append query parameters to iframe URLs in AutoProctor's Advanced Settings to customize embedded content."
 ---
 
-When using the **IFrame/Other** quiz provider, you can append query parameters to your embedded quiz URL through AutoProctor's **Advanced Settings**. This lets you customize how the embedded content is displayed without modifying the original URL.
+When you use the **IFrame/Other** quiz provider, you can append query parameters to your embedded quiz URL through AutoProctor's **Advanced Settings**. This lets you customize how the embedded content behaves -- for example, forcing a specific language or enabling embedded mode -- without modifying the original URL.
 
 ## How It Works
 
+AutoProctor constructs the final URL by appending your query arguments to the original quiz URL. You provide only the parameters; AutoProctor adds the `?` prefix automatically.
+
+<Steps>
+  <Step title="Open Advanced Settings">
+    Navigate to your test and open the **Advanced Settings** section.
+
+    {/* TODO: Add screenshot of Advanced Settings with the Query Arguments field visible */}
+  </Step>
+  <Step title="Enter Your Query Arguments">
+    Type your parameters in the **Query Arguments** field. Use the format `key1=val1&key2=val2`.
+  </Step>
+  <Step title="Save Settings">
+    Save your test settings. AutoProctor appends your parameters to the quiz URL when rendering the iframe.
+  </Step>
+</Steps>
+
+### Example
+
 If your original URL is:
+
 ```
 www.website.com
 ```
 
-And you want to add parameters to make it:
-```
-www.website.com?key1=val1&key2=val2
-```
+And you enter the following in the **Query Arguments** field:
 
-Enter the following in the **Query Arguments** field under Advanced Settings:
 ```
 key1=val1&key2=val2
 ```
 
-AutoProctor automatically constructs the complete URL by appending your parameters.
+AutoProctor renders the iframe as:
 
-## Common Examples
-
-| Parameter | Purpose |
-|---|---|
-| `hl=en` | Render a Google Form in English |
-| `hl=fr` | Render a Google Form in French |
-| `embedded=true` | Force embedded mode on certain platforms |
+```
+www.website.com?key1=val1&key2=val2
+```
 
 <Note>
-Do not include the `?` prefix — AutoProctor adds it automatically when constructing the URL.
+Do not include the `?` prefix in your query arguments. AutoProctor adds it automatically when constructing the URL.
 </Note>
+
+## Common Parameters
+
+| Parameter | Purpose | Example Use Case |
+|---|---|---|
+| `hl=en` | Set the language to English | Render a Google Form in English for international candidates |
+| `hl=fr` | Set the language to French | Render a Google Form in French |
+| `embedded=true` | Force embedded mode | Ensure certain platforms display correctly inside the iframe |
+
+{/* TODO: Add screenshot showing the Query Arguments field with an example value entered */}
 
 ## Related Resources
 
-- [Quiz Providers](/creating-tests/quiz-providers) — All supported quiz platforms
-- [Test Settings](/creating-tests/test-settings) — Configure test and Advanced Settings
+- [Quiz Providers](/creating-tests/quiz-providers) -- All supported quiz platforms
+- [Advanced Settings](/settings/advanced-settings) -- Login providers, collaborators, and other advanced options
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows
+- [Proctoring Settings](/settings/proctoring-settings) -- Camera, microphone, and tab-switching options

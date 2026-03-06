@@ -3,24 +3,32 @@ title: "Question Display Mode"
 description: "Control how questions are displayed to candidates -- all at once, one-by-one with navigation, or one-by-one without navigation."
 ---
 
-The Question Display Mode setting in Socratease Quizzes controls how questions appear to test takers. There are three display options available.
+The Question Display Mode setting controls how questions appear to your test takers. You can choose between three display options, each with different implications for navigation, timing, and test security.
+
+{/* TODO: Add screenshot of the question display mode setting in quiz settings */}
 
 ## Display Modes
 
 ### 1. All-at-once (Google Forms style)
 
-Candidates see all the questions at the same time, one below the other, like a Google Form. The timer applies to the **entire test**.
+Candidates see all the questions at the same time, one below the other, like a Google Form. The timer applies to the **entire test**. Candidates can scroll freely between questions and answer them in any order.
+
+{/* TODO: Add screenshot of all-at-once display mode from the candidate view */}
 
 ### 2. One-by-one with navigation (Typeform style)
 
-Candidates see one question at a time, and can navigate back-and-forth between questions. The timer applies to the **entire test**, not to individual questions.
+Candidates see one question at a time and can navigate back and forth between questions. The timer applies to the **entire test**, not to individual questions. Candidates can revisit and change their answers at any point before submitting.
+
+{/* TODO: Add screenshot of one-by-one with navigation from the candidate view */}
 
 ### 3. One-by-one without navigation
 
-Candidates see one question at a time. Once they submit a question (by attempting or skipping it), they **CANNOT go back to it**. The timer is set **per question**, not for the entire test.
+Candidates see one question at a time. Once they submit a question (by attempting or skipping it), they **cannot go back to it**. The timer is set **per question**, not for the entire test.
+
+{/* TODO: Add screenshot of one-by-one without navigation from the candidate view */}
 
 <Frame>
-  <img src="/images/socratease/question-display-mode.png" alt="Question display mode settings" />
+  <img src="/images/socratease/question-display-mode.png" alt="Question display mode settings panel showing the three available options" />
 </Frame>
 
 ## Key Differences
@@ -28,13 +36,44 @@ Candidates see one question at a time. Once they submit a question (by attemptin
 | Feature | All-at-once | One-by-one with nav | One-by-one without nav |
 |---|:---:|:---:|:---:|
 | Timer scope | Entire test | Entire test | Per question |
-| Can go back | Yes | Yes | No |
+| Can go back to previous questions | Yes | Yes | No |
 | Custom instructions | Yes | No | No |
 
 ## When to Use One-by-one Without Navigation
 
-The no-navigation option is especially useful for security purposes. This gives the test taker less time to cheat on a question, as at any given time, they can view only one question, for a limited amount of time.
+The no-navigation option is especially useful for test security. Candidates can view only one question at a time for a limited duration, which significantly reduces the opportunity to cheat. Each question has its own timer, so candidates cannot spend extra time on difficult questions by rushing through easier ones.
+
+## How Timer Settings Change
 
 <Warning>
-When using **one-by-one without navigation**, certain test-level timer settings become unavailable. The **Duration** and **Must Submit By** parameters shift to the question level, and the **Auto-Submit** function applies automatically when the per-question time expires.
+When you use **one-by-one without navigation**, certain test-level timer settings become unavailable. The timer behavior shifts to the question level:
+
+- **Duration**: You set the duration per question, not for the entire test
+- **Auto-Submit**: Each question auto-submits when its individual timer expires
+- **Must Submit By**: This test-level setting is replaced by **Cannot Start After** at the test level
 </Warning>
+
+For more information on timer configuration, see [Timer Settings](/settings/timer-settings).
+
+## How to Set the Display Mode
+
+<Steps>
+  <Step title="Open Your Quiz">
+    Open the Socratease Quiz you want to configure from your AutoProctor dashboard.
+  </Step>
+  <Step title="Go to Settings">
+    Click the **Settings** icon (gear) in the quiz editor toolbar.
+  </Step>
+  <Step title="Select Display Mode">
+    Choose your preferred display mode from the **Question Display Mode** dropdown. The default is "All-at-once."
+
+    {/* TODO: Add screenshot of question display mode dropdown selection */}
+  </Step>
+</Steps>
+
+## Related Resources
+
+- [Quiz Settings](/socratease/quiz-settings) -- All Socratease quiz configuration options
+- [Timer Settings](/settings/timer-settings) -- Configure test-level and question-level timers
+- [How to Create a Socratease Quiz](/socratease/creating-a-quiz) -- Step-by-step creation guide
+- [Showing Results to Candidates](/socratease/showing-results-to-candidates) -- Control result visibility

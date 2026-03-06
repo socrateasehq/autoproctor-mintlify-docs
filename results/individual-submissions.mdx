@@ -14,6 +14,8 @@ After candidates complete a test, you can review their individual submissions to
   <Step title="Click View under Results">
     Click the **View** button under the **Results** section of the relevant test. This opens a list of all candidate submissions.
 
+    {/* TODO: Add screenshot of the submissions list showing candidate names, scores, and grading status */}
+
     <Frame>
       <img src="/images/results/submissions-list.png" alt="List of candidate submissions showing names, scores, and grading status" />
     </Frame>
@@ -21,10 +23,14 @@ After candidates complete a test, you can review their individual submissions to
   <Step title="Check scores and responses">
     Each submission shows one of two states:
 
-    - **Score link with percentage** -- The candidate has finished the test and it has been graded. Click the score link to view their full responses.
-    - **Grade button in blue** -- The candidate has not finished the test, or it has not yet been graded. Click **Grade** to review and grade their responses.
+    | State | What It Means | Action |
+    |---|---|---|
+    | **Score link with percentage** | The candidate finished the test and it has been graded | Click the score link to view their full responses |
+    | **Blue Grade button** | The candidate has not finished the test, or it has not yet been graded | Click **Grade** to review and grade their responses |
 
     Clicking either link opens a detailed page showing all responses, points scored, and candidate-specific information.
+
+    {/* TODO: Add screenshot of an individual submission detail page with responses and scores */}
 
     <Frame>
       <img src="/images/results/individual-submission-details.png" alt="Individual submission detail page showing candidate responses and points scored" />
@@ -34,7 +40,7 @@ After candidates complete a test, you can review their individual submissions to
 
 ## For Google Forms
 
-Google Forms manages its own response data independently from AutoProctor. To view individual candidate responses in Google Forms:
+Google Forms manages its own response data independently from AutoProctor. To view individual candidate responses:
 
 <Steps>
   <Step title="Open your Google Form">
@@ -44,14 +50,14 @@ Google Forms manages its own response data independently from AutoProctor. To vi
     Select the **Responses** tab at the top of the form editor.
   </Step>
   <Step title="View individual responses">
-    Click the **Individual** tab to browse through each candidate's responses one at a time. You can navigate between submissions using the arrow buttons.
+    Click the **Individual** tab to browse through each candidate's responses one at a time. Use the arrow buttons to navigate between submissions.
   </Step>
 </Steps>
 
 For more details on Google Forms response features, see [Google's official documentation](https://support.google.com/docs/answer/139706).
 
 <Note>
-If you cannot see responses in Google Forms, refer to our guide on [missing Google Forms responses](/candidate-issues/google-forms-response-not-visible).
+If you cannot see responses in Google Forms, refer to the guide on [missing Google Forms responses](/candidate-issues/google-forms-response-not-visible).
 </Note>
 
 ## Related Resources
@@ -60,3 +66,4 @@ If you cannot see responses in Google Forms, refer to our guide on [missing Goog
 - [Where Can I See Proctoring Results?](/results/proctoring-results) -- View proctoring reports for candidates
 - [Export to Excel](/results/export-to-excel) -- Download all results as a spreadsheet
 - [Showing Results to Candidates](/socratease/showing-results-to-candidates) -- Control what candidates see after submission
+- [Google Sheets Integration](/results/google-sheets-integration) -- Automatically sync results to a Google Sheet

@@ -1,56 +1,94 @@
 ---
-title: "Configuración de cuestionarios Socratease"
+title: "Configuración de Cuestionarios Socratease"
 description: "Configure su cuestionario Socratease con opciones de modo de visualización, visibilidad de resultados, aleatorización y más."
 ---
 
-Socratease tiene su propio conjunto de opciones configurables, distintas de la configuración general de temporizador y supervisión de AutoProctor. Estas opciones controlan el comportamiento del cuestionario para sus candidatos.
+Socratease tiene su propio conjunto de opciones configurables, distintas de la configuración general de Temporizador y Supervisión de AutoProctor. Estas opciones controlan cómo se comporta el cuestionario para sus candidatos — desde cómo aparecen las preguntas hasta si los candidatos pueden copiar y pegar.
 
-## Opciones disponibles
+{/* TODO: Add screenshot of the Socratease quiz settings panel */}
 
-### 1. Modo de visualización de preguntas
+## Opciones Disponibles
 
-Muestre las preguntas una por una (con o sin navegación) o todas a la vez. Esto controla cómo los candidatos navegan por el cuestionario.
+### 1. Modo de Visualización de Preguntas
 
-Para más detalles, consulte [Modo de visualización de preguntas](/socratease/question-display-mode).
+Controle cómo aparecen las preguntas para los candidatos: todas a la vez (estilo Google Forms), una por una con navegación (estilo Typeform), o una por una sin navegación. Esta configuración también afecta cómo funcionan los temporizadores.
 
-### 2. Visibilidad de resultados
+Para más detalles, consulte [Modo de Visualización de Preguntas](/socratease/question-display-mode).
+
+### 2. Visibilidad de Resultados
 
 Controle cuándo los candidatos ven sus puntuaciones y resultados:
 - **Inmediatamente** después del envío
-- **A su criterio** (publique individualmente o todos a la vez)
-- **Nunca** -- los resultados se retienen por completo
+- **Cuando usted publique las puntuaciones individuales** (un candidato a la vez)
+- **Cuando usted publique todas las puntuaciones** (todos a la vez)
+- **Nunca** — los resultados se retienen por completo
 
-Para más detalles, consulte [Mostrar resultados a los candidatos](/socratease/showing-results-to-candidates).
+Para más detalles, consulte [Mostrar Resultados a los Candidatos](/socratease/showing-results-to-candidates).
 
-### 3. Aleatorización de preguntas
+### 3. Aleatorización de Preguntas
 
-Aleatorice el orden de las preguntas para cada candidato. Lo que el Candidato 1 ve como Pregunta 1 puede ser la Pregunta 10 para el Candidato 2. Esto ayuda a reducir la posibilidad de que los candidatos compartan respuestas durante una prueba.
+Aleatorice el orden de las preguntas para cada candidato. Lo que el Candidato 1 ve como Pregunta 1 puede ser la Pregunta 10 para el Candidato 2. Esto reduce la oportunidad de que los candidatos compartan respuestas durante un examen.
 
-### 4. Mezcla de opciones
+{/* TODO: Add screenshot of question randomization toggle */}
 
-Para las preguntas de tipo MCQ y MCA, puede aleatorizar el orden de las opciones de respuesta entre los candidatos. Esto significa que incluso si dos candidatos ven la misma pregunta, las opciones aparecerán en un orden diferente.
+### 4. Mezcla de Opciones
 
-### 5. Restricción de copiar y pegar
+Para las preguntas de tipo MCQ y MCA, puede aleatorizar el orden de las opciones de respuesta entre los candidatos. Incluso si dos candidatos ven la misma pregunta, las opciones aparecen en un orden diferente.
 
-Cuando está habilitada, los candidatos no pueden copiar el texto de las preguntas del cuestionario. Tampoco pueden pegar texto desde otra pestaña o aplicación en el cuestionario. Esto reduce la dependencia de herramientas externas y asistentes de inteligencia artificial.
+{/* TODO: Add screenshot of choice shuffling toggle */}
 
-### 6. Envío automático por cambio de pestaña
+### 5. Restricción de Copiar y Pegar
 
-Establezca el número máximo de cambios de pestaña permitidos durante la prueba. Si un candidato excede este límite, su prueba se envía automáticamente. Esto disuade a los candidatos de cambiar a otras pestañas para buscar respuestas.
+Cuando activa esta configuración, los candidatos no pueden copiar el texto de las preguntas del cuestionario ni pegar texto desde otra pestaña o aplicación en el cuestionario. Esto reduce la dependencia de herramientas externas y asistentes de IA.
 
-### 7. Instrucciones personalizadas
+{/* TODO: Add screenshot of copy-paste restriction toggle */}
 
-Agregue indicaciones generales sobre la prueba que se muestran a los candidatos antes de comenzar el cuestionario. Esto solo está disponible cuando se utiliza el modo de visualización de preguntas **todas a la vez**.
+### 6. Envío Automático por Cambio de Pestaña
+
+Establezca el número máximo de cambios de pestaña permitidos durante el examen. Si un candidato excede este límite, su examen se envía automáticamente. Esto disuade a los candidatos de cambiar a otras pestañas para buscar respuestas.
+
+<Warning>
+Cuando un examen se envía automáticamente debido a los límites de cambio de pestaña, el candidato no puede reanudar el examen. Asegúrese de comunicar la política de cambio de pestaña a sus candidatos de antemano.
+</Warning>
+
+{/* TODO: Add screenshot of tab-switch auto-submit configuration */}
+
+### 7. Instrucciones Personalizadas
+
+Agregue indicaciones generales sobre el examen que se muestran a los candidatos antes de comenzar el cuestionario. Úselas para comunicar reglas, instrucciones o expectativas importantes.
+
+<Note>
+Las instrucciones personalizadas solo están disponibles cuando usa el modo de visualización de preguntas **todas a la vez**.
+</Note>
+
+{/* TODO: Add screenshot of custom instructions field */}
 
 ### 8. Soporte de LaTeX
 
-Si desea incluir ecuaciones matemáticas, escríbalas usando la sintaxis LaTeX y se renderizarán automáticamente como ecuaciones formateadas. Active esta opción para habilitar la representación de LaTeX en su cuestionario.
+Si desea incluir ecuaciones matemáticas, escríbalas usando la sintaxis LaTeX y se renderizarán automáticamente como ecuaciones formateadas. Active esta configuración para habilitar la representación de LaTeX en su cuestionario.
 
-Para más detalles, consulte [Uso de LaTeX para ecuaciones matemáticas](/socratease/latex-math-equations).
+Para más detalles, consulte [Uso de LaTeX para Ecuaciones Matemáticas](/socratease/latex-math-equations).
 
-## Recursos relacionados
+## Cómo Acceder a la Configuración del Cuestionario
 
-- [¿Por qué Socratease?](/socratease/why-socratease) — Beneficios de usar Socratease
-- [Crear un cuestionario](/socratease/creating-a-quiz) — Guía paso a paso
-- [Tipos de preguntas](/socratease/question-types) — Formatos de preguntas disponibles
-- [Configuración de pruebas](/creating-tests/test-settings) — Configuración de temporizador y supervisión (separada de la configuración del cuestionario)
+<Steps>
+  <Step title="Abra Su Cuestionario">
+    Abra el Cuestionario Socratease que desea configurar desde su panel de control de AutoProctor.
+  </Step>
+  <Step title="Haga Clic en el Ícono de Configuración">
+    Haga clic en el ícono de **Configuración** (engranaje) en la barra de herramientas del editor del cuestionario.
+  </Step>
+  <Step title="Ajuste Sus Opciones">
+    Modifique cualquiera de las ocho opciones listadas anteriormente. Los cambios se guardan automáticamente.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the settings icon location in the quiz editor */}
+
+## Recursos Relacionados
+
+- [Modo de Visualización de Preguntas](/socratease/question-display-mode) — Explicación detallada de las opciones de visualización
+- [Mostrar Resultados a los Candidatos](/socratease/showing-results-to-candidates) — Controle la visibilidad de los resultados
+- [Uso de LaTeX para Ecuaciones Matemáticas](/socratease/latex-math-equations) — Agregue ecuaciones matemáticas a sus cuestionarios
+- [Configuración del Temporizador](/settings/timer-settings) — Para la configuración general de temporizador y supervisión del examen (separada de la configuración del cuestionario Socratease)
+- [Crear un Cuestionario](/socratease/creating-a-quiz) — Guía paso a paso para crear un cuestionario

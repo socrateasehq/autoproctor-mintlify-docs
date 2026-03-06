@@ -1,40 +1,43 @@
 ---
-title: "Não é possível clicar nas respostas do formulário do exame"
-description: "Resolva o problema em que o formulário do exame carrega mas não é possível clicar nas perguntas nem selecionar respostas. Geralmente causado pela conta de Google incorreta."
+title: "Não Consigo Clicar nas Respostas do Formulário do Teste"
+description: "Resolva o problema em que o formulário do teste carrega mas você não consegue clicar nas perguntas nem selecionar respostas. Geralmente causado por estar conectado com a conta Google incorreta."
 ---
 
-Se você consegue ver o formulário do exame mas não consegue clicar nas perguntas nem selecionar respostas, o mais provável é que tenha iniciado sessão com uma conta de Google que não tem permissão para interagir com o formulário.
+Se você consegue ver o formulário do teste mas não consegue clicar nas perguntas nem selecionar respostas, o mais provável é que você esteja conectado com uma conta Google que não tem permissão para interagir com o formulário.
 
-## Por que isso acontece?
+## Por Que Isso Acontece
 
-Quando um formulário de Google Forms está restrito a endereços de e-mail específicos, ele carrega num modo somente leitura para contas não autorizadas. Você pode ver as perguntas mas não pode interagir com elas. Como AutoProctor incorpora o formulário de Google Forms, essa restrição aparece dentro da interface de AutoProctor.
+Quando um Google Form é restrito a endereços de e-mail específicos, ele carrega em modo somente leitura para contas não autorizadas. Você pode ver as perguntas mas não pode interagir com elas. Como o AutoProctor incorpora o Google Form dentro de sua interface, essa restrição aparece dentro da janela de teste do AutoProctor.
 
-<Frame caption="Formulário do exame carregado em modo somente leitura devido a uma conta de Google incorreta">
-  <img src="/images/candidate-issues/cannot-click-form.png" alt="Formulário de Google Forms em AutoProctor no qual não é possível clicar porque a conta de Google incorreta está ativa" />
+{/* TODO: Add screenshot of test form loaded in read-only mode due to incorrect Google account */}
+
+<Frame caption="Formulário do teste carregado em modo somente leitura devido à conta Google incorreta">
+  <img src="/images/candidate-issues/cannot-click-form.png" alt="Google Form no AutoProctor que não pode ser clicado porque a conta Google incorreta está ativa" />
 </Frame>
 
-## Como resolver
+## Como Resolver
 
 <Steps>
-  <Step title="Encerre a sessão em todas as contas de Google">
-    Visite [https://accounts.google.com/Logout](https://accounts.google.com/Logout) e encerre a sessão em todas as suas contas.
+  <Step title="Saia de todas as contas Google">
+    Acesse [accounts.google.com/Logout](https://accounts.google.com/Logout) e saia de todas as suas contas.
   </Step>
-  <Step title="Inicie sessão com a conta correta">
-    Inicie sessão novamente com a conta de Google que tem acesso ao exame. Consulte o seu administrador de exames se não tiver certeza de qual conta usar.
+  <Step title="Faça login com a conta correta">
+    Faça login novamente com a conta Google que tem acesso ao teste. Consulte seu administrador de testes se não tiver certeza de qual conta usar.
   </Step>
-  <Step title="Recarregue o exame">
-    Volte ao link do exame e carregue-o novamente. Agora você deverá conseguir clicar nas perguntas e selecionar respostas.
+  <Step title="Recarregue o teste">
+    Volte ao link do teste e carregue-o novamente. Agora você deverá conseguir clicar nas perguntas e selecionar respostas.
   </Step>
 </Steps>
 
 <Note>
-Se não tiver certeza de qual conta de Google tem acesso, entre em contacto com o seu administrador de exames. Eles podem confirmar o endereço de e-mail que recebeu permissão para realizar o exame.
+Se você não tem certeza de qual conta Google tem acesso, entre em contato com seu administrador de testes. Ele pode confirmar o endereço de e-mail que recebeu permissão para realizar o teste.
 </Note>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Página em branco ou tela cinza](/candidate-issues/blank-page-grey-screen) -- Problema similar causado pela conta de Google incorreta
-- [Não é possível ver as perguntas no Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Restrições de acesso ao Google Forms
-- [Instruções para realizar um exame supervisionado](/taking-tests/proctored-test-instructions) -- Guia de configuração com secção de contas de Google
-- [Compatibilidade de dispositivos](/getting-started/device-compatibility) -- Consulte os navegadores e dispositivos compatíveis
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Página em Branco ou Tela Cinza](/candidate-issues/blank-page-grey-screen) -- Problema similar causado pela conta Google incorreta
+- [Não Consigo Ver as Perguntas no Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Restrições de acesso ao Google Forms
+- [Como Fazer Logout](/taking-tests/how-to-logout) -- Passos para trocar de conta
+- [Instruções para Testes Supervisionados](/taking-tests/proctored-test-instructions) -- Guia de configuração com seção de Conta Google
+- [Compatibilidade de Dispositivos](/getting-started/device-compatibility) -- Confira os navegadores e dispositivos compatíveis
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

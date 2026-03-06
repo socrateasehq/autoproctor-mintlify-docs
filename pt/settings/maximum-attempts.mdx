@@ -1,0 +1,76 @@
+---
+title: "Tentativas Máximas para um Teste"
+description: "Configure quantas vezes os candidatos podem tentar um teste no AutoProctor e entenda como o rastreamento de tentativas funciona em diferentes métodos de login."
+---
+
+A configuração de **Max Attempts** permite que você controle quantas vezes cada candidato pode realizar um teste específico. Quando um candidato atinge o limite, o AutoProctor bloqueia tentativas adicionais e exibe uma notificação.
+
+## Como Configurar as Tentativas Máximas
+
+<Steps>
+  <Step title="Abra as configurações do teste">
+    Navegue até o teste no painel do AutoProctor e clique no botão **Settings**.
+
+    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  </Step>
+  <Step title="Defina o valor de Max Attempts">
+    Na seção **Main Settings**, localize o campo **Max Attempts** e insira o número de tentativas permitidas.
+
+    {/* TODO: Add screenshot of the Max Attempts field in Main Settings */}
+
+    <Frame>
+      <img src="/images/settings/max-attempts-setting.png" alt="Campo de configuração de Max Attempts nas Configurações Principais do AutoProctor mostrando a entrada numérica" />
+    </Frame>
+  </Step>
+  <Step title="Salve o teste">
+    Clique em **Create** ou **Update** para aplicar a configuração.
+  </Step>
+</Steps>
+
+Quando um candidato excede o número de tentativas permitidas, ele vê uma mensagem de restrição e não pode prosseguir.
+
+{/* TODO: Add screenshot of the restriction message candidates see when attempts are exhausted */}
+
+<Frame>
+  <img src="/images/settings/max-attempts-blocked.png" alt="Mensagem de restrição exibida para candidatos quando excederam o número máximo de tentativas do teste" />
+</Frame>
+
+## Configuração Recomendada
+
+| Tipo de Teste | Max Attempts Recomendado | Motivo |
+|---|---|---|
+| Google Forms | 1 | O AutoProctor [retoma automaticamente](/settings/resuming-test-attempts) estes testes se os candidatos recarregarem ou revisitarem o link |
+| Socratease Quiz | 1 | O AutoProctor [retoma automaticamente](/settings/resuming-test-attempts) estes testes se os candidatos recarregarem ou revisitarem o link |
+| Microsoft Forms | De acordo com sua necessidade | Cada visita cria uma nova tentativa; a retomada não é suportada |
+| Testes IFrame | De acordo com sua necessidade | Comportamento de retomada configurável; ajuste as tentativas conforme necessário |
+
+<Note>
+Para Google Forms e Socratease Quizzes, defina **Max Attempts** como **1**. O AutoProctor [retoma automaticamente esses testes](/settings/resuming-test-attempts) se os candidatos recarregarem a página ou revisitarem o link, então múltiplas tentativas não são necessárias para a retomada.
+</Note>
+
+## Como as Tentativas São Rastreadas
+
+O AutoProctor rastreia as tentativas pelo endereço de e-mail usado para fazer login. Isso significa:
+
+- Cada endereço de e-mail único conta como um candidato separado, independentemente de quem está por trás dele.
+- Se um candidato faz login com diferentes endereços de e-mail em tentativas distintas (por exemplo, usando **Sign in with Google** uma vez e **Sign in with Email** outra vez com um endereço diferente), cada e-mail conta separadamente, efetivamente contornando o limite de tentativas.
+
+<Warning>
+Se um candidato usa métodos de login diferentes que resultam em endereços de e-mail diferentes, cada um conta como um candidato separado. Isso pode permitir que ele contorne o limite de tentativas máximas.
+</Warning>
+
+## Prevenindo a Evasão do Limite de Tentativas
+
+Para evitar que candidatos contornem a configuração de tentativas máximas:
+
+- **Restrinja os métodos de login** — Escolha um tipo de teste que suporte apenas uma opção de login. Google Forms restringe candidatos ao login com Google apenas, e Microsoft Forms restringe ao login com Microsoft apenas. Consulte [Métodos de Login do Candidato](/taking-tests/candidate-login-methods).
+- **Use restrições de e-mail** — Limite o acesso a domínios ou endereços de e-mail específicos para que os candidatos não possam usar contas alternativas. Consulte [Restringir o Acesso ao Teste por Endereço de E-mail](/settings/restricting-by-email).
+- **Use links de convite únicos** — Gere URLs por candidato que aplicam verificação de e-mail. Consulte [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email).
+
+## Recursos Relacionados
+
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) — Como os métodos de login afetam o rastreamento de tentativas
+- [Retomar Tentativas de Teste](/settings/resuming-test-attempts) — Como a retomada de testes funciona em diferentes tipos de teste
+- [Restringir o Acesso ao Teste por Endereço de E-mail](/settings/restricting-by-email) — Limite o acesso por domínio ou endereço de e-mail
+- [Configurações de Tempo](/settings/timer-settings) — Configure a duração do teste e janelas de tempo
+- [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) — Envie links de teste únicos para candidatos

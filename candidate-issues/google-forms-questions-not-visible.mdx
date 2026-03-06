@@ -3,36 +3,38 @@ title: "Cannot See Questions on Google Forms"
 description: "Understand why questions may not be visible on a Google Form loaded through AutoProctor and how to resolve access restriction errors."
 ---
 
-AutoProctor loads your Google Form within its own site for proctoring. If the Google Form has an access restriction or other error, that same error message appears inside the AutoProctor interface.
+AutoProctor loads your Google Form within its own site for proctoring. If the Google Form has an access restriction or other error, that same error message appears inside the AutoProctor interface. AutoProctor cannot control or modify anything inside the Google Form due to privacy restrictions.
 
-## Why are questions not visible?
+## Why Questions Are Not Visible
 
 Google Forms can restrict access based on organization, email domain, or specific accounts. When you are signed in with an account that does not meet these restrictions, Google blocks the form content and shows an error message instead.
+
+{/* TODO: Add screenshot of Google Form showing an access restriction message within AutoProctor */}
 
 <Frame caption="Google Form showing an access restriction message within AutoProctor">
   <img src="/images/candidate-issues/google-forms-access-restricted.png" alt="Google Form displaying access restricted error inside AutoProctor interface" />
 </Frame>
 
-## How to fix it
+## How to Fix It
 
 <Steps>
   <Step title="Check the error message">
     Read the error message displayed on the form. It typically explains whether the form is restricted to certain users or an organization.
   </Step>
   <Step title="Sign in with the correct account">
-    Log out of your current Google account at [https://accounts.google.com/Logout](https://accounts.google.com/Logout), then sign in with the account that has access to the form.
+    Log out of your current Google account at [accounts.google.com/Logout](https://accounts.google.com/Logout), then sign in with the account that has access to the form.
   </Step>
   <Step title="Contact the form creator if needed">
     If you are unsure which account to use or believe you should have access, contact the person who created the test. They may need to update the form's sharing settings.
   </Step>
 </Steps>
 
-## Why can't AutoProctor fix this?
+## Why AutoProctor Cannot Fix This
 
 Due to privacy restrictions, Google does not allow AutoProctor to access or modify anything inside a Google Form. AutoProctor can only load the form -- it cannot control the form's content, access settings, or error messages. If you encounter a form access issue, only the form creator can resolve it.
 
 <Note>
-AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. If a YouTube video shows an error on an external site, the issue is with YouTube, not the embedding site. The same applies to Google Forms on AutoProctor.
+AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. If a YouTube video shows an error on an external site, the issue is with YouTube, not the embedding site. The same applies to Google Forms on AutoProctor -- any errors you see originate from Google, not from AutoProctor.
 </Note>
 
 ## Related Resources
@@ -40,5 +42,6 @@ AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. 
 - [Cannot See Response in Google Form](/candidate-issues/google-forms-response-not-visible) -- Missing responses after submission
 - [Cannot Click on Answer](/candidate-issues/cannot-click-answer) -- Form loads but is not interactive
 - [Blank Page or Grey Screen](/candidate-issues/blank-page-grey-screen) -- Form does not load at all
-- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide with Google Accounts section
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide with Google Account section
+- [How to Logout](/taking-tests/how-to-logout) -- Steps to switch accounts
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

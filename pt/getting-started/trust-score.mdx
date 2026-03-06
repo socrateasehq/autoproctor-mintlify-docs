@@ -3,21 +3,21 @@ title: "Trust Score"
 description: "Entenda como o Trust Score do AutoProctor funciona, como é calculado e o que constitui uma boa pontuação."
 ---
 
-O AutoProctor atribui um Trust Score (0–100%) a cada relatório de supervisão. A pontuação fornece um resumo rápido da probabilidade de o candidato ter mantido a integridade durante o teste.
+O AutoProctor atribui um Trust Score (0–100%) a cada relatório de supervisão. A pontuação fornece um resumo rápido da probabilidade de o candidato ter mantido a integridade durante o teste, para que você possa concentrar seu tempo de revisão nas tentativas que mais necessitam.
 
 <Frame>
-  <img src="/images/getting-started/trustscore.png" alt="Exibição do Trust Score em um relatório de supervisão do AutoProctor" />
+  <img src="/images/getting-started/trustscore.png" alt="Exibição do Trust Score mostrando uma porcentagem no topo de um relatório de supervisão do AutoProctor" />
 </Frame>
 
-Quanto mais baixo o Trust Score, mais provável é que o AutoProctor tenha detectado comportamento suspeito durante o teste.
+Quanto mais baixo o Trust Score, mais comportamento suspeito o AutoProctor detectou durante o teste.
 
 <Warning>
-Sempre revise as evidências de apoio antes de tirar conclusões. **Não** se baseie apenas no Trust Score — revise as evidências reais das infrações para determinar se houve conduta indevida.
+Sempre revise as evidências de apoio antes de tirar conclusões. **Não** se baseie apenas no Trust Score — revise as fotos, capturas de tela e gravações de áudio das infrações para determinar se houve conduta indevida.
 </Warning>
 
-## Como o Trust Score é calculado
+## Como o Trust Score é Calculado
 
-O AutoProctor monitora os candidatos em tempo real por meio de múltiplos canais (dependendo das [configurações do seu teste](/creating-tests/test-settings)):
+O AutoProctor monitora os candidatos em tempo real por meio de múltiplos canais (dependendo das suas [configurações de supervisão](/settings/proctoring-settings)):
 
 - Câmera
 - Microfone
@@ -25,21 +25,50 @@ O AutoProctor monitora os candidatos em tempo real por meio de múltiplos canais
 
 O algoritmo avalia as infrações com base em três fatores:
 
-1. **Tipo de infração** — a troca de aba tem maior peso do que a detecção de ruído
-2. **Frequência das infrações** — mais incidentes resultam em uma pontuação mais baixa
-3. **Duração das infrações** — infrações prolongadas têm um impacto maior do que as breves
+| Fator | Como Afeta a Pontuação |
+|---|---|
+| **Tipo de infração** | Diferentes infrações têm pesos diferentes. A troca de aba tem um impacto maior na pontuação do que a detecção de ruído. |
+| **Frequência das infrações** | Mais incidentes resultam em uma pontuação mais baixa. |
+| **Duração das infrações** | Infrações prolongadas reduzem a pontuação de forma mais significativa do que as breves. |
 
-## O que é um bom Trust Score?
+{/* TODO: Add diagram or infographic illustrating how the three factors combine into the Trust Score */}
+
+## O Que é um Bom Trust Score?
 
 Como referência geral, revise as evidências de qualquer candidato com um Trust Score **inferior a 85%**. Esse limite é destinado à revisão, não como prova de conduta indevida.
 
 <Note>
-Fatores ambientais podem afetar significativamente a pontuação. Por exemplo, o ruído ambiente do trânsito poderia reduzir uma pontuação a 0% mesmo quando nenhum tipo de trapaça ocorreu.
+Fatores ambientais podem afetar significativamente a pontuação. Por exemplo, um candidato em um ambiente ruidoso perto do trânsito poderia receber um Trust Score de 0% mesmo quando nenhuma trapaça ocorreu. O microfone capta o ruído ambiente e o sistema nem sempre consegue distinguir entre fala humana e som de fundo. Sempre verifique as evidências antes de tomar uma decisão.
 </Note>
 
-## Recursos relacionados
+## Como Revisar um Trust Score
 
-- [O que é monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis
-- [Resultados de supervisão](/results/proctoring-results) — Como ver as evidências de infrações e os relatórios
-- [Nenhum rosto detectado ou múltiplos rostos detectados](/candidate-issues/no-face-or-multiple-faces) — Por que a detecção facial pode gerar falsos positivos
-- [Infração falsa de troca de aplicativo](/candidate-issues/false-app-switch) — Entendendo as sinalizações de infrações falsas
+<Steps>
+  <Step title="Abra os resultados do teste">
+    Acesse seu painel do AutoProctor, selecione um teste e clique em **Results**. Você verá uma lista de todos os candidatos com seus Trust Scores.
+
+    {/* TODO: Add screenshot of the results list showing Trust Score column */}
+  </Step>
+  <Step title="Identifique os candidatos para revisão">
+    Ordene por Trust Score e concentre-se nos candidatos com pontuação **inferior a 85%**. Essas tentativas são as mais propensas a conter infrações que merecem revisão.
+
+    {/* TODO: Add screenshot of results list sorted by Trust Score */}
+  </Step>
+  <Step title="Revise as evidências de infrações">
+    Clique no relatório de um candidato para ver o detalhamento completo: fotos sinalizadas, capturas de tela, clipes de áudio e uma linha do tempo das infrações detectadas.
+
+    {/* TODO: Add screenshot of an individual proctoring report with violation evidence */}
+  </Step>
+  <Step title="Tome sua decisão">
+    Use as evidências para decidir se as infrações indicam conduta indevida real ou são falsos positivos causados por fatores ambientais.
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [O Que é Monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis
+- [Resultados de Supervisão](/results/proctoring-results) — Como ver as evidências de infrações e os relatórios
+- [Envios Individuais](/results/individual-submissions) — Revisando o relatório de um candidato em detalhes
+- [Nenhum Rosto ou Múltiplos Rostos Detectados](/candidate-issues/no-face-or-multiple-faces) — Por que a detecção facial pode gerar falsos positivos
+- [Infração Falsa de Troca de Aplicativo](/candidate-issues/false-app-switch) — Entendendo as sinalizações de infrações falsas
+- [Boas Práticas para Professores](/getting-started/best-practices-for-teachers) — Dicas para aplicar testes supervisionados de forma eficaz

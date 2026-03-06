@@ -1,0 +1,76 @@
+---
+title: "Intentos Máximos para un Examen"
+description: "Configure cuántas veces los candidatos pueden intentar un examen en AutoProctor y comprenda cómo funciona el seguimiento de intentos en distintos métodos de inicio de sesión."
+---
+
+La configuración de **Intentos Máximos** le permite controlar cuántas veces cada candidato puede realizar un examen específico. Una vez que un candidato alcanza el límite, AutoProctor bloquea intentos adicionales y muestra una notificación.
+
+## Cómo Configurar los Intentos Máximos
+
+<Steps>
+  <Step title="Abra la configuración del examen">
+    Navegue a su examen en el panel de control de AutoProctor y haga clic en el botón **Configuración**.
+
+    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  </Step>
+  <Step title="Establezca el valor de Intentos Máximos">
+    En la sección **Configuración Principal**, ubique el campo **Intentos Máximos** e ingrese el número de intentos permitidos.
+
+    {/* TODO: Add screenshot of the Max Attempts field in Main Settings */}
+
+    <Frame>
+      <img src="/images/settings/max-attempts-setting.png" alt="Campo de configuración de Intentos Máximos en la Configuración Principal de AutoProctor mostrando la entrada numérica" />
+    </Frame>
+  </Step>
+  <Step title="Guarde el examen">
+    Haga clic en **Crear** o **Actualizar** para aplicar la configuración.
+  </Step>
+</Steps>
+
+Cuando un candidato excede el número de intentos permitidos, verá un mensaje de restricción y no podrá continuar.
+
+{/* TODO: Add screenshot of the restriction message candidates see when attempts are exhausted */}
+
+<Frame>
+  <img src="/images/settings/max-attempts-blocked.png" alt="Mensaje de restricción mostrado a los candidatos cuando han excedido el número máximo de intentos del examen" />
+</Frame>
+
+## Configuración Recomendada
+
+| Tipo de Examen | Intentos Máximos Recomendados | Razón |
+|---|---|---|
+| Google Forms | 1 | AutoProctor [reanuda automáticamente](/settings/resuming-test-attempts) estos exámenes si los candidatos recargan o revisitan el enlace |
+| Cuestionario Socratease | 1 | AutoProctor [reanuda automáticamente](/settings/resuming-test-attempts) estos exámenes si los candidatos recargan o revisitan el enlace |
+| Microsoft Forms | Según sus necesidades | Cada visita crea un nuevo intento; la reanudación no es compatible |
+| Exámenes con IFrame | Según sus necesidades | Comportamiento de reanudación configurable; ajuste los intentos en consecuencia |
+
+<Note>
+Para Google Forms y Cuestionarios Socratease, establezca **Intentos Máximos** en **1**. AutoProctor [reanuda automáticamente estos exámenes](/settings/resuming-test-attempts) si los candidatos recargan la página o revisitan el enlace, por lo que no se necesitan múltiples intentos para la reanudación.
+</Note>
+
+## Cómo Se Hace el Seguimiento de los Intentos
+
+AutoProctor hace seguimiento de los intentos por la dirección de correo electrónico utilizada para iniciar sesión. Esto significa:
+
+- Cada dirección de correo electrónico única cuenta como un candidato separado, independientemente de quién esté detrás.
+- Si un candidato inicia sesión con diferentes direcciones de correo electrónico en distintos intentos (por ejemplo, usando **Iniciar sesión con Google** una vez e **Iniciar sesión con Correo Electrónico** otra vez con una dirección diferente), cada correo electrónico cuenta por separado, lo que efectivamente permite eludir el límite de intentos.
+
+<Warning>
+Si un candidato usa diferentes métodos de inicio de sesión que resuelven a diferentes direcciones de correo electrónico, cada una cuenta como un candidato separado. Esto puede permitirle eludir el límite de intentos máximos.
+</Warning>
+
+## Prevenir la Elusión del Límite de Intentos
+
+Para evitar que los candidatos eludan la configuración de intentos máximos:
+
+- **Restrinja los métodos de inicio de sesión** — Elija un tipo de examen que admita solo una opción de inicio de sesión. Google Forms restringe a los candidatos solo al inicio de sesión con Google, y Microsoft Forms restringe solo al inicio de sesión con Microsoft. Consulte [Métodos de Inicio de Sesión del Candidato](/taking-tests/candidate-login-methods).
+- **Use restricciones por correo electrónico** — Limite el acceso a dominios o direcciones de correo electrónico específicos para que los candidatos no puedan usar cuentas alternativas. Consulte [Restringir el Acceso al Examen por Dirección de Correo Electrónico](/settings/restricting-by-email).
+- **Use enlaces de invitación únicos** — Genere URLs por candidato que apliquen verificación de correo electrónico. Consulte [Invitar Candidatos por Correo Electrónico](/settings/inviting-candidates-via-email).
+
+## Recursos Relacionados
+
+- [Métodos de Inicio de Sesión del Candidato](/taking-tests/candidate-login-methods) — Cómo los métodos de inicio de sesión afectan al seguimiento de intentos
+- [Reanudación de Intentos de Examen](/settings/resuming-test-attempts) — Cómo funciona la reanudación de exámenes en los distintos tipos
+- [Restringir el Acceso al Examen por Dirección de Correo Electrónico](/settings/restricting-by-email) — Limitar el acceso por dominio o dirección de correo electrónico
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Invitar Candidatos por Correo Electrónico](/settings/inviting-candidates-via-email) — Envíe enlaces de examen únicos a los candidatos

@@ -1,34 +1,51 @@
 ---
-title: "Botón de envío: Socratease frente a otros cuestionarios"
-description: "Comprenda las diferencias clave en el proceso de envío entre los cuestionarios de Socratease y otros tipos de cuestionarios en AutoProctor."
+title: "Botón de Envío: Socratease frente a Otros Cuestionarios"
+description: "Comprenda las diferencias clave en el proceso de envío entre los cuestionarios de Socratease y otros tipos de cuestionarios en AutoProctor, y por qué Socratease elimina el riesgo de perder las respuestas."
 ---
 
-El proceso de envío varía según el proveedor de cuestionarios que utilice. Los cuestionarios de Socratease son más sencillos y eliminan el riesgo de perder las respuestas.
+El proceso de envío varía según el proveedor de cuestionarios que utilice. Los cuestionarios de Socratease utilizan un único botón de envío, lo que elimina el riesgo de perder las respuestas. Otros tipos de cuestionarios (Google Forms, Microsoft Forms, etc.) requieren dos botones de envío que deben presionarse en el orden correcto.
 
-## Cuestionarios que no son de Socratease (Google Forms, Microsoft Forms, etc.)
+## Cuestionarios que No Son de Socratease (Google Forms, Microsoft Forms, etc.)
 
-Cuando AutoProctor integra formularios externos, el candidato debe **enviar dos veces**:
+Cuando AutoProctor integra formularios externos, debe **enviar dos veces** porque las restricciones de privacidad impiden que las plataformas externas notifiquen a AutoProctor cuando se realiza un envío:
 
-1. Primero, enviar las respuestas del cuestionario (botón morado)
-2. Luego, enviar la sesión supervisada o cronometrada (botón verde)
+<Steps>
+  <Step title="Haga clic en el botón morado de envío primero">
+    Haga clic en el **botón morado de envío** en la parte inferior del formulario para guardar sus respuestas del cuestionario en el proveedor de cuestionarios (Google Forms, Microsoft Forms, etc.).
+  </Step>
+  <Step title="Haga clic en el botón verde de envío después">
+    Haga clic en el **botón verde de envío** en la parte superior de la página para enviar la sesión supervisada o cronometrada a AutoProctor.
+  </Step>
+</Steps>
 
-Este proceso de dos pasos existe porque las restricciones de privacidad impiden que las plataformas externas notifiquen a AutoProctor cuando se realiza un envío.
+{/* TODO: Add screenshot or GIF showing the two-button submission flow for non-Socratease quizzes */}
 
 <Warning>
-Si el candidato no envía las respuestas del cuestionario **primero** (botón morado), todas las respuestas se perderán. Esto no se puede recuperar.
+Si no envía las respuestas del cuestionario **primero** (botón morado), todas sus respuestas se perderán. Esto no se puede recuperar. Debido a las restricciones de privacidad, Google y Microsoft no permiten que AutoProctor detecte si se hizo clic en el botón morado de envío, por lo que AutoProctor no puede aplicar este paso automáticamente.
 </Warning>
 
 ## Cuestionarios de Socratease
 
-Los cuestionarios de Socratease utilizan un **único botón de envío**. Un solo clic envía tanto las respuestas como la sesión supervisada — sin confusiones ni riesgo de perder las respuestas.
+Los cuestionarios de Socratease utilizan un **único botón de envío**. Un solo clic envía tanto sus respuestas como la sesión de supervisión -- sin confusiones ni riesgo de perder las respuestas.
+
+{/* TODO: Add screenshot or GIF showing the single-button Socratease submission flow */}
 
 <Note>
-Los cuestionarios de Socratease están disponibles en **todos los planes**, incluyendo la prueba gratuita. Consulte [¿Por qué Socratease?](/socratease/why-socratease) para conocer más beneficios.
+Los Cuestionarios de Socratease están disponibles en **todos los planes**, incluyendo la prueba gratuita. Consulte [¿Por Qué Socratease?](/socratease/why-socratease) para conocer más beneficios.
 </Note>
 
-## Recursos relacionados
+## Comparación
 
-- [Instrucciones para exámenes supervisados](/taking-tests/proctored-test-instructions) — Guía completa para exámenes supervisados
-- [Instrucciones para exámenes cronometrados](/taking-tests/timed-test-instructions) — Guía completa para exámenes cronometrados
-- [Instrucciones para Socratease supervisado](/taking-tests/proctored-socratease-instructions) — Guía más sencilla para Socratease
-- [Respuesta de Google Forms no visible](/candidate-issues/google-forms-response-not-visible) — Solucionar problemas con envíos faltantes
+| Característica | No Socratease (Google Forms, etc.) | Socratease |
+|---|---|---|
+| Número de botones de envío | 2 (morado y luego verde) | 1 |
+| Riesgo de perder respuestas | Sí, si los botones se presionan en el orden incorrecto | Ninguno |
+| ¿Por qué dos botones? | Las restricciones de privacidad impiden que las plataformas externas notifiquen a AutoProctor | No aplica -- Socratease está integrado en AutoProctor |
+
+## Recursos Relacionados
+
+- [Instrucciones para Exámenes Supervisados](/taking-tests/proctored-test-instructions) -- Guía completa para exámenes supervisados
+- [Instrucciones para Exámenes Cronometrados](/taking-tests/timed-test-instructions) -- Guía completa para exámenes cronometrados
+- [Instrucciones para Socratease Supervisado](/taking-tests/proctored-socratease-instructions) -- Guía más sencilla para Socratease
+- [Respuesta de Google Forms No Visible](/candidate-issues/google-forms-response-not-visible) -- Solucionar problemas con envíos faltantes
+- [¿Por Qué Socratease?](/socratease/why-socratease) -- Beneficios de usar Socratease sobre Google Forms

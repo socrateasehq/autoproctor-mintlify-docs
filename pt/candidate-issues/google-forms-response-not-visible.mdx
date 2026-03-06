@@ -1,49 +1,51 @@
 ---
-title: "Não é possível ver a resposta no Google Forms"
-description: "Compreenda por que as respostas podem aparecer em AutoProctor mas não no Google Forms, ou vice-versa. Geralmente causado por omitir um dos dois botões de envio."
+title: "Não Consigo Ver a Resposta no Google Forms"
+description: "Entenda por que as respostas podem aparecer no AutoProctor mas não no Google Forms, ou vice-versa. Geralmente causado por pular um dos dois botões de envio."
 ---
 
-Se você consegue ver a resposta de um candidato em AutoProctor mas não no Google Forms (ou vice-versa), o mais provável é que o candidato tenha omitido um dos dois botões de envio necessários.
+Se você consegue ver a resposta de um candidato no AutoProctor mas não no Google Forms (ou vice-versa), o mais provável é que o candidato tenha pulado um dos dois botões de envio necessários. Esta é a principal razão pela qual respostas desaparecem entre as duas plataformas.
 
-## Compreensão dos dois botões de envio
+## Entendendo os Dois Botões de Envio
 
-Os candidatos devem clicar em **dois botões de envio separados** para completar um exame supervisionado baseado em Google Forms:
+Os candidatos devem clicar em **dois botões de envio separados** para completar um teste baseado em Google Forms no AutoProctor:
 
-1. **Botão de envio roxo** (dentro do formulário de Google Forms) -- envia as respostas para a secção de Respostas do Google Forms
-2. **Botão de envio verde** (no topo da página) -- envia a sessão de supervisão para AutoProctor
+1. **Botão de envio roxo** (dentro do Google Form) -- envia as respostas para a seção de Respostas do Google Forms
+2. **Botão de envio verde** (no topo da página) -- envia a sessão de supervisão ou cronometrada para o AutoProctor
 
-<Frame caption="Os dois botões de envio: roxo para Google Forms, verde para AutoProctor">
-  <img src="/images/candidate-issues/google-forms-submit-buttons.png" alt="Botão de envio roxo do Google Forms e botão de envio verde de AutoProctor mostrados num exame supervisionado" />
+{/* TODO: Add annotated screenshot showing both submit buttons with numbered click order */}
+
+<Frame caption="Os dois botões de envio: roxo para o Google Forms, verde para o AutoProctor">
+  <img src="/images/candidate-issues/google-forms-submit-buttons.png" alt="Botão de envio roxo do Google Forms e botão de envio verde do AutoProctor mostrados em um teste supervisionado" />
 </Frame>
 
-### Se o candidato omite o botão de envio verde
+### Se o Candidato Pular o Botão de Envio Verde
 
-Você verá as respostas do candidato na secção de **Respostas do Google Forms** mas não verá nenhum resultado em AutoProctor. A sessão de supervisão não foi finalizada.
+Você verá as respostas do candidato na seção de **Respostas do Google Forms** mas não verá nenhum resultado no AutoProctor. A sessão de supervisão não foi finalizada.
 
-### Se o candidato omite o botão de envio roxo
+### Se o Candidato Pular o Botão de Envio Roxo
 
-Você verá o exame marcado como enviado em **AutoProctor**, mas as respostas do candidato não aparecerão nas Respostas do Google Forms. As respostas do formulário nunca foram enviadas ao Google.
+Você verá o teste marcado como enviado no **AutoProctor**, mas as respostas do candidato não aparecerão nas Respostas do Google Forms. As respostas do formulário nunca foram enviadas ao Google.
 
 <Warning>
-Devido a restrições de privacidade, Google não permite que AutoProctor detete se o botão de envio roxo foi clicado. Não há como AutoProctor aplicar esse passo automaticamente.
+Devido a restrições de privacidade, o Google não permite que o AutoProctor detecte se o botão de envio roxo foi clicado. Não há como o AutoProctor aplicar essa etapa automaticamente.
 </Warning>
 
-## Certifique-se de partilhar o link de AutoProctor
+## Certifique-se de Compartilhar o Link do AutoProctor
 
-Você deve enviar aos candidatos o **link de AutoProctor** (que contém `autoproctor.co` no URL). Se enviar o link direto do Google Forms em vez disso, os candidatos contornarão AutoProctor completamente e nenhum dado de supervisão será registado.
+Você deve enviar aos candidatos o **link do AutoProctor** (que contém `autoproctor.co` na URL). Se você enviar o link direto do Google Forms, os candidatos ignorarão o AutoProctor completamente e nenhum dado de supervisão será registrado.
 
-## Por que AutoProctor não pode resolver isso?
+## Por Que o AutoProctor Não Pode Resolver Isso
 
-AutoProctor incorpora os formulários de Google Forms de forma semelhante a como os sites incorporam vídeos do YouTube. Google não permite que AutoProctor acesse ou controle nada do que acontece dentro do formulário. Se ocorrer um problema de envio dentro do formulário de Google Forms, somente Google controla esse comportamento.
+O AutoProctor incorpora Google Forms de forma semelhante a como os sites incorporam vídeos do YouTube. O Google não permite que o AutoProctor acesse ou controle nada do que acontece dentro do formulário. Se ocorrer um problema de envio dentro do Google Form, somente o Google controla esse comportamento.
 
 <Note>
-Para evitar a confusão com dois botões de envio, considere usar [questionários de Socratease](/socratease/why-socratease) em vez de Google Forms. Socratease tem um único botão de envio que gere tanto as respostas do questionário como a supervisão num único passo.
+Para evitar a confusão com dois botões de envio, considere usar [questionários Socratease](/socratease/why-socratease) em vez do Google Forms. O Socratease tem um único botão de envio que gerencia tanto as respostas do questionário quanto a supervisão em uma única etapa.
 </Note>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Não é possível ver as perguntas no Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Problemas de acesso ao Google Forms
-- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
-- [Configurações do exame](/creating-tests/test-settings) -- Configure as definições do seu exame
-- [Por que Socratease?](/socratease/why-socratease) -- Benefícios de usar Socratease em vez de Google Forms
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Diferenças do Botão de Envio](/taking-tests/submit-button) -- Comparação completa entre Socratease e outros tipos de questionários
+- [Não Consigo Ver as Perguntas no Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Problemas de acesso ao Google Forms
+- [Resultados de Supervisão](/results/proctoring-results) -- Como revisar relatórios de supervisão
+- [Por Que Socratease?](/socratease/why-socratease) -- Benefícios de usar o Socratease em vez do Google Forms
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

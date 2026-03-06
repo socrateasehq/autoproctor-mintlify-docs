@@ -1,42 +1,65 @@
 ---
-title: "Argumentos de consulta do iframe"
-description: "Adicione parâmetros de consulta às URLs de iframe nas Configurações avançadas do AutoProctor para personalizar o conteúdo integrado."
+title: "Argumentos de Consulta do IFrame"
+description: "Adicione parâmetros de consulta às URLs de iframe nas Configurações Avançadas do AutoProctor para personalizar o conteúdo incorporado."
 ---
 
-Ao utilizar o provedor de questionários **IFrame/Other**, você pode adicionar parâmetros de consulta à URL do seu questionário integrado através das **Configurações avançadas** do AutoProctor. Isso permite personalizar como o conteúdo integrado é exibido sem modificar a URL original.
+Ao usar o provedor de questionários **IFrame/Other**, você pode adicionar parâmetros de consulta à URL do seu questionário incorporado através das **Configurações Avançadas** do AutoProctor. Isso permite personalizar como o conteúdo incorporado se comporta — por exemplo, forçando um idioma específico ou ativando o modo incorporado — sem modificar a URL original.
 
-## Como funciona
+## Como Funciona
 
-Se a sua URL original é:
+O AutoProctor constrói a URL final adicionando seus argumentos de consulta à URL original do questionário. Você fornece apenas os parâmetros; o AutoProctor adiciona o prefixo `?` automaticamente.
+
+<Steps>
+  <Step title="Abra as Configurações Avançadas">
+    Navegue até o seu teste e abra a seção **Advanced Settings**.
+
+    {/* TODO: Add screenshot of Advanced Settings with the Query Arguments field visible */}
+  </Step>
+  <Step title="Insira Seus Argumentos de Consulta">
+    Digite seus parâmetros no campo **Query Arguments**. Use o formato `key1=val1&key2=val2`.
+  </Step>
+  <Step title="Salve as Configurações">
+    Salve as configurações do teste. O AutoProctor adicionará seus parâmetros à URL do questionário ao renderizar o iframe.
+  </Step>
+</Steps>
+
+### Exemplo
+
+Se sua URL original é:
+
 ```
 www.website.com
 ```
 
-E você deseja adicionar parâmetros para que fique:
-```
-www.website.com?key1=val1&key2=val2
-```
+E você insere o seguinte no campo **Query Arguments**:
 
-Insira o seguinte no campo **Query Arguments** nas Configurações avançadas:
 ```
 key1=val1&key2=val2
 ```
 
-O AutoProctor constrói automaticamente a URL completa adicionando os seus parâmetros.
+O AutoProctor renderiza o iframe como:
 
-## Exemplos comuns
-
-| Parâmetro | Finalidade |
-|---|---|
-| `hl=en` | Exibir um Google Form em inglês |
-| `hl=fr` | Exibir um Google Form em francês |
-| `embedded=true` | Forçar o modo integrado em certas plataformas |
+```
+www.website.com?key1=val1&key2=val2
+```
 
 <Note>
-Não inclua o prefixo `?` — o AutoProctor o adiciona automaticamente ao construir a URL.
+Não inclua o prefixo `?` nos seus argumentos de consulta. O AutoProctor o adiciona automaticamente ao construir a URL.
 </Note>
 
-## Recursos relacionados
+## Parâmetros Comuns
 
-- [Provedores de questionários](/creating-tests/quiz-providers) — Todas as plataformas de questionários compatíveis
-- [Configurações de prova](/creating-tests/test-settings) — Configure a prova e as Configurações avançadas
+| Parâmetro | Finalidade | Exemplo de Uso |
+|---|---|---|
+| `hl=en` | Definir o idioma para inglês | Renderizar um Google Form em inglês para candidatos internacionais |
+| `hl=fr` | Definir o idioma para francês | Renderizar um Google Form em francês |
+| `embedded=true` | Forçar o modo incorporado | Garantir que certas plataformas sejam exibidas corretamente dentro do iframe |
+
+{/* TODO: Add screenshot showing the Query Arguments field with an example value entered */}
+
+## Recursos Relacionados
+
+- [Provedores de Questionários](/creating-tests/quiz-providers) — Todas as plataformas de questionários compatíveis
+- [Configurações Avançadas](/settings/advanced-settings) — Provedores de login, colaboradores e outras opções avançadas
+- [Configurações de Tempo](/settings/timer-settings) — Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/settings/proctoring-settings) — Opções de câmera, microfone e troca de aba

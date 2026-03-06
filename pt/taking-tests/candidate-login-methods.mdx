@@ -1,37 +1,48 @@
 ---
-title: "Métodos de início de sessão para candidatos"
-description: "Conheça as opções de início de sessão disponíveis para os candidatos e quais métodos funcionam com cada fornecedor de questionários."
+title: "Métodos de Login do Candidato"
+description: "Conheça as opções de login disponíveis para candidatos realizando testes no AutoProctor, incluindo quais métodos de login funcionam com cada provedor de questionários."
 ---
 
-Os candidatos devem iniciar sessão antes de tentar qualquer exame no AutoProctor. O início de sessão é necessário para diferenciar entre os envios quando vários candidatos utilizam o mesmo enlace de exame.
+Os candidatos devem fazer login antes de realizar qualquer teste no AutoProctor. O login é obrigatório para que o AutoProctor possa distinguir entre envios individuais quando múltiplos candidatos usam o mesmo link de teste.
+
+{/* TODO: Add screenshot of AutoProctor login screen showing Google, Microsoft, and Email sign-in options */}
 
 <Frame>
-  <img src="/images/taking-tests/login-methods.png" alt="Opções de início de sessão do AutoProctor mostrando Google, Microsoft e e-mail" />
+  <img src="/images/taking-tests/login-methods.png" alt="Opções de login do AutoProctor mostrando botões de login com Google, Microsoft e E-mail" />
 </Frame>
 
-## Métodos de início de sessão disponíveis
+## Métodos de Login Disponíveis
 
-- **Iniciar sessão com Google** — utiliza a conta Google do candidato
-- **Iniciar sessão com Microsoft** — utiliza a conta Microsoft do candidato
-- **Iniciar sessão com e-mail** — o candidato introduz o seu endereço de e-mail diretamente
+O AutoProctor oferece três opções de login para candidatos:
 
-## Métodos de início de sessão por fornecedor de questionários
+- **Login com Google** — usa a conta Google do candidato
+- **Login com Microsoft** — usa a conta Microsoft do candidato
+- **Login com E-mail** — o candidato insere seu endereço de e-mail diretamente (sem necessidade de conta de terceiros)
 
-Os métodos de início de sessão disponíveis dependem do fornecedor de questionários que utilizar:
+## Métodos de Login por Provedor de Questionários
 
-| Fornecedor de questionários | Métodos de início de sessão disponíveis |
+Os métodos de login disponíveis dependem do provedor de questionários utilizado:
+
+| Provedor de Questionários | Métodos de Login Disponíveis |
 |---|---|
-| Questionários do Socratease | Google, Microsoft, e-mail |
+| Socratease Quizzes | Google, Microsoft, E-mail |
 | Google Forms | Apenas Google |
 | Microsoft Forms | Apenas Microsoft |
-| Exames IFrame | Google, Microsoft, e-mail |
+| Testes IFrame | Google, Microsoft, E-mail |
 
 <Note>
-Os exames de Google Forms requerem início de sessão com Google porque o AutoProctor precisa transmitir a identidade Google do candidato ao formulário. O mesmo se aplica ao Microsoft Forms com o início de sessão da Microsoft. Os exames do Socratease e IFrame não têm esta restrição.
+Testes do Google Forms requerem login com Google porque o AutoProctor precisa passar a identidade Google do candidato para o formulário. O mesmo se aplica ao Microsoft Forms com login Microsoft. Testes do Socratease e IFrame não têm essa restrição, então todos os três métodos de login estão disponíveis.
 </Note>
 
-## Recursos relacionados
+<Note>
+Para restringir quais candidatos podem fazer login no seu teste, consulte [Restringir por E-mail](/settings/restricting-by-email). Você pode limitar o acesso a endereços de e-mail ou domínios de e-mail específicos.
+</Note>
 
-- [Como terminar sessão](/taking-tests/how-to-logout) — Alternar entre contas
-- [Restrição por e-mail](/results/restricting-by-email) — Limitar quem pode aceder ao seu exame
-- [Métodos de início de sessão do candidato (vista de administrador)](/results/candidate-login-methods) — Configurar as definições de início de sessão para o seu exame
+## Recursos Relacionados
+
+- [Como Fazer Logout](/taking-tests/how-to-logout) — Troque entre contas
+- [Restringir por E-mail](/settings/restricting-by-email) — Limite quem pode acessar seu teste
+- [Restringir a Alguns Usuários](/settings/restricting-to-some-users) — Controle o acesso ao teste para usuários específicos
+- [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) — Envie convites de teste diretamente
+- [Página de Instruções para Candidatos](/taking-tests/instructions-page-for-candidates) — O que os candidatos veem antes de iniciar um teste
+- [Fale Conosco](/support/contact-us) — Entre em contato se precisar de ajuda adicional

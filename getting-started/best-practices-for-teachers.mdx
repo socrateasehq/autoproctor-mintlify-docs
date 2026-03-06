@@ -1,0 +1,104 @@
+---
+title: "Best Practices for Test Creators"
+description: "Follow these best practices when administering proctored tests on AutoProctor to ensure a smooth experience for you and your candidates."
+---
+
+Smooth test administration requires preparation. Follow these best practices to minimize technical issues and ensure your candidates have a successful testing experience.
+
+{/* TODO: Add video walkthrough of the complete test administration workflow */}
+
+## Pre-Test Checklist
+
+<Steps>
+  <Step title="Have candidates complete a demo test">
+    Share the demo test link with candidates at least **24 hours** before the actual exam. The demo helps candidates understand the platform, grant the required browser permissions, and confirm their device meets technical requirements.
+
+    Demo link: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+
+    <Note>
+    The demo test does not consume test credits from your account. Candidates can take it as many times as they need.
+    </Note>
+
+    {/* TODO: Add screenshot of the demo test landing page */}
+  </Step>
+  <Step title="Share instructions with candidates">
+    Distribute the appropriate instructions page based on your test configuration:
+
+    - [Proctored test instructions](/taking-tests/proctored-test-instructions) -- For tests with proctoring enabled
+    - [Timed test instructions](/taking-tests/timed-test-instructions) -- For tests with only a timer
+    - [Instructions page for candidates](/taking-tests/instructions-page-for-candidates) -- General overview for all test types
+  </Step>
+  <Step title="Verify your account has sufficient credits">
+    Ensure your account has enough test attempts available before the exam. If candidates try to load a test and your account has no credits, they cannot proceed.
+
+    See [Payments and Credits](/pricing/payments-and-credits) to check your balance and purchase more if needed.
+
+    {/* TODO: Add screenshot of the account credits/balance display */}
+  </Step>
+  <Step title="Configure test timing with buffer">
+    When scheduling timed tests with both a duration and a time window, allocate extra buffer time. For example, if your test runs for 15 minutes, set the window to at least 30 minutes to account for candidate setup and technical delays.
+
+    See [Timer Settings](/settings/timer-settings) for configuration details.
+  </Step>
+  <Step title="Test the link yourself">
+    Before sharing the test link, click it yourself to verify the candidate experience. Confirm that the instructions page, camera check, and proctoring setup all load correctly.
+  </Step>
+</Steps>
+
+## Distributing Test Links
+
+How you share the test link matters. Some distribution methods cause compatibility issues.
+
+| Method | Recommended? | Notes |
+|---|---|---|
+| **Email (Gmail, Outlook)** | Yes | Links open in the default browser, which works reliably |
+| **Google Classroom** | Yes | Integrates well with AutoProctor |
+| **LMS (Moodle, Canvas, etc.)** | Yes | Links open in the system browser |
+| **Telegram, Facebook, WhatsApp** | No | In-app browsers are often incompatible with AutoProctor's proctoring |
+
+<Warning>
+If candidates receive test links through messaging apps (such as Telegram, WhatsApp, or Facebook Messenger), advise them to **copy the link** and open it directly in **Chrome** or **Firefox**. In-app browsers lack the features AutoProctor needs for proctoring.
+</Warning>
+
+<Note>
+Send the demo link at least 24 hours before the actual test. Send the real test link closer to the scheduled time to prevent early access.
+</Note>
+
+## During the Test
+
+- **Be available** -- Remain accessible via a communication channel (such as Google Meet, Zoom, or WhatsApp) during the test window so candidates can reach you if they encounter technical issues.
+- **Monitor your dashboard** -- Keep your AutoProctor dashboard open to monitor submissions as they come in. This lets you spot issues early (for example, if many candidates fail to start).
+
+{/* TODO: Add screenshot of the dashboard during an active test session showing real-time submissions */}
+
+## After the Test
+
+<Steps>
+  <Step title="Review proctoring results">
+    Check [Trust Scores](/getting-started/trust-score) and proctoring reports for each candidate. Focus your review on candidates scoring below 85%.
+
+    {/* TODO: Add screenshot of the results page with Trust Score column highlighted */}
+  </Step>
+  <Step title="Review individual submissions if needed">
+    For candidates with low Trust Scores, open their [individual submission](/results/individual-submissions) to review the full violation evidence, including photos, screenshots, and audio clips.
+  </Step>
+  <Step title="Clarify result sources with candidates">
+    Make sure candidates understand the difference between AutoProctor results and quiz results:
+
+    | Question Type | Where to Look |
+    |---|---|
+    | Trust Score and proctoring violations | AutoProctor dashboard |
+    | Grades, scores, and answers | Your quiz platform (Google Forms, Microsoft Forms, or Socratease) |
+    | Technical issues during the test | [AutoProctor support](/support/contact-us) |
+    | Academic questions and grade inquiries | You (the test creator) |
+  </Step>
+</Steps>
+
+## Related Resources
+
+- [Things You Need to Know](/results/things-you-need-to-know) -- Critical requirements for using AutoProctor
+- [How to See Results](/results/how-to-see-results) -- Overview of test results vs. proctoring results
+- [Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
+- [Proctoring Settings](/settings/proctoring-settings) -- Configure what gets monitored during tests
+- [Concurrency](/settings/concurrency) -- Understand simultaneous candidate limits
+- [Device Compatibility](/getting-started/device-compatibility) -- Supported browsers and devices

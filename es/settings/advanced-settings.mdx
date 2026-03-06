@@ -1,0 +1,88 @@
+---
+title: "Configuración Avanzada"
+description: "Configure proveedores de inicio de sesión, restricciones de correo electrónico, integración con Google Sheets, colaboradores y otras opciones avanzadas del examen."
+---
+
+La Configuración Avanzada le brinda control sobre cómo inician sesión los candidatos, quién puede acceder al examen y cómo se comparten los resultados. Estas opciones se encuentran en la parte inferior de la página de Configuración del Examen.
+
+<Frame>
+  <img src="/images/creating-tests/advanced-settings.png" alt="Panel de configuración avanzada" />
+</Frame>
+
+## Proveedores de Inicio de Sesión
+
+Elija qué métodos de autenticación pueden usar los candidatos para iniciar sesión en su examen:
+
+| Proveedor | Descripción | Notas |
+|---|---|---|
+| **Google** | Iniciar sesión con una cuenta de Google | Requerido para exámenes de Google Forms |
+| **Microsoft** | Iniciar sesión con una cuenta de Microsoft | Requerido para exámenes de Microsoft Forms |
+| **Correo Electrónico** | Iniciar sesión con cualquier dirección de correo electrónico | Disponible para exámenes de Socratease e Iframe |
+
+Para exámenes de Google Forms y Microsoft Forms, el proveedor de inicio de sesión está bloqueado para coincidir con la plataforma del cuestionario. Para Cuestionarios de Socratease y Exámenes Iframe, puede activar uno o más proveedores.
+
+Para más detalles sobre cómo funciona cada método de inicio de sesión, consulte [Métodos de Inicio de Sesión del Candidato](/taking-tests/candidate-login-methods).
+
+{/* TODO: Add screenshot showing the login provider selection options */}
+
+## Restricciones de Inicio de Sesión
+
+Restrinja qué candidatos pueden realizar su examen según su dirección de correo electrónico o dominio.
+
+- **Restringir por Correo Electrónico** — Permita solo direcciones de correo electrónico específicas para acceder al examen
+- **Restringir por Dominio** — Permita solo candidatos con direcciones de correo electrónico de dominios específicos (por ejemplo, @universidad.edu)
+
+Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/settings/restricting-by-email). Si desea invitar a un conjunto específico de candidatos, consulte [Invitar Candidatos por Correo Electrónico](/settings/inviting-candidates-via-email).
+
+{/* TODO: Add screenshot showing login restriction configuration */}
+
+## Integración con Google Sheets
+
+Exporte automáticamente los resultados del examen a una hoja de Google Sheets ingresando la URL de la hoja en este campo. Para cuestionarios de Socratease, se exportan tanto los resultados de supervisión como las puntuaciones del cuestionario. Para cuestionarios que no son de Socratease, solo se incluyen los resultados de supervisión.
+
+Para instrucciones de configuración, consulte [Integración con Google Sheets](/results/google-sheets-integration).
+
+## Colaboradores
+
+Agregue colegas como colaboradores en su examen para que puedan editar la configuración y ver los resultados. Puede establecer el Administrador Principal del examen haciendo clic en el botón **Gestionar**.
+
+Para más detalles, consulte [Agregar Colaboradores](/creating-tests/adding-collaborators).
+
+## Funciones Premium y Elite
+
+### URL Única por Candidato (Elite)
+
+Por defecto, todos los candidatos comparten un único enlace de examen, que podría ser reenviado a destinatarios no deseados. Activar esta función genera un enlace único para cada candidato, asegurando que solo las personas con las que comparta los enlaces puedan realizar el examen.
+
+<Note>
+URL única por candidato es una función Elite. Consulte [Funciones Elite](/pricing/elite-features) para más detalles.
+</Note>
+
+### Recopilar Información Adicional (Premium)
+
+Recopile información personalizada de los candidatos antes de que comience el examen — como número de teléfono, nombre de la institución o cualquier pregunta personalizada. Estos campos aparecen en la página de instrucciones y los datos recopilados están disponibles en los resultados y las exportaciones a Excel.
+
+<Note>
+Puede agregar hasta 10 campos de información personalizada por examen.
+</Note>
+
+{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+
+### Instrucciones Adicionales (Elite)
+
+Agregue instrucciones personalizadas a la página de instrucciones del candidato. Esto se muestra a los candidatos antes de que inicien el examen y puede usarse para proporcionar directrices específicas, reglas o contexto para su examen.
+
+<Note>
+Instrucciones Adicionales es una función Elite. Consulte la [Página de Instrucciones para Candidatos](/taking-tests/instructions-page-for-candidates) para más información sobre lo que ven los candidatos antes de comenzar.
+</Note>
+
+{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+
+## Recursos Relacionados
+
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/settings/proctoring-settings) — Opciones de cámara, micrófono y cambio de pestaña
+- [Restringir por Correo Electrónico](/settings/restricting-by-email) — Restrinja el acceso al examen por dirección de correo electrónico o dominio
+- [Invitar Candidatos por Correo Electrónico](/settings/inviting-candidates-via-email) — Envíe invitaciones al examen directamente
+- [Métodos de Inicio de Sesión del Candidato](/taking-tests/candidate-login-methods) — Cómo funciona cada método de inicio de sesión
+- [Integración con Google Sheets](/results/google-sheets-integration) — Exporte automáticamente los resultados a hojas de cálculo

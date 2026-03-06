@@ -1,0 +1,61 @@
+---
+title: "Restrict Test Access by Email Address"
+description: "Limit who can take your test by restricting access to specific email domains or individual email addresses using Login Restrictions."
+---
+
+Login Restrictions let you control exactly who can take your test by filtering candidates based on their email address. This prevents unauthorized access even if someone shares or discovers your test link.
+
+## How to Set Up Email Restrictions
+
+<Steps>
+  <Step title="Open your test settings">
+    Navigate to the test on your AutoProctor dashboard and click the **Settings** button.
+
+    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  </Step>
+  <Step title="Go to Advanced Settings">
+    Scroll down to the **Advanced Settings** section and locate the **Login Restrictions** fields.
+
+    {/* TODO: Add screenshot of the Advanced Settings section with Login Restrictions fields visible */}
+  </Step>
+  <Step title="Add domain or email restrictions">
+    Enter the email domains or specific email addresses you want to allow. You can combine both types of restrictions in a single field (see examples below).
+  </Step>
+  <Step title="Save the test">
+    Click **Create** or **Update** to apply the restrictions.
+  </Step>
+</Steps>
+
+## Domain-Based Restrictions
+
+You can restrict access to candidates whose email addresses end with specific domains. For example, entering `@abc.com` and `@xyz.com` allows only candidates with those email domains to take the test.
+
+{/* TODO: Add screenshot of Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com */}
+
+<Frame>
+  <img src="/images/settings/login-restrictions-domain.png" alt="Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com entered" />
+</Frame>
+
+## Specific Email Restrictions
+
+You can also permit individual email addresses alongside domain restrictions. This is useful when most candidates share a domain but a few external participants need access.
+
+For example, you can allow all users whose email ends with `@abc.com` plus specific individual email addresses like `guest@gmail.com`.
+
+{/* TODO: Add screenshot of Login Restrictions field showing a combination of domain and individual email restrictions */}
+
+<Frame>
+  <img src="/images/settings/login-restrictions-email.png" alt="Login Restrictions field showing a combination of domain and individual email restrictions" />
+</Frame>
+
+<Note>
+Email restrictions work in conjunction with the candidate's [login method](/taking-tests/candidate-login-methods). The candidate must sign in with an email address that matches one of the allowed domains or addresses you specified.
+</Note>
+
+## Related Resources
+
+- [Candidate Login Methods](/taking-tests/candidate-login-methods) -- Understand available authentication options for candidates
+- [Restricting to Specific Users](/settings/restricting-to-some-users) -- Other methods for limiting test access
+- [Inviting Candidates via Email](/settings/inviting-candidates-via-email) -- Generate unique per-candidate test links
+- [Advanced Settings](/settings/advanced-settings) -- Configure Login Restrictions and other advanced test options
+- [Best Practices for Test Creators](/getting-started/best-practices-for-teachers) -- Tips for smooth test administration

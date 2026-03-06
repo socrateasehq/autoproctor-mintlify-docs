@@ -3,19 +3,15 @@ title: "Using LaTeX for Math Equations"
 description: "Add mathematical equations to your Socratease quizzes using LaTeX syntax."
 ---
 
+Socratease supports LaTeX, the global standard for writing mathematical equations used in academic publications, textbooks, and research papers worldwide. Instead of inserting equation images or using simplified text notation like `a^2` or `3/4`, you can write properly formatted equations directly in your quiz questions.
+
 <Note>
-LaTeX equation support is exclusive to AutoProctor's **Socratease Quizzes**.
+LaTeX equation support is exclusive to AutoProctor's **Socratease Quizzes**. It is not available when using other quiz providers.
 </Note>
 
-## Why LaTeX?
+## How to Write LaTeX Equations
 
-With platforms like Google Forms and similar tools, if you want to include a mathematical equation in an exam, you must either insert equation images or use simplified text notation (like `a^2` or `3/4`). This is cumbersome and difficult to read.
-
-**LaTeX is the global standard language used to write mathematical equations**, found in academic publications, textbooks, and research papers worldwide.
-
-## How to Use LaTeX
-
-To include a LaTeX equation in your quiz, enclose the equation between `\(` and `\)`.
+To include a LaTeX equation in your quiz, enclose the equation between `\(` and `\)` delimiters.
 
 **Example:**
 
@@ -25,18 +21,24 @@ To include a LaTeX equation in your quiz, enclose the equation between `\(` and 
 
 This renders as the familiar Pythagorean theorem: a squared plus b squared equals c squared.
 
+{/* TODO: Add screenshot showing LaTeX equation rendered in a Socratease quiz question */}
+
 ## What LaTeX Supports
 
 LaTeX can render any mathematical notation, including:
 
-- **Basic arithmetic**: `\(a + b = c\)`
-- **Exponents and subscripts**: `\(x^2\)`, `\(a_n\)`
-- **Fractions**: `\(\frac{a}{b}\)`
-- **Square roots**: `\(\sqrt{x}\)`
-- **Integrals**: `\(\int_0^1 x^2 dx\)`
-- **Summations**: `\(\sum_{i=1}^{n} i\)`
-- **Greek letters**: `\(\alpha, \beta, \gamma\)`
-- And any other advanced mathematical notation
+| Notation | LaTeX Syntax | Description |
+|---|---|---|
+| Basic arithmetic | `\(a + b = c\)` | Addition, subtraction, multiplication, division |
+| Exponents | `\(x^2\)` | Superscripts and powers |
+| Subscripts | `\(a_n\)` | Subscript notation |
+| Fractions | `\(\frac{a}{b}\)` | Fraction notation |
+| Square roots | `\(\sqrt{x}\)` | Square and nth roots |
+| Integrals | `\(\int_0^1 x^2 dx\)` | Definite and indefinite integrals |
+| Summations | `\(\sum_{i=1}^{n} i\)` | Summation notation |
+| Greek letters | `\(\alpha, \beta, \gamma\)` | All Greek letter symbols |
+
+You can also use any other standard LaTeX mathematical notation beyond the examples listed above.
 
 ## Enabling LaTeX
 
@@ -45,21 +47,34 @@ LaTeX can render any mathematical notation, including:
     Open your Socratease Quiz on AutoProctor.
   </Step>
   <Step title="Go to Settings">
-    Click the **Settings** icon.
+    Click the **Settings** icon (gear) in the quiz editor toolbar.
   </Step>
   <Step title="Enable LaTeX Support">
-    Toggle on the **LaTeX Support** setting.
+    Toggle on the **LaTeX Support** setting. This activates LaTeX rendering for all questions in the quiz.
+
+    {/* TODO: Add screenshot of LaTeX support toggle in quiz settings */}
   </Step>
-  <Step title="Write Equations">
-    Write your equations in question text using the `\(` and `\)` delimiters.
+  <Step title="Write Your Equations">
+    Write your equations in question text using the `\(` and `\)` delimiters. The equations render as formatted math when candidates view the quiz.
+
+    {/* TODO: Add screenshot of equation being written in the quiz editor */}
   </Step>
 </Steps>
+
+<Warning>
+Make sure you enable the LaTeX Support toggle in quiz settings **before** sharing the test. If LaTeX is not enabled, candidates will see the raw LaTeX syntax instead of rendered equations.
+</Warning>
 
 ## Try It Out
 
 You can see a sample quiz demonstrating LaTeX equation rendering at:
 [autoproctor.co/tests/ifvJRDE1qf/load/](https://www.autoproctor.co/tests/ifvJRDE1qf/load/)
 
+{/* TODO: Add screenshot of the sample LaTeX quiz showing rendered equations */}
+
 ## Related Resources
 
-- [Quiz Settings](/socratease/quiz-settings) -- Configure your Socratease quiz behavior
+- [Quiz Settings](/socratease/quiz-settings) -- All Socratease quiz configuration options
+- [Question Types](/socratease/question-types) -- Available question formats
+- [How to Create a Socratease Quiz](/socratease/creating-a-quiz) -- Step-by-step creation guide
+- [Why Socratease?](/socratease/why-socratease) -- Benefits of using Socratease over other platforms

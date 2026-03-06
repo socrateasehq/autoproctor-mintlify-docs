@@ -1,0 +1,97 @@
+---
+title: "Restringir o Acesso ao Teste a Candidatos Específicos"
+description: "Limite a participação no teste a candidatos específicos no AutoProctor usando distribuição de links, restrições de e-mail, links de convite únicos ou controles de acesso da plataforma."
+---
+
+Por padrão, qualquer pessoa com o link do seu teste pode realizá-lo. O AutoProctor oferece vários métodos para restringir o acesso para que apenas os candidatos que você escolher possam participar.
+
+## Método 1: Distribuição Seletiva do Link
+
+A abordagem mais simples é compartilhar o link do teste apenas com os candidatos que devem realizá-lo.
+
+<Steps>
+  <Step title="Identifique os candidatos elegíveis">
+    Determine quais candidatos devem ter acesso ao teste.
+  </Step>
+  <Step title="Compartilhe o link de forma privada">
+    Envie o link do teste apenas para esses candidatos por e-mail, pelo seu sistema de gestão de aprendizagem ou por outro canal privado. Evite publicar o link de forma pública.
+  </Step>
+</Steps>
+
+<Note>
+Este método depende de os candidatos não compartilharem o link com outras pessoas. Se você precisa de um controle de acesso mais rigoroso, use um dos métodos abaixo.
+</Note>
+
+## Método 2: Restrições Baseadas em E-mail
+
+Use as **Restrições de Login** integradas do AutoProctor para permitir apenas domínios de e-mail ou endereços individuais específicos. Você configura isso na seção de Configurações Avançadas do seu teste.
+
+<Steps>
+  <Step title="Abra as Configurações Avançadas">
+    Navegue até as configurações do teste e role até a seção **Advanced Settings**.
+  </Step>
+  <Step title="Insira as Restrições de Login">
+    Adicione os domínios de e-mail (por exemplo, `@suaescola.edu`) ou endereços de e-mail específicos que deseja permitir.
+  </Step>
+  <Step title="Salve o teste">
+    Clique em **Create** ou **Update** para aplicar as restrições.
+  </Step>
+</Steps>
+
+Consulte [Restringir o Acesso ao Teste por Endereço de E-mail](/settings/restricting-by-email) para instruções completas de configuração e exemplos.
+
+## Método 3: Links de Convite Únicos
+
+Gere URLs únicos por candidato vinculados a endereços de e-mail específicos. Cada candidato recebe seu próprio link com verificação de e-mail, de modo que apenas o destinatário pretendido pode usá-lo.
+
+<Steps>
+  <Step title="Ative o URL Único">
+    Abra as configurações do teste e ative a opção **Unique URL**.
+  </Step>
+  <Step title="Faça upload dos endereços de e-mail">
+    Faça upload dos endereços de e-mail dos candidatos por meio de um arquivo CSV (até 1.000 por vez).
+  </Step>
+  <Step title="Distribua os links únicos">
+    O AutoProctor gera um link único para cada endereço de e-mail. Envie esses links para seus candidatos individualmente.
+  </Step>
+</Steps>
+
+<Note>
+Os links de convite únicos estão disponíveis apenas no **Plano Elite** e funcionam com Socratease Quizzes e Testes IFrame. Consulte [Pagamentos e Créditos](/pricing/payments-and-credits) para detalhes do plano.
+</Note>
+
+Consulte [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) para o processo completo de configuração.
+
+## Método 4: Restrições de Acesso do Google Forms
+
+Se você usa Google Forms, pode restringir o acesso no nível do Google Forms em vez de (ou além das) restrições do AutoProctor. Os candidatos ainda podem abrir o link do AutoProctor, mas não podem prosseguir se o Google Forms bloquear o acesso deles.
+
+<Steps>
+  <Step title="Abra as configurações do seu Google Form">
+    No Google Forms, clique no ícone de engrenagem de **Settings**.
+  </Step>
+  <Step title="Restrinja à sua organização">
+    Ative a opção para restringir as respostas aos usuários da sua organização. Isso limita o acesso a candidatos com endereços de e-mail sob o seu domínio de Google Workspace.
+
+    {/* TODO: Add screenshot of Google Forms settings showing the organization restriction toggle */}
+  </Step>
+</Steps>
+
+Para mais detalhes, consulte o [guia do Google sobre restrição de acesso a formulários](https://www.bettercloud.com/monitor/the-academy/restrict-access-to-google-forms/).
+
+## Comparação dos Métodos de Controle de Acesso
+
+| Método | Força | Funciona Com | Plano Necessário |
+|---|---|---|---|
+| Distribuição seletiva do link | Baixa — depende de confiança | Todos os tipos de teste | Qualquer |
+| Restrições baseadas em e-mail | Média — bloqueia domínios incorretos | Todos os tipos de teste | Qualquer |
+| Links de convite únicos | Alta — verificação por candidato | Socratease Quizzes, Testes IFrame | Elite |
+| Restrições do Google Forms | Média — nível organizacional | Apenas Google Forms | Qualquer |
+
+## Recursos Relacionados
+
+- [Restringir o Acesso ao Teste por Endereço de E-mail](/settings/restricting-by-email) — Configure restrições baseadas em domínio e e-mail
+- [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) — Gere links de teste únicos por candidato
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) — Conheça as opções de autenticação disponíveis
+- [Configurações Avançadas](/settings/advanced-settings) — Configure Restrições de Login e outras opções avançadas
+- [Boas Práticas para Criadores de Testes](/getting-started/best-practices-for-teachers) — Dicas para uma administração de testes tranquila

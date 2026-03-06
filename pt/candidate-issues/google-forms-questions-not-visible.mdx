@@ -1,44 +1,47 @@
 ---
-title: "Não é possível ver as perguntas no Google Forms"
-description: "Compreenda por que as perguntas podem não estar visíveis num formulário de Google Forms carregado através de AutoProctor e como resolver erros de restrição de acesso."
+title: "Não Consigo Ver as Perguntas no Google Forms"
+description: "Entenda por que as perguntas podem não estar visíveis em um Google Form carregado pelo AutoProctor e como resolver erros de restrição de acesso."
 ---
 
-AutoProctor carrega o seu formulário de Google Forms dentro do seu próprio site para supervisão. Se o formulário de Google Forms tem uma restrição de acesso ou outro erro, essa mesma mensagem de erro aparece dentro da interface de AutoProctor.
+O AutoProctor carrega o seu Google Form dentro do seu próprio site para supervisão. Se o Google Form tem uma restrição de acesso ou outro erro, essa mesma mensagem de erro aparece dentro da interface do AutoProctor. O AutoProctor não pode controlar nem modificar nada dentro do Google Form devido a restrições de privacidade.
 
-## Por que as perguntas não estão visíveis?
+## Por Que as Perguntas Não Estão Visíveis
 
-Google Forms pode restringir o acesso com base na organização, no domínio de e-mail ou em contas específicas. Quando você iniciou sessão com uma conta que não atende a essas restrições, Google bloqueia o conteúdo do formulário e exibe uma mensagem de erro em seu lugar.
+O Google Forms pode restringir o acesso com base na organização, no domínio de e-mail ou em contas específicas. Quando você está conectado com uma conta que não atende a essas restrições, o Google bloqueia o conteúdo do formulário e exibe uma mensagem de erro em seu lugar.
 
-<Frame caption="Formulário de Google Forms mostrando uma mensagem de restrição de acesso dentro de AutoProctor">
-  <img src="/images/candidate-issues/google-forms-access-restricted.png" alt="Formulário de Google Forms exibindo um erro de acesso restrito dentro da interface de AutoProctor" />
+{/* TODO: Add screenshot of Google Form showing an access restriction message within AutoProctor */}
+
+<Frame caption="Google Form mostrando uma mensagem de restrição de acesso dentro do AutoProctor">
+  <img src="/images/candidate-issues/google-forms-access-restricted.png" alt="Google Form exibindo erro de acesso restrito dentro da interface do AutoProctor" />
 </Frame>
 
-## Como resolver
+## Como Resolver
 
 <Steps>
   <Step title="Verifique a mensagem de erro">
-    Leia a mensagem de erro exibida no formulário. Geralmente ela explica se o formulário está restrito a determinados utilizadores ou a uma organização.
+    Leia a mensagem de erro exibida no formulário. Geralmente ela explica se o formulário está restrito a determinados usuários ou a uma organização.
   </Step>
-  <Step title="Inicie sessão com a conta correta">
-    Encerre a sessão na sua conta de Google atual em [https://accounts.google.com/Logout](https://accounts.google.com/Logout), depois inicie sessão com a conta que tem acesso ao formulário.
+  <Step title="Faça login com a conta correta">
+    Saia da sua conta Google atual em [accounts.google.com/Logout](https://accounts.google.com/Logout), depois faça login com a conta que tem acesso ao formulário.
   </Step>
-  <Step title="Contacte o criador do formulário se necessário">
-    Se não tiver certeza de qual conta usar ou acreditar que deveria ter acesso, entre em contacto com a pessoa que criou o exame. Ela pode precisar atualizar as configurações de partilha do formulário.
+  <Step title="Entre em contato com o criador do formulário se necessário">
+    Se você não tem certeza de qual conta usar ou acredita que deveria ter acesso, entre em contato com a pessoa que criou o teste. Ela pode precisar atualizar as configurações de compartilhamento do formulário.
   </Step>
 </Steps>
 
-## Por que AutoProctor não pode resolver isso?
+## Por Que o AutoProctor Não Pode Resolver Isso
 
-Devido a restrições de privacidade, Google não permite que AutoProctor acesse ou modifique nada dentro de um formulário de Google Forms. AutoProctor apenas pode carregar o formulário -- não pode controlar o conteúdo do formulário, as configurações de acesso nem as mensagens de erro. Se você encontrar um problema de acesso ao formulário, somente o criador do formulário pode resolvê-lo.
+Devido a restrições de privacidade, o Google não permite que o AutoProctor acesse ou modifique nada dentro de um Google Form. O AutoProctor apenas pode carregar o formulário -- não pode controlar o conteúdo, as configurações de acesso nem as mensagens de erro do formulário. Se você encontrar um problema de acesso ao formulário, somente o criador do formulário pode resolvê-lo.
 
 <Note>
-AutoProctor incorpora os formulários de Google Forms de forma semelhante a como os sites incorporam vídeos do YouTube. Se um vídeo do YouTube apresenta um erro num site externo, o problema é do YouTube, não do site que o incorpora. O mesmo se aplica ao Google Forms em AutoProctor.
+O AutoProctor incorpora Google Forms de forma semelhante a como os sites incorporam vídeos do YouTube. Se um vídeo do YouTube apresenta um erro em um site externo, o problema é do YouTube, não do site que o incorpora. O mesmo se aplica ao Google Forms no AutoProctor -- qualquer erro que você vê tem origem no Google, não no AutoProctor.
 </Note>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Não é possível ver a resposta no Google Forms](/candidate-issues/google-forms-response-not-visible) -- Respostas em falta após o envio
-- [Não é possível clicar na resposta](/candidate-issues/cannot-click-answer) -- O formulário carrega mas não é interativo
-- [Página em branco ou tela cinza](/candidate-issues/blank-page-grey-screen) -- O formulário não carrega de todo
-- [Instruções para realizar um exame supervisionado](/taking-tests/proctored-test-instructions) -- Guia de configuração com secção de contas de Google
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Não Consigo Ver a Resposta no Google Forms](/candidate-issues/google-forms-response-not-visible) -- Respostas ausentes após o envio
+- [Não Consigo Clicar na Resposta](/candidate-issues/cannot-click-answer) -- O formulário carrega mas não é interativo
+- [Página em Branco ou Tela Cinza](/candidate-issues/blank-page-grey-screen) -- O formulário não carrega de forma alguma
+- [Instruções para Testes Supervisionados](/taking-tests/proctored-test-instructions) -- Guia de configuração com seção de Conta Google
+- [Como Fazer Logout](/taking-tests/how-to-logout) -- Passos para trocar de conta
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

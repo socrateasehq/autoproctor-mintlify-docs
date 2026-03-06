@@ -1,11 +1,11 @@
 ---
 title: "Missing Violation Evidence in Report"
-description: "Learn why some violations in the proctoring report may not have associated evidence files, and understand how this affects Trust Score calculations."
+description: "Learn why some violations in a proctoring report may not have associated evidence files, and understand how this affects Trust Score calculations."
 ---
 
 Each test attempt has a maximum number of evidence files it can store. If some violations in a proctoring report are missing their evidence, the total number of violations exceeded this storage limit.
 
-## Understanding violations vs. evidence
+## Understanding Violations vs. Evidence
 
 <CardGroup cols={2}>
   <Card title="Violation">
@@ -16,25 +16,27 @@ Each test attempt has a maximum number of evidence files it can store. If some v
   </Card>
 </CardGroup>
 
-The Trust Score is calculated based on the type, frequency, and duration of violations. Evidence files are made available in the proctoring report so that you can review what happened during the test.
+The Trust Score is calculated based on the type, frequency, and duration of violations. Evidence files are provided in the proctoring report so you can review what happened during the test.
 
-## Three reasons for missing evidence
+## Three Reasons for Missing Evidence
 
-### 1. Storage limit reached (most common)
+### 1. Storage Limit Reached (Most Common)
 
-When a test starts, AutoProctor allocates a fixed number of storage URLs for evidence. Once this capacity is reached, the system randomly decides whether to overwrite existing evidence or skip storing new evidence (50% probability each).
+When a test starts, AutoProctor allocates a fixed number of storage URLs for evidence files. Once this capacity is reached, the system randomly decides whether to overwrite existing evidence or skip storing new evidence (50% probability each).
 
 <Note>
-The Trust Score depends on violations, not on whether evidence is stored. All violations are tracked and affect the Trust Score even when evidence files are not available for viewing.
+The Trust Score depends on violations, not on whether evidence is stored. **All violations are tracked and affect the Trust Score** even when evidence files are not available for viewing.
 </Note>
 
-### 2. Device or internet issues
+### 2. Device or Internet Issues
 
-The candidate's device or internet connection may have prevented the screenshot from being captured or transmitted to AutoProctor's servers. This is common when candidates experience brief connectivity drops.
+The candidate's device or internet connection may have prevented the screenshot from being captured or transmitted to AutoProctor's servers. This is common when candidates experience brief connectivity drops during the test.
 
-### 3. Test proctoring settings
+### 3. Test Proctoring Settings
 
-The test administrator may have disabled evidence storage through the test's [proctoring configuration settings](/creating-tests/test-settings). Check your test settings to confirm that evidence recording is enabled.
+The test administrator may have disabled evidence storage through the test's proctoring configuration. Check your [proctoring settings](/settings/proctoring-settings) to confirm that evidence recording is enabled.
+
+{/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
 
 ## Related Resources
 
@@ -42,5 +44,5 @@ The test administrator may have disabled evidence storage through the test's [pr
 - [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
 - [Missing Random Photos](/candidate-issues/missing-random-photos) -- Why random photos may be absent
 - [Missing Images and Recordings](/candidate-issues/missing-images-and-recordings) -- Evidence missing from reports
-- [Test Settings](/creating-tests/test-settings) -- Configure evidence storage and proctoring options
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Proctoring Settings](/settings/proctoring-settings) -- Configure evidence storage and proctoring options
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

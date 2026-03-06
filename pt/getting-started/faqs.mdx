@@ -1,46 +1,105 @@
 ---
-title: "Perguntas frequentes"
+title: "Perguntas Frequentes"
 description: "Respostas para as perguntas mais comuns sobre a plataforma de supervisão, os preços e as capacidades do AutoProctor."
 ---
 
-Encontre abaixo as respostas para as perguntas mais frequentes sobre o AutoProctor.
+Encontre abaixo as respostas para as perguntas mais frequentes sobre o AutoProctor. Se sua pergunta não está coberta aqui, [entre em contato com nossa equipe de suporte](/support/contact-us).
 
 <AccordionGroup>
   <Accordion title="Como o AutoProctor garante a integridade dos testes on-line?">
-    O AutoProctor utiliza monitoramento com inteligência artificial que acessa câmeras, microfones e telas para detectar comportamentos problemáticos, como pessoas não autorizadas ou infrações na navegação do teste. Esses incidentes geram relatórios detalhados com evidências para que os criadores do teste revisem.
+    O AutoProctor utiliza monitoramento por IA no dispositivo que acessa câmeras, microfones e telas (com a permissão do candidato) para detectar comportamentos problemáticos. Isso inclui pessoas não autorizadas no enquadramento, ruído de fundo e tentativas de navegar para fora da tela do teste. Cada incidente gera um relatório detalhado de infração com evidências para sua revisão.
 
     Saiba mais sobre [o que é monitorado](/getting-started/what-gets-tracked) durante a supervisão.
   </Accordion>
 
   <Accordion title="Como eu crio e administro testes no AutoProctor?">
-    O processo consiste em cinco etapas:
+    Você cria um teste supervisionado em cinco etapas:
 
-    1. Crie um questionário usando Google Forms, Microsoft Forms ou [Socratease](/socratease/why-socratease)
-    2. Registre-se no AutoProctor com a URL do seu teste
-    3. Configure os [ajustes de supervisão](/creating-tests/test-settings)
-    4. Compartilhe o link exclusivo do teste com os candidatos
-    5. Revise os [relatórios de infrações](/results/proctoring-results) após a aplicação
+    <Steps>
+      <Step title="Crie um questionário">
+        Elabore seu questionário usando Google Forms, Microsoft Forms ou [Socratease](/socratease/why-socratease).
+      </Step>
+      <Step title="Registre o teste no AutoProctor">
+        Faça login no AutoProctor e registre a URL do seu questionário, ou crie um questionário Socratease diretamente na plataforma.
+      </Step>
+      <Step title="Configure as definições de supervisão">
+        Configure o monitoramento por câmera, microfone, compartilhamento de tela e outras opções nas suas [configurações de supervisão](/settings/proctoring-settings).
+      </Step>
+      <Step title="Compartilhe o link do teste com os candidatos">
+        Distribua o link exclusivo do teste AutoProctor para seus candidatos por e-mail, LMS ou qualquer ferramenta de mensagens.
+      </Step>
+      <Step title="Revise os relatórios de infrações">
+        Após o teste, revise os [resultados de supervisão](/results/proctoring-results) e os [Trust Scores](/getting-started/trust-score) de cada candidato.
+      </Step>
+    </Steps>
+
+    Para um guia completo, consulte o [Guia de Início Rápido](/getting-started/quickstart).
   </Accordion>
 
   <Accordion title="Quais são os planos de preços do AutoProctor?">
     O AutoProctor oferece três níveis de assinatura:
 
-    - **Standard** — 150 créditos de supervisão por ciclo de faturamento
-    - **Premium** — Funcionalidades Standard mais colaboração em equipe
-    - **Elite** — Funcionalidades Premium, tipos de perguntas avançados e acesso à API
+    | Plano | O Que Inclui |
+    |---|---|
+    | **Standard** | 150 créditos de supervisão por ciclo de faturamento, mais tentativas ilimitadas apenas com temporizador |
+    | **Premium** | Recursos Standard mais capacidades de colaboração em equipe |
+    | **Elite** | Recursos Premium mais tipos de perguntas avançados, bancos de questões e acesso à API/SDK |
 
-    Todos os planos incluem um período de avaliação gratuito de 10 créditos, sem necessidade de cartão de crédito. Visite a [página de preços](https://www.autoproctor.co/pricing) para consultar as tarifas atuais.
+    Todos os planos incluem um **teste gratuito de 10 créditos** sem necessidade de cartão de crédito. Você pode cancelar a qualquer momento.
+
+    Visite a [página de preços](https://www.autoproctor.co/pricing) para consultar as tarifas atuais, ou veja [Pagamentos e Créditos](/pricing/payments-and-credits) para detalhes sobre como os créditos funcionam.
   </Accordion>
 
   <Accordion title="Quantos candidatos podem realizar um teste supervisionado simultaneamente?">
-    O AutoProctor suporta até **10 000 candidatos simultâneos**. Se você prevê volumes maiores, entre em contato conosco antecipadamente para que possamos preparar nossa infraestrutura.
+    O AutoProctor suporta até **10.000 candidatos simultâneos** em um único teste.
 
-    Saiba mais sobre os [limites de concorrência](/results/concurrency).
+    <Note>
+    Se você prevê mais de 10.000 candidatos realizando um teste ao mesmo tempo, [entre em contato conosco](/support/contact-us) com pelo menos dois dias úteis de antecedência para que possamos preparar nossa infraestrutura.
+    </Note>
+
+    Saiba mais sobre os [limites de concorrência](/settings/concurrency).
   </Accordion>
 
   <Accordion title="Como o AutoProctor protege a privacidade e os dados dos usuários?">
-    O AutoProctor coleta nomes, e-mails, imagens e gravações de áudio exclusivamente para fins de integridade dos testes, e nunca vende dados a terceiros. Todo o monitoramento ocorre no dispositivo do candidato — nenhuma gravação de vídeo completa é carregada nos servidores.
+    O AutoProctor coleta nomes, endereços de e-mail, imagens e gravações de áudio exclusivamente para fins de integridade dos testes. A empresa não vende informações pessoais nem as compartilha com terceiros além dos subprocessadores necessários.
 
-    Candidatos menores de 18 anos necessitam do consentimento dos pais.
+    Fatos importantes sobre privacidade:
+    - Todo o monitoramento por IA acontece **no dispositivo do candidato** — nenhuma gravação de vídeo completa é carregada nos servidores
+    - Os dados são usados exclusivamente para gerar relatórios de supervisão
+    - Candidatos menores de 18 anos necessitam do consentimento dos pais ou responsáveis
+
+    <Note>
+    O AutoProctor não grava vídeo completo. Consulte [O AutoProctor Grava Vídeo?](/getting-started/video-recording) para detalhes sobre como a abordagem de monitoramento no dispositivo protege a privacidade do candidato.
+    </Note>
+  </Accordion>
+
+  <Accordion title="Quais plataformas de questionários o AutoProctor suporta?">
+    O AutoProctor funciona com as seguintes plataformas de questionários:
+
+    - **Google Forms**
+    - **Microsoft Forms**
+    - **Socratease** (plataforma de questionários integrada do AutoProctor)
+    - **Qualquer questionário baseado na web** via incorporação por iframe
+
+    Consulte [Provedores de Questionários](/creating-tests/quiz-providers) para instruções de configuração de cada plataforma.
+  </Accordion>
+
+  <Accordion title="Posso restringir quem pode realizar meu teste?">
+    Sim. O AutoProctor oferece várias opções de controle de acesso:
+
+    - **[Restringir por domínio de e-mail](/settings/restricting-by-email)** — Permita apenas candidatos com domínios de e-mail específicos (por exemplo, @universidade.edu)
+    - **[Restringir a usuários específicos](/settings/restricting-to-some-users)** — Permita apenas uma lista pré-aprovada de endereços de e-mail
+    - **[Convidar candidatos por e-mail](/settings/inviting-candidates-via-email)** — Envie convites diretos para candidatos específicos
+
+    Você configura essas opções nas suas [configurações avançadas](/settings/advanced-settings).
   </Accordion>
 </AccordionGroup>
+
+## Recursos Relacionados
+
+- [Início Rápido](/getting-started/quickstart) — Crie seu primeiro teste supervisionado em menos de 5 minutos
+- [O Que é Monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis
+- [Trust Score](/getting-started/trust-score) — Como o AutoProctor classifica a integridade do candidato
+- [Compatibilidade de Dispositivos](/getting-started/device-compatibility) — Navegadores e dispositivos compatíveis
+- [Fale Conosco](/support/contact-us) — Obtenha ajuda da equipe de suporte do AutoProctor
+- [Agendar uma Demonstração](/support/booking-a-demo) — Agende uma apresentação ao vivo do AutoProctor

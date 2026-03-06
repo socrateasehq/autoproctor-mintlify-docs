@@ -1,0 +1,87 @@
+---
+title: "Enhanced Proctoring"
+description: "Set up ID card verification, impersonation detection, 360-degree proctoring, and session recording for advanced anti-cheating protection."
+---
+
+Enhanced Proctoring adds advanced identity verification and monitoring features beyond standard proctoring. These features help prevent impersonation, detect AI tools, and create a comprehensive record of each test attempt.
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Enhanced proctoring settings panel" />
+</Frame>
+
+<Note>
+Each enhanced proctoring feature requires **4 additional credits per attempt**. If you enable multiple enhanced features, the credit cost is cumulative. For example, enabling ID Card Verification and Session Recording costs 8 additional credits per candidate attempt.
+</Note>
+
+## Available Features
+
+### ID Card Verification
+
+ID Card Verification confirms the candidate's identity by matching their uploaded ID against their test photo and entered name.
+
+<Steps>
+  <Step title="Enable ID Card Verification">
+    Toggle the **ID Card Verification** option in the Enhanced Proctoring section of your test settings.
+  </Step>
+  <Step title="Candidate uploads their ID">
+    When starting the test, the candidate is prompted to upload a photo of their ID card. Accepted documents include student ID cards, passports, driver's licenses, and government-issued IDs.
+  </Step>
+  <Step title="AutoProctor verifies identity">
+    The system compares the photo and name on the ID card against the Photo Before Test Start and the name the candidate entered on the platform.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the ID card upload screen from the candidate's perspective */}
+
+<Note>
+**Photo Before Test Start** must be enabled in the basic proctoring settings for ID Card Verification to work effectively.
+</Note>
+
+### Impersonation Detection
+
+Impersonation Detection monitors whether someone other than the original candidate attempts or continues the test. AutoProctor compares periodic photos taken during the test against the initial photo to detect face changes.
+
+{/* TODO: Add screenshot of an impersonation detection alert in the proctoring report */}
+
+### Auxiliary Device (360° Proctoring)
+
+The Auxiliary Device feature enables 360-degree proctoring by pairing the candidate's phone with their laptop. This provides a secondary camera angle that captures the candidate's physical environment.
+
+<Steps>
+  <Step title="Enable Auxiliary Device">
+    Toggle the **Auxiliary Device** option in Enhanced Proctoring settings.
+  </Step>
+  <Step title="Candidate pairs their phone">
+    When the test starts, the candidate scans a QR code on their laptop screen using their phone camera. This pairs the two devices.
+  </Step>
+  <Step title="Phone provides secondary monitoring">
+    The phone camera captures the candidate's desk, surroundings, and screen from a different angle. This also helps detect AI tools that display answers as overlays on the screen.
+  </Step>
+</Steps>
+
+{/* TODO: Add video walkthrough of the auxiliary device pairing and 360° proctoring setup */}
+
+### Session Recording
+
+Session Recording captures a complete record of the candidate's screen activity throughout the test, including mouse clicks and keyboard input. This creates a reviewable timeline of the entire test attempt.
+
+{/* TODO: Add screenshot of a session recording playback in the results page */}
+
+## Credit Cost Summary
+
+| Feature | Credits per Attempt |
+|---|---|
+| ID Card Verification | 4 |
+| Impersonation Detection | 4 |
+| Auxiliary Device (360°) | 4 |
+| Session Recording | 4 |
+| All 4 features combined | 16 |
+
+## Related Resources
+
+- [Proctoring Settings](/settings/proctoring-settings) — Basic proctoring options (camera, microphone, tab switching)
+- [Trust Score](/getting-started/trust-score) — How enhanced proctoring data affects the trust score
+- [Proctoring Results](/results/proctoring-results) — Reviewing enhanced proctoring results
+- [Individual Submissions](/results/individual-submissions) — Viewing detailed data for each candidate
+- [Payments and Credits](/pricing/payments-and-credits) — Understanding credit usage and purchasing
+- [Elite Features](/pricing/elite-features) — Overview of premium and elite features

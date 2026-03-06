@@ -3,78 +3,79 @@ title: "Quiz Providers"
 description: "Learn about the quiz platforms you can use with AutoProctor for proctored online tests."
 ---
 
-AutoProctor is an AI proctoring platform — it monitors candidates during online assessments. You bring your own quiz, and AutoProctor handles the proctoring. When setting up a test, you first select your quiz provider, then configure questions, points, timers, and proctoring settings.
+AutoProctor is an AI proctoring platform that monitors candidates during online assessments. You bring your own quiz, and AutoProctor handles the proctoring. When you create a test, you first select a quiz provider, then configure questions, points, timers, and proctoring settings.
 
-<Frame>
-  <img src="/images/creating-tests/quiz-provider-selection.png" alt="Quiz provider selection screen in AutoProctor" />
-</Frame>
+{/* TODO: Add screenshot of the quiz provider selection screen */}
+
+## Choosing a Quiz Provider
+
+<Steps>
+  <Step title="Create a New Test">
+    Go to your **Dashboard** and click **Create Test**.
+  </Step>
+  <Step title="Select a Quiz Provider">
+    Choose one of the available providers: **Socratease Quizzes**, **Google Forms**, **Microsoft Forms**, or **IFrame/Other**.
+  </Step>
+  <Step title="Configure Your Quiz">
+    Set up your questions, points, and any provider-specific settings. Then configure [timer](/settings/timer-settings) and [proctoring](/settings/proctoring-settings) settings.
+  </Step>
+</Steps>
 
 ## Available Quiz Providers
 
+| Provider | Best For | Key Advantage |
+|---|---|---|
+| **Socratease Quizzes** | Full-featured assessments | Native integration with auto-submit protection |
+| **Google Forms** | Google Classroom users | Dedicated add-on for automatic test creation |
+| **Microsoft Forms** | Microsoft ecosystem organizations | Seamless integration for enterprise evaluations |
+| **IFrame/Other** | TypeForm, ProProfs, ClassMarker, etc. | Adds proctoring to any web-based quiz platform |
+
 ### Socratease Quizzes
 
-AutoProctor's native quizzing tool. Recommended for the best experience:
+Socratease is AutoProctor's native quizzing tool. It provides the tightest integration and the best candidate experience:
 
-- **Single submit button** — prevents answer loss from incorrect sequencing
-- **Auto-submit protection** — answers are saved before the test closes
-- **Multiple question types** — MCQs, essays, voice responses, coding, and more
-- **Excel bulk import** and question banks
+- **Single submit button** prevents answer loss from incorrect sequencing
+- **Auto-submit protection** saves answers before the test closes
+- **Multiple question types** including MCQs, essays, voice responses, coding, and more
+- **Excel bulk import** and question banks for fast quiz assembly
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Ooi2PWoyKCo?rel=0"
-  title="How to Create a Socratease Quiz"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+{/* TODO: Add screenshot of Socratease quiz creation interface */}
+
+{/* TODO: Add video walkthrough of creating a Socratease quiz */}
 
 ### Google Forms
 
-The most widely-used quizzing platform, particularly popular through Google Classrooms. AutoProctor offers a dedicated **Google Forms add-on** for automatic test creation.
+Google Forms is the most widely-used quizzing platform, particularly popular with educators who use Google Classroom. AutoProctor offers a dedicated **Google Forms add-on** that creates a proctored test directly from within your Google Form.
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/_H1mzPY97Ig?rel=0"
-  title="AutoProctor with Google Forms"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+{/* TODO: Add screenshot of the AutoProctor Google Forms add-on */}
+
+{/* TODO: Add video walkthrough of using AutoProctor with Google Forms */}
 
 ### Microsoft Forms
 
-The second most-used platform, especially within Microsoft ecosystem organizations for evaluations and hiring assessments.
+Microsoft Forms is the second most-used platform, especially within organizations that rely on the Microsoft ecosystem for internal evaluations and hiring assessments.
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Nw_bthF_dZg?rel=0"
-  title="AutoProctor with Microsoft Forms"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+{/* TODO: Add screenshot of a Microsoft Forms test in AutoProctor */}
 
-### Other Providers (IFrame)
+{/* TODO: Add video walkthrough of using AutoProctor with Microsoft Forms */}
 
-Platforms like TypeForm, ProProfs, and ClassMarker can integrate with AutoProctor's proctoring using the **IFrame/Other** option — even though they do not have built-in remote proctoring.
+### IFrame/Other Providers
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/ex7QGoJtpho?rel=0"
-  title="AutoProctor with IFrame/Other Providers"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+Hundreds of quiz platforms exist, including TypeForm, ProProfs, and ClassMarker. While these platforms do not have built-in remote proctoring, you can add AutoProctor's proctoring to any of them by selecting the **IFrame/Other** option. AutoProctor embeds your quiz inside a proctored browser window.
+
+<Note>
+When using IFrame/Other providers, you can customize the embedded URL using [query arguments](/creating-tests/iframe-query-arguments).
+</Note>
+
+{/* TODO: Add screenshot of the IFrame/Other provider configuration */}
+
+{/* TODO: Add video walkthrough of using AutoProctor with IFrame/Other providers */}
 
 ## Related Resources
 
-- [Why Socratease?](/socratease/why-socratease) — Benefits of using AutoProctor's native quiz tool
-- [How to Create a Socratease Quiz](/socratease/creating-a-quiz) — Step-by-step creation guide
-- [Test Settings](/creating-tests/test-settings) — Configure proctoring and timer settings
-- [IFrame Query Arguments](/creating-tests/iframe-query-arguments) — Customize embedded quiz URLs
+- [Why Socratease?](/socratease/why-socratease) -- Benefits of using AutoProctor's native quiz tool
+- [How to Create a Socratease Quiz](/socratease/creating-a-quiz) -- Step-by-step creation guide
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows
+- [Proctoring Settings](/settings/proctoring-settings) -- Camera, microphone, and tab-switching options
+- [IFrame Query Arguments](/creating-tests/iframe-query-arguments) -- Customize embedded quiz URLs
+- [Advanced Settings](/settings/advanced-settings) -- Login providers, collaborators, and more

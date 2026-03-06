@@ -1,0 +1,88 @@
+---
+title: "Configurações Avançadas"
+description: "Configure provedores de login, restrições de e-mail, integração com Google Sheets, colaboradores e outras opções avançadas de teste."
+---
+
+As Configurações Avançadas permitem que você controle como os candidatos fazem login, quem pode acessar o teste e como os resultados são compartilhados. Essas opções estão localizadas na parte inferior da página de Configurações do Teste.
+
+<Frame>
+  <img src="/images/creating-tests/advanced-settings.png" alt="Painel de configurações avançadas" />
+</Frame>
+
+## Provedores de Login
+
+Escolha quais métodos de autenticação os candidatos podem usar para acessar o teste:
+
+| Provedor | Descrição | Observações |
+|---|---|---|
+| **Google** | Login com uma conta Google | Obrigatório para testes com Google Forms |
+| **Microsoft** | Login com uma conta Microsoft | Obrigatório para testes com Microsoft Forms |
+| **E-mail** | Login com qualquer endereço de e-mail | Disponível para testes Socratease e Iframe |
+
+Para testes com Google Forms e Microsoft Forms, o provedor de login é fixo de acordo com a plataforma do questionário. Para Questionários Socratease e Testes Iframe, você pode ativar um ou mais provedores.
+
+Para mais detalhes sobre como cada método de login funciona, consulte [Métodos de Login do Candidato](/taking-tests/candidate-login-methods).
+
+{/* TODO: Add screenshot showing the login provider selection options */}
+
+## Restrições de Login
+
+Restrinja quais candidatos podem realizar seu teste com base no endereço de e-mail ou domínio.
+
+- **Restringir por E-mail** — Permita apenas endereços de e-mail específicos para acessar o teste
+- **Restringir por Domínio** — Permita apenas candidatos com endereços de e-mail de domínios específicos (por exemplo, @universidade.edu)
+
+Para instruções detalhadas, consulte [Restringir por E-mail](/settings/restricting-by-email). Se você deseja convidar um conjunto específico de candidatos, consulte [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email).
+
+{/* TODO: Add screenshot showing login restriction configuration */}
+
+## Integração com Google Sheets
+
+Exporte automaticamente os resultados do teste para uma planilha do Google Sheets inserindo a URL da planilha neste campo. Para questionários Socratease, tanto os resultados de supervisão quanto as notas do questionário são exportados. Para questionários que não são do Socratease, apenas os resultados de supervisão são incluídos.
+
+Para instruções de configuração, consulte [Integração com Google Sheets](/results/google-sheets-integration).
+
+## Colaboradores
+
+Adicione colegas como colaboradores no seu teste para que possam editar configurações e visualizar resultados. Você pode definir o Administrador Principal do teste clicando no botão **Manage**.
+
+Para mais detalhes, consulte [Adicionar Colaboradores](/creating-tests/adding-collaborators).
+
+## Recursos Premium e Elite
+
+### URL Única por Candidato (Elite)
+
+Por padrão, todos os candidatos compartilham um único link de teste, que pode ser encaminhado para destinatários não previstos. Ativar esse recurso gera um link único para cada candidato, garantindo que apenas as pessoas com quem você compartilhou os links possam realizar o teste.
+
+<Note>
+URL única por candidato é um recurso Elite. Consulte [Recursos Elite](/pricing/elite-features) para mais detalhes.
+</Note>
+
+### Coletar Informações Adicionais (Premium)
+
+Colete informações personalizadas dos candidatos antes do início do teste — como número de telefone, nome da instituição ou qualquer pergunta personalizada. Esses campos aparecem na página de instruções e os dados coletados ficam disponíveis nos resultados e nas exportações para Excel.
+
+<Note>
+Você pode adicionar até 10 campos de informações personalizadas por teste.
+</Note>
+
+{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+
+### Instruções Adicionais (Elite)
+
+Adicione instruções personalizadas à página de instruções do candidato. Elas são exibidas para os candidatos antes de iniciarem o teste e podem ser usadas para fornecer diretrizes específicas, regras ou contexto para o seu teste.
+
+<Note>
+Instruções Adicionais é um recurso Elite. Consulte a [Página de Instruções para Candidatos](/taking-tests/instructions-page-for-candidates) para mais informações sobre o que os candidatos veem antes de iniciar.
+</Note>
+
+{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+
+## Recursos Relacionados
+
+- [Configurações de Tempo](/settings/timer-settings) — Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/settings/proctoring-settings) — Opções de câmera, microfone e detecção de troca de aba
+- [Restringir por E-mail](/settings/restricting-by-email) — Restrinja o acesso ao teste por endereço de e-mail ou domínio
+- [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) — Envie convites de teste diretamente
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) — Como cada método de login funciona
+- [Integração com Google Sheets](/results/google-sheets-integration) — Exportação automática de resultados para planilhas

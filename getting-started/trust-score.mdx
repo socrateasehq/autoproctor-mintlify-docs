@@ -3,21 +3,21 @@ title: "Trust Score"
 description: "Understand how AutoProctor's Trust Score works, how it is calculated, and what constitutes a good score."
 ---
 
-AutoProctor assigns a Trust Score (0–100%) to each proctoring report. The score provides a quick summary of how likely it is that a candidate maintained test integrity.
+AutoProctor assigns a Trust Score (0--100%) to every proctoring report. The score gives you a quick summary of how likely it is that a candidate maintained test integrity, so you can focus your review time on the attempts that need it most.
 
 <Frame>
-  <img src="/images/getting-started/trustscore.png" alt="Trust Score display in an AutoProctor proctoring report" />
+  <img src="/images/getting-started/trustscore.png" alt="Trust Score display showing a percentage at the top of an AutoProctor proctoring report" />
 </Frame>
 
-The lower the Trust Score, the more likely AutoProctor detected suspicious behavior during the test.
+A lower Trust Score means AutoProctor detected more suspicious behavior during the test.
 
 <Warning>
-Always review the supporting evidence before drawing conclusions. **Do not** rely solely on the Trust Score — review the actual violation evidence to determine whether misconduct occurred.
+Always review the supporting evidence before drawing conclusions. **Do not** rely solely on the Trust Score -- review the actual violation photos, screenshots, and audio recordings to determine whether misconduct occurred.
 </Warning>
 
 ## How the Trust Score Is Calculated
 
-AutoProctor monitors candidates in real-time across multiple channels (depending on your [test settings](/creating-tests/test-settings)):
+AutoProctor monitors candidates in real time across multiple channels (depending on your [proctoring settings](/settings/proctoring-settings)):
 
 - Camera feed
 - Microphone feed
@@ -25,21 +25,50 @@ AutoProctor monitors candidates in real-time across multiple channels (depending
 
 The algorithm evaluates violations based on three factors:
 
-1. **Type of violation** — tab switching is weighted more heavily than noise detection
-2. **Frequency of violations** — more incidents result in a lower score
-3. **Duration of violations** — extended violations have a greater impact than brief ones
+| Factor | How It Affects the Score |
+|---|---|
+| **Type of violation** | Different violations carry different weights. Tab switching impacts the score more heavily than noise detection. |
+| **Frequency of violations** | More incidents result in a lower score. |
+| **Duration of violations** | Extended violations reduce the score more significantly than brief ones. |
+
+{/* TODO: Add diagram or infographic illustrating how the three factors combine into the Trust Score */}
 
 ## What Is a Good Trust Score?
 
 As a general guideline, review the evidence for any candidate with a Trust Score **below 85%**. This threshold is meant for review, not as proof of misconduct.
 
 <Note>
-Environmental factors can significantly impact scoring. For example, ambient noise from traffic could lower a score to 0% even when no actual cheating occurred.
+Environmental factors can significantly impact scoring. For example, a candidate in a noisy room near traffic could receive a 0% Trust Score even when no actual cheating occurred. The microphone picks up ambient noise and the system cannot always distinguish between human speech and background sound. Always check the evidence before making a determination.
 </Note>
+
+## How to Review a Trust Score
+
+<Steps>
+  <Step title="Open your test results">
+    Go to your AutoProctor dashboard, select a test, and click **Results**. You see a list of all candidates with their Trust Scores.
+
+    {/* TODO: Add screenshot of the results list showing Trust Score column */}
+  </Step>
+  <Step title="Identify candidates for review">
+    Sort by Trust Score and focus on candidates scoring **below 85%**. These attempts are the most likely to contain violations worth reviewing.
+
+    {/* TODO: Add screenshot of results list sorted by Trust Score */}
+  </Step>
+  <Step title="Review the violation evidence">
+    Click on a candidate's report to see the detailed breakdown: flagged photos, screenshots, audio clips, and a timeline of detected violations.
+
+    {/* TODO: Add screenshot of an individual proctoring report with violation evidence */}
+  </Step>
+  <Step title="Make your determination">
+    Use the evidence to decide whether the violations indicate actual misconduct or are false positives caused by environmental factors.
+  </Step>
+</Steps>
 
 ## Related Resources
 
-- [What Gets Tracked](/getting-started/what-gets-tracked) — All monitoring capabilities available
-- [Proctoring Results](/results/proctoring-results) — How to view violation evidence and reports
-- [No Face or Multiple Faces Detected](/candidate-issues/no-face-or-multiple-faces) — Why face detection may flag false positives
-- [False App Switch Violation](/candidate-issues/false-app-switch) — Understanding false violation flags
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All monitoring capabilities available
+- [Proctoring Results](/results/proctoring-results) -- How to view violation evidence and reports
+- [Individual Submissions](/results/individual-submissions) -- Reviewing a single candidate's report in detail
+- [No Face or Multiple Faces Detected](/candidate-issues/no-face-or-multiple-faces) -- Why face detection may flag false positives
+- [False App Switch Violation](/candidate-issues/false-app-switch) -- Understanding false violation flags
+- [Best Practices for Teachers](/getting-started/best-practices-for-teachers) -- Tips for running effective proctored tests

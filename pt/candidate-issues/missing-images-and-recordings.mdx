@@ -1,36 +1,43 @@
 ---
-title: "Imagens e gravações em falta no relatório"
-description: "Compreenda por que imagens ou gravações de áudio podem não aparecer no relatório do exame de um candidato apesar de as infrações estarem listadas, e como resolver."
+title: "Imagens e Gravações Ausentes no Relatório"
+description: "Entenda por que imagens ou gravações de áudio podem não aparecer no relatório do teste de um candidato apesar das violações estarem listadas, e como resolver."
 ---
 
-Se consegue ver infrações listadas no relatório do exame de um candidato mas não consegue ver a evidência de suporte (imagens ou gravações de áudio), existem dois cenários possíveis, cada um com uma causa e resolução diferente.
+Se você consegue ver violações listadas no relatório do teste de um candidato mas não consegue ver a evidência de suporte (imagens ou gravações de áudio), existem dois cenários possíveis, cada um com uma causa e resolução diferente.
 
-## Cenário 1: Sem imagens nem gravações de todo
+## Cenário 1: Nenhuma Imagem ou Gravação
 
-Se nenhuma imagem ou gravação aparece apesar de as infrações estarem listadas, a funcionalidade de gravação de evidência provavelmente foi desativada nas configurações do seu exame.
+Se nenhuma imagem ou gravação aparece apesar das violações estarem listadas, o recurso de gravação de evidência provavelmente foi desativado nas configurações do seu teste.
 
 <Steps>
-  <Step title="Verifique as configurações do seu exame">
-    Navegue até à configuração de supervisão do seu exame no painel de AutoProctor e verifique que a gravação de evidência está ativada. Consulte [Configurações do exame](/creating-tests/test-settings) para detalhes sobre cada opção.
+  <Step title="Verifique as configurações do seu teste">
+    Navegue até a configuração de supervisão do seu teste no painel do AutoProctor e verifique que a gravação de evidência está ativada. Consulte [Configurações de Supervisão](/settings/proctoring-settings) para detalhes sobre cada opção.
   </Step>
-  <Step title="Ative a gravação de evidência para futuros exames">
-    Se a gravação de evidência estava desativada, ative-a para futuros exames. Note que esta alteração não adicionará retroativamente evidência a exames que já foram realizados.
+  <Step title="Ative a gravação de evidência para futuros testes">
+    Se a gravação de evidência estava desativada, ative-a para futuros testes. Note que esta alteração não adicionará retroativamente evidência a testes que já foram realizados.
   </Step>
 </Steps>
 
-## Cenário 2: Algumas infrações têm evidência, outras não
+{/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
 
-Se algumas infrações mostram ficheiros de evidência enquanto outras não, esse é o comportamento esperado. AutoProctor armazena um número fixo (aproximadamente 20) de imagens e ficheiros de áudio por tentativa de exame. Quando as infrações excedem esse limite, nem todas as infrações terão um ficheiro de evidência associado.
+## Cenário 2: Algumas Violações Têm Evidência, Outras Não
+
+Se algumas violações mostram arquivos de evidência enquanto outras não, esse é o comportamento esperado. O AutoProctor armazena um número fixo (aproximadamente 20) de imagens e arquivos de áudio por tentativa de teste. Quando as violações excedem esse limite, nem todas as violações terão um arquivo de evidência associado.
+
+| O Que Você Vê | O Que Significa |
+|---|---|
+| Nenhum arquivo de evidência | A gravação de evidência provavelmente está desativada nas configurações do teste |
+| Algumas violações têm arquivos, outras não | Limite de armazenamento atingido -- comportamento normal |
 
 <Warning>
-**Todas as infrações são registadas e afetam o Trust Score**, mesmo quando os ficheiros de evidência não são armazenados para visualização. Os ficheiros de evidência são um subconjunto -- existem para que você possa rever o que aconteceu, mas o cálculo do Trust Score considera cada infração detetada independentemente de a evidência ter sido armazenada.
+**Todas as violações são rastreadas e afetam o Trust Score**, mesmo quando os arquivos de evidência não são armazenados para visualização. Os arquivos de evidência são um subconjunto -- existem para que você possa revisar o que aconteceu, mas o cálculo do Trust Score considera cada violação detectada independentemente de a evidência ter sido armazenada.
 </Warning>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Configurações do exame](/creating-tests/test-settings) -- Configure o armazenamento de evidência e as opções de supervisão
-- [Evidência de infrações em falta](/candidate-issues/missing-violation-evidence) -- Explicação detalhada dos limites de armazenamento de evidência
-- [Fotos aleatórias em falta](/candidate-issues/missing-random-photos) -- Por que as fotos aleatórias podem estar ausentes
-- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
-- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Configurações de Supervisão](/settings/proctoring-settings) -- Configure o armazenamento de evidência e as opções de supervisão
+- [Evidência de Violações Ausente](/candidate-issues/missing-violation-evidence) -- Explicação detalhada dos limites de armazenamento de evidência
+- [Fotos Aleatórias Ausentes](/candidate-issues/missing-random-photos) -- Por que as fotos aleatórias podem estar ausentes
+- [Resultados de Supervisão](/results/proctoring-results) -- Como revisar relatórios de supervisão
+- [Entendendo o Trust Score](/getting-started/trust-score) -- Como os Trust Scores são calculados
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

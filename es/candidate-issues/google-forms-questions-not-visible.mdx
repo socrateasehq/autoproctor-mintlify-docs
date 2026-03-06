@@ -1,44 +1,47 @@
 ---
-title: "No se pueden ver las preguntas en Google Forms"
+title: "No Se Pueden Ver las Preguntas en Google Forms"
 description: "Comprenda por qué las preguntas pueden no ser visibles en un formulario de Google Forms cargado a través de AutoProctor y cómo resolver los errores de restricción de acceso."
 ---
 
-AutoProctor carga su formulario de Google Forms dentro de su propio sitio para la supervisión. Si el formulario de Google Forms tiene una restricción de acceso u otro error, ese mismo mensaje de error aparece dentro de la interfaz de AutoProctor.
+AutoProctor carga su formulario de Google Forms dentro de su propio sitio para la supervisión. Si el formulario de Google Forms tiene una restricción de acceso u otro error, ese mismo mensaje de error aparece dentro de la interfaz de AutoProctor. AutoProctor no puede controlar ni modificar nada dentro del formulario de Google Forms debido a restricciones de privacidad.
 
-## ¿Por qué no son visibles las preguntas?
+## Por Qué No Son Visibles las Preguntas
 
 Google Forms puede restringir el acceso según la organización, el dominio de correo electrónico o cuentas específicas. Cuando usted ha iniciado sesión con una cuenta que no cumple con estas restricciones, Google bloquea el contenido del formulario y muestra un mensaje de error en su lugar.
+
+{/* TODO: Add screenshot of Google Form showing an access restriction message within AutoProctor */}
 
 <Frame caption="Formulario de Google Forms mostrando un mensaje de restricción de acceso dentro de AutoProctor">
   <img src="/images/candidate-issues/google-forms-access-restricted.png" alt="Formulario de Google Forms mostrando un error de acceso restringido dentro de la interfaz de AutoProctor" />
 </Frame>
 
-## Cómo solucionarlo
+## Cómo Solucionarlo
 
 <Steps>
   <Step title="Verifique el mensaje de error">
     Lea el mensaje de error que se muestra en el formulario. Generalmente explica si el formulario está restringido a ciertos usuarios o a una organización.
   </Step>
   <Step title="Inicie sesión con la cuenta correcta">
-    Cierre sesión en su cuenta de Google actual en [https://accounts.google.com/Logout](https://accounts.google.com/Logout), luego inicie sesión con la cuenta que tiene acceso al formulario.
+    Cierre sesión en su cuenta de Google actual en [accounts.google.com/Logout](https://accounts.google.com/Logout), luego inicie sesión con la cuenta que tiene acceso al formulario.
   </Step>
   <Step title="Contacte al creador del formulario si es necesario">
     Si no está seguro de qué cuenta usar o cree que debería tener acceso, comuníquese con la persona que creó el examen. Es posible que necesite actualizar la configuración de uso compartido del formulario.
   </Step>
 </Steps>
 
-## ¿Por qué AutoProctor no puede solucionar esto?
+## Por Qué AutoProctor No Puede Solucionar Esto
 
-Debido a restricciones de privacidad, Google no permite que AutoProctor acceda ni modifique nada dentro de un formulario de Google Forms. AutoProctor solo puede cargar el formulario; no puede controlar el contenido del formulario, la configuración de acceso ni los mensajes de error. Si encuentra un problema de acceso al formulario, solo el creador del formulario puede resolverlo.
+Debido a restricciones de privacidad, Google no permite que AutoProctor acceda ni modifique nada dentro de un formulario de Google Forms. AutoProctor solo puede cargar el formulario -- no puede controlar el contenido del formulario, la configuración de acceso ni los mensajes de error. Si encuentra un problema de acceso al formulario, solo el creador del formulario puede resolverlo.
 
 <Note>
-AutoProctor incorpora los formularios de Google Forms de manera similar a como los sitios web incorporan videos de YouTube. Si un video de YouTube muestra un error en un sitio externo, el problema es de YouTube, no del sitio que lo incorpora. Lo mismo aplica para Google Forms en AutoProctor.
+AutoProctor incorpora los formularios de Google Forms de manera similar a como los sitios web incorporan videos de YouTube. Si un video de YouTube muestra un error en un sitio externo, el problema es de YouTube, no del sitio que lo incorpora. Lo mismo aplica para Google Forms en AutoProctor -- cualquier error que vea se origina en Google, no en AutoProctor.
 </Note>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [No se puede ver la respuesta en Google Forms](/candidate-issues/google-forms-response-not-visible) -- Respuestas faltantes después del envío
-- [No se puede hacer clic en la respuesta](/candidate-issues/cannot-click-answer) -- El formulario carga pero no es interactivo
-- [Página en blanco o pantalla gris](/candidate-issues/blank-page-grey-screen) -- El formulario no carga en absoluto
-- [Instrucciones para realizar un examen supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración con sección de cuentas de Google
-- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda
+- [No Se Puede Ver la Respuesta en Google Forms](/candidate-issues/google-forms-response-not-visible) -- Respuestas faltantes después del envío
+- [No Se Puede Hacer Clic en la Respuesta](/candidate-issues/cannot-click-answer) -- El formulario carga pero no es interactivo
+- [Página en Blanco o Pantalla Gris](/candidate-issues/blank-page-grey-screen) -- El formulario no carga en absoluto
+- [Instrucciones para Realizar un Examen Supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración con sección de Cuenta de Google
+- [Cómo Cerrar Sesión](/taking-tests/how-to-logout) -- Pasos para cambiar de cuenta
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

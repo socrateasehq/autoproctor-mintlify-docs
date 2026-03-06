@@ -1,35 +1,45 @@
 ---
-title: "Sin rostro o múltiples rostros detectados incorrectamente"
-description: "Comprenda por qué la inteligencia artificial de AutoProctor puede reportar incorrectamente infracciones de detección facial y cómo interpretar correctamente estos resultados en los informes de supervisión."
+title: "Sin Rostro o Múltiples Rostros Detectados Incorrectamente"
+description: "Comprenda por qué la IA de AutoProctor puede reportar incorrectamente infracciones de detección facial y cómo interpretar correctamente estos resultados en los informes de supervisión."
 ---
 
-AutoProctor utiliza inteligencia artificial para la detección facial, y la inteligencia artificial no es 100% precisa. Es posible que vea infracciones de "Sin rostro detectado" o "Múltiples rostros detectados" en un informe incluso cuando la foto de evidencia muestra claramente un solo rostro.
+AutoProctor utiliza IA para la detección facial, y la IA no es 100% precisa. Es posible que vea infracciones de "Sin rostro detectado" o "Múltiples rostros detectados" en un informe incluso cuando la foto de evidencia muestra claramente un solo rostro.
 
-## ¿Por qué sucede esto?
+## Por Qué Sucede Esto
 
-Los modelos de inteligencia artificial de AutoProctor están entrenados con miles de rostros, pero pueden fallar en escenarios que difieren de sus datos de entrenamiento. Las tres causas más comunes de detección facial incorrecta son:
+Los modelos de IA de AutoProctor están entrenados con miles de rostros, pero pueden fallar en escenarios que difieren de sus datos de entrenamiento. Las tres causas más comunes de detección facial incorrecta son:
 
-1. **Fondos complejos** -- los fondos recargados o coloridos pueden confundir a la inteligencia artificial, haciendo que detecte rostros adicionales o que no detecte el real
-2. **Posición de la cabeza** -- los candidatos que miran hacia otro lado de la pantalla, miran hacia abajo o inclinan la cabeza pueden causar que la inteligencia artificial no detecte su rostro
-3. **Lentes con reflejos** -- los lentes que reflejan la luz u oscurecen los ojos dificultan que el sistema de detección identifique un rostro
+| Causa | Descripción |
+|---|---|
+| Fondos complejos | Los fondos recargados o coloridos pueden confundir a la IA, haciendo que detecte rostros adicionales o que no detecte el real |
+| Posición de la cabeza | Los candidatos que miran hacia otro lado, miran hacia abajo o inclinan la cabeza pueden causar que la IA no detecte su rostro |
+| Lentes con reflejos | Los lentes que reflejan la luz u oscurecen los ojos dificultan que el sistema de detección identifique un rostro |
 
-## ¿Cómo debe interpretar estas infracciones?
+## Cómo Interpretar Estas Infracciones
 
-AutoProctor proporciona fotos de evidencia junto con cada infracción para que usted pueda verificar independientemente la determinación de la inteligencia artificial. Al revisar las infracciones de detección facial:
+AutoProctor proporciona fotos de evidencia junto con cada infracción para que usted pueda verificar independientemente la determinación de la IA. Al revisar las infracciones de detección facial:
 
-- **Revise la foto de evidencia** -- ¿la foto realmente muestra sin rostro, múltiples rostros, o la inteligencia artificial claramente se equivocó?
-- **Observe el patrón** -- una sola detección incorrecta entre muchas correctas es probablemente un falso positivo
-- **Considere el contexto** -- la iluminación deficiente, los ángulos inusuales o los fondos recargados explican la mayoría de las detecciones falsas
+<Steps>
+  <Step title="Revise la foto de evidencia">
+    Mire la foto asociada con la infracción. ¿Realmente muestra que no hay rostro, múltiples rostros, o la IA claramente se equivocó?
+  </Step>
+  <Step title="Observe el patrón">
+    Una sola detección incorrecta entre muchas correctas es probablemente un falso positivo. Múltiples detecciones consecutivas pueden justificar una revisión más detallada.
+  </Step>
+  <Step title="Considere el contexto">
+    La iluminación deficiente, los ángulos inusuales o los fondos recargados explican la mayoría de las detecciones falsas. Tenga en cuenta el entorno de realización del examen antes de sacar conclusiones.
+  </Step>
+</Steps>
 
 <Warning>
-Siempre revise el informe completo y la evidencia proporcionada antes de concluir si un candidato cometió fraude. No se base únicamente en los Trust Score automatizados; úselos como guía junto con la evidencia fotográfica.
+Siempre revise el informe completo y la evidencia proporcionada antes de concluir si un candidato cometió fraude. No se base únicamente en los Trust Scores automatizados -- úselos como guía junto con la evidencia fotográfica.
 </Warning>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Comprensión del Trust Score](/getting-started/trust-score) -- Cómo se calculan los Trust Score
-- [Qué se monitorea](/getting-started/what-gets-tracked) -- Todos los eventos que AutoProctor supervisa
-- [Resultados de supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
-- [Evidencia de infracciones faltante](/candidate-issues/missing-violation-evidence) -- Por qué algunas infracciones carecen de fotos de evidencia
-- [Falso 'Cambió a otra aplicación'](/candidate-issues/false-app-switch) -- Otro escenario común de falso positivo
-- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda
+- [Comprensión del Trust Score](/getting-started/trust-score) -- Cómo se calculan los Trust Scores
+- [Qué Se Monitorea](/getting-started/what-gets-tracked) -- Todos los eventos que AutoProctor supervisa
+- [Resultados de Supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
+- [Evidencia de Infracciones Faltante](/candidate-issues/missing-violation-evidence) -- Por qué algunas infracciones carecen de fotos de evidencia
+- [Falso 'Cambió a Otra Aplicación'](/candidate-issues/false-app-switch) -- Otro escenario común de falso positivo
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

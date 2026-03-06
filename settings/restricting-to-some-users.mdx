@@ -1,0 +1,97 @@
+---
+title: "Restrict Test Access to Specific Candidates"
+description: "Limit test participation to specific candidates on AutoProctor using link distribution, email restrictions, unique invitation links, or platform access controls."
+---
+
+By default, anyone with your test link can take the test. AutoProctor gives you several methods to lock down access so only the candidates you choose can participate.
+
+## Method 1: Selective Link Distribution
+
+The simplest approach is to share the test link only with the candidates who should take the test.
+
+<Steps>
+  <Step title="Identify eligible candidates">
+    Determine which candidates should have access to the test.
+  </Step>
+  <Step title="Share the link privately">
+    Send the test link only to those candidates via email, your learning management system, or another private channel. Avoid posting the link publicly.
+  </Step>
+</Steps>
+
+<Note>
+This method relies on candidates not sharing the link with others. If you need stronger access control, use one of the methods below.
+</Note>
+
+## Method 2: Email-Based Restrictions
+
+Use AutoProctor's built-in **Login Restrictions** to allow only specific email domains or individual email addresses. You configure this in the Advanced Settings section of your test.
+
+<Steps>
+  <Step title="Open Advanced Settings">
+    Navigate to your test settings and scroll to the **Advanced Settings** section.
+  </Step>
+  <Step title="Enter Login Restrictions">
+    Add the email domains (e.g., `@yourschool.edu`) or specific email addresses you want to allow.
+  </Step>
+  <Step title="Save the test">
+    Click **Create** or **Update** to apply the restrictions.
+  </Step>
+</Steps>
+
+See [Restrict Test Access by Email Address](/settings/restricting-by-email) for full setup instructions and examples.
+
+## Method 3: Unique Invitation Links
+
+Generate unique per-candidate URLs tied to specific email addresses. Each candidate receives their own link with email verification, so only the intended recipient can use it.
+
+<Steps>
+  <Step title="Enable Unique URL">
+    Open your test settings and enable the **Unique URL** option.
+  </Step>
+  <Step title="Upload email addresses">
+    Upload candidate email addresses via a CSV file (up to 1,000 at once).
+  </Step>
+  <Step title="Distribute unique links">
+    AutoProctor generates a unique link for each email address. Send these links to your candidates individually.
+  </Step>
+</Steps>
+
+<Note>
+Unique invitation links are available only on the **Elite Plan** and work with Socratease Quizzes and IFrame Tests. See [Payments and Credits](/pricing/payments-and-credits) for plan details.
+</Note>
+
+See [Inviting Candidates via Email](/settings/inviting-candidates-via-email) for the complete setup process.
+
+## Method 4: Google Forms Access Restrictions
+
+If you use Google Forms, you can restrict access at the Google Forms level instead of (or in addition to) AutoProctor restrictions. Candidates can still open the AutoProctor link, but they cannot proceed if Google Forms blocks their access.
+
+<Steps>
+  <Step title="Open your Google Form settings">
+    In Google Forms, click the **Settings** gear icon.
+  </Step>
+  <Step title="Restrict to your organization">
+    Enable the option to restrict responses to users in your organization. This limits access to candidates with email addresses under your Google Workspace domain.
+
+    {/* TODO: Add screenshot of Google Forms settings showing the organization restriction toggle */}
+  </Step>
+</Steps>
+
+For more details, refer to [Google's guide on restricting form access](https://www.bettercloud.com/monitor/the-academy/restrict-access-to-google-forms/).
+
+## Comparison of Access Control Methods
+
+| Method | Strength | Works With | Plan Required |
+|---|---|---|---|
+| Selective link distribution | Low -- relies on trust | All test types | Any |
+| Email-based restrictions | Medium -- blocks wrong domains | All test types | Any |
+| Unique invitation links | High -- per-candidate verification | Socratease Quizzes, IFrame Tests | Elite |
+| Google Forms restrictions | Medium -- organization-level | Google Forms only | Any |
+
+## Related Resources
+
+- [Restrict Test Access by Email Address](/settings/restricting-by-email) -- Set up domain and email-based restrictions
+- [Inviting Candidates via Email](/settings/inviting-candidates-via-email) -- Generate unique per-candidate test links
+- [Candidate Login Methods](/taking-tests/candidate-login-methods) -- Understand available authentication options
+- [Advanced Settings](/settings/advanced-settings) -- Configure Login Restrictions and other advanced options
+- [Best Practices for Test Creators](/getting-started/best-practices-for-teachers) -- Tips for smooth test administration

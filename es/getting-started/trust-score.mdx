@@ -1,45 +1,74 @@
 ---
-title: "Trust Score"
-description: "Comprenda cómo funciona el Trust Score de AutoProctor, cómo se calcula y qué constituye una buena puntuación."
+title: "Puntaje de Confianza"
+description: "Comprenda cómo funciona el Puntaje de Confianza de AutoProctor, cómo se calcula y qué constituye un buen puntaje."
 ---
 
-AutoProctor asigna un Trust Score (0–100%) a cada informe de supervisión. La puntuación proporciona un resumen rápido de la probabilidad de que el candidato haya mantenido la integridad durante la prueba.
+AutoProctor asigna un Puntaje de Confianza (0--100%) a cada informe de supervisión. El puntaje le brinda un resumen rápido de qué tan probable es que un candidato haya mantenido la integridad del examen, para que pueda enfocar su tiempo de revisión en los intentos que más lo necesitan.
 
 <Frame>
-  <img src="/images/getting-started/trustscore.png" alt="Visualización del Trust Score en un informe de supervisión de AutoProctor" />
+  <img src="/images/getting-started/trustscore.png" alt="Visualización del Puntaje de Confianza mostrando un porcentaje en la parte superior de un informe de supervisión de AutoProctor" />
 </Frame>
 
-Cuanto más bajo sea el Trust Score, más probable es que AutoProctor haya detectado un comportamiento sospechoso durante la prueba.
+Un Puntaje de Confianza más bajo significa que AutoProctor detectó más comportamiento sospechoso durante el examen.
 
 <Warning>
-Siempre revise la evidencia de respaldo antes de sacar conclusiones. **No** se base únicamente en el Trust Score — revise la evidencia real de las infracciones para determinar si se produjo una conducta indebida.
+Siempre revise la evidencia de respaldo antes de sacar conclusiones. **No** se base únicamente en el Puntaje de Confianza — revise las fotos de infracciones reales, las capturas de pantalla y las grabaciones de audio para determinar si ocurrió una conducta indebida.
 </Warning>
 
-## Cómo se calcula el Trust Score
+## Cómo Se Calcula el Puntaje de Confianza
 
-AutoProctor monitorea a los candidatos en tiempo real a través de múltiples canales (dependiendo de la [configuración de su prueba](/creating-tests/test-settings)):
+AutoProctor monitorea a los candidatos en tiempo real a través de múltiples canales (dependiendo de su [configuración de supervisión](/settings/proctoring-settings)):
 
 - Cámara
 - Micrófono
-- Actividad de la pantalla
+- Actividad de pantalla
 
-El algoritmo evalúa las infracciones con base en tres factores:
+El algoritmo evalúa las infracciones basándose en tres factores:
 
-1. **Tipo de infracción** — el cambio de pestaña tiene mayor peso que la detección de ruido
-2. **Frecuencia de las infracciones** — más incidentes resultan en una puntuación más baja
-3. **Duración de las infracciones** — las infracciones prolongadas tienen un mayor impacto que las breves
+| Factor | Cómo Afecta el Puntaje |
+|---|---|
+| **Tipo de infracción** | Diferentes infracciones tienen diferentes pesos. El cambio de pestaña impacta el puntaje más que la detección de ruido. |
+| **Frecuencia de infracciones** | Más incidentes resultan en un puntaje más bajo. |
+| **Duración de infracciones** | Infracciones prolongadas reducen el puntaje más significativamente que las breves. |
 
-## ¿Qué es un buen Trust Score?
+{/* TODO: Add diagram or infographic illustrating how the three factors combine into the Trust Score */}
 
-Como referencia general, revise la evidencia de cualquier candidato con un Trust Score **inferior al 85%**. Este umbral está pensado para revisión, no como prueba de conducta indebida.
+## ¿Qué Es un Buen Puntaje de Confianza?
+
+Como pauta general, revise la evidencia de cualquier candidato con un Puntaje de Confianza **inferior al 85%**. Este umbral es para revisión, no como prueba de conducta indebida.
 
 <Note>
-Los factores ambientales pueden afectar significativamente la puntuación. Por ejemplo, el ruido ambiental del tráfico podría reducir una puntuación al 0% incluso cuando no se produjo ningún tipo de trampa.
+Los factores ambientales pueden impactar significativamente la puntuación. Por ejemplo, un candidato en una habitación ruidosa cerca del tráfico podría recibir un Puntaje de Confianza del 0% incluso cuando no hubo trampa real. El micrófono capta el ruido ambiental y el sistema no siempre puede distinguir entre habla humana y sonido de fondo. Siempre verifique la evidencia antes de tomar una determinación.
 </Note>
 
-## Recursos relacionados
+## Cómo Revisar un Puntaje de Confianza
 
-- [Qué se monitorea](/getting-started/what-gets-tracked) — Todas las capacidades de monitoreo disponibles
-- [Resultados de supervisión](/results/proctoring-results) — Cómo ver la evidencia de infracciones y los informes
-- [No se detectó ningún rostro o se detectaron múltiples rostros](/candidate-issues/no-face-or-multiple-faces) — Por qué la detección facial puede generar falsos positivos
-- [Infracción falsa de cambio de aplicación](/candidate-issues/false-app-switch) — Comprensión de las señalizaciones de infracciones falsas
+<Steps>
+  <Step title="Abra los resultados de su examen">
+    Vaya a su panel de control de AutoProctor, seleccione un examen y haga clic en **Resultados**. Verá una lista de todos los candidatos con sus Puntajes de Confianza.
+
+    {/* TODO: Add screenshot of the results list showing Trust Score column */}
+  </Step>
+  <Step title="Identifique candidatos para revisión">
+    Ordene por Puntaje de Confianza y concéntrese en los candidatos con puntuación **inferior al 85%**. Estos intentos son los más propensos a contener infracciones que vale la pena revisar.
+
+    {/* TODO: Add screenshot of results list sorted by Trust Score */}
+  </Step>
+  <Step title="Revise la evidencia de infracciones">
+    Haga clic en el informe de un candidato para ver el desglose detallado: fotos señaladas, capturas de pantalla, clips de audio y una línea de tiempo de infracciones detectadas.
+
+    {/* TODO: Add screenshot of an individual proctoring report with violation evidence */}
+  </Step>
+  <Step title="Tome su determinación">
+    Use la evidencia para decidir si las infracciones indican una conducta indebida real o son falsos positivos causados por factores ambientales.
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Qué Se Monitorea](/getting-started/what-gets-tracked) — Todas las capacidades de monitoreo disponibles
+- [Resultados de Supervisión](/results/proctoring-results) — Cómo ver la evidencia de infracciones y los informes
+- [Envíos Individuales](/results/individual-submissions) — Revisión detallada del informe de un candidato individual
+- [No Se Detecta Rostro o Se Detectan Múltiples Rostros](/candidate-issues/no-face-or-multiple-faces) — Por qué la detección facial puede generar falsos positivos
+- [Infracción Falsa de Cambio de Aplicación](/candidate-issues/false-app-switch) — Comprenda las señalizaciones de infracciones falsas
+- [Mejores Prácticas para Docentes](/getting-started/best-practices-for-teachers) — Consejos para realizar exámenes supervisados eficaces

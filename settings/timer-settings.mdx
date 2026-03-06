@@ -1,0 +1,74 @@
+---
+title: "Timer Settings"
+description: "Configure test duration, auto-submit behavior, time windows, and buffer time for your AutoProctor tests."
+---
+
+Timer Settings let you control when candidates can start a test, how long they have to complete it, and what happens when time runs out. You access these settings from the **Settings** button on your dashboard.
+
+{/* TODO: Add screenshot of the Timer Settings section in the test settings page */}
+
+<Frame>
+  <img src="/images/creating-tests/timer-settings.png" alt="Timer settings configuration panel" />
+</Frame>
+
+<Note>
+The times you set are in your local timezone. AutoProctor handles all timezone conversions automatically — if your candidates are in a different timezone, they will see the correct local time on their end.
+</Note>
+
+## How to Configure Timer Settings
+
+<Steps>
+  <Step title="Enable the Timer">
+    On the Test Settings page, check the **Enable Timer** checkbox. This activates all time-related settings for your test. Unchecking this box disables all time-related checks.
+  </Step>
+  <Step title="Set the Duration">
+    Enter the maximum time a candidate has to complete the test. The countdown starts when the test loads and the candidate sees the questions.
+  </Step>
+  <Step title="Configure Auto-Submit (Optional)">
+    Toggle **Auto-submit Test** to automatically submit the test when the duration ends. If disabled, candidates get unlimited time to submit after the timer runs out.
+
+    <Warning>
+    For non-Socratease quizzes, auto-submit only submits the proctoring session — not the quiz answers. If a candidate hasn't manually submitted their answers, **all responses will be lost**. For Socratease quizzes, both answers and proctoring data are submitted automatically.
+    </Warning>
+  </Step>
+  <Step title="Set a Start Window (Optional)">
+    Use **Can't Start Before** and **Can't Start After** to define when candidates can begin the test:
+    - **Can't Start Before** — the earliest date and time a candidate can start
+    - **Can't Start After** — the latest date and time a candidate can start
+
+    If you set a date without a time, midnight is used as the default.
+  </Step>
+  <Step title="Set a Submission Deadline (Optional)">
+    **Must Submit By** sets a hard deadline for submission. If a candidate starts the test close to this deadline, their available time is reduced accordingly.
+
+    For example, if the test duration is 30 minutes and the Must Submit By time is 12:30 PM, a candidate starting at 12:15 PM gets only 15 minutes. This uses the same date as **Can't Start After**.
+  </Step>
+  <Step title="Configure Buffer Time (Optional)">
+    **Buffer Time** is a grace period after the Can't Start After time that allows candidates to complete the demo test and set up their device. AutoProctor adds a default 5-minute buffer when start/end times are set.
+
+    <Note>
+    Buffer time does not apply to the Must Submit By deadline.
+    </Note>
+  </Step>
+</Steps>
+
+## Timer Settings Reference
+
+| Setting | Description | Default |
+|---|---|---|
+| **Duration** | Maximum time for a test attempt | No limit |
+| **Auto-submit Test** | Submit automatically when time runs out | Off |
+| **Can't Start Before** | Earliest start date and time | No restriction |
+| **Can't Start After** | Latest start date and time | No restriction |
+| **Must Submit By** | Hard submission deadline | Not set |
+| **Buffer Time** | Grace period for setup after Can't Start After | 5 min (when times are set) |
+
+{/* TODO: Add GIF showing the timer countdown experience from the candidate's perspective */}
+
+## Related Resources
+
+- [Proctoring Settings](/settings/proctoring-settings) — Configure camera, microphone, and tab-switching detection
+- [Advanced Settings](/settings/advanced-settings) — Login providers, restrictions, and integrations
+- [Quiz Settings](/socratease/quiz-settings) — For Socratease quiz-specific settings, see the Socratease Quiz Settings page
+- [Resuming Test Attempts](/settings/resuming-test-attempts) — How auto-resume works with timed tests
+- [What Gets Tracked](/getting-started/what-gets-tracked) — Overview of all proctoring capabilities

@@ -31,6 +31,22 @@
   "feedback": {
     "thumbsRating": true
   },
+  "redirects": [
+    { "source": "/creating-tests/test-settings", "destination": "/settings/timer-settings" },
+    { "source": "/results/restricting-by-email", "destination": "/settings/restricting-by-email" },
+    { "source": "/results/restricting-to-some-users", "destination": "/settings/restricting-to-some-users" },
+    { "source": "/results/inviting-candidates-via-email", "destination": "/settings/inviting-candidates-via-email" },
+    { "source": "/results/maximum-attempts", "destination": "/settings/maximum-attempts" },
+    { "source": "/results/concurrency", "destination": "/settings/concurrency" },
+    { "source": "/results/resuming-test-attempts", "destination": "/settings/resuming-test-attempts" },
+    { "source": "/results/resuming-google-forms", "destination": "/settings/resuming-google-forms" },
+    { "source": "/results/best-practices-for-teachers", "destination": "/getting-started/best-practices-for-teachers" },
+    { "source": "/results/candidate-login-methods", "destination": "/taking-tests/candidate-login-methods" },
+    { "source": "/getting-started/instructions-page-for-candidates", "destination": "/taking-tests/instructions-page-for-candidates" },
+    { "source": "/getting-started/contact-us", "destination": "/support/contact-us" },
+    { "source": "/getting-started/booking-a-demo", "destination": "/support/booking-a-demo" },
+    { "source": "/taking-tests/why-equip-for-hiring", "destination": "/" }
+  ],
   "navigation": {
     "languages": [
       {
@@ -50,26 +66,45 @@
                 "group": "Getting Started",
                 "icon": "rocket",
                 "pages": [
+                  "getting-started/quickstart",
                   "getting-started/what-gets-tracked",
-                  "getting-started/device-compatibility",
-                  "getting-started/faqs",
                   "getting-started/trust-score",
-                  "getting-started/instructions-page-for-candidates",
-                  "getting-started/booking-a-demo",
+                  "getting-started/device-compatibility",
                   "getting-started/video-recording",
-                  "getting-started/contact-us"
+                  "getting-started/faqs",
+                  "getting-started/best-practices-for-teachers"
                 ]
               },
               {
-                "group": "Creating Tests",
+                "group": "Test Setup",
                 "icon": "square-plus",
                 "pages": [
-                  "creating-tests/test-settings",
-                  "creating-tests/quiz-providers",
-                  "creating-tests/adding-collaborators",
-                  "creating-tests/archiving-and-deleting-tests",
-                  "creating-tests/iframe-query-arguments",
-                  "creating-tests/add-on-error"
+                  {
+                    "group": "Creating Tests",
+                    "pages": [
+                      "creating-tests/quiz-providers",
+                      "creating-tests/adding-collaborators",
+                      "creating-tests/archiving-and-deleting-tests",
+                      "creating-tests/iframe-query-arguments",
+                      "creating-tests/add-on-error"
+                    ]
+                  },
+                  {
+                    "group": "Test Settings",
+                    "pages": [
+                      "settings/timer-settings",
+                      "settings/proctoring-settings",
+                      "settings/enhanced-proctoring",
+                      "settings/advanced-settings",
+                      "settings/restricting-by-email",
+                      "settings/restricting-to-some-users",
+                      "settings/inviting-candidates-via-email",
+                      "settings/maximum-attempts",
+                      "settings/concurrency",
+                      "settings/resuming-test-attempts",
+                      "settings/resuming-google-forms"
+                    ]
+                  }
                 ]
               },
               {
@@ -90,59 +125,64 @@
                 ]
               },
               {
-                "group": "Taking Tests",
+                "group": "Candidate Guide",
                 "icon": "pen-to-square",
                 "pages": [
-                  "taking-tests/proctored-test-instructions",
-                  "taking-tests/timed-test-instructions",
-                  "taking-tests/proctored-socratease-instructions",
-                  "taking-tests/timed-socratease-instructions",
-                  "taking-tests/submit-button",
-                  "taking-tests/candidate-login-methods",
-                  "taking-tests/how-to-logout",
-                  "taking-tests/why-equip-for-hiring"
+                  {
+                    "group": "Instructions",
+                    "pages": [
+                      "taking-tests/proctored-test-instructions",
+                      "taking-tests/timed-test-instructions",
+                      "taking-tests/proctored-socratease-instructions",
+                      "taking-tests/timed-socratease-instructions",
+                      "taking-tests/submit-button",
+                      "taking-tests/candidate-login-methods",
+                      "taking-tests/how-to-logout",
+                      "taking-tests/instructions-page-for-candidates"
+                    ]
+                  },
+                  {
+                    "group": "Candidate Issues",
+                    "pages": [
+                      "candidate-issues/loading-screen",
+                      "candidate-issues/blank-page-grey-screen",
+                      "candidate-issues/slow-and-laggy",
+                      "candidate-issues/cannot-click-answer",
+                      "candidate-issues/google-forms-questions-not-visible",
+                      "candidate-issues/google-forms-response-not-visible",
+                      "candidate-issues/false-app-switch",
+                      "candidate-issues/no-face-or-multiple-faces",
+                      "candidate-issues/missing-violation-evidence",
+                      "candidate-issues/missing-random-photos",
+                      "candidate-issues/missing-images-and-recordings",
+                      "candidate-issues/went-offline-meaning",
+                      "candidate-issues/incorrect-student-name"
+                    ]
+                  }
                 ]
               },
               {
                 "group": "Results & Reports",
                 "icon": "chart-bar",
                 "pages": [
-                  "results/how-to-see-results",
-                  "results/proctoring-results",
-                  "results/individual-submissions",
-                  "results/export-to-excel",
-                  "results/google-sheets-integration",
-                  "results/sharing-test-results",
-                  "results/restricting-by-email",
-                  "results/restricting-to-some-users",
-                  "results/candidate-login-methods",
-                  "results/inviting-candidates-via-email",
-                  "results/maximum-attempts",
-                  "results/concurrency",
-                  "results/resuming-test-attempts",
-                  "results/resuming-google-forms",
-                  "results/unsubmitted-tests",
-                  "results/things-you-need-to-know",
-                  "results/best-practices-for-teachers"
-                ]
-              },
-              {
-                "group": "Candidate Issues",
-                "icon": "wrench",
-                "pages": [
-                  "candidate-issues/loading-screen",
-                  "candidate-issues/blank-page-grey-screen",
-                  "candidate-issues/slow-and-laggy",
-                  "candidate-issues/cannot-click-answer",
-                  "candidate-issues/google-forms-questions-not-visible",
-                  "candidate-issues/google-forms-response-not-visible",
-                  "candidate-issues/false-app-switch",
-                  "candidate-issues/no-face-or-multiple-faces",
-                  "candidate-issues/missing-violation-evidence",
-                  "candidate-issues/missing-random-photos",
-                  "candidate-issues/missing-images-and-recordings",
-                  "candidate-issues/went-offline-meaning",
-                  "candidate-issues/incorrect-student-name"
+                  {
+                    "group": "Viewing Results",
+                    "pages": [
+                      "results/how-to-see-results",
+                      "results/proctoring-results",
+                      "results/individual-submissions",
+                      "results/unsubmitted-tests",
+                      "results/things-you-need-to-know"
+                    ]
+                  },
+                  {
+                    "group": "Exporting & Sharing",
+                    "pages": [
+                      "results/export-to-excel",
+                      "results/google-sheets-integration",
+                      "results/sharing-test-results"
+                    ]
+                  }
                 ]
               },
               {
@@ -158,6 +198,14 @@
                   "pricing/track-test-pack-usage",
                   "pricing/invoices",
                   "pricing/billing-information"
+                ]
+              },
+              {
+                "group": "Support",
+                "icon": "headset",
+                "pages": [
+                  "support/contact-us",
+                  "support/booking-a-demo"
                 ]
               }
             ]
@@ -180,26 +228,45 @@
                 "group": "Primeros Pasos",
                 "icon": "rocket",
                 "pages": [
+                  "es/getting-started/quickstart",
                   "es/getting-started/what-gets-tracked",
-                  "es/getting-started/device-compatibility",
-                  "es/getting-started/faqs",
                   "es/getting-started/trust-score",
-                  "es/getting-started/instructions-page-for-candidates",
-                  "es/getting-started/booking-a-demo",
+                  "es/getting-started/device-compatibility",
                   "es/getting-started/video-recording",
-                  "es/getting-started/contact-us"
+                  "es/getting-started/faqs",
+                  "es/getting-started/best-practices-for-teachers"
                 ]
               },
               {
-                "group": "Crear Pruebas",
+                "group": "Configuración de Pruebas",
                 "icon": "square-plus",
                 "pages": [
-                  "es/creating-tests/test-settings",
-                  "es/creating-tests/quiz-providers",
-                  "es/creating-tests/adding-collaborators",
-                  "es/creating-tests/archiving-and-deleting-tests",
-                  "es/creating-tests/iframe-query-arguments",
-                  "es/creating-tests/add-on-error"
+                  {
+                    "group": "Crear Pruebas",
+                    "pages": [
+                      "es/creating-tests/quiz-providers",
+                      "es/creating-tests/adding-collaborators",
+                      "es/creating-tests/archiving-and-deleting-tests",
+                      "es/creating-tests/iframe-query-arguments",
+                      "es/creating-tests/add-on-error"
+                    ]
+                  },
+                  {
+                    "group": "Configuración de la Prueba",
+                    "pages": [
+                      "es/settings/timer-settings",
+                      "es/settings/proctoring-settings",
+                      "es/settings/enhanced-proctoring",
+                      "es/settings/advanced-settings",
+                      "es/settings/restricting-by-email",
+                      "es/settings/restricting-to-some-users",
+                      "es/settings/inviting-candidates-via-email",
+                      "es/settings/maximum-attempts",
+                      "es/settings/concurrency",
+                      "es/settings/resuming-test-attempts",
+                      "es/settings/resuming-google-forms"
+                    ]
+                  }
                 ]
               },
               {
@@ -220,59 +287,64 @@
                 ]
               },
               {
-                "group": "Realizar Pruebas",
+                "group": "Guía del Candidato",
                 "icon": "pen-to-square",
                 "pages": [
-                  "es/taking-tests/proctored-test-instructions",
-                  "es/taking-tests/timed-test-instructions",
-                  "es/taking-tests/proctored-socratease-instructions",
-                  "es/taking-tests/timed-socratease-instructions",
-                  "es/taking-tests/submit-button",
-                  "es/taking-tests/candidate-login-methods",
-                  "es/taking-tests/how-to-logout",
-                  "es/taking-tests/why-equip-for-hiring"
+                  {
+                    "group": "Instrucciones",
+                    "pages": [
+                      "es/taking-tests/proctored-test-instructions",
+                      "es/taking-tests/timed-test-instructions",
+                      "es/taking-tests/proctored-socratease-instructions",
+                      "es/taking-tests/timed-socratease-instructions",
+                      "es/taking-tests/submit-button",
+                      "es/taking-tests/candidate-login-methods",
+                      "es/taking-tests/how-to-logout",
+                      "es/taking-tests/instructions-page-for-candidates"
+                    ]
+                  },
+                  {
+                    "group": "Problemas del Candidato",
+                    "pages": [
+                      "es/candidate-issues/loading-screen",
+                      "es/candidate-issues/blank-page-grey-screen",
+                      "es/candidate-issues/slow-and-laggy",
+                      "es/candidate-issues/cannot-click-answer",
+                      "es/candidate-issues/google-forms-questions-not-visible",
+                      "es/candidate-issues/google-forms-response-not-visible",
+                      "es/candidate-issues/false-app-switch",
+                      "es/candidate-issues/no-face-or-multiple-faces",
+                      "es/candidate-issues/missing-violation-evidence",
+                      "es/candidate-issues/missing-random-photos",
+                      "es/candidate-issues/missing-images-and-recordings",
+                      "es/candidate-issues/went-offline-meaning",
+                      "es/candidate-issues/incorrect-student-name"
+                    ]
+                  }
                 ]
               },
               {
                 "group": "Resultados e Informes",
                 "icon": "chart-bar",
                 "pages": [
-                  "es/results/how-to-see-results",
-                  "es/results/proctoring-results",
-                  "es/results/individual-submissions",
-                  "es/results/export-to-excel",
-                  "es/results/google-sheets-integration",
-                  "es/results/sharing-test-results",
-                  "es/results/restricting-by-email",
-                  "es/results/restricting-to-some-users",
-                  "es/results/candidate-login-methods",
-                  "es/results/inviting-candidates-via-email",
-                  "es/results/maximum-attempts",
-                  "es/results/concurrency",
-                  "es/results/resuming-test-attempts",
-                  "es/results/resuming-google-forms",
-                  "es/results/unsubmitted-tests",
-                  "es/results/things-you-need-to-know",
-                  "es/results/best-practices-for-teachers"
-                ]
-              },
-              {
-                "group": "Problemas del Candidato",
-                "icon": "wrench",
-                "pages": [
-                  "es/candidate-issues/loading-screen",
-                  "es/candidate-issues/blank-page-grey-screen",
-                  "es/candidate-issues/slow-and-laggy",
-                  "es/candidate-issues/cannot-click-answer",
-                  "es/candidate-issues/google-forms-questions-not-visible",
-                  "es/candidate-issues/google-forms-response-not-visible",
-                  "es/candidate-issues/false-app-switch",
-                  "es/candidate-issues/no-face-or-multiple-faces",
-                  "es/candidate-issues/missing-violation-evidence",
-                  "es/candidate-issues/missing-random-photos",
-                  "es/candidate-issues/missing-images-and-recordings",
-                  "es/candidate-issues/went-offline-meaning",
-                  "es/candidate-issues/incorrect-student-name"
+                  {
+                    "group": "Ver Resultados",
+                    "pages": [
+                      "es/results/how-to-see-results",
+                      "es/results/proctoring-results",
+                      "es/results/individual-submissions",
+                      "es/results/unsubmitted-tests",
+                      "es/results/things-you-need-to-know"
+                    ]
+                  },
+                  {
+                    "group": "Exportar y Compartir",
+                    "pages": [
+                      "es/results/export-to-excel",
+                      "es/results/google-sheets-integration",
+                      "es/results/sharing-test-results"
+                    ]
+                  }
                 ]
               },
               {
@@ -288,6 +360,14 @@
                   "es/pricing/track-test-pack-usage",
                   "es/pricing/invoices",
                   "es/pricing/billing-information"
+                ]
+              },
+              {
+                "group": "Soporte",
+                "icon": "headset",
+                "pages": [
+                  "es/support/contact-us",
+                  "es/support/booking-a-demo"
                 ]
               }
             ]
@@ -310,26 +390,45 @@
                 "group": "Primeiros Passos",
                 "icon": "rocket",
                 "pages": [
+                  "pt/getting-started/quickstart",
                   "pt/getting-started/what-gets-tracked",
-                  "pt/getting-started/device-compatibility",
-                  "pt/getting-started/faqs",
                   "pt/getting-started/trust-score",
-                  "pt/getting-started/instructions-page-for-candidates",
-                  "pt/getting-started/booking-a-demo",
+                  "pt/getting-started/device-compatibility",
                   "pt/getting-started/video-recording",
-                  "pt/getting-started/contact-us"
+                  "pt/getting-started/faqs",
+                  "pt/getting-started/best-practices-for-teachers"
                 ]
               },
               {
-                "group": "Criar Provas",
+                "group": "Configuração de Provas",
                 "icon": "square-plus",
                 "pages": [
-                  "pt/creating-tests/test-settings",
-                  "pt/creating-tests/quiz-providers",
-                  "pt/creating-tests/adding-collaborators",
-                  "pt/creating-tests/archiving-and-deleting-tests",
-                  "pt/creating-tests/iframe-query-arguments",
-                  "pt/creating-tests/add-on-error"
+                  {
+                    "group": "Criar Provas",
+                    "pages": [
+                      "pt/creating-tests/quiz-providers",
+                      "pt/creating-tests/adding-collaborators",
+                      "pt/creating-tests/archiving-and-deleting-tests",
+                      "pt/creating-tests/iframe-query-arguments",
+                      "pt/creating-tests/add-on-error"
+                    ]
+                  },
+                  {
+                    "group": "Configurações da Prova",
+                    "pages": [
+                      "pt/settings/timer-settings",
+                      "pt/settings/proctoring-settings",
+                      "pt/settings/enhanced-proctoring",
+                      "pt/settings/advanced-settings",
+                      "pt/settings/restricting-by-email",
+                      "pt/settings/restricting-to-some-users",
+                      "pt/settings/inviting-candidates-via-email",
+                      "pt/settings/maximum-attempts",
+                      "pt/settings/concurrency",
+                      "pt/settings/resuming-test-attempts",
+                      "pt/settings/resuming-google-forms"
+                    ]
+                  }
                 ]
               },
               {
@@ -350,59 +449,64 @@
                 ]
               },
               {
-                "group": "Realizar Provas",
+                "group": "Guia do Candidato",
                 "icon": "pen-to-square",
                 "pages": [
-                  "pt/taking-tests/proctored-test-instructions",
-                  "pt/taking-tests/timed-test-instructions",
-                  "pt/taking-tests/proctored-socratease-instructions",
-                  "pt/taking-tests/timed-socratease-instructions",
-                  "pt/taking-tests/submit-button",
-                  "pt/taking-tests/candidate-login-methods",
-                  "pt/taking-tests/how-to-logout",
-                  "pt/taking-tests/why-equip-for-hiring"
+                  {
+                    "group": "Instruções",
+                    "pages": [
+                      "pt/taking-tests/proctored-test-instructions",
+                      "pt/taking-tests/timed-test-instructions",
+                      "pt/taking-tests/proctored-socratease-instructions",
+                      "pt/taking-tests/timed-socratease-instructions",
+                      "pt/taking-tests/submit-button",
+                      "pt/taking-tests/candidate-login-methods",
+                      "pt/taking-tests/how-to-logout",
+                      "pt/taking-tests/instructions-page-for-candidates"
+                    ]
+                  },
+                  {
+                    "group": "Problemas do Candidato",
+                    "pages": [
+                      "pt/candidate-issues/loading-screen",
+                      "pt/candidate-issues/blank-page-grey-screen",
+                      "pt/candidate-issues/slow-and-laggy",
+                      "pt/candidate-issues/cannot-click-answer",
+                      "pt/candidate-issues/google-forms-questions-not-visible",
+                      "pt/candidate-issues/google-forms-response-not-visible",
+                      "pt/candidate-issues/false-app-switch",
+                      "pt/candidate-issues/no-face-or-multiple-faces",
+                      "pt/candidate-issues/missing-violation-evidence",
+                      "pt/candidate-issues/missing-random-photos",
+                      "pt/candidate-issues/missing-images-and-recordings",
+                      "pt/candidate-issues/went-offline-meaning",
+                      "pt/candidate-issues/incorrect-student-name"
+                    ]
+                  }
                 ]
               },
               {
                 "group": "Resultados e Relatórios",
                 "icon": "chart-bar",
                 "pages": [
-                  "pt/results/how-to-see-results",
-                  "pt/results/proctoring-results",
-                  "pt/results/individual-submissions",
-                  "pt/results/export-to-excel",
-                  "pt/results/google-sheets-integration",
-                  "pt/results/sharing-test-results",
-                  "pt/results/restricting-by-email",
-                  "pt/results/restricting-to-some-users",
-                  "pt/results/candidate-login-methods",
-                  "pt/results/inviting-candidates-via-email",
-                  "pt/results/maximum-attempts",
-                  "pt/results/concurrency",
-                  "pt/results/resuming-test-attempts",
-                  "pt/results/resuming-google-forms",
-                  "pt/results/unsubmitted-tests",
-                  "pt/results/things-you-need-to-know",
-                  "pt/results/best-practices-for-teachers"
-                ]
-              },
-              {
-                "group": "Problemas do Candidato",
-                "icon": "wrench",
-                "pages": [
-                  "pt/candidate-issues/loading-screen",
-                  "pt/candidate-issues/blank-page-grey-screen",
-                  "pt/candidate-issues/slow-and-laggy",
-                  "pt/candidate-issues/cannot-click-answer",
-                  "pt/candidate-issues/google-forms-questions-not-visible",
-                  "pt/candidate-issues/google-forms-response-not-visible",
-                  "pt/candidate-issues/false-app-switch",
-                  "pt/candidate-issues/no-face-or-multiple-faces",
-                  "pt/candidate-issues/missing-violation-evidence",
-                  "pt/candidate-issues/missing-random-photos",
-                  "pt/candidate-issues/missing-images-and-recordings",
-                  "pt/candidate-issues/went-offline-meaning",
-                  "pt/candidate-issues/incorrect-student-name"
+                  {
+                    "group": "Visualizar Resultados",
+                    "pages": [
+                      "pt/results/how-to-see-results",
+                      "pt/results/proctoring-results",
+                      "pt/results/individual-submissions",
+                      "pt/results/unsubmitted-tests",
+                      "pt/results/things-you-need-to-know"
+                    ]
+                  },
+                  {
+                    "group": "Exportar e Compartilhar",
+                    "pages": [
+                      "pt/results/export-to-excel",
+                      "pt/results/google-sheets-integration",
+                      "pt/results/sharing-test-results"
+                    ]
+                  }
                 ]
               },
               {
@@ -418,6 +522,14 @@
                   "pt/pricing/track-test-pack-usage",
                   "pt/pricing/invoices",
                   "pt/pricing/billing-information"
+                ]
+              },
+              {
+                "group": "Suporte",
+                "icon": "headset",
+                "pages": [
+                  "pt/support/contact-us",
+                  "pt/support/booking-a-demo"
                 ]
               }
             ]

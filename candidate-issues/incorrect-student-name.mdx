@@ -1,44 +1,49 @@
 ---
 title: "Incorrect Candidate Name in Results"
-description: "Fix incorrect candidate names showing in the results page or Excel export. Names are pulled from the candidate's linked Google or Microsoft account."
+description: "Fix incorrect candidate names showing in the results page or Excel export. Names are pulled from the candidate's linked Google or Microsoft account profile."
 ---
 
-AutoProctor does not ask candidates to type their name directly. Instead, it pulls the name from the account used to sign in. If a candidate's name appears incorrectly in results, the issue originates from their account profile.
+AutoProctor does not ask candidates to type their name directly. Instead, it pulls the name from the account used to sign in. If a candidate's name appears incorrectly in results, the issue originates from their account profile -- not from AutoProctor.
 
-## Why does this happen?
+## Why This Happens
 
 AutoProctor retrieves candidate names from the authentication provider they used to sign in:
 
-- **Google account** -- the display name set in [Google Account settings](https://myaccount.google.com/personal-info)
-- **Microsoft account** -- the display name set in [Microsoft Account settings](https://account.microsoft.com/profile)
+| Sign-in Method | Name Source |
+|---|---|
+| Google account | Display name set in [Google Account settings](https://myaccount.google.com/personal-info) |
+| Microsoft account | Display name set in [Microsoft Account settings](https://account.microsoft.com/profile) |
 
 If the name on their Google or Microsoft account is incorrect, misspelled, or uses a nickname, that same name will appear in AutoProctor results.
 
 <Note>
-AutoProctor pulls candidate names directly from their Google or Microsoft account profile. If the name is wrong in results, the candidate needs to update their profile -- either on their Google/Microsoft account or on AutoProctor directly.
+AutoProctor pulls candidate names directly from their account profile. If the name is wrong in results, the candidate needs to update their profile on AutoProctor directly.
 </Note>
+
+{/* TODO: Add screenshot of incorrect candidate name displayed in AutoProctor results page */}
 
 <Frame caption="Example of an incorrect candidate name displayed in AutoProctor results">
   <img src="/images/candidate-issues/incorrect-student-name.png" alt="Incorrect candidate name shown in AutoProctor results page" />
 </Frame>
 
-## How to fix it
+## How to Fix It
 
 <Steps>
   <Step title="Identify the candidate's email">
     Find the email address associated with the candidate's test attempt on the results page.
   </Step>
   <Step title="Direct the candidate to update their profile">
-    Have the candidate visit [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) and update their name.
+    Have the candidate visit [autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) and update their name. Share this link with the candidate along with a note identifying which email address needs the correction.
   </Step>
   <Step title="Verify the change">
-    Once the candidate updates their name on their profile, the change automatically reflects across all existing test reports. No further action is needed from the test administrator.
+    Once the candidate updates their name on their AutoProctor profile, the change automatically reflects across all existing test reports. No further action is needed from the test administrator.
   </Step>
 </Steps>
 
 ## Related Resources
 
 - [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
-- [Test Settings](/creating-tests/test-settings) -- Configure your test settings
+- [How to Logout](/taking-tests/how-to-logout) -- Switch accounts if the wrong one was used
+- [Candidate Login Methods](/taking-tests/candidate-login-methods) -- Understand sign-in options
 - [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Setup guide for candidates
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

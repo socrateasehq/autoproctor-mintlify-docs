@@ -1,13 +1,13 @@
 ---
-title: "Compatibilidade de dispositivos"
+title: "Compatibilidade de Dispositivos"
 description: "Verifique quais navegadores, sistemas operacionais e dispositivos são compatíveis para realizar testes supervisionados no AutoProctor."
 ---
 
-O AutoProctor utiliza tecnologias modernas do navegador para monitoramento em tempo real com inteligência artificial. Seu navegador e dispositivo devem atender a certos requisitos mínimos para que a supervisão funcione corretamente.
+O AutoProctor executa algoritmos de monitoramento por IA diretamente no dispositivo do candidato, o que requer recursos específicos do navegador e poder de processamento adequado. Antes de realizar um teste supervisionado, os candidatos devem confirmar que seu navegador e dispositivo atendem aos requisitos mínimos listados abaixo.
 
-## Navegadores e dispositivos compatíveis
+## Navegadores e Dispositivos Compatíveis
 
-| Sistema operacional | Navegador | Versão mínima |
+| Sistema Operacional | Navegador | Versão Mínima |
 |---|---|---|
 | Windows | Chrome | 82 |
 | Windows | Firefox | 78 |
@@ -21,21 +21,52 @@ O AutoProctor utiliza tecnologias modernas do navegador para monitoramento em te
 | iOS (iPad/iPhone) OS 16.1+ | Chrome | 82 |
 
 <Warning>
-Qualquer combinação de navegador e sistema operacional **não incluída** na tabela acima não é compatível. Candidatos que utilizem configurações não compatíveis podem ter problemas de carregamento ou falhas no teste.
+Qualquer combinação de navegador e sistema operacional **não listada** na tabela acima não é compatível. Candidatos usando configurações não compatíveis (por exemplo, Brave no Windows ou Opera no Android) podem enfrentar falhas de carregamento ou funcionalidades de supervisão comprometidas.
 </Warning>
 
 <Note>
-Para uma melhor experiência, utilize um dispositivo com menos de 3 anos de uso. O AutoProctor executa algoritmos de inteligência artificial no dispositivo do candidato, o que requer capacidade de processamento adequada.
+Para a melhor experiência, use um dispositivo com menos de 3 anos de uso. O AutoProctor executa algoritmos de IA no dispositivo do candidato, o que requer poder de processamento adequado. Dispositivos mais antigos podem fazer o teste funcionar lentamente ou com travamentos.
 </Note>
 
-## Verifique seu dispositivo
+## Como Verificar Seu Dispositivo
 
-Antes do seu teste real, realize o teste de demonstração para confirmar que seu dispositivo e navegador são compatíveis:
+<Steps>
+  <Step title="Abra o link do teste de demonstração">
+    Acesse o teste de demonstração para confirmar que seu dispositivo e navegador são compatíveis:
 
-[Realizar o teste de demonstração](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+    [Fazer o Teste de Demonstração](https://www.autoproctor.co/tests/start-test/GFICZZZA)
 
-## Recursos relacionados
+    {/* TODO: Add screenshot of the demo test landing page */}
+  </Step>
+  <Step title="Conceda permissões de câmera e microfone">
+    Quando solicitado, permita que seu navegador acesse a câmera e o microfone. Se as permissões de supervisão falharem, seu navegador ou dispositivo pode não ser compatível.
 
-- [O teste fica travado na tela de carregamento](/candidate-issues/loading-screen) — Solucione problemas de carregamento
-- [Teste lento e com atrasos](/candidate-issues/slow-and-laggy) — Corrija problemas de desempenho
-- [Instruções para realizar um teste supervisionado](/taking-tests/proctored-test-instructions) — O que os candidatos precisam saber
+    {/* TODO: Add screenshot of the browser permission prompt for camera/microphone */}
+  </Step>
+  <Step title="Complete a demonstração">
+    Conclua o teste de demonstração para confirmar que todos os recursos de supervisão carregam corretamente, incluindo a visualização da câmera, a solicitação de compartilhamento de tela e o modo de tela cheia.
+
+    {/* TODO: Add screenshot of a successful demo test completion screen */}
+  </Step>
+</Steps>
+
+<Note>
+O teste de demonstração não consome créditos de teste de nenhuma conta. Os candidatos podem realizá-lo quantas vezes precisarem.
+</Note>
+
+## Problemas Comuns de Compatibilidade
+
+| Problema | Causa Provável | Solução |
+|---|---|---|
+| Teste travado na tela de carregamento | Navegador não compatível ou versão desatualizada | Atualize o navegador ou mude para o Chrome |
+| Câmera não detectada | Permissões do navegador bloqueadas | Permita o acesso à câmera nas configurações do navegador |
+| Teste funciona lentamente ou trava | Dispositivo muito antigo ou com poucos recursos | Feche outros aplicativos ou use um dispositivo mais novo |
+| Solicitação de compartilhamento de tela ausente | Navegador não compatível com a API de captura de tela | Mude para Chrome ou Edge no desktop |
+
+## Recursos Relacionados
+
+- [Teste Travado na Tela de Carregamento](/candidate-issues/loading-screen) — Solucione problemas de carregamento
+- [Teste Lento e com Travamentos](/candidate-issues/slow-and-laggy) — Corrija problemas de desempenho
+- [Página em Branco ou Tela Cinza](/candidate-issues/blank-page-grey-screen) — Resolva problemas de exibição
+- [Instruções para Testes Supervisionados](/taking-tests/proctored-test-instructions) — O que os candidatos precisam saber antes de começar
+- [Boas Práticas para Professores](/getting-started/best-practices-for-teachers) — Dicas incluindo o compartilhamento do teste de demonstração com antecedência

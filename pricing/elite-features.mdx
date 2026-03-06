@@ -6,7 +6,7 @@ description: "Explore the exclusive features available only on the AutoProctor E
 The Elite plan is AutoProctor's most feature-rich tier. It includes everything in the Standard and Premium plans, plus several exclusive capabilities designed for advanced assessment workflows.
 
 <Warning>
-These features are available **only** on the Elite plan. You will not have access to them on the Free Trial, Standard, or Premium plans.
+These features are available **only** on the Elite plan. You do not have access to them on the Free Trial, Standard, or Premium plans.
 </Warning>
 
 ## Elite-Only Features
@@ -17,9 +17,13 @@ As shown on the [Pricing Page](https://www.autoproctor.co/pricing), AutoProctor 
 
 If you already have your own quizzing or assessment platform and want to add proctoring, you can integrate AutoProctor using the JavaScript SDK. This lets you embed proctoring directly into your existing workflow without requiring candidates to use a separate platform.
 
+{/* TODO: Add screenshot or diagram showing API/SDK integration flow */}
+
 ### Cloning Quizzes
 
 You can **duplicate Socratease Quizzes in a single click**. This is especially useful when you need to create multiple quizzes that share a similar structure but differ in specific questions or settings.
+
+{/* TODO: Add screenshot of the Clone Quiz button on the dashboard */}
 
 <Note>
 The following features (Question Banks, More Question Types, and Import From Excel) apply specifically to Socratease Quizzes.
@@ -29,8 +33,12 @@ The following features (Question Banks, More Question Types, and Import From Exc
 
 Question Banks let you create large pools of questions and dynamically select subsets for each candidate. This supports two key use cases:
 
-1. **Random subset by difficulty** -- Select a specific number of questions at each difficulty level. For example, 5 easy and 2 hard MCQs from a pool of 100.
-2. **Combine multiple pools** -- Draw questions from separate topic-based pools. For example, 3 Physics and 2 Chemistry MCQs from two separate pools of 100 each.
+| Use Case | Example |
+|---|---|
+| **Random subset by difficulty** | Select 5 easy and 2 hard MCQs from a pool of 100 questions |
+| **Combine multiple pools** | Draw 3 Physics and 2 Chemistry MCQs from two separate pools of 100 each |
+
+For a detailed guide, see [Question Banks](/socratease/question-banks).
 
 ### More Question Types
 
@@ -41,16 +49,18 @@ Socratease Quizzes support many question formats. The following are exclusive to
     Candidates record themselves speaking the answer. Useful for language assessments, oral exams, and presentation-style questions.
   </Card>
   <Card title="Autograded Text">
-    You specify the correct answer when creating the question. Candidates type their submission, and if it matches exactly, they receive full points. Otherwise, they receive 0 points.
+    You specify the correct answer when creating the question. If the candidate's submission matches exactly, they receive full points. Otherwise, they receive 0 points.
   </Card>
   <Card title="Answer Any">
     Present multiple questions (for example, 5) and allow candidates to answer a subset (for example, 3). The numbers are fully configurable.
   </Card>
 </CardGroup>
 
+For the full list of question types, see [Socratease Question Types](/socratease/question-types).
+
 ### Import From Excel
 
-Using the AutoProctor Excel template, you can **bulk upload questions** onto a Socratease Quiz. This is ideal for migrating existing question sets or creating large assessments quickly.
+Using the AutoProctor Excel template, you can **bulk upload questions** onto a Socratease Quiz. This is ideal for migrating existing question sets or creating large assessments quickly. See [Bulk Import from Excel](/socratease/bulk-import-from-excel) for step-by-step instructions.
 
 ## Related Resources
 
@@ -59,5 +69,4 @@ Using the AutoProctor Excel template, you can **bulk upload questions** onto a S
 - [Question Types](/socratease/question-types) -- All available Socratease question formats
 - [Question Banks](/socratease/question-banks) -- Detailed guide to using question banks
 - [Bulk Import from Excel](/socratease/bulk-import-from-excel) -- Step-by-step Excel import instructions
-- [Test Settings](/creating-tests/test-settings) -- Configure your test behavior
 - [Why Socratease](/socratease/why-socratease) -- Benefits of using Socratease over other quiz platforms

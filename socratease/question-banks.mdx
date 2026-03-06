@@ -3,60 +3,85 @@ title: "Question Banks"
 description: "Create large pools of questions and serve randomized subsets to candidates using Question Banks."
 ---
 
+Question Banks let you create large pools of questions and serve a random subset to each candidate. Every candidate receives a different combination of questions, reducing the chance of cheating while maintaining a consistent assessment structure.
+
 <Note>
-Question Banks are an **Elite** feature. You need an Elite plan to use Question Banks and Question Bank Quizzes.
+Question Banks are an **Elite** plan feature. You need an Elite subscription to create and use Question Banks and Question Bank Quizzes. See [Elite Features](/pricing/elite-features) for details.
 </Note>
 
-## What are Question Banks?
+## What is a Question Bank?
 
-Question Banks are a large pool of questions. Candidates will see a random subset of the questions, based on the Question Bank chosen and difficulty level. This makes each candidate's test unique, reducing the chance of cheating.
+A Question Bank (QB) is a collection of questions organized by subject or topic. Each question in the bank can have a different point value and difficulty level. When candidates take a test, they receive a randomly selected subset from the bank rather than the full set of questions.
 
-## How Question Banks Work
-
-A Question Bank (QB) is a collection of questions organized by subject or topic. Each question in the bank can have a different point value and difficulty level.
+{/* TODO: Add screenshot of Question Bank overview screen */}
 
 <Frame>
-  <img src="/images/socratease/question-bank-overview.png" alt="Question Bank overview" />
+  <img src="/images/socratease/question-bank-overview.png" alt="Question Bank overview showing a list of questions organized by topic and difficulty" />
 </Frame>
 
 ### Example: Physics and Chemistry Tests
 
 Imagine you have two Question Banks:
-- **Physics Question Bank** -- 100 questions
-- **Chemistry Question Bank** -- 100 questions
+- **Physics Question Bank** -- 100 questions across various difficulty levels
+- **Chemistry Question Bank** -- 100 questions across various difficulty levels
 
 You can create different quizzes that draw from these banks with different weightings:
 
-- **Physics Major Quiz**: 40 two-point physics questions + 10 one-point chemistry questions
-- **Chemistry Major Quiz**: 40 two-point chemistry questions + 10 one-point physics questions
+| Quiz | Physics Questions | Chemistry Questions | Total |
+|---|---|---|---|
+| Physics Major Quiz | 40 questions (2 points each) | 10 questions (1 point each) | 50 questions |
+| Chemistry Major Quiz | 10 questions (1 point each) | 40 questions (2 points each) | 50 questions |
 
-Each candidate receives a different random subset of questions from the respective banks, but the overall structure (number of questions, points, difficulty distribution) remains consistent.
+Each candidate receives a different random subset of questions from the respective banks, but the overall structure (number of questions, points, difficulty distribution) stays consistent across all candidates.
 
 <Frame>
-  <img src="/images/socratease/question-bank-example.png" alt="Question Bank example with Physics and Chemistry" />
+  <img src="/images/socratease/question-bank-example.png" alt="Diagram showing how Physics and Chemistry Question Banks feed into two different quiz configurations" />
 </Frame>
 
 ## Question Bank Quizzes (QBQ)
 
-Your candidates cannot attempt a Question Bank directly. You must create a **Question Bank Quiz (QBQ)** and add it to an AutoProctor test.
+Candidates cannot attempt a Question Bank directly. You must create a **Question Bank Quiz (QBQ)** and add it to an AutoProctor test.
 
 A Question Bank Quiz specifies:
 - Which Question Banks to draw questions from
 - How many questions to include from each bank
 - The difficulty levels to include
+- The point values for each difficulty level
 
-<Frame>
-  <img src="/images/socratease/question-bank-quiz-config.png" alt="Question Bank Quiz configuration" />
-</Frame>
+You can combine multiple Question Banks in a single QBQ, or use one bank to supply questions at varying difficulty levels.
 
 <Warning>
 Candidates cannot attempt a Question Bank directly. You must create a Question Bank Quiz and add it to an AutoProctor test for candidates to take.
 </Warning>
 
+<Frame>
+  <img src="/images/socratease/question-bank-quiz-config.png" alt="Question Bank Quiz configuration screen showing bank selection and question count settings" />
+</Frame>
+
+## How to Create a Question Bank Quiz
+
+<Steps>
+  <Step title="Create a Question Bank">
+    Navigate to the Question Banks section in AutoProctor and create a new Question Bank. Add your questions, assigning point values and difficulty levels to each.
+
+    {/* TODO: Add screenshot of creating a new Question Bank */}
+  </Step>
+  <Step title="Create a Question Bank Quiz">
+    Create a new Question Bank Quiz (QBQ). Select which Question Banks to draw from, how many questions to include, and which difficulty levels to use.
+
+    {/* TODO: Add screenshot of QBQ creation interface */}
+  </Step>
+  <Step title="Add to an AutoProctor Test">
+    Add the QBQ to an AutoProctor test. Share the test link with your candidates.
+
+    {/* TODO: Add screenshot of adding QBQ to a test */}
+  </Step>
+</Steps>
+
 ## Related Resources
 
-- [Why Socratease?](/socratease/why-socratease) — Benefits of using Socratease
-- [Bulk Import from Excel](/socratease/bulk-import-from-excel) — Import questions in bulk
-- [Question Types](/socratease/question-types) — Available question formats
-- [Elite Features](/pricing/elite-features) — Learn about Elite plan capabilities
-- [Quiz Settings](/socratease/quiz-settings) — Configure your quiz behavior
+- [Bulk Import from Excel](/socratease/bulk-import-from-excel) -- Import questions in bulk to populate your Question Banks
+- [Question Types](/socratease/question-types) -- Available question formats for use in Question Banks
+- [Using Tags](/socratease/using-tags) -- Organize questions with tags for filtering and grouping
+- [Quiz Settings](/socratease/quiz-settings) -- Configure your quiz behavior
+- [Elite Features](/pricing/elite-features) -- Learn about Elite plan capabilities

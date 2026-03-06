@@ -1,40 +1,79 @@
 ---
-title: "Modo de visualización de preguntas"
-description: "Controle cómo se muestran las preguntas a los candidatos: todas a la vez, una por una con navegación o una por una sin navegación."
+title: "Modo de Visualización de Preguntas"
+description: "Controle cómo se muestran las preguntas a los candidatos — todas a la vez, una por una con navegación o una por una sin navegación."
 ---
 
-La configuración del modo de visualización de preguntas en los cuestionarios Socratease controla cómo aparecen las preguntas para los participantes. Hay tres opciones de visualización disponibles.
+La configuración del Modo de Visualización de Preguntas controla cómo aparecen las preguntas para los participantes. Puede elegir entre tres opciones de visualización, cada una con diferentes implicaciones para la navegación, el tiempo y la seguridad del examen.
 
-## Modos de visualización
+{/* TODO: Add screenshot of the question display mode setting in quiz settings */}
 
-### 1. Todas a la vez (estilo Google Forms)
+## Modos de Visualización
 
-Los candidatos ven todas las preguntas al mismo tiempo, una debajo de otra, como en un Google Form. El temporizador se aplica a la **prueba completa**.
+### 1. Todas a la Vez (Estilo Google Forms)
 
-### 2. Una por una con navegación (estilo Typeform)
+Los candidatos ven todas las preguntas al mismo tiempo, una debajo de otra, como en un Google Form. El temporizador se aplica a la **prueba completa**. Los candidatos pueden desplazarse libremente entre las preguntas y responderlas en cualquier orden.
 
-Los candidatos ven una pregunta a la vez y pueden navegar hacia adelante y hacia atrás entre las preguntas. El temporizador se aplica a la **prueba completa**, no a las preguntas individuales.
+{/* TODO: Add screenshot of all-at-once display mode from the candidate view */}
 
-### 3. Una por una sin navegación
+### 2. Una por Una con Navegación (Estilo Typeform)
 
-Los candidatos ven una pregunta a la vez. Una vez que envían una pregunta (al responderla u omitirla), **NO PUEDEN volver a ella**. El temporizador se establece **por pregunta**, no para toda la prueba.
+Los candidatos ven una pregunta a la vez y pueden navegar hacia adelante y hacia atrás entre las preguntas. El temporizador se aplica a la **prueba completa**, no a las preguntas individuales. Los candidatos pueden revisar y cambiar sus respuestas en cualquier momento antes de enviar.
+
+{/* TODO: Add screenshot of one-by-one with navigation from the candidate view */}
+
+### 3. Una por Una sin Navegación
+
+Los candidatos ven una pregunta a la vez. Una vez que envían una pregunta (al responderla u omitirla), **no pueden volver a ella**. El temporizador se establece **por pregunta**, no para toda la prueba.
+
+{/* TODO: Add screenshot of one-by-one without navigation from the candidate view */}
 
 <Frame>
-  <img src="/images/socratease/question-display-mode.png" alt="Configuración del modo de visualización de preguntas" />
+  <img src="/images/socratease/question-display-mode.png" alt="Panel de configuración del modo de visualización de preguntas mostrando las tres opciones disponibles" />
 </Frame>
 
-## Diferencias principales
+## Diferencias Principales
 
-| Característica | Todas a la vez | Una por una con nav. | Una por una sin nav. |
+| Característica | Todas a la Vez | Una por Una con Nav. | Una por Una sin Nav. |
 |---|:---:|:---:|:---:|
 | Alcance del temporizador | Prueba completa | Prueba completa | Por pregunta |
-| Puede volver atrás | Sí | Sí | No |
+| Puede volver a preguntas anteriores | Sí | Sí | No |
 | Instrucciones personalizadas | Sí | No | No |
 
-## Cuándo usar "Una por una sin navegación"
+## Cuándo Usar "Una por Una sin Navegación"
 
-La opción sin navegación es especialmente útil por motivos de seguridad. Esto le da al participante menos tiempo para hacer trampa en una pregunta, ya que en cualquier momento solo puede ver una pregunta, por un tiempo limitado.
+La opción sin navegación es especialmente útil para la seguridad del examen. Los candidatos solo pueden ver una pregunta a la vez por una duración limitada, lo que reduce significativamente la oportunidad de hacer trampa. Cada pregunta tiene su propio temporizador, por lo que los candidatos no pueden dedicar tiempo extra a preguntas difíciles apresurándose en las más fáciles.
+
+## Cómo Cambia la Configuración del Temporizador
 
 <Warning>
-Al usar **una por una sin navegación**, ciertas configuraciones del temporizador a nivel de prueba dejan de estar disponibles. Los parámetros de **Duración** y **Debe enviar antes de** se trasladan al nivel de la pregunta, y la función de **envío automático** se aplica automáticamente cuando el tiempo por pregunta expira.
+Cuando usa **una por una sin navegación**, ciertas configuraciones del temporizador a nivel de examen dejan de estar disponibles. El comportamiento del temporizador se traslada al nivel de la pregunta:
+
+- **Duración**: Usted establece la duración por pregunta, no para todo el examen
+- **Envío Automático**: Cada pregunta se envía automáticamente cuando su temporizador individual expira
+- **Debe Enviar Antes**: Esta configuración a nivel de examen se reemplaza por **No Puede Iniciar Después** a nivel de examen
 </Warning>
+
+Para más información sobre la configuración del temporizador, consulte [Configuración del Temporizador](/settings/timer-settings).
+
+## Cómo Establecer el Modo de Visualización
+
+<Steps>
+  <Step title="Abra Su Cuestionario">
+    Abra el Cuestionario Socratease que desea configurar desde su panel de control de AutoProctor.
+  </Step>
+  <Step title="Vaya a Configuración">
+    Haga clic en el ícono de **Configuración** (engranaje) en la barra de herramientas del editor del cuestionario.
+  </Step>
+  <Step title="Seleccione el Modo de Visualización">
+    Elija su modo de visualización preferido en el menú desplegable de **Modo de Visualización de Preguntas**. El valor predeterminado es "Todas a la vez".
+
+    {/* TODO: Add screenshot of question display mode dropdown selection */}
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Configuración del Cuestionario](/socratease/quiz-settings) — Todas las opciones de configuración de cuestionarios Socratease
+- [Configuración del Temporizador](/settings/timer-settings) — Configure temporizadores a nivel de examen y de pregunta
+- [Cómo Crear un Cuestionario Socratease](/socratease/creating-a-quiz) — Guía de creación paso a paso
+- [Mostrar Resultados a los Candidatos](/socratease/showing-results-to-candidates) — Controle la visibilidad de los resultados

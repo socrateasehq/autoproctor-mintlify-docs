@@ -1,0 +1,71 @@
+---
+title: "Concorrência - Máximo de Candidatos Simultâneos"
+description: "Entenda os limites de concorrência do AutoProctor que controlam quantos candidatos podem iniciar testes simultaneamente em uma janela de 60 segundos."
+---
+
+A concorrência controla quantos candidatos podem iniciar qualquer teste na sua conta dentro da mesma janela de 60 segundos. Entender esses limites ajuda você a planejar sessões de teste em grande escala e evitar atrasos inesperados para os candidatos.
+
+## O Que é Concorrência Máxima?
+
+A concorrência máxima é o número máximo de candidatos que podem começar um teste dentro de qualquer período contínuo de 60 segundos. Esse limite se aplica a **todos os testes da sua conta**, não a cada teste individual.
+
+<Note>
+Se você tem três testes ativos e um limite de concorrência de 1.000, o limite de 1.000 é compartilhado entre os três testes combinados — não 1.000 por teste.
+</Note>
+
+## Limites de Concorrência por Plano
+
+### Testes com Supervisão Ativada
+
+| Plano | Concorrência Máxima |
+|---|---|
+| Standard | 1.000 candidatos/minuto |
+| Premium | 2.000 candidatos/minuto |
+| Elite | 5.000 candidatos/minuto |
+
+### Testes Sem Supervisão
+
+| Plano | Concorrência Máxima |
+|---|---|
+| Standard | 50 candidatos/minuto |
+| Premium | 100 candidatos/minuto |
+| Elite | 150 candidatos/minuto |
+
+## Escalonamento Automático
+
+Quando a demanda excede a capacidade do seu plano, o AutoProctor escalona automaticamente a entrada dos candidatos. Os candidatos que excedem o limite veem um botão com uma contagem regressiva de até 60 segundos antes de poderem acessar o teste.
+
+{/* TODO: Add screenshot of the staggering countdown button candidates see */}
+
+<Note>
+Se o seu teste tem uma duração configurada, o AutoProctor ajusta automaticamente o temporizador de cada candidato para compensar os atrasos de escalonamento. Nenhum candidato perde tempo de teste devido aos limites de concorrência.
+</Note>
+
+## Usuários do SDK
+
+Se você usa o SDK de JavaScript do AutoProctor no seu próprio site, recebe um limite padrão de 5.000 candidatos por minuto. Quando esse limite é excedido, o SDK retorna uma resposta 429. Você deve gerenciar a limitação de taxa de forma independente na sua implementação.
+
+<Warning>
+Os usuários do SDK não se beneficiam do escalonamento automático. Você deve construir sua própria lógica de retentativa para lidar com respostas 429 quando o limite de concorrência for excedido.
+</Warning>
+
+## Como Aumentar Seus Limites
+
+Se você precisa de limites de concorrência mais altos, [entre em contato com a equipe do AutoProctor](/support/contact-us):
+
+| Tipo de Aumento | Custo Aproximado | Detalhes |
+|---|---|---|
+| Temporário (evento único) | $500 por incremento de 500 candidatos/minuto | Taxa única |
+| Permanente | $2.500/mês por incremento de 500 candidatos/minuto | Compromisso anual obrigatório |
+
+<Note>
+A plataforma suporta até um máximo de 25.000 candidatos por minuto.
+</Note>
+
+## Recursos Relacionados
+
+- [Configurações de Tempo](/settings/timer-settings) — Configure a duração do teste e janelas de tempo
+- [Pagamentos e Créditos](/pricing/payments-and-credits) — Detalhes do plano e informações de preços
+- [Boas Práticas para Criadores de Testes](/getting-started/best-practices-for-teachers) — Dicas para uma administração de testes tranquila
+- [Coisas que Você Precisa Saber](/results/things-you-need-to-know) — Requisitos essenciais para usar o AutoProctor
+- [Fale Conosco](/support/contact-us) — Entre em contato com a equipe do AutoProctor para aumentos de limite

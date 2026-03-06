@@ -1,25 +1,58 @@
 ---
 title: "Does AutoProctor Record Video?"
-description: "Learn how AutoProctor monitors candidates in real-time without recording full video sessions."
+description: "Learn how AutoProctor monitors candidates in real time without recording full video sessions, and why this approach is more effective."
 ---
 
-**AutoProctor does not record video.** Instead, it continuously monitors the candidate's camera feed in real-time directly on their device and only captures evidence when a violation is detected.
+**AutoProctor does not record video.** Instead, it continuously monitors the candidate's camera feed in real time directly on their device and only captures evidence (photos, screenshots, and audio clips) when it detects a violation. This gives you the evidence you need without requiring you to watch hours of footage.
+
+{/* TODO: Add diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach */}
 
 ## How AutoProctor's AI Monitoring Works
 
-Traditional proctoring platforms record candidate camera feeds, upload them to servers, and then process them for violation flagging. AutoProctor works differently.
+Traditional proctoring platforms record a video from the candidate's camera feed, upload it to their servers, and then process it for violations. In most cases, you are expected to watch the video yourself to verify flagged incidents.
 
-AutoProctor's software monitors the video feed **directly on the candidate's device** rather than uploading footage. Think of it like a smoke detector — it runs continuously in the background and only alerts you when something is detected.
+AutoProctor takes a fundamentally different approach. Its AI software monitors the video feed **directly on the candidate's device** and flags violations as they happen. No video is uploaded or stored on any server.
+
+Think of it like a smoke detector: it runs continuously in the background, monitoring all the time, and only alerts you when something is detected.
+
+{/* TODO: Add illustration of the smoke detector analogy -- on-device monitoring with alert-only output */}
 
 ## Key Advantages
 
-- **No video review needed** — violations are flagged automatically with supporting evidence (photos and screenshots), so you do not need to watch hours of footage
-- **Works offline** — since monitoring happens on-device, violations are detected even if the candidate temporarily disconnects from the internet
-- **Reduced administrative burden** — review only flagged incidents instead of full recordings
+| Advantage | How It Works |
+|---|---|
+| **No video review needed** | Violations are flagged automatically with supporting evidence (photos and screenshots), so you do not need to watch hours of footage |
+| **Works offline** | Since monitoring happens on-device, violations are detected even if the candidate temporarily disconnects from the internet |
+| **Prevents internet-off cheating** | With other platforms, candidates can turn off their internet to avoid being recorded. With AutoProctor, monitoring continues on-device regardless of connectivity |
+| **Reduced administrative burden** | You review only flagged incidents instead of full recordings |
+| **Lower bandwidth requirements** | No large video files are uploaded during the test, reducing network strain for candidates with slow connections |
+
+<Note>
+Because monitoring happens on the candidate's device, AutoProctor captures violation evidence even when the candidate goes offline. When the candidate reconnects, the evidence syncs to the server. This is a significant advantage over platforms that rely on continuous video upload.
+</Note>
+
+## What Evidence Do You Receive Instead of Video?
+
+When AutoProctor detects a violation, it captures one or more of the following:
+
+- **Photos** -- Snapshots from the camera feed (e.g., when no face or multiple faces are detected)
+- **Screenshots** -- Captures of the candidate's screen (e.g., when they switch tabs or applications)
+- **Audio clips** -- Recordings of background noise when the microphone detects suspicious audio
+- **Random photos** -- Periodic snapshots taken at random intervals throughout the exam
+- **Activity logs** -- Records of mouse clicks and keyboard activity
+
+All of this evidence appears in the candidate's [proctoring report](/results/proctoring-results), organized by timestamp and violation type.
+
+{/* TODO: Add screenshot of a proctoring report showing different types of violation evidence */}
+
+<Warning>
+Evidence may occasionally be missing from a report if the candidate's device ran out of storage or if the browser restricted access to the camera or microphone mid-test. See [Missing Images and Recordings](/candidate-issues/missing-images-and-recordings) for troubleshooting steps.
+</Warning>
 
 ## Related Resources
 
-- [What Gets Tracked](/getting-started/what-gets-tracked) — All monitoring capabilities available
-- [Trust Score](/getting-started/trust-score) — How violation evidence is summarized into a score
-- [Missing Images and Recordings](/candidate-issues/missing-images-and-recordings) — Why some evidence may not appear
-- [Went Offline Meaning](/candidate-issues/went-offline-meaning) — What it means when a candidate goes offline
+- [What Gets Tracked](/getting-started/what-gets-tracked) -- All monitoring capabilities available during proctoring
+- [Trust Score](/getting-started/trust-score) -- How violation evidence is summarized into a score
+- [Proctoring Results](/results/proctoring-results) -- How to view violation evidence and reports
+- [Missing Images and Recordings](/candidate-issues/missing-images-and-recordings) -- Why some evidence may not appear
+- [Went Offline Meaning](/candidate-issues/went-offline-meaning) -- What happens when a candidate goes offline during a test

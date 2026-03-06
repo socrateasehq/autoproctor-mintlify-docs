@@ -3,40 +3,79 @@ title: "What Gets Tracked During Proctoring"
 description: "Learn about the data feeds, detection capabilities, and evidence recording available in AutoProctor's proctoring system."
 ---
 
-AutoProctor's proctoring settings are highly configurable, allowing you to determine exactly which aspects of the exam environment require monitoring. Rather than recording full video sessions, AutoProctor detects violations and captures evidence only when something is flagged.
+AutoProctor monitors candidates in real time using on-device AI and captures evidence only when it detects a violation. This means you review flagged incidents rather than hours of footage.
+
+{/* TODO: Add screenshot of a sample proctoring report showing flagged violations */}
 
 ## Data Feeds
 
 AutoProctor can access the following feeds on the candidate's device:
 
-- **Camera feed** — monitors the candidate's face and surroundings
-- **Microphone feed** — detects background noise and audio cues
-- **Screen share feed** — captures screen activity during the test
-- **Auxiliary device camera feed** — monitors via a paired secondary device (e.g., phone)
+| Feed | What It Does |
+|---|---|
+| **Camera feed** | Monitors the candidate's face and surroundings |
+| **Microphone feed** | Detects background noise and audio cues |
+| **Screen share feed** | Captures screen activity during the test |
+| **Auxiliary device camera feed** | Monitors via a paired secondary device (e.g., phone) |
+
+<Note>
+Which feeds AutoProctor accesses depends entirely on how you configure each test. You enable or disable each feed in your [proctoring settings](/settings/proctoring-settings).
+</Note>
 
 ## What AutoProctor Detects and Records
 
-Unlike traditional proctoring platforms that record full video and audio sessions, AutoProctor detects violations and shows you evidence of only those violations — so you do not spend hours reviewing each candidate's attempt.
+Unlike traditional proctoring platforms that record full video and audio sessions, AutoProctor detects violations and shows you evidence of only those violations -- so you do not spend hours reviewing each candidate's attempt.
 
-Tracking capabilities include:
+{/* TODO: Add screenshot of violation evidence cards in a proctoring report */}
 
-- **Background audio detection** — records noise and audio cues
-- **Face detection** — captures photos when no face or multiple faces are detected
-- **Tab/app switching** — captures screenshots when candidates switch tabs or applications
-- **Random photos** — takes photos at random intervals throughout the exam
-- **Multiple monitor detection** — identifies when additional screens are connected
-- **Pre-test face capture** — takes a candidate's photo before the test starts
-- **Full-screen enforcement** — ensures the test runs in full-screen mode
-- **Session action recording** — logs mouse clicks and keyboard activity
-- **Auxiliary device pairing** — monitors via a paired phone to detect keyboard usage
+| Detection Feature | What It Does |
+|---|---|
+| **Background audio detection** | Records noise and audio cues from the microphone feed |
+| **Face detection** | Captures photos when no face or multiple faces appear on camera |
+| **Tab/app switching** | Captures screenshots when candidates switch tabs or applications |
+| **Random photos** | Takes photos at random intervals throughout the exam |
+| **Multiple monitor detection** | Identifies when additional screens are connected to the device |
+| **Pre-test face capture** | Takes a photo of the candidate's face before the test starts |
+| **Full-screen enforcement** | Ensures the test runs in full-screen mode and flags exits |
+| **Session action recording** | Logs mouse clicks and keyboard activity throughout the test |
+| **Auxiliary device pairing** | Monitors via a paired phone to detect keyboard usage, ensuring candidates are not using ChatGPT or other tools to cheat |
 
 <Note>
-All tracking features are configurable per test. Enable only what you need in your [test settings](/creating-tests/test-settings).
+All tracking features are configurable per test. Enable only what you need in your [proctoring settings](/settings/proctoring-settings).
 </Note>
+
+## How to Configure Tracking
+
+<Steps>
+  <Step title="Open your test settings">
+    Go to your AutoProctor dashboard, select a test, and click **Settings**.
+
+    {/* TODO: Add screenshot of the test dashboard with the Settings button highlighted */}
+  </Step>
+  <Step title="Navigate to Proctoring Settings">
+    Click the **Proctoring Settings** tab to see all available tracking options.
+
+    {/* TODO: Add screenshot of the Proctoring Settings tab */}
+  </Step>
+  <Step title="Enable the features you need">
+    Toggle each tracking feature on or off depending on your requirements. For example, you might enable camera monitoring and tab-switching detection but leave microphone monitoring off.
+
+    {/* TODO: Add screenshot of proctoring feature toggles */}
+  </Step>
+  <Step title="Save your settings">
+    Click **Save** to apply your changes. These settings take effect immediately for all future test attempts.
+  </Step>
+</Steps>
+
+<Warning>
+Enabling more tracking features increases the processing load on the candidate's device. If your candidates use older hardware, consider enabling only the features you need most. See [Device Compatibility](/getting-started/device-compatibility) for minimum requirements.
+</Warning>
 
 ## Related Resources
 
-- [Trust Score](/getting-started/trust-score) — How AutoProctor scores candidate integrity
-- [Test Settings](/creating-tests/test-settings) — Configure which proctoring features to enable
-- [Proctoring Results](/results/proctoring-results) — View violation evidence and reports
-- [Video Recording](/getting-started/video-recording) — Why AutoProctor does not record full video
+- [Trust Score](/getting-started/trust-score) -- How AutoProctor scores candidate integrity
+- [Proctoring Settings](/settings/proctoring-settings) -- Configure which proctoring features to enable
+- [Enhanced Proctoring](/settings/enhanced-proctoring) -- Advanced monitoring options for higher security
+- [Proctoring Results](/results/proctoring-results) -- View violation evidence and reports
+- [Video Recording](/getting-started/video-recording) -- Why AutoProctor does not record full video
+- [Device Compatibility](/getting-started/device-compatibility) -- Supported browsers and devices

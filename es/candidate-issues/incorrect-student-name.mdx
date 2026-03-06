@@ -1,44 +1,49 @@
 ---
-title: "Nombre incorrecto del candidato en los resultados"
-description: "Corrija los nombres incorrectos de candidatos que aparecen en la página de resultados o en la exportación de Excel. Los nombres se obtienen de la cuenta de Google o Microsoft vinculada del candidato."
+title: "Nombre Incorrecto del Candidato en los Resultados"
+description: "Corrija los nombres incorrectos de candidatos que aparecen en la página de resultados o en la exportación de Excel. Los nombres se obtienen del perfil de la cuenta de Google o Microsoft vinculada del candidato."
 ---
 
-AutoProctor no pide a los candidatos que escriban su nombre directamente. En su lugar, obtiene el nombre de la cuenta utilizada para iniciar sesión. Si el nombre de un candidato aparece incorrectamente en los resultados, el problema se origina en el perfil de su cuenta.
+AutoProctor no pide a los candidatos que escriban su nombre directamente. En su lugar, obtiene el nombre de la cuenta utilizada para iniciar sesión. Si el nombre de un candidato aparece incorrectamente en los resultados, el problema se origina en el perfil de su cuenta -- no en AutoProctor.
 
-## ¿Por qué sucede esto?
+## Por Qué Sucede Esto
 
 AutoProctor obtiene los nombres de los candidatos del proveedor de autenticación que utilizaron para iniciar sesión:
 
-- **Cuenta de Google** -- el nombre para mostrar configurado en la [configuración de la cuenta de Google](https://myaccount.google.com/personal-info)
-- **Cuenta de Microsoft** -- el nombre para mostrar configurado en la [configuración de la cuenta de Microsoft](https://account.microsoft.com/profile)
+| Método de Inicio de Sesión | Fuente del Nombre |
+|---|---|
+| Cuenta de Google | Nombre para mostrar configurado en la [configuración de la cuenta de Google](https://myaccount.google.com/personal-info) |
+| Cuenta de Microsoft | Nombre para mostrar configurado en la [configuración de la cuenta de Microsoft](https://account.microsoft.com/profile) |
 
 Si el nombre en su cuenta de Google o Microsoft es incorrecto, está mal escrito o usa un apodo, ese mismo nombre aparecerá en los resultados de AutoProctor.
 
 <Note>
-AutoProctor obtiene los nombres de los candidatos directamente del perfil de su cuenta de Google o Microsoft. Si el nombre es incorrecto en los resultados, el candidato necesita actualizar su perfil, ya sea en su cuenta de Google/Microsoft o directamente en AutoProctor.
+AutoProctor obtiene los nombres de los candidatos directamente del perfil de su cuenta. Si el nombre es incorrecto en los resultados, el candidato necesita actualizar su perfil en AutoProctor directamente.
 </Note>
+
+{/* TODO: Add screenshot of incorrect candidate name displayed in AutoProctor results page */}
 
 <Frame caption="Ejemplo de un nombre incorrecto de candidato mostrado en los resultados de AutoProctor">
   <img src="/images/candidate-issues/incorrect-student-name.png" alt="Nombre incorrecto del candidato mostrado en la página de resultados de AutoProctor" />
 </Frame>
 
-## Cómo solucionarlo
+## Cómo Solucionarlo
 
 <Steps>
   <Step title="Identifique el correo electrónico del candidato">
     Encuentre la dirección de correo electrónico asociada con el intento de examen del candidato en la página de resultados.
   </Step>
   <Step title="Indique al candidato que actualice su perfil">
-    Pida al candidato que visite [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) y actualice su nombre.
+    Pida al candidato que visite [autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) y actualice su nombre. Comparta este enlace con el candidato junto con una nota identificando qué dirección de correo electrónico necesita la corrección.
   </Step>
   <Step title="Verifique el cambio">
-    Una vez que el candidato actualice su nombre en su perfil, el cambio se refleja automáticamente en todos los informes de exámenes existentes. No se requiere ninguna acción adicional por parte del administrador del examen.
+    Una vez que el candidato actualice su nombre en su perfil de AutoProctor, el cambio se refleja automáticamente en todos los informes de exámenes existentes. No se requiere ninguna acción adicional por parte del administrador del examen.
   </Step>
 </Steps>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Resultados de supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
-- [Configuración del examen](/creating-tests/test-settings) -- Configure los ajustes de su examen
-- [Instrucciones para realizar un examen supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración para candidatos
-- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda
+- [Resultados de Supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
+- [Cómo Cerrar Sesión](/taking-tests/how-to-logout) -- Cambiar de cuenta si se usó la incorrecta
+- [Métodos de Inicio de Sesión para Candidatos](/taking-tests/candidate-login-methods) -- Comprenda las opciones de inicio de sesión
+- [Instrucciones para Realizar un Examen Supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración para candidatos
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

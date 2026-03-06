@@ -7,20 +7,26 @@ AutoProctor lets you export your test results to an Excel spreadsheet. This is u
 
 ## What the Export Includes
 
-The exported spreadsheet contains a summary of all candidate results, including:
+The exported spreadsheet contains a summary of all candidate results:
 
-- Candidate name and email address
-- Test start and submit time
-- Trust Scores (if proctoring is enabled)
-- Quiz scores (for Socratease Quizzes)
+| Column | Description |
+|---|---|
+| **Candidate name** | Name of the test taker |
+| **Email address** | Email used to take the test |
+| **Test start time** | When the candidate started the test |
+| **Submit time** | When the candidate submitted the test |
+| **Trust Score** | Proctoring integrity score (if proctoring is enabled) |
+| **Quiz score** | Candidate's score (for Socratease Quizzes only) |
 
-You can view a [sample exported spreadsheet](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) to see the format.
+You can view a [sample exported spreadsheet](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) to see the exact format.
 
 ## How to Export
 
 <Steps>
   <Step title="Open the results page">
     Navigate to your AutoProctor dashboard and click **Results** for the test you want to export.
+
+    {/* TODO: Add screenshot of the results page with Export to Excel button highlighted */}
 
     <Frame>
       <img src="/images/results/export-results-table.png" alt="Results table on the AutoProctor dashboard with export option" />

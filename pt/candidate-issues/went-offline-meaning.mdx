@@ -1,39 +1,41 @@
 ---
-title: "O que significa 'Ficou offline'?"
-description: "Compreenda o que a entrada 'Ficou offline' no relatório de supervisão significa, como AutoProctor monitoriza a conectividade à internet e o que isso implica."
+title: "O Que Significa 'Ficou Offline'?"
+description: "Entenda o que a entrada 'Ficou offline' no relatório de supervisão significa, como o AutoProctor monitora a conectividade de internet e o que isso implica para a integridade do teste."
 ---
 
-"Ficou offline durante 120 segundos" significa que o candidato não esteve conectado à internet durante 120 segundos do exame. Esta entrada aparece no relatório de supervisão sempre que AutoProctor deteta uma interrupção na conectividade.
+"Ficou offline durante 120 segundos" significa que o candidato perdeu a conectividade de internet durante 120 segundos do teste. Esta entrada aparece no relatório de supervisão sempre que o AutoProctor detecta uma interrupção na conectividade.
 
-## Como AutoProctor monitoriza a conectividade à internet
+## Como o AutoProctor Monitora a Conectividade de Internet
 
-AutoProctor supervisiona a conectividade através de pings contínuos ao servidor enviados a partir do navegador do candidato em intervalos regulares (aproximadamente a cada 5 segundos). Quando os pings estão em falta, o sistema infere que o candidato perdeu a conectividade.
+O AutoProctor monitora a conectividade através de pings contínuos ao servidor enviados a partir do navegador do candidato em intervalos regulares (aproximadamente a cada 5 segundos). Quando os pings estão ausentes, o sistema infere que o candidato perdeu a conectividade.
 
-**Exemplo:** Se os pings falharam às 11:00:30, 11:00:35 e 11:00:40 mas foram retomados às 11:00:45, o relatório indicaria um período offline de aproximadamente 10 segundos.
+**Exemplo:** Se os pings falharam às 11:00:30, 11:00:35 e 11:00:40 mas foram retomados às 11:00:45, o relatório indicaria um período offline de aproximadamente 10 segundos, de 11:00:30 a 11:00:40.
 
-<Frame caption="Entrada de desconexão mostrada num relatório de supervisão">
-  <img src="/images/candidate-issues/went-offline-report.png" alt="Entrada de duração offline exibida num relatório de supervisão de AutoProctor" />
+{/* TODO: Add screenshot of "Went offline" entry shown in a proctoring report */}
+
+<Frame caption="Entrada de desconexão mostrada em um relatório de supervisão">
+  <img src="/images/candidate-issues/went-offline-report.png" alt="Entrada de duração offline exibida em um relatório de supervisão do AutoProctor" />
 </Frame>
 
-## Perguntas frequentes
+## Perguntas Frequentes
 
 <AccordionGroup>
-  <Accordion title="Os candidatos podem responder a perguntas enquanto estão offline?">
-    Sim. Todas as perguntas são carregadas antes de o exame começar, de modo que os candidatos podem continuar a responder perguntas sem uma conexão ativa à internet. A conectividade só é necessária ao carregar novas perguntas (se apresentadas sequencialmente) ou ao enviar o exame.
+  <Accordion title="Os candidatos podem responder perguntas enquanto estão offline?">
+    Sim. Todas as perguntas são carregadas antes do teste começar, de modo que os candidatos podem continuar respondendo perguntas sem uma conexão ativa de internet. A conectividade só é necessária ao carregar novas perguntas (se apresentadas sequencialmente) ou ao enviar o teste.
   </Accordion>
   <Accordion title="Como a supervisão continua quando o candidato está offline?">
-    Todo o código de deteção de infrações é descarregado antes de o exame começar. Isso permite que AutoProctor continue a monitorizar infrações (como mudanças de separador e deteção facial) mesmo quando o candidato está desconectado da internet.
+    Todo o código de detecção de violações é baixado antes do teste começar. Isso permite que o AutoProctor continue monitorando violações (como mudanças de aba e detecção facial) mesmo quando o candidato está desconectado da internet.
   </Accordion>
   <Accordion title="Ficar offline prova que houve fraude?">
-    Não. Um estado offline apenas confirma que o candidato perdeu a conectividade à internet -- não indica a razão. Pode ser uma desconexão intencional ou um problema técnico genuíno. Distinguir entre ambos requer o seu julgamento ao rever o relatório completo.
+    Não. Um status offline apenas confirma que o candidato perdeu a conectividade de internet -- não indica a razão. Pode ser uma desconexão intencional ou um problema técnico genuíno. Distinguir entre ambos requer o seu julgamento ao revisar o relatório completo.
   </Accordion>
 </AccordionGroup>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
-- [O que é monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que AutoProctor supervisiona
-- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
-- [O exame está lento](/candidate-issues/slow-and-laggy) -- Problemas de desempenho que podem estar relacionados com a conectividade
-- [Compatibilidade de dispositivos](/getting-started/device-compatibility) -- Consulte os navegadores e dispositivos compatíveis
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Entendendo o Trust Score](/getting-started/trust-score) -- Como os Trust Scores são calculados
+- [O Que É Monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que o AutoProctor supervisiona
+- [Resultados de Supervisão](/results/proctoring-results) -- Como revisar relatórios de supervisão
+- [Teste Lento e com Atraso](/candidate-issues/slow-and-laggy) -- Problemas de desempenho que podem estar relacionados à conectividade
+- [Compatibilidade de Dispositivos](/getting-started/device-compatibility) -- Confira os navegadores e dispositivos compatíveis
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

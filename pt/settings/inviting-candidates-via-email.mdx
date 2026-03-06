@@ -1,0 +1,67 @@
+---
+title: "Convidar Candidatos por E-mail"
+description: "Gere links de convite únicos vinculados a endereços de e-mail específicos para acesso controlado ao teste com verificação de e-mail no AutoProctor."
+---
+
+Os links de convite únicos permitem que você gere uma URL de teste distinta para cada candidato, vinculada ao endereço de e-mail dele. Quando o candidato abre o link, o AutoProctor envia um código de verificação de uso único para confirmar a identidade antes de conceder acesso ao teste.
+
+<Note>
+Este recurso está disponível apenas no **Plano Elite** e funciona exclusivamente com **Socratease Quizzes** e **Testes IFrame**. Não é compatível com Google Forms nem com Microsoft Forms, pois esses exigem login específico da plataforma. Consulte [Pagamentos e Créditos](/pricing/payments-and-credits) para detalhes do plano.
+</Note>
+
+## Como Configurar Links de Convite Únicos
+
+<Steps>
+  <Step title="Ative o URL Único">
+    Abra as configurações do teste e ative a opção **Unique URL**.
+
+    {/* TODO: Add screenshot of the Unique URL toggle in test settings */}
+  </Step>
+  <Step title="Faça upload dos endereços de e-mail">
+    Faça upload dos endereços de e-mail dos candidatos por meio de um arquivo CSV. Você pode fazer upload de no máximo 1.000 endereços de e-mail por vez.
+
+    {/* TODO: Add screenshot of the CSV upload interface for email addresses */}
+  </Step>
+  <Step title="Obtenha os links gerados">
+    O AutoProctor gera uma saída de texto contendo os endereços de e-mail e seus links de teste únicos correspondentes como colunas separadas por vírgulas.
+
+    {/* TODO: Add screenshot of the generated output showing email-link pairs */}
+  </Step>
+  <Step title="Formate os dados">
+    Cole a saída em uma planilha e divida pelo separador de vírgulas para organizar endereços de e-mail e links em colunas separadas.
+  </Step>
+  <Step title="Distribua os links">
+    Envie os links únicos para seus candidatos por e-mail, pelo seu sistema de gestão de aprendizagem ou por outro método de distribuição.
+  </Step>
+</Steps>
+
+## Como a Verificação Funciona
+
+Quando o candidato clica no seu link único, o AutoProctor envia um código de verificação de uso único para o endereço de e-mail associado àquele link. O candidato deve inserir esse código para acessar o teste. Isso garante que apenas o destinatário pretendido possa usar cada link.
+
+{/* TODO: Add screenshot of the verification code entry screen candidates see */}
+
+## Limitações Importantes
+
+| Limitação | Detalhes |
+|---|---|
+| URL padrão desativada | Ao ativar este recurso, a URL compartilhada padrão do teste para de funcionar. Apenas as URLs únicas por candidato concedem acesso. |
+| Sem revogação | Você não pode invalidar convites enviados após serem gerados. |
+| Sem teste gratuito | Este recurso não pode ser testado antes de adquirir o Plano Elite. |
+| Limite por lote | Você pode fazer upload de no máximo 1.000 endereços de e-mail por vez. |
+
+<Warning>
+Após ativar URLs únicos, o link comum do teste para de funcionar imediatamente. Certifique-se de que você está pronto para distribuir os links individuais antes de ativar este recurso.
+</Warning>
+
+## Serviço de Envio de E-mail em Massa
+
+Para campanhas em grande escala que excedam 5.000 candidatos, o AutoProctor oferece um serviço de distribuição de e-mail a $100 por cada 5.000 mensagens. Isso requer saldo suficiente na conta e o envio do seu arquivo CSV e conteúdo do e-mail para a equipe do AutoProctor. [Entre em contato conosco](/support/contact-us) para mais detalhes.
+
+## Recursos Relacionados
+
+- [Restringir o Acesso ao Teste por Endereço de E-mail](/settings/restricting-by-email) — Método alternativo usando restrições de domínio de e-mail
+- [Restringir a Candidatos Específicos](/settings/restricting-to-some-users) — Visão geral de todos os métodos de controle de acesso
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) — Conheça as opções de autenticação
+- [Pagamentos e Créditos](/pricing/payments-and-credits) — Detalhes do plano e recursos do Plano Elite
+- [Recursos Elite](/pricing/elite-features) — Todos os recursos disponíveis no Plano Elite

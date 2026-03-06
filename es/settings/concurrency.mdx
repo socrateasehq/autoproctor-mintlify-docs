@@ -1,0 +1,71 @@
+---
+title: "Concurrencia - Máximo de Candidatos Simultáneos"
+description: "Comprenda los límites de concurrencia de AutoProctor que controlan cuántos candidatos pueden iniciar exámenes simultáneamente en una ventana de 60 segundos."
+---
+
+La concurrencia controla cuántos candidatos pueden iniciar cualquier examen bajo su cuenta dentro de la misma ventana de 60 segundos. Comprender estos límites le ayuda a planificar sesiones de exámenes a gran escala y evitar retrasos inesperados para los candidatos.
+
+## ¿Qué Es la Concurrencia Máxima?
+
+La concurrencia máxima es el número máximo de candidatos que pueden comenzar un examen dentro de cualquier período continuo de 60 segundos. Este límite se aplica a **todos los exámenes de su cuenta**, no a cada examen individual.
+
+<Note>
+Si tiene tres exámenes activos y un límite de concurrencia de 1,000, el límite de 1,000 se comparte entre los tres exámenes combinados — no 1,000 por examen.
+</Note>
+
+## Límites de Concurrencia por Plan
+
+### Exámenes con Supervisión Habilitada
+
+| Plan | Concurrencia Máxima |
+|---|---|
+| Standard | 1,000 candidatos/minuto |
+| Premium | 2,000 candidatos/minuto |
+| Elite | 5,000 candidatos/minuto |
+
+### Exámenes Sin Supervisión
+
+| Plan | Concurrencia Máxima |
+|---|---|
+| Standard | 50 candidatos/minuto |
+| Premium | 100 candidatos/minuto |
+| Elite | 150 candidatos/minuto |
+
+## Escalonamiento Automático
+
+Cuando la demanda supera la capacidad de su plan, AutoProctor escalona automáticamente el ingreso de los candidatos. Los candidatos que excedan el límite ven un botón con una cuenta regresiva de hasta 60 segundos antes de poder acceder al examen.
+
+{/* TODO: Add screenshot of the staggering countdown button candidates see */}
+
+<Note>
+Si su examen tiene una duración configurada, AutoProctor ajusta automáticamente el temporizador de cada candidato para compensar los retrasos por escalonamiento. Ningún candidato pierde tiempo de examen debido a los límites de concurrencia.
+</Note>
+
+## Usuarios del SDK
+
+Si utiliza el SDK de JavaScript de AutoProctor en su propio sitio web, recibe un límite predeterminado de 5,000 candidatos por minuto. Cuando este límite se excede, el SDK devuelve una respuesta 429. Debe gestionar la limitación de velocidad de forma independiente en su implementación.
+
+<Warning>
+Los usuarios del SDK no se benefician del escalonamiento automático. Debe construir su propia lógica de reintento para manejar las respuestas 429 cuando se exceda su límite de concurrencia.
+</Warning>
+
+## Aumentar Sus Límites
+
+Si necesita límites de concurrencia más altos, [contacte al equipo de AutoProctor](/support/contact-us):
+
+| Tipo de Aumento | Costo Aproximado | Detalles |
+|---|---|---|
+| Temporal (evento único) | $500 por cada incremento de 500 candidatos/minuto | Tarifa única |
+| Permanente | $2,500/mes por cada incremento de 500 candidatos/minuto | Se requiere compromiso anual |
+
+<Note>
+La plataforma admite hasta un máximo de 25,000 candidatos por minuto.
+</Note>
+
+## Recursos Relacionados
+
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Pagos y Créditos](/pricing/payments-and-credits) — Detalles del plan e información de precios
+- [Mejores Prácticas para Docentes](/getting-started/best-practices-for-teachers) — Consejos para una administración de exámenes fluida
+- [Cosas Que Necesita Saber](/results/things-you-need-to-know) — Requisitos esenciales para usar AutoProctor
+- [Contáctenos](/support/contact-us) — Comuníquese con el equipo de AutoProctor para aumentos de límites

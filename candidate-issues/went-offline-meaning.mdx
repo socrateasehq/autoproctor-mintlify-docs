@@ -1,21 +1,23 @@
 ---
 title: "What Does 'Went Offline' Mean?"
-description: "Understand what the 'Went Offline' entry in the proctoring report means, how AutoProctor tracks internet connectivity, and what it implies."
+description: "Understand what the 'Went Offline' entry in the proctoring report means, how AutoProctor tracks internet connectivity, and what it implies for test integrity."
 ---
 
-"Went offline for 120 seconds" means that the candidate was not connected to the internet for 120 seconds during the test. This entry appears in the proctoring report whenever AutoProctor detects a gap in connectivity.
+"Went offline for 120 seconds" means that the candidate lost internet connectivity for 120 seconds during the test. This entry appears in the proctoring report whenever AutoProctor detects a gap in connectivity.
 
-## How AutoProctor tracks internet connectivity
+## How AutoProctor Tracks Internet Connectivity
 
 AutoProctor monitors connectivity through continuous server pings sent from the candidate's browser at regular intervals (approximately every 5 seconds). When pings are missing, the system infers that the candidate lost connectivity.
 
-**Example:** If pings failed at 11:00:30, 11:00:35, and 11:00:40 but resumed at 11:00:45, the report would indicate an offline period of approximately 10 seconds.
+**Example:** If pings failed at 11:00:30, 11:00:35, and 11:00:40 but resumed at 11:00:45, the report would indicate an offline period of approximately 10 seconds, from 11:00:30 to 11:00:40.
+
+{/* TODO: Add screenshot of "Went offline" entry shown in a proctoring report */}
 
 <Frame caption="Went offline entry shown in a proctoring report">
   <img src="/images/candidate-issues/went-offline-report.png" alt="Went offline duration entry displayed in an AutoProctor proctoring report" />
 </Frame>
 
-## Frequently asked questions
+## Frequently Asked Questions
 
 <AccordionGroup>
   <Accordion title="Can candidates answer questions while offline?">
@@ -36,4 +38,4 @@ AutoProctor monitors connectivity through continuous server pings sent from the 
 - [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
 - [Test is Slow and Laggy](/candidate-issues/slow-and-laggy) -- Performance issues that may relate to connectivity
 - [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

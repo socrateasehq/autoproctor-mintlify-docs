@@ -1,44 +1,82 @@
 ---
-title: "Arquivar e excluir provas"
-description: "Aprenda a arquivar provas para organizar o seu painel de controle ou a excluir permanentemente as provas que você não precisa mais."
+title: "Arquivar e Excluir Testes"
+description: "Aprenda a arquivar testes para organizar seu painel ou excluir permanentemente testes que você não precisa mais."
 ---
 
-Com o tempo, o seu painel de controle pode acumular provas de demonstração, exames concluídos e avaliações desatualizadas. Utilize a função de arquivamento para ocultar provas da sua vista principal, ou exclua-as permanentemente quando não forem mais necessárias.
+Com o tempo, seu painel acumula testes de demonstração, exames concluídos e avaliações desatualizadas. Arquivar move os testes para fora da sua visualização principal sem excluí-los, e a exclusão remove permanentemente os testes que você não precisa mais.
 
-## Arquivar provas
+## Arquivar Testes
 
-Arquivar uma prova remove-a do seu painel de controle principal sem excluí-la. Isso é útil para ocultar provas de demonstração ou concluídas, mantendo-as acessíveis.
-
-<Frame>
-  <img src="/images/creating-tests/archive-test.png" alt="Opção de arquivar prova nas configurações de prova" />
-</Frame>
+Arquivar um teste oculta-o do seu painel principal, mantendo-o totalmente acessível em uma seção dedicada. Isso é útil para limpar testes concluídos ou de demonstração sem perder nenhum dado.
 
 <Steps>
-  <Step title="Abrir as Configurações de prova">
-    Vá ao seu **Dashboard** e abra as **Configurações** da prova.
+  <Step title="Abra as Configurações do Teste">
+    Acesse seu **Dashboard** e abra as **Settings** do teste.
+
+    {/* TODO: Add screenshot of the Dashboard with the Settings button highlighted */}
   </Step>
-  <Step title="Arquivar a prova">
-    Clique em **Archive Test** para mover a prova para fora da vista principal do seu painel de controle.
+  <Step title="Arquive o Teste">
+    Clique em **Archive Test** para mover o teste para fora da visualização principal do seu painel.
+
+    {/* TODO: Add screenshot of the Archive Test button in test settings */}
   </Step>
-  <Step title="Acessar as provas arquivadas">
-    Visite a seção de **Archived Tests** na barra lateral esquerda para ver, restaurar ou excluir provas arquivadas.
+  <Step title="Acesse os Testes Arquivados">
+    Abra a seção **Archived Tests** na barra lateral esquerda para ver todos os seus testes arquivados.
+
+    {/* TODO: Add screenshot of the Archived Tests section in the left sidebar */}
   </Step>
 </Steps>
 
-## Excluir provas
+<Frame>
+  <img src="/images/creating-tests/archive-test.png" alt="Opção de Arquivar Teste no painel de configurações do teste" />
+</Frame>
 
-Você pode excluir permanentemente provas a partir da seção de **Archived Tests**. Apenas provas arquivadas podem ser excluídas — você deve arquivar a prova primeiro.
+## Restaurar Testes Arquivados
+
+Você pode retornar um teste arquivado ao seu painel principal a qualquer momento.
+
+<Steps>
+  <Step title="Acesse os Testes Arquivados">
+    Clique em **Archived Tests** na barra lateral esquerda.
+  </Step>
+  <Step title="Restaure o Teste">
+    Encontre o teste que deseja restaurar e clique em **Restore**. O teste reaparecerá no seu painel principal.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the Restore button in the Archived Tests section */}
+
+## Excluir Testes
+
+Você pode excluir permanentemente um teste a partir da seção **Archived Tests**. É necessário arquivar um teste antes de poder excluí-lo.
+
+<Steps>
+  <Step title="Arquive o Teste">
+    Se o teste ainda está no seu painel principal, arquive-o primeiro usando os passos acima.
+  </Step>
+  <Step title="Acesse os Testes Arquivados">
+    Abra a seção **Archived Tests** na barra lateral esquerda.
+  </Step>
+  <Step title="Exclua o Teste">
+    Clique em **Delete** ao lado do teste que deseja remover permanentemente.
+  </Step>
+</Steps>
 
 <Warning>
-Excluir uma prova remove-a da sua conta, mas **as respostas dos candidatos e os registros de supervisão são preservados**. Esses dados persistem mesmo após a prova ser excluída.
+Excluir um teste remove-o da sua conta permanentemente. No entanto, **as respostas dos candidatos e os registros de supervisão são preservados** — esses dados persistem mesmo após o teste ser excluído.
 </Warning>
 
-### Notas importantes
+## Observações Importantes
 
-- Provas excluídas podem reaparecer se o provedor de questionários original (como Google Forms) for acessado novamente
-- Em cenários com vários colaboradores, a exclusão afeta apenas a conta que a iniciou — os demais colaboradores mantêm o acesso à prova
+| Cenário | O Que Acontece |
+|---|---|
+| Você exclui um teste do Google Forms e depois reinstala o complemento | O teste reaparece com todos os resultados originais preservados |
+| Um teste tem múltiplos colaboradores e você o exclui | A exclusão afeta apenas a sua conta — os outros colaboradores mantêm acesso total |
+| Você quer recuperar um teste excluído | Testes excluídos não podem ser recuperados; use o arquivamento se puder precisar do teste futuramente |
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Configurações de prova](/creating-tests/test-settings) — Configure as opções da sua prova
-- [Como ver os resultados](/results/how-to-see-results) — Acesse os resultados de provas e supervisão
+- [Como Ver os Resultados](/results/how-to-see-results) — Acesse resultados de testes e supervisão
+- [Compartilhar Resultados de Testes](/results/sharing-test-results) — Compartilhe resultados com interessados
+- [Adicionar Colaboradores](/creating-tests/adding-collaborators) — Compartilhe a gestão de testes com membros da equipe
+- [Configurações de Tempo](/settings/timer-settings) — Configure a duração do teste e janelas de tempo

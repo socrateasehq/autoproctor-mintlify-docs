@@ -3,42 +3,80 @@ title: "Archiving and Deleting Tests"
 description: "Learn how to archive tests to declutter your dashboard or permanently delete tests you no longer need."
 ---
 
-Over time, your dashboard may accumulate demo tests, completed exams, and outdated assessments. Use archiving to hide tests from your main view, or delete them permanently when they are no longer needed.
+Over time, your dashboard accumulates demo tests, completed exams, and outdated assessments. Archiving moves tests out of your main view without deleting them, and deletion permanently removes tests you no longer need.
 
 ## Archiving Tests
 
-Archiving a test removes it from your main dashboard without deleting it. This is useful for hiding demo or completed tests while keeping them accessible.
-
-<Frame>
-  <img src="/images/creating-tests/archive-test.png" alt="Archive Test option in test settings" />
-</Frame>
+Archiving a test hides it from your main dashboard while keeping it fully accessible in a dedicated section. This is useful for clearing out completed or demo tests without losing any data.
 
 <Steps>
   <Step title="Open Test Settings">
     Go to your **Dashboard** and open the test's **Settings**.
+
+    {/* TODO: Add screenshot of the Dashboard with the Settings button highlighted */}
   </Step>
   <Step title="Archive the Test">
     Click **Archive Test** to move the test out of your main dashboard view.
+
+    {/* TODO: Add screenshot of the Archive Test button in test settings */}
   </Step>
   <Step title="Access Archived Tests">
-    Visit the **Archived Tests** section in the left sidebar to view, restore, or delete archived tests.
+    Open the **Archived Tests** section in the left sidebar to view all your archived tests.
+
+    {/* TODO: Add screenshot of the Archived Tests section in the left sidebar */}
   </Step>
 </Steps>
 
+<Frame>
+  <img src="/images/creating-tests/archive-test.png" alt="Archive Test option in the test settings panel" />
+</Frame>
+
+## Restoring Archived Tests
+
+You can return an archived test to your main dashboard at any time.
+
+<Steps>
+  <Step title="Go to Archived Tests">
+    Click **Archived Tests** in the left sidebar.
+  </Step>
+  <Step title="Restore the Test">
+    Find the test you want to restore and click **Restore**. The test reappears on your main dashboard.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the Restore button in the Archived Tests section */}
+
 ## Deleting Tests
 
-You can permanently delete tests from the **Archived Tests** section. Only archived tests can be deleted — you must archive a test first.
+You can permanently delete a test from the **Archived Tests** section. You must archive a test before you can delete it.
+
+<Steps>
+  <Step title="Archive the Test">
+    If the test is still on your main dashboard, archive it first using the steps above.
+  </Step>
+  <Step title="Go to Archived Tests">
+    Open the **Archived Tests** section in the left sidebar.
+  </Step>
+  <Step title="Delete the Test">
+    Click **Delete** next to the test you want to remove permanently.
+  </Step>
+</Steps>
 
 <Warning>
-Deleting a test removes it from your account, but **candidate answers and proctoring records are preserved**. That data persists even after the test is deleted.
+Deleting a test removes it from your account permanently. However, **candidate answers and proctoring records are preserved** -- that data persists even after the test is deleted.
 </Warning>
 
-### Important Notes
+## Important Notes
 
-- Deleted tests may reappear if the original quiz provider (such as Google Forms) is accessed again
-- In multi-collaborator scenarios, deletion only affects the account that initiated it — other collaborators retain access to the test
+| Scenario | What Happens |
+|---|---|
+| You delete a Google Forms test, then reinstall the add-on | The test reappears with all original results preserved |
+| A test has multiple collaborators and you delete it | Deletion only affects your account -- other collaborators retain full access |
+| You want to recover a deleted test | Deleted tests cannot be recovered; archive instead if you may need the test later |
 
 ## Related Resources
 
-- [Test Settings](/creating-tests/test-settings) — Configure your test options
-- [How to See Results](/results/how-to-see-results) — Access test and proctoring results
+- [How to See Results](/results/how-to-see-results) -- Access test and proctoring results
+- [Sharing Test Results](/results/sharing-test-results) -- Share results with stakeholders
+- [Adding Collaborators](/creating-tests/adding-collaborators) -- Share test management with team members
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows

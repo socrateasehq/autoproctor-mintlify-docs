@@ -1,0 +1,88 @@
+---
+title: "Advanced Settings"
+description: "Configure login providers, email restrictions, Google Sheets integration, collaborators, and other advanced test options."
+---
+
+Advanced Settings give you control over how candidates log in, who can access the test, and how results are shared. These options are found at the bottom of the Test Settings page.
+
+<Frame>
+  <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings configuration panel" />
+</Frame>
+
+## Login Providers
+
+Choose which authentication methods candidates can use to sign in to your test:
+
+| Provider | Description | Notes |
+|---|---|---|
+| **Google** | Sign in with a Google account | Required for Google Forms tests |
+| **Microsoft** | Sign in with a Microsoft account | Required for Microsoft Forms tests |
+| **Email** | Sign in with any email address | Available for Socratease and Iframe tests |
+
+For Google Forms and Microsoft Forms tests, the login provider is locked to match the quiz platform. For Socratease Quizzes and Iframe Tests, you can enable one or more providers.
+
+For more details on how each login method works, see [Candidate Login Methods](/taking-tests/candidate-login-methods).
+
+{/* TODO: Add screenshot showing the login provider selection options */}
+
+## Login Restrictions
+
+Restrict which candidates can take your test based on their email address or domain.
+
+- **Restrict by Email** — Allow only specific email addresses to access the test
+- **Restrict by Domain** — Allow only candidates with email addresses from specific domains (e.g., @university.edu)
+
+For detailed instructions, see [Restricting by Email](/settings/restricting-by-email). If you want to invite a specific set of candidates, see [Inviting Candidates via Email](/settings/inviting-candidates-via-email).
+
+{/* TODO: Add screenshot showing login restriction configuration */}
+
+## Google Sheets Integration
+
+Automatically export test results to a Google Sheet by entering the sheet URL in this field. For Socratease quizzes, both proctoring results and quiz scores are exported. For non-Socratease quizzes, only proctoring results are included.
+
+For setup instructions, see [Google Sheets Integration](/results/google-sheets-integration).
+
+## Collaborators
+
+Add colleagues as collaborators on your test so they can edit settings and view results. You can set the test's Primary Admin by clicking the **Manage** button.
+
+For more details, see [Adding Collaborators](/creating-tests/adding-collaborators).
+
+## Premium and Elite Features
+
+### Unique URL per Candidate (Elite)
+
+By default, all candidates share a single test link, which could be forwarded to unintended recipients. Enabling this feature generates a unique link for each candidate, ensuring only the people you share links with can take the test.
+
+<Note>
+Unique URL per candidate is an Elite feature. See [Elite Features](/pricing/elite-features) for more details.
+</Note>
+
+### Gather Additional Details (Premium)
+
+Collect custom information from candidates before the test starts — such as phone number, college name, or any custom question. These fields appear on the instructions page and the collected data is available in results and Excel exports.
+
+<Note>
+You can add up to 10 custom information fields per test.
+</Note>
+
+{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+
+### Additional Instructions (Elite)
+
+Add custom instructions to the candidate instructions page. This is shown to candidates before they start the test and can be used to provide specific guidelines, rules, or context for your test.
+
+<Note>
+Additional Instructions is an Elite feature. See the [Instructions Page for Candidates](/taking-tests/instructions-page-for-candidates) for more on what candidates see before starting.
+</Note>
+
+{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+
+## Related Resources
+
+- [Timer Settings](/settings/timer-settings) — Configure test duration and time windows
+- [Proctoring Settings](/settings/proctoring-settings) — Camera, microphone, and tab-switching options
+- [Restricting by Email](/settings/restricting-by-email) — Restrict test access by email address or domain
+- [Inviting Candidates via Email](/settings/inviting-candidates-via-email) — Send test invitations directly
+- [Candidate Login Methods](/taking-tests/candidate-login-methods) — How each login method works
+- [Google Sheets Integration](/results/google-sheets-integration) — Auto-export results to spreadsheets

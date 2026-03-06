@@ -5,22 +5,29 @@ description: "Understand why images or audio recordings may not appear in a cand
 
 If you can see violations listed in a candidate's test report but cannot see the supporting evidence (images or audio recordings), there are two possible scenarios, each with a different cause and resolution.
 
-## Scenario 1: No images or recordings at all
+## Scenario 1: No Images or Recordings at All
 
 If no images or recordings appear despite violations being listed, the evidence recording feature was likely disabled in your test settings.
 
 <Steps>
   <Step title="Check your test settings">
-    Navigate to your test's proctoring configuration in the AutoProctor dashboard and verify that evidence recording is enabled. See [Test Settings](/creating-tests/test-settings) for details on each option.
+    Navigate to your test's proctoring configuration in the AutoProctor dashboard and verify that evidence recording is enabled. See [Proctoring Settings](/settings/proctoring-settings) for details on each option.
   </Step>
   <Step title="Enable evidence recording for future tests">
     If evidence recording was disabled, enable it for future tests. Note that this change will not retroactively add evidence to tests that have already been taken.
   </Step>
 </Steps>
 
-## Scenario 2: Some violations have evidence, others don't
+{/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
+
+## Scenario 2: Some Violations Have Evidence, Others Do Not
 
 If some violations show evidence files while others do not, this is expected behavior. AutoProctor stores a fixed number (approximately 20) of images and audio files per test attempt. When violations exceed this limit, not every violation will have an associated evidence file.
+
+| What You See | What It Means |
+|---|---|
+| No evidence files at all | Evidence recording is likely disabled in test settings |
+| Some violations have files, others do not | Storage limit reached -- normal behavior |
 
 <Warning>
 **All violations are tracked and affect the Trust Score**, even when evidence files are not stored for viewing. The evidence files are a subset -- they exist so you can review what happened, but the Trust Score calculation considers every detected violation regardless of whether evidence was stored.
@@ -28,9 +35,9 @@ If some violations show evidence files while others do not, this is expected beh
 
 ## Related Resources
 
-- [Test Settings](/creating-tests/test-settings) -- Configure evidence storage and proctoring options
+- [Proctoring Settings](/settings/proctoring-settings) -- Configure evidence storage and proctoring options
 - [Missing Violation Evidence](/candidate-issues/missing-violation-evidence) -- Detailed explanation of evidence storage limits
 - [Missing Random Photos](/candidate-issues/missing-random-photos) -- Why random photos may be absent
 - [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
 - [Understanding Trust Score](/getting-started/trust-score) -- How Trust Scores are calculated
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

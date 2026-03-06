@@ -1,0 +1,73 @@
+---
+title: "Proctoring Settings"
+description: "Configure tab switching detection, camera monitoring, microphone recording, full screen enforcement, and other proctoring options."
+---
+
+Proctoring Settings control what AutoProctor monitors during a test — from tab switching and camera detection to full screen enforcement and random photo capture. These settings determine how strictly candidates are supervised.
+
+{/* TODO: Add screenshot of the full Proctoring Settings section */}
+
+<Frame>
+  <img src="/images/creating-tests/proctoring-settings.png" alt="Proctoring settings configuration panel" />
+</Frame>
+
+<Note>
+To enable proctoring, you must check the **Enable Proctor** checkbox in the Main Settings section. If proctoring is disabled, none of these settings apply.
+</Note>
+
+## Basic Proctoring Options
+
+| Setting | What It Does |
+|---|---|
+| **Tab Switching** | Detects when a candidate switches to a different browser tab or application. Captures a screenshot of the tab they switched to. |
+| **Detect Multiple Monitors** | Detects if a candidate has connected external monitors to their computer. |
+| **Camera** | Detects if no face is visible on the camera feed, or if multiple faces are visible. Captures photos as evidence. |
+| **Microphone** | Monitors the sound environment and records audio when noise is detected. |
+| **Photos at Random** | Captures a few random photos throughout the test at randomized intervals. |
+| **Enforce Full Screen** | Forces candidates to take the test in full screen mode. Exiting full screen is recorded as a violation. |
+| **Enforce Desktop** | Requires candidates to use a desktop or laptop computer. The test will not load on tablets or mobile devices. |
+| **Photo Before Test Start** | Captures a photo of the candidate before the test begins. |
+| **Customize Message** | Customize the message candidates see when asked to take a photo before the test. Use this to ask candidates to display their ID card. |
+
+<Note>
+The **Customize Message** option is a Premium feature.
+</Note>
+
+{/* TODO: Add GIF showing the candidate experience when Photo Before Test Start is enabled */}
+
+## Enhanced Proctoring
+
+Enhanced proctoring adds advanced anti-cheating measures. Each enhanced feature requires **4 additional credits per attempt**.
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Enhanced proctoring settings" />
+</Frame>
+
+| Feature | What It Does | Credits |
+|---|---|---|
+| **ID Card Verification** | Candidate uploads an ID card (student ID, passport, driver's license, government ID) with their photo and name visible. AutoProctor verifies this against the Photo Before Test Start and the name they entered. | 4 per attempt |
+| **Impersonation Detection** | Detects if someone other than the original candidate is taking the test. | 4 per attempt |
+| **Auxiliary Device (360°)** | Candidate pairs their phone to their laptop for 360-degree proctoring. Also helps detect AI tools that display answers as screen overlays. | 4 per attempt |
+| **Session Recording** | Records the candidate's screen and actions, including mouse clicks and keyboard input. | 4 per attempt |
+
+{/* TODO: Add video walkthrough of the 360-degree auxiliary device pairing process */}
+
+## Communication Settings
+
+These settings control how violation evidence is handled:
+
+- **Me after the Test** — Store evidence (photos, audio, screenshots) for later review. Keep this enabled unless you have a specific reason to disable it.
+- **User during the Test** — Notify the candidate during the test when a violation is detected. This helps candidates fix harmless issues (like background music triggering a noise violation).
+
+<Note>
+We recommend keeping both communication settings enabled for the best proctoring experience.
+</Note>
+
+## Related Resources
+
+- [Timer Settings](/settings/timer-settings) — Configure test duration and time windows
+- [Enhanced Proctoring](/settings/enhanced-proctoring) — Detailed guide on ID verification, impersonation detection, and 360° proctoring
+- [Quiz Settings](/socratease/quiz-settings) — For Socratease quiz-specific settings, see the Socratease Quiz Settings page
+- [What Gets Tracked](/getting-started/what-gets-tracked) — Complete list of everything AutoProctor monitors
+- [Proctoring Results](/results/proctoring-results) — How to review proctoring data after a test
+- [Trust Score](/getting-started/trust-score) — How the trust score is calculated from proctoring data

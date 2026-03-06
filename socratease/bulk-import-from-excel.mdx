@@ -3,23 +3,29 @@ title: "Bulk Import Questions from Excel"
 description: "Import multiple-choice questions from an Excel file into your Socratease quiz."
 ---
 
-<Note>
-Bulk Import is available to **Elite Plan** customers only.
-</Note>
+The Bulk Import feature lets you import multiple-choice questions from an Excel file into Socratease Quizzes. This saves significant time when you have many questions in an existing Excel or Word format, or when multiple people collaborate on a large question set.
 
-The Bulk Import feature allows you to import multiple-choice questions from an Excel file into Socratease Quizzes. This is useful when you have many questions in an Excel or Word format, or when multiple people are collaborating on a large question set.
+<Note>
+Bulk Import is available to **Elite Plan** customers only. See [Elite Features](/pricing/elite-features) for details.
+</Note>
 
 ## How to Import Questions
 
 <Steps>
   <Step title="Download the Template">
-    Download the Excel template from within the quiz editor. This template contains the required column headers and formatting.
+    Open your quiz in the Socratease editor and download the Excel template. This template contains the required column headers and formatting.
+
+    {/* TODO: Add screenshot of template download button in quiz editor */}
   </Step>
   <Step title="Add Questions to the Excel File">
-    Fill in the template with your questions, answer choices, and correct answer indicators. See the column reference below for details.
+    Fill in the template with your questions, answer choices, and correct answer indicators. See the column reference below for details on each field.
+
+    {/* TODO: Add screenshot of a filled-in Excel template */}
   </Step>
   <Step title="Upload the Excel File">
-    Upload the completed Excel file to your quiz. The questions will be imported automatically.
+    Upload the completed Excel file to your quiz. The questions import automatically and appear in your quiz editor.
+
+    {/* TODO: Add screenshot of upload button and import confirmation */}
   </Step>
 </Steps>
 
@@ -40,14 +46,22 @@ The Bulk Import feature allows you to import multiple-choice questions from an E
 The **Image** column requires a direct URL to the image file. Google Drive sharing links are **not** supported. Use a direct link that ends in a file extension like `.jpg` or `.png`.
 </Warning>
 
-## Tips
+## Tips for a Successful Import
 
 - Fields marked with **Required: Yes** must be filled in for every question.
 - You can leave optional columns blank if they are not needed.
 - Make sure the column headers match the template exactly -- do not rename or reorder columns.
-- If you are importing a large number of questions, consider breaking them into smaller batches to make troubleshooting easier.
+- For MCA questions, separate the correct answer numbers with a comma and **no space** (e.g., `2,3` not `2, 3`).
+- If you import a large number of questions, consider breaking them into smaller batches to make troubleshooting easier.
+
+<Note>
+Bulk Import currently supports **MCQ** and **MCA** question types only. For other question types, add them manually through the quiz editor. See [Question Types](/socratease/question-types) for the full list of available formats.
+</Note>
 
 ## Related Resources
 
+- [Question Types](/socratease/question-types) -- All available question formats
+- [Question Banks](/socratease/question-banks) -- Create randomized question pools from your imported questions
 - [Quiz Settings](/socratease/quiz-settings) -- Configure your quiz behavior
 - [Question Display Mode](/socratease/question-display-mode) -- Control how questions appear to candidates
+- [Elite Features](/pricing/elite-features) -- Learn about Elite plan capabilities

@@ -1,25 +1,29 @@
 ---
-title: "Métodos de inicio de sesión para candidatos"
-description: "Conozca las opciones de inicio de sesión disponibles para los candidatos y qué métodos funcionan con cada proveedor de cuestionarios."
+title: "Métodos de Inicio de Sesión para Candidatos"
+description: "Conozca las opciones de inicio de sesión disponibles para los candidatos que realizan exámenes en AutoProctor, incluyendo qué métodos de inicio de sesión funcionan con cada proveedor de cuestionarios."
 ---
 
-Los candidatos deben iniciar sesión antes de intentar cualquier examen en AutoProctor. El inicio de sesión es necesario para diferenciar entre los envíos cuando varios candidatos utilizan el mismo enlace de examen.
+Los candidatos deben iniciar sesión antes de intentar cualquier examen en AutoProctor. El inicio de sesión es necesario para que AutoProctor pueda diferenciar entre los envíos individuales cuando varios candidatos utilizan el mismo enlace de examen.
+
+{/* TODO: Add screenshot of AutoProctor login screen showing Google, Microsoft, and Email sign-in options */}
 
 <Frame>
-  <img src="/images/taking-tests/login-methods.png" alt="Opciones de inicio de sesión de AutoProctor mostrando Google, Microsoft y correo electrónico" />
+  <img src="/images/taking-tests/login-methods.png" alt="Opciones de inicio de sesión de AutoProctor mostrando los botones de inicio de sesión con Google, Microsoft y correo electrónico" />
 </Frame>
 
-## Métodos de inicio de sesión disponibles
+## Métodos de Inicio de Sesión Disponibles
 
-- **Iniciar sesión con Google** — utiliza la cuenta de Google del candidato
-- **Iniciar sesión con Microsoft** — utiliza la cuenta de Microsoft del candidato
-- **Iniciar sesión con correo electrónico** — el candidato introduce su dirección de correo electrónico directamente
+AutoProctor ofrece tres opciones de inicio de sesión para los candidatos:
 
-## Métodos de inicio de sesión por proveedor de cuestionarios
+- **Iniciar sesión con Google** -- utiliza la cuenta de Google del candidato
+- **Iniciar sesión con Microsoft** -- utiliza la cuenta de Microsoft del candidato
+- **Iniciar sesión con correo electrónico** -- el candidato introduce su dirección de correo electrónico directamente (no se requiere cuenta de terceros)
+
+## Métodos de Inicio de Sesión por Proveedor de Cuestionarios
 
 Los métodos de inicio de sesión disponibles dependen del proveedor de cuestionarios que utilice:
 
-| Proveedor de cuestionarios | Métodos de inicio de sesión disponibles |
+| Proveedor de Cuestionarios | Métodos de Inicio de Sesión Disponibles |
 |---|---|
 | Cuestionarios de Socratease | Google, Microsoft, correo electrónico |
 | Google Forms | Solo Google |
@@ -27,11 +31,18 @@ Los métodos de inicio de sesión disponibles dependen del proveedor de cuestion
 | Exámenes IFrame | Google, Microsoft, correo electrónico |
 
 <Note>
-Los exámenes de Google Forms requieren inicio de sesión con Google porque AutoProctor necesita transmitir la identidad de Google del candidato al formulario. Lo mismo aplica para Microsoft Forms con el inicio de sesión de Microsoft. Los exámenes de Socratease e IFrame no tienen esta restricción.
+Los exámenes de Google Forms requieren inicio de sesión con Google porque AutoProctor necesita transmitir la identidad de Google del candidato al formulario. Lo mismo aplica para Microsoft Forms con el inicio de sesión de Microsoft. Los exámenes de Socratease e IFrame no tienen esta restricción, por lo que los tres métodos de inicio de sesión están disponibles.
 </Note>
 
-## Recursos relacionados
+<Note>
+Para restringir qué candidatos pueden iniciar sesión en su examen, consulte [Restricción por Correo Electrónico](/settings/restricting-by-email). Puede limitar el acceso a direcciones de correo electrónico o dominios de correo electrónico específicos.
+</Note>
 
-- [Cómo cerrar sesión](/taking-tests/how-to-logout) — Cambiar entre cuentas
-- [Restricción por correo electrónico](/results/restricting-by-email) — Limitar quién puede acceder a su examen
-- [Métodos de inicio de sesión del candidato (vista de administrador)](/results/candidate-login-methods) — Configurar los ajustes de inicio de sesión para su examen
+## Recursos Relacionados
+
+- [Cómo Cerrar Sesión](/taking-tests/how-to-logout) -- Cambiar entre cuentas
+- [Restricción por Correo Electrónico](/settings/restricting-by-email) -- Limitar quién puede acceder a su examen
+- [Restricción a Algunos Usuarios](/settings/restricting-to-some-users) -- Controlar el acceso al examen para usuarios específicos
+- [Invitar Candidatos por Correo Electrónico](/settings/inviting-candidates-via-email) -- Enviar invitaciones de examen directamente
+- [Página de Instrucciones para Candidatos](/taking-tests/instructions-page-for-candidates) -- Lo que los candidatos ven antes de comenzar un examen
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

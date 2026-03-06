@@ -1,0 +1,104 @@
+---
+title: "Mejores Prácticas para Creadores de Exámenes"
+description: "Siga estas mejores prácticas al administrar exámenes supervisados en AutoProctor para garantizar una experiencia fluida para usted y sus candidatos."
+---
+
+Una administración de exámenes fluida requiere preparación. Siga estas mejores prácticas para minimizar problemas técnicos y garantizar que sus candidatos tengan una experiencia de evaluación exitosa.
+
+{/* TODO: Add video walkthrough of the complete test administration workflow */}
+
+## Lista de Verificación Previa al Examen
+
+<Steps>
+  <Step title="Haga que los candidatos completen un examen de demostración">
+    Comparta el enlace del examen de demostración con los candidatos al menos **24 horas** antes del examen real. La demostración ayuda a los candidatos a comprender la plataforma, otorgar los permisos del navegador requeridos y confirmar que su dispositivo cumple con los requisitos técnicos.
+
+    Enlace de demostración: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+
+    <Note>
+    El examen de demostración no consume créditos de examen de su cuenta. Los candidatos pueden realizarlo tantas veces como necesiten.
+    </Note>
+
+    {/* TODO: Add screenshot of the demo test landing page */}
+  </Step>
+  <Step title="Comparta las instrucciones con los candidatos">
+    Distribuya la página de instrucciones adecuada según la configuración de su examen:
+
+    - [Instrucciones para exámenes supervisados](/taking-tests/proctored-test-instructions) — Para exámenes con supervisión activada
+    - [Instrucciones para exámenes con temporizador](/taking-tests/timed-test-instructions) — Para exámenes solo con temporizador
+    - [Página de instrucciones para candidatos](/taking-tests/instructions-page-for-candidates) — Descripción general para todos los tipos de exámenes
+  </Step>
+  <Step title="Verifique que su cuenta tenga créditos suficientes">
+    Asegúrese de que su cuenta tenga suficientes intentos de examen disponibles antes del examen. Si los candidatos intentan cargar un examen y su cuenta no tiene créditos, no podrán continuar.
+
+    Consulte [Pagos y Créditos](/pricing/payments-and-credits) para verificar su saldo y comprar más si es necesario.
+
+    {/* TODO: Add screenshot of the account credits/balance display */}
+  </Step>
+  <Step title="Configure la programación del examen con margen adicional">
+    Al programar exámenes con temporizador que tengan tanto una duración como una ventana de tiempo, asigne un margen de tiempo adicional. Por ejemplo, si su examen dura 15 minutos, establezca la ventana en al menos 30 minutos para contemplar la configuración del candidato y posibles retrasos técnicos.
+
+    Consulte [Configuración del Temporizador](/settings/timer-settings) para detalles de configuración.
+  </Step>
+  <Step title="Pruebe el enlace usted mismo">
+    Antes de compartir el enlace del examen, haga clic en él usted mismo para verificar la experiencia del candidato. Confirme que la página de instrucciones, la verificación de cámara y la configuración de supervisión se carguen correctamente.
+  </Step>
+</Steps>
+
+## Distribución de los Enlaces del Examen
+
+La forma en que comparte el enlace del examen es importante. Algunos métodos de distribución causan problemas de compatibilidad.
+
+| Método | ¿Recomendado? | Notas |
+|---|---|---|
+| **Correo electrónico (Gmail, Outlook)** | Sí | Los enlaces se abren en el navegador predeterminado, lo cual funciona de manera confiable |
+| **Google Classroom** | Sí | Se integra bien con AutoProctor |
+| **LMS (Moodle, Canvas, etc.)** | Sí | Los enlaces se abren en el navegador del sistema |
+| **Telegram, Facebook, WhatsApp** | No | Los navegadores integrados de estas aplicaciones frecuentemente son incompatibles con la supervisión de AutoProctor |
+
+<Warning>
+Si los candidatos reciben enlaces del examen a través de aplicaciones de mensajería (como Telegram, WhatsApp o Facebook Messenger), aconséjeles que **copien el enlace** y lo abran directamente en **Chrome** o **Firefox**. Los navegadores integrados de estas aplicaciones carecen de las funciones que AutoProctor necesita para la supervisión.
+</Warning>
+
+<Note>
+Envíe el enlace de demostración al menos 24 horas antes del examen real. Envíe el enlace del examen real más cerca de la hora programada para prevenir el acceso anticipado.
+</Note>
+
+## Durante el Examen
+
+- **Esté disponible** — Manténgase accesible a través de un canal de comunicación (como Google Meet, Zoom o WhatsApp) durante la ventana del examen para que los candidatos puedan contactarlo si encuentran problemas técnicos.
+- **Monitoree su panel de control** — Mantenga su panel de control de AutoProctor abierto para monitorear las entregas a medida que llegan. Esto le permite detectar problemas tempranamente (por ejemplo, si muchos candidatos no logran iniciar).
+
+{/* TODO: Add screenshot of the dashboard during an active test session showing real-time submissions */}
+
+## Después del Examen
+
+<Steps>
+  <Step title="Revise los resultados de supervisión">
+    Consulte los [Puntajes de Confianza](/getting-started/trust-score) y los informes de supervisión de cada candidato. Enfoque su revisión en los candidatos con puntuación inferior al 85%.
+
+    {/* TODO: Add screenshot of the results page with Trust Score column highlighted */}
+  </Step>
+  <Step title="Revise los envíos individuales si es necesario">
+    Para candidatos con Puntajes de Confianza bajos, abra su [envío individual](/results/individual-submissions) para revisar la evidencia completa de infracciones, incluyendo fotos, capturas de pantalla y clips de audio.
+  </Step>
+  <Step title="Aclare las fuentes de resultados con los candidatos">
+    Asegúrese de que los candidatos comprendan la diferencia entre los resultados de AutoProctor y los resultados del cuestionario:
+
+    | Tipo de Consulta | Dónde Buscar |
+    |---|---|
+    | Puntaje de Confianza e infracciones de supervisión | Panel de control de AutoProctor |
+    | Calificaciones, puntuaciones y respuestas | Su plataforma de cuestionarios (Google Forms, Microsoft Forms o Socratease) |
+    | Problemas técnicos durante el examen | [Soporte de AutoProctor](/support/contact-us) |
+    | Preguntas académicas y consultas sobre calificaciones | Usted (el creador del examen) |
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Cosas Que Necesita Saber](/results/things-you-need-to-know) — Requisitos esenciales para usar AutoProctor
+- [Cómo Ver los Resultados](/results/how-to-see-results) — Descripción general de resultados del examen vs. resultados de supervisión
+- [Puntaje de Confianza](/getting-started/trust-score) — Cómo se calculan los Puntajes de Confianza
+- [Configuración de Supervisión](/settings/proctoring-settings) — Configure qué se monitorea durante los exámenes
+- [Concurrencia](/settings/concurrency) — Comprenda los límites de candidatos simultáneos
+- [Compatibilidad de Dispositivos](/getting-started/device-compatibility) — Navegadores y dispositivos compatibles

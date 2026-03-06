@@ -3,21 +3,23 @@ title: "Blank Page or Grey Screen During Test"
 description: "Resolve blank page or grey screen issues when loading a proctored test. Usually caused by being signed into the wrong Google account."
 ---
 
-If your test displays a blank page or grey screen instead of loading the questions, the most common cause is that you are signed into a Google account that does not have access to the test.
+If your test displays a blank page or grey screen instead of loading the questions, the most common cause is that you are signed into a Google account that does not have access to the test form.
 
-## Why does this happen?
+## Why This Happens
 
-When a test administrator restricts access to specific email addresses, Google Forms blocks anyone signed in with a different account. AutoProctor loads the Google Form within its interface, so you see a blank or grey screen instead of the form's own error message.
+When a test administrator restricts access to specific email addresses, Google Forms blocks anyone signed in with a different account. AutoProctor loads the Google Form within its own interface, so you see a blank or grey screen instead of the form's own error message.
+
+{/* TODO: Add screenshot of blank page caused by wrong Google account within AutoProctor */}
 
 <Frame caption="Blank page caused by being signed into the wrong Google account">
   <img src="/images/candidate-issues/blank-page-google-account.png" alt="Blank page displayed when the wrong Google account is active in AutoProctor" />
 </Frame>
 
-## How to fix it
+## How to Fix It
 
 <Steps>
   <Step title="Log out of all Google accounts">
-    Visit [https://accounts.google.com/Logout](https://accounts.google.com/Logout) to sign out of all your Google accounts.
+    Visit [accounts.google.com/Logout](https://accounts.google.com/Logout) to sign out of all your Google accounts.
   </Step>
   <Step title="Sign back in with the correct account">
     Sign in with the Google account that has been granted access to the test. This is usually the email address your test administrator provided instructions for.
@@ -29,8 +31,8 @@ When a test administrator restricts access to specific email addresses, Google F
 
 <Note>
 For detailed setup instructions before taking a test, see:
-- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Google Accounts section
-- [Instructions for Taking a Timed Test](/taking-tests/timed-test-instructions) -- Google Accounts section
+- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) -- Google Account Setup section
+- [Instructions for Taking a Timed Test](/taking-tests/timed-test-instructions) -- Google Account Setup section
 </Note>
 
 ## Related Resources
@@ -38,5 +40,6 @@ For detailed setup instructions before taking a test, see:
 - [Cannot Click on Answer](/candidate-issues/cannot-click-answer) -- Similar issue caused by wrong Google account
 - [Cannot See Questions on Google Forms](/candidate-issues/google-forms-questions-not-visible) -- Google Form access issues
 - [Test Stuck at Loading Screen](/candidate-issues/loading-screen) -- Other loading issues
+- [How to Logout](/taking-tests/how-to-logout) -- Steps to switch accounts
 - [Device Compatibility](/getting-started/device-compatibility) -- Check supported browsers and devices
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

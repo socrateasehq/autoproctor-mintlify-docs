@@ -3,39 +3,55 @@ title: "Adding Collaborators to Your Tests"
 description: "Share test management access with other team members using AutoProctor's collaborator feature."
 ---
 
-You can invite other team members to co-manage a test by adding them as collaborators. Collaborators have full access to view results, change settings, and manage the test.
+Collaborators can co-manage your tests by viewing results, changing settings, and accessing all test data. You add collaborators by sharing a unique link from your test's Advanced Settings.
 
 <Note>
-Only **Premium** and **Elite** plan users can add collaborators. Collaborators must already be members of your [team](/pricing/teams). If someone is not yet on your team, invite them to join your team before adding them as a collaborator.
+Only **Premium** and **Elite** plan users can add collaborators. Collaborators must already be members of your [team](/pricing/teams). If someone is not yet on your team, invite them to join your team first.
 </Note>
 
 ## How to Add a Collaborator
 
 <Steps>
   <Step title="Open Advanced Settings">
-    Navigate to your test and open the **Advanced Settings** section.
+    Navigate to your test and open the **Advanced Settings** section at the bottom of the settings page.
+
+    {/* TODO: Add screenshot of the Advanced Settings section with the collaborators area visible */}
   </Step>
   <Step title="Copy the Collaborate Link">
-    Click the **collaborate link** to copy it to your clipboard.
+    Locate the collaborators section, which displays current collaborators and provides a link to add new ones. Click the **collaborate link** to copy it to your clipboard.
+
+    {/* TODO: Add screenshot of the collaborate link button */}
   </Step>
   <Step title="Share the Link">
-    Send the link to the team member you want to add as a collaborator.
+    Send the copied link to the team member you want to add as a collaborator.
   </Step>
   <Step title="Collaborator Accepts">
-    When the person clicks the link, they gain access to the test immediately.
+    When the person clicks the link, they gain access to the test immediately. They appear in the collaborators list for that test.
   </Step>
 </Steps>
 
 <Frame>
-  <img src="/images/creating-tests/collaborators-section.png" alt="Collaborators section in AutoProctor Advanced Settings" />
+  <img src="/images/creating-tests/collaborators-section.png" alt="Collaborators section in AutoProctor Advanced Settings showing the collaborate link and current collaborators list" />
 </Frame>
 
+## Collaborator Permissions
+
+Once added, collaborators receive **full read and edit access** to the test:
+
+| Permission | Access |
+|---|---|
+| View results | All candidate submissions and proctoring data |
+| Change settings | Timer, proctoring, and advanced settings |
+| Manage test | Archive, configure, and share the test |
+
 <Warning>
-Collaborator access is **permanent** — there is currently no way to remove a collaborator from a test once added. Collaborators receive full read and edit access, including the ability to change settings and view all results.
+Collaborator access is **permanent**. There is currently no way to remove a collaborator from a test once added. Share collaborate links only with people you trust with full test access.
 </Warning>
 
 ## Related Resources
 
-- [Test Settings](/creating-tests/test-settings) — All available test configuration options
-- [Teams](/pricing/teams) — Set up and manage your team
-- [Sharing Test Results](/results/sharing-test-results) — Other ways to share results
+- [Advanced Settings](/settings/advanced-settings) -- Login providers, collaborators, and other advanced options
+- [Teams](/pricing/teams) -- Set up and manage your team
+- [Sharing Test Results](/results/sharing-test-results) -- Other ways to share results with stakeholders
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows
+- [Proctoring Settings](/settings/proctoring-settings) -- Camera, microphone, and tab-switching options

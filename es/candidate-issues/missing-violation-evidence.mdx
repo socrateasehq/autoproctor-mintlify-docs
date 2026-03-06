@@ -1,11 +1,11 @@
 ---
-title: "Evidencia de infracciones faltante en el informe"
+title: "Evidencia de Infracciones Faltante en el Informe"
 description: "Conozca por qué algunas infracciones en el informe de supervisión pueden no tener archivos de evidencia asociados y cómo esto afecta los cálculos del Trust Score."
 ---
 
-Cada intento de examen tiene un número máximo de archivos de evidencia que puede almacenar. Si algunas infracciones en un informe de supervisión no tienen evidencia, el número total de infracciones excedió este límite de almacenamiento.
+Cada intento de examen tiene un número máximo de archivos de evidencia que puede almacenar. Si algunas infracciones en un informe de supervisión no tienen su evidencia, el número total de infracciones excedió este límite de almacenamiento.
 
-## Comprensión de infracciones vs. evidencia
+## Comprensión de Infracciones vs. Evidencia
 
 <CardGroup cols={2}>
   <Card title="Infracción">
@@ -18,29 +18,31 @@ Cada intento de examen tiene un número máximo de archivos de evidencia que pue
 
 El Trust Score se calcula en función del tipo, la frecuencia y la duración de las infracciones. Los archivos de evidencia se proporcionan en el informe de supervisión para que usted pueda revisar lo que sucedió durante el examen.
 
-## Tres razones para la evidencia faltante
+## Tres Razones para la Evidencia Faltante
 
-### 1. Límite de almacenamiento alcanzado (más común)
+### 1. Límite de Almacenamiento Alcanzado (Más Común)
 
-Cuando un examen comienza, AutoProctor asigna un número fijo de URL de almacenamiento para la evidencia. Una vez que se alcanza esta capacidad, el sistema decide aleatoriamente si sobreescribir la evidencia existente u omitir el almacenamiento de nueva evidencia (50% de probabilidad cada una).
+Cuando un examen comienza, AutoProctor asigna un número fijo de URL de almacenamiento para los archivos de evidencia. Una vez que se alcanza esta capacidad, el sistema decide aleatoriamente si sobreescribir la evidencia existente u omitir el almacenamiento de nueva evidencia (50% de probabilidad cada una).
 
 <Note>
-El Trust Score depende de las infracciones, no de si la evidencia fue almacenada. Todas las infracciones se registran y afectan el Trust Score incluso cuando los archivos de evidencia no están disponibles para su visualización.
+El Trust Score depende de las infracciones, no de si la evidencia fue almacenada. **Todas las infracciones se registran y afectan el Trust Score** incluso cuando los archivos de evidencia no están disponibles para su visualización.
 </Note>
 
-### 2. Problemas del dispositivo o internet
+### 2. Problemas del Dispositivo o Internet
 
-El dispositivo o la conexión a internet del candidato pueden haber impedido que la captura de pantalla fuera tomada o transmitida a los servidores de AutoProctor. Esto es común cuando los candidatos experimentan interrupciones breves de conectividad.
+El dispositivo o la conexión a internet del candidato pueden haber impedido que la captura de pantalla fuera tomada o transmitida a los servidores de AutoProctor. Esto es común cuando los candidatos experimentan interrupciones breves de conectividad durante el examen.
 
-### 3. Configuración de supervisión del examen
+### 3. Configuración de Supervisión del Examen
 
-El administrador del examen puede haber desactivado el almacenamiento de evidencia a través de la [configuración de supervisión del examen](/creating-tests/test-settings). Verifique la configuración de su examen para confirmar que la grabación de evidencia está activada.
+El administrador del examen puede haber desactivado el almacenamiento de evidencia a través de la configuración de supervisión del examen. Verifique su [configuración de supervisión](/settings/proctoring-settings) para confirmar que la grabación de evidencia está activada.
 
-## Recursos relacionados
+{/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
 
-- [Resultados de supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
-- [Comprensión del Trust Score](/getting-started/trust-score) -- Cómo se calculan los Trust Score
-- [Fotos aleatorias faltantes](/candidate-issues/missing-random-photos) -- Por qué las fotos aleatorias pueden estar ausentes
-- [Imágenes y grabaciones faltantes](/candidate-issues/missing-images-and-recordings) -- Evidencia faltante en los informes
-- [Configuración del examen](/creating-tests/test-settings) -- Configure el almacenamiento de evidencia y las opciones de supervisión
-- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda
+## Recursos Relacionados
+
+- [Resultados de Supervisión](/results/proctoring-results) -- Cómo revisar los informes de supervisión
+- [Comprensión del Trust Score](/getting-started/trust-score) -- Cómo se calculan los Trust Scores
+- [Fotos Aleatorias Faltantes](/candidate-issues/missing-random-photos) -- Por qué las fotos aleatorias pueden estar ausentes
+- [Imágenes y Grabaciones Faltantes](/candidate-issues/missing-images-and-recordings) -- Evidencia faltante en los informes
+- [Configuración de Supervisión](/settings/proctoring-settings) -- Configure el almacenamiento de evidencia y las opciones de supervisión
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

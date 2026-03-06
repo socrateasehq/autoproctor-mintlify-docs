@@ -1,39 +1,42 @@
 ---
-title: "Falso 'Mudou para outra aplicação'"
-description: "Por que a infração 'Mudou para outra aplicação' pode aparecer falsamente nos relatórios e por que não afeta o Trust Score em exames reais."
+title: "Falso 'Mudou para Outro Aplicativo'"
+description: "Por que a violação 'Mudou para outro aplicativo' pode aparecer falsamente nos relatórios e por que tem impacto insignificante no Trust Score em testes reais."
 ---
 
-Você pode notar uma infração de "Mudou para outra aplicação" a aparecer num relatório de supervisão mesmo que o candidato não tenha efetivamente mudado de aplicação. Este é um caso limite conhecido que tem um impacto insignificante nas pontuações de exames reais.
+Você pode notar uma violação de "Mudou para outro aplicativo" aparecendo em um relatório de supervisão mesmo que o candidato não tenha realmente mudado de aplicativo. Este é um caso limite conhecido que tem impacto insignificante nas pontuações de testes reais.
 
-## Por que ocorrem falsos positivos?
+## Por Que Ocorrem Falsos Positivos
 
-AutoProctor deteta mudanças de aplicação através do monitoramento de eventos de foco do navegador e mudanças no estado de visibilidade. Os falsos positivos podem ocorrer devido a:
+O AutoProctor detecta mudanças de aplicativo monitorando eventos de foco do navegador e mudanças no estado de visibilidade. Falsos positivos podem ocorrer devido a:
 
-- **Notificações do sistema operativo** -- notificações recebidas (como lembretes de calendário ou atualizações do sistema) podem desviar momentaneamente o foco do navegador
-- **Janelas emergentes do navegador** -- diálogos de permissão, solicitações de transferência ou sugestões de preenchimento automático podem acionar um evento de mudança de foco
-- **Atividade de dispositivos periféricos** -- ligar ou desligar dispositivos USB, auscultadores ou monitores externos pode interromper brevemente o foco do navegador
-- **Configurações com múltiplos monitores** -- mover o cursor perto das bordas do ecrã em configurações com múltiplos monitores pode acionar deteções falsas em alguns sistemas operativos
+- **Notificações do sistema operacional** -- notificações recebidas (como lembretes de calendário ou atualizações do sistema) podem desviar momentaneamente o foco do navegador
+- **Popups do navegador** -- caixas de diálogo de permissão, solicitações de download ou sugestões de preenchimento automático podem acionar um evento de mudança de foco
+- **Atividade de dispositivos periféricos** -- conectar ou desconectar dispositivos USB, fones de ouvido ou monitores externos pode interromper brevemente o foco do navegador
+- **Configurações com múltiplos monitores** -- mover o cursor perto das bordas da tela em configurações com múltiplos monitores pode acionar detecções falsas em alguns sistemas operacionais
 
-Esses eventos são registados como uma "mudança de aplicação" mesmo que o candidato nunca tenha abandonado o exame intencionalmente.
+Esses eventos são registrados como uma "mudança de aplicativo" mesmo que o candidato nunca tenha saído do teste intencionalmente.
 
-## Por que isso não afeta as pontuações de exames reais
+## Por Que Isso Não Afeta as Pontuações de Testes Reais
 
-Um exame real dura pelo menos vários minutos. Mesmo que AutoProctor detete falsamente um único evento de "Mudou para outra aplicação", o seu impacto no Trust Score é insignificante porque a pontuação pondera as infrações relativamente à duração total do exame.
+Um teste real dura pelo menos vários minutos. Mesmo que o AutoProctor detecte falsamente um único evento de "Mudou para outro aplicativo", seu impacto no Trust Score é insignificante porque a pontuação pondera as violações em relação à duração total do teste.
 
-Nos exames de demonstração, que duram apenas alguns segundos, uma única deteção falsa pode reduzir notavelmente o Trust Score. Isso acontece simplesmente porque o exame é demasiado curto para que a pontuação o absorva.
+Em testes de demonstração, que duram apenas alguns segundos, uma única detecção falsa pode reduzir notavelmente o Trust Score. Isso acontece simplesmente porque o teste é curto demais para que a pontuação absorva o evento.
 
 <Note>
-Se vir esta infração num exame de demonstração, não se preocupe. Em exames reais com duração de vários minutos ou mais, uma única deteção falsa não tem um impacto significativo no Trust Score.
+Se você vir esta violação em um teste de demonstração, não se preocupe. Em testes reais com duração de vários minutos ou mais, uma única detecção falsa não tem impacto significativo no Trust Score.
 </Note>
 
-## Como deve interpretar esta infração?
+## Como Interpretar Esta Violação
 
-Se o relatório de um candidato mostra apenas um ou dois eventos de "Mudou para outra aplicação" juntamente com um Trust Score alto, é muito provável que seja um falso positivo. Se o relatório mostra muitos eventos deste tipo ou eles ocorrem juntamente com outras infrações, justifica-se uma revisão mais detalhada.
+| Cenário | Explicação Provável |
+|---|---|
+| Um ou dois eventos de "mudança de aplicativo" junto com um Trust Score alto | Muito provavelmente um falso positivo causado por notificações, popups ou atividade de periféricos |
+| Muitos eventos de "mudança de aplicativo" ou eventos junto com outras violações | Justifica uma revisão mais detalhada do relatório completo e das fotos de evidência |
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Compreensão do Trust Score](/getting-started/trust-score) -- Como os Trust Score são calculados
-- [O que é monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que AutoProctor supervisiona
-- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
-- [Sem rosto ou múltiplos rostos detetados](/candidate-issues/no-face-or-multiple-faces) -- Outro cenário comum de falso positivo
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Entendendo o Trust Score](/getting-started/trust-score) -- Como os Trust Scores são calculados
+- [O Que É Monitorado](/getting-started/what-gets-tracked) -- Todos os eventos que o AutoProctor supervisiona
+- [Resultados de Supervisão](/results/proctoring-results) -- Como revisar relatórios de supervisão
+- [Sem Rosto ou Múltiplos Rostos Detectados](/candidate-issues/no-face-or-multiple-faces) -- Outro cenário comum de falso positivo
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

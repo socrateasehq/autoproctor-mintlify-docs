@@ -1,0 +1,104 @@
+---
+title: "Boas Práticas para Criadores de Testes"
+description: "Siga estas boas práticas ao administrar testes supervisionados no AutoProctor para garantir uma experiência tranquila para você e seus candidatos."
+---
+
+Uma administração de testes tranquila requer preparação. Siga estas boas práticas para minimizar problemas técnicos e garantir que seus candidatos tenham uma experiência de teste bem-sucedida.
+
+{/* TODO: Add video walkthrough of the complete test administration workflow */}
+
+## Lista de Verificação Pré-Teste
+
+<Steps>
+  <Step title="Peça que os candidatos façam um teste de demonstração">
+    Compartilhe o link do teste de demonstração com os candidatos pelo menos **24 horas** antes do exame real. A demonstração ajuda os candidatos a entender a plataforma, conceder as permissões necessárias do navegador e confirmar que o dispositivo atende aos requisitos técnicos.
+
+    Link da demonstração: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+
+    <Note>
+    O teste de demonstração não consome créditos de teste da sua conta. Os candidatos podem realizá-lo quantas vezes precisarem.
+    </Note>
+
+    {/* TODO: Add screenshot of the demo test landing page */}
+  </Step>
+  <Step title="Compartilhe instruções com os candidatos">
+    Distribua a página de instruções apropriada com base na configuração do seu teste:
+
+    - [Instruções para testes supervisionados](/taking-tests/proctored-test-instructions) — Para testes com supervisão ativada
+    - [Instruções para testes cronometrados](/taking-tests/timed-test-instructions) — Para testes apenas com temporizador
+    - [Página de instruções para candidatos](/taking-tests/instructions-page-for-candidates) — Visão geral para todos os tipos de teste
+  </Step>
+  <Step title="Verifique se sua conta tem créditos suficientes">
+    Certifique-se de que sua conta tem tentativas de teste suficientes disponíveis antes do exame. Se os candidatos tentarem carregar um teste e sua conta não tiver créditos, eles não poderão prosseguir.
+
+    Consulte [Pagamentos e Créditos](/pricing/payments-and-credits) para verificar seu saldo e comprar mais se necessário.
+
+    {/* TODO: Add screenshot of the account credits/balance display */}
+  </Step>
+  <Step title="Configure o tempo do teste com margem de tolerância">
+    Ao agendar testes cronometrados com duração e janela de tempo, aloque tempo extra de tolerância. Por exemplo, se seu teste dura 15 minutos, defina a janela em pelo menos 30 minutos para acomodar a configuração do candidato e atrasos técnicos.
+
+    Consulte [Configurações de Tempo](/settings/timer-settings) para detalhes de configuração.
+  </Step>
+  <Step title="Teste o link pessoalmente">
+    Antes de compartilhar o link do teste, clique nele você mesmo para verificar a experiência do candidato. Confirme que a página de instruções, a verificação da câmera e a configuração da supervisão carregam corretamente.
+  </Step>
+</Steps>
+
+## Distribuição de Links de Teste
+
+A forma como você compartilha o link do teste importa. Alguns métodos de distribuição causam problemas de compatibilidade.
+
+| Método | Recomendado? | Observações |
+|---|---|---|
+| **E-mail (Gmail, Outlook)** | Sim | Os links abrem no navegador padrão, o que funciona de forma confiável |
+| **Google Classroom** | Sim | Integra bem com o AutoProctor |
+| **LMS (Moodle, Canvas, etc.)** | Sim | Os links abrem no navegador do sistema |
+| **Telegram, Facebook, WhatsApp** | Não | Os navegadores internos dos aplicativos são frequentemente incompatíveis com a supervisão do AutoProctor |
+
+<Warning>
+Se os candidatos receberem links de teste por aplicativos de mensagens (como Telegram, WhatsApp ou Facebook Messenger), oriente-os a **copiar o link** e abri-lo diretamente no **Chrome** ou **Firefox**. Os navegadores internos dos aplicativos não possuem os recursos que o AutoProctor precisa para a supervisão.
+</Warning>
+
+<Note>
+Envie o link da demonstração pelo menos 24 horas antes do teste real. Envie o link do teste real mais próximo do horário agendado para evitar acesso antecipado.
+</Note>
+
+## Durante o Teste
+
+- **Esteja disponível** — Permaneça acessível por um canal de comunicação (como Google Meet, Zoom ou WhatsApp) durante a janela do teste para que os candidatos possam procurá-lo caso enfrentem problemas técnicos.
+- **Monitore seu painel** — Mantenha seu painel do AutoProctor aberto para monitorar os envios conforme chegam. Isso permite identificar problemas rapidamente (por exemplo, se muitos candidatos não conseguirem iniciar).
+
+{/* TODO: Add screenshot of the dashboard during an active test session showing real-time submissions */}
+
+## Após o Teste
+
+<Steps>
+  <Step title="Revise os resultados de supervisão">
+    Verifique os [Trust Scores](/getting-started/trust-score) e os relatórios de supervisão de cada candidato. Concentre sua revisão nos candidatos com pontuação inferior a 85%.
+
+    {/* TODO: Add screenshot of the results page with Trust Score column highlighted */}
+  </Step>
+  <Step title="Revise envios individuais se necessário">
+    Para candidatos com Trust Scores baixos, abra o [envio individual](/results/individual-submissions) para revisar as evidências completas de infrações, incluindo fotos, capturas de tela e clipes de áudio.
+  </Step>
+  <Step title="Esclareça as fontes dos resultados com os candidatos">
+    Certifique-se de que os candidatos entendam a diferença entre os resultados do AutoProctor e os resultados do questionário:
+
+    | Tipo de Informação | Onde Procurar |
+    |---|---|
+    | Trust Score e infrações de supervisão | Painel do AutoProctor |
+    | Notas, pontuações e respostas | Sua plataforma de questionários (Google Forms, Microsoft Forms ou Socratease) |
+    | Problemas técnicos durante o teste | [Suporte do AutoProctor](/support/contact-us) |
+    | Questões acadêmicas e dúvidas sobre notas | Você (o criador do teste) |
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Coisas que Você Precisa Saber](/results/things-you-need-to-know) — Requisitos essenciais para usar o AutoProctor
+- [Como Ver os Resultados](/results/how-to-see-results) — Visão geral dos resultados do teste vs. resultados de supervisão
+- [Trust Score](/getting-started/trust-score) — Como os Trust Scores são calculados
+- [Configurações de Supervisão](/settings/proctoring-settings) — Configure o que é monitorado durante os testes
+- [Concorrência](/settings/concurrency) — Entenda os limites de candidatos simultâneos
+- [Compatibilidade de Dispositivos](/getting-started/device-compatibility) — Navegadores e dispositivos compatíveis

@@ -1,0 +1,71 @@
+---
+title: "Concurrency - Max Simultaneous Candidates"
+description: "Understand AutoProctor's concurrency limits that control how many candidates can start tests simultaneously within a 60-second window."
+---
+
+Concurrency controls how many candidates can start any test under your account within the same 60-second window. Understanding these limits helps you plan large-scale test sessions and avoid unexpected delays for candidates.
+
+## What Is Max Concurrency?
+
+Max concurrency is the maximum number of candidates who can begin a test within any rolling 60-second period. This limit applies across **all tests on your account**, not per individual test.
+
+<Note>
+If you have three active tests and a concurrency limit of 1,000, the 1,000 limit is shared across all three tests combined -- not 1,000 per test.
+</Note>
+
+## Concurrency Limits by Plan
+
+### Tests with Proctoring Enabled
+
+| Plan | Max Concurrency |
+|---|---|
+| Standard | 1,000 candidates/minute |
+| Premium | 2,000 candidates/minute |
+| Elite | 5,000 candidates/minute |
+
+### Tests Without Proctoring
+
+| Plan | Max Concurrency |
+|---|---|
+| Standard | 50 candidates/minute |
+| Premium | 100 candidates/minute |
+| Elite | 150 candidates/minute |
+
+## Automated Staggering
+
+When demand exceeds your plan's capacity, AutoProctor automatically staggers candidate entry. Candidates who exceed the limit see a button with a countdown of up to 60 seconds before they can access the test.
+
+{/* TODO: Add screenshot of the staggering countdown button candidates see */}
+
+<Note>
+If your test has a duration configured, AutoProctor automatically adjusts each candidate's timer to account for staggering delays. No candidate loses test time due to concurrency limits.
+</Note>
+
+## SDK Users
+
+If you use AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. When this limit is exceeded, the SDK returns a 429 response. You must handle rate-limiting independently in your implementation.
+
+<Warning>
+SDK users do not benefit from automatic staggering. You must build your own retry logic to handle 429 responses when your concurrency limit is exceeded.
+</Warning>
+
+## Increasing Your Limits
+
+If you need higher concurrency limits, [contact the AutoProctor team](/support/contact-us):
+
+| Increase Type | Approximate Cost | Details |
+|---|---|---|
+| Temporary (one-time event) | $500 per 500 candidates/minute increment | One-time fee |
+| Permanent | $2,500/month per 500 candidates/minute increment | Annual commitment required |
+
+<Note>
+The platform supports up to a maximum of 25,000 candidates per minute.
+</Note>
+
+## Related Resources
+
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows
+- [Payments and Credits](/pricing/payments-and-credits) -- Plan details and pricing information
+- [Best Practices for Test Creators](/getting-started/best-practices-for-teachers) -- Tips for smooth test administration
+- [Things You Need to Know](/results/things-you-need-to-know) -- Critical requirements for using AutoProctor
+- [Contact Us](/support/contact-us) -- Reach the AutoProctor team for limit increases

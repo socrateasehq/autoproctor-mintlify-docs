@@ -1,11 +1,11 @@
 ---
 title: "False 'Switched to Different Application'"
-description: "Why the 'Switched to different application' violation may appear falsely in reports and why it does not affect Trust Scores on real tests."
+description: "Why the 'Switched to different application' violation may appear falsely in reports and why it has negligible impact on Trust Scores during real tests."
 ---
 
 You may notice a "Switched to different application" violation appearing in a proctoring report even though the candidate did not actually switch applications. This is a known edge case that has negligible impact on real test scores.
 
-## Why do false positives happen?
+## Why False Positives Happen
 
 AutoProctor detects application switches by monitoring browser focus events and visibility state changes. False positives can occur due to:
 
@@ -16,7 +16,7 @@ AutoProctor detects application switches by monitoring browser focus events and 
 
 These events register as an "app switch" even though the candidate never intentionally left the test.
 
-## Why this does not affect real test scores
+## Why This Does Not Affect Real Test Scores
 
 An actual test lasts at least several minutes. Even if AutoProctor falsely detects a single "Switched to different application" event, its impact on the Trust Score is negligible because the score weighs violations relative to the total test duration.
 
@@ -26,9 +26,12 @@ On demo tests, which last only a few seconds, a single false detection can notic
 If you see this violation on a demo test, do not worry about it. On actual tests lasting several minutes or longer, a single false detection has no meaningful impact on the Trust Score.
 </Note>
 
-## How should you interpret this violation?
+## How to Interpret This Violation
 
-If a candidate's report shows only one or two "Switched to different application" events alongside a high Trust Score, it is very likely a false positive. If the report shows many such events or they occur alongside other violations, it warrants further review.
+| Scenario | Likely Explanation |
+|---|---|
+| One or two "app switch" events alongside a high Trust Score | Very likely a false positive caused by notifications, popups, or peripheral activity |
+| Many "app switch" events or events alongside other violations | Warrants further review of the full report and evidence photos |
 
 ## Related Resources
 
@@ -36,4 +39,4 @@ If a candidate's report shows only one or two "Switched to different application
 - [What Gets Tracked](/getting-started/what-gets-tracked) -- All events AutoProctor monitors
 - [Proctoring Results](/results/proctoring-results) -- How to review proctoring reports
 - [No Face or Multiple Faces Detected](/candidate-issues/no-face-or-multiple-faces) -- Another common false positive scenario
-- [Contact Us](/getting-started/contact-us) -- Reach out if you need further help
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

@@ -1,0 +1,61 @@
+---
+title: "Restringir o Acesso ao Teste por Endereço de E-mail"
+description: "Limite quem pode realizar o seu teste restringindo o acesso a domínios de e-mail específicos ou endereços individuais usando Restrições de Login."
+---
+
+As Restrições de Login permitem que você controle exatamente quem pode realizar seu teste, filtrando candidatos com base no endereço de e-mail. Isso impede o acesso não autorizado mesmo que alguém compartilhe ou descubra o link do seu teste.
+
+## Como Configurar Restrições de E-mail
+
+<Steps>
+  <Step title="Abra as configurações do teste">
+    Navegue até o teste no seu painel do AutoProctor e clique no botão **Settings**.
+
+    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  </Step>
+  <Step title="Acesse as Configurações Avançadas">
+    Role até a seção **Advanced Settings** e localize os campos de **Login Restrictions**.
+
+    {/* TODO: Add screenshot of the Advanced Settings section with Login Restrictions fields visible */}
+  </Step>
+  <Step title="Adicione restrições de domínio ou e-mail">
+    Insira os domínios de e-mail ou endereços de e-mail específicos que deseja permitir. Você pode combinar ambos os tipos de restrições em um único campo (veja os exemplos abaixo).
+  </Step>
+  <Step title="Salve o teste">
+    Clique em **Create** ou **Update** para aplicar as restrições.
+  </Step>
+</Steps>
+
+## Restrições Baseadas em Domínio
+
+Você pode restringir o acesso a candidatos cujos endereços de e-mail terminam com domínios específicos. Por exemplo, ao inserir `@abc.com` e `@xyz.com`, apenas os candidatos com esses domínios de e-mail poderão realizar o teste.
+
+{/* TODO: Add screenshot of Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com */}
+
+<Frame>
+  <img src="/images/settings/login-restrictions-domain.png" alt="Campo de Restrições de Login mostrando restrições baseadas em domínio com @abc.com e @xyz.com inseridos" />
+</Frame>
+
+## Restrições por E-mail Específico
+
+Você também pode permitir endereços de e-mail individuais juntamente com restrições de domínio. Isso é útil quando a maioria dos candidatos compartilha um domínio, mas alguns participantes externos precisam de acesso.
+
+Por exemplo, você pode permitir todos os usuários cujo e-mail termina em `@abc.com` mais endereços de e-mail individuais específicos como `guest@gmail.com`.
+
+{/* TODO: Add screenshot of Login Restrictions field showing a combination of domain and individual email restrictions */}
+
+<Frame>
+  <img src="/images/settings/login-restrictions-email.png" alt="Campo de Restrições de Login mostrando uma combinação de restrições de domínio e e-mail individual" />
+</Frame>
+
+<Note>
+As restrições de e-mail funcionam em conjunto com o [método de login](/taking-tests/candidate-login-methods) do candidato. O candidato deve fazer login com um endereço de e-mail que corresponda a um dos domínios ou endereços permitidos que você especificou.
+</Note>
+
+## Recursos Relacionados
+
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) — Conheça as opções de autenticação disponíveis para candidatos
+- [Restringir a Candidatos Específicos](/settings/restricting-to-some-users) — Outros métodos para limitar o acesso ao teste
+- [Convidar Candidatos por E-mail](/settings/inviting-candidates-via-email) — Gere links de teste únicos por candidato
+- [Configurações Avançadas](/settings/advanced-settings) — Configure Restrições de Login e outras opções avançadas do teste
+- [Boas Práticas para Criadores de Testes](/getting-started/best-practices-for-teachers) — Dicas para uma administração de testes tranquila

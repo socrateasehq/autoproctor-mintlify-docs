@@ -1,0 +1,73 @@
+---
+title: "Configuración de Supervisión"
+description: "Configure la detección de cambio de pestaña, el monitoreo de cámara, la grabación de micrófono, el modo de pantalla completa obligatorio y otras opciones de supervisión."
+---
+
+La Configuración de Supervisión controla lo que AutoProctor monitorea durante un examen — desde el cambio de pestaña y la detección de cámara hasta el modo de pantalla completa obligatorio y la captura de fotos aleatorias. Estos ajustes determinan con qué nivel de rigor se supervisa a los candidatos.
+
+{/* TODO: Add screenshot of the full Proctoring Settings section */}
+
+<Frame>
+  <img src="/images/creating-tests/proctoring-settings.png" alt="Panel de configuración de supervisión" />
+</Frame>
+
+<Note>
+Para activar la supervisión, debe marcar la casilla **Activar Supervisión** en la sección de Configuración Principal. Si la supervisión está desactivada, ninguno de estos ajustes se aplica.
+</Note>
+
+## Opciones Básicas de Supervisión
+
+| Configuración | Qué Hace |
+|---|---|
+| **Cambio de Pestaña** | Detecta cuando un candidato cambia a una pestaña o aplicación diferente del navegador. Captura una captura de pantalla de la pestaña a la que cambió. |
+| **Detectar Múltiples Monitores** | Detecta si un candidato ha conectado monitores externos a su computadora. |
+| **Cámara** | Detecta si no hay ningún rostro visible en la cámara, o si hay múltiples rostros visibles. Captura fotos como evidencia. |
+| **Micrófono** | Monitorea el entorno sonoro y graba audio cuando se detecta ruido. |
+| **Fotos Aleatorias** | Captura algunas fotos aleatorias durante el examen a intervalos aleatorios. |
+| **Pantalla Completa Obligatoria** | Obliga a los candidatos a realizar el examen en modo de pantalla completa. Salir del modo de pantalla completa se registra como una infracción. |
+| **Exigir Escritorio** | Requiere que los candidatos usen una computadora de escritorio o portátil. El examen no se cargará en tabletas o dispositivos móviles. |
+| **Foto Antes del Inicio del Examen** | Captura una foto del candidato antes de que comience el examen. |
+| **Personalizar Mensaje** | Personalice el mensaje que ven los candidatos cuando se les pide tomar una foto antes del examen. Use esto para pedir a los candidatos que muestren su documento de identidad. |
+
+<Note>
+La opción **Personalizar Mensaje** es una función Premium.
+</Note>
+
+{/* TODO: Add GIF showing the candidate experience when Photo Before Test Start is enabled */}
+
+## Supervisión Avanzada
+
+La supervisión avanzada agrega medidas adicionales contra el fraude. Cada función avanzada requiere **4 créditos adicionales por intento**.
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Configuración de supervisión avanzada" />
+</Frame>
+
+| Función | Qué Hace | Créditos |
+|---|---|---|
+| **Verificación de Documento de Identidad** | El candidato sube un documento de identidad (credencial estudiantil, pasaporte, licencia de conducir, identificación oficial) con su foto y nombre visibles. AutoProctor lo verifica contra la Foto Antes del Inicio del Examen y el nombre que ingresó. | 4 por intento |
+| **Detección de Suplantación** | Detecta si alguien diferente al candidato original está realizando el examen. | 4 por intento |
+| **Dispositivo Auxiliar (360°)** | El candidato empareja su teléfono con su computadora portátil para supervisión de 360 grados. También ayuda a detectar herramientas de IA que muestran respuestas como superposiciones en pantalla. | 4 por intento |
+| **Grabación de Sesión** | Graba la pantalla y las acciones del candidato, incluyendo clics del ratón y entrada del teclado. | 4 por intento |
+
+{/* TODO: Add video walkthrough of the 360-degree auxiliary device pairing process */}
+
+## Configuración de Comunicación
+
+Estos ajustes controlan cómo se maneja la evidencia de infracciones:
+
+- **Para mí después del Examen** — Almacena evidencia (fotos, audio, capturas de pantalla) para revisión posterior. Mantenga esto activado a menos que tenga una razón específica para desactivarlo.
+- **Al usuario durante el Examen** — Notifica al candidato durante el examen cuando se detecta una infracción. Esto ayuda a los candidatos a corregir problemas inofensivos (como música de fondo que activa una infracción de ruido).
+
+<Note>
+Recomendamos mantener ambas configuraciones de comunicación activadas para la mejor experiencia de supervisión.
+</Note>
+
+## Recursos Relacionados
+
+- [Configuración del Temporizador](/settings/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Supervisión Avanzada](/settings/enhanced-proctoring) — Guía detallada sobre verificación de identidad, detección de suplantación y supervisión de 360°
+- [Configuración del Cuestionario](/socratease/quiz-settings) — Para configuraciones específicas de cuestionarios Socratease, consulte la página de Configuración del Cuestionario de Socratease
+- [Qué Se Monitorea](/getting-started/what-gets-tracked) — Lista completa de todo lo que AutoProctor supervisa
+- [Resultados de Supervisión](/results/proctoring-results) — Cómo revisar los datos de supervisión después de un examen
+- [Puntaje de Confianza](/getting-started/trust-score) — Cómo se calcula el puntaje de confianza a partir de los datos de supervisión

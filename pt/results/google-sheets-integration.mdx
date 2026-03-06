@@ -1,53 +1,62 @@
 ---
-title: "Escrever resultados automaticamente no Google Sheets"
-description: "Configure a exportação automática de resultados de testes do AutoProctor para o Google Sheets para que os dados fluam em tempo real sem transferências manuais."
+title: "Escrever Resultados Automaticamente no Google Sheets"
+description: "Configure a exportação automática de resultados de testes do AutoProctor para o Google Sheets para que os dados fluam em tempo real sem downloads manuais."
 ---
 
-Em vez de transferir ficheiros de Excel manualmente após cada teste, pode configurar o AutoProctor para escrever automaticamente os resultados do teste numa folha de Google Sheets. Os resultados aparecem na folha à medida que os candidatos concluem os seus testes.
+Em vez de baixar arquivos Excel manualmente após cada teste, você pode configurar o AutoProctor para escrever automaticamente os resultados do teste em uma planilha Google Sheets. Os resultados aparecem na planilha à medida que os candidatos completam seus testes, mantendo seus dados atualizados sem nenhum esforço adicional.
 
 <Note>
-Esta é uma **Funcionalidade Premium** e requer uma subscrição Premium ou Elite. Consulte [Pagamentos e créditos](/pricing/payments-and-credits) para obter detalhes do plano.
+Esta é uma **Funcionalidade Premium** e requer uma assinatura Premium ou Elite. Consulte [Pagamentos e Créditos](/pricing/payments-and-credits) para detalhes dos planos.
 </Note>
 
-## Instruções de configuração
+## Instruções de Configuração
 
 <Steps>
-  <Step title="Abra as definições do teste">
-    Visite as **Definições do teste** de um teste novo ou existente no seu painel do AutoProctor.
+  <Step title="Abra as configurações do teste">
+    Acesse as **Configurações do Teste** de um teste novo ou existente no seu painel do AutoProctor.
+
+    {/* TODO: Add screenshot of the Test Settings page showing Advanced Settings section */}
   </Step>
   <Step title="Localize o campo ID do Google Sheets">
-    Desloque-se até à secção **Definições avançadas** e localize o campo **Google Sheets ID**.
+    Role até a seção **Advanced Settings** e localize o campo **Google Sheets ID**.
+
+    {/* TODO: Add screenshot of the Google Sheets ID field in Advanced Settings */}
   </Step>
-  <Step title="Crie uma folha de Google Sheets em branco">
-    Crie uma folha de Google Sheets vazia no seu Google Drive.
+  <Step title="Crie uma planilha Google Sheets em branco">
+    Crie uma planilha Google Sheets vazia no seu Google Drive. Você usará esta planilha para receber os resultados do AutoProctor.
   </Step>
-  <Step title="Conceda acesso de escrita">
-    Partilhe a folha de Google Sheets com `hello@autoproctor.co` e conceda permissões de **Editor**. Isto permite que o AutoProctor escreva dados na folha.
+  <Step title="Conceda acesso de edição">
+    Compartilhe a planilha Google Sheets com `hello@autoproctor.co` e conceda permissões de **Editor**. Isso permite que o AutoProctor escreva dados na planilha.
+
+    <Warning>
+    Se você não compartilhar a planilha com `hello@autoproctor.co` como Editor, o AutoProctor não conseguirá escrever resultados nela. Certifique-se de conceder acesso de Editor, não apenas de Visualizador.
+    </Warning>
   </Step>
-  <Step title="Cole o URL da folha de Google Sheets">
-    Copie o URL da sua folha de Google Sheets e cole-o no campo **Google Sheets ID** nas definições do teste do AutoProctor.
+  <Step title="Cole a URL da planilha Google Sheets">
+    Copie a URL da sua planilha Google Sheets e cole-a no campo **Google Sheets ID** nas configurações do teste do AutoProctor.
   </Step>
-  <Step title="Guarde o teste">
-    Clique em **Criar** ou **Atualizar** para guardar a configuração do teste.
+  <Step title="Salve o teste">
+    Clique em **Create** ou **Update** para salvar a configuração do teste.
   </Step>
   <Step title="Verifique a integração">
-    Complete uma tentativa de teste. Aparecerá automaticamente um novo separador denominado **AutoProctor** na sua folha de Google Sheets com os dados dos resultados.
+    Complete uma tentativa de teste. Uma nova aba chamada **AutoProctor** aparecerá automaticamente na sua planilha Google Sheets com os dados dos resultados.
   </Step>
 </Steps>
 
-As tentativas de teste subsequentes preenchem automaticamente a mesma folha de Google Sheets sem necessidade de configuração adicional.
+As tentativas de teste subsequentes preenchem automaticamente a mesma planilha Google Sheets sem necessidade de configuração adicional.
 
-## Integração com Socratease Quizzes
+## Integração com Questionários Socratease
 
-Para Socratease Quizzes, o sistema escreve tanto as pontuações de supervisão como as pontuações do questionário na folha. No entanto, as perguntas e respostas individuais não são incluídas; apenas aparecem os dados de pontuação agregados.
+Para Questionários Socratease, o sistema escreve tanto as pontuações de supervisão quanto as pontuações do questionário na planilha. No entanto, perguntas e respostas individuais não são incluídas -- apenas dados de pontuação agregados aparecem.
 
 <Note>
-Se necessita de dados detalhados ao nível da pergunta para Socratease Quizzes, utilize a vista de [submissões individuais](/results/individual-submissions) no painel do AutoProctor.
+Se você precisa de dados detalhados por pergunta para Questionários Socratease, use a visualização de [submissões individuais](/results/individual-submissions) no painel do AutoProctor.
 </Note>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Exportar para Excel](/results/export-to-excel) -- Transferir resultados manualmente como folha de cálculo
-- [Definições do teste](/creating-tests/test-settings) -- Configurar todas as opções do teste, incluindo integrações
-- [Como ver os resultados no AutoProctor](/results/how-to-see-results) -- Descrição geral dos resultados do teste versus resultados de supervisão
-- [Pagamentos e créditos](/pricing/payments-and-credits) -- Detalhes do plano e disponibilidade de funcionalidades
+- [Exportar para Excel](/results/export-to-excel) -- Baixe resultados manualmente como planilha
+- [Consultar Submissões Individuais](/results/individual-submissions) -- Veja respostas detalhadas por candidato
+- [Como Ver os Resultados no AutoProctor](/results/how-to-see-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
+- [Pagamentos e Créditos](/pricing/payments-and-credits) -- Detalhes dos planos e disponibilidade de funcionalidades
+- [Compartilhar Resultados do Teste](/results/sharing-test-results) -- Conceda acesso aos resultados do teste para outros usuários

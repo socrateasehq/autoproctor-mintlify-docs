@@ -1,0 +1,76 @@
+---
+title: "Maximum Attempts for a Test"
+description: "Configure how many times candidates can attempt a test on AutoProctor and understand how attempt tracking works across login methods."
+---
+
+The **Max Attempts** setting lets you control how many times each candidate can take a specific test. Once a candidate reaches the limit, AutoProctor blocks further attempts and displays a notification.
+
+## How to Configure Maximum Attempts
+
+<Steps>
+  <Step title="Open test settings">
+    Navigate to your test on the AutoProctor dashboard and click the **Settings** button.
+
+    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  </Step>
+  <Step title="Set the Max Attempts value">
+    In the **Main Settings** section, locate the **Max Attempts** field and enter the number of allowed attempts.
+
+    {/* TODO: Add screenshot of the Max Attempts field in Main Settings */}
+
+    <Frame>
+      <img src="/images/settings/max-attempts-setting.png" alt="Max Attempts setting field in AutoProctor Main Settings showing the numeric input" />
+    </Frame>
+  </Step>
+  <Step title="Save the test">
+    Click **Create** or **Update** to apply the setting.
+  </Step>
+</Steps>
+
+When a candidate exceeds their allowed attempts, they see a restriction message and cannot proceed.
+
+{/* TODO: Add screenshot of the restriction message candidates see when attempts are exhausted */}
+
+<Frame>
+  <img src="/images/settings/max-attempts-blocked.png" alt="Restriction message shown to candidates when they have exceeded the maximum number of test attempts" />
+</Frame>
+
+## Recommended Configuration
+
+| Test Type | Recommended Max Attempts | Reason |
+|---|---|---|
+| Google Forms | 1 | AutoProctor [automatically resumes](/settings/resuming-test-attempts) these tests if candidates reload or revisit the link |
+| Socratease Quiz | 1 | AutoProctor [automatically resumes](/settings/resuming-test-attempts) these tests if candidates reload or revisit the link |
+| Microsoft Forms | Based on your needs | Each visit creates a new attempt; resumption is not supported |
+| IFrame Tests | Based on your needs | Configurable resume behavior; adjust attempts accordingly |
+
+<Note>
+For Google Forms and Socratease Quizzes, set **Max Attempts** to **1**. AutoProctor automatically [resumes these tests](/settings/resuming-test-attempts) if candidates reload the page or revisit the link, so multiple attempts are not needed for resumption.
+</Note>
+
+## How Attempts Are Tracked
+
+AutoProctor tracks attempts by the email address used to sign in. This means:
+
+- Each unique email address counts as a separate candidate, regardless of who is behind it.
+- If a candidate signs in with different email addresses across attempts (for example, using **Sign in with Google** once and **Sign in with Email** another time with a different address), each email counts separately, effectively bypassing the attempt limit.
+
+<Warning>
+If a candidate uses different login methods that resolve to different email addresses, each one counts as a separate candidate. This can allow them to bypass the maximum attempts limit.
+</Warning>
+
+## Preventing Attempt Limit Bypass
+
+To prevent candidates from circumventing the maximum attempts setting:
+
+- **Restrict login methods** -- Choose a test type that supports only one sign-in option. Google Forms restricts candidates to Google sign-in only, and Microsoft Forms restricts to Microsoft sign-in only. See [Candidate Login Methods](/taking-tests/candidate-login-methods).
+- **Use email restrictions** -- Limit access to specific email domains or addresses so candidates cannot use alternative accounts. See [Restrict Test Access by Email Address](/settings/restricting-by-email).
+- **Use unique invitation links** -- Generate per-candidate URLs that enforce email verification. See [Inviting Candidates via Email](/settings/inviting-candidates-via-email).
+
+## Related Resources
+
+- [Candidate Login Methods](/taking-tests/candidate-login-methods) -- How login methods affect attempt tracking
+- [Resuming Test Attempts](/settings/resuming-test-attempts) -- How test resumption works across test types
+- [Restrict Test Access by Email Address](/settings/restricting-by-email) -- Limit access by email domain or address
+- [Timer Settings](/settings/timer-settings) -- Configure test duration and time windows
+- [Inviting Candidates via Email](/settings/inviting-candidates-via-email) -- Send unique test links to candidates

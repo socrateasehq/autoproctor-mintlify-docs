@@ -3,7 +3,7 @@ title: "Device Compatibility"
 description: "Check which browsers, operating systems, and devices are supported for taking proctored tests on AutoProctor."
 ---
 
-AutoProctor uses modern browser technologies for real-time AI monitoring. Your browser and device must meet certain minimum requirements for proctoring to function correctly.
+AutoProctor runs AI monitoring algorithms directly on the candidate's device, which requires specific browser features and adequate processing power. Before taking a proctored test, candidates must confirm their browser and device meet the minimum requirements listed below.
 
 ## Supported Browsers and Devices
 
@@ -21,21 +21,52 @@ AutoProctor uses modern browser technologies for real-time AI monitoring. Your b
 | iOS (iPad/iPhone) OS 16.1+ | Chrome | 82 |
 
 <Warning>
-Any browser and OS combination **not listed** in the table above is not supported. Candidates using unsupported configurations may experience loading issues or test failures.
+Any browser and OS combination **not listed** in the table above is not supported. Candidates using unsupported configurations (for example, Brave on Windows or Opera on Android) may experience loading failures or broken proctoring functionality.
 </Warning>
 
 <Note>
-For the best experience, use a device that is less than 3 years old. AutoProctor runs AI algorithms on the candidate's device, which requires adequate processing power.
+For the best experience, use a device that is less than 3 years old. AutoProctor runs AI algorithms on the candidate's device, which requires adequate processing power. Older devices may cause the test to run slowly or lag.
 </Note>
 
-## Verify Your Device
+## How to Verify Your Device
 
-Before your actual test, take the demo test to confirm your device and browser are compatible:
+<Steps>
+  <Step title="Open the demo test link">
+    Visit the demo test to confirm your device and browser are compatible:
 
-[Take the Demo Test](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+    [Take the Demo Test](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+
+    {/* TODO: Add screenshot of the demo test landing page */}
+  </Step>
+  <Step title="Grant camera and microphone permissions">
+    When prompted, allow your browser to access the camera and microphone. If proctoring permissions fail, your browser or device may not be supported.
+
+    {/* TODO: Add screenshot of the browser permission prompt for camera/microphone */}
+  </Step>
+  <Step title="Complete the demo">
+    Work through the demo test to confirm that all proctoring features load correctly, including the camera preview, screen sharing prompt, and full-screen mode.
+
+    {/* TODO: Add screenshot of a successful demo test completion screen */}
+  </Step>
+</Steps>
+
+<Note>
+The demo test does not consume test credits from any account. Candidates can take it as many times as they need.
+</Note>
+
+## Common Compatibility Issues
+
+| Problem | Likely Cause | Solution |
+|---|---|---|
+| Test stuck at loading screen | Unsupported browser or outdated version | Update the browser or switch to Chrome |
+| Camera not detected | Browser permissions blocked | Allow camera access in browser settings |
+| Test runs slowly or lags | Device is too old or low on resources | Close other applications, or use a newer device |
+| Screen share prompt missing | Browser does not support screen capture API | Switch to Chrome or Edge on desktop |
 
 ## Related Resources
 
-- [Test Stuck at Loading Screen](/candidate-issues/loading-screen) — Troubleshoot loading issues
-- [Slow and Laggy Test](/candidate-issues/slow-and-laggy) — Fix performance problems
-- [Instructions for Taking a Proctored Test](/taking-tests/proctored-test-instructions) — What candidates need to know
+- [Test Stuck at Loading Screen](/candidate-issues/loading-screen) -- Troubleshoot loading issues
+- [Slow and Laggy Test](/candidate-issues/slow-and-laggy) -- Fix performance problems
+- [Blank Page or Grey Screen](/candidate-issues/blank-page-grey-screen) -- Resolve display issues
+- [Proctored Test Instructions](/taking-tests/proctored-test-instructions) -- What candidates need to know before starting
+- [Best Practices for Teachers](/getting-started/best-practices-for-teachers) -- Tips including sharing the demo test in advance

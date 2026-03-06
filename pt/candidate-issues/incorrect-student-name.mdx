@@ -1,44 +1,49 @@
 ---
-title: "Nome incorreto do candidato nos resultados"
-description: "Corrija nomes incorretos de candidatos que aparecem na página de resultados ou na exportação de Excel. Os nomes são obtidos da conta de Google ou Microsoft vinculada do candidato."
+title: "Nome Incorreto do Candidato nos Resultados"
+description: "Corrija nomes incorretos de candidatos que aparecem na página de resultados ou na exportação Excel. Os nomes são obtidos do perfil da conta Google ou Microsoft vinculada do candidato."
 ---
 
-AutoProctor não pede aos candidatos que digitem o seu nome diretamente. Em vez disso, obtém o nome da conta utilizada para iniciar sessão. Se o nome de um candidato aparece incorretamente nos resultados, o problema tem origem no perfil da sua conta.
+O AutoProctor não pede aos candidatos que digitem seu nome diretamente. Em vez disso, obtém o nome da conta utilizada para fazer login. Se o nome de um candidato aparece incorretamente nos resultados, o problema tem origem no perfil da conta -- não no AutoProctor.
 
-## Por que isso acontece?
+## Por Que Isso Acontece
 
-AutoProctor obtém os nomes dos candidatos do fornecedor de autenticação que utilizaram para iniciar sessão:
+O AutoProctor obtém os nomes dos candidatos do provedor de autenticação que utilizaram para fazer login:
 
-- **Conta de Google** -- o nome de exibição configurado nas [definições da conta de Google](https://myaccount.google.com/personal-info)
-- **Conta de Microsoft** -- o nome de exibição configurado nas [definições da conta de Microsoft](https://account.microsoft.com/profile)
+| Método de Login | Origem do Nome |
+|---|---|
+| Conta Google | Nome de exibição configurado nas [configurações da Conta Google](https://myaccount.google.com/personal-info) |
+| Conta Microsoft | Nome de exibição configurado nas [configurações da Conta Microsoft](https://account.microsoft.com/profile) |
 
-Se o nome na conta de Google ou Microsoft estiver incorreto, mal escrito ou usar um apelido, esse mesmo nome aparecerá nos resultados de AutoProctor.
+Se o nome na conta Google ou Microsoft estiver incorreto, com erro de digitação ou usando um apelido, esse mesmo nome aparecerá nos resultados do AutoProctor.
 
 <Note>
-AutoProctor obtém os nomes dos candidatos diretamente do perfil da sua conta de Google ou Microsoft. Se o nome estiver errado nos resultados, o candidato precisa atualizar o seu perfil -- seja na sua conta de Google/Microsoft ou diretamente em AutoProctor.
+O AutoProctor obtém os nomes dos candidatos diretamente do perfil da conta. Se o nome estiver errado nos resultados, o candidato precisa atualizar seu perfil diretamente no AutoProctor.
 </Note>
 
-<Frame caption="Exemplo de um nome incorreto de candidato exibido nos resultados de AutoProctor">
-  <img src="/images/candidate-issues/incorrect-student-name.png" alt="Nome incorreto do candidato mostrado na página de resultados de AutoProctor" />
+{/* TODO: Add screenshot of incorrect candidate name displayed in AutoProctor results page */}
+
+<Frame caption="Exemplo de um nome incorreto de candidato exibido nos resultados do AutoProctor">
+  <img src="/images/candidate-issues/incorrect-student-name.png" alt="Nome incorreto do candidato mostrado na página de resultados do AutoProctor" />
 </Frame>
 
-## Como resolver
+## Como Resolver
 
 <Steps>
   <Step title="Identifique o e-mail do candidato">
-    Encontre o endereço de e-mail associado à tentativa de exame do candidato na página de resultados.
+    Encontre o endereço de e-mail associado à tentativa de teste do candidato na página de resultados.
   </Step>
-  <Step title="Indique ao candidato que atualize o seu perfil">
-    Peça ao candidato que visite [https://www.autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) e atualize o seu nome.
+  <Step title="Indique ao candidato que atualize o perfil">
+    Peça ao candidato que acesse [autoproctor.co/account/edit-profile](https://www.autoproctor.co/account/edit-profile) e atualize seu nome. Compartilhe este link com o candidato junto com uma nota identificando qual endereço de e-mail precisa da correção.
   </Step>
   <Step title="Verifique a alteração">
-    Assim que o candidato atualizar o seu nome no perfil, a alteração reflete-se automaticamente em todos os relatórios de exames existentes. Não é necessária nenhuma ação adicional por parte do administrador do exame.
+    Assim que o candidato atualizar o nome no perfil do AutoProctor, a alteração reflete automaticamente em todos os relatórios de testes existentes. Nenhuma ação adicional é necessária por parte do administrador do teste.
   </Step>
 </Steps>
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Resultados de supervisão](/results/proctoring-results) -- Como rever os relatórios de supervisão
-- [Configurações do exame](/creating-tests/test-settings) -- Configure as definições do seu exame
-- [Instruções para realizar um exame supervisionado](/taking-tests/proctored-test-instructions) -- Guia de configuração para candidatos
-- [Contacte-nos](/getting-started/contact-us) -- Entre em contacto se precisar de mais ajuda
+- [Resultados de Supervisão](/results/proctoring-results) -- Como revisar relatórios de supervisão
+- [Como Fazer Logout](/taking-tests/how-to-logout) -- Troque de conta se a conta errada foi usada
+- [Métodos de Login do Candidato](/taking-tests/candidate-login-methods) -- Entenda as opções de login
+- [Instruções para Testes Supervisionados](/taking-tests/proctored-test-instructions) -- Guia de configuração para candidatos
+- [Fale Conosco](/support/contact-us) -- Entre em contato se precisar de ajuda adicional

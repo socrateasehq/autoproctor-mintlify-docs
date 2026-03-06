@@ -1,63 +1,72 @@
 ---
-title: "Funcionalidades do plano Elite"
+title: "Funcionalidades do Plano Elite"
 description: "Explore as funcionalidades exclusivas disponíveis apenas no plano Elite do AutoProctor, incluindo acesso à API, bancos de perguntas e tipos de perguntas avançados."
 ---
 
-O plano Elite é o nível com mais funcionalidades do AutoProctor. Inclui tudo o que os planos Standard e Premium oferecem, além de várias capacidades exclusivas concebidas para fluxos de trabalho de avaliação avançados.
+O plano Elite é o nível com mais funcionalidades do AutoProctor. Inclui tudo dos planos Standard e Premium, além de várias capacidades exclusivas projetadas para fluxos de trabalho de avaliação avançados.
 
 <Warning>
-Estas funcionalidades estão disponíveis **apenas** no plano Elite. Você não terá acesso a elas na Avaliação gratuita nem nos planos Standard ou Premium.
+Estas funcionalidades estão disponíveis **apenas** no plano Elite. Você não terá acesso a elas na Avaliação Gratuita nem nos planos Standard ou Premium.
 </Warning>
 
-## Funcionalidades exclusivas do plano Elite
+## Funcionalidades Exclusivas do Plano Elite
 
-Conforme apresentado na [Página de preços](https://www.autoproctor.co/pricing), o AutoProctor oferece três níveis de assinatura: **Standard**, **Premium** e **Elite**. As seguintes funcionalidades são exclusivas do plano Elite.
+Conforme apresentado na [Página de Preços](https://www.autoproctor.co/pricing), o AutoProctor oferece três níveis de assinatura: **Standard**, **Premium** e **Elite**. As seguintes funcionalidades são exclusivas do plano Elite.
 
 ### Acesso a API/SDK
 
-Se já possuir a sua própria plataforma de questionários ou avaliações e pretender adicionar supervisão, pode integrar o AutoProctor utilizando o SDK de JavaScript. Isto permite incorporar a supervisão diretamente no seu fluxo de trabalho existente, sem exigir que os candidatos utilizem uma plataforma separada.
+Se você já possui sua própria plataforma de questionários ou avaliações e deseja adicionar supervisão, pode integrar o AutoProctor usando o SDK de JavaScript. Isso permite incorporar a supervisão diretamente no seu fluxo de trabalho existente, sem exigir que os candidatos usem uma plataforma separada.
 
-### Clonagem de questionários
+{/* TODO: Add screenshot or diagram showing API/SDK integration flow */}
 
-Pode **duplicar questionários de Socratease com um único clique**. Isto é especialmente útil quando precisa criar vários questionários que partilham uma estrutura semelhante mas diferem em perguntas ou configurações específicas.
+### Clonagem de Questionários
+
+Você pode **duplicar Questionários Socratease com um único clique**. Isso é especialmente útil quando você precisa criar vários questionários que compartilham uma estrutura semelhante mas diferem em perguntas ou configurações específicas.
+
+{/* TODO: Add screenshot of the Clone Quiz button on the dashboard */}
 
 <Note>
-As seguintes funcionalidades (Bancos de perguntas, Mais tipos de perguntas e Importar do Excel) aplicam-se especificamente aos questionários de Socratease.
+As seguintes funcionalidades (Bancos de Perguntas, Mais Tipos de Perguntas e Importar do Excel) se aplicam especificamente aos Questionários Socratease.
 </Note>
 
-### Bancos de perguntas
+### Bancos de Perguntas
 
-Os bancos de perguntas permitem criar grandes grupos de perguntas e selecionar subconjuntos de forma dinâmica para cada candidato. Isto suporta dois casos de uso principais:
+Os Bancos de Perguntas permitem criar grandes grupos de perguntas e selecionar subconjuntos de forma dinâmica para cada candidato. Isso suporta dois casos de uso principais:
 
-1. **Subconjunto aleatório por dificuldade** -- Selecione uma quantidade específica de perguntas em cada nível de dificuldade. Por exemplo, 5 perguntas fáceis e 2 difíceis de escolha múltipla de um grupo de 100.
-2. **Combinar múltiplos grupos** -- Extraia perguntas de grupos separados por tema. Por exemplo, 3 perguntas de Física e 2 de Química de dois grupos separados de 100 cada.
+| Caso de Uso | Exemplo |
+|---|---|
+| **Subconjunto aleatório por dificuldade** | Selecione 5 questões fáceis e 2 difíceis de múltipla escolha de um grupo de 100 perguntas |
+| **Combinar múltiplos grupos** | Extraia 3 questões de Física e 2 de Química de dois grupos separados de 100 cada |
 
-### Mais tipos de perguntas
+Para um guia detalhado, consulte [Bancos de Perguntas](/socratease/question-banks).
 
-Os questionários de Socratease suportam muitos formatos de perguntas. Os seguintes são exclusivos do plano Elite:
+### Mais Tipos de Perguntas
+
+Os Questionários Socratease suportam muitos formatos de perguntas. Os seguintes são exclusivos do plano Elite:
 
 <CardGroup cols={3}>
-  <Card title="Entrada de voz">
-    Os candidatos gravam-se a falar a resposta. Útil para avaliações de idiomas, exames orais e perguntas de tipo apresentação.
+  <Card title="Entrada de Voz">
+    Os candidatos gravam-se falando a resposta. Útil para avaliações de idiomas, exames orais e perguntas no estilo apresentação.
   </Card>
-  <Card title="Texto com correção automática">
-    Você especifica a resposta correta ao criar a pergunta. Os candidatos digitam a sua resposta e, se coincidir exatamente, recebem a pontuação completa. Caso contrário, recebem 0 pontos.
+  <Card title="Texto com Correção Automática">
+    Você especifica a resposta correta ao criar a pergunta. Se a resposta do candidato coincidir exatamente, ele recebe pontuação completa. Caso contrário, recebe 0 pontos.
   </Card>
-  <Card title="Responder qualquer uma">
-    Apresente múltiplas perguntas (por exemplo, 5) e permita aos candidatos responder a um subconjunto (por exemplo, 3). As quantidades são totalmente configuráveis.
+  <Card title="Responder Qualquer Uma">
+    Apresente múltiplas perguntas (por exemplo, 5) e permita que os candidatos respondam um subconjunto (por exemplo, 3). As quantidades são totalmente configuráveis.
   </Card>
 </CardGroup>
 
+Para a lista completa de tipos de perguntas, consulte [Tipos de Perguntas do Socratease](/socratease/question-types).
+
 ### Importar do Excel
 
-Utilizando o modelo de Excel do AutoProctor, pode **carregar perguntas em massa** para um questionário de Socratease. Isto é ideal para migrar conjuntos de perguntas existentes ou criar avaliações extensas rapidamente.
+Usando o modelo Excel do AutoProctor, você pode **importar perguntas em massa** para um Questionário Socratease. Isso é ideal para migrar conjuntos de perguntas existentes ou criar avaliações extensas rapidamente. Consulte [Importação em Massa do Excel](/socratease/bulk-import-from-excel) para instruções passo a passo.
 
-## Recursos relacionados
+## Recursos Relacionados
 
-- [Pagamentos e créditos explicados](/pricing/payments-and-credits) -- Compreenda os níveis de assinatura e os preços
-- [O que é uma equipa?](/pricing/teams) -- Partilhe a cobrança e colabore com os membros da equipa
-- [Tipos de perguntas](/socratease/question-types) -- Todos os formatos de perguntas de Socratease disponíveis
-- [Bancos de perguntas](/socratease/question-banks) -- Guia detalhado para utilizar bancos de perguntas
-- [Importação em massa do Excel](/socratease/bulk-import-from-excel) -- Instruções passo a passo para a importação do Excel
-- [Configurações de testes](/creating-tests/test-settings) -- Configure o comportamento do seu teste
-- [Por que Socratease](/socratease/why-socratease) -- Benefícios de usar o Socratease em relação a outras plataformas
+- [Pagamentos e Créditos Explicados](/pricing/payments-and-credits) -- Entenda os níveis de assinatura e preços
+- [O Que É um Time?](/pricing/teams) -- Compartilhe a cobrança e colabore com membros do time
+- [Tipos de Perguntas](/socratease/question-types) -- Todos os formatos de perguntas do Socratease disponíveis
+- [Bancos de Perguntas](/socratease/question-banks) -- Guia detalhado para usar bancos de perguntas
+- [Importação em Massa do Excel](/socratease/bulk-import-from-excel) -- Instruções passo a passo para importação do Excel
+- [Por Que Socratease](/socratease/why-socratease) -- Benefícios de usar o Socratease em relação a outras plataformas

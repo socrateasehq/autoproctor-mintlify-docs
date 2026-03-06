@@ -1,49 +1,58 @@
 ---
-title: "El examen se queda en la pantalla de carga"
+title: "El Examen Se Queda en la Pantalla de Carga"
 description: "Solucione exámenes que se quedan en la pantalla de carga. Conozca por qué los problemas de compatibilidad del dispositivo o navegador causan fallos de carga y cómo resolverlos."
 ---
 
-AutoProctor utiliza tecnologías avanzadas para la supervisión en tiempo real, que requieren un navegador moderno y un hardware adecuado. Si su examen se queda en la pantalla de carga, es probable que su configuración no cumpla con estos requisitos.
+AutoProctor utiliza tecnologías avanzadas del navegador para la supervisión en tiempo real, que requieren un navegador moderno y un hardware de dispositivo adecuado. Si su examen se queda en la pantalla de carga, es probable que su configuración no cumpla con estos requisitos.
 
-## ¿Por qué su examen se queda cargando?
+## Por Qué Su Examen Se Queda Cargando
 
-AutoProctor ejecuta captura de video y análisis impulsados por inteligencia artificial directamente en su navegador. Esto exige significativamente más potencia de procesamiento que las aplicaciones web típicas. La pantalla de carga aparece cuando su navegador o dispositivo no puede inicializar estos componentes de supervisión.
+AutoProctor ejecuta captura de video y análisis impulsados por IA directamente en su navegador. Esto demanda significativamente más potencia de procesamiento que las aplicaciones web típicas. La pantalla de carga aparece cuando su navegador o dispositivo no puede inicializar estos componentes de supervisión.
 
-Las causas más comunes incluyen:
+Las causas comunes incluyen:
 
 - **Navegador desactualizado** -- las versiones antiguas del navegador carecen de las API que AutoProctor necesita
-- **Hardware insuficiente** -- los dispositivos de gama baja pueden no soportar el procesamiento de video en tiempo real
-- **Extensiones del navegador** -- ciertas extensiones pueden bloquear la carga de los scripts de AutoProctor
+- **Hardware insuficiente** -- los dispositivos de gama baja o más antiguos pueden no soportar el procesamiento de video en tiempo real
+- **Extensiones del navegador** -- ciertas extensiones (especialmente bloqueadores de anuncios y herramientas de privacidad) pueden bloquear la carga de los scripts de AutoProctor
+
+{/* TODO: Add screenshot of AutoProctor loading screen indicating a compatibility issue */}
 
 <Frame caption="Pantalla de carga de AutoProctor indicando un problema de compatibilidad">
-  <img src="/images/candidate-issues/loading-screen-demo.png" alt="Pantalla de carga de AutoProctor detenida debido a incompatibilidad del dispositivo o navegador" />
+  <img src="/images/candidate-issues/loading-screen-demo.png" alt="Pantalla de carga de AutoProctor detenida debido a un problema de compatibilidad del dispositivo o navegador" />
 </Frame>
 
-## Cómo solucionarlo
+## Cómo Solucionarlo
 
 <Steps>
   <Step title="Realice el examen de demostración">
-    Visite el [examen de demostración de AutoProctor](https://www.autoproctor.co/demo) para verificar que su dispositivo y navegador sean compatibles. Esto confirma si el problema está en su configuración.
+    Visite el [examen de demostración de AutoProctor](https://www.autoproctor.co/demo) para verificar que su dispositivo y navegador sean compatibles. Si la demostración también falla al cargar, su dispositivo no es compatible con AutoProctor.
   </Step>
   <Step title="Use un navegador moderno">
-    Asegúrese de estar utilizando la última versión de **Google Chrome**, **Microsoft Edge** o **Firefox**. Actualice su navegador si no está al día.
+    Asegúrese de estar ejecutando la última versión de **Google Chrome** (versión 83+) en Windows, Android o Mac, o **Safari** (versión 13+) en iPhone o iPad. Actualice su navegador si no está al día.
   </Step>
   <Step title="Desactive las extensiones conflictivas">
     Desactive temporalmente las extensiones del navegador, especialmente los bloqueadores de anuncios y las herramientas de privacidad, que pueden interferir con los scripts de AutoProctor.
   </Step>
-  <Step title="Use un dispositivo de mayor rendimiento si es necesario">
-    Si el examen aún no carga después de seguir los pasos anteriores, su dispositivo no cumple con los requisitos mínimos de hardware. Necesitará cambiar a un dispositivo más potente.
+  <Step title="Cierre otras aplicaciones">
+    Cierre todas las aplicaciones y pestañas del navegador innecesarias para liberar potencia de procesamiento y memoria para AutoProctor.
+  </Step>
+  <Step title="Cambie a un dispositivo diferente si es necesario">
+    Si el examen aún no carga después de seguir los pasos anteriores, su dispositivo no cumple con los requisitos mínimos de hardware. Necesitará cambiar a un dispositivo más potente. Su dispositivo puede ejecutar aplicaciones cotidianas como YouTube y redes sociales perfectamente, pero el procesamiento de IA de AutoProctor demanda significativamente más recursos.
   </Step>
 </Steps>
 
 <Warning>
-Si el examen de demostración tampoco carga, su dispositivo no es compatible con AutoProctor. Necesitará usar un dispositivo diferente con mejores especificaciones de hardware.
+Si el examen de demostración también falla al cargar, su dispositivo no es compatible con AutoProctor. Necesitará usar un dispositivo diferente con mejores especificaciones de hardware. No hay nada que AutoProctor pueda hacer desde su lado para resolver limitaciones de hardware.
 </Warning>
 
-## Recursos relacionados
+<Note>
+Si un examen carga en su dispositivo, todos los demás exámenes también cargarán. El examen de demostración es la mejor manera de verificar la compatibilidad.
+</Note>
 
-- [Compatibilidad de dispositivos](/getting-started/device-compatibility) -- Consulte los navegadores y dispositivos compatibles
-- [El examen está lento](/candidate-issues/slow-and-laggy) -- Solucione problemas de rendimiento
-- [Página en blanco o pantalla gris](/candidate-issues/blank-page-grey-screen) -- Solucione problemas de pantalla en blanco
-- [Instrucciones para realizar un examen supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración para candidatos
-- [Contáctenos](/getting-started/contact-us) -- Comuníquese con nosotros si necesita más ayuda
+## Recursos Relacionados
+
+- [Compatibilidad de Dispositivos](/getting-started/device-compatibility) -- Consulte los navegadores compatibles y las especificaciones mínimas del dispositivo
+- [El Examen Está Lento](/candidate-issues/slow-and-laggy) -- Solucione problemas de rendimiento
+- [Página en Blanco o Pantalla Gris](/candidate-issues/blank-page-grey-screen) -- Solucione problemas de pantalla en blanco
+- [Instrucciones para Realizar un Examen Supervisado](/taking-tests/proctored-test-instructions) -- Guía de configuración para candidatos
+- [Contáctenos](/support/contact-us) -- Comuníquese si necesita más ayuda

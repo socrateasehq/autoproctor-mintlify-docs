@@ -1,19 +1,23 @@
 ---
 title: "Candidate Login Methods"
-description: "Understand the available login options for candidates and which methods work with each quiz provider."
+description: "Understand the available login options for candidates taking tests on AutoProctor, including which sign-in methods work with each quiz provider."
 ---
 
-Candidates must log in before attempting any test on AutoProctor. Login is required to differentiate between submissions when multiple candidates use the same test link.
+Candidates must log in before attempting any test on AutoProctor. Login is required so that AutoProctor can distinguish between individual submissions when multiple candidates use the same test link.
+
+{/* TODO: Add screenshot of AutoProctor login screen showing Google, Microsoft, and Email sign-in options */}
 
 <Frame>
-  <img src="/images/taking-tests/login-methods.png" alt="AutoProctor login options showing Google, Microsoft, and Email sign-in" />
+  <img src="/images/taking-tests/login-methods.png" alt="AutoProctor login options showing Google, Microsoft, and Email sign-in buttons" />
 </Frame>
 
 ## Available Login Methods
 
-- **Sign in with Google** — uses the candidate's Google account
-- **Sign in with Microsoft** — uses the candidate's Microsoft account
-- **Sign in with Email** — candidate enters their email address directly
+AutoProctor offers three sign-in options for candidates:
+
+- **Sign in with Google** -- uses the candidate's Google account
+- **Sign in with Microsoft** -- uses the candidate's Microsoft account
+- **Sign in with Email** -- the candidate enters their email address directly (no third-party account required)
 
 ## Login Methods by Quiz Provider
 
@@ -27,11 +31,18 @@ The available sign-in methods depend on which quiz provider you use:
 | IFrame Tests | Google, Microsoft, Email |
 
 <Note>
-Google Forms tests require Google sign-in because AutoProctor needs to pass the candidate's Google identity to the form. The same applies to Microsoft Forms with Microsoft sign-in. Socratease and IFrame tests have no such restriction.
+Google Forms tests require Google sign-in because AutoProctor needs to pass the candidate's Google identity to the form. The same applies to Microsoft Forms with Microsoft sign-in. Socratease and IFrame tests have no such restriction, so all three login methods are available.
+</Note>
+
+<Note>
+To restrict which candidates can log in to your test, see [Restricting by Email](/settings/restricting-by-email). You can limit access to specific email addresses or email domains.
 </Note>
 
 ## Related Resources
 
-- [How to Logout](/taking-tests/how-to-logout) — Switch between accounts
-- [Restricting by Email](/results/restricting-by-email) — Limit who can access your test
-- [Candidate Login Methods (Admin View)](/results/candidate-login-methods) — Configure login settings for your test
+- [How to Logout](/taking-tests/how-to-logout) -- Switch between accounts
+- [Restricting by Email](/settings/restricting-by-email) -- Limit who can access your test
+- [Restricting to Some Users](/settings/restricting-to-some-users) -- Control test access for specific users
+- [Inviting Candidates via Email](/settings/inviting-candidates-via-email) -- Send test invitations directly
+- [Instructions Page for Candidates](/taking-tests/instructions-page-for-candidates) -- What candidates see before starting a test
+- [Contact Us](/support/contact-us) -- Reach out if you need further help

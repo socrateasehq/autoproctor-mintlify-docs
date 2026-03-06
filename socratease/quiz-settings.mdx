@@ -3,13 +3,15 @@ title: "Socratease Quiz Settings"
 description: "Configure your Socratease quiz with settings for display mode, result visibility, randomization, and more."
 ---
 
-Socratease has its own set of configurable settings, distinct from the general Timer and Proctor settings on AutoProctor. These settings control how the quiz behaves for your candidates.
+Socratease has its own set of configurable settings, distinct from the general Timer and Proctor settings on AutoProctor. These settings control how the quiz behaves for your candidates -- from how questions appear to whether candidates can copy and paste.
+
+{/* TODO: Add screenshot of the Socratease quiz settings panel */}
 
 ## Available Settings
 
 ### 1. Question Display Mode
 
-Display questions one-by-one (with or without navigation) or all-at-once. This controls how candidates navigate through the quiz.
+Control how questions appear to candidates: all at once (Google Forms style), one-by-one with navigation (Typeform style), or one-by-one without navigation. This setting also affects how timers work.
 
 For more details, see [Question Display Mode](/socratease/question-display-mode).
 
@@ -17,40 +19,76 @@ For more details, see [Question Display Mode](/socratease/question-display-mode)
 
 Control when candidates see their scores and results:
 - **Immediately** after submission
-- **At your discretion** (release individually or all at once)
+- **When you release individual scores** (one candidate at a time)
+- **When you release all scores** (everyone at once)
 - **Never** -- results are withheld entirely
 
 For more details, see [Showing Results to Candidates](/socratease/showing-results-to-candidates).
 
 ### 3. Question Randomization
 
-Randomize the order of questions for each candidate. What Candidate 1 sees as Question 1 may be Question 10 to Candidate 2. This helps reduce the opportunity for candidates to share answers during a test.
+Randomize the order of questions for each candidate. What Candidate 1 sees as Question 1 may be Question 10 for Candidate 2. This reduces the opportunity for candidates to share answers during a test.
+
+{/* TODO: Add screenshot of question randomization toggle */}
 
 ### 4. Choice Shuffling
 
-For MCQ and MCA type questions, you can randomize the order of answer options across candidates. This means even if two candidates see the same question, the choices will appear in a different order.
+For MCQ and MCA type questions, you can randomize the order of answer options across candidates. Even if two candidates see the same question, the choices appear in a different order.
+
+{/* TODO: Add screenshot of choice shuffling toggle */}
 
 ### 5. Copy and Paste Restriction
 
-When enabled, candidates cannot copy the question text from the quiz. They also cannot paste text from a different tab or application into the quiz. This reduces reliance on external tools and AI assistants.
+When you enable this setting, candidates cannot copy question text from the quiz or paste text from a different tab or application into the quiz. This reduces reliance on external tools and AI assistants.
+
+{/* TODO: Add screenshot of copy-paste restriction toggle */}
 
 ### 6. Tab-Switch Auto-Submit
 
 Set the maximum number of tab switches permitted during the test. If a candidate exceeds this limit, their test is automatically submitted. This discourages candidates from switching to other tabs to look up answers.
 
+<Warning>
+When a test auto-submits due to tab-switch limits, the candidate cannot resume the test. Make sure to communicate the tab-switch policy to your candidates beforehand.
+</Warning>
+
+{/* TODO: Add screenshot of tab-switch auto-submit configuration */}
+
 ### 7. Custom Instructions
 
-Add general test guidance that is displayed to candidates before they start the quiz. This is available only when using the **all-at-once** question display mode.
+Add general test guidance that displays to candidates before they start the quiz. Use this to communicate important rules, instructions, or expectations.
+
+<Note>
+Custom instructions are available only when you use the **all-at-once** question display mode.
+</Note>
+
+{/* TODO: Add screenshot of custom instructions field */}
 
 ### 8. LaTeX Support
 
-If you want to include mathematical equations, write them using LaTeX syntax and they are automatically rendered as formatted equations. Enable this setting to activate LaTeX rendering in your quiz.
+If you want to include mathematical equations, write them using LaTeX syntax and they render automatically as formatted equations. Enable this setting to activate LaTeX rendering in your quiz.
 
 For more details, see [Using LaTeX for Math Equations](/socratease/latex-math-equations).
 
+## How to Access Quiz Settings
+
+<Steps>
+  <Step title="Open Your Quiz">
+    Open the Socratease Quiz you want to configure from your AutoProctor dashboard.
+  </Step>
+  <Step title="Click the Settings Icon">
+    Click the **Settings** icon (gear) in the quiz editor toolbar.
+  </Step>
+  <Step title="Adjust Your Settings">
+    Modify any of the eight settings listed above. Changes save automatically.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the settings icon location in the quiz editor */}
+
 ## Related Resources
 
-- [Why Socratease?](/socratease/why-socratease) — Benefits of using Socratease
-- [Creating a Quiz](/socratease/creating-a-quiz) — Step-by-step guide
-- [Question Types](/socratease/question-types) — Available question formats
-- [Test Settings](/creating-tests/test-settings) — Timer and proctoring configuration (separate from quiz settings)
+- [Question Display Mode](/socratease/question-display-mode) -- Detailed explanation of display options
+- [Showing Results to Candidates](/socratease/showing-results-to-candidates) -- Control result visibility
+- [Using LaTeX for Math Equations](/socratease/latex-math-equations) -- Add mathematical equations to your quizzes
+- [Timer Settings](/settings/timer-settings) -- For general test timer and proctoring configuration (separate from Socratease quiz settings)
+- [Creating a Quiz](/socratease/creating-a-quiz) -- Step-by-step guide to creating a quiz

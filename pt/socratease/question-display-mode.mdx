@@ -1,40 +1,79 @@
 ---
-title: "Modo de apresentação de perguntas"
-description: "Controle como as perguntas são apresentadas aos candidatos -- todas de uma vez, uma por uma com navegação ou uma por uma sem navegação."
+title: "Modo de Exibição de Perguntas"
+description: "Controle como as perguntas são exibidas para os candidatos — todas de uma vez, uma por uma com navegação ou uma por uma sem navegação."
 ---
 
-A definição do modo de apresentação de perguntas nos questionários Socratease controla como as perguntas aparecem para os participantes. Existem três opções de apresentação disponíveis.
+A configuração do Modo de Exibição de Perguntas controla como as perguntas aparecem para os participantes do teste. Você pode escolher entre três opções de exibição, cada uma com diferentes implicações para navegação, tempo e segurança do teste.
 
-## Modos de apresentação
+{/* TODO: Add screenshot of the question display mode setting in quiz settings */}
 
-### 1. Todas de uma vez (estilo Google Forms)
+## Modos de Exibição
 
-Os candidatos veem todas as perguntas ao mesmo tempo, uma abaixo da outra, como num Google Form. O temporizador aplica-se ao **teste completo**.
+### 1. Todas de Uma Vez (estilo Google Forms)
 
-### 2. Uma por uma com navegação (estilo Typeform)
+Os candidatos veem todas as perguntas ao mesmo tempo, uma abaixo da outra, como em um Google Form. O temporizador se aplica ao **teste inteiro**. Os candidatos podem rolar livremente entre as perguntas e respondê-las em qualquer ordem.
 
-Os candidatos veem uma pergunta de cada vez e podem navegar para a frente e para trás entre as perguntas. O temporizador aplica-se ao **teste completo**, não às perguntas individuais.
+{/* TODO: Add screenshot of all-at-once display mode from the candidate view */}
 
-### 3. Uma por uma sem navegação
+### 2. Uma por Uma com Navegação (estilo Typeform)
 
-Os candidatos veem uma pergunta de cada vez. Depois de enviar uma pergunta (ao respondê-la ou ignorá-la), **NÃO PODEM voltar a ela**. O temporizador é definido **por pergunta**, não para todo o teste.
+Os candidatos veem uma pergunta de cada vez e podem navegar para frente e para trás entre as perguntas. O temporizador se aplica ao **teste inteiro**, não às perguntas individuais. Os candidatos podem revisitar e alterar suas respostas a qualquer momento antes do envio.
+
+{/* TODO: Add screenshot of one-by-one with navigation from the candidate view */}
+
+### 3. Uma por Uma sem Navegação
+
+Os candidatos veem uma pergunta de cada vez. Depois de enviar uma pergunta (respondendo ou pulando), **não podem voltar a ela**. O temporizador é definido **por pergunta**, não para todo o teste.
+
+{/* TODO: Add screenshot of one-by-one without navigation from the candidate view */}
 
 <Frame>
-  <img src="/images/socratease/question-display-mode.png" alt="Configurações do modo de apresentação de perguntas" />
+  <img src="/images/socratease/question-display-mode.png" alt="Painel de configurações do modo de exibição de perguntas mostrando as três opções disponíveis" />
 </Frame>
 
-## Diferenças principais
+## Diferenças Principais
 
 | Característica | Todas de uma vez | Uma por uma com nav. | Uma por uma sem nav. |
 |---|:---:|:---:|:---:|
-| Âmbito do temporizador | Teste completo | Teste completo | Por pergunta |
-| Pode voltar atrás | Sim | Sim | Não |
+| Escopo do temporizador | Teste inteiro | Teste inteiro | Por pergunta |
+| Pode voltar a perguntas anteriores | Sim | Sim | Não |
 | Instruções personalizadas | Sim | Não | Não |
 
-## Quando usar "Uma por uma sem navegação"
+## Quando Usar Uma por Uma sem Navegação
 
-A opção sem navegação é especialmente útil por motivos de segurança. Isto dá ao participante menos tempo para fazer fraude numa pergunta, uma vez que a qualquer momento só pode ver uma pergunta, por um tempo limitado.
+A opção sem navegação é especialmente útil para a segurança do teste. Os candidatos podem visualizar apenas uma pergunta de cada vez por uma duração limitada, o que reduz significativamente a oportunidade de fraude. Cada pergunta tem seu próprio temporizador, então os candidatos não podem gastar tempo extra em perguntas difíceis apressando-se nas mais fáceis.
+
+## Como as Configurações de Tempo Mudam
 
 <Warning>
-Ao usar **uma por uma sem navegação**, certas definições do temporizador ao nível do teste deixam de estar disponíveis. Os parâmetros de **Duração** e **Deve enviar até** passam para o nível da pergunta, e a função de **envio automático** aplica-se automaticamente quando o tempo por pergunta expira.
+Quando você usa **uma por uma sem navegação**, certas configurações de tempo no nível do teste ficam indisponíveis. O comportamento do temporizador muda para o nível da pergunta:
+
+- **Duração**: Você define a duração por pergunta, não para o teste inteiro
+- **Envio Automático**: Cada pergunta é enviada automaticamente quando seu temporizador individual expira
+- **Must Submit By**: Essa configuração no nível do teste é substituída por **Cannot Start After** no nível do teste
 </Warning>
+
+Para mais informações sobre configuração de temporizadores, consulte [Configurações de Tempo](/settings/timer-settings).
+
+## Como Definir o Modo de Exibição
+
+<Steps>
+  <Step title="Abra Seu Questionário">
+    Abra o Questionário Socratease que deseja configurar a partir do seu painel do AutoProctor.
+  </Step>
+  <Step title="Acesse as Configurações">
+    Clique no ícone de **Settings** (engrenagem) na barra de ferramentas do editor de questionários.
+  </Step>
+  <Step title="Selecione o Modo de Exibição">
+    Escolha seu modo de exibição preferido no menu suspenso de **Question Display Mode**. O padrão é "Todas de uma vez".
+
+    {/* TODO: Add screenshot of question display mode dropdown selection */}
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Configurações do Questionário](/socratease/quiz-settings) — Todas as opções de configuração de questionários Socratease
+- [Configurações de Tempo](/settings/timer-settings) — Configure temporizadores no nível do teste e da pergunta
+- [Como Criar um Questionário Socratease](/socratease/creating-a-quiz) — Guia de criação passo a passo
+- [Mostrar Resultados aos Candidatos](/socratease/showing-results-to-candidates) — Controle a visibilidade dos resultados

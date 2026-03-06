@@ -1,25 +1,58 @@
 ---
-title: "O AutoProctor grava vídeo?"
-description: "Saiba como o AutoProctor monitora os candidatos em tempo real sem gravar sessões de vídeo completas."
+title: "O AutoProctor Grava Vídeo?"
+description: "Saiba como o AutoProctor monitora candidatos em tempo real sem gravar sessões completas de vídeo, e por que essa abordagem é mais eficaz."
 ---
 
-**O AutoProctor não grava vídeo.** Em vez disso, ele monitora continuamente a câmera do candidato em tempo real diretamente no dispositivo e só captura evidências quando uma infração é detectada.
+**O AutoProctor não grava vídeo.** Em vez disso, ele monitora continuamente a câmera do candidato em tempo real diretamente no dispositivo e captura evidências (fotos, capturas de tela e clipes de áudio) apenas quando detecta uma infração. Isso fornece a você as evidências necessárias sem exigir que assista horas de gravação.
 
-## Como funciona o monitoramento com inteligência artificial do AutoProctor
+{/* TODO: Add diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach */}
 
-As plataformas de supervisão tradicionais gravam as câmeras dos candidatos, carregam as gravações em servidores e depois as processam para sinalizar infrações. O AutoProctor funciona de maneira diferente.
+## Como Funciona o Monitoramento por IA do AutoProctor
 
-O software do AutoProctor monitora a transmissão de vídeo **diretamente no dispositivo do candidato** em vez de carregar o material. Pense nisso como um detector de fumaça: ele funciona continuamente em segundo plano e só o alerta quando algo é detectado.
+As plataformas de supervisão tradicionais gravam um vídeo da câmera do candidato, fazem upload para seus servidores e depois processam em busca de infrações. Na maioria dos casos, espera-se que você assista o vídeo pessoalmente para verificar os incidentes sinalizados.
 
-## Vantagens principais
+O AutoProctor adota uma abordagem fundamentalmente diferente. Seu software de IA monitora o feed de vídeo **diretamente no dispositivo do candidato** e sinaliza infrações à medida que acontecem. Nenhum vídeo é carregado ou armazenado em qualquer servidor.
 
-- **Não é necessário revisar vídeos** — as infrações são sinalizadas automaticamente com evidências de apoio (fotos e capturas de tela), de modo que você não precise assistir a horas de gravações
-- **Funciona off-line** — como o monitoramento ocorre no dispositivo, as infrações são detectadas mesmo que o candidato se desconecte temporariamente da internet
-- **Redução da carga administrativa** — revise apenas os incidentes sinalizados em vez de gravações completas
+Pense nisso como um detector de fumaça: ele funciona continuamente em segundo plano, monitorando o tempo todo, e só alerta você quando algo é detectado.
 
-## Recursos relacionados
+{/* TODO: Add illustration of the smoke detector analogy -- on-device monitoring with alert-only output */}
 
-- [O que é monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis
+## Principais Vantagens
+
+| Vantagem | Como Funciona |
+|---|---|
+| **Sem necessidade de revisão de vídeo** | As infrações são sinalizadas automaticamente com evidências de apoio (fotos e capturas de tela), então você não precisa assistir horas de gravação |
+| **Funciona offline** | Como o monitoramento acontece no dispositivo, as infrações são detectadas mesmo se o candidato se desconectar temporariamente da internet |
+| **Previne fraude com internet desligada** | Com outras plataformas, os candidatos podem desligar a internet para evitar serem gravados. Com o AutoProctor, o monitoramento continua no dispositivo independentemente da conectividade |
+| **Menor carga administrativa** | Você revisa apenas os incidentes sinalizados em vez de gravações completas |
+| **Menores requisitos de largura de banda** | Nenhum arquivo grande de vídeo é carregado durante o teste, reduzindo a pressão sobre a rede para candidatos com conexões lentas |
+
+<Note>
+Como o monitoramento acontece no dispositivo do candidato, o AutoProctor captura evidências de infrações mesmo quando o candidato fica offline. Quando o candidato se reconecta, as evidências são sincronizadas com o servidor. Essa é uma vantagem significativa em relação às plataformas que dependem do upload contínuo de vídeo.
+</Note>
+
+## Que Evidências Você Recebe em Vez de Vídeo?
+
+Quando o AutoProctor detecta uma infração, ele captura um ou mais dos seguintes itens:
+
+- **Fotos** — Instantâneos da câmera (por exemplo, quando nenhum rosto ou múltiplos rostos são detectados)
+- **Capturas de tela** — Capturas da tela do candidato (por exemplo, quando ele troca de aba ou aplicativo)
+- **Clipes de áudio** — Gravações de ruído de fundo quando o microfone detecta áudio suspeito
+- **Fotos aleatórias** — Instantâneos periódicos tirados em intervalos aleatórios durante o exame
+- **Registros de atividade** — Registros de cliques do mouse e atividade do teclado
+
+Todas essas evidências aparecem no [relatório de supervisão](/results/proctoring-results) do candidato, organizadas por data/hora e tipo de infração.
+
+{/* TODO: Add screenshot of a proctoring report showing different types of violation evidence */}
+
+<Warning>
+As evidências podem ocasionalmente estar ausentes de um relatório se o dispositivo do candidato ficou sem armazenamento ou se o navegador restringiu o acesso à câmera ou ao microfone durante o teste. Consulte [Imagens e Gravações Ausentes](/candidate-issues/missing-images-and-recordings) para etapas de solução de problemas.
+</Warning>
+
+## Recursos Relacionados
+
+- [O Que é Monitorado](/getting-started/what-gets-tracked) — Todas as capacidades de monitoramento disponíveis durante a supervisão
 - [Trust Score](/getting-started/trust-score) — Como as evidências de infrações são resumidas em uma pontuação
-- [Imagens e gravações ausentes](/candidate-issues/missing-images-and-recordings) — Por que parte das evidências pode não aparecer
-- [Significado de "ficou offline"](/candidate-issues/went-offline-meaning) — O que significa quando um candidato fica offline
+- [Resultados de Supervisão](/results/proctoring-results) — Como ver as evidências de infrações e os relatórios
+- [Imagens e Gravações Ausentes](/candidate-issues/missing-images-and-recordings) — Por que algumas evidências podem não aparecer
+- [Significado de "Ficou Offline"](/candidate-issues/went-offline-meaning) — O que acontece quando um candidato fica offline durante um teste

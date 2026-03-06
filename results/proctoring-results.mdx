@@ -6,7 +6,7 @@ description: "Access and review proctoring results for your tests on AutoProctor
 After candidates complete a proctored test, AutoProctor compiles their monitoring data into a proctoring report. This guide walks you through accessing and interpreting those results.
 
 <Note>
-Proctoring results are only generated when proctoring is enabled in your [test settings](/creating-tests/test-settings). If you configured your test with only a timer, no proctoring data is available.
+Proctoring results are only generated when you enable proctoring in your [test settings](/settings/proctoring-settings). If you configured your test with only a timer, no proctoring data is available.
 </Note>
 
 ## Viewing Proctoring Results
@@ -14,6 +14,8 @@ Proctoring results are only generated when proctoring is enabled in your [test s
 <Steps>
   <Step title="Open the results page">
     Navigate to your AutoProctor dashboard and click the **Results** button for the test you want to review.
+
+    {/* TODO: Add screenshot of the Results button on the AutoProctor dashboard */}
 
     <Frame>
       <img src="/images/results/results-button-dashboard.png" alt="Results button highlighted on the AutoProctor dashboard" />
@@ -27,6 +29,8 @@ Proctoring results are only generated when proctoring is enabled in your [test s
     - Trust Score (indicating proctoring integrity)
     - Quiz score (for Socratease Quizzes only)
 
+    {/* TODO: Add screenshot of the results table with Trust Score and Quiz Score columns */}
+
     <Frame>
       <img src="/images/results/results-table.png" alt="Results table showing candidate submissions with Trust Scores" />
     </Frame>
@@ -34,11 +38,25 @@ Proctoring results are only generated when proctoring is enabled in your [test s
   <Step title="View the proctoring summary">
     Click on a candidate's **Trust Score** to open their detailed proctoring summary. This page lists all violations detected during the test, including screenshots, timestamps, and evidence.
 
+    {/* TODO: Add screenshot of a candidate's proctoring summary page with violations list */}
+
     <Frame>
       <img src="/images/results/proctoring-summary.png" alt="Proctoring summary page showing detected violations and evidence" />
     </Frame>
   </Step>
 </Steps>
+
+## What the Proctoring Summary Shows
+
+The proctoring summary for each candidate includes:
+
+| Data Point | Description |
+|---|---|
+| **Trust Score** | An overall integrity rating based on detected violations |
+| **Violations list** | Each violation type with timestamp and evidence |
+| **Screenshots** | Random photos captured during the test session |
+| **Recordings** | Screen and webcam recordings (if enabled in [enhanced proctoring](/settings/enhanced-proctoring)) |
+| **Session timeline** | When the candidate started, paused, or submitted the test |
 
 ## Related Resources
 
@@ -47,4 +65,3 @@ Proctoring results are only generated when proctoring is enabled in your [test s
 - [What Gets Tracked](/getting-started/what-gets-tracked) -- What AutoProctor monitors during a proctored test
 - [Export to Excel](/results/export-to-excel) -- Download proctoring results as a spreadsheet
 - [Unsubmitted Tests](/results/unsubmitted-tests) -- View details of tests started but not submitted
-- [Why Socratease](/socratease/why-socratease) -- Benefits of using Socratease for quiz scoring

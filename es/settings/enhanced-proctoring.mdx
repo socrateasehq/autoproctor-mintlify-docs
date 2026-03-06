@@ -1,0 +1,87 @@
+---
+title: "Supervisión Avanzada"
+description: "Configure la verificación de documento de identidad, la detección de suplantación, la supervisión de 360 grados y la grabación de sesión para una protección avanzada contra el fraude."
+---
+
+La Supervisión Avanzada agrega funciones avanzadas de verificación de identidad y monitoreo más allá de la supervisión estándar. Estas funciones ayudan a prevenir la suplantación de identidad, detectar herramientas de IA y crear un registro completo de cada intento de examen.
+
+<Frame>
+  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Panel de configuración de supervisión avanzada" />
+</Frame>
+
+<Note>
+Cada función de supervisión avanzada requiere **4 créditos adicionales por intento**. Si activa múltiples funciones avanzadas, el costo de créditos es acumulativo. Por ejemplo, activar Verificación de Documento de Identidad y Grabación de Sesión cuesta 8 créditos adicionales por intento de candidato.
+</Note>
+
+## Funciones Disponibles
+
+### Verificación de Documento de Identidad
+
+La Verificación de Documento de Identidad confirma la identidad del candidato comparando su documento de identidad cargado con su foto del examen y el nombre ingresado.
+
+<Steps>
+  <Step title="Active la Verificación de Documento de Identidad">
+    Active la opción **Verificación de Documento de Identidad** en la sección de Supervisión Avanzada de la configuración de su examen.
+  </Step>
+  <Step title="El candidato sube su documento de identidad">
+    Al iniciar el examen, se le pide al candidato que suba una foto de su documento de identidad. Los documentos aceptados incluyen credenciales estudiantiles, pasaportes, licencias de conducir e identificaciones oficiales.
+  </Step>
+  <Step title="AutoProctor verifica la identidad">
+    El sistema compara la foto y el nombre en el documento de identidad con la Foto Antes del Inicio del Examen y el nombre que el candidato ingresó en la plataforma.
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of the ID card upload screen from the candidate's perspective */}
+
+<Note>
+La **Foto Antes del Inicio del Examen** debe estar activada en la configuración de supervisión básica para que la Verificación de Documento de Identidad funcione eficazmente.
+</Note>
+
+### Detección de Suplantación
+
+La Detección de Suplantación monitorea si alguien diferente al candidato original intenta o continúa el examen. AutoProctor compara las fotos periódicas tomadas durante el examen con la foto inicial para detectar cambios de rostro.
+
+{/* TODO: Add screenshot of an impersonation detection alert in the proctoring report */}
+
+### Dispositivo Auxiliar (Supervisión de 360°)
+
+La función de Dispositivo Auxiliar permite la supervisión de 360 grados al emparejar el teléfono del candidato con su computadora portátil. Esto proporciona un ángulo de cámara secundario que captura el entorno físico del candidato.
+
+<Steps>
+  <Step title="Active el Dispositivo Auxiliar">
+    Active la opción **Dispositivo Auxiliar** en la configuración de Supervisión Avanzada.
+  </Step>
+  <Step title="El candidato empareja su teléfono">
+    Cuando comienza el examen, el candidato escanea un código QR en la pantalla de su computadora portátil usando la cámara de su teléfono. Esto empareja los dos dispositivos.
+  </Step>
+  <Step title="El teléfono proporciona monitoreo secundario">
+    La cámara del teléfono captura el escritorio, el entorno y la pantalla del candidato desde un ángulo diferente. Esto también ayuda a detectar herramientas de IA que muestran respuestas como superposiciones en la pantalla.
+  </Step>
+</Steps>
+
+{/* TODO: Add video walkthrough of the auxiliary device pairing and 360° proctoring setup */}
+
+### Grabación de Sesión
+
+La Grabación de Sesión captura un registro completo de la actividad de pantalla del candidato durante todo el examen, incluyendo clics del ratón y entrada del teclado. Esto crea una línea de tiempo revisable de todo el intento de examen.
+
+{/* TODO: Add screenshot of a session recording playback in the results page */}
+
+## Resumen de Costos de Créditos
+
+| Función | Créditos por Intento |
+|---|---|
+| Verificación de Documento de Identidad | 4 |
+| Detección de Suplantación | 4 |
+| Dispositivo Auxiliar (360°) | 4 |
+| Grabación de Sesión | 4 |
+| Las 4 funciones combinadas | 16 |
+
+## Recursos Relacionados
+
+- [Configuración de Supervisión](/settings/proctoring-settings) — Opciones básicas de supervisión (cámara, micrófono, cambio de pestaña)
+- [Puntaje de Confianza](/getting-started/trust-score) — Cómo los datos de supervisión avanzada afectan el puntaje de confianza
+- [Resultados de Supervisión](/results/proctoring-results) — Revisión de resultados de supervisión avanzada
+- [Envíos Individuales](/results/individual-submissions) — Visualización de datos detallados para cada candidato
+- [Pagos y Créditos](/pricing/payments-and-credits) — Comprenda el uso de créditos y las compras
+- [Funciones Elite](/pricing/elite-features) — Descripción general de las funciones Premium y Elite

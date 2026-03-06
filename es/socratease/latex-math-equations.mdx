@@ -1,21 +1,17 @@
 ---
-title: "Uso de LaTeX para ecuaciones matemáticas"
+title: "Uso de LaTeX para Ecuaciones Matemáticas"
 description: "Agregue ecuaciones matemáticas a sus cuestionarios Socratease utilizando la sintaxis LaTeX."
 ---
 
+Socratease admite LaTeX, el estándar global para escribir ecuaciones matemáticas utilizado en publicaciones académicas, libros de texto y trabajos de investigación en todo el mundo. En lugar de insertar imágenes de ecuaciones o usar notación de texto simplificada como `a^2` o `3/4`, puede escribir ecuaciones correctamente formateadas directamente en las preguntas de su cuestionario.
+
 <Note>
-El soporte de ecuaciones LaTeX es exclusivo de los **Socratease Quizzes** de AutoProctor.
+El soporte de ecuaciones LaTeX es exclusivo de los **Cuestionarios Socratease** de AutoProctor. No está disponible cuando se usan otros proveedores de cuestionarios.
 </Note>
 
-## ¿Por qué LaTeX?
+## Cómo Escribir Ecuaciones LaTeX
 
-Con plataformas como Google Forms y herramientas similares, si desea incluir una ecuación matemática en un examen, debe insertar imágenes de ecuaciones o usar notación de texto simplificada (como `a^2` o `3/4`). Esto es engorroso y difícil de leer.
-
-**LaTeX es el estándar global utilizado para escribir ecuaciones matemáticas**, presente en publicaciones académicas, libros de texto y trabajos de investigación en todo el mundo.
-
-## Cómo usar LaTeX
-
-Para incluir una ecuación LaTeX en su cuestionario, encierre la ecuación entre `\(` y `\)`.
+Para incluir una ecuación LaTeX en su cuestionario, encierre la ecuación entre los delimitadores `\(` y `\)`.
 
 **Ejemplo:**
 
@@ -25,41 +21,60 @@ Para incluir una ecuación LaTeX en su cuestionario, encierre la ecuación entre
 
 Esto se renderiza como el conocido teorema de Pitágoras: a al cuadrado más b al cuadrado es igual a c al cuadrado.
 
-## Qué admite LaTeX
+{/* TODO: Add screenshot showing LaTeX equation rendered in a Socratease quiz question */}
+
+## Qué Admite LaTeX
 
 LaTeX puede renderizar cualquier notación matemática, incluyendo:
 
-- **Aritmética básica**: `\(a + b = c\)`
-- **Exponentes y subíndices**: `\(x^2\)`, `\(a_n\)`
-- **Fracciones**: `\(\frac{a}{b}\)`
-- **Raíces cuadradas**: `\(\sqrt{x}\)`
-- **Integrales**: `\(\int_0^1 x^2 dx\)`
-- **Sumatorias**: `\(\sum_{i=1}^{n} i\)`
-- **Letras griegas**: `\(\alpha, \beta, \gamma\)`
-- Y cualquier otra notación matemática avanzada
+| Notación | Sintaxis LaTeX | Descripción |
+|---|---|---|
+| Aritmética básica | `\(a + b = c\)` | Suma, resta, multiplicación, división |
+| Exponentes | `\(x^2\)` | Superíndices y potencias |
+| Subíndices | `\(a_n\)` | Notación de subíndice |
+| Fracciones | `\(\frac{a}{b}\)` | Notación de fracción |
+| Raíces cuadradas | `\(\sqrt{x}\)` | Raíces cuadradas y enésimas |
+| Integrales | `\(\int_0^1 x^2 dx\)` | Integrales definidas e indefinidas |
+| Sumatorias | `\(\sum_{i=1}^{n} i\)` | Notación de sumatoria |
+| Letras griegas | `\(\alpha, \beta, \gamma\)` | Todos los símbolos de letras griegas |
+
+También puede usar cualquier otra notación matemática estándar de LaTeX más allá de los ejemplos listados anteriormente.
 
 ## Habilitar LaTeX
 
 <Steps>
-  <Step title="Abrir su cuestionario">
-    Abra su cuestionario Socratease en AutoProctor.
+  <Step title="Abra Su Cuestionario">
+    Abra su Cuestionario Socratease en AutoProctor.
   </Step>
-  <Step title="Ir a la configuración">
-    Haga clic en el ícono de **Configuración**.
+  <Step title="Vaya a Configuración">
+    Haga clic en el ícono de **Configuración** (engranaje) en la barra de herramientas del editor del cuestionario.
   </Step>
-  <Step title="Habilitar el soporte de LaTeX">
-    Active la opción **Soporte de LaTeX**.
+  <Step title="Active el Soporte de LaTeX">
+    Active la configuración de **Soporte de LaTeX**. Esto activa la representación de LaTeX para todas las preguntas del cuestionario.
+
+    {/* TODO: Add screenshot of LaTeX support toggle in quiz settings */}
   </Step>
-  <Step title="Escribir ecuaciones">
-    Escriba sus ecuaciones en el texto de las preguntas utilizando los delimitadores `\(` y `\)`.
+  <Step title="Escriba Sus Ecuaciones">
+    Escriba sus ecuaciones en el texto de las preguntas usando los delimitadores `\(` y `\)`. Las ecuaciones se renderizarán como matemáticas formateadas cuando los candidatos vean el cuestionario.
+
+    {/* TODO: Add screenshot of equation being written in the quiz editor */}
   </Step>
 </Steps>
+
+<Warning>
+Asegúrese de activar la opción de Soporte de LaTeX en la configuración del cuestionario **antes** de compartir el examen. Si LaTeX no está habilitado, los candidatos verán la sintaxis LaTeX sin procesar en lugar de ecuaciones renderizadas.
+</Warning>
 
 ## Pruébelo
 
 Puede ver un cuestionario de ejemplo que demuestra la representación de ecuaciones LaTeX en:
 [autoproctor.co/tests/ifvJRDE1qf/load/](https://www.autoproctor.co/tests/ifvJRDE1qf/load/)
 
-## Recursos relacionados
+{/* TODO: Add screenshot of the sample LaTeX quiz showing rendered equations */}
 
-- [Configuración del cuestionario](/socratease/quiz-settings) -- Configure el comportamiento de su cuestionario Socratease
+## Recursos Relacionados
+
+- [Configuración del Cuestionario](/socratease/quiz-settings) — Todas las opciones de configuración de cuestionarios Socratease
+- [Tipos de Preguntas](/socratease/question-types) — Formatos de preguntas disponibles
+- [Cómo Crear un Cuestionario Socratease](/socratease/creating-a-quiz) — Guía de creación paso a paso
+- [¿Por Qué Socratease?](/socratease/why-socratease) — Beneficios de usar Socratease sobre otras plataformas
