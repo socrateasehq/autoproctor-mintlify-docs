@@ -33,6 +33,9 @@
       "enabled": true
     }
   },
+  "interaction": {
+    "drilldown": true
+  },
   "redirects": [
     { "source": "/creating-tests/test-settings", "destination": "/settings/timer-settings" },
     { "source": "/results/restricting-by-email", "destination": "/settings/restricting-by-email" },
