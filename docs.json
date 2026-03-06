@@ -68,13 +68,23 @@
                 "group": "Getting Started",
                 "icon": "rocket",
                 "pages": [
-                  "getting-started/quickstart",
-                  "getting-started/what-gets-tracked",
-                  "getting-started/trust-score",
-                  "getting-started/device-compatibility",
-                  "getting-started/video-recording",
-                  "getting-started/faqs",
-                  "getting-started/best-practices-for-teachers"
+                  {
+                    "group": "First Steps",
+                    "pages": [
+                      "getting-started/quickstart",
+                      "getting-started/device-compatibility",
+                      "getting-started/best-practices-for-teachers"
+                    ]
+                  },
+                  {
+                    "group": "Understanding Proctoring",
+                    "pages": [
+                      "getting-started/what-gets-tracked",
+                      "getting-started/trust-score",
+                      "getting-started/video-recording",
+                      "getting-started/faqs"
+                    ]
+                  }
                 ]
               },
               {
@@ -92,12 +102,17 @@
                     ]
                   },
                   {
-                    "group": "Test Settings",
+                    "group": "Timer & Proctoring",
                     "pages": [
                       "settings/timer-settings",
                       "settings/proctoring-settings",
                       "settings/enhanced-proctoring",
-                      "settings/advanced-settings",
+                      "settings/advanced-settings"
+                    ]
+                  },
+                  {
+                    "group": "Access Control",
+                    "pages": [
                       "settings/restricting-by-email",
                       "settings/restricting-to-some-users",
                       "settings/inviting-candidates-via-email",
@@ -113,17 +128,27 @@
                 "group": "Socratease Quizzes",
                 "icon": "graduation-cap",
                 "pages": [
-                  "socratease/why-socratease",
-                  "socratease/creating-a-quiz",
-                  "socratease/question-types",
-                  "socratease/question-type-availability",
-                  "socratease/quiz-settings",
-                  "socratease/showing-results-to-candidates",
-                  "socratease/question-banks",
-                  "socratease/bulk-import-from-excel",
-                  "socratease/question-display-mode",
-                  "socratease/using-tags",
-                  "socratease/latex-math-equations"
+                  {
+                    "group": "Creating Quizzes",
+                    "pages": [
+                      "socratease/why-socratease",
+                      "socratease/creating-a-quiz",
+                      "socratease/question-types",
+                      "socratease/question-type-availability",
+                      "socratease/bulk-import-from-excel"
+                    ]
+                  },
+                  {
+                    "group": "Quiz Configuration",
+                    "pages": [
+                      "socratease/quiz-settings",
+                      "socratease/question-display-mode",
+                      "socratease/showing-results-to-candidates",
+                      "socratease/question-banks",
+                      "socratease/using-tags",
+                      "socratease/latex-math-equations"
+                    ]
+                  }
                 ]
               },
               {
@@ -191,15 +216,25 @@
                 "group": "Pricing & Account",
                 "icon": "credit-card",
                 "pages": [
-                  "pricing/payments-and-credits",
-                  "pricing/teams",
-                  "pricing/elite-features",
-                  "pricing/one-time-subscription",
-                  "pricing/cancel-subscription",
-                  "pricing/purchased-packs-not-visible",
-                  "pricing/track-test-pack-usage",
-                  "pricing/invoices",
-                  "pricing/billing-information"
+                  {
+                    "group": "Plans & Credits",
+                    "pages": [
+                      "pricing/payments-and-credits",
+                      "pricing/elite-features",
+                      "pricing/one-time-subscription",
+                      "pricing/cancel-subscription"
+                    ]
+                  },
+                  {
+                    "group": "Billing & Management",
+                    "pages": [
+                      "pricing/teams",
+                      "pricing/purchased-packs-not-visible",
+                      "pricing/track-test-pack-usage",
+                      "pricing/invoices",
+                      "pricing/billing-information"
+                    ]
+                  }
                 ]
               },
               {
@@ -230,13 +265,23 @@
                 "group": "Primeros Pasos",
                 "icon": "rocket",
                 "pages": [
-                  "es/getting-started/quickstart",
-                  "es/getting-started/what-gets-tracked",
-                  "es/getting-started/trust-score",
-                  "es/getting-started/device-compatibility",
-                  "es/getting-started/video-recording",
-                  "es/getting-started/faqs",
-                  "es/getting-started/best-practices-for-teachers"
+                  {
+                    "group": "Primeros Pasos",
+                    "pages": [
+                      "es/getting-started/quickstart",
+                      "es/getting-started/device-compatibility",
+                      "es/getting-started/best-practices-for-teachers"
+                    ]
+                  },
+                  {
+                    "group": "Cómo Funciona la Supervisión",
+                    "pages": [
+                      "es/getting-started/what-gets-tracked",
+                      "es/getting-started/trust-score",
+                      "es/getting-started/video-recording",
+                      "es/getting-started/faqs"
+                    ]
+                  }
                 ]
               },
               {
@@ -254,12 +299,17 @@
                     ]
                   },
                   {
-                    "group": "Configuración de la Prueba",
+                    "group": "Temporizador y Supervisión",
                     "pages": [
                       "es/settings/timer-settings",
                       "es/settings/proctoring-settings",
                       "es/settings/enhanced-proctoring",
-                      "es/settings/advanced-settings",
+                      "es/settings/advanced-settings"
+                    ]
+                  },
+                  {
+                    "group": "Control de Acceso",
+                    "pages": [
                       "es/settings/restricting-by-email",
                       "es/settings/restricting-to-some-users",
                       "es/settings/inviting-candidates-via-email",
@@ -275,17 +325,27 @@
                 "group": "Cuestionarios Socratease",
                 "icon": "graduation-cap",
                 "pages": [
-                  "es/socratease/why-socratease",
-                  "es/socratease/creating-a-quiz",
-                  "es/socratease/question-types",
-                  "es/socratease/question-type-availability",
-                  "es/socratease/quiz-settings",
-                  "es/socratease/showing-results-to-candidates",
-                  "es/socratease/question-banks",
-                  "es/socratease/bulk-import-from-excel",
-                  "es/socratease/question-display-mode",
-                  "es/socratease/using-tags",
-                  "es/socratease/latex-math-equations"
+                  {
+                    "group": "Crear Cuestionarios",
+                    "pages": [
+                      "es/socratease/why-socratease",
+                      "es/socratease/creating-a-quiz",
+                      "es/socratease/question-types",
+                      "es/socratease/question-type-availability",
+                      "es/socratease/bulk-import-from-excel"
+                    ]
+                  },
+                  {
+                    "group": "Configuración del Cuestionario",
+                    "pages": [
+                      "es/socratease/quiz-settings",
+                      "es/socratease/question-display-mode",
+                      "es/socratease/showing-results-to-candidates",
+                      "es/socratease/question-banks",
+                      "es/socratease/using-tags",
+                      "es/socratease/latex-math-equations"
+                    ]
+                  }
                 ]
               },
               {
@@ -353,15 +413,25 @@
                 "group": "Precios y Cuenta",
                 "icon": "credit-card",
                 "pages": [
-                  "es/pricing/payments-and-credits",
-                  "es/pricing/teams",
-                  "es/pricing/elite-features",
-                  "es/pricing/one-time-subscription",
-                  "es/pricing/cancel-subscription",
-                  "es/pricing/purchased-packs-not-visible",
-                  "es/pricing/track-test-pack-usage",
-                  "es/pricing/invoices",
-                  "es/pricing/billing-information"
+                  {
+                    "group": "Planes y Créditos",
+                    "pages": [
+                      "es/pricing/payments-and-credits",
+                      "es/pricing/elite-features",
+                      "es/pricing/one-time-subscription",
+                      "es/pricing/cancel-subscription"
+                    ]
+                  },
+                  {
+                    "group": "Facturación y Gestión",
+                    "pages": [
+                      "es/pricing/teams",
+                      "es/pricing/purchased-packs-not-visible",
+                      "es/pricing/track-test-pack-usage",
+                      "es/pricing/invoices",
+                      "es/pricing/billing-information"
+                    ]
+                  }
                 ]
               },
               {
@@ -392,13 +462,23 @@
                 "group": "Primeiros Passos",
                 "icon": "rocket",
                 "pages": [
-                  "pt/getting-started/quickstart",
-                  "pt/getting-started/what-gets-tracked",
-                  "pt/getting-started/trust-score",
-                  "pt/getting-started/device-compatibility",
-                  "pt/getting-started/video-recording",
-                  "pt/getting-started/faqs",
-                  "pt/getting-started/best-practices-for-teachers"
+                  {
+                    "group": "Primeiros Passos",
+                    "pages": [
+                      "pt/getting-started/quickstart",
+                      "pt/getting-started/device-compatibility",
+                      "pt/getting-started/best-practices-for-teachers"
+                    ]
+                  },
+                  {
+                    "group": "Como Funciona a Supervisão",
+                    "pages": [
+                      "pt/getting-started/what-gets-tracked",
+                      "pt/getting-started/trust-score",
+                      "pt/getting-started/video-recording",
+                      "pt/getting-started/faqs"
+                    ]
+                  }
                 ]
               },
               {
@@ -416,12 +496,17 @@
                     ]
                   },
                   {
-                    "group": "Configurações da Prova",
+                    "group": "Temporizador e Supervisão",
                     "pages": [
                       "pt/settings/timer-settings",
                       "pt/settings/proctoring-settings",
                       "pt/settings/enhanced-proctoring",
-                      "pt/settings/advanced-settings",
+                      "pt/settings/advanced-settings"
+                    ]
+                  },
+                  {
+                    "group": "Controle de Acesso",
+                    "pages": [
                       "pt/settings/restricting-by-email",
                       "pt/settings/restricting-to-some-users",
                       "pt/settings/inviting-candidates-via-email",
@@ -437,17 +522,27 @@
                 "group": "Questionários Socratease",
                 "icon": "graduation-cap",
                 "pages": [
-                  "pt/socratease/why-socratease",
-                  "pt/socratease/creating-a-quiz",
-                  "pt/socratease/question-types",
-                  "pt/socratease/question-type-availability",
-                  "pt/socratease/quiz-settings",
-                  "pt/socratease/showing-results-to-candidates",
-                  "pt/socratease/question-banks",
-                  "pt/socratease/bulk-import-from-excel",
-                  "pt/socratease/question-display-mode",
-                  "pt/socratease/using-tags",
-                  "pt/socratease/latex-math-equations"
+                  {
+                    "group": "Criar Questionários",
+                    "pages": [
+                      "pt/socratease/why-socratease",
+                      "pt/socratease/creating-a-quiz",
+                      "pt/socratease/question-types",
+                      "pt/socratease/question-type-availability",
+                      "pt/socratease/bulk-import-from-excel"
+                    ]
+                  },
+                  {
+                    "group": "Configuração do Questionário",
+                    "pages": [
+                      "pt/socratease/quiz-settings",
+                      "pt/socratease/question-display-mode",
+                      "pt/socratease/showing-results-to-candidates",
+                      "pt/socratease/question-banks",
+                      "pt/socratease/using-tags",
+                      "pt/socratease/latex-math-equations"
+                    ]
+                  }
                 ]
               },
               {
@@ -515,15 +610,25 @@
                 "group": "Preços e Conta",
                 "icon": "credit-card",
                 "pages": [
-                  "pt/pricing/payments-and-credits",
-                  "pt/pricing/teams",
-                  "pt/pricing/elite-features",
-                  "pt/pricing/one-time-subscription",
-                  "pt/pricing/cancel-subscription",
-                  "pt/pricing/purchased-packs-not-visible",
-                  "pt/pricing/track-test-pack-usage",
-                  "pt/pricing/invoices",
-                  "pt/pricing/billing-information"
+                  {
+                    "group": "Planos e Créditos",
+                    "pages": [
+                      "pt/pricing/payments-and-credits",
+                      "pt/pricing/elite-features",
+                      "pt/pricing/one-time-subscription",
+                      "pt/pricing/cancel-subscription"
+                    ]
+                  },
+                  {
+                    "group": "Faturamento e Gestão",
+                    "pages": [
+                      "pt/pricing/teams",
+                      "pt/pricing/purchased-packs-not-visible",
+                      "pt/pricing/track-test-pack-usage",
+                      "pt/pricing/invoices",
+                      "pt/pricing/billing-information"
+                    ]
+                  }
                 ]
               },
               {
