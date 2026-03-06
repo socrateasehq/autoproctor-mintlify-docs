@@ -28,8 +28,10 @@
       "og:site_name": "AutoProctor Help Center"
     }
   },
-  "feedback": {
-    "thumbsRating": true
+  "integrations": {
+    "telemetry": {
+      "enabled": true
+    }
   },
   "redirects": [
     { "source": "/creating-tests/test-settings", "destination": "/settings/timer-settings" },
