@@ -226,6 +226,7 @@
                     "group": "Plans & Credits",
                     "pages": [
                       "pricing/payments-and-credits",
+                      "pricing/feature-comparison",
                       "pricing/elite-features",
                       "pricing/one-time-subscription",
                       "pricing/cancel-subscription"
@@ -430,6 +431,7 @@
                     "group": "Planes y Créditos",
                     "pages": [
                       "es/pricing/payments-and-credits",
+                      "es/pricing/feature-comparison",
                       "es/pricing/elite-features",
                       "es/pricing/one-time-subscription",
                       "es/pricing/cancel-subscription"
@@ -634,6 +636,7 @@
                     "group": "Planos e Créditos",
                     "pages": [
                       "pt/pricing/payments-and-credits",
+                      "pt/pricing/feature-comparison",
                       "pt/pricing/elite-features",
                       "pt/pricing/one-time-subscription",
                       "pt/pricing/cancel-subscription"
