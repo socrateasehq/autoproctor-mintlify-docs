@@ -67,6 +67,7 @@
               {
                 "group": "Getting Started",
                 "icon": "rocket",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "First Steps",
@@ -90,6 +91,7 @@
               {
                 "group": "Test Setup",
                 "icon": "square-plus",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Creating Tests",
@@ -127,6 +129,7 @@
               {
                 "group": "Socratease Quizzes",
                 "icon": "graduation-cap",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Creating Quizzes",
@@ -154,6 +157,7 @@
               {
                 "group": "Candidate Guide",
                 "icon": "pen-to-square",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Instructions",
@@ -191,6 +195,7 @@
               {
                 "group": "Results & Reports",
                 "icon": "chart-bar",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Viewing Results",
@@ -215,6 +220,7 @@
               {
                 "group": "Pricing & Account",
                 "icon": "credit-card",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Plans & Credits",
@@ -240,6 +246,7 @@
               {
                 "group": "Support",
                 "icon": "headset",
+                "expanded": true,
                 "pages": [
                   "support/contact-us",
                   "support/booking-a-demo"
@@ -264,6 +271,7 @@
               {
                 "group": "Primeros Pasos",
                 "icon": "rocket",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Primeros Pasos",
@@ -287,6 +295,7 @@
               {
                 "group": "Configuración de Pruebas",
                 "icon": "square-plus",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Crear Pruebas",
@@ -324,6 +333,7 @@
               {
                 "group": "Cuestionarios Socratease",
                 "icon": "graduation-cap",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Crear Cuestionarios",
@@ -351,6 +361,7 @@
               {
                 "group": "Guía del Candidato",
                 "icon": "pen-to-square",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Instrucciones",
@@ -388,6 +399,7 @@
               {
                 "group": "Resultados e Informes",
                 "icon": "chart-bar",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Ver Resultados",
@@ -412,6 +424,7 @@
               {
                 "group": "Precios y Cuenta",
                 "icon": "credit-card",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Planes y Créditos",
@@ -437,6 +450,7 @@
               {
                 "group": "Soporte",
                 "icon": "headset",
+                "expanded": true,
                 "pages": [
                   "es/support/contact-us",
                   "es/support/booking-a-demo"
@@ -461,6 +475,7 @@
               {
                 "group": "Primeiros Passos",
                 "icon": "rocket",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Primeiros Passos",
@@ -484,6 +499,7 @@
               {
                 "group": "Configuração de Provas",
                 "icon": "square-plus",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Criar Provas",
@@ -521,6 +537,7 @@
               {
                 "group": "Questionários Socratease",
                 "icon": "graduation-cap",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Criar Questionários",
@@ -548,6 +565,7 @@
               {
                 "group": "Guia do Candidato",
                 "icon": "pen-to-square",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Instruções",
@@ -585,6 +603,7 @@
               {
                 "group": "Resultados e Relatórios",
                 "icon": "chart-bar",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Visualizar Resultados",
@@ -609,6 +628,7 @@
               {
                 "group": "Preços e Conta",
                 "icon": "credit-card",
+                "expanded": true,
                 "pages": [
                   {
                     "group": "Planos e Créditos",
@@ -634,6 +654,7 @@
               {
                 "group": "Suporte",
                 "icon": "headset",
+                "expanded": true,
                 "pages": [
                   "pt/support/contact-us",
                   "pt/support/booking-a-demo"
