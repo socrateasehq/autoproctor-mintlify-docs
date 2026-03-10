@@ -19,7 +19,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [ ] Screenshot of the results page with sample data
 
 ### what-gets-tracked.mdx
-- [ ] Screenshot of a sample proctoring report showing flagged violations
+- [x] Screenshot of a sample proctoring report showing flagged violations <!-- getting-started/sample-proctoring-report.png -->
 - [ ] Screenshot of violation evidence cards in a proctoring report
 - [ ] Screenshot of the test dashboard with the Settings button highlighted
 - [ ] Screenshot of the Proctoring Settings tab
@@ -27,7 +27,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### trust-score.mdx
 - [ ] Diagram or infographic illustrating how the three factors combine into the Trust Score
-- [ ] Screenshot of the results list showing Trust Score column
+- [x] Screenshot of the results list showing Trust Score column <!-- getting-started/trustscore.png -->
 - [ ] Screenshot of results list sorted by Trust Score
 - [ ] Screenshot of an individual proctoring report with violation evidence
 
