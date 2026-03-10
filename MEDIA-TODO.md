@@ -64,14 +64,17 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [ ] Video walkthrough of using AutoProctor with IFrame/Other providers
 
 ### adding-collaborators.mdx
-- [ ] Screenshot of the Advanced Settings section with the collaborators area visible
+- [ ] Screenshot of the Advanced Settings section with the collaborators area visible 
 - [ ] Screenshot of the collaborate link button
+<!-- need to add a video here to cover all points -->
 
 ### archiving-and-deleting-tests.mdx
 - [ ] Screenshot of the Dashboard with the Settings button highlighted
 - [ ] Screenshot of the Archive Test button in test settings
 - [ ] Screenshot of the Archived Tests section in the left sidebar
 - [ ] Screenshot of the Restore button in the Archived Tests section
+
+<!-- need to add a video here to cover all points -->
 
 ### iframe-query-arguments.mdx
 - [ ] Screenshot of Advanced Settings with the Query Arguments field visible
@@ -87,21 +90,23 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Settings (33 items)
 
 ### timer-settings.mdx
-- [ ] Screenshot of the Timer Settings section in the test settings page
-- [ ] GIF showing the timer countdown experience from the candidate's perspective
+- [x] Screenshot of the Timer Settings section in the test settings page <!-- creating-tests/timer-settings.png -->
+- [ ] GIF showing the timer countdown experience from the candidate's perspective <!-- i dont think this is needed -->
 
 ### proctoring-settings.mdx
-- [ ] Screenshot of the full Proctoring Settings section
-- [ ] GIF showing the candidate experience when Photo Before Test Start is enabled
-- [ ] Video walkthrough of the 360-degree auxiliary device pairing process
+- [x] Screenshot of the full Proctoring Settings section <!-- creating-tests/proctoring-settings.png + creating-tests/enhanced-proctoring.png -->
+- [ ] GIF showing the candidate experience when Photo Before Test Start is enabled <!-- i dont think this is needed -->
+- [ ] Video walkthrough of the 360-degree auxiliary device pairing process <!-- we can add the youtube video here, it is a little long, but it covers everything. -->
 
 ### enhanced-proctoring.mdx
+- [x] Screenshot of the enhanced proctoring settings panel <!-- creating-tests/enhanced-proctoring.png (already embedded at top of article) -->
 - [ ] Screenshot of the ID card upload screen from the candidate's perspective
 - [ ] Screenshot of an impersonation detection alert in the proctoring report
-- [ ] Video walkthrough of the auxiliary device pairing and 360° proctoring setup
-- [ ] Screenshot of a session recording playback in the results page
+- [ ] Video walkthrough of the auxiliary device pairing and 360° proctoring setup <!-- we can add the youtube video here, it is a little long, but it covers everything. -->
+- [ ] Screenshot of a session recording playback in the results page <!-- we can have a gif here -->
 
 ### advanced-settings.mdx
+- [x] Screenshot of the Advanced Settings panel <!-- creating-tests/advanced-settings.png (already embedded at top of article) -->
 - [ ] Screenshot showing the login provider selection options
 - [ ] Screenshot showing login restriction configuration
 - [ ] Screenshot showing the Gather Additional Details configuration

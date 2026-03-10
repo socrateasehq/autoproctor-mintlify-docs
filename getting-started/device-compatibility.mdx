@@ -41,7 +41,22 @@ For the best experience, use a device that is less than 3 years old. AutoProctor
   <Step title="Grant camera and microphone permissions">
     When prompted, allow your browser to access the camera and microphone. If proctoring permissions fail, your browser or device may not be supported.
 
-    {/* TODO: Add screenshot of the browser permission prompt for camera/microphone */}
+    <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
+      <Frame caption="Microphone permission prompt.">
+        <img
+          style={{borderRadius: "10px", maxHeight: "250px"}}
+          src="/images/getting-started/audio-permission.png"
+          alt="Browser permission prompt requesting microphone access for autoproctor.co"
+        />
+      </Frame>
+      <Frame caption="Camera permission prompt.">
+        <img
+          style={{borderRadius: "10px", maxHeight: "250px"}}
+          src="/images/getting-started/video-permission.png"
+          alt="Browser permission prompt requesting camera access for autoproctor.co"
+        />
+      </Frame>
+    </div>
   </Step>
   <Step title="Complete the demo">
     Work through the demo test to confirm that all proctoring features load correctly, including the camera preview, screen sharing prompt, and full-screen mode.
