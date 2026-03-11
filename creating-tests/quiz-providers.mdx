@@ -5,9 +5,15 @@ description: "Learn about the quiz platforms you can use with AutoProctor for pr
 
 AutoProctor is an AI proctoring platform that monitors candidates during online assessments. You bring your own quiz, and AutoProctor handles the proctoring. When you create a test, you first select a quiz provider, then configure questions, points, timers, and proctoring settings.
 
-{/* TODO: Add screenshot of the quiz provider selection screen */}
-
 ## Choosing a Quiz Provider
+
+<Frame caption="How to create a test with different quiz providers in AutoProctor. You can only select one provider per test.">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/creating-tests/all-test-types.mp4"
+  ></video>
+</Frame>
 
 <Steps>
   <Step title="Create a New Test">
@@ -30,6 +36,14 @@ AutoProctor is an AI proctoring platform that monitors candidates during online 
 | **Microsoft Forms** | Microsoft ecosystem organizations | Seamless integration for enterprise evaluations |
 | **IFrame/Other** | TypeForm, ProProfs, ClassMarker, etc. | Adds proctoring to any web-based quiz platform |
 
+<Frame caption="Quiz provider selection screen in AutoProctor.">
+  <img
+    style={{borderRadius: "10px"}}
+    src="/images/creating-tests/all-test-types.png"
+    alt="AutoProctor quiz provider selection screen showing Socratease Quizzes, Google Forms, Microsoft Forms, and IFrame/Other options"
+  />
+</Frame>
+
 ### Socratease Quizzes
 
 Socratease is AutoProctor's native quizzing tool. It provides the tightest integration and the best candidate experience:
@@ -39,25 +53,13 @@ Socratease is AutoProctor's native quizzing tool. It provides the tightest integ
 - **Multiple question types** including MCQs, essays, voice responses, coding, and more
 - **Excel bulk import** and question banks for fast quiz assembly
 
-{/* TODO: Add screenshot of Socratease quiz creation interface */}
-
-{/* TODO: Add video walkthrough of creating a Socratease quiz */}
-
 ### Google Forms
 
 Google Forms is the most widely-used quizzing platform, particularly popular with educators who use Google Classroom. AutoProctor offers a dedicated **Google Forms add-on** that creates a proctored test directly from within your Google Form.
 
-{/* TODO: Add screenshot of the AutoProctor Google Forms add-on */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with Google Forms */}
-
 ### Microsoft Forms
 
 Microsoft Forms is the second most-used platform, especially within organizations that rely on the Microsoft ecosystem for internal evaluations and hiring assessments.
-
-{/* TODO: Add screenshot of a Microsoft Forms test in AutoProctor */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with Microsoft Forms */}
 
 ### IFrame/Other Providers
 
@@ -66,10 +68,6 @@ Hundreds of quiz platforms exist, including TypeForm, ProProfs, and ClassMarker.
 <Note>
 When using IFrame/Other providers, you can customize the embedded URL using [query arguments](/creating-tests/iframe-query-arguments).
 </Note>
-
-{/* TODO: Add screenshot of the IFrame/Other provider configuration */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with IFrame/Other providers */}
 
 ## Related Resources
 

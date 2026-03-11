@@ -5,9 +5,15 @@ description: "Conozca las plataformas de cuestionarios que puede utilizar con Au
 
 AutoProctor es una plataforma de supervisión con inteligencia artificial que monitorea a los candidatos durante las evaluaciones en línea. Usted proporciona su propio cuestionario, y AutoProctor se encarga de la supervisión. Al crear un examen, primero selecciona un proveedor de cuestionarios y luego configura las preguntas, los puntos, los temporizadores y las opciones de supervisión.
 
-{/* TODO: Add screenshot of the quiz provider selection screen */}
-
 ## Elegir un Proveedor de Cuestionarios
+
+<Frame caption="Cómo crear un examen con diferentes proveedores de cuestionarios en AutoProctor. Solo puede seleccionar un proveedor por examen.">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/creating-tests/all-test-types.mp4"
+  ></video>
+</Frame>
 
 <Steps>
   <Step title="Cree un Nuevo Examen">
@@ -30,6 +36,14 @@ AutoProctor es una plataforma de supervisión con inteligencia artificial que mo
 | **Microsoft Forms** | Organizaciones del ecosistema Microsoft | Integración fluida para evaluaciones empresariales |
 | **IFrame/Otros** | TypeForm, ProProfs, ClassMarker, etc. | Agrega supervisión a cualquier plataforma de cuestionarios basada en la web |
 
+<Frame caption="Pantalla de selección de proveedores de cuestionarios en AutoProctor.">
+  <img
+    style={{borderRadius: "10px"}}
+    src="/images/creating-tests/all-test-types.png"
+    alt="Pantalla de selección de proveedores de cuestionarios de AutoProctor mostrando Socratease, Google Forms, Microsoft Forms e IFrame/Otros"
+  />
+</Frame>
+
 ### Cuestionarios Socratease
 
 Socratease es la herramienta nativa de cuestionarios de AutoProctor. Proporciona la integración más estrecha y la mejor experiencia para el candidato:
@@ -39,25 +53,13 @@ Socratease es la herramienta nativa de cuestionarios de AutoProctor. Proporciona
 - **Múltiples tipos de preguntas** incluyendo opción múltiple, ensayos, respuestas de voz, programación y más
 - **Importación masiva desde Excel** y bancos de preguntas para un ensamblaje rápido del cuestionario
 
-{/* TODO: Add screenshot of Socratease quiz creation interface */}
-
-{/* TODO: Add video walkthrough of creating a Socratease quiz */}
-
 ### Google Forms
 
 Google Forms es la plataforma de cuestionarios más utilizada, particularmente popular entre educadores que usan Google Classroom. AutoProctor ofrece un **complemento dedicado para Google Forms** que crea un examen supervisado directamente desde su Google Form.
 
-{/* TODO: Add screenshot of the AutoProctor Google Forms add-on */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with Google Forms */}
-
 ### Microsoft Forms
 
 Microsoft Forms es la segunda plataforma más utilizada, especialmente dentro de organizaciones que dependen del ecosistema Microsoft para evaluaciones internas y procesos de contratación.
-
-{/* TODO: Add screenshot of a Microsoft Forms test in AutoProctor */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with Microsoft Forms */}
 
 ### IFrame/Otros Proveedores
 
@@ -66,10 +68,6 @@ Existen cientos de plataformas de cuestionarios, incluyendo TypeForm, ProProfs y
 <Note>
 Al usar proveedores IFrame/Otros, puede personalizar la URL incorporada usando [argumentos de consulta](/creating-tests/iframe-query-arguments).
 </Note>
-
-{/* TODO: Add screenshot of the IFrame/Other provider configuration */}
-
-{/* TODO: Add video walkthrough of using AutoProctor with IFrame/Other providers */}
 
 ## Recursos Relacionados
 
