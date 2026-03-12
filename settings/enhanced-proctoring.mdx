@@ -31,7 +31,9 @@ ID Card Verification confirms the candidate's identity by matching their uploade
   </Step>
 </Steps>
 
-{/* TODO: Add screenshot of the ID card upload screen from the candidate's perspective */}
+<Frame caption="ID verification screen before test start.">
+  <img style={{transform: "scale(1.008)"}} src="/images/taking-tests/id-verification.png" alt="ID verification screen before test start" />
+</Frame>
 
 <Note>
 **Photo Before Test Start** must be enabled in the basic proctoring settings for ID Card Verification to work effectively.
@@ -41,7 +43,9 @@ ID Card Verification confirms the candidate's identity by matching their uploade
 
 Impersonation Detection monitors whether someone other than the original candidate attempts or continues the test. AutoProctor compares periodic photos taken during the test against the initial photo to detect face changes.
 
-{/* TODO: Add screenshot of an impersonation detection alert in the proctoring report */}
+<Frame caption="Impersonation evidence on report.">
+  <img src="/images/taking-tests/impersonation-detected.png" alt="Impersonation evidence on report" />
+</Frame>
 
 ### Auxiliary Device (360° Proctoring)
 
@@ -53,13 +57,19 @@ The Auxiliary Device feature enables 360-degree proctoring by pairing the candid
   </Step>
   <Step title="Candidate pairs their phone">
     When the test starts, the candidate scans a QR code on their laptop screen using their phone camera. This pairs the two devices.
+
+    <Frame caption="Auxiliary device pairing screen before test start.">
+      <img style={{transform: "scaleX(1.019) scaleY(1.04)"}} src="/images/taking-tests/aux-device.png" alt="Auxiliary device pairing screen before test start" />
+    </Frame>
   </Step>
   <Step title="Phone provides secondary monitoring">
     The phone camera captures the candidate's desk, surroundings, and screen from a different angle. This also helps detect AI tools that display answers as overlays on the screen.
   </Step>
 </Steps>
 
-{/* TODO: Add video walkthrough of the auxiliary device pairing and 360° proctoring setup */}
+<Frame caption="Auxiliary device evidence captures.">
+  <img src="/images/taking-tests/aux-device-evidence.png" alt="Auxiliary device evidence captures" />
+</Frame>
 
 ### Session Recording
 

@@ -31,7 +31,9 @@ La Verificación de Documento de Identidad confirma la identidad del candidato c
   </Step>
 </Steps>
 
-{/* TODO: Add screenshot of the ID card upload screen from the candidate's perspective */}
+<Frame caption="Pantalla de verificación de identidad antes de iniciar el examen.">
+  <img style={{transform: "scale(1.008)"}} src="/images/taking-tests/id-verification.png" alt="Pantalla de verificación de identidad antes de iniciar el examen" />
+</Frame>
 
 <Note>
 La **Foto Antes del Inicio del Examen** debe estar activada en la configuración de supervisión básica para que la Verificación de Documento de Identidad funcione eficazmente.
@@ -41,7 +43,9 @@ La **Foto Antes del Inicio del Examen** debe estar activada en la configuración
 
 La Detección de Suplantación monitorea si alguien diferente al candidato original intenta o continúa el examen. AutoProctor compara las fotos periódicas tomadas durante el examen con la foto inicial para detectar cambios de rostro.
 
-{/* TODO: Add screenshot of an impersonation detection alert in the proctoring report */}
+<Frame caption="Evidencia de suplantación en el informe.">
+  <img src="/images/taking-tests/impersonation-detected.png" alt="Evidencia de suplantación en el informe" />
+</Frame>
 
 ### Dispositivo Auxiliar (Supervisión de 360°)
 
@@ -53,13 +57,19 @@ La función de Dispositivo Auxiliar permite la supervisión de 360 grados al emp
   </Step>
   <Step title="El candidato empareja su teléfono">
     Cuando comienza el examen, el candidato escanea un código QR en la pantalla de su computadora portátil usando la cámara de su teléfono. Esto empareja los dos dispositivos.
+
+    <Frame caption="Pantalla de emparejamiento del dispositivo auxiliar antes de iniciar el examen.">
+      <img style={{transform: "scaleX(1.019) scaleY(1.04)"}} src="/images/taking-tests/aux-device.png" alt="Pantalla de emparejamiento del dispositivo auxiliar antes de iniciar el examen" />
+    </Frame>
   </Step>
   <Step title="El teléfono proporciona monitoreo secundario">
     La cámara del teléfono captura el escritorio, el entorno y la pantalla del candidato desde un ángulo diferente. Esto también ayuda a detectar herramientas de IA que muestran respuestas como superposiciones en la pantalla.
   </Step>
 </Steps>
 
-{/* TODO: Add video walkthrough of the auxiliary device pairing and 360° proctoring setup */}
+<Frame caption="Capturas de evidencia del dispositivo auxiliar.">
+  <img src="/images/taking-tests/aux-device-evidence.png" alt="Capturas de evidencia del dispositivo auxiliar" />
+</Frame>
 
 ### Grabación de Sesión
 

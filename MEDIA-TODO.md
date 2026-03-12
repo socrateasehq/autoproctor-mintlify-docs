@@ -106,10 +106,13 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### enhanced-proctoring.mdx
 - [x] Screenshot of the enhanced proctoring settings panel <!-- creating-tests/enhanced-proctoring.png (already embedded at top of article) -->
-- [ ] Screenshot of the ID card upload screen from the candidate's perspective
-- [ ] Screenshot of an impersonation detection alert in the proctoring report
+- [x] Screenshot of the ID card upload screen from the candidate's perspective <!-- taking-tests/id-verification.png -->
+- [x] Screenshot of an impersonation detection alert in the proctoring report <!-- taking-tests/impersonation-detected.png -->
+- [x] Screenshot of auxiliary device in the proctoring report <!-- taking-tests/aux-device-evidence.png -->
+- [x] Screenshot of auxiliary device from the candidate's perspective <!-- taking-tests/aux-device.png -->
 - [ ] Video walkthrough of the auxiliary device pairing and 360° proctoring setup <!-- we can add the youtube video here, it is a little long, but it covers everything. -->
-- [ ] Screenshot of a session recording playback in the results page <!-- we can have a gif here -->
+
+- [ ] Screenshot of a session recording playback in the results page <!-- we can either link them to /session-recording-demo/ or the loom we have for that -->
 
 ### advanced-settings.mdx
 - [x] Screenshot of the Advanced Settings panel <!-- creating-tests/advanced-settings.png (already embedded at top of article) -->
