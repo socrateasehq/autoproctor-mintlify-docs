@@ -96,12 +96,13 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### timer-settings.mdx
 - [x] Screenshot of the Timer Settings section in the test settings page <!-- creating-tests/timer-settings.png -->
+- [x] A video walkthrough of how to configure timer settings <!-- videos/settings/config-timer-settings.mp4 -->
 - [ ] GIF showing the timer countdown experience from the candidate's perspective <!-- i dont think this is needed -->
 
 ### proctoring-settings.mdx
-- [x] Screenshot of the full Proctoring Settings section <!-- creating-tests/proctoring-settings.png + creating-tests/enhanced-proctoring.png -->
+- [x] Screenshot of the full Proctoring Settings section <!-- creating-tests/proctoring-settings.png + creating-tests/enhanced-proctoring.png + settings/communication-settings.png -->
 - [ ] GIF showing the candidate experience when Photo Before Test Start is enabled <!-- i dont think this is needed -->
-- [ ] Video walkthrough of the 360-degree auxiliary device pairing process <!-- we can add the youtube video here, it is a little long, but it covers everything. -->
+- [ ] Video walkthrough of the 360-degree auxiliary device pairing process <!-- we can add the youtube video that we have on features page here, it is a little long, but it covers everything. -->
 
 ### enhanced-proctoring.mdx
 - [x] Screenshot of the enhanced proctoring settings panel <!-- creating-tests/enhanced-proctoring.png (already embedded at top of article) -->
