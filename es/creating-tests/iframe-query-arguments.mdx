@@ -9,11 +9,17 @@ Al usar el proveedor de cuestionarios **IFrame/Otros**, puede agregar parámetro
 
 AutoProctor construye la URL final agregando sus argumentos de consulta a la URL original del cuestionario. Usted proporciona solo los parámetros; AutoProctor agrega el prefijo `?` automáticamente.
 
+<Frame caption="Cómo usar argumentos de consulta en la Configuración Avanzada de AutoProctor.">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/settings/query-arguments.mp4"
+  ></video>
+</Frame>
+
 <Steps>
   <Step title="Abra la Configuración Avanzada">
     Navegue a su examen y abra la sección de **Configuración Avanzada**.
-
-    {/* TODO: Add screenshot of Advanced Settings with the Query Arguments field visible */}
   </Step>
   <Step title="Ingrese Sus Argumentos de Consulta">
     Escriba sus parámetros en el campo **Argumentos de Consulta**. Use el formato `key1=val1&key2=val2`.
@@ -54,8 +60,6 @@ No incluya el prefijo `?` en sus argumentos de consulta. AutoProctor lo agrega a
 | `hl=en` | Establecer el idioma a inglés | Renderizar un Google Form en inglés para candidatos internacionales |
 | `hl=fr` | Establecer el idioma a francés | Renderizar un Google Form en francés |
 | `embedded=true` | Forzar modo incorporado | Asegurar que ciertas plataformas se muestren correctamente dentro del iframe |
-
-{/* TODO: Add screenshot showing the Query Arguments field with an example value entered */}
 
 ## Recursos Relacionados
 

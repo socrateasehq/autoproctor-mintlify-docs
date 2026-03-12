@@ -10,77 +10,82 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Getting Started (22 items)
 
 ### quickstart.mdx
-- [ ] Video walkthrough of the complete quickstart flow
+- [ ] Video walkthrough of the complete quickstart flow <!-- this can be a youtube video, which covers creating a soc test, etc. the login part is fine, we dont need to include that. we can do it on local as a new user -->
+
+<!-- video will cover the below points -->
 - [ ] Screenshot of the AutoProctor dashboard for a new user
 - [ ] Screenshot of the quiz provider selection screen
 - [ ] Screenshot of the test settings page with key sections highlighted
-- [ ] GIF showing the demo test experience
+- [ ] GIF showing the demo test experience <!-- this will not be in the video but i think we can ignore this, a link to demo test should be fine. -->
 - [ ] Screenshot showing where to copy the test link
-- [ ] Screenshot of the results page with sample data
+- [x] Screenshot of the results page with sample data <!-- getting-started/sample-results.png -->
 
 ### what-gets-tracked.mdx
 - [x] Screenshot of a sample proctoring report showing flagged violations <!-- getting-started/sample-proctoring-report.png -->
-- [ ] Screenshot of violation evidence cards in a proctoring report
-- [ ] Screenshot of the test dashboard with the Settings button highlighted
-- [ ] Screenshot of the Proctoring Settings tab
-- [ ] Screenshot of proctoring feature toggles
+- [x] Screenshot of violation evidence cards in a proctoring report <!-- getting-started/evidence-cards.png -->
+<!-- Have added a video for the below 3 points: videos/getting-started/configure-proctor-settings.mp4 -->
+- [x] Screenshot of the test dashboard with the Settings button highlighted
+- [x] Screenshot of the Proctoring Settings tab
+- [x] Screenshot of proctoring feature toggles
 
 ### trust-score.mdx
-- [ ] Diagram or infographic illustrating how the three factors combine into the Trust Score
-- [x] Screenshot of the results list showing Trust Score column <!-- getting-started/trustscore.png -->
-- [ ] Screenshot of results list sorted by Trust Score
-- [ ] Screenshot of an individual proctoring report with violation evidence
+- [ ] Diagram or infographic illustrating how the three factors combine into the Trust Score <!-- ignoring this for now -->
+- [x] Screenshot of the results list showing Trust Score column <!-- videos/getting-started/trustscore-column.mp4 -->
+- [ ] Screenshot of results list sorted by Trust Score <!-- don't need this -->
+- [ ] Screenshot of an individual proctoring report with violation evidence <!-- we can skip this as well -->
 
 ### device-compatibility.mdx
-- [ ] Screenshot of the demo test landing page
-- [ ] Screenshot of the browser permission prompt for camera/microphone
-- [ ] Screenshot of a successful demo test completion screen
+- [ ] Screenshot of the demo test landing page <!-- skip -->
+- [x] Screenshot of the browser permission prompt for camera/microphone <!-- getting-started/video-permission.png + getting-started/audio-permission.png -->
+- [ ] Screenshot of a successful demo test completion screen <!-- skip -->
 
 ### video-recording.mdx
-- [ ] Diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach
-- [ ] Illustration of the smoke detector analogy -- on-device monitoring with alert-only output
-- [ ] Screenshot of a proctoring report showing different types of violation evidence
+- [ ] Diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach <!-- ignoring this for now -->
+- [ ] Illustration of the smoke detector analogy -- on-device monitoring with alert-only output <!-- skip -->
+- [x] Screenshot of a proctoring report showing different types of violation evidence <!-- getting-started/sample-proctoring-report.png -->
 
 ### best-practices-for-teachers.mdx
-- [ ] Video walkthrough of the complete test administration workflow
-- [ ] Screenshot of the demo test landing page
-- [ ] Screenshot of the account credits/balance display
-- [ ] Screenshot of the dashboard during an active test session showing real-time submissions
-- [ ] Screenshot of the results page with Trust Score column highlighted
+- [ ] Video walkthrough of the complete test administration workflow <!-- will be a lot to cover in a video, we should skip -->
+- [ ] Screenshot of the demo test landing page <!-- skip -->
+- [x] Screenshot of the account credits/balance display <!-- getting-started/display-credits.gif -->
+- [x] Screenshot of the dashboard during an active test session showing real-time submissions <!-- getting-started/sample-results.png -->
+- [ ] Screenshot of the results page with Trust Score column highlighted <!-- i think we should skip as we are linking to trust scores doc and that already has the video highlighting trust score column  -->
 
 ---
 
 ## Creating Tests (16 items)
 
 ### quiz-providers.mdx
-- [ ] Screenshot of the quiz provider selection screen
-- [ ] Screenshot of Socratease quiz creation interface
-- [ ] Video walkthrough of creating a Socratease quiz
-- [ ] Screenshot of the AutoProctor Google Forms add-on
-- [ ] Video walkthrough of using AutoProctor with Google Forms
-- [ ] Screenshot of a Microsoft Forms test in AutoProctor
-- [ ] Video walkthrough of using AutoProctor with Microsoft Forms
-- [ ] Screenshot of the IFrame/Other provider configuration
-- [ ] Video walkthrough of using AutoProctor with IFrame/Other providers
+<!-- Added one video and one image to cover all points: videos/creating-tests/all-test-types.mp4 + creating-tests/all-test-types.png -->
+- [x] Screenshot of the quiz provider selection screen <!-- creating-tests/all-test-types.png -->
+- [x] Screenshot of Socratease quiz creation interface <!-- covered by video -->
+- [x] Video walkthrough of creating a Socratease quiz <!-- videos/creating-tests/all-test-types.mp4 -->
+- [x] Screenshot of the AutoProctor Google Forms add-on <!-- covered by video -->
+- [x] Video walkthrough of using AutoProctor with Google Forms <!-- covered by video -->
+- [x] Screenshot of a Microsoft Forms test in AutoProctor <!-- covered by video -->
+- [x] Video walkthrough of using AutoProctor with Microsoft Forms <!-- covered by video -->
+- [x] Screenshot of the IFrame/Other provider configuration <!-- covered by video -->
+- [x] Video walkthrough of using AutoProctor with IFrame/Other providers <!-- covered by video -->
 
 ### adding-collaborators.mdx
-- [ ] Screenshot of the Advanced Settings section with the collaborators area visible 
-- [ ] Screenshot of the collaborate link button
-<!-- need to add a video here to cover all points -->
+- [x] Screenshot of the Advanced Settings section with the collaborators area visible
+- [x] Screenshot of the collaborate link button
+<!-- Have added a video to cover all points: videos/creating-tests/collaborators.mp4 -->
 
 ### archiving-and-deleting-tests.mdx
-- [ ] Screenshot of the Dashboard with the Settings button highlighted
-- [ ] Screenshot of the Archive Test button in test settings
-- [ ] Screenshot of the Archived Tests section in the left sidebar
-- [ ] Screenshot of the Restore button in the Archived Tests section
-
-<!-- need to add a video here to cover all points -->
+<!-- Added three videos to cover all points: videos/creating-tests/archive-test.mp4, delete-test.mp4, restore-test.mp4 -->
+- [x] Screenshot of the Dashboard with the Settings button highlighted <!-- covered by archive-test.mp4 -->
+- [x] Screenshot of the Archive Test button in test settings <!-- covered by archive-test.mp4 -->
+- [x] Screenshot of the Archived Tests section in the left sidebar <!-- covered by archive-test.mp4 -->
+- [x] Screenshot of the Restore button in the Archived Tests section <!-- covered by restore-test.mp4 -->
 
 ### iframe-query-arguments.mdx
-- [ ] Screenshot of Advanced Settings with the Query Arguments field visible
-- [ ] Screenshot showing the Query Arguments field with an example value entered
+<!-- Added one video to cover both points: videos/settings/query-arguments.mp4 -->
+- [x] Screenshot of Advanced Settings with the Query Arguments field visible <!-- covered by query-arguments.mp4 -->
+- [x] Screenshot showing the Query Arguments field with an example value entered <!-- covered by query-arguments.mp4 -->
 
-### add-on-error.mdx
+### add-on-error.mdx 
+<!-- We can skip this entirely -->
 - [ ] Screenshot of the add-on showing only the Help option
 - [ ] Screenshot of the add-on working correctly in Incognito mode
 - [ ] Screenshot of the AutoProctor add-on in the Google Workspace Marketplace
