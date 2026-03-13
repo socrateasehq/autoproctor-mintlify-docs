@@ -5,7 +5,7 @@ description: "Configure provedores de login, restrições de e-mail, integraçã
 
 As Configurações Avançadas permitem que você controle como os candidatos fazem login, quem pode acessar o teste e como os resultados são compartilhados. Essas opções estão localizadas na parte inferior da página de Configurações do Teste.
 
-<Frame>
+<Frame caption="Painel de configurações avançadas.">
   <img src="/images/creating-tests/advanced-settings.png" alt="Painel de configurações avançadas" />
 </Frame>
 
@@ -36,6 +36,10 @@ Para instruções detalhadas, consulte [Restringir por E-mail](/settings/restric
 
 {/* TODO: Add screenshot showing login restriction configuration */}
 
+## Altura do IFrame
+
+Quando seu teste está incorporado como um iframe dentro do AutoProctor, esta configuração permite ajustar a altura (em pixels) desse iframe para corresponder ao conteúdo do seu teste. O valor padrão é 1764px — aumente-o se os candidatos precisarem rolar desnecessariamente, ou diminua-o para remover espaço em branco extra.
+
 ## Integração com Google Sheets
 
 Exporte automaticamente os resultados do teste para uma planilha do Google Sheets inserindo a URL da planilha neste campo. Para questionários Socratease, tanto os resultados de supervisão quanto as notas do questionário são exportados. Para questionários que não são do Socratease, apenas os resultados de supervisão são incluídos.
@@ -49,6 +53,16 @@ Adicione colegas como colaboradores no seu teste para que possam editar configur
 Para mais detalhes, consulte [Adicionar Colaboradores](/creating-tests/adding-collaborators).
 
 ## Recursos Premium e Elite
+
+### Ao Concluir o Teste (Premium)
+
+Controla o que os candidatos veem após enviar o teste. Por padrão, todos os usuários veem a página de conclusão padrão do AutoProctor. Usuários Premium e superiores podem personalizar isso com duas opções adicionais:
+
+| Opção | Descrição |
+|---|---|
+| **Mostrar mensagem padrão** | Exibe a página de conclusão padrão do AutoProctor (disponível em todos os planos) |
+| **Mostrar mensagem personalizada** | Exibe sua própria mensagem HTML para os candidatos (por exemplo, "Obrigado por completar a avaliação!") |
+| **Redirecionar para URL** | Envia os candidatos para uma página externa após o envio (por exemplo, o site da sua empresa ou um formulário de feedback) |
 
 ### URL Única por Candidato (Elite)
 

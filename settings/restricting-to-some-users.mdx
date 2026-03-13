@@ -38,11 +38,19 @@ Use AutoProctor's built-in **Login Restrictions** to allow only specific email d
   </Step>
 </Steps>
 
+<Frame caption="Login Restrictions field with domain and email restrictions.">
+  <img src="/images/settings/login-restrictions-email.png" alt="Login Restrictions field with domain and email restrictions" />
+</Frame>
+
 See [Restrict Test Access by Email Address](/settings/restricting-by-email) for full setup instructions and examples.
 
 ## Method 3: Unique Invitation Links
 
 Generate unique per-candidate URLs tied to specific email addresses. Each candidate receives their own link with email verification, so only the intended recipient can use it.
+
+<Frame caption="Unique invitation links setup.">
+  <video controls className="w-full rounded-xl" src="/videos/settings/unique-invitation-links.mp4"></video>
+</Frame>
 
 <Steps>
   <Step title="Enable Unique URL">
@@ -73,7 +81,9 @@ If you use Google Forms, you can restrict access at the Google Forms level inste
   <Step title="Restrict to your organization">
     Enable the option to restrict responses to users in your organization. This limits access to candidates with email addresses under your Google Workspace domain.
 
-    {/* TODO: Add screenshot of Google Forms settings showing the organization restriction toggle */}
+    <Frame caption="Google Forms access restriction settings.">
+      <img src="/images/settings/google-form-restriction.png" alt="Google Forms access restriction settings" />
+    </Frame>
   </Step>
 </Steps>
 

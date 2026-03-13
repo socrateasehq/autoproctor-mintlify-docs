@@ -116,16 +116,16 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### advanced-settings.mdx
 - [x] Screenshot of the Advanced Settings panel <!-- creating-tests/advanced-settings.png (already embedded at top of article) -->
-- [ ] Screenshot showing the login provider selection options
-- [ ] Screenshot showing login restriction configuration
-- [ ] Screenshot showing the Gather Additional Details configuration
-- [ ] Screenshot showing the Additional Instructions field and how it appears to candidates
+- [ ] Screenshot showing the login provider selection options <!-- skip -->
+- [ ] Screenshot showing login restriction configuration <!-- skip -->
+- [ ] Screenshot showing the Gather Additional Details configuration <!-- skip -->
+- [ ] Screenshot showing the Additional Instructions field and how it appears to candidates <!-- skip -->
 
 ### restricting-by-email.mdx
-- [ ] Screenshot of the test dashboard showing the Settings button
-- [ ] Screenshot of the Advanced Settings section with Login Restrictions fields visible
-- [ ] Screenshot of Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com
-- [ ] Screenshot of Login Restrictions field showing a combination of domain and individual email restrictions
+- [ ] Screenshot of the test dashboard showing the Settings button <!-- skip -->
+- [ ] Screenshot of the Advanced Settings section with Login Restrictions fields visible <!-- skip -->
+- [x] Screenshot of Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com <!-- settings/login-restrictions-domain.png -->
+- [x] Screenshot of Login Restrictions field showing a combination of domain and individual email restrictions <!-- settings/login-restrictions-email.png -->
 
 ### restricting-to-some-users.mdx
 - [ ] Screenshot of Google Forms settings showing the organization restriction toggle

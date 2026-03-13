@@ -5,7 +5,7 @@ description: "Configure proveedores de inicio de sesión, restricciones de corre
 
 La Configuración Avanzada le brinda control sobre cómo inician sesión los candidatos, quién puede acceder al examen y cómo se comparten los resultados. Estas opciones se encuentran en la parte inferior de la página de Configuración del Examen.
 
-<Frame>
+<Frame caption="Panel de configuración avanzada.">
   <img src="/images/creating-tests/advanced-settings.png" alt="Panel de configuración avanzada" />
 </Frame>
 
@@ -36,6 +36,10 @@ Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/se
 
 {/* TODO: Add screenshot showing login restriction configuration */}
 
+## Altura del IFrame
+
+Cuando su examen está incrustado como un iframe dentro de AutoProctor, esta configuración le permite ajustar la altura (en píxeles) de ese iframe para que coincida con el contenido de su examen. El valor predeterminado es 1764px — auméntelo si los candidatos necesitan desplazarse innecesariamente, o disminúyalo para eliminar el espacio en blanco adicional.
+
 ## Integración con Google Sheets
 
 Exporte automáticamente los resultados del examen a una hoja de Google Sheets ingresando la URL de la hoja en este campo. Para cuestionarios de Socratease, se exportan tanto los resultados de supervisión como las puntuaciones del cuestionario. Para cuestionarios que no son de Socratease, solo se incluyen los resultados de supervisión.
@@ -49,6 +53,16 @@ Agregue colegas como colaboradores en su examen para que puedan editar la config
 Para más detalles, consulte [Agregar Colaboradores](/creating-tests/adding-collaborators).
 
 ## Funciones Premium y Elite
+
+### Al Completar el Examen (Premium)
+
+Controla lo que los candidatos ven después de enviar su examen. Por defecto, todos los usuarios ven la página de finalización estándar de AutoProctor. Los usuarios Premium y superiores pueden personalizar esto con dos opciones adicionales:
+
+| Opción | Descripción |
+|---|---|
+| **Mostrar mensaje predeterminado** | Muestra la página de finalización estándar de AutoProctor (disponible en todos los planes) |
+| **Mostrar mensaje personalizado** | Muestra su propio mensaje HTML a los candidatos (por ejemplo, "¡Gracias por completar la evaluación!") |
+| **Redirigir a URL** | Envía a los candidatos a una página externa después del envío (por ejemplo, el sitio web de su empresa o un formulario de retroalimentación) |
 
 ### URL Única por Candidato (Elite)
 

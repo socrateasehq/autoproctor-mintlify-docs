@@ -5,7 +5,7 @@ description: "Configure login providers, email restrictions, Google Sheets integ
 
 Advanced Settings give you control over how candidates log in, who can access the test, and how results are shared. These options are found at the bottom of the Test Settings page.
 
-<Frame>
+<Frame caption="Advanced settings configuration panel.">
   <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings configuration panel" />
 </Frame>
 
@@ -36,6 +36,10 @@ For detailed instructions, see [Restricting by Email](/settings/restricting-by-e
 
 {/* TODO: Add screenshot showing login restriction configuration */}
 
+## IFrame Height
+
+When your test is embedded as an iframe inside AutoProctor, this setting lets you adjust the height (in pixels) of that iframe to match your test content. The default is 1764px — increase it if candidates need to scroll unnecessarily, or decrease it to remove extra whitespace.
+
 ## Google Sheets Integration
 
 Automatically export test results to a Google Sheet by entering the sheet URL in this field. For Socratease quizzes, both proctoring results and quiz scores are exported. For non-Socratease quizzes, only proctoring results are included.
@@ -49,6 +53,16 @@ Add colleagues as collaborators on your test so they can edit settings and view 
 For more details, see [Adding Collaborators](/creating-tests/adding-collaborators).
 
 ## Premium and Elite Features
+
+### On Test Completion (Premium)
+
+Controls what candidates see after they submit their test. By default, all users see the standard AutoProctor completion page. Premium and above users can customize this with two additional options:
+
+| Option | Description |
+|---|---|
+| **Show default message** | Display the standard AutoProctor completion page (available on all plans) |
+| **Show custom message** | Display your own HTML message to candidates (e.g., "Thank you for completing the assessment!") |
+| **Redirect to URL** | Send candidates to an external page after submission (e.g., your company's website or a feedback form) |
 
 ### Unique URL per Candidate (Elite)
 
