@@ -10,19 +10,19 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Getting Started (22 items)
 
 ### quickstart.mdx
-- [ ] Video walkthrough of the complete quickstart flow <!-- this can be a youtube video, which covers creating a soc test, etc. the login part is fine, we dont need to include that. we can do it on local as a new user -->
+- [ ] Video walkthrough of the complete quickstart flow <!-- skip -->
 
 <!-- video will cover the below points -->
-- [ ] Screenshot of the AutoProctor dashboard for a new user
-- [ ] Screenshot of the quiz provider selection screen
-- [ ] Screenshot of the test settings page with key sections highlighted
-- [ ] GIF showing the demo test experience <!-- this will not be in the video but i think we can ignore this, a link to demo test should be fine. -->
-- [ ] Screenshot showing where to copy the test link
+- [x] Screenshot of the AutoProctor dashboard for a new user <!-- getting-started/new-user-dashboard.png -->
+- [x] Screenshot of the quiz provider selection screen <!-- creating-tests/all-test-types.png -->
+- [x] Screenshot of the test settings page with key sections highlighted <!-- getting-started/configure-test-settings.png -->
+- [ ] GIF showing the demo test experience <!-- skip. -->
+- [x] Screenshot showing where to copy the test link <!-- getting-started/copy-test-link.gif -->
 - [x] Screenshot of the results page with sample data <!-- getting-started/sample-results.png -->
 
 ### what-gets-tracked.mdx
 - [x] Screenshot of a sample proctoring report showing flagged violations <!-- getting-started/sample-proctoring-report.png -->
-- [x] Screenshot of violation evidence cards in a proctoring report <!-- getting-started/evidence-cards.png -->
+- [x] Screenshot of violation evidence cards in a proctoring report <!-- skip -->
 <!-- Have added a video for the below 3 points: videos/getting-started/configure-proctor-settings.mp4 -->
 - [x] Screenshot of the test dashboard with the Settings button highlighted
 - [x] Screenshot of the Proctoring Settings tab
@@ -57,7 +57,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### quiz-providers.mdx
 <!-- Added one video and one image to cover all points: videos/creating-tests/all-test-types.mp4 + creating-tests/all-test-types.png -->
-- [x] Screenshot of the quiz provider selection screen <!-- creating-tests/all-test-types.png -->
+- [ ] Screenshot of the quiz provider selection screen <!-- skip -->
 - [x] Screenshot of Socratease quiz creation interface <!-- covered by video -->
 - [x] Video walkthrough of creating a Socratease quiz <!-- videos/creating-tests/all-test-types.mp4 -->
 - [x] Screenshot of the AutoProctor Google Forms add-on <!-- covered by video -->
@@ -95,7 +95,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Settings (33 items)
 
 ### timer-settings.mdx
-- [x] Screenshot of the Timer Settings section in the test settings page <!-- creating-tests/timer-settings.png -->
+- [ ] Screenshot of the Timer Settings section in the test settings page <!-- skip -->
 - [x] A video walkthrough of how to configure timer settings <!-- videos/settings/config-timer-settings.mp4 -->
 - [ ] GIF showing the timer countdown experience from the candidate's perspective <!-- i dont think this is needed -->
 
@@ -128,31 +128,35 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of Login Restrictions field showing a combination of domain and individual email restrictions <!-- settings/login-restrictions-email.png -->
 
 ### restricting-to-some-users.mdx
-- [ ] Screenshot of Google Forms settings showing the organization restriction toggle
+- [x] Screenshot of Login Restrictions field for Method 2 <!-- settings/login-restrictions-email.png -->
+- [x] Video walkthrough of unique invitation links for Method 3 <!-- videos/settings/unique-invitation-links.mp4 -->
+- [x] Screenshot of Google Forms settings showing the organization restriction toggle <!-- settings/google-form-restriction.png -->
 
 ### inviting-candidates-via-email.mdx
-- [ ] Screenshot of the Unique URL toggle in test settings
-- [ ] Screenshot of the CSV upload interface for email addresses
-- [ ] Screenshot of the generated output showing email-link pairs
-- [ ] Screenshot of the verification code entry screen candidates see
+<!-- covered by videos/settings/unique-invitation-links.mp4 -->
+- [x] Screenshot of the Unique URL toggle in test settings
+- [x] Screenshot of the CSV upload interface for email addresses
+- [x] Screenshot of the generated output showing email-link pairs
+- [x] Screenshot of the verification code entry screen candidates see
 
 ### maximum-attempts.mdx
-- [ ] Screenshot of the test dashboard showing the Settings button
-- [ ] Screenshot of the Max Attempts field in Main Settings
-- [ ] Screenshot of the restriction message candidates see when attempts are exhausted
+<!-- covered by videos/settings/max-attempts-settings.mp4 -->
+- [x] Screenshot of the test dashboard showing the Settings button
+- [x] Screenshot of the Max Attempts field in Main Settings
+- [x] Screenshot of the restriction message candidates see when attempts are exhausted <!-- settings/max-attempts-blocked.png -->
 
 ### concurrency.mdx
-- [ ] Screenshot of the staggering countdown button candidates see
+- [ ] Screenshot of the staggering countdown button candidates see <!-- skip -->
 
 ### resuming-test-attempts.mdx
-- [ ] Screenshot of the test dashboard showing the Settings button
-- [ ] Screenshot of the Enable Auto Resume toggle in test settings
+- [ ] Screenshot of the test dashboard showing the Settings button <!-- skip -->
+- [x] Screenshot of the Enable Auto Resume toggle in test settings <!-- settings/enable-auto-resume.png -->
 
 ### resuming-google-forms.mdx
-- [ ] Screenshot of Google Forms test settings showing Disable Autosave toggled OFF
-- [ ] Screenshot of AutoProctor test settings showing Enable Auto-resume toggled ON
-- [ ] Screenshot of Google Forms test settings showing Disable Autosave toggled ON
-- [ ] Screenshot of AutoProctor test settings showing Resume Unsubmitted Test toggled OFF
+- [x] Screenshot of Google Forms test settings showing Disable Autosave toggled OFF <!-- settings/gforms-autosave-enabled.png -->
+- [x] Screenshot of AutoProctor test settings showing Enable Auto-resume toggled ON <!-- settings/gforms-autoresume-enabled.png -->
+- [x] Screenshot of Google Forms test settings showing Disable Autosave toggled ON <!-- settings/gforms-autosave-disabled.png -->
+- [x] Screenshot of AutoProctor test settings showing Resume Unsubmitted Test toggled OFF <!-- settings/gforms-autoresume-disabled.png -->
 
 ---
 

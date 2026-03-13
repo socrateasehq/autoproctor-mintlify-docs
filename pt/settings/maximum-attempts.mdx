@@ -7,20 +7,20 @@ A configuração de **Max Attempts** permite que você controle quantas vezes ca
 
 ## Como Configurar as Tentativas Máximas
 
+<Frame caption="Como configurar as tentativas máximas no AutoProctor.">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/settings/max-attempts-settings.mp4"
+  ></video>
+</Frame>
+
 <Steps>
   <Step title="Abra as configurações do teste">
     Navegue até o teste no painel do AutoProctor e clique no botão **Settings**.
-
-    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
   </Step>
   <Step title="Defina o valor de Max Attempts">
     Na seção **Main Settings**, localize o campo **Max Attempts** e insira o número de tentativas permitidas.
-
-    {/* TODO: Add screenshot of the Max Attempts field in Main Settings */}
-
-    <Frame>
-      <img src="/images/settings/max-attempts-setting.png" alt="Campo de configuração de Max Attempts nas Configurações Principais do AutoProctor mostrando a entrada numérica" />
-    </Frame>
   </Step>
   <Step title="Salve o teste">
     Clique em **Create** ou **Update** para aplicar a configuração.
@@ -31,8 +31,8 @@ Quando um candidato excede o número de tentativas permitidas, ele vê uma mensa
 
 {/* TODO: Add screenshot of the restriction message candidates see when attempts are exhausted */}
 
-<Frame>
-  <img src="/images/settings/max-attempts-blocked.png" alt="Mensagem de restrição exibida para candidatos quando excederam o número máximo de tentativas do teste" />
+<Frame caption="Restriction message shown to candidates.">
+  <img className="rounded-xl border" src="/images/settings/max-attempts-blocked.png" />
 </Frame>
 
 ## Configuração Recomendada
