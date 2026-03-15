@@ -163,18 +163,18 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Socratease Quizzes (34 items)
 
 ### why-socratease.mdx
-- [ ] Screenshot of Socratease single submit button vs dual submit on other platforms
-- [ ] Screenshot of copy-paste restriction setting
-- [ ] Screenshot of AutoProctor unified dashboard
+- [ ] Screenshot of Socratease single submit button vs dual submit on other platforms <!-- we should skip. can't really be explained with a screenshot. -->
+- [x] Screenshot of copy-paste restriction setting <!-- videos/socratease/disable-copy-paste.mp4 -->
+- [ ] Screenshot of AutoProctor unified dashboard <!-- skip -->
 
 ### creating-a-quiz.mdx
-- [ ] Video walkthrough of creating a Socratease quiz
-- [ ] Screenshot of AutoProctor login page
-- [ ] Screenshot of quiz provider selection screen
-- [ ] Screenshot of question editor interface
-- [ ] Screenshot of quiz settings panel
-- [ ] Screenshot of test link sharing interface
-- [ ] Screenshot of results dashboard
+- [x] Video walkthrough of creating a Socratease quiz <!-- videos/socratease/create-soc-test.mp4 -->
+- [ ] Screenshot of AutoProctor login page <!-- skip -->
+- [ ] Screenshot of quiz provider selection screen <!-- skip -->
+- [ ] Screenshot of question editor interface <!-- skip -->
+- [ ] Screenshot of quiz settings panel <!-- skip -->
+- [ ] Screenshot of test link sharing interface <!-- skip -->
+- [x] Screenshot of results dashboard <!-- images/getting-started/sample-results.png -->
 
 ### question-display-mode.mdx
 - [ ] Screenshot of the question display mode setting in quiz settings
