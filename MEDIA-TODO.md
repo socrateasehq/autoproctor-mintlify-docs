@@ -184,23 +184,23 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of question display mode dropdown selection <!-- videos/socratease/question-display-mode.mp4 -->
 
 ### quiz-settings.mdx
-- [ ] Screenshot of the Socratease quiz settings panel
-- [ ] Screenshot of question randomization toggle
-- [ ] Screenshot of choice shuffling toggle
-- [ ] Screenshot of copy-paste restriction toggle
-- [ ] Screenshot of tab-switch auto-submit configuration
-- [ ] Screenshot of custom instructions field
-- [ ] Screenshot of the settings icon location in the quiz editor
+- [x] Screenshot of the Socratease quiz settings panel <!-- videos/socratease/soc-quiz-settings.mp4 -->
+- [ ] Screenshot of question randomization toggle <!-- skip -->
+- [ ] Screenshot of choice shuffling toggle <!-- skip -->
+- [ ] Screenshot of copy-paste restriction toggle <!-- skip -->
+- [ ] Screenshot of tab-switch auto-submit configuration <!-- skip -->
+- [ ] Screenshot of custom instructions field <!-- skip -->
+- [x] Screenshot of the settings icon location in the quiz editor <!-- videos/socratease/soc-quiz-settings.mp4 -->
 
 ### showing-results-to-candidates.mdx
-- [ ] Screenshot of settings icon in quiz editor
-- [ ] Screenshot of result visibility dropdown selection
+- [x] Screenshot of settings icon in quiz editor <!-- videos/socratease/release-method.mp4 -->
+- [x] Screenshot of result visibility dropdown selection <!-- videos/socratease/release-method.mp4 -->
 
 ### question-banks.mdx
-- [ ] Screenshot of Question Bank overview screen
-- [ ] Screenshot of creating a new Question Bank
-- [ ] Screenshot of QBQ creation interface
-- [ ] Screenshot of adding QBQ to a test
+- [x] Screenshot of Question Bank overview screen <!-- socratease/question-bank-overview.png -->
+- [x] Screenshot of Question Bank Quiz overview <!-- socratease/question-bank-quiz-overview.png -->
+- [x] Screenshot of QBQ creation interface <!-- videos/socratease/add-qbq.mp4 -->
+- [ ] Screenshot of adding QBQ to a test <!-- skip -->
 
 ### bulk-import-from-excel.mdx
 - [ ] Screenshot of template download button in quiz editor
