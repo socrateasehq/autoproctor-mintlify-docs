@@ -140,7 +140,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of the verification code entry screen candidates see
 
 ### maximum-attempts.mdx
-<!-- covered by videos/settings/max-attempts-settings.mp4 -->
+<!-- videos/settings/max-attempts-settings.mp4 -->
 - [x] Screenshot of the test dashboard showing the Settings button
 - [x] Screenshot of the Max Attempts field in Main Settings
 - [x] Screenshot of the restriction message candidates see when attempts are exhausted <!-- settings/max-attempts-blocked.png -->
@@ -193,8 +193,9 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of the settings icon location in the quiz editor <!-- videos/socratease/soc-quiz-settings.mp4 -->
 
 ### showing-results-to-candidates.mdx
-- [x] Screenshot of settings icon in quiz editor <!-- videos/socratease/release-method.mp4 -->
-- [x] Screenshot of result visibility dropdown selection <!-- videos/socratease/release-method.mp4 -->
+<!-- videos/socratease/release-method.mp4 -->
+- [x] Screenshot of settings icon in quiz editor
+- [x] Screenshot of result visibility dropdown selection
 
 ### question-banks.mdx
 - [x] Screenshot of Question Bank overview screen <!-- socratease/question-bank-overview.png -->
@@ -203,21 +204,24 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [ ] Screenshot of adding QBQ to a test <!-- skip -->
 
 ### bulk-import-from-excel.mdx
-- [ ] Screenshot of template download button in quiz editor
-- [ ] Screenshot of a filled-in Excel template
-- [ ] Screenshot of upload button and import confirmation
+<!-- videos/socratease/import-from-excel.mp4 -->
+- [x] Screenshot of template download button in quiz editor
+- [x] Screenshot of a filled-in Excel template
+- [x] Screenshot of upload button and import confirmation
 
 ### using-tags.mdx
-- [ ] Screenshot of quiz report showing results grouped by tags
-- [ ] Screenshot of the three-dot menu with tag input field
-- [ ] Screenshot of the Group By dropdown with Tags selected
-- [ ] Screenshot of the Filter by Tag dropdown in action
+<!-- videos/socratease/add-tags.mp4 + videos/socratease/filter-by-tags.mp4 -->
+- [x] Screenshot of quiz report showing results grouped by tags
+- [x] Screenshot of the three-dot menu with tag input field
+- [x] Screenshot of the Group By dropdown with Tags selected
+- [x] Screenshot of the Filter by Tag dropdown in action
 
 ### latex-math-equations.mdx
-- [ ] Screenshot showing LaTeX equation rendered in a Socratease quiz question
-- [ ] Screenshot of LaTeX support toggle in quiz settings
-- [ ] Screenshot of equation being written in the quiz editor
-- [ ] Screenshot of the sample LaTeX quiz showing rendered equations
+<!-- videos/socratease/using-latex.mp4 -->
+- [x] Screenshot showing LaTeX equation rendered in a Socratease quiz question
+- [x] Screenshot of LaTeX support toggle in quiz settings
+- [x] Screenshot of equation being written in the quiz editor
+- [x] Screenshot of the sample LaTeX quiz showing rendered equations
 
 ---
 
