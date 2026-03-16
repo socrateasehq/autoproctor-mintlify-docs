@@ -261,31 +261,31 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Candidate Guide — Issues (9 items)
 
 ### loading-screen.mdx
-- [ ] Screenshot of AutoProctor loading screen indicating a compatibility issue
+- [x] Screenshot of AutoProctor loading screen indicating a compatibility issue <!-- candidate-issues/loading-screen-demo.png -->
 
 ### blank-page-grey-screen.mdx
-- [ ] Screenshot of blank page caused by wrong Google account within AutoProctor
+- [x] Screenshot of blank page caused by wrong Google account within AutoProctor <!-- candidate-issues/blank-page-google-account.png -->
 
 ### cannot-click-answer.mdx
-- [ ] Screenshot of test form loaded in read-only mode due to incorrect Google account
+- [x] Screenshot of test form loaded in read-only mode due to incorrect Google account <!-- candidate-issues/cannot-click-form.png -->
 
 ### google-forms-questions-not-visible.mdx
-- [ ] Screenshot of Google Form showing an access restriction message within AutoProctor
+- [x] Screenshot of Google Form showing an access restriction message within AutoProctor <!-- candidate-issues/google-forms-access-restricted.png -->
 
 ### google-forms-response-not-visible.mdx
-- [ ] Annotated screenshot showing both submit buttons with numbered click order
+- [x] Annotated screenshot showing both submit buttons with numbered click order <!-- taking-tests/submit-buttons-proctored.png -->
 
 ### missing-violation-evidence.mdx
-- [ ] Screenshot of proctoring settings showing evidence recording toggle
+- [ ] Screenshot of proctoring settings showing evidence recording toggle <!-- skip -->
 
 ### missing-images-and-recordings.mdx
-- [ ] Screenshot of proctoring settings showing evidence recording toggle
+- [ ] Screenshot of proctoring settings showing evidence recording toggle <!-- skip -->
 
 ### went-offline-meaning.mdx
-- [ ] Screenshot of "Went offline" entry shown in a proctoring report
+- [x] Screenshot of "Went offline" entry shown in a proctoring report <!-- candidate-issues/went-offline-report.png -->
 
 ### incorrect-student-name.mdx
-- [ ] Screenshot of incorrect candidate name displayed in AutoProctor results page
+- [x] Screenshot of incorrect candidate name displayed in AutoProctor results page <!-- candidate-issues/incorrect-student-name.png -->
 
 ---
 
