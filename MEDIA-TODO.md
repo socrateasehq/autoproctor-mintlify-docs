@@ -327,37 +327,40 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Pricing & Account (13 items)
 
 ### payments-and-credits.mdx
-_(no TODOs)_
+- [x] Video of purchasing a subscription <!-- videos/pricing/subscribe.mp4 -->
+- [x] GIF of purchasing a Test Pack top-up <!-- pricing/topup.gif -->
 
 ### teams.mdx
-- [ ] Screenshot of the team management page showing member list and join link
+- [x] Screenshot of the team management page showing member list and join link <!-- pricing/team-management-page.png -->
+- [x] Video of creating a team <!-- videos/pricing/create-team.mp4 -->
+- [x] Screenshot of join link on the team management page <!-- pricing/join-team.png -->
 
 ### elite-features.mdx
-- [ ] Screenshot or diagram showing API/SDK integration flow
-- [ ] Screenshot of the Clone Quiz button on the dashboard
+- [ ] Screenshot or diagram showing API/SDK integration flow <!-- skip -->
+- [x] Screenshot of the Clone Quiz button on the dashboard <!-- YouTube video embed -->
 
 ### one-time-subscription.mdx
 _(no TODOs)_
 
 ### cancel-subscription.mdx
-- [ ] Screenshot of the Billing link in the left sidebar
-- [ ] Screenshot of the Manage Subscription button in Plan Details
-- [ ] Screenshot of the Cancel plan button
+- [x] Screenshot of the Billing link in the left sidebar <!-- pricing/billing-sidebar-link.png -->
+- [x] Screenshot of the Manage Subscription button in Plan Details <!-- pricing/manage-subscription-button.png -->
+- [x] Screenshot of the Cancel plan button <!-- pricing/cancel-plan-button.png -->
 
 ### purchased-packs-not-visible.mdx
-- [ ] Screenshot of the Your Account page showing the email address
+- [ ] Screenshot of the Your Account page showing the email address <!-- skip -->
 
 ### track-test-pack-usage.mdx
-- [ ] Screenshot of the Usage link in the sidebar
-- [ ] Screenshot of the usage table showing per-test credit consumption
-- [ ] Screenshot of the team usage table showing per-member credit consumption
+- [x] Screenshot of the Usage link in the sidebar <!-- pricing/usage-sidebar-link.png -->
+- [x] Screenshot of the usage table showing per-test credit consumption <!-- pricing/usage-table.png -->
+- [x] Screenshot of the team usage table showing per-member credit consumption <!-- pricing/team-usage-table.png -->
 
 ### invoices.mdx
-- [ ] Screenshot of a sample AutoProctor invoice
+- [x] Screenshot of a sample AutoProctor invoice <!-- pricing/sample-invoice.png -->
 
 ### billing-information.mdx
-- [ ] Screenshot of the Billing link in the sidebar
-- [ ] Screenshot of the Manage Subscription button
+- [x] Screenshot of the Billing link in the sidebar <!-- linked to billing page + YouTube video embed -->
+- [x] Screenshot of the Manage Subscription button <!-- covered by YouTube video -->
 
 ---
 
