@@ -292,34 +292,35 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Results & Reports (14 items)
 
 ### how-to-see-results.mdx
-- [ ] Screenshot of the results page showing Trust Score column
+- [x] Screenshot of the results page <!-- getting-started/sample-results.png -->
 
 ### proctoring-results.mdx
-- [ ] Screenshot of the Results button on the AutoProctor dashboard
-- [ ] Screenshot of the results table with Trust Score and Quiz Score columns
-- [ ] Screenshot of a candidate's proctoring summary page with violations list
+- [x] Screenshot of the Results button on the AutoProctor dashboard <!-- results/results-button-dashboard.png -->
+- [x] Screenshot of the results table with Trust Score and Quiz Score columns <!-- results/results-table.png -->
+- [x] Screenshot of a candidate's proctoring summary page with violations list <!-- results/proctoring-summary.png -->
 
 ### individual-submissions.mdx
-- [ ] Screenshot of the submissions list showing candidate names, scores, and grading status
-- [ ] Screenshot of an individual submission detail page with responses and scores
+- [x] Screenshot of the submissions list showing candidate names, scores, and grading status <!-- results/submissions-list.png -->
+- [x] Screenshot of an individual submission detail page with responses and scores <!-- results/individual-submission-details.png -->
 
-### unsubmitted-tests.mdx
-- [ ] Screenshot of the Unsubmitted Tests checkbox on the results page
-- [ ] Screenshot of the unsubmitted attempts button on a candidate's proctoring report
-- [ ] Screenshot of the unsubmitted test details panel
+### unsubmitted-tests.mdx <!-- The images mentioned below were already added. but we should update the doc and then update media as well -->
+- [x] Screenshot of the Unsubmitted Tests checkbox on the results page <!-- results/unsubmitted-checkbox.png -->
+- [x] Screenshot of the unsubmitted attempts button on a candidate's proctoring report <!-- results/unsubmitted-attempts-button.png -->
+- [x] Screenshot of the unsubmitted test details panel <!-- results/unsubmitted-test-details.png -->
 
 ### export-to-excel.mdx
-- [ ] Screenshot of the results page with Export to Excel button highlighted
+- [x] Screenshot of the results page with Export to Excel button highlighted <!-- results/export-results-table.png -->
+- [x] GIF showing how to export results to Excel <!-- results/export-results-to-excel.gif -->
 
 ### google-sheets-integration.mdx
-- [ ] Screenshot of the Test Settings page showing Advanced Settings section
-- [ ] Screenshot of the Google Sheets ID field in Advanced Settings
+- [x] Screenshot of the Test Settings page showing Advanced Settings section <!-- settings/write-to-gsheet.gif -->
+- [x] Screenshot of the Google Sheets ID field in Advanced Settings <!-- settings/write-to-gsheet.gif -->
 
 ### sharing-test-results.mdx
-- [ ] Screenshot showing the Timer + Proctor add-on within a shared Google Form
+- [x] Screenshot showing the Timer + Proctor add-on within a shared Google Form <!-- videos/settings/timer-proctor-on-gf.mp4 -->
 
 ### things-you-need-to-know.mdx
-- [ ] Screenshot or GIF showing the two-button submit flow
+- [ ] Screenshot or GIF showing the two-button submit flow <!-- skip -->
 
 ---
 
