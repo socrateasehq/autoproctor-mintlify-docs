@@ -163,7 +163,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Socratease Quizzes (34 items)
 
 ### why-socratease.mdx
-- [ ] Screenshot of Socratease single submit button vs dual submit on other platforms <!-- we should skip. can't really be explained with a screenshot. -->
+- [x] Screenshot of Socratease single submit button vs dual submit on other platforms <!-- taking-tests/soc-submit-button.png + taking-tests/submit-buttons-proctored.png -->
 - [x] Screenshot of copy-paste restriction setting <!-- videos/socratease/disable-copy-paste.mp4 -->
 - [ ] Screenshot of AutoProctor unified dashboard <!-- skip -->
 
@@ -228,32 +228,33 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ## Candidate Guide — Instructions (10 items)
 
 ### proctored-test-instructions.mdx
-- [ ] Screenshot of purple and green submit buttons with numbered click order annotations
+- [x] Screenshot of purple and green submit buttons with numbered click order annotations <!-- taking-tests/submit-buttons-proctored.png -->
 
 ### timed-test-instructions.mdx
-- [ ] Screenshot or GIF of submit button sequence for timed tests
+- [x] Screenshot or GIF of submit button sequence for timed tests <!-- taking-tests/submit-buttons-timed.gif -->
 
 ### proctored-socratease-instructions.mdx
-- [ ] Video guide showing how to take a proctored Socratease quiz on AutoProctor
+- [ ] Video guide showing how to take a proctored Socratease quiz on AutoProctor <!-- skip -->
 
 ### timed-socratease-instructions.mdx
-- [ ] Video guide showing how to take a timed Socratease quiz on AutoProctor
+- [ ] Video guide showing how to take a timed Socratease quiz on AutoProctor <!-- skip -->
 
 ### submit-button.mdx
-- [ ] Screenshot or GIF showing the two-button submission flow for non-Socratease quizzes
-- [ ] Screenshot or GIF showing the single-button Socratease submission flow
+- [x] Screenshot or GIF showing the two-button submission flow for non-Socratease quizzes <!-- taking-tests/submit-buttons-proctored.png -->
+- [x] Screenshot or GIF showing the single-button Socratease submission flow <!-- taking-tests/soc-submit-button.png -->
 
 ### candidate-login-methods.mdx
-- [ ] Screenshot of AutoProctor login screen showing Google, Microsoft, and Email sign-in options
+- [x] Screenshot of AutoProctor login screen showing Google, Microsoft, and Email sign-in options <!-- taking-tests/login-methods.png -->
 
 ### how-to-logout.mdx
-- [ ] Screenshot of AutoProctor mobile menu with Logout option highlighted
-- [ ] Screenshot of AutoProctor desktop header with Logout option highlighted
+<!-- images/taking-tests/how-to-logout.gif -->
+- [x] Screenshot of AutoProctor mobile menu with Logout option highlighted
+- [x] Screenshot of AutoProctor desktop header with Logout option highlighted
 
 ### instructions-page-for-candidates.mdx
-- [ ] Screenshot of the full AutoProctor instructions page as seen by candidates
-- [ ] Screenshot of the Additional Instructions field in Advanced Settings
-- [ ] Screenshot of the Gather Additional Details feature in Advanced Settings
+- [x] Screenshot of the full AutoProctor instructions page as seen by candidates <!-- getting-started/instructions-page.png -->
+- [x] Screenshot of the Additional Instructions field in Advanced Settings <!-- videos/getting-started/additional-instructions-settings.mp4 -->
+- [x] Screenshot of the Gather Additional Details feature in Advanced Settings <!-- videos/getting-started/gather-additional-details.mp4 -->
 
 ---
 
