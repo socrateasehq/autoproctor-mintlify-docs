@@ -177,11 +177,11 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of results dashboard <!-- images/getting-started/sample-results.png -->
 
 ### question-display-mode.mdx
-- [ ] Screenshot of the question display mode setting in quiz settings
-- [ ] Screenshot of all-at-once display mode from the candidate view
-- [ ] Screenshot of one-by-one with navigation from the candidate view
-- [ ] Screenshot of one-by-one without navigation from the candidate view
-- [ ] Screenshot of question display mode dropdown selection
+- [x] Screenshot of the question display mode setting in quiz settings <!-- socratease/question-display-mode.png -->
+- [ ] Screenshot of all-at-once display mode from the candidate view <!-- skip -->
+- [ ] Screenshot of one-by-one with navigation from the candidate view <!-- skip -->
+- [ ] Screenshot of one-by-one without navigation from the candidate view <!-- skip -->
+- [x] Screenshot of question display mode dropdown selection <!-- videos/socratease/question-display-mode.mp4 -->
 
 ### quiz-settings.mdx
 - [ ] Screenshot of the Socratease quiz settings panel
