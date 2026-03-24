@@ -1,53 +1,53 @@
 ---
 title: "View Details of Unsubmitted Tests"
-description: "Access and review information about tests that candidates started but did not submit, including proctoring data and attempt timestamps."
+description: "Learn how to identify, view, and manage tests that candidates started but did not submit on AutoProctor."
 ---
 
-An unsubmitted test occurs when a candidate starts a test but does not click the green **Submit** button at the top of the test window. The candidate may have viewed questions and entered answers, but their test was never formally submitted. You can still access proctoring data and attempt details for these incomplete sessions.
+An unsubmitted test occurs when a candidate starts a test but does not click the green **Submit** button at the top of the test window. The candidate may have viewed questions and entered answers, but their test was never formally submitted.
 
-<Note>
-Use **Method 1** to see all unsubmitted tests across a test at a glance. Use **Method 2** when you are already reviewing a specific candidate's proctoring report and want to check their unsubmitted attempts.
-</Note>
+<Frame caption="The green Submit button candidates must click.">
+  <img style={{maxWidth: "190px"}} className="border rounded-xl" src="/images/results/click-after-submitting.png" alt="Green Submit button that candidates must click after submitting the test" />
+</Frame>
 
-## Method 1: From the General Test Report
+## Viewing Unsubmitted Tests on the Results Page
 
-<Steps>
-  <Step title="Open the results page">
-    Navigate to your test on the AutoProctor dashboard and click **Results**.
-  </Step>
-  <Step title="Enable the Unsubmitted Tests filter">
-    Locate the **Unsubmitted Tests** checkbox on the results page and check it. All unsubmitted tests then appear alongside submitted results in the listing.
+When you open the results page for a test, unsubmitted tests are included alongside submitted results by default. A yellow banner at the top indicates that the table includes unsubmitted test attempts.
 
-    {/* TODO: Add screenshot of the Unsubmitted Tests checkbox on the results page */}
+<Frame caption="Results page showing unsubmitted tests.">
+  <img className="border rounded-xl" src="/images/results/results-hide-unsubmitted.png" alt="Results page showing submitted and unsubmitted tests with Hide unsubmitted button" />
+</Frame>
 
-    <Frame>
-      <img src="/images/results/unsubmitted-checkbox.png" alt="Unsubmitted Tests checkbox on the AutoProctor results page" />
-    </Frame>
-  </Step>
-</Steps>
+To view only submitted results, click the **Hide unsubmitted** button in the yellow banner. The unsubmitted entries are removed from the table, and the button changes to **Show unsubmitted** so you can bring them back at any time.
 
-## Method 2: From an Individual Candidate Report
+<Frame caption="Results page with unsubmitted tests hidden.">
+  <img className="border rounded-xl" src="/images/results/results-show-unsubmitted.png" alt="Results page showing only submitted tests with Show unsubmitted button" />
+</Frame>
 
-<Steps>
-  <Step title="Open a candidate's proctoring report">
-    From the results page, click on a candidate's **Trust Score** to open their proctoring report.
-  </Step>
-  <Step title="Click the unsubmitted attempts button">
-    Look for a button indicating the number of unsubmitted attempts. Click it to reveal the details of those incomplete sessions.
+## Proctoring Report for an Unsubmitted Test
 
-    {/* TODO: Add screenshot of the unsubmitted attempts button on a candidate's proctoring report */}
+When you click **View Report** for an unsubmitted test attempt, you see a page indicating that the test has not been marked as finished yet. Proctoring results are not available until the attempt is marked as finished.
 
-    <Frame>
-      <img src="/images/results/unsubmitted-attempts-button.png" alt="Button showing the count of unsubmitted attempts on a candidate's proctoring report" />
-    </Frame>
+<Frame caption="Proctoring report for an unsubmitted test.">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished.png" alt="Proctoring report showing the test has not been marked as finished yet with a Mark as Finished button" />
+</Frame>
 
-    {/* TODO: Add screenshot of the unsubmitted test details panel */}
+To generate the proctoring report, click the **Mark as Finished** button. A confirmation message appears and the report loads automatically after a few seconds.
 
-    <Frame>
-      <img src="/images/results/unsubmitted-test-details.png" alt="Details of an unsubmitted test attempt showing timestamps and proctoring data" />
-    </Frame>
-  </Step>
-</Steps>
+<Frame caption="Confirmation after marking a test as finished.">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished-redirection-swal.png" alt="Confirmation dialog showing the test has been marked as finished" />
+</Frame>
+
+<Warning>
+If you mark a test as finished and the candidate is still attempting the test, newer violations will be ignored.
+</Warning>
+
+## Quiz Answers for an Unsubmitted Test
+
+When you click **View Answers** for an unsubmitted test, the individual results page shows all questions as **Not Attempted** with 0 points scored.
+
+<Frame caption="Quiz answers for an unsubmitted test.">
+  <img className="border rounded-xl" src="/images/results/unattempted-indivisual-result-page.png" alt="Individual results page showing all questions as Not Attempted for an unsubmitted test" />
+</Frame>
 
 ## Related Resources
 

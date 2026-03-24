@@ -1,53 +1,53 @@
 ---
 title: "Ver Detalhes de Testes Não Enviados"
-description: "Acesse e revise informações sobre testes que os candidatos iniciaram mas não enviaram, incluindo dados de supervisão e timestamps das tentativas."
+description: "Aprenda a identificar, visualizar e gerenciar testes que os candidatos iniciaram mas não enviaram no AutoProctor."
 ---
 
-Um teste não enviado ocorre quando um candidato inicia um teste mas não clica no botão verde **Submit** no topo da janela do teste. O candidato pode ter visto as perguntas e inserido respostas, mas o teste nunca foi formalmente enviado. Você ainda pode acessar dados de supervisão e detalhes da tentativa para essas sessões incompletas.
+Um teste não enviado ocorre quando um candidato inicia um teste mas não clica no botão verde **Submit** no topo da janela do teste. O candidato pode ter visto as perguntas e inserido respostas, mas o teste nunca foi formalmente enviado.
 
-<Note>
-Use o **Método 1** para ver todos os testes não enviados de um teste de relance. Use o **Método 2** quando você já estiver revisando o relatório de supervisão de um candidato específico e quiser verificar suas tentativas não enviadas.
-</Note>
+<Frame caption="O botão verde Submit que os candidatos devem clicar.">
+  <img style={{maxWidth: "190px"}} className="border rounded-xl" src="/images/results/click-after-submitting.png" alt="Botão verde Submit que os candidatos devem clicar após enviar o teste" />
+</Frame>
 
-## Método 1: A Partir do Relatório Geral do Teste
+## Visualizando Testes Não Enviados na Página de Resultados
 
-<Steps>
-  <Step title="Abra a página de resultados">
-    Navegue até o seu teste no painel do AutoProctor e clique em **Results**.
-  </Step>
-  <Step title="Ative o filtro de Testes Não Enviados">
-    Localize a caixa de seleção **Unsubmitted Tests** na página de resultados e marque-a. Todos os testes não enviados aparecerão junto com os resultados enviados na listagem.
+Quando você abre a página de resultados de um teste, os testes não enviados são incluídos junto com os resultados enviados por padrão. Um banner amarelo no topo indica que a tabela inclui tentativas de testes não enviados.
 
-    {/* TODO: Add screenshot of the Unsubmitted Tests checkbox on the results page */}
+<Frame caption="Página de resultados mostrando testes não enviados.">
+  <img className="border rounded-xl" src="/images/results/results-hide-unsubmitted.png" alt="Página de resultados mostrando testes enviados e não enviados com botão Hide unsubmitted" />
+</Frame>
 
-    <Frame>
-      <img src="/images/results/unsubmitted-checkbox.png" alt="Caixa de seleção Unsubmitted Tests na página de resultados do AutoProctor" />
-    </Frame>
-  </Step>
-</Steps>
+Para ver apenas os resultados enviados, clique no botão **Hide unsubmitted** no banner amarelo. As entradas não enviadas são removidas da tabela e o botão muda para **Show unsubmitted** para que você possa restaurá-las a qualquer momento.
 
-## Método 2: A Partir do Relatório Individual do Candidato
+<Frame caption="Página de resultados com testes não enviados ocultos.">
+  <img className="border rounded-xl" src="/images/results/results-show-unsubmitted.png" alt="Página de resultados mostrando apenas testes enviados com botão Show unsubmitted" />
+</Frame>
 
-<Steps>
-  <Step title="Abra o relatório de supervisão de um candidato">
-    A partir da página de resultados, clique no **Trust Score** de um candidato para abrir seu relatório de supervisão.
-  </Step>
-  <Step title="Clique no botão de tentativas não enviadas">
-    Procure um botão indicando a quantidade de tentativas não enviadas. Clique nele para revelar os detalhes dessas sessões incompletas.
+## Relatório de Supervisão para um Teste Não Enviado
 
-    {/* TODO: Add screenshot of the unsubmitted attempts button on a candidate's proctoring report */}
+Quando você clica em **View Report** para uma tentativa de teste não enviada, você vê uma página indicando que o teste ainda não foi marcado como finalizado. Os resultados de supervisão não estão disponíveis até que a tentativa seja marcada como finalizada.
 
-    <Frame>
-      <img src="/images/results/unsubmitted-attempts-button.png" alt="Botão mostrando a quantidade de tentativas não enviadas no relatório de supervisão de um candidato" />
-    </Frame>
+<Frame caption="Relatório de supervisão para um teste não enviado.">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished.png" alt="Relatório de supervisão mostrando que o teste ainda não foi marcado como finalizado com um botão Mark as Finished" />
+</Frame>
 
-    {/* TODO: Add screenshot of the unsubmitted test details panel */}
+Para gerar o relatório de supervisão, clique no botão **Mark as Finished**. Uma mensagem de confirmação aparece e o relatório é carregado automaticamente após alguns segundos.
 
-    <Frame>
-      <img src="/images/results/unsubmitted-test-details.png" alt="Detalhes de uma tentativa de teste não enviada mostrando timestamps e dados de supervisão" />
-    </Frame>
-  </Step>
-</Steps>
+<Frame caption="Confirmação após marcar um teste como finalizado.">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished-redirection-swal.png" alt="Diálogo de confirmação mostrando que o teste foi marcado como finalizado" />
+</Frame>
+
+<Warning>
+Se você marcar um teste como finalizado e o candidato ainda estiver realizando o teste, as violações posteriores serão ignoradas.
+</Warning>
+
+## Respostas do Questionário para um Teste Não Enviado
+
+Quando você clica em **View Answers** para um teste não enviado, a página de resultados individuais mostra todas as perguntas como **Not Attempted** com 0 pontos obtidos.
+
+<Frame caption="Respostas do questionário para um teste não enviado.">
+  <img className="border rounded-xl" src="/images/results/unattempted-indivisual-result-page.png" alt="Página de resultados individuais mostrando todas as perguntas como Not Attempted para um teste não enviado" />
+</Frame>
 
 ## Recursos Relacionados
 

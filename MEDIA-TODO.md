@@ -303,10 +303,12 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 - [x] Screenshot of the submissions list showing candidate names, scores, and grading status <!-- results/submissions-list.png -->
 - [x] Screenshot of an individual submission detail page with responses and scores <!-- results/individual-submission-details.png -->
 
-### unsubmitted-tests.mdx <!-- The images mentioned below were already added. but we should update the doc and then update media as well -->
-- [x] Screenshot of the Unsubmitted Tests checkbox on the results page <!-- results/unsubmitted-checkbox.png -->
-- [x] Screenshot of the unsubmitted attempts button on a candidate's proctoring report <!-- results/unsubmitted-attempts-button.png -->
-- [x] Screenshot of the unsubmitted test details panel <!-- results/unsubmitted-test-details.png -->
+### unsubmitted-tests.mdx <!-- Rewrote article with updated flow and new screenshots -->
+- [x] Screenshot of results page showing unsubmitted tests <!-- results/results-hide-unsubmitted.png -->
+- [x] Screenshot of results page with unsubmitted tests hidden <!-- results/results-show-unsubmitted.png -->
+- [x] Screenshot of proctoring report for unsubmitted test <!-- results/mark-as-finished.png -->
+- [x] Screenshot of confirmation after marking as finished <!-- results/mark-as-finished-redirection-swal.png -->
+- [x] Screenshot of quiz answers for unsubmitted test <!-- results/unattempted-indivisual-result-page.png -->
 
 ### export-to-excel.mdx
 - [x] Screenshot of the results page with Export to Excel button highlighted <!-- results/export-results-table.png -->
