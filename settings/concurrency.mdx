@@ -43,7 +43,7 @@ If your test has a duration configured, AutoProctor automatically adjusts each c
 
 ## SDK Users
 
-If you use AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. When this limit is exceeded, the SDK returns a 429 response. You must handle rate-limiting independently in your implementation.
+If you use AutoProctor's JavaScript SDK on your own website, you receive a default limit of 5,000 candidates per minute. When this limit is exceeded, the SDK returns a 429 (Too Many Requests) response. You must handle rate-limiting independently in your implementation.
 
 <Warning>
 SDK users do not benefit from automatic staggering. You must build your own retry logic to handle 429 responses when your concurrency limit is exceeded.

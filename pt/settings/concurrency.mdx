@@ -43,7 +43,7 @@ Se o seu teste tem uma duração configurada, o AutoProctor ajusta automaticamen
 
 ## Usuários do SDK
 
-Se você usa o SDK de JavaScript do AutoProctor no seu próprio site, recebe um limite padrão de 5.000 candidatos por minuto. Quando esse limite é excedido, o SDK retorna uma resposta 429. Você deve gerenciar a limitação de taxa de forma independente na sua implementação.
+Se você usa o SDK de JavaScript do AutoProctor no seu próprio site, recebe um limite padrão de 5.000 candidatos por minuto. Quando esse limite é excedido, o SDK retorna uma resposta 429 (Muitas Solicitações). Você deve gerenciar a limitação de taxa de forma independente na sua implementação.
 
 <Warning>
 Os usuários do SDK não se beneficiam do escalonamento automático. Você deve construir sua própria lógica de retentativa para lidar com respostas 429 quando o limite de concorrência for excedido.

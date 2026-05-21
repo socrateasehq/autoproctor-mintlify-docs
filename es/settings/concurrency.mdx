@@ -43,7 +43,7 @@ Si su examen tiene una duración configurada, AutoProctor ajusta automáticament
 
 ## Usuarios del SDK
 
-Si utiliza el SDK de JavaScript de AutoProctor en su propio sitio web, recibe un límite predeterminado de 5,000 candidatos por minuto. Cuando este límite se excede, el SDK devuelve una respuesta 429. Debe gestionar la limitación de velocidad de forma independiente en su implementación.
+Si utiliza el SDK de JavaScript de AutoProctor en su propio sitio web, recibe un límite predeterminado de 5,000 candidatos por minuto. Cuando este límite se excede, el SDK devuelve una respuesta 429 (Demasiadas Solicitudes). Debe gestionar la limitación de velocidad de forma independiente en su implementación.
 
 <Warning>
 Los usuarios del SDK no se benefician del escalonamiento automático. Debe construir su propia lógica de reintento para manejar las respuestas 429 cuando se exceda su límite de concurrencia.
