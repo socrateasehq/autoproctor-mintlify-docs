@@ -34,22 +34,31 @@ Cualquier combinación de navegador y sistema operativo **no incluida** en la ta
 
     {/* TODO: Add screenshot of the demo test landing page */}
   </Step>
-  <Step title="Otorgue permisos de cámara y micrófono">
-    Cuando se le solicite, permita que su navegador acceda a la cámara y al micrófono. Si los permisos de supervisión fallan, su navegador o dispositivo podría no ser compatible.
+  <Step title="Otorgue permisos de cámara, micrófono y pantalla compartida">
+    Cuando se le solicite, permita que su navegador acceda a la cámara y al micrófono. También se le pedirá que comparta su pantalla — seleccione **Pantalla completa** y haga clic en **Compartir**. Si alguno de estos permisos falla, su navegador o dispositivo podría no ser compatible.
 
-    <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
-      <Frame caption="Solicitud de permiso para el micrófono">
+    <div style={{display: "flex", flexDirection: "column", gap: "16px", alignItems: "center"}}>
+      <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
+        <Frame caption="Solicitud de permiso para el micrófono">
+          <img
+            style={{borderRadius: "10px", maxHeight: "250px"}}
+            src="/images/getting-started/audio-permission.png"
+            alt="Solicitud de permiso del navegador para acceso al micrófono en autoproctor.co"
+          />
+        </Frame>
+        <Frame caption="Solicitud de permiso para la cámara">
+          <img
+            style={{borderRadius: "10px", maxHeight: "250px"}}
+            src="/images/getting-started/video-permission.png"
+            alt="Solicitud de permiso del navegador para acceso a la cámara en autoproctor.co"
+          />
+        </Frame>
+      </div>
+      <Frame caption="Solicitud de permiso para compartir pantalla">
         <img
-          style={{borderRadius: "10px", maxHeight: "250px"}}
-          src="/images/getting-started/audio-permission.png"
-          alt="Solicitud de permiso del navegador para acceso al micrófono en autoproctor.co"
-        />
-      </Frame>
-      <Frame caption="Solicitud de permiso para la cámara">
-        <img
-          style={{borderRadius: "10px", maxHeight: "250px"}}
-          src="/images/getting-started/video-permission.png"
-          alt="Solicitud de permiso del navegador para acceso a la cámara en autoproctor.co"
+          style={{borderRadius: "10px", maxHeight: "300px"}}
+          src="/images/getting-started/screen-share-permission.png"
+          alt="Solicitud del navegador para compartir la pantalla completa con autoproctor.co"
         />
       </Frame>
     </div>

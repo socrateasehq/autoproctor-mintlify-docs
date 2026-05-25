@@ -37,6 +37,7 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 ### device-compatibility.mdx
 - [ ] Screenshot of the demo test landing page <!-- skip -->
 - [x] Screenshot of the browser permission prompt for camera/microphone <!-- getting-started/video-permission.png + getting-started/audio-permission.png -->
+- [x] Screenshot of the screen share permission prompt <!-- getting-started/screen-share-permission.png -->
 - [ ] Screenshot of a successful demo test completion screen <!-- skip -->
 
 ### video-recording.mdx
@@ -178,9 +179,9 @@ ES and PT articles mirror the same TODOs — once EN media is added, duplicate t
 
 ### question-display-mode.mdx
 - [x] Screenshot of the question display mode setting in quiz settings <!-- socratease/question-display-mode.png -->
-- [ ] Screenshot of all-at-once display mode from the candidate view <!-- skip -->
-- [ ] Screenshot of one-by-one with navigation from the candidate view <!-- skip -->
-- [ ] Screenshot of one-by-one without navigation from the candidate view <!-- skip -->
+- [x] Screenshot of all-at-once display mode from the candidate view <!-- socratease/all-at-once.png -->
+- [x] Screenshot of one-by-one with navigation from the candidate view <!-- socratease/one-by-one-like-typeform.png -->
+- [x] Screenshot of one-by-one without navigation from the candidate view <!-- socratease/one-by-one.png -->
 - [x] Screenshot of question display mode dropdown selection <!-- videos/socratease/question-display-mode.mp4 -->
 
 ### quiz-settings.mdx

@@ -34,22 +34,31 @@ Any browser and OS combination **not listed** in the table above is not supporte
 
     {/* TODO: Add screenshot of the demo test landing page */}
   </Step>
-  <Step title="Grant camera and microphone permissions">
-    When prompted, allow your browser to access the camera and microphone. If proctoring permissions fail, your browser or device may not be supported.
+  <Step title="Grant camera, microphone, and screen share permissions">
+    When prompted, allow your browser to access the camera and microphone. You will also be asked to share your screen — select **Entire screen** and click **Share**. If any of these permissions fail, your browser or device may not be supported.
 
-    <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
-      <Frame caption="Microphone permission prompt">
+    <div style={{display: "flex", flexDirection: "column", gap: "16px", alignItems: "center"}}>
+      <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
+        <Frame caption="Microphone permission prompt">
+          <img
+            style={{borderRadius: "10px", maxHeight: "250px"}}
+            src="/images/getting-started/audio-permission.png"
+            alt="Browser permission prompt requesting microphone access for autoproctor.co"
+          />
+        </Frame>
+        <Frame caption="Camera permission prompt">
+          <img
+            style={{borderRadius: "10px", maxHeight: "250px"}}
+            src="/images/getting-started/video-permission.png"
+            alt="Browser permission prompt requesting camera access for autoproctor.co"
+          />
+        </Frame>
+      </div>
+      <Frame caption="Screen share permission prompt">
         <img
-          style={{borderRadius: "10px", maxHeight: "250px"}}
-          src="/images/getting-started/audio-permission.png"
-          alt="Browser permission prompt requesting microphone access for autoproctor.co"
-        />
-      </Frame>
-      <Frame caption="Camera permission prompt">
-        <img
-          style={{borderRadius: "10px", maxHeight: "250px"}}
-          src="/images/getting-started/video-permission.png"
-          alt="Browser permission prompt requesting camera access for autoproctor.co"
+          style={{borderRadius: "10px", maxHeight: "300px"}}
+          src="/images/getting-started/screen-share-permission.png"
+          alt="Browser prompt to share entire screen with autoproctor.co"
         />
       </Frame>
     </div>
