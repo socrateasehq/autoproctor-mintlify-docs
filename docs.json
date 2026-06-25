@@ -59,12 +59,6 @@
             "tab": "Help Center",
             "groups": [
               {
-                "group": "Overview",
-                "pages": [
-                  "index"
-                ]
-              },
-              {
                 "group": "Getting Started",
                 "icon": "rocket",
                 "expanded": true,
@@ -264,12 +258,6 @@
             "tab": "Centro de Ayuda",
             "groups": [
               {
-                "group": "Descripción General",
-                "pages": [
-                  "es/index"
-                ]
-              },
-              {
                 "group": "Primeros Pasos",
                 "icon": "rocket",
                 "expanded": true,
@@ -468,12 +456,6 @@
           {
             "tab": "Central de Ajuda",
             "groups": [
-              {
-                "group": "Visão Geral",
-                "pages": [
-                  "pt/index"
-                ]
-              },
               {
                 "group": "Primeiros Passos",
                 "icon": "rocket",

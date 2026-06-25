@@ -2,3 +2,29 @@
 footer a[href*="mintlify.com"] {
   display: none !important;
 }
+
+/* Widen the main content area.
+   Mintlify caps #content-area at max-w-xl (36rem) / 2xl:max-w-2xl (42rem).
+   Bump it to 4xl (56rem) to use the available horizontal space. */
+#content-area {
+  max-width: 64rem; /* 5xl */
+}
+
+/* Trim the outer content container's side padding on large screens.
+   Default is lg:pl-16 (4rem) + lg:pr-10 (2.5rem). */
+@media (min-width: 1024px) {
+  .lg\:ml-\[19rem\] {
+    padding-left: 3rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Tighten the vertical gap above section headings (e.g. above "Most Popular"). */
+#content-area h2 {
+  margin-top: 1.5rem;
+}
+
+/* Reduce the gap between the page header and body content (mt-8 -> mt-4). */
+#content.mdx-content {
+  margin-top: 1rem;
+}
