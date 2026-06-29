@@ -3,30 +3,26 @@ title: "Mejores Prácticas para Creadores de Exámenes"
 description: "Siga estas mejores prácticas al administrar exámenes supervisados en AutoProctor para garantizar una experiencia fluida para usted y sus candidatos."
 ---
 
-Una administración de exámenes fluida requiere preparación. Siga estas mejores prácticas para minimizar problemas técnicos y garantizar que sus candidatos tengan una experiencia de evaluación exitosa.
-
 {/* TODO: Add video walkthrough of the complete test administration workflow */}
 
 ## Lista de Verificación Previa al Examen
 
 <Steps>
   <Step title="Haga que los candidatos completen un examen de demostración">
-    Comparta el enlace del examen de demostración con los candidatos al menos **24 horas** antes del examen real. La demostración ayuda a los candidatos a comprender la plataforma, otorgar los permisos del navegador requeridos y confirmar que su dispositivo cumple con los requisitos técnicos.
+    Comparta el enlace del examen de demostración correspondiente a su tipo de examen con los candidatos al menos **24 horas** antes del examen real. La demostración ayuda a los candidatos a comprender la plataforma, otorgar los permisos del navegador requeridos y confirmar que su dispositivo cumple con los requisitos técnicos.
 
-    Enlace de demostración: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+    Enlaces de demostración para cada tipo de examen:
+
+    - [Examen de Socratease](https://www.autoproctor.co/tests/bj0yv14Ufu/load)
+    - [Examen de Google Forms](https://www.autoproctor.co/tests/GFICZZZA/load)
+    - [Examen de Microsoft Forms](https://www.autoproctor.co/tests/gToT6XfaO1/instructions/)
+    - [Examen de otras plataformas de cuestionarios](https://www.autoproctor.co/tests/UAIJ2bcQ1i/instructions/)
 
     <Note>
     El examen de demostración no consume créditos de examen de su cuenta. Los candidatos pueden realizarlo tantas veces como necesiten.
     </Note>
 
     {/* TODO: Add screenshot of the demo test landing page */}
-  </Step>
-  <Step title="Comparta las instrucciones con los candidatos">
-    Distribuya la página de instrucciones adecuada según la configuración de su examen:
-
-    - [Instrucciones para exámenes supervisados](/taking-tests/proctored-test-instructions) — Para exámenes con supervisión activada
-    - [Instrucciones para exámenes con temporizador](/taking-tests/timed-test-instructions) — Para exámenes solo con temporizador
-    - [Página de instrucciones para candidatos](/taking-tests/instructions-page-for-candidates) — Descripción general para todos los tipos de exámenes
   </Step>
   <Step title="Verifique que su cuenta tenga créditos suficientes">
     Asegúrese de que su cuenta tenga suficientes intentos de examen disponibles antes del examen. Si los candidatos intentan cargar un examen y su cuenta no tiene créditos, no podrán continuar.
@@ -42,7 +38,7 @@ Una administración de exámenes fluida requiere preparación. Siga estas mejore
     </Frame>
   </Step>
   <Step title="Configure la programación del examen con margen adicional">
-    Al programar exámenes con temporizador que tengan tanto una duración como una ventana de tiempo, asigne un margen de tiempo adicional. Por ejemplo, si su examen dura 15 minutos, establezca la ventana en al menos 30 minutos para contemplar la configuración del candidato y posibles retrasos técnicos.
+    Configure un Buffer Time para que los candidatos tengan un período de gracia después del límite "Can't Start After" para configurar su dispositivo.
 
     Consulte [Configuración del Temporizador](/settings/timer-settings) para detalles de configuración.
   </Step>
@@ -73,15 +69,6 @@ Envíe el enlace de demostración al menos 24 horas antes del examen real. Enví
 ## Durante el Examen
 
 - **Esté disponible** — Manténgase accesible a través de un canal de comunicación (como Google Meet, Zoom o WhatsApp) durante la ventana del examen para que los candidatos puedan contactarlo si encuentran problemas técnicos.
-- **Monitoree su panel de control** — Mantenga su [panel de control de AutoProctor](https://www.autoproctor.co/test-admin/home/) abierto para monitorear las entregas a medida que llegan. Esto le permite detectar problemas tempranamente (por ejemplo, si muchos candidatos no logran iniciar).
-
-<Frame caption="Panel de control mostrando entregas en tiempo real durante una sesión de examen activa">
-  <img
-    className="rounded-xl"
-    src="/images/getting-started/sample-results.png"
-    alt="Panel de AutoProctor mostrando entregas de candidatos, Puntajes de Confianza y puntuaciones del examen durante un examen activo"
-  />
-</Frame>
 
 ## Después del Examen
 
@@ -91,18 +78,8 @@ Envíe el enlace de demostración al menos 24 horas antes del examen real. Enví
 
     {/* TODO: Add screenshot of the results page with Trust Score column highlighted */}
   </Step>
-  <Step title="Revise los envíos individuales si es necesario">
-    Para candidatos con Puntajes de Confianza bajos, abra su [envío individual](/results/individual-submissions) para revisar la evidencia completa de infracciones, incluyendo fotos, capturas de pantalla y clips de audio.
-  </Step>
-  <Step title="Indique a los candidatos a quién contactar">
-    Después del examen, los candidatos pueden tener distintos tipos de preguntas. Comparta esta guía para que cada consulta llegue a la persona adecuada:
-
-    | Si un candidato pregunta sobre... | Debe contactar a... |
-    |---|---|
-    | Su Puntaje de Confianza o infracciones de supervisión | Usted (el creador del examen) — puede revisar el informe en su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) |
-    | Sus calificaciones, puntuaciones o respuestas | La plataforma de cuestionarios que utilizó (Google Forms, Microsoft Forms o Socratease) |
-    | Problemas técnicos durante el examen | [Soporte de AutoProctor](/support/contact-us) |
-    | Preguntas académicas o consultas sobre calificaciones | Usted (el creador del examen) |
+  <Step title="Ayude a los candidatos con problemas técnicos">
+    Si los candidatos enfrentan algún problema técnico durante el examen, pídales que sigan [este artículo](/support/contact-us).
   </Step>
 </Steps>
 

@@ -3,30 +3,26 @@ title: "Boas Práticas para Criadores de Testes"
 description: "Siga estas boas práticas ao administrar testes supervisionados no AutoProctor para garantir uma experiência tranquila para você e seus candidatos."
 ---
 
-Uma administração de testes tranquila requer preparação. Siga estas boas práticas para minimizar problemas técnicos e garantir que seus candidatos tenham uma experiência de teste bem-sucedida.
-
 {/* TODO: Add video walkthrough of the complete test administration workflow */}
 
 ## Lista de Verificação Pré-Teste
 
 <Steps>
   <Step title="Peça que os candidatos façam um teste de demonstração">
-    Compartilhe o link do teste de demonstração com os candidatos pelo menos **24 horas** antes do exame real. A demonstração ajuda os candidatos a entender a plataforma, conceder as permissões necessárias do navegador e confirmar que o dispositivo atende aos requisitos técnicos.
+    Compartilhe o link do teste de demonstração do seu tipo de teste com os candidatos pelo menos **24 horas** antes do teste real. A demonstração ajuda os candidatos a entender a plataforma, conceder as permissões necessárias do navegador e confirmar que o dispositivo atende aos requisitos técnicos.
 
-    Link da demonstração: [https://www.autoproctor.co/tests/start-test/GFICZZZA](https://www.autoproctor.co/tests/start-test/GFICZZZA)
+    Links de demonstração para cada tipo de teste:
+
+    - [Teste do Socratease](https://www.autoproctor.co/tests/bj0yv14Ufu/load)
+    - [Teste do Google Forms](https://www.autoproctor.co/tests/GFICZZZA/load)
+    - [Teste do Microsoft Forms](https://www.autoproctor.co/tests/gToT6XfaO1/instructions/)
+    - [Teste de outras plataformas de questionários](https://www.autoproctor.co/tests/UAIJ2bcQ1i/instructions/)
 
     <Note>
     O teste de demonstração não consome créditos de teste da sua conta. Os candidatos podem realizá-lo quantas vezes precisarem.
     </Note>
 
     {/* TODO: Add screenshot of the demo test landing page */}
-  </Step>
-  <Step title="Compartilhe instruções com os candidatos">
-    Distribua a página de instruções apropriada com base na configuração do seu teste:
-
-    - [Instruções para testes supervisionados](/taking-tests/proctored-test-instructions) — Para testes com supervisão ativada
-    - [Instruções para testes cronometrados](/taking-tests/timed-test-instructions) — Para testes apenas com temporizador
-    - [Página de instruções para candidatos](/taking-tests/instructions-page-for-candidates) — Visão geral para todos os tipos de teste
   </Step>
   <Step title="Verifique se sua conta tem créditos suficientes">
     Certifique-se de que sua conta tem tentativas de teste suficientes disponíveis antes do exame. Se os candidatos tentarem carregar um teste e sua conta não tiver créditos, eles não poderão prosseguir.
@@ -42,7 +38,7 @@ Uma administração de testes tranquila requer preparação. Siga estas boas pr�
     </Frame>
   </Step>
   <Step title="Configure o tempo do teste com margem de tolerância">
-    Ao agendar testes cronometrados com duração e janela de tempo, aloque tempo extra de tolerância. Por exemplo, se seu teste dura 15 minutos, defina a janela em pelo menos 30 minutos para acomodar a configuração do candidato e atrasos técnicos.
+    Defina um Buffer Time para que os candidatos tenham um período de carência após o limite "Can't Start After" para configurar o dispositivo.
 
     Consulte [Configurações de Tempo](/settings/timer-settings) para detalhes de configuração.
   </Step>
@@ -73,15 +69,6 @@ Envie o link da demonstração pelo menos 24 horas antes do teste real. Envie o 
 ## Durante o Teste
 
 - **Esteja disponível** — Permaneça acessível por um canal de comunicação (como Google Meet, Zoom ou WhatsApp) durante a janela do teste para que os candidatos possam procurá-lo caso enfrentem problemas técnicos.
-- **Monitore seu painel** — Mantenha seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) aberto para monitorar os envios conforme chegam. Isso permite identificar problemas rapidamente (por exemplo, se muitos candidatos não conseguirem iniciar).
-
-<Frame caption="Painel mostrando envios em tempo real durante uma sessão de teste ativa">
-  <img
-    className="rounded-xl"
-    src="/images/getting-started/sample-results.png"
-    alt="Painel do AutoProctor exibindo envios de candidatos, Trust Scores e pontuações do teste durante um teste ativo"
-  />
-</Frame>
 
 ## Após o Teste
 
@@ -91,18 +78,8 @@ Envie o link da demonstração pelo menos 24 horas antes do teste real. Envie o 
 
     {/* TODO: Add screenshot of the results page with Trust Score column highlighted */}
   </Step>
-  <Step title="Revise envios individuais se necessário">
-    Para candidatos com Trust Scores baixos, abra o [envio individual](/results/individual-submissions) para revisar as evidências completas de infrações, incluindo fotos, capturas de tela e clipes de áudio.
-  </Step>
-  <Step title="Diga aos candidatos com quem entrar em contato">
-    Após o teste, os candidatos podem ter diferentes tipos de dúvidas. Compartilhe este guia para que cada dúvida chegue à pessoa certa:
-
-    | Se um candidato perguntar sobre... | Deve entrar em contato com... |
-    |---|---|
-    | O Trust Score ou infrações de supervisão | Você (o criador do teste) — você pode revisar o relatório no seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) |
-    | As notas, pontuações ou respostas | A plataforma de questionários que você usou (Google Forms, Microsoft Forms ou Socratease) |
-    | Problemas técnicos durante o teste | [Suporte do AutoProctor](/support/contact-us) |
-    | Questões acadêmicas ou dúvidas sobre notas | Você (o criador do teste) |
+  <Step title="Ajude os candidatos com problemas técnicos">
+    Se os candidatos enfrentarem algum problema técnico durante o teste, peça que sigam [este artigo](/support/contact-us).
   </Step>
 </Steps>
 
