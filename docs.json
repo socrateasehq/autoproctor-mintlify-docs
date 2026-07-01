@@ -9,7 +9,8 @@
   },
   "favicon": "/favicon.svg",
   "appearance": {
-    "default": "light"
+    "default": "light",
+    "strict": true
   },
   "background": {
     "decoration": "grid"
@@ -54,60 +55,39 @@
       {
         "language": "en",
         "default": true,
-        "tabs": [
-          {
-            "tab": "Help Center",
-            "groups": [
+        "groups": [
               {
-                "group": "Getting Started",
-                "icon": "rocket",
+                "group": "Tests & Results",
+                "icon": "clipboard-list",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "First Steps",
+                    "group": "Create",
                     "pages": [
                       "getting-started/quickstart",
-                      "getting-started/device-compatibility",
-                      "getting-started/best-practices-for-teachers"
-                    ]
-                  },
-                  {
-                    "group": "Understanding Proctoring",
-                    "pages": [
-                      "getting-started/what-gets-tracked",
-                      "getting-started/trust-score",
-                      "getting-started/video-recording",
-                      "getting-started/faqs"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Test Setup",
-                "icon": "square-plus",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Creating Tests",
-                    "pages": [
                       "creating-tests/quiz-providers",
-                      "creating-tests/adding-collaborators",
-                      "creating-tests/archiving-and-deleting-tests",
-                      "creating-tests/iframe-query-arguments",
-                      "creating-tests/add-on-error"
-                    ]
-                  },
-                  {
-                    "group": "Timer & Proctoring",
-                    "pages": [
-                      "settings/timer-settings",
                       "settings/proctoring-settings",
                       "settings/enhanced-proctoring",
-                      "settings/advanced-settings"
+                      "settings/timer-settings",
+                      "settings/advanced-settings",
+                      "creating-tests/archiving-and-deleting-tests",
+                      "creating-tests/iframe-query-arguments"
                     ]
                   },
                   {
-                    "group": "Access Control",
+                    "group": "Results",
+                    "pages": [
+                      "results/how-to-see-results",
+                      "results/proctoring-results",
+                      "results/individual-submissions",
+                      "results/unsubmitted-tests",
+                      "results/export-to-excel",
+                      "results/google-sheets-integration",
+                      "results/sharing-test-results"
+                    ]
+                  },
+                  {
+                    "group": "Share",
                     "pages": [
                       "settings/restricting-by-email",
                       "settings/restricting-to-some-users",
@@ -121,40 +101,12 @@
                 ]
               },
               {
-                "group": "Socratease Quizzes",
-                "icon": "graduation-cap",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Creating Quizzes",
-                    "pages": [
-                      "socratease/why-socratease",
-                      "socratease/creating-a-quiz",
-                      "socratease/question-types",
-                      "socratease/question-type-availability",
-                      "socratease/bulk-import-from-excel"
-                    ]
-                  },
-                  {
-                    "group": "Quiz Configuration",
-                    "pages": [
-                      "socratease/quiz-settings",
-                      "socratease/question-display-mode",
-                      "socratease/showing-results-to-candidates",
-                      "socratease/question-banks",
-                      "socratease/using-tags",
-                      "socratease/latex-math-equations"
-                    ]
-                  }
-                ]
-              },
-              {
                 "group": "Candidate Guide",
-                "icon": "pen-to-square",
+                "icon": "life-ring",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Instructions",
+                    "group": "Attempting Tests",
                     "pages": [
                       "taking-tests/proctored-test-instructions",
                       "taking-tests/timed-test-instructions",
@@ -167,8 +119,9 @@
                     ]
                   },
                   {
-                    "group": "Candidate Issues",
+                    "group": "Common Issues",
                     "pages": [
+                      "creating-tests/add-on-error",
                       "candidate-issues/loading-screen",
                       "candidate-issues/blank-page-grey-screen",
                       "candidate-issues/slow-and-laggy",
@@ -187,26 +140,53 @@
                 ]
               },
               {
-                "group": "Results & Reports",
-                "icon": "chart-bar",
+                "group": "Understanding AutoProctor",
+                "icon": "book-open",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Viewing Results",
+                    "group": "Getting Started",
                     "pages": [
-                      "results/how-to-see-results",
-                      "results/proctoring-results",
-                      "results/individual-submissions",
-                      "results/unsubmitted-tests",
-                      "results/things-you-need-to-know"
+                      "results/things-you-need-to-know",
+                      "getting-started/device-compatibility",
+                      "getting-started/best-practices-for-teachers",
+                      "getting-started/faqs"
                     ]
                   },
                   {
-                    "group": "Exporting & Sharing",
+                    "group": "How Proctoring Works",
                     "pages": [
-                      "results/export-to-excel",
-                      "results/google-sheets-integration",
-                      "results/sharing-test-results"
+                      "getting-started/what-gets-tracked",
+                      "getting-started/trust-score",
+                      "getting-started/video-recording"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Socratease Quizzes",
+                "icon": "graduation-cap",
+                "expanded": true,
+                "pages": [
+                  {
+                    "group": "Create & Questions",
+                    "pages": [
+                      "socratease/why-socratease",
+                      "socratease/creating-a-quiz",
+                      "socratease/question-types",
+                      "socratease/question-type-availability",
+                      "socratease/bulk-import-from-excel",
+                      "socratease/question-banks"
+                    ]
+                  },
+                  {
+                    "group": "Settings",
+                    "pages": [
+                      "socratease/quiz-settings",
+                      "socratease/question-display-mode",
+                      "socratease/showing-results-to-candidates",
+                      "socratease/using-tags",
+                      "socratease/latex-math-equations"
                     ]
                   }
                 ]
@@ -227,86 +207,62 @@
                     ]
                   },
                   {
-                    "group": "Billing & Management",
+                    "group": "Billing & Teams",
                     "pages": [
                       "pricing/teams",
+                      "creating-tests/adding-collaborators",
                       "pricing/purchased-packs-not-visible",
                       "pricing/track-test-pack-usage",
                       "pricing/invoices",
                       "pricing/billing-information"
                     ]
+                  },
+                  {
+                    "group": "Support",
+                    "pages": [
+                      "support/contact-us",
+                      "support/booking-a-demo"
+                    ]
                   }
-                ]
-              },
-              {
-                "group": "Support",
-                "icon": "headset",
-                "expanded": true,
-                "pages": [
-                  "support/contact-us",
-                  "support/booking-a-demo"
                 ]
               }
             ]
-          }
-        ]
       },
       {
         "language": "es",
-        "tabs": [
-          {
-            "tab": "Centro de Ayuda",
-            "groups": [
+        "groups": [
               {
-                "group": "Primeros Pasos",
-                "icon": "rocket",
+                "group": "Exámenes y Resultados",
+                "icon": "clipboard-list",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Primeros Pasos",
+                    "group": "Crear",
                     "pages": [
                       "es/getting-started/quickstart",
-                      "es/getting-started/device-compatibility",
-                      "es/getting-started/best-practices-for-teachers"
-                    ]
-                  },
-                  {
-                    "group": "Cómo Funciona la Supervisión",
-                    "pages": [
-                      "es/getting-started/what-gets-tracked",
-                      "es/getting-started/trust-score",
-                      "es/getting-started/video-recording",
-                      "es/getting-started/faqs"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Configuración de Pruebas",
-                "icon": "square-plus",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Crear Pruebas",
-                    "pages": [
                       "es/creating-tests/quiz-providers",
-                      "es/creating-tests/adding-collaborators",
-                      "es/creating-tests/archiving-and-deleting-tests",
-                      "es/creating-tests/iframe-query-arguments",
-                      "es/creating-tests/add-on-error"
-                    ]
-                  },
-                  {
-                    "group": "Temporizador y Supervisión",
-                    "pages": [
-                      "es/settings/timer-settings",
                       "es/settings/proctoring-settings",
                       "es/settings/enhanced-proctoring",
-                      "es/settings/advanced-settings"
+                      "es/settings/timer-settings",
+                      "es/settings/advanced-settings",
+                      "es/creating-tests/archiving-and-deleting-tests",
+                      "es/creating-tests/iframe-query-arguments"
                     ]
                   },
                   {
-                    "group": "Control de Acceso",
+                    "group": "Resultados",
+                    "pages": [
+                      "es/results/how-to-see-results",
+                      "es/results/proctoring-results",
+                      "es/results/individual-submissions",
+                      "es/results/unsubmitted-tests",
+                      "es/results/export-to-excel",
+                      "es/results/google-sheets-integration",
+                      "es/results/sharing-test-results"
+                    ]
+                  },
+                  {
+                    "group": "Compartir",
                     "pages": [
                       "es/settings/restricting-by-email",
                       "es/settings/restricting-to-some-users",
@@ -320,40 +276,12 @@
                 ]
               },
               {
-                "group": "Cuestionarios Socratease",
-                "icon": "graduation-cap",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Crear Cuestionarios",
-                    "pages": [
-                      "es/socratease/why-socratease",
-                      "es/socratease/creating-a-quiz",
-                      "es/socratease/question-types",
-                      "es/socratease/question-type-availability",
-                      "es/socratease/bulk-import-from-excel"
-                    ]
-                  },
-                  {
-                    "group": "Configuración del Cuestionario",
-                    "pages": [
-                      "es/socratease/quiz-settings",
-                      "es/socratease/question-display-mode",
-                      "es/socratease/showing-results-to-candidates",
-                      "es/socratease/question-banks",
-                      "es/socratease/using-tags",
-                      "es/socratease/latex-math-equations"
-                    ]
-                  }
-                ]
-              },
-              {
                 "group": "Guía del Candidato",
-                "icon": "pen-to-square",
+                "icon": "life-ring",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Instrucciones",
+                    "group": "Intentar Exámenes",
                     "pages": [
                       "es/taking-tests/proctored-test-instructions",
                       "es/taking-tests/timed-test-instructions",
@@ -366,8 +294,9 @@
                     ]
                   },
                   {
-                    "group": "Problemas del Candidato",
+                    "group": "Problemas Comunes",
                     "pages": [
+                      "es/creating-tests/add-on-error",
                       "es/candidate-issues/loading-screen",
                       "es/candidate-issues/blank-page-grey-screen",
                       "es/candidate-issues/slow-and-laggy",
@@ -386,26 +315,53 @@
                 ]
               },
               {
-                "group": "Resultados e Informes",
-                "icon": "chart-bar",
+                "group": "Conociendo AutoProctor",
+                "icon": "book-open",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Ver Resultados",
+                    "group": "Primeros Pasos",
                     "pages": [
-                      "es/results/how-to-see-results",
-                      "es/results/proctoring-results",
-                      "es/results/individual-submissions",
-                      "es/results/unsubmitted-tests",
-                      "es/results/things-you-need-to-know"
+                      "es/results/things-you-need-to-know",
+                      "es/getting-started/device-compatibility",
+                      "es/getting-started/best-practices-for-teachers",
+                      "es/getting-started/faqs"
                     ]
                   },
                   {
-                    "group": "Exportar y Compartir",
+                    "group": "Cómo Funciona la Supervisión",
                     "pages": [
-                      "es/results/export-to-excel",
-                      "es/results/google-sheets-integration",
-                      "es/results/sharing-test-results"
+                      "es/getting-started/what-gets-tracked",
+                      "es/getting-started/trust-score",
+                      "es/getting-started/video-recording"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Cuestionarios Socratease",
+                "icon": "graduation-cap",
+                "expanded": true,
+                "pages": [
+                  {
+                    "group": "Crear y Preguntas",
+                    "pages": [
+                      "es/socratease/why-socratease",
+                      "es/socratease/creating-a-quiz",
+                      "es/socratease/question-types",
+                      "es/socratease/question-type-availability",
+                      "es/socratease/bulk-import-from-excel",
+                      "es/socratease/question-banks"
+                    ]
+                  },
+                  {
+                    "group": "Configuración",
+                    "pages": [
+                      "es/socratease/quiz-settings",
+                      "es/socratease/question-display-mode",
+                      "es/socratease/showing-results-to-candidates",
+                      "es/socratease/using-tags",
+                      "es/socratease/latex-math-equations"
                     ]
                   }
                 ]
@@ -426,86 +382,62 @@
                     ]
                   },
                   {
-                    "group": "Facturación y Gestión",
+                    "group": "Facturación y Equipos",
                     "pages": [
                       "es/pricing/teams",
+                      "es/creating-tests/adding-collaborators",
                       "es/pricing/purchased-packs-not-visible",
                       "es/pricing/track-test-pack-usage",
                       "es/pricing/invoices",
                       "es/pricing/billing-information"
                     ]
+                  },
+                  {
+                    "group": "Soporte",
+                    "pages": [
+                      "es/support/contact-us",
+                      "es/support/booking-a-demo"
+                    ]
                   }
-                ]
-              },
-              {
-                "group": "Soporte",
-                "icon": "headset",
-                "expanded": true,
-                "pages": [
-                  "es/support/contact-us",
-                  "es/support/booking-a-demo"
                 ]
               }
             ]
-          }
-        ]
       },
       {
         "language": "pt",
-        "tabs": [
-          {
-            "tab": "Central de Ajuda",
-            "groups": [
+        "groups": [
               {
-                "group": "Primeiros Passos",
-                "icon": "rocket",
+                "group": "Testes e Resultados",
+                "icon": "clipboard-list",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Primeiros Passos",
+                    "group": "Criar",
                     "pages": [
                       "pt/getting-started/quickstart",
-                      "pt/getting-started/device-compatibility",
-                      "pt/getting-started/best-practices-for-teachers"
-                    ]
-                  },
-                  {
-                    "group": "Como Funciona a Supervisão",
-                    "pages": [
-                      "pt/getting-started/what-gets-tracked",
-                      "pt/getting-started/trust-score",
-                      "pt/getting-started/video-recording",
-                      "pt/getting-started/faqs"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Configuração de Provas",
-                "icon": "square-plus",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Criar Provas",
-                    "pages": [
                       "pt/creating-tests/quiz-providers",
-                      "pt/creating-tests/adding-collaborators",
-                      "pt/creating-tests/archiving-and-deleting-tests",
-                      "pt/creating-tests/iframe-query-arguments",
-                      "pt/creating-tests/add-on-error"
-                    ]
-                  },
-                  {
-                    "group": "Temporizador e Supervisão",
-                    "pages": [
-                      "pt/settings/timer-settings",
                       "pt/settings/proctoring-settings",
                       "pt/settings/enhanced-proctoring",
-                      "pt/settings/advanced-settings"
+                      "pt/settings/timer-settings",
+                      "pt/settings/advanced-settings",
+                      "pt/creating-tests/archiving-and-deleting-tests",
+                      "pt/creating-tests/iframe-query-arguments"
                     ]
                   },
                   {
-                    "group": "Controle de Acesso",
+                    "group": "Resultados",
+                    "pages": [
+                      "pt/results/how-to-see-results",
+                      "pt/results/proctoring-results",
+                      "pt/results/individual-submissions",
+                      "pt/results/unsubmitted-tests",
+                      "pt/results/export-to-excel",
+                      "pt/results/google-sheets-integration",
+                      "pt/results/sharing-test-results"
+                    ]
+                  },
+                  {
+                    "group": "Compartilhar",
                     "pages": [
                       "pt/settings/restricting-by-email",
                       "pt/settings/restricting-to-some-users",
@@ -519,40 +451,12 @@
                 ]
               },
               {
-                "group": "Questionários Socratease",
-                "icon": "graduation-cap",
-                "expanded": true,
-                "pages": [
-                  {
-                    "group": "Criar Questionários",
-                    "pages": [
-                      "pt/socratease/why-socratease",
-                      "pt/socratease/creating-a-quiz",
-                      "pt/socratease/question-types",
-                      "pt/socratease/question-type-availability",
-                      "pt/socratease/bulk-import-from-excel"
-                    ]
-                  },
-                  {
-                    "group": "Configuração do Questionário",
-                    "pages": [
-                      "pt/socratease/quiz-settings",
-                      "pt/socratease/question-display-mode",
-                      "pt/socratease/showing-results-to-candidates",
-                      "pt/socratease/question-banks",
-                      "pt/socratease/using-tags",
-                      "pt/socratease/latex-math-equations"
-                    ]
-                  }
-                ]
-              },
-              {
                 "group": "Guia do Candidato",
-                "icon": "pen-to-square",
+                "icon": "life-ring",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Instruções",
+                    "group": "Realizando Testes",
                     "pages": [
                       "pt/taking-tests/proctored-test-instructions",
                       "pt/taking-tests/timed-test-instructions",
@@ -565,8 +469,9 @@
                     ]
                   },
                   {
-                    "group": "Problemas do Candidato",
+                    "group": "Problemas Comuns",
                     "pages": [
+                      "pt/creating-tests/add-on-error",
                       "pt/candidate-issues/loading-screen",
                       "pt/candidate-issues/blank-page-grey-screen",
                       "pt/candidate-issues/slow-and-laggy",
@@ -585,26 +490,53 @@
                 ]
               },
               {
-                "group": "Resultados e Relatórios",
-                "icon": "chart-bar",
+                "group": "Conhecendo o AutoProctor",
+                "icon": "book-open",
                 "expanded": true,
                 "pages": [
                   {
-                    "group": "Visualizar Resultados",
+                    "group": "Primeiros Passos",
                     "pages": [
-                      "pt/results/how-to-see-results",
-                      "pt/results/proctoring-results",
-                      "pt/results/individual-submissions",
-                      "pt/results/unsubmitted-tests",
-                      "pt/results/things-you-need-to-know"
+                      "pt/results/things-you-need-to-know",
+                      "pt/getting-started/device-compatibility",
+                      "pt/getting-started/best-practices-for-teachers",
+                      "pt/getting-started/faqs"
                     ]
                   },
                   {
-                    "group": "Exportar e Compartilhar",
+                    "group": "Como a Supervisão Funciona",
                     "pages": [
-                      "pt/results/export-to-excel",
-                      "pt/results/google-sheets-integration",
-                      "pt/results/sharing-test-results"
+                      "pt/getting-started/what-gets-tracked",
+                      "pt/getting-started/trust-score",
+                      "pt/getting-started/video-recording"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Questionários Socratease",
+                "icon": "graduation-cap",
+                "expanded": true,
+                "pages": [
+                  {
+                    "group": "Criar e Perguntas",
+                    "pages": [
+                      "pt/socratease/why-socratease",
+                      "pt/socratease/creating-a-quiz",
+                      "pt/socratease/question-types",
+                      "pt/socratease/question-type-availability",
+                      "pt/socratease/bulk-import-from-excel",
+                      "pt/socratease/question-banks"
+                    ]
+                  },
+                  {
+                    "group": "Configuração",
+                    "pages": [
+                      "pt/socratease/quiz-settings",
+                      "pt/socratease/question-display-mode",
+                      "pt/socratease/showing-results-to-candidates",
+                      "pt/socratease/using-tags",
+                      "pt/socratease/latex-math-equations"
                     ]
                   }
                 ]
@@ -625,29 +557,26 @@
                     ]
                   },
                   {
-                    "group": "Faturamento e Gestão",
+                    "group": "Faturamento e Times",
                     "pages": [
                       "pt/pricing/teams",
+                      "pt/creating-tests/adding-collaborators",
                       "pt/pricing/purchased-packs-not-visible",
                       "pt/pricing/track-test-pack-usage",
                       "pt/pricing/invoices",
                       "pt/pricing/billing-information"
                     ]
+                  },
+                  {
+                    "group": "Suporte",
+                    "pages": [
+                      "pt/support/contact-us",
+                      "pt/support/booking-a-demo"
+                    ]
                   }
-                ]
-              },
-              {
-                "group": "Suporte",
-                "icon": "headset",
-                "expanded": true,
-                "pages": [
-                  "pt/support/contact-us",
-                  "pt/support/booking-a-demo"
                 ]
               }
             ]
-          }
-        ]
       }
     ],
     "global": {}
@@ -656,19 +585,7 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hello@autoproctor.co"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Go to AutoProctor",
-      "href": "https://www.autoproctor.co"
-    }
-  },
+  "navbar": {},
   "footer": {
     "socials": {
       "linkedin": "https://www.linkedin.com/company/autoproctorhq/",

@@ -28,3 +28,32 @@ footer a[href*="mintlify.com"] {
 #content.mdx-content {
   margin-top: 1rem;
 }
+
+/* Hide the eyebrow label above page titles (e.g. "First Steps" above "Device Compatibility"). */
+.eyebrow {
+  display: none !important;
+}
+
+/* Style the page description (sub-headline) to be visually distinct from body content. */
+main [role="banner"] > div.prose,
+main header > div.prose {
+  color: #6b7280 !important; /* gray-500 */
+  font-weight: 400;
+}
+
+/* Hide the sidebar bottom bar (language + Go to AutoProctor are moved to the logo row via custom.js). */
+nav[aria-label="Pages"] > ul {
+  display: none !important;
+}
+
+/* Enlarge the sidebar logo. */
+img.nav-logo {
+  height: 2rem !important; /* 32px, up from 24px */
+}
+
+/* Center the sidebar search bar and reduce top spacing. */
+#sidebar-content > div.mt-6 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
