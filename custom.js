@@ -47,7 +47,7 @@
     // Create container.
     var icons = document.createElement('div');
     icons.className = 'custom-sidebar-icons';
-    icons.style.cssText = 'display:flex;align-items:center;gap:0.625rem;';
+    icons.style.cssText = 'display:flex;align-items:center;gap:0.375rem;flex-shrink:0;';
 
     // --- Language selector (dropdown) ---
     var langContainer = document.createElement('div');

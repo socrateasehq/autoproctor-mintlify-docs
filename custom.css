@@ -51,6 +51,20 @@ img.nav-logo {
   height: 2rem !important; /* 32px, up from 24px */
 }
 
+/* Ensure the sidebar logo row spaces logo and icons properly. */
+#sidebar-content > div:first-child {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  overflow: visible;
+}
+
+/* Prevent the icons from being clipped. */
+.custom-sidebar-icons {
+  flex-shrink: 0;
+}
+
 /* Center the sidebar search bar and reduce top spacing. */
 #sidebar-content > div.mt-6 {
   margin-top: 1rem;
