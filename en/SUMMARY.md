@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [AutoProctor Help Center](README.md)
 
 ## Tests & Results
 
