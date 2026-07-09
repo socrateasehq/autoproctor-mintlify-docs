@@ -1,0 +1,57 @@
+---
+title: "Ver Exámenes No Enviados"
+description: "Aprenda a identificar, ver y gestionar exámenes que los candidatos iniciaron pero no enviaron en AutoProctor."
+---
+
+Un examen no enviado ocurre cuando un candidato inicia un examen pero no hace clic en el botón verde **Submit** en la parte superior de la ventana del examen. Es posible que el candidato haya visto las preguntas e introducido respuestas, pero su examen nunca fue enviado formalmente.
+
+<Frame caption="El botón verde Submit que los candidatos deben hacer clic">
+  <img style={{maxWidth: "190px"}} className="border rounded-xl" src="/images/results/click-after-submitting.png" alt="Botón verde Submit que los candidatos deben hacer clic después de enviar el examen" />
+</Frame>
+
+## Ver Exámenes No Enviados en la Página de Resultados
+
+Cuando abre la página de resultados de un examen, los exámenes no enviados se incluyen junto con los resultados enviados de forma predeterminada. Un banner amarillo en la parte superior indica que la tabla incluye intentos de exámenes no enviados.
+
+<Frame caption="Página de resultados mostrando exámenes no enviados">
+  <img className="border rounded-xl" src="/images/results/results-hide-unsubmitted.png" alt="Página de resultados mostrando exámenes enviados y no enviados con botón Hide unsubmitted" />
+</Frame>
+
+Para ver solo los resultados enviados, haga clic en el botón **Hide unsubmitted** en el banner amarillo. Las entradas no enviadas se eliminan de la tabla y el botón cambia a **Show unsubmitted** para que pueda restaurarlas en cualquier momento.
+
+<Frame caption="Página de resultados con exámenes no enviados ocultos">
+  <img className="border rounded-xl" src="/images/results/results-show-unsubmitted.png" alt="Página de resultados mostrando solo exámenes enviados con botón Show unsubmitted" />
+</Frame>
+
+## Informe de Supervisión para un Examen No Enviado
+
+Cuando hace clic en **View Report** para un intento de examen no enviado, ve una página que indica que el examen aún no ha sido marcado como finalizado. Los resultados de supervisión no están disponibles hasta que el intento sea marcado como finalizado.
+
+<Frame caption="Informe de supervisión para un examen no enviado">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished.png" alt="Informe de supervisión mostrando que el examen aún no ha sido marcado como finalizado con un botón Mark as Finished" />
+</Frame>
+
+Para generar el informe de supervisión, haga clic en el botón **Mark as Finished**. Aparece un mensaje de confirmación y el informe se carga automáticamente después de unos segundos.
+
+<Frame caption="Confirmación después de marcar un examen como finalizado">
+  <img className="border rounded-xl" src="/images/results/mark-as-finished-redirection-swal.png" alt="Diálogo de confirmación mostrando que el examen ha sido marcado como finalizado" />
+</Frame>
+
+<Warning>
+Si marca un examen como finalizado y el candidato aún está realizando el examen, las violaciones posteriores serán ignoradas.
+</Warning>
+
+## Respuestas del Cuestionario para un Examen No Enviado
+
+Cuando hace clic en **View Answers** para un examen no enviado, la página de resultados individuales muestra todas las preguntas como **Not Attempted** con 0 puntos obtenidos.
+
+<Frame caption="Respuestas del cuestionario para un examen no enviado">
+  <img className="border rounded-xl" src="/images/results/unattempted-indivisual-result-page.png" alt="Página de resultados individuales mostrando todas las preguntas como Not Attempted para un examen no enviado" />
+</Frame>
+
+## Recursos Relacionados
+
+- [Reanudación de Intentos de Examen](/tests-results/create/resuming-test-attempts) -- Cómo funciona la reanudación de exámenes cuando los candidatos abandonan a mitad del examen
+- [¿Dónde Puedo Ver los Resultados de Supervisión?](/tests-results/results/proctoring-results) -- Ver los informes de supervisión enviados
+- [Antes de Comenzar](/understanding/getting-started/things-you-need-to-know) -- Requisitos esenciales, incluido el proceso del botón de envío
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/tests-results/results/how-to-see-results) -- Descripción general de los resultados del examen frente a los resultados de supervisión

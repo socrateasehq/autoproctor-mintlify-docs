@@ -5,9 +5,11 @@ footer a[href*="mintlify.com"] {
 
 /* Widen the main content area.
    Mintlify caps #content-area at max-w-xl (36rem) / 2xl:max-w-2xl (42rem).
-   Bump it to 4xl (56rem) to use the available horizontal space. */
+   Bump it to 4xl (56rem) to use the available horizontal space.
+   container-type lets child elements use cqi units relative to this width. */
 #content-area {
   max-width: 64rem; /* 5xl */
+  container-type: inline-size;
 }
 
 /* Trim the outer content container's side padding on large screens.
@@ -24,6 +26,13 @@ footer a[href*="mintlify.com"] {
   margin-top: 1.5rem;
 }
 
+/* Indent H3 sub-headings to visually nest them under H2 sections.
+   Combined with the smaller font size, this creates clear hierarchy. */
+#content-area h3 {
+  padding-left: 0.75rem;
+  border-left: 2px solid #d1d5db; /* gray-300 — subtle left accent */
+}
+
 /* Reduce the gap between the page header and body content (mt-8 -> mt-4). */
 #content.mdx-content {
   margin-top: 1rem;
@@ -36,9 +45,13 @@ footer a[href*="mintlify.com"] {
 
 /* Style the page description (sub-headline) to be visually distinct from body content. */
 main [role="banner"] > div.prose,
-main header > div.prose {
-  color: #6b7280 !important; /* gray-500 */
+main header > div.prose,
+main .mt-2.text-lg.prose {
+  color: #9ca3af !important; /* gray-400 — lighter than body text for clear separation */
   font-weight: 400;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
 /* Hide the sidebar bottom bar (language + Go to AutoProctor are moved to the logo row via custom.js). */
@@ -63,6 +76,43 @@ img.nav-logo {
 /* Prevent the icons from being clipped. */
 .custom-sidebar-icons {
   flex-shrink: 0;
+}
+
+/* Visually separate the "Related Resources" section from the main article. */
+#related-resources {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+  font-size: 0.95rem;
+  color: #6b7280; /* gray-500 — slightly muted vs main headings */
+}
+
+/* Mute the related resource links list. */
+#related-resources + ul {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Frame container: shrink-wrap around the image, centered in the content area.
+   min-width prevents tiny frames on very small images. */
+#content-area .frame {
+  width: fit-content;
+  max-width: 100%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Default image sizing: 70% of #content-area width via container query units.
+   cqi resolves against #content-area (container-type: inline-size), not the
+   fit-content .frame parent, so percentages behave predictably.
+   Override per-image with an inline style, e.g. style={{maxWidth: "56cqi"}} */
+#content-area .frame img,
+#content-area .frame video {
+  max-width: 500px;  /* fallback for browsers without cqi support */
+  max-width: 70cqi;  /* 70% of content area */
+  height: auto;
+  display: block;
 }
 
 /* Center the sidebar search bar and reduce top spacing. */

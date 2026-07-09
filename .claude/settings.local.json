@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:helpdesk.autoproctor.co)",
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(cd:*)",
+      "Bash(file:*)",
+      "Bash(curl:*)",
+      "Bash(head:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:www.autoproctor.co)",
+      "Bash(git fetch:*)",
+      "Bash(git reset:*)",
+      "Bash(npx mintlify@latest:*)",
+      "Bash(lsof:*)",
+      "WebSearch",
+      "WebFetch(domain:www.mintlify.com)",
+      "WebFetch(domain:mintlify.com)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(cat:*)",
+      "Bash(bash:*)",
+      "Bash(find:*)",
+      "Bash(git:*)"
+    ]
+  }
+}

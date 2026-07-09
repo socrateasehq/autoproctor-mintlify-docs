@@ -1,0 +1,41 @@
+---
+title: "Cannot Click on Answers in Test Form"
+description: "Fix the issue where your test form loads but you cannot click on questions or select answers. Usually caused by being signed into the wrong Google account."
+---
+
+If you can see the test form but cannot click on questions or select answers, you are most likely signed into a Google account that does not have permission to interact with the form.
+
+## Why This Happens
+
+When a Google Form is restricted to specific email addresses, it loads in a read-only preview mode for unauthorized accounts. You can see the questions but cannot interact with them. Since AutoProctor embeds the Google Form within its interface, this restriction appears inside the AutoProctor test window.
+
+<Frame caption="Test form loaded in read-only mode due to incorrect Google account">
+  <img className="max-h-[300px] border rounded-xl" src="/images/candidate-issues/cannot-click-form.png" alt="Google Form in AutoProctor that cannot be clicked because the wrong Google account is active" />
+</Frame>
+
+## How to Fix It
+
+<Steps>
+  <Step title="Log out of all Google accounts">
+    Visit [accounts.google.com/Logout](https://accounts.google.com/Logout) and sign out of all your accounts.
+  </Step>
+  <Step title="Sign in with the correct account">
+    Sign back in with the Google account that has been granted access to the test. Check with your test administrator if you are unsure which account to use.
+  </Step>
+  <Step title="Reload the test">
+    Navigate back to the test link and load it again. You should now be able to click on questions and select answers.
+  </Step>
+</Steps>
+
+<Note>
+If you are unsure which Google account has access, contact your test administrator. They can confirm the email address that was granted permission to take the test.
+</Note>
+
+## Related Resources
+
+- [Blank Page or Grey Screen](/tests-results/issues/blank-page-grey-screen) -- Similar issue caused by wrong Google account
+- [Cannot See Questions on Google Forms](/tests-results/issues/google-forms-questions-not-visible) -- Google Form access restrictions
+- [How to Logout](/candidate-guide/attempting/how-to-logout) -- Steps to switch accounts
+- [Instructions for Taking a Proctored Test](/candidate-guide/attempting/proctored-test-instructions) -- Setup guide with Google Account section
+- [Device Compatibility](/understanding/getting-started/device-compatibility) -- Check supported browsers and devices
+- [Contact Us](/pricing-account/support/contact-us) -- Reach out if you need further help

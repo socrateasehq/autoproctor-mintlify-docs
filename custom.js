@@ -2,9 +2,9 @@
 // Uses MutationObserver to re-apply after client-side navigation.
 (function () {
   var LANGUAGES = [
-    { code: 'en', label: 'English', prefix: '' },
-    { code: 'es', label: 'Español', prefix: '/es' },
-    { code: 'pt', label: 'Português', prefix: '/pt' }
+    { code: 'en', label: 'EN', fullLabel: 'English', prefix: '' },
+    { code: 'es', label: 'ES', fullLabel: 'Español', prefix: '/es' },
+    { code: 'pt', label: 'PT', fullLabel: 'Português', prefix: '/pt' }
   ];
 
   function getCurrentLang() {
@@ -75,7 +75,7 @@
       var item = document.createElement('button');
       item.type = 'button';
       item.style.cssText = 'display:block;width:100%;text-align:left;padding:0.375rem 0.625rem;font-size:0.75rem;color:' + (lang.code === currentLang.code ? '#1f398a' : '#374151') + ';background:none;border:none;cursor:pointer;border-radius:0.375rem;font-weight:' + (lang.code === currentLang.code ? '600' : '400') + ';';
-      item.textContent = lang.label;
+      item.textContent = lang.fullLabel;
       item.onmouseenter = function () { this.style.background = '#f3f4f6'; };
       item.onmouseleave = function () { this.style.background = 'none'; };
       item.onclick = function () {
