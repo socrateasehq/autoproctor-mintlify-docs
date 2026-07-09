@@ -1,25 +1,28 @@
 ---
-title: "Cannot See Response in Google Form"
-description: "Understand why responses may appear on AutoProctor but not in Google Forms, or vice versa. Usually caused by missing one of the two submit buttons."
+title: Cannot See Response in Google Form
+description: >-
+  Understand why responses may appear on AutoProctor but not in Google Forms, or
+  vice versa. Usually caused by missing one of the two submit buttons.
 ---
+
+# Cannot See Response in Google Form
 
 If you can see a candidate's response on AutoProctor but not in Google Forms (or vice versa), the candidate most likely skipped one of the two required submit buttons. This is the primary reason responses go missing between the two platforms.
 
-## Understanding the Two Submit Buttons
+### Understanding the Two Submit Buttons
 
 Candidates must click **two separate submit buttons** to complete a Google Forms-based test on AutoProctor:
 
 1. **Purple Submit button** (inside the Google Form) -- submits answers to the Google Forms Responses section
 2. **Green Submit button** (at the top of the page) -- submits the proctoring or timed session to AutoProctor
 
-![Purple Google Forms submit button and Green AutoProctor submit button shown on a proctored test](../../images/taking-tests/submit-buttons-proctored.png)
-*The two submit buttons: purple for Google Forms, green for AutoProctor*
+![Purple Google Forms submit button and Green AutoProctor submit button shown on a proctored test](../../.gitbook/assets/submit-buttons-proctored.png) _The two submit buttons: purple for Google Forms, green for AutoProctor_
 
-### If the Candidate Skips the Green Submit Button
+#### If the Candidate Skips the Green Submit Button
 
 You will see the candidate's answers in the **Google Forms Responses** section but will not see any results on AutoProctor. The proctoring session was not finalized.
 
-### If the Candidate Skips the Purple Submit Button
+#### If the Candidate Skips the Purple Submit Button
 
 You will see the test marked as submitted on **AutoProctor**, but the candidate's answers will not appear in Google Forms Responses. The form answers were never sent to Google.
 
@@ -27,11 +30,11 @@ You will see the test marked as submitted on **AutoProctor**, but the candidate'
 Due to privacy restrictions, Google does not let AutoProctor detect whether the purple submit button was clicked. There is no way for AutoProctor to enforce this step automatically.
 {% endhint %}
 
-## Ensure You Share the AutoProctor Link
+### Ensure You Share the AutoProctor Link
 
 You must send candidates the **AutoProctor link** (containing `autoproctor.co` in the URL). If you send the direct Google Form link instead, candidates will bypass AutoProctor entirely and no proctoring data will be recorded.
 
-## Why AutoProctor Cannot Fix This
+### Why AutoProctor Cannot Fix This
 
 AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. Google does not allow AutoProctor to access or control anything that happens inside the form. If a submission issue occurs within the Google Form, only Google controls that behavior.
 
@@ -39,10 +42,10 @@ AutoProctor embeds Google Forms similarly to how websites embed YouTube videos. 
 To avoid confusion with two submit buttons, consider using [Socratease quizzes](socratease/create-questions/why-socratease.md) instead of Google Forms. Socratease has a single submit button that handles both quiz answers and proctoring in one step.
 {% endhint %}
 
-## Related Resources
+### Related Resources
 
-- [Submit Button Differences](candidate-guide/attempting/submit-button.md) -- Full comparison of Socratease vs other quiz types
-- [Cannot See Questions on Google Forms](tests-results/issues/google-forms-questions-not-visible.md) -- Google Form access issues
-- [Proctoring Results](tests-results/results/proctoring-results.md) -- How to review proctoring reports
-- [Why Socratease?](socratease/create-questions/why-socratease.md) -- Benefits of using Socratease over Google Forms
-- [Contact Us](pricing-account/support/contact-us.md) -- Reach out if you need further help
+* [Submit Button Differences](candidate-guide/attempting/submit-button.md) -- Full comparison of Socratease vs other quiz types
+* [Cannot See Questions on Google Forms](tests-results/issues/google-forms-questions-not-visible.md) -- Google Form access issues
+* [Proctoring Results](tests-results/results/proctoring-results.md) -- How to review proctoring reports
+* [Why Socratease?](socratease/create-questions/why-socratease.md) -- Benefits of using Socratease over Google Forms
+* [Contact Us](pricing-account/support/contact-us.md) -- Reach out if you need further help
