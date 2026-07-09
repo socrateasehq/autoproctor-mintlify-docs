@@ -16,14 +16,14 @@ Los créditos se agregan a su cuenta cuando crea una suscripción, cuando esta s
 ### Abra la página de uso
 Haga clic en la pestaña **Usage** en su barra lateral izquierda.
 
-![Enlace de uso resaltado en la barra de navegación lateral izquierda](images/pricing/usage-sidebar-link.png)
+![Enlace de uso resaltado en la barra de navegación lateral izquierda](../../images/pricing/usage-sidebar-link.png)
 *Enlace de uso en la barra lateral*
 {% endstep %}
 {% step %}
 ### Revise la tabla de uso
 Verá una tabla que muestra la cantidad de créditos utilizados por examen. Haga clic en el título de cualquier examen para abrir los resultados de todos los intentos de ese examen.
 
-![Tabla de uso que muestra los créditos consumidos por examen](images/pricing/usage-table.png)
+![Tabla de uso que muestra los créditos consumidos por examen](../../images/pricing/usage-table.png)
 *Tabla de uso*
 {% endstep %}
 {% endstepper %}
@@ -45,7 +45,7 @@ Haga clic en el botón **Team Usage** en la esquina superior derecha de la pági
 ### Revise el consumo de todo el equipo
 La vista de uso del equipo muestra una tabla con **todos los miembros del equipo y la cantidad total de créditos que cada miembro ha utilizado**. Haga clic en cualquier miembro para ver en detalle su uso a nivel de examen individual.
 
-![Tabla de uso del equipo mostrando el consumo de créditos por miembro del equipo](images/pricing/team-usage-table.png)
+![Tabla de uso del equipo mostrando el consumo de créditos por miembro del equipo](../../images/pricing/team-usage-table.png)
 *Tabla de uso del equipo*
 {% endstep %}
 {% endstepper %}

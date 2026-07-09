@@ -39,7 +39,7 @@ Los candidatos pueden ver los cuestionarios que han realizado en [autoproctor.co
 
 ## Cómo Establecer el Método de Publicación
 
-{% embed url="videos/socratease/release-method.mp4" %}
+{% embed url="../../videos/socratease/release-method.mp4" %}
 Cómo configurar el método de publicación de resultados en Socratease
 {% endembed %}
 

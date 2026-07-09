@@ -12,7 +12,7 @@ Existem dois caminhos:
 
 ## Escolhendo um Provedor de Questionários
 
-{% embed url="videos/creating-tests/all-test-types.mp4" %}
+{% embed url="../../videos/creating-tests/all-test-types.mp4" %}
 Como criar um teste com diferentes provedores de questionários no AutoProctor. Você só pode selecionar um provedor por teste
 {% endembed %}
 

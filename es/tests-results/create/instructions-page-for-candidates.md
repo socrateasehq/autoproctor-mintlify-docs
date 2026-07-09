@@ -5,7 +5,7 @@ description: "Conozca cómo funciona la página de instrucciones previa al exame
 
 Cada examen de AutoProctor comienza con una página de instrucciones que explica cómo funciona la supervisión, qué funciones están activas y qué pueden esperar los candidatos. El contenido de la página se adapta automáticamente según la configuración de su examen, y los candidatos también pueden realizar un examen de demostración desde esta página para verificar la compatibilidad del dispositivo.
 
-![Página de instrucciones de AutoProctor mostrada a los candidatos antes de comenzar un examen](images/getting-started/instructions-page.png)
+![Página de instrucciones de AutoProctor mostrada a los candidatos antes de comenzar un examen](../../images/getting-started/instructions-page.png)
 *Página de instrucciones de AutoProctor mostrada a los candidatos*
 
 ## Cómo Funciona la Página de Instrucciones
@@ -41,7 +41,7 @@ Guarde la configuración del examen. Sus instrucciones personalizadas ahora apar
 {% endstep %}
 {% endstepper %}
 
-{% embed url="videos/getting-started/additional-instructions-settings.mp4" %}
+{% embed url="../../videos/getting-started/additional-instructions-settings.mp4" %}
 Campo de instrucciones adicionales en la Configuración Avanzada
 {% endembed %}
 
@@ -53,7 +53,7 @@ Agregar instrucciones personalizadas requiere una suscripción al plan **Elite**
 
 Puede utilizar la función **Recopilar Detalles Adicionales** en la Configuración Avanzada para recolectar información extra de los candidatos. Este formulario aparece en la página de instrucciones y los candidatos deben completarlo antes de comenzar el examen.
 
-{% embed url="videos/getting-started/gather-additional-details.mp4" %}
+{% embed url="../../videos/getting-started/gather-additional-details.mp4" %}
 Recopilar Detalles Adicionales en la Configuración Avanzada
 {% endembed %}
 

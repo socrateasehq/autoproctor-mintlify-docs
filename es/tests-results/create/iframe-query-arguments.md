@@ -9,7 +9,7 @@ Al usar el proveedor de cuestionarios **IFrame/Otros**, puede agregar parámetro
 
 AutoProctor construye la URL final agregando sus argumentos de consulta a la URL original del cuestionario. Usted proporciona solo los parámetros; AutoProctor agrega el prefijo `?` automáticamente.
 
-{% embed url="videos/settings/query-arguments.mp4" %}
+{% embed url="../../videos/settings/query-arguments.mp4" %}
 Cómo usar argumentos de consulta en la Configuración Avanzada de AutoProctor
 {% endembed %}
 

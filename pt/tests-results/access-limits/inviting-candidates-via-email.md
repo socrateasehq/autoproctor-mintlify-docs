@@ -11,7 +11,7 @@ Este recurso está disponível apenas no **Plano Elite** e funciona exclusivamen
 
 ## Como Configurar Links de Convite Únicos
 
-{% embed url="videos/settings/unique-invitation-links.mp4" %}
+{% embed url="../../videos/settings/unique-invitation-links.mp4" %}
 Como configurar links de convite únicos no AutoProctor
 {% endembed %}
 

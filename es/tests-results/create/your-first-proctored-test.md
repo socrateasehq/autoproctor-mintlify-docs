@@ -13,7 +13,7 @@ Esta guía le muestra cómo crear su primer examen supervisado en AutoProctor �
 ### Inicie sesión en AutoProctor
 Vaya a [autoproctor.co](https://www.autoproctor.co/) e inicie sesión con su cuenta de Google o Microsoft. Llegará a su panel de control, donde se listan todos sus exámenes.
 
-![Panel de control de AutoProctor para un nuevo usuario](images/getting-started/new-user-dashboard.png)
+![Panel de control de AutoProctor para un nuevo usuario](../../images/getting-started/new-user-dashboard.png)
 *Panel de control de AutoProctor para un nuevo usuario*
 {% endstep %}
 {% step %}
@@ -25,7 +25,7 @@ Haga clic en el botón **Crear Examen** en su panel de control. Se le pedirá qu
 - **Socratease** — Cree un cuestionario directamente en AutoProctor
 - **Iframe** — Incorpore cualquier cuestionario basado en la web
 
-![Pantalla de selección de proveedor de cuestionarios](images/creating-tests/all-test-types.png)
+![Pantalla de selección de proveedor de cuestionarios](../../images/creating-tests/all-test-types.png)
 *Pantalla de selección de proveedor de cuestionarios*
 
 Seleccione su proveedor de cuestionarios y siga las instrucciones para conectar su cuestionario.
@@ -43,7 +43,7 @@ Después de crear el examen, haga clic en el botón **Configuración** para conf
 Para su primer examen, la configuración de supervisión predeterminada funciona bien. Puede ajustarla más adelante según sus necesidades.
 {% endhint %}
 
-![Página de configuración del examen con las secciones principales](images/getting-started/configure-test-settings.png)
+![Página de configuración del examen con las secciones principales](../../images/getting-started/configure-test-settings.png)
 *Página de configuración del examen con las secciones principales*
 {% endstep %}
 {% step %}
@@ -57,7 +57,7 @@ Copie el enlace del examen desde su panel de control o la página de Configuraci
 - Su LMS o plataforma de aula
 - Cualquier herramienta de mensajería
 
-![Copiando el enlace del examen desde el panel de control](images/getting-started/copy-test-link.gif)
+![Copiando el enlace del examen desde el panel de control](../../images/getting-started/copy-test-link.gif)
 *Copiando el enlace del examen desde el panel de control*
 {% endstep %}
 {% step %}
@@ -68,7 +68,7 @@ Una vez que los candidatos completen el examen, vaya a su [panel de control](htt
 - Fotos, grabaciones y evidencia
 - Puntajes del cuestionario (solo disponibles si utilizó Socratease como proveedor de cuestionarios)
 
-![Página de resultados de AutoProctor mostrando resumen de envíos y puntajes de candidatos](images/getting-started/sample-results.png)
+![Página de resultados de AutoProctor mostrando resumen de envíos y puntajes de candidatos](../../images/getting-started/sample-results.png)
 *Página de resultados de ejemplo mostrando envíos, puntajes de confianza y puntajes del cuestionario*
 
 Para una guía detallada, consulte [¿Dónde Puedo Ver los Resultados de Mi Examen?](tests-results/results/how-to-see-results.md).

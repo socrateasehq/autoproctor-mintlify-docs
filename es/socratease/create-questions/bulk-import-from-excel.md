@@ -11,7 +11,7 @@ La Importación Masiva está disponible únicamente para clientes del plan **Eli
 
 ## Cómo Importar Preguntas
 
-{% embed url="videos/socratease/import-from-excel.mp4" %}
+{% embed url="../../videos/socratease/import-from-excel.mp4" %}
 Cómo importar preguntas desde Excel a Socratease
 {% endembed %}
 

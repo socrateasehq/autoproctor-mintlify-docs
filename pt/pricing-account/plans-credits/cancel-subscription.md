@@ -12,21 +12,21 @@ Cancelar sua assinatura do AutoProctor leva apenas alguns cliques. Este guia ori
 ### Abra a seção de cobrança
 A partir do seu painel, clique no link **Billing** na barra lateral esquerda.
 
-![Link de cobrança destacado na barra de navegação lateral esquerda](images/pricing/billing-sidebar-link.png)
+![Link de cobrança destacado na barra de navegação lateral esquerda](../../images/pricing/billing-sidebar-link.png)
 *Link de cobrança na barra lateral*
 {% endstep %}
 {% step %}
 ### Clique em Manage Subscription
 Na seção **Plan Details**, clique no botão **Manage Subscription**.
 
-![Botão Manage Subscription na seção Plan Details](images/pricing/manage-subscription-button.png)
+![Botão Manage Subscription na seção Plan Details](../../images/pricing/manage-subscription-button.png)
 *Botão Manage Subscription*
 {% endstep %}
 {% step %}
 ### Cancele o plano
 Clique no botão **Cancel plan** no lado direito da página.
 
-![Botão Cancel plan na página de gerenciamento de assinaturas](images/pricing/cancel-plan-button.png)
+![Botão Cancel plan na página de gerenciamento de assinaturas](../../images/pricing/cancel-plan-button.png)
 *Botão Cancel plan*
 {% endstep %}
 {% endstepper %}

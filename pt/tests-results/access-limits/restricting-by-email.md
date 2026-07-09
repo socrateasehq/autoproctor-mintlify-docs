@@ -35,7 +35,7 @@ Clique em **Create** ou **Update** para aplicar as restrições.
 Você pode restringir o acesso a candidatos cujos endereços de e-mail terminam com domínios específicos. Por exemplo, ao inserir `@abc.com` e `@xyz.com`, apenas os candidatos com esses domínios de e-mail poderão realizar o teste.
 
 
-![Campo de Restrições de Login mostrando restrições baseadas em domínio com @abc.com e @xyz.com inseridos](images/settings/login-restrictions-domain.png)
+![Campo de Restrições de Login mostrando restrições baseadas em domínio com @abc.com e @xyz.com inseridos](../../images/settings/login-restrictions-domain.png)
 
 ## Restrições por E-mail Específico
 
@@ -44,7 +44,7 @@ Você também pode permitir endereços de e-mail individuais juntamente com rest
 Por exemplo, você pode permitir todos os usuários cujo e-mail termina em `@abc.com` mais endereços de e-mail individuais específicos como `guest@gmail.com`.
 
 
-![Campo de Restrições de Login mostrando uma combinação de restrições de domínio e e-mail individual](images/settings/login-restrictions-email.png)
+![Campo de Restrições de Login mostrando uma combinação de restrições de domínio e e-mail individual](../../images/settings/login-restrictions-email.png)
 
 {% hint style="info" %}
 As restrições de e-mail funcionam em conjunto com o [método de login](candidate-guide/attempting/candidate-login-methods.md) do candidato. O candidato deve fazer login com um endereço de e-mail que corresponda a um dos domínios ou endereços permitidos que você especificou.

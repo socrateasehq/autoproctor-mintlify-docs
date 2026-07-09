@@ -5,7 +5,7 @@ description: "Entenda como o Trust Score do AutoProctor funciona, como é calcul
 
 O AutoProctor atribui um Trust Score (0–100%) a cada relatório de supervisão. A pontuação fornece um resumo rápido da probabilidade de o candidato ter mantido a integridade durante o teste, para que você possa concentrar seu tempo de revisão nas tentativas que mais necessitam.
 
-![Exibição do Trust Score mostrando uma porcentagem no topo de um relatório de supervisão do AutoProctor](images/getting-started/trustscore.png)
+![Exibição do Trust Score mostrando uma porcentagem no topo de um relatório de supervisão do AutoProctor](../../images/getting-started/trustscore.png)
 
 Quanto mais baixo o Trust Score, mais comportamento suspeito o AutoProctor detectou durante o teste.
 
@@ -49,7 +49,7 @@ Acesse seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/),
 ### Identifique os candidatos para revisão
 Ordene por Trust Score e concentre-se nos candidatos com pontuação **inferior a 85%**. Essas tentativas são as mais propensas a conter infrações que merecem revisão.
 
-{% embed url="videos/getting-started/trustscore-column.mp4" %}
+{% embed url="../../videos/getting-started/trustscore-column.mp4" %}
 Lista de resultados mostrando a coluna de Trust Score
 {% endembed %}
 {% endstep %}

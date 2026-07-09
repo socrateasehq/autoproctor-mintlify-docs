@@ -5,7 +5,7 @@ description: "Learn how the pre-test instructions page works, what candidates se
 
 Every AutoProctor test begins with an instructions page that explains how proctoring works, which features are active, and what candidates should expect. The page content adapts automatically based on your test configuration, and candidates can also take a demo test from this page to verify device compatibility.
 
-![AutoProctor instructions page shown to candidates before a test begins](images/getting-started/instructions-page.png)
+![AutoProctor instructions page shown to candidates before a test begins](../../images/getting-started/instructions-page.png)
 *AutoProctor instructions page shown to candidates*
 
 ## How the Instructions Page Works
@@ -41,7 +41,7 @@ Save the test settings. Your custom instructions will now appear on the instruct
 {% endstep %}
 {% endstepper %}
 
-{% embed url="videos/getting-started/additional-instructions-settings.mp4" %}
+{% embed url="../../videos/getting-started/additional-instructions-settings.mp4" %}
 Additional instructions field in Advanced Settings
 {% endembed %}
 
@@ -53,7 +53,7 @@ Adding custom instructions requires an **Elite plan** subscription. See [Elite F
 
 You can use the **Gather Additional Details** feature in Advanced Settings to collect extra information from candidates. This form appears on the instructions page and candidates must complete it before starting the test.
 
-{% embed url="videos/getting-started/gather-additional-details.mp4" %}
+{% embed url="../../videos/getting-started/gather-additional-details.mp4" %}
 Gather Additional Details in Advanced Settings
 {% endembed %}
 

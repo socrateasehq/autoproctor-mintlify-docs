@@ -11,7 +11,7 @@ Os horários que você define são no seu fuso horário local. O AutoProctor faz
 
 ## Como Configurar as Definições de Tempo
 
-{% embed url="videos/settings/config-timer-settings.mp4" %}
+{% embed url="../../videos/settings/config-timer-settings.mp4" %}
 Como configurar as definições de tempo no AutoProctor
 {% endembed %}
 

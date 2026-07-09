@@ -5,7 +5,7 @@ description: "Conheça os dois tipos de resultados disponíveis no AutoProctor -
 
 O AutoProctor fornece dois tipos distintos de resultados para cada teste: **resultados do teste** (como os candidatos se saíram) e **resultados de supervisão** (se os candidatos mantiveram a integridade). Conhecer a diferença ajuda a encontrar os dados corretos rapidamente.
 
-![Página de resultados do AutoProctor mostrando a coluna Trust Score para cada candidato](images/getting-started/sample-results.png)
+![Página de resultados do AutoProctor mostrando a coluna Trust Score para cada candidato](../../images/getting-started/sample-results.png)
 *Página de resultados mostrando a coluna Trust Score*
 
 ## Resultados do Teste

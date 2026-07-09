@@ -69,7 +69,7 @@ Para mais detalhes, consulte [Uso de LaTeX para Equações Matemáticas](socrate
 
 ## Como Acessar as Configurações do Questionário
 
-{% embed url="videos/socratease/soc-quiz-settings.mp4" %}
+{% embed url="../../videos/socratease/soc-quiz-settings.mp4" %}
 Como acessar e configurar as configurações do questionário Socratease
 {% endembed %}
 

@@ -16,14 +16,14 @@ Credits are added to your account when you create a subscription, when it renews
 ### Open the Usage page
 Click on the **Usage** tab in your left sidebar.
 
-![Usage link highlighted in the left sidebar navigation](images/pricing/usage-sidebar-link.png)
+![Usage link highlighted in the left sidebar navigation](../../images/pricing/usage-sidebar-link.png)
 *Usage link in the sidebar*
 {% endstep %}
 {% step %}
 ### Review the usage table
 You see a table showing the number of credits used per test. Click on any test title to open the results for all attempts of that test.
 
-![Usage table displaying credits consumed per test](images/pricing/usage-table.png)
+![Usage table displaying credits consumed per test](../../images/pricing/usage-table.png)
 *Usage table*
 {% endstep %}
 {% endstepper %}
@@ -45,7 +45,7 @@ Click the **Team Usage** button at the top right of the Usage page.
 ### Review team-wide consumption
 The team usage view displays a table with **all team members and the total number of credits each member has used**. Click on any member to drill down into their individual test-level usage.
 
-![Team usage table showing credit consumption per team member](images/pricing/team-usage-table.png)
+![Team usage table showing credit consumption per team member](../../images/pricing/team-usage-table.png)
 *Team usage table*
 {% endstep %}
 {% endstepper %}

@@ -6,7 +6,7 @@ description: "Configure la detección de cambio de pestaña, el monitoreo de cá
 La Configuración de Supervisión controla lo que AutoProctor monitorea durante un examen — desde el cambio de pestaña y la detección de cámara hasta el modo de pantalla completa obligatorio y la captura de fotos aleatorias. Estos ajustes determinan con qué nivel de rigor se supervisa a los candidatos.
 
 
-![Panel de configuración de supervisión](images/creating-tests/proctoring-settings.png)
+![Panel de configuración de supervisión](../../images/creating-tests/proctoring-settings.png)
 *Panel de configuración de supervisión*
 
 {% hint style="info" %}
@@ -36,7 +36,7 @@ La opción **Personalizar Mensaje** es una función Premium.
 
 La supervisión avanzada agrega medidas adicionales contra el fraude. Cada función avanzada requiere **4 créditos adicionales por intento**.
 
-![Panel de supervisión avanzada](images/creating-tests/enhanced-proctoring.png)
+![Panel de supervisión avanzada](../../images/creating-tests/enhanced-proctoring.png)
 *Panel de supervisión avanzada*
 
 | Función | Qué Hace | Créditos |
@@ -54,7 +54,7 @@ Estos ajustes controlan cómo se maneja la evidencia de infracciones:
 - **Para mí después del Examen** — Almacena evidencia (fotos, audio, capturas de pantalla) para revisión posterior. Mantenga esto activado a menos que tenga una razón específica para desactivarlo.
 - **Al usuario durante el Examen** — Notifica al candidato durante el examen cuando se detecta una infracción. Esto ayuda a los candidatos a corregir problemas inofensivos (como música de fondo que activa una infracción de ruido).
 
-![Panel de configuración de comunicación](images/settings/communication-settings.png)
+![Panel de configuración de comunicación](../../images/settings/communication-settings.png)
 *Panel de configuración de comunicación*
 
 {% hint style="info" %}

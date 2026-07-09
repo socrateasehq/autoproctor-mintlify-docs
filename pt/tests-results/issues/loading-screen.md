@@ -15,7 +15,7 @@ As causas mais comuns incluem:
 - **Hardware insuficiente** -- dispositivos de baixo desempenho ou mais antigos podem não suportar o processamento de vídeo em tempo real
 - **Extensões do navegador** -- certas extensões (especialmente bloqueadores de anúncios e ferramentas de privacidade) podem bloquear o carregamento dos scripts do AutoProctor
 
-![Tela de carregamento do AutoProctor travada devido a incompatibilidade de dispositivo ou navegador](images/candidate-issues/loading-screen-demo.png)
+![Tela de carregamento do AutoProctor travada devido a incompatibilidade de dispositivo ou navegador](../../images/candidate-issues/loading-screen-demo.png)
 *Tela de carregamento do AutoProctor indicando um problema de compatibilidade*
 
 ## Como Resolver

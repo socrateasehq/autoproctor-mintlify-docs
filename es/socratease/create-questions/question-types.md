@@ -19,25 +19,25 @@ No todos los tipos de preguntas están disponibles en todos los planes. Consulte
 
 Una pregunta con una sola respuesta correcta. Los candidatos seleccionan una única opción de las alternativas disponibles.
 
-![Tipo de pregunta MCQ mostrando una pregunta de opción múltiple con una sola respuesta y botones de radio](images/socratease/mcq.png)
+![Tipo de pregunta MCQ mostrando una pregunta de opción múltiple con una sola respuesta y botones de radio](../../images/socratease/mcq.png)
 
 ### 2. MCA (Múltiples Respuestas Correctas)
 
 Una pregunta con múltiples respuestas correctas. Los candidatos pueden seleccionar más de una opción usando casillas de verificación.
 
-![Tipo de pregunta MCA mostrando una pregunta de múltiples respuestas correctas con casillas de verificación](images/socratease/mca.png)
+![Tipo de pregunta MCA mostrando una pregunta de múltiples respuestas correctas con casillas de verificación](../../images/socratease/mca.png)
 
 ### 3. Texto Corto
 
 Una pregunta tipo ensayo donde puede establecer una longitud mínima y máxima de caracteres para la respuesta. Úsela para respuestas abiertas que requieran más de una línea.
 
-![Tipo de pregunta de texto corto mostrando un área de texto multilínea con límites de caracteres](images/socratease/short-text.png)
+![Tipo de pregunta de texto corto mostrando un área de texto multilínea con límites de caracteres](../../images/socratease/short-text.png)
 
 ### 4. Entrada de Una Línea
 
 Un campo de entrada de texto compacto para respuestas más cortas. Puede establecer validaciones para aceptar solo formatos específicos como correos electrónicos, números o fechas.
 
-![Tipo de pregunta de entrada de una línea mostrando un campo de texto con opciones de validación](images/socratease/single-line-input.png)
+![Tipo de pregunta de entrada de una línea mostrando un campo de texto con opciones de validación](../../images/socratease/single-line-input.png)
 
 ## Disponibles en los Planes Premium y Elite
 
@@ -49,37 +49,37 @@ Los siguientes tipos de preguntas requieren un plan **Premium** o **Elite**. Con
 
 Los candidatos escriben código con resaltado de sintaxis y autocompletado. Usted elige el lenguaje de programación. El código no se puede ejecutar — este tipo de pregunta evalúa la capacidad del candidato para escribir código, no para ejecutarlo.
 
-![Tipo de pregunta de editor de código mostrando un editor con resaltado de sintaxis](images/socratease/coding-editor.png)
+![Tipo de pregunta de editor de código mostrando un editor con resaltado de sintaxis](../../images/socratease/coding-editor.png)
 
 ### 6. Cloze (Completar Espacios en Blanco)
 
 Un formato de completar espacios en blanco donde los candidatos ven las opciones disponibles (incluyendo las incorrectas) y las arrastran y sueltan en los espacios correctos dentro del texto.
 
-![Tipo de pregunta Cloze mostrando completar espacios en blanco con opciones de arrastrar y soltar](images/socratease/cloze.png)
+![Tipo de pregunta Cloze mostrando completar espacios en blanco con opciones de arrastrar y soltar](../../images/socratease/cloze.png)
 
 ### 7. Correspondencia
 
 Un ejercicio de correspondencia donde los candidatos arrastran y sueltan elementos para alinear pares relacionados entre dos columnas.
 
-![Tipo de pregunta de correspondencia mostrando dos columnas con arrastrar y soltar](images/socratease/match.png)
+![Tipo de pregunta de correspondencia mostrando dos columnas con arrastrar y soltar](../../images/socratease/match.png)
 
 ### 8. Categorizar
 
 Los candidatos clasifican un conjunto de elementos en las categorías correctas arrastrándolos y soltándolos.
 
-![Tipo de pregunta de categorización mostrando elementos siendo ordenados en categorías](images/socratease/categorize.png)
+![Tipo de pregunta de categorización mostrando elementos siendo ordenados en categorías](../../images/socratease/categorize.png)
 
 ### 9. Comprensión
 
 Un formato de pregunta anidada donde usted escribe un pasaje de texto y formula múltiples preguntas basadas en ese pasaje. Todas las sub-preguntas aparecen junto al texto de comprensión.
 
-![Tipo de pregunta de comprensión mostrando un pasaje de texto con sub-preguntas anidadas](images/socratease/comprehension.png)
+![Tipo de pregunta de comprensión mostrando un pasaje de texto con sub-preguntas anidadas](../../images/socratease/comprehension.png)
 
 ### 10. Documento
 
 Cargue un documento PDF y formule múltiples preguntas basadas en su contenido. Los candidatos ven el documento junto a las preguntas.
 
-![Tipo de pregunta de documento mostrando un visor de PDF con preguntas asociadas](images/socratease/document.png)
+![Tipo de pregunta de documento mostrando un visor de PDF con preguntas asociadas](../../images/socratease/document.png)
 
 ## Disponibles Solo en el Plan Elite
 
@@ -91,19 +91,19 @@ Los siguientes tipos de preguntas son exclusivos del plan **Elite**. Consulte [F
 
 Usted crea un conjunto de preguntas (por ejemplo, 5) y permite que los candidatos elijan un subconjunto para responder (por ejemplo, cualquiera 3 de las 5). Esto brinda flexibilidad a los candidatos mientras mantiene el rigor de la evaluación.
 
-![Tipo de pregunta Responder Cualquiera mostrando un conjunto de preguntas con flexibilidad de selección](images/socratease/answer-any.png)
+![Tipo de pregunta Responder Cualquiera mostrando un conjunto de preguntas con flexibilidad de selección](../../images/socratease/answer-any.png)
 
 ### 12. Entrada de Voz
 
 Usted escribe un texto y los candidatos se graban leyéndolo en voz alta. Esto es útil para evaluaciones de idiomas, evaluaciones de pronunciación y pruebas de comunicación oral.
 
-![Tipo de pregunta de entrada de voz mostrando un texto con controles de grabación de audio](images/socratease/voice-input.png)
+![Tipo de pregunta de entrada de voz mostrando un texto con controles de grabación de audio](../../images/socratease/voice-input.png)
 
 ### 13. Texto con Calificación Automática
 
 Usted escribe el texto de la pregunta y la respuesta esperada. La respuesta del candidato se marca automáticamente como correcta si coincide exactamente con la respuesta esperada. Esto permite una calificación instantánea sin revisión manual.
 
-![Tipo de pregunta de texto con calificación automática mostrando una entrada de texto con coincidencia automática de respuestas](images/socratease/autograded-text.png)
+![Tipo de pregunta de texto con calificación automática mostrando una entrada de texto con coincidencia automática de respuestas](../../images/socratease/autograded-text.png)
 
 ## Recursos Relacionados
 

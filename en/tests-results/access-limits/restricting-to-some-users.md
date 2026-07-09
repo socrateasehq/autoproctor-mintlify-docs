@@ -43,7 +43,7 @@ Click **Create** or **Update** to apply the restrictions.
 {% endstep %}
 {% endstepper %}
 
-![Login Restrictions field with domain and email restrictions](images/settings/login-restrictions-email.png)
+![Login Restrictions field with domain and email restrictions](../../images/settings/login-restrictions-email.png)
 *Login Restrictions field with domain and email restrictions*
 
 See [Restrict Test Access by Email Address](tests-results/access-limits/restricting-by-email.md) for full setup instructions and examples.
@@ -52,7 +52,7 @@ See [Restrict Test Access by Email Address](tests-results/access-limits/restrict
 
 Generate unique per-candidate URLs tied to specific email addresses. Each candidate receives their own link with email verification, so only the intended recipient can use it.
 
-{% embed url="videos/settings/unique-invitation-links.mp4" %}
+{% embed url="../../videos/settings/unique-invitation-links.mp4" %}
 Unique invitation links setup
 {% endembed %}
 
@@ -98,7 +98,7 @@ In Google Forms, click the **Settings** gear icon.
 ### Restrict to your organization
 Enable the option to restrict responses to users in your organization. This limits access to candidates with email addresses under your Google Workspace domain.
 
-![Google Forms access restriction settings](images/settings/google-form-restriction.png)
+![Google Forms access restriction settings](../../images/settings/google-form-restriction.png)
 *Google Forms access restriction settings*
 {% endstep %}
 {% endstepper %}

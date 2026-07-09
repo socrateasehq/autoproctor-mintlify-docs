@@ -41,7 +41,7 @@ You can also use any other standard LaTeX mathematical notation beyond the examp
 
 ## Enabling LaTeX
 
-{% embed url="videos/socratease/using-latex.mp4" %}
+{% embed url="../../videos/socratease/using-latex.mp4" %}
 How to enable and use LaTeX in Socratease
 {% endembed %}
 

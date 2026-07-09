@@ -11,7 +11,7 @@ A Importação em Massa está disponível apenas para clientes do **Plano Elite*
 
 ## Como Importar Perguntas
 
-{% embed url="videos/socratease/import-from-excel.mp4" %}
+{% embed url="../../videos/socratease/import-from-excel.mp4" %}
 Como importar perguntas do Excel para o Socratease
 {% endembed %}
 

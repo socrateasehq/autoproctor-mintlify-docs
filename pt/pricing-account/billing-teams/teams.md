@@ -29,7 +29,7 @@ Após criar um time, clique no link **Team** na barra lateral para ver a página
 - Uma lista de **todos os membros do time**
 - Uma etiqueta **"Admin"** ao lado de cada administrador do time
 
-![Página de gerenciamento do time mostrando lista de membros e link de convite](images/pricing/team-management-page.png)
+![Página de gerenciamento do time mostrando lista de membros e link de convite](../../images/pricing/team-management-page.png)
 *Página de gerenciamento do time*
 
 ## Função de Administrador do Time
@@ -54,7 +54,7 @@ Membros regulares do time não podem acessar informações de cobrança nem gere
 
 ### Criando um Time
 
-{% embed url="videos/pricing/create-team.mp4" %}
+{% embed url="../../videos/pricing/create-team.mp4" %}
 Como criar um time
 {% endembed %}
 
@@ -76,7 +76,7 @@ Siga as instruções para configurar seu time. Após a criação, você receber�
 ### Obtenha o link de convite
 Peça a um Administrador do Time o link de convite do time.
 
-![Link de convite na página de gerenciamento do time](images/pricing/join-team.png)
+![Link de convite na página de gerenciamento do time](../../images/pricing/join-team.png)
 *Link de convite na página de gerenciamento do time*
 {% endstep %}
 {% step %}

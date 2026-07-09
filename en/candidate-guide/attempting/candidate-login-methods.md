@@ -15,7 +15,7 @@ Candidates must log in before attempting any test on AutoProctor. Login is requi
   allowFullScreen
 ></iframe>
 
-![AutoProctor login options showing Google, Microsoft, and Email sign-in buttons](images/taking-tests/login-methods.png)
+![AutoProctor login options showing Google, Microsoft, and Email sign-in buttons](../../images/taking-tests/login-methods.png)
 *AutoProctor login screen*
 
 ## Available Login Methods

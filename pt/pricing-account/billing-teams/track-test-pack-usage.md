@@ -16,14 +16,14 @@ Os créditos são adicionados à sua conta quando você cria uma assinatura, qua
 ### Abra a página de Uso
 Clique na aba **Usage** na barra lateral esquerda.
 
-![Link de Uso destacado na barra de navegação lateral esquerda](images/pricing/usage-sidebar-link.png)
+![Link de Uso destacado na barra de navegação lateral esquerda](../../images/pricing/usage-sidebar-link.png)
 *Link de Uso na barra lateral*
 {% endstep %}
 {% step %}
 ### Revise a tabela de uso
 Você verá uma tabela mostrando a quantidade de créditos utilizados por teste. Clique no título de qualquer teste para abrir os resultados de todas as tentativas desse teste.
 
-![Tabela de uso exibindo créditos consumidos por teste](images/pricing/usage-table.png)
+![Tabela de uso exibindo créditos consumidos por teste](../../images/pricing/usage-table.png)
 *Tabela de uso*
 {% endstep %}
 {% endstepper %}
@@ -45,7 +45,7 @@ Clique no botão **Team Usage** no canto superior direito da página de Uso.
 ### Revise o consumo de todo o time
 A visualização de uso do time exibe uma tabela com **todos os membros do time e a quantidade total de créditos que cada membro utilizou**. Clique em qualquer membro para ver em detalhe o uso por teste individual.
 
-![Tabela de uso do time mostrando consumo de créditos por membro do time](images/pricing/team-usage-table.png)
+![Tabela de uso do time mostrando consumo de créditos por membro do time](../../images/pricing/team-usage-table.png)
 *Tabela de uso do time*
 {% endstep %}
 {% endstepper %}

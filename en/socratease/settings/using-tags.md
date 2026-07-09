@@ -24,7 +24,7 @@ Example tags include:
 
 ## How to Use Tags
 
-{% embed url="videos/socratease/add-tags.mp4" %}
+{% embed url="../../videos/socratease/add-tags.mp4" %}
 How to add tags to quiz questions in Socratease
 {% endembed %}
 
@@ -53,7 +53,7 @@ After candidates submit the test, open the test results. Use the **"Group By"** 
 ### Filter Results by Tag
 Use the **"Filter by Tag"** dropdown to select individual tags and display only the questions with those specific tags. This lets you analyze performance on specific topics or skills.
 
-{% embed url="videos/socratease/filter-by-tags.mp4" %}
+{% embed url="../../videos/socratease/filter-by-tags.mp4" %}
 Filtering results by tag
 {% endembed %}
 {% endstep %}

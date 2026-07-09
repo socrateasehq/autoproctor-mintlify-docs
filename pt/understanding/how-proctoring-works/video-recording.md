@@ -39,7 +39,7 @@ Quando o AutoProctor detecta uma infração, ele captura um ou mais dos seguinte
 - **Fotos aleatórias** — Instantâneos periódicos tirados em intervalos aleatórios durante o exame
 - **Gravação de sessão** — Registros de cliques do mouse e atividade do teclado
 
-![Relatório de supervisão exibindo fotos, capturas de tela, clipes de áudio e registros de atividade como evidência de infrações](images/getting-started/sample-proctoring-report.png)
+![Relatório de supervisão exibindo fotos, capturas de tela, clipes de áudio e registros de atividade como evidência de infrações](../../images/getting-started/sample-proctoring-report.png)
 *Um relatório de supervisão mostrando diferentes tipos de evidência de infrações*
 
 Todas essas evidências aparecem no [relatório de supervisão](tests-results/results/proctoring-results.md) do candidato, organizadas por data/hora e tipo de infração.

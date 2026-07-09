@@ -11,7 +11,7 @@ AutoProctor supervisa la conectividad mediante pings continuos al servidor envia
 
 **Ejemplo:** Si los pings fallaron a las 11:00:30, 11:00:35 y 11:00:40 pero se reanudaron a las 11:00:45, el informe indicaría un período sin conexión de aproximadamente 10 segundos, de 11:00:30 a 11:00:40.
 
-![Entrada de duración de desconexión mostrada en un informe de supervisión de AutoProctor](images/candidate-issues/went-offline-report.png)
+![Entrada de duración de desconexión mostrada en un informe de supervisión de AutoProctor](../../images/candidate-issues/went-offline-report.png)
 *Entrada de desconexión mostrada en un informe de supervisión*
 
 ## Preguntas Frecuentes

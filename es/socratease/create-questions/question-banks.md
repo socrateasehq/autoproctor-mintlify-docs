@@ -14,7 +14,7 @@ Los Bancos de Preguntas son una función del plan **Elite**. Necesita una suscri
 Un Banco de Preguntas (BP) es una colección de preguntas organizadas por materia o tema. Cada pregunta en el banco puede tener un valor de puntos y un nivel de dificultad diferente. Cuando los candidatos realizan un examen, reciben un subconjunto seleccionado aleatoriamente del banco en lugar del conjunto completo de preguntas.
 
 
-![Vista general del Banco de Preguntas mostrando una lista de preguntas organizadas por tema y dificultad](images/socratease/question-bank-overview.png)
+![Vista general del Banco de Preguntas mostrando una lista de preguntas organizadas por tema y dificultad](../../images/socratease/question-bank-overview.png)
 
 ### Ejemplo: Exámenes de Física y Química
 
@@ -37,7 +37,7 @@ Cada candidato recibe un subconjunto aleatorio diferente de preguntas de los res
 Los candidatos no pueden realizar un Banco de Preguntas directamente. Debe crear un Cuestionario de Banco de Preguntas y agregarlo a un examen de AutoProctor para que los candidatos lo realicen.
 {% endhint %}
 
-![Vista general de los Cuestionarios de Banco de Preguntas mostrando CBPs creados con conteos de respuestas](images/socratease/question-bank-quiz-overview.png)
+![Vista general de los Cuestionarios de Banco de Preguntas mostrando CBPs creados con conteos de respuestas](../../images/socratease/question-bank-quiz-overview.png)
 *Vista general de los Cuestionarios de Banco de Preguntas creados*
 
 Un Cuestionario de Banco de Preguntas especifica:
@@ -50,7 +50,7 @@ Puede combinar múltiples Bancos de Preguntas en un solo CBP, o usar un banco pa
 
 ## Cómo Crear un Cuestionario de Banco de Preguntas
 
-{% embed url="videos/socratease/add-qbq.mp4" %}
+{% embed url="../../videos/socratease/add-qbq.mp4" %}
 Cómo crear un Cuestionario de Banco de Preguntas
 {% endembed %}
 

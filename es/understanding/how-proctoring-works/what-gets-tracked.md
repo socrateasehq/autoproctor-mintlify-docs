@@ -6,7 +6,7 @@ description: "Conozca las fuentes de datos, las capacidades de detección y el r
 AutoProctor monitorea a los candidatos en tiempo real utilizando inteligencia artificial directamente en el dispositivo y captura evidencia solo cuando detecta una infracción. Esto significa que usted revisa incidentes señalados en lugar de horas de grabación.
 
 <Frame caption="Un informe de supervisión de ejemplo que muestra el Puntaje de Confianza, el recuento de infracciones y los eventos señalados con evidencia">
-  ![Informe de supervisión de ejemplo](images/getting-started/sample-proctoring-report.png)
+  ![Informe de supervisión de ejemplo](../../images/getting-started/sample-proctoring-report.png)
 </Frame>
 
 [Vea resultados de supervisión de ejemplo](https://www.autoproctor.co/sample-dashboard/) para explorar un informe en vivo.
@@ -73,7 +73,7 @@ Haga clic en **Guardar** para aplicar sus cambios. Estos ajustes surten efecto i
 {% endstep %}
 {% endstepper %}
 
-{% embed url="videos/getting-started/configure-proctor-settings.mp4" %}
+{% embed url="../../videos/getting-started/configure-proctor-settings.mp4" %}
 Cómo configurar los ajustes de supervisión en AutoProctor
 {% endembed %}
 

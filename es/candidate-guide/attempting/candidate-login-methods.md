@@ -15,7 +15,7 @@ Los candidatos deben iniciar sesión antes de intentar cualquier examen en AutoP
   allowFullScreen
 ></iframe>
 
-![Opciones de inicio de sesión de AutoProctor mostrando los botones de inicio de sesión con Google, Microsoft y correo electrónico](images/taking-tests/login-methods.png)
+![Opciones de inicio de sesión de AutoProctor mostrando los botones de inicio de sesión con Google, Microsoft y correo electrónico](../../images/taking-tests/login-methods.png)
 *Pantalla de inicio de sesión de AutoProctor*
 
 ## Métodos de Inicio de Sesión Disponibles

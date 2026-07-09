@@ -5,7 +5,7 @@ description: "Set up ID card verification, impersonation detection, 360-degree p
 
 Enhanced Proctoring adds advanced identity verification and monitoring features beyond standard proctoring. These features help prevent impersonation, detect AI tools, and create a comprehensive record of each test attempt, including full candidate video.
 
-![Enhanced proctoring settings panel](images/creating-tests/enhanced-proctoring.png)
+![Enhanced proctoring settings panel](../../images/creating-tests/enhanced-proctoring.png)
 
 {% hint style="info" %}
 Most enhanced proctoring features require **4 additional credits per attempt**. Candidate Video Recording costs **15 credits per attempt**. If you enable multiple enhanced features, the credit cost is cumulative.
@@ -32,7 +32,7 @@ The system compares the photo and name on the ID card against the Photo Before T
 {% endstep %}
 {% endstepper %}
 
-![ID verification screen before test start](images/taking-tests/id-verification.png)
+![ID verification screen before test start](../../images/taking-tests/id-verification.png)
 *ID verification screen before test start*
 
 {% hint style="info" %}
@@ -43,7 +43,7 @@ The system compares the photo and name on the ID card against the Photo Before T
 
 Impersonation Detection monitors whether someone other than the original candidate attempts or continues the test. AutoProctor compares periodic photos taken during the test against the initial photo to detect face changes.
 
-![Impersonation evidence on report](images/taking-tests/impersonation-detected.png)
+![Impersonation evidence on report](../../images/taking-tests/impersonation-detected.png)
 *Impersonation evidence on report*
 
 ### Auxiliary Device (360° Proctoring)
@@ -59,7 +59,7 @@ Toggle the **Auxiliary Device** option in Enhanced Proctoring settings.
 ### Candidate pairs their phone
 When the test starts, the candidate scans a QR code on their laptop screen using their phone camera. This pairs the two devices.
 
-![Auxiliary device pairing screen before test start](images/taking-tests/aux-device.png)
+![Auxiliary device pairing screen before test start](../../images/taking-tests/aux-device.png)
 *Auxiliary device pairing screen before test start*
 {% endstep %}
 {% step %}
@@ -68,7 +68,7 @@ The phone camera captures the candidate's desk, surroundings, and screen from a 
 {% endstep %}
 {% endstepper %}
 
-![Auxiliary device evidence captures](images/taking-tests/aux-device-evidence.png)
+![Auxiliary device evidence captures](../../images/taking-tests/aux-device-evidence.png)
 *Auxiliary device evidence captures*
 
 ### Session Recording

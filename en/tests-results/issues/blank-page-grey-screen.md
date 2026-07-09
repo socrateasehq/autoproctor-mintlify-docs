@@ -10,7 +10,7 @@ If your test displays a blank page or grey screen instead of loading the questio
 When a test administrator restricts access to specific email addresses, Google Forms blocks anyone signed in with a different account. AutoProctor loads the Google Form within its own interface, so you see a blank or grey screen instead of the form's own error message.
 
 
-![Blank page displayed when the wrong Google account is active in AutoProctor](images/candidate-issues/blank-page-google-account.png)
+![Blank page displayed when the wrong Google account is active in AutoProctor](../../images/candidate-issues/blank-page-google-account.png)
 *Blank page caused by being signed into the wrong Google account*
 
 ## How to Fix It

@@ -12,7 +12,7 @@ Los aspectos más destacados incluyen:
 
 ## Cómo Crear un Cuestionario Socratease
 
-{% embed url="videos/socratease/create-soc-test.mp4" %}
+{% embed url="../../videos/socratease/create-soc-test.mp4" %}
 Tutorial en video para crear un cuestionario Socratease
 {% endembed %}
 
@@ -51,7 +51,7 @@ Comparta el enlace del examen con sus candidatos. Ellos pueden acceder al cuesti
 ### Vea los Resultados
 Una vez que los candidatos completen el examen, vea sus resultados e informes de supervisión desde el mismo panel de control.
 
-![Panel de resultados de AutoProctor mostrando resumen de envíos y puntajes de candidatos](images/getting-started/sample-results.png)
+![Panel de resultados de AutoProctor mostrando resumen de envíos y puntajes de candidatos](../../images/getting-started/sample-results.png)
 *Panel de resultados mostrando envíos, puntajes de confianza y puntajes del examen*
 {% endstep %}
 {% endstepper %}

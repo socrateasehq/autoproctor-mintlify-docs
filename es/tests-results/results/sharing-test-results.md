@@ -9,7 +9,7 @@ Es posible que necesite compartir los resultados del examen con otros administra
 
 Cuando comparte un Google Form con otro usuario, este puede obtener acceso al mismo examen de AutoProctor y sus resultados.
 
-{% embed url="videos/settings/timer-proctor-on-gf.mp4" %}
+{% embed url="../../videos/settings/timer-proctor-on-gf.mp4" %}
 Abriendo el complemento Timer + Proctor en un Google Form compartido
 {% endembed %}
 

@@ -24,7 +24,7 @@ Make sure the **Disable Autosave** feature is **OFF** in your Google Forms test 
 
 
 
-![Google Forms test settings showing Disable Autosave toggled OFF, keeping autosave active](images/settings/gforms-autosave-enabled.png)
+![Google Forms test settings showing Disable Autosave toggled OFF, keeping autosave active](../../images/settings/gforms-autosave-enabled.png)
 {% endstep %}
 {% step %}
 ### Enable auto-resume in AutoProctor
@@ -32,7 +32,7 @@ Turn on the **Enable Auto-resume** setting in your AutoProctor test settings.
 
 
 
-![AutoProctor test settings showing Enable Auto-resume toggled ON](images/settings/gforms-autoresume-enabled.png)
+![AutoProctor test settings showing Enable Auto-resume toggled ON](../../images/settings/gforms-autoresume-enabled.png)
 {% endstep %}
 {% endstepper %}
 
@@ -47,7 +47,7 @@ Turn **ON** the **Disable Autosave** feature in your Google Forms test settings.
 
 
 
-![Google Forms test settings showing Disable Autosave toggled ON, disabling autosave](images/settings/gforms-autosave-disabled.png)
+![Google Forms test settings showing Disable Autosave toggled ON, disabling autosave](../../images/settings/gforms-autosave-disabled.png)
 {% endstep %}
 {% step %}
 ### Disable auto-resume in AutoProctor
@@ -55,7 +55,7 @@ Turn **OFF** the **Enable Auto-resume** option in your AutoProctor test settings
 
 
 
-![AutoProctor test settings showing Enable Auto-resume toggled OFF](images/settings/gforms-autoresume-disabled.png)
+![AutoProctor test settings showing Enable Auto-resume toggled OFF](../../images/settings/gforms-autoresume-disabled.png)
 {% endstep %}
 {% endstepper %}
 

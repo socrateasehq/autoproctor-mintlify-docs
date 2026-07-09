@@ -18,14 +18,14 @@ A planilha exportada contém um resumo de todos os resultados dos candidatos:
 | **Trust Score** | Pontuação de integridade da supervisão (se a supervisão estiver ativada) |
 | **Pontuação do questionário** | Pontuação do candidato (apenas para Questionários Socratease) |
 
-![Tabela de resultados no painel do AutoProctor com opção de exportação](images/results/export-results-table.png)
+![Tabela de resultados no painel do AutoProctor com opção de exportação](../../images/results/export-results-table.png)
 *Tabela de resultados com botão Export to Excel*
 
 Você pode consultar uma [planilha de exemplo exportada](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) para ver o formato exato.
 
 ## Como Exportar
 
-![GIF mostrando como exportar resultados para Excel no painel do AutoProctor](images/results/export-results-to-excel.gif)
+![GIF mostrando como exportar resultados para Excel no painel do AutoProctor](../../images/results/export-results-to-excel.gif)
 *Exportando resultados para Excel*
 
 {% stepper %}

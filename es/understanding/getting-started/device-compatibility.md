@@ -41,12 +41,12 @@ Cuando se le solicite, permita que su navegador acceda a la cámara y al micróf
 
 <div style={{display: "flex", flexDirection: "column", gap: "16px", alignItems: "center"}}>
   <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
-    ![Solicitud de permiso del navegador para acceso al micrófono en autoproctor.co](images/getting-started/audio-permission.png)
+    ![Solicitud de permiso del navegador para acceso al micrófono en autoproctor.co](../../images/getting-started/audio-permission.png)
 *Solicitud de permiso para el micrófono*
-    ![Solicitud de permiso del navegador para acceso a la cámara en autoproctor.co](images/getting-started/video-permission.png)
+    ![Solicitud de permiso del navegador para acceso a la cámara en autoproctor.co](../../images/getting-started/video-permission.png)
 *Solicitud de permiso para la cámara*
   </div>
-  ![Solicitud del navegador para compartir la pantalla completa con autoproctor.co](images/getting-started/screen-share-permission.png)
+  ![Solicitud del navegador para compartir la pantalla completa con autoproctor.co](../../images/getting-started/screen-share-permission.png)
 *Solicitud de permiso para compartir pantalla*
 </div>
 {% endstep %}

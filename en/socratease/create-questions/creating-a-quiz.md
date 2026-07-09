@@ -12,7 +12,7 @@ Key highlights include:
 
 ## How to Create a Socratease Quiz
 
-{% embed url="videos/socratease/create-soc-test.mp4" %}
+{% embed url="../../videos/socratease/create-soc-test.mp4" %}
 Video walkthrough of creating a Socratease quiz
 {% endembed %}
 
@@ -51,7 +51,7 @@ Share the test link with your candidates. They can access the quiz through the l
 ### View Results
 After candidates complete the test, view their results and proctoring reports from the same dashboard.
 
-![AutoProctor results dashboard showing submission summary and candidate scores](images/getting-started/sample-results.png)
+![AutoProctor results dashboard showing submission summary and candidate scores](../../images/getting-started/sample-results.png)
 *Results dashboard showing submissions, trust scores, and test scores*
 {% endstep %}
 {% endstepper %}

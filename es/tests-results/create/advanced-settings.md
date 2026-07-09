@@ -5,7 +5,7 @@ description: "Configure proveedores de inicio de sesión, restricciones de corre
 
 La Configuración Avanzada le brinda control sobre cómo inician sesión los candidatos, quién puede acceder al examen y cómo se comparten los resultados. Estas opciones se encuentran en la parte inferior de la página de Configuración del Examen.
 
-![Panel de configuración avanzada](images/creating-tests/advanced-settings.png)
+![Panel de configuración avanzada](../../images/creating-tests/advanced-settings.png)
 *Panel de configuración avanzada*
 
 ## Proveedores de Inicio de Sesión

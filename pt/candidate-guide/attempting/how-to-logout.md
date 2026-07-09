@@ -7,7 +7,7 @@ Você pode precisar fazer logout do AutoProctor se quiser trocar para uma conta 
 
 ## Como Fazer Logout
 
-![Como fazer logout do AutoProctor](images/taking-tests/how-to-logout.gif)
+![Como fazer logout do AutoProctor](../../images/taking-tests/how-to-logout.gif)
 *Como fazer logout do AutoProctor*
 
 {% stepper %}

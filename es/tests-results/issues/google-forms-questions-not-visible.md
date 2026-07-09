@@ -10,7 +10,7 @@ AutoProctor carga su formulario de Google Forms dentro de su propio sitio para l
 Google Forms puede restringir el acceso según la organización, el dominio de correo electrónico o cuentas específicas. Cuando usted ha iniciado sesión con una cuenta que no cumple con estas restricciones, Google bloquea el contenido del formulario y muestra un mensaje de error en su lugar.
 
 
-![Formulario de Google Forms mostrando un error de acceso restringido dentro de la interfaz de AutoProctor](images/candidate-issues/google-forms-access-restricted.png)
+![Formulario de Google Forms mostrando un error de acceso restringido dentro de la interfaz de AutoProctor](../../images/candidate-issues/google-forms-access-restricted.png)
 *Formulario de Google Forms mostrando un mensaje de restricción de acceso dentro de AutoProctor*
 
 ## Cómo Solucionarlo

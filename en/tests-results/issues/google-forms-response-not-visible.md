@@ -12,7 +12,7 @@ Candidates must click **two separate submit buttons** to complete a Google Forms
 1. **Purple Submit button** (inside the Google Form) -- submits answers to the Google Forms Responses section
 2. **Green Submit button** (at the top of the page) -- submits the proctoring or timed session to AutoProctor
 
-![Purple Google Forms submit button and Green AutoProctor submit button shown on a proctored test](images/taking-tests/submit-buttons-proctored.png)
+![Purple Google Forms submit button and Green AutoProctor submit button shown on a proctored test](../../images/taking-tests/submit-buttons-proctored.png)
 *The two submit buttons: purple for Google Forms, green for AutoProctor*
 
 ### If the Candidate Skips the Green Submit Button

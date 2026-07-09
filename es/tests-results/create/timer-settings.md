@@ -11,7 +11,7 @@ Los horarios que establezca están en su zona horaria local. AutoProctor maneja 
 
 ## Cómo Configurar el Temporizador
 
-{% embed url="videos/settings/config-timer-settings.mp4" %}
+{% embed url="../../videos/settings/config-timer-settings.mp4" %}
 Cómo configurar el temporizador en AutoProctor
 {% endembed %}
 

@@ -15,12 +15,12 @@ Socratease is AutoProctor's purpose-built quizzing platform designed specificall
 
 Candidates click one [submit button](candidate-guide/attempting/submit-button.md) instead of two. This prevents answer loss from submission errors -- a common issue with other platforms where candidates may submit the form but forget to submit the proctored test (or vice versa).
 
-![Socratease quiz showing a single Submit button at the bottom](images/taking-tests/soc-submit-button.png)
+![Socratease quiz showing a single Submit button at the bottom](../../images/taking-tests/soc-submit-button.png)
 *Socratease: single submit button*
 
 <br />
 
-![Proctored test requiring candidates to click two separate submit buttons](images/taking-tests/submit-buttons-proctored.png)
+![Proctored test requiring candidates to click two separate submit buttons](../../images/taking-tests/submit-buttons-proctored.png)
 *Other platforms: dual submit buttons*
 
 ### 2. Multiple Question Types
@@ -44,7 +44,7 @@ Unlike competing tools, when a test auto-submits due to time expiry, **the answe
 
 You can prevent candidates from copying questions or pasting answers, reducing their reliance on external sources like ChatGPT or other AI tools.
 
-{% embed url="videos/socratease/disable-copy-paste.mp4" %}
+{% embed url="../../videos/socratease/disable-copy-paste.mp4" %}
 Disabling copy-paste in Socratease quiz settings
 {% endembed %}
 

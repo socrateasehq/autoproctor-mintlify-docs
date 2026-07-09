@@ -5,7 +5,7 @@ description: "Configure verificação de identidade, detecção de impostor, sup
 
 A Supervisão Avançada adiciona recursos avançados de verificação de identidade e monitoramento além da supervisão padrão. Esses recursos ajudam a prevenir a personificação, detectar ferramentas de IA e criar um registro completo de cada tentativa de teste.
 
-![Painel de configurações de supervisão avançada](images/creating-tests/enhanced-proctoring.png)
+![Painel de configurações de supervisão avançada](../../images/creating-tests/enhanced-proctoring.png)
 
 {% hint style="info" %}
 Cada recurso de supervisão avançada requer **4 créditos adicionais por tentativa**. Se você ativar múltiplos recursos avançados, o custo de créditos é cumulativo. Por exemplo, ativar a Verificação de Identidade e a Gravação de Sessão custa 8 créditos adicionais por tentativa de candidato.
@@ -32,7 +32,7 @@ O sistema compara a foto e o nome no documento de identidade com a Foto Antes do
 {% endstep %}
 {% endstepper %}
 
-![Tela de verificação de identidade antes de iniciar o teste](images/taking-tests/id-verification.png)
+![Tela de verificação de identidade antes de iniciar o teste](../../images/taking-tests/id-verification.png)
 *Tela de verificação de identidade antes de iniciar o teste*
 
 {% hint style="info" %}
@@ -43,7 +43,7 @@ A **Foto Antes do Início do Teste** deve estar ativada nas configurações bás
 
 A Detecção de Impostor monitora se alguém diferente do candidato original tenta ou continua o teste. O AutoProctor compara fotos periódicas tiradas durante o teste com a foto inicial para detectar mudanças de rosto.
 
-![Evidência de impostor no relatório](images/taking-tests/impersonation-detected.png)
+![Evidência de impostor no relatório](../../images/taking-tests/impersonation-detected.png)
 *Evidência de impostor no relatório*
 
 ### Dispositivo Auxiliar (Supervisão em 360°)
@@ -59,7 +59,7 @@ Ative a opção **Auxiliary Device** nas configurações de Supervisão Avançad
 ### O candidato emparelha o celular
 Quando o teste começa, o candidato escaneia um código QR na tela do laptop usando a câmera do celular. Isso emparelha os dois dispositivos.
 
-![Tela de emparelhamento do dispositivo auxiliar antes de iniciar o teste](images/taking-tests/aux-device.png)
+![Tela de emparelhamento do dispositivo auxiliar antes de iniciar o teste](../../images/taking-tests/aux-device.png)
 *Tela de emparelhamento do dispositivo auxiliar antes de iniciar o teste*
 {% endstep %}
 {% step %}
@@ -68,7 +68,7 @@ A câmera do celular captura a mesa, o ambiente e a tela do candidato de um âng
 {% endstep %}
 {% endstepper %}
 
-![Capturas de evidência do dispositivo auxiliar](images/taking-tests/aux-device-evidence.png)
+![Capturas de evidência do dispositivo auxiliar](../../images/taking-tests/aux-device-evidence.png)
 *Capturas de evidência do dispositivo auxiliar*
 
 ### Gravação de Sessão

@@ -11,7 +11,7 @@ AutoProctor monitors connectivity through continuous server pings sent from the 
 
 **Example:** If pings failed at 11:00:30, 11:00:35, and 11:00:40 but resumed at 11:00:45, the report would indicate an offline period of approximately 10 seconds, from 11:00:30 to 11:00:40.
 
-![Went offline duration entry displayed in an AutoProctor proctoring report](images/candidate-issues/went-offline-report.png)
+![Went offline duration entry displayed in an AutoProctor proctoring report](../../images/candidate-issues/went-offline-report.png)
 *Went offline entry shown in a proctoring report*
 
 ## Frequently Asked Questions

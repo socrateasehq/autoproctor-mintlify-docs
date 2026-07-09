@@ -46,7 +46,7 @@ Puede obtener más información sobre la sección de facturación en el artícul
 A continuación se muestra un ejemplo de cómo luce una factura de AutoProctor:
 
 
-![Ejemplo de factura de AutoProctor mostrando datos de facturación, conceptos y monto total](images/pricing/sample-invoice.png)
+![Ejemplo de factura de AutoProctor mostrando datos de facturación, conceptos y monto total](../../images/pricing/sample-invoice.png)
 
 ## Preguntas Frecuentes
 

@@ -16,7 +16,7 @@ Visite su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y 
 ### Haga clic en Ver en Resultados
 Haga clic en el botón **Ver** en la sección **Resultados** del examen correspondiente. Esto abre una lista de todas las entregas de los candidatos.
 
-![Lista de entregas de candidatos que muestra nombres, puntuaciones y estado de la calificación](images/results/submissions-list.png)
+![Lista de entregas de candidatos que muestra nombres, puntuaciones y estado de la calificación](../../images/results/submissions-list.png)
 *Haga clic en Ver Respuestas para ver las respuestas individuales*
 {% endstep %}
 {% step %}
@@ -30,7 +30,7 @@ Cada entrega muestra uno de dos estados:
 
 Al hacer clic en cualquiera de los enlaces, se abre una página detallada con todas las respuestas, los puntos obtenidos y la información específica del candidato.
 
-![Página de detalle de la entrega individual que muestra las respuestas del candidato y los puntos obtenidos](images/results/individual-submission-details.png)
+![Página de detalle de la entrega individual que muestra las respuestas del candidato y los puntos obtenidos](../../images/results/individual-submission-details.png)
 *Página de detalle de la entrega individual con respuestas y puntuaciones*
 {% endstep %}
 {% endstepper %}

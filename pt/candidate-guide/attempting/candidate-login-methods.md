@@ -15,7 +15,7 @@ Os candidatos devem fazer login antes de realizar qualquer teste no AutoProctor.
   allowFullScreen
 ></iframe>
 
-![Opções de login do AutoProctor mostrando botões de login com Google, Microsoft e E-mail](images/taking-tests/login-methods.png)
+![Opções de login do AutoProctor mostrando botões de login com Google, Microsoft e E-mail](../../images/taking-tests/login-methods.png)
 *Tela de login do AutoProctor*
 
 ## Métodos de Login Disponíveis

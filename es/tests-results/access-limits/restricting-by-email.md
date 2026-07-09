@@ -35,7 +35,7 @@ Haga clic en **Crear** o **Actualizar** para aplicar las restricciones.
 Puede restringir el acceso a candidatos cuyas direcciones de correo electrónico terminen con dominios específicos. Por ejemplo, al ingresar `@abc.com` y `@xyz.com`, solo los candidatos con esos dominios de correo electrónico podrán realizar el examen.
 
 
-![Campo de Restricciones de Inicio de Sesión mostrando restricciones basadas en dominio con @abc.com y @xyz.com ingresados](images/settings/login-restrictions-domain.png)
+![Campo de Restricciones de Inicio de Sesión mostrando restricciones basadas en dominio con @abc.com y @xyz.com ingresados](../../images/settings/login-restrictions-domain.png)
 
 ## Restricciones por Correo Electrónico Específico
 
@@ -44,7 +44,7 @@ También puede permitir direcciones de correo electrónico individuales junto co
 Por ejemplo, puede permitir a todos los usuarios cuyo correo electrónico termine en `@abc.com` más direcciones de correo electrónico individuales específicas como `guest@gmail.com`.
 
 
-![Campo de Restricciones de Inicio de Sesión mostrando una combinación de restricciones de dominio y de correo electrónico individual](images/settings/login-restrictions-email.png)
+![Campo de Restricciones de Inicio de Sesión mostrando una combinación de restricciones de dominio y de correo electrónico individual](../../images/settings/login-restrictions-email.png)
 
 {% hint style="info" %}
 Las restricciones por correo electrónico funcionan en conjunto con el [método de inicio de sesión](candidate-guide/attempting/candidate-login-methods.md) del candidato. El candidato debe iniciar sesión con una dirección de correo electrónico que coincida con uno de los dominios o direcciones permitidos que usted especificó.

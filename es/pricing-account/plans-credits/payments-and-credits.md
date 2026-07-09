@@ -13,7 +13,7 @@ Por ejemplo, con 10 créditos puede tener 10 candidatos que intenten 1 examen ca
 
 ## Adquirir una Suscripción
 
-{% embed url="videos/pricing/subscribe.mp4" %}
+{% embed url="../../videos/pricing/subscribe.mp4" %}
 Cómo adquirir una suscripción
 {% endembed %}
 
@@ -41,7 +41,7 @@ Cuando adquiere una suscripción, recibe una cantidad determinada de créditos (
 
 ## Recargar Su Suscripción
 
-![GIF mostrando cómo comprar un Paquete de Pruebas de recarga en AutoProctor](images/pricing/topup.gif)
+![GIF mostrando cómo comprar un Paquete de Pruebas de recarga en AutoProctor](../../images/pricing/topup.gif)
 *Cómo agregar créditos*
 
 Si necesita más créditos de los que su plan proporciona en un ciclo de facturación determinado, puede adquirir **Paquetes de Pruebas**. Cada Paquete de Pruebas contiene una cantidad fija de créditos, y puede comprar tantos como necesite.

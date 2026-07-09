@@ -10,7 +10,7 @@ AutoProctor loads your Google Form within its own site for proctoring. If the Go
 Google Forms can restrict access based on organization, email domain, or specific accounts. When you are signed in with an account that does not meet these restrictions, Google blocks the form content and shows an error message instead.
 
 
-![Google Form displaying access restricted error inside AutoProctor interface](images/candidate-issues/google-forms-access-restricted.png)
+![Google Form displaying access restricted error inside AutoProctor interface](../../images/candidate-issues/google-forms-access-restricted.png)
 *Google Form showing an access restriction message within AutoProctor*
 
 ## How to Fix It

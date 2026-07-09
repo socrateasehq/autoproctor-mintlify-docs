@@ -15,7 +15,7 @@ Common causes include:
 - **Insufficient hardware** -- low-end or older devices may not support real-time video processing
 - **Browser extensions** -- certain extensions (especially ad blockers and privacy tools) can block AutoProctor's scripts from loading
 
-![AutoProctor loading screen stuck due to device or browser compatibility issue](images/candidate-issues/loading-screen-demo.png)
+![AutoProctor loading screen stuck due to device or browser compatibility issue](../../images/candidate-issues/loading-screen-demo.png)
 *AutoProctor loading screen indicating a compatibility issue*
 
 ## How to Fix It

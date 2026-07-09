@@ -9,7 +9,7 @@ AutoProctor adds proctoring to your quiz — you choose the quiz platform. Use *
 
 ## Choosing a Quiz Provider
 
-{% embed url="videos/creating-tests/all-test-types.mp4" %}
+{% embed url="../../videos/creating-tests/all-test-types.mp4" %}
 How to create a test with different quiz providers in AutoProctor. You can only select one provider per test
 {% endembed %}
 

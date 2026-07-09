@@ -5,7 +5,7 @@ description: "Understand the two types of results available on AutoProctor -- qu
 
 AutoProctor provides two distinct types of results for every test: **quiz results** (how candidates performed) and **proctoring results** (whether candidates maintained integrity).
 
-![AutoProctor results page showing Trust Score column for each candidate](images/getting-started/sample-results.png)
+![AutoProctor results page showing Trust Score column for each candidate](../../images/getting-started/sample-results.png)
 *Results page showing Trust Score column*
 
 ## Quiz Results

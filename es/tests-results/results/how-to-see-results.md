@@ -5,7 +5,7 @@ description: "Comprenda los dos tipos de resultados disponibles en AutoProctor -
 
 AutoProctor proporciona dos tipos distintos de resultados para cada examen: **resultados del examen** (cómo se desempeñaron los candidatos) y **resultados de supervisión** (si los candidatos mantuvieron la integridad). Conocer la diferencia le ayuda a encontrar la información correcta rápidamente.
 
-![Página de resultados de AutoProctor mostrando la columna de Trust Score para cada candidato](images/getting-started/sample-results.png)
+![Página de resultados de AutoProctor mostrando la columna de Trust Score para cada candidato](../../images/getting-started/sample-results.png)
 *Página de resultados mostrando la columna de Trust Score*
 
 ## Resultados del Examen

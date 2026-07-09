@@ -29,7 +29,7 @@ Once you create a team, click on the **Team** link in the sidebar to view the te
 - A list of **all team members**
 - An **"Admin" tag** next to each team admin
 
-![Team management page showing member list and join link](images/pricing/team-management-page.png)
+![Team management page showing member list and join link](../../images/pricing/team-management-page.png)
 *Team management page*
 
 ## Team Admin Role
@@ -54,7 +54,7 @@ Regular team members cannot access billing information or manage other members. 
 
 ### Creating a Team
 
-{% embed url="videos/pricing/create-team.mp4" %}
+{% embed url="../../videos/pricing/create-team.mp4" %}
 How to create a team
 {% endembed %}
 
@@ -76,7 +76,7 @@ Follow the prompts to set up your team. Once created, you receive a unique join 
 ### Get the join link
 Ask a Team Admin for the team's join link.
 
-![Join link on the team management page](images/pricing/join-team.png)
+![Join link on the team management page](../../images/pricing/join-team.png)
 *Join link on the team management page*
 {% endstep %}
 {% step %}

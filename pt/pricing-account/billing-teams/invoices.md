@@ -46,7 +46,7 @@ Você pode saber mais sobre a seção de Cobrança no artigo [Editar Informaçõ
 Abaixo está um exemplo de como é uma fatura do AutoProctor:
 
 
-![Exemplo de fatura do AutoProctor mostrando dados de cobrança, itens e valor total](images/pricing/sample-invoice.png)
+![Exemplo de fatura do AutoProctor mostrando dados de cobrança, itens e valor total](../../images/pricing/sample-invoice.png)
 
 ## Perguntas Frequentes
 

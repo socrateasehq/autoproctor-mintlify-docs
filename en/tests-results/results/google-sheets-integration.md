@@ -11,7 +11,7 @@ This is a **Premium Feature** and requires a Premium or Elite subscription. See 
 
 ## Setup Instructions
 
-![GIF showing how to set up Google Sheets integration in AutoProctor](images/settings/write-to-gsheet.gif)
+![GIF showing how to set up Google Sheets integration in AutoProctor](../../images/settings/write-to-gsheet.gif)
 *Setting up Google Sheets integration*
 
 {% stepper %}

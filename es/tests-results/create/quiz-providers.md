@@ -12,7 +12,7 @@ Hay dos opciones:
 
 ## Elegir un Proveedor de Cuestionarios
 
-{% embed url="videos/creating-tests/all-test-types.mp4" %}
+{% embed url="../../videos/creating-tests/all-test-types.mp4" %}
 Cómo crear un examen con diferentes proveedores de cuestionarios en AutoProctor. Solo puede seleccionar un proveedor por examen
 {% endembed %}
 

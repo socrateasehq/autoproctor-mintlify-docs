@@ -13,7 +13,7 @@ For example, with 10 credits you can have 10 candidates attempt 1 test each, or 
 
 ## Purchase a Subscription
 
-{% embed url="videos/pricing/subscribe.mp4" %}
+{% embed url="../../videos/pricing/subscribe.mp4" %}
 How to purchase a subscription
 {% endembed %}
 
@@ -41,7 +41,7 @@ When you purchase a subscription, you receive a set number of credits (for examp
 
 ## Top Up Your Subscription
 
-![GIF showing how to purchase a Test Pack top-up on AutoProctor](images/pricing/topup.gif)
+![GIF showing how to purchase a Test Pack top-up on AutoProctor](../../images/pricing/topup.gif)
 *How to add credits*
 
 If you need more credits than your plan provides in a given billing cycle, you can purchase **Test Packs**. Each Test Pack contains a fixed number of credits, and you can buy as many as you need.

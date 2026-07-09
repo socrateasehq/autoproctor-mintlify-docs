@@ -31,7 +31,7 @@ Encontre e ative ou desative a opção **Enable Auto Resume**.
 
 
 
-![Botão Enable Auto Resume nas configurações de teste do AutoProctor](images/settings/enable-auto-resume.png)
+![Botão Enable Auto Resume nas configurações de teste do AutoProctor](../../images/settings/enable-auto-resume.png)
 {% endstep %}
 {% endstepper %}
 

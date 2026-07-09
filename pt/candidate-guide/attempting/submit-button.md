@@ -20,7 +20,7 @@ Clique no **botão verde de envio** no topo da página para enviar a sessão de 
 {% endstep %}
 {% endstepper %}
 
-![Teste supervisionado exigindo que os candidatos cliquem em dois botões de envio separados](images/taking-tests/submit-buttons-proctored.png)
+![Teste supervisionado exigindo que os candidatos cliquem em dois botões de envio separados](../../images/taking-tests/submit-buttons-proctored.png)
 *Outras plataformas: dois botões de envio*
 
 {% hint style="warning" %}
@@ -31,7 +31,7 @@ Se você não enviar as respostas do questionário **primeiro** (botão roxo), t
 
 Os questionários Socratease usam um **único botão de envio**. Um clique envia tanto suas respostas quanto a sessão de supervisão — sem confusão, sem risco de perda de respostas.
 
-![Questionário Socratease mostrando um único botão de Enviar na parte inferior](images/taking-tests/soc-submit-button.png)
+![Questionário Socratease mostrando um único botão de Enviar na parte inferior](../../images/taking-tests/soc-submit-button.png)
 *Socratease: botão de envio único*
 
 {% hint style="info" %}

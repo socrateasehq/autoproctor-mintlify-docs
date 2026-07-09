@@ -11,28 +11,28 @@ Modo de Visualización de Preguntas es una función **Premium**. Consulte [Pagos
 
 ## Modos de Visualización
 
-![Panel de configuración del modo de visualización de preguntas mostrando las tres opciones disponibles](images/socratease/question-display-mode.png)
+![Panel de configuración del modo de visualización de preguntas mostrando las tres opciones disponibles](../../images/socratease/question-display-mode.png)
 *Configuración del modo de visualización de preguntas en los ajustes del cuestionario*
 
 ### 1. Todas a la Vez (Estilo Google Forms)
 
 Los candidatos ven todas las preguntas al mismo tiempo, una debajo de otra, como en un Google Form. El temporizador se aplica a la **prueba completa**. Los candidatos pueden desplazarse libremente entre las preguntas y responderlas en cualquier orden.
 
-![Vista del candidato del modo todas a la vez mostrando todas las preguntas en una página](images/socratease/all-at-once.png)
+![Vista del candidato del modo todas a la vez mostrando todas las preguntas en una página](../../images/socratease/all-at-once.png)
 *Modo todas a la vez*
 
 ### 2. Una por Una con Navegación (Estilo Typeform)
 
 Los candidatos ven una pregunta a la vez y pueden navegar hacia adelante y hacia atrás entre las preguntas. El temporizador se aplica a la **prueba completa**, no a las preguntas individuales. Los candidatos pueden revisar y cambiar sus respuestas en cualquier momento antes de enviar.
 
-![Vista del candidato del modo una por una con navegación mostrando una pregunta con botones Siguiente y Anterior](images/socratease/one-by-one-like-typeform.png)
+![Vista del candidato del modo una por una con navegación mostrando una pregunta con botones Siguiente y Anterior](../../images/socratease/one-by-one-like-typeform.png)
 *Una por una con navegación*
 
 ### 3. Una por Una sin Navegación
 
 Los candidatos ven una pregunta a la vez. Una vez que envían una pregunta (al responderla u omitirla), **no pueden volver a ella**. El temporizador se establece **por pregunta**, no para toda la prueba.
 
-![Vista del candidato del modo una por una sin navegación mostrando una pregunta con botones Enviar y Omitir](images/socratease/one-by-one.png)
+![Vista del candidato del modo una por una sin navegación mostrando una pregunta con botones Enviar y Omitir](../../images/socratease/one-by-one.png)
 *Una por una sin navegación*
 
 ## Diferencias Principales
@@ -61,7 +61,7 @@ Para más información sobre la configuración del temporizador, consulte [Confi
 
 ## Cómo Establecer el Modo de Visualización
 
-{% embed url="videos/socratease/question-display-mode.mp4" %}
+{% embed url="../../videos/socratease/question-display-mode.mp4" %}
 Cómo configurar el modo de visualización de preguntas
 {% endembed %}
 

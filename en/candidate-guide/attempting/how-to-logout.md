@@ -7,7 +7,7 @@ You may need to log out of AutoProctor if you want to switch to a different acco
 
 ## How to Logout
 
-![How to logout of AutoProctor](images/taking-tests/how-to-logout.gif)
+![How to logout of AutoProctor](../../images/taking-tests/how-to-logout.gif)
 *How to logout of AutoProctor*
 
 {% stepper %}

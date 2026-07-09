@@ -24,7 +24,7 @@ Ejemplos de etiquetas incluyen:
 
 ## Cómo Usar las Etiquetas
 
-{% embed url="videos/socratease/add-tags.mp4" %}
+{% embed url="../../videos/socratease/add-tags.mp4" %}
 Cómo agregar etiquetas a las preguntas del cuestionario en Socratease
 {% endembed %}
 
@@ -53,7 +53,7 @@ Después de que los candidatos envíen el examen, abra los resultados del examen
 ### Filtre los Resultados por Etiqueta
 Use el menú desplegable **"Filter by Tag"** para seleccionar etiquetas individuales y mostrar solo las preguntas con esas etiquetas específicas. Esto le permite analizar el rendimiento en temas o habilidades específicos.
 
-{% embed url="videos/socratease/filter-by-tags.mp4" %}
+{% embed url="../../videos/socratease/filter-by-tags.mp4" %}
 Filtrando resultados por etiqueta
 {% endembed %}
 {% endstep %}

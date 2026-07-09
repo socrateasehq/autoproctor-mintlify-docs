@@ -6,7 +6,7 @@ description: "Learn about the data feeds, detection capabilities, and evidence r
 AutoProctor monitors candidates in real time using on-device AI and captures evidence only when it detects a violation. This means you review flagged incidents rather than hours of footage.
 
 <Frame caption="A sample proctoring report showing the Trust Score, violation counts, and flagged events with evidence">
-  ![Sample proctoring report](images/getting-started/sample-proctoring-report.png)
+  ![Sample proctoring report](../../images/getting-started/sample-proctoring-report.png)
 </Frame>
 
 [View sample proctoring results](https://www.autoproctor.co/sample-dashboard/) to explore a live report.
@@ -48,7 +48,7 @@ All tracking features are configurable per test. Enable only what you need in yo
 
 ## How to Configure Tracking
 
-{% embed url="videos/getting-started/configure-proctor-settings.mp4" %}
+{% embed url="../../videos/getting-started/configure-proctor-settings.mp4" %}
 How to Configure Tracking Settings
 {% endembed %}
 

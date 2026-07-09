@@ -39,7 +39,7 @@ For non-Socratease quizzes (Google Forms, Microsoft Forms, etc.), there are **tw
 1. **Purple Submit Button** (bottom) -- click this **first** to save your answers to the quiz provider
 2. **Green Submit Button** (top) -- click this **second** to submit the proctored session to AutoProctor
 
-![Purple and green submit buttons showing the correct click order for proctored tests](images/taking-tests/submit-buttons-proctored.png)
+![Purple and green submit buttons showing the correct click order for proctored tests](../../images/taking-tests/submit-buttons-proctored.png)
 *Click the purple button first, then the green button*
 
 {% hint style="warning" %}

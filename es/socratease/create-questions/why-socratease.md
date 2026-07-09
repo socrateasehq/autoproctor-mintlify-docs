@@ -15,12 +15,12 @@ Socratease es la plataforma de cuestionarios de AutoProctor, diseñada específi
 
 Los candidatos hacen clic en un solo [botón de envío](candidate-guide/attempting/submit-button.md) en lugar de dos. Esto evita la pérdida de respuestas por errores de envío — un problema frecuente en otras plataformas donde los candidatos pueden enviar el formulario pero olvidar enviar el examen supervisado (o viceversa).
 
-![Cuestionario Socratease mostrando un único botón de Enviar en la parte inferior](images/taking-tests/soc-submit-button.png)
+![Cuestionario Socratease mostrando un único botón de Enviar en la parte inferior](../../images/taking-tests/soc-submit-button.png)
 *Socratease: un solo botón de envío*
 
 <br />
 
-![Examen supervisado que requiere que los candidatos hagan clic en dos botones de envío separados](images/taking-tests/submit-buttons-proctored.png)
+![Examen supervisado que requiere que los candidatos hagan clic en dos botones de envío separados](../../images/taking-tests/submit-buttons-proctored.png)
 *Otras plataformas: doble botón de envío*
 
 ### 2. Múltiples Tipos de Preguntas
@@ -44,7 +44,7 @@ A diferencia de otras herramientas, cuando un examen se envía automáticamente 
 
 Puede impedir que los candidatos copien las preguntas o peguen respuestas, reduciendo su dependencia de fuentes externas como ChatGPT u otras herramientas de inteligencia artificial.
 
-{% embed url="videos/socratease/disable-copy-paste.mp4" %}
+{% embed url="../../videos/socratease/disable-copy-paste.mp4" %}
 Deshabilitando copiar y pegar en la configuración del cuestionario Socratease
 {% endembed %}
 

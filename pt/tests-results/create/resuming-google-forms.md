@@ -24,7 +24,7 @@ Certifique-se de que o recurso **Disable Autosave** está **DESLIGADO** nas conf
 
 
 
-![Configurações do teste do Google Forms mostrando Disable Autosave desligado, mantendo o salvamento automático ativo](images/settings/gforms-autosave-enabled.png)
+![Configurações do teste do Google Forms mostrando Disable Autosave desligado, mantendo o salvamento automático ativo](../../images/settings/gforms-autosave-enabled.png)
 {% endstep %}
 {% step %}
 ### Ative a retomada automática no AutoProctor
@@ -32,7 +32,7 @@ Ative a configuração **Enable Auto-resume** nas configurações do teste do Au
 
 
 
-![Configurações do teste do AutoProctor mostrando Enable Auto-resume ativado](images/settings/gforms-autoresume-enabled.png)
+![Configurações do teste do AutoProctor mostrando Enable Auto-resume ativado](../../images/settings/gforms-autoresume-enabled.png)
 {% endstep %}
 {% endstepper %}
 
@@ -47,7 +47,7 @@ Ative o recurso **Disable Autosave** nas configurações do teste do Google Form
 
 
 
-![Configurações do teste do Google Forms mostrando Disable Autosave ligado, desativando o salvamento automático](images/settings/gforms-autosave-disabled.png)
+![Configurações do teste do Google Forms mostrando Disable Autosave ligado, desativando o salvamento automático](../../images/settings/gforms-autosave-disabled.png)
 {% endstep %}
 {% step %}
 ### Desative a retomada automática no AutoProctor
@@ -55,7 +55,7 @@ Desative a opção **Enable Auto-resume** nas configurações do teste do AutoPr
 
 
 
-![Configurações do teste do AutoProctor mostrando Enable Auto-resume desativado](images/settings/gforms-autoresume-disabled.png)
+![Configurações do teste do AutoProctor mostrando Enable Auto-resume desativado](../../images/settings/gforms-autoresume-disabled.png)
 {% endstep %}
 {% endstepper %}
 

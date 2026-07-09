@@ -9,7 +9,7 @@ Con el tiempo, su panel de control acumula exámenes de demostración, exámenes
 
 Archivar un examen lo oculta de su panel de control principal mientras lo mantiene completamente accesible en una sección dedicada. Esto es útil para limpiar exámenes completados o de demostración sin perder datos.
 
-{% embed url="videos/creating-tests/archive-test.mp4" %}
+{% embed url="../../videos/creating-tests/archive-test.mp4" %}
 Cómo archivar un examen en AutoProctor
 {% endembed %}
 
@@ -32,7 +32,7 @@ Abra la sección de **Exámenes Archivados** en la barra lateral izquierda para 
 
 Puede devolver un examen archivado a su panel de control principal en cualquier momento.
 
-{% embed url="videos/creating-tests/restore-test.mp4" %}
+{% embed url="../../videos/creating-tests/restore-test.mp4" %}
 Cómo restaurar un examen archivado en AutoProctor
 {% endembed %}
 
@@ -51,7 +51,7 @@ Encuentre el examen que desea restaurar y haga clic en **Restaurar**. El examen 
 
 Puede eliminar permanentemente un examen desde la sección de **Exámenes Archivados**. Debe archivar un examen antes de poder eliminarlo.
 
-{% embed url="videos/creating-tests/delete-test.mp4" %}
+{% embed url="../../videos/creating-tests/delete-test.mp4" %}
 Cómo eliminar un examen en AutoProctor
 {% endembed %}
 

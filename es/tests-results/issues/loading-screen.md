@@ -15,7 +15,7 @@ Las causas comunes incluyen:
 - **Hardware insuficiente** -- los dispositivos de gama baja o más antiguos pueden no soportar el procesamiento de video en tiempo real
 - **Extensiones del navegador** -- ciertas extensiones (especialmente bloqueadores de anuncios y herramientas de privacidad) pueden bloquear la carga de los scripts de AutoProctor
 
-![Pantalla de carga de AutoProctor detenida debido a un problema de compatibilidad del dispositivo o navegador](images/candidate-issues/loading-screen-demo.png)
+![Pantalla de carga de AutoProctor detenida debido a un problema de compatibilidad del dispositivo o navegador](../../images/candidate-issues/loading-screen-demo.png)
 *Pantalla de carga de AutoProctor indicando un problema de compatibilidad*
 
 ## Cómo Solucionarlo

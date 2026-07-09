@@ -11,28 +11,28 @@ O Modo de Exibição de Perguntas é um recurso **Premium**. Consulte [Pagamento
 
 ## Modos de Exibição
 
-![Painel de configurações do modo de exibição de perguntas mostrando as três opções disponíveis](images/socratease/question-display-mode.png)
+![Painel de configurações do modo de exibição de perguntas mostrando as três opções disponíveis](../../images/socratease/question-display-mode.png)
 *Configuração do modo de exibição de perguntas nas configurações do questionário*
 
 ### 1. Todas de Uma Vez (estilo Google Forms)
 
 Os candidatos veem todas as perguntas ao mesmo tempo, uma abaixo da outra, como em um Google Form. O temporizador se aplica ao **teste inteiro**. Os candidatos podem rolar livremente entre as perguntas e respondê-las em qualquer ordem.
 
-![Vista do candidato do modo todas de uma vez mostrando todas as perguntas em uma página](images/socratease/all-at-once.png)
+![Vista do candidato do modo todas de uma vez mostrando todas as perguntas em uma página](../../images/socratease/all-at-once.png)
 *Modo todas de uma vez*
 
 ### 2. Uma por Uma com Navegação (estilo Typeform)
 
 Os candidatos veem uma pergunta de cada vez e podem navegar para frente e para trás entre as perguntas. O temporizador se aplica ao **teste inteiro**, não às perguntas individuais. Os candidatos podem revisitar e alterar suas respostas a qualquer momento antes do envio.
 
-![Vista do candidato do modo uma por uma com navegação mostrando uma pergunta com botões Próximo e Anterior](images/socratease/one-by-one-like-typeform.png)
+![Vista do candidato do modo uma por uma com navegação mostrando uma pergunta com botões Próximo e Anterior](../../images/socratease/one-by-one-like-typeform.png)
 *Uma por uma com navegação*
 
 ### 3. Uma por Uma sem Navegação
 
 Os candidatos veem uma pergunta de cada vez. Depois de enviar uma pergunta (respondendo ou pulando), **não podem voltar a ela**. O temporizador é definido **por pergunta**, não para todo o teste.
 
-![Vista do candidato do modo uma por uma sem navegação mostrando uma pergunta com botões Enviar e Pular](images/socratease/one-by-one.png)
+![Vista do candidato do modo uma por uma sem navegação mostrando uma pergunta com botões Enviar e Pular](../../images/socratease/one-by-one.png)
 *Uma por uma sem navegação*
 
 ## Diferenças Principais
@@ -61,7 +61,7 @@ Para mais informações sobre configuração de temporizadores, consulte [Config
 
 ## Como Definir o Modo de Exibição
 
-{% embed url="videos/socratease/question-display-mode.mp4" %}
+{% embed url="../../videos/socratease/question-display-mode.mp4" %}
 Como definir o modo de exibição de perguntas
 {% endembed %}
 

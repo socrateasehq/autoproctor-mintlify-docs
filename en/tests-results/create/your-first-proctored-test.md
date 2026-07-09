@@ -14,7 +14,7 @@ Create a proctored test, share the link with candidates, and view results — al
 ### Log in to AutoProctor
 Go to [autoproctor.co](https://www.autoproctor.co/) and sign in with your **Google** or **Microsoft** account. You'll land on your dashboard, where all your tests are listed.
 
-![AutoProctor dashboard for a new user](images/getting-started/new-user-dashboard.png)
+![AutoProctor dashboard for a new user](../../images/getting-started/new-user-dashboard.png)
 *AutoProctor dashboard for a new user*
 {% endstep %}
 {% step %}
@@ -28,7 +28,7 @@ Click **Create Test** on your dashboard. Choose a quiz provider:
 | **Socratease** | You want to create a quiz directly on AutoProctor |
 | **IFrame** | You use another platform (TypeForm, ClassMarker, etc.) |
 
-![Quiz provider selection screen](images/creating-tests/all-test-types.png)
+![Quiz provider selection screen](../../images/creating-tests/all-test-types.png)
 *Quiz provider selection screen*
 
 Select your provider and follow the prompts to connect your quiz.
@@ -42,7 +42,7 @@ Click **Settings** on the test to configure:
 - **[Proctoring Settings](tests-results/create/proctoring-settings.md)** — Enable camera, microphone, tab-switching detection, and more
 - **[Advanced Settings](tests-results/create/advanced-settings.md)** — Choose login methods and add restrictions
 
-![Test settings page with key sections](images/getting-started/configure-test-settings.png)
+![Test settings page with key sections](../../images/getting-started/configure-test-settings.png)
 *Test settings page with key sections*
 
 {% hint style="info" %}
@@ -61,7 +61,7 @@ Copy the test link from your dashboard and share it with candidates via:
 - **Your LMS** or classroom platform
 - **Any messaging tool**
 
-![Copying the test link from the dashboard](images/getting-started/copy-test-link.gif)
+![Copying the test link from the dashboard](../../images/getting-started/copy-test-link.gif)
 *Copying the test link from the dashboard*
 {% endstep %}
 {% step %}
@@ -73,7 +73,7 @@ Once candidates complete the test, go to your [dashboard](https://www.autoprocto
 - **Photos, recordings, and evidence**
 - **Quiz scores** (only if you used Socratease)
 
-![AutoProctor results page showing submission summary and candidate scores](images/getting-started/sample-results.png)
+![AutoProctor results page showing submission summary and candidate scores](../../images/getting-started/sample-results.png)
 *Sample results page showing submissions, trust scores, and quiz scores*
 
 For a detailed guide, see [Where Can I See My Quiz Results?](tests-results/results/how-to-see-results.md).

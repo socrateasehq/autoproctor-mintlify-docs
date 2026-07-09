@@ -39,7 +39,7 @@ Para questionários que não são do Socratease (Google Forms, Microsoft Forms, 
 1. **Botão Roxo de Envio** (inferior) — clique neste **primeiro** para salvar suas respostas no provedor de questionários
 2. **Botão Verde de Envio** (superior) — clique neste **segundo** para enviar a sessão cronometrada ao AutoProctor
 
-![Sequência de botões de envio para testes cronometrados mostrando roxo primeiro depois verde](images/taking-tests/submit-buttons-timed.gif)
+![Sequência de botões de envio para testes cronometrados mostrando roxo primeiro depois verde](../../images/taking-tests/submit-buttons-timed.gif)
 *Clique no botão roxo primeiro, depois no botão verde*
 
 {% hint style="warning" %}

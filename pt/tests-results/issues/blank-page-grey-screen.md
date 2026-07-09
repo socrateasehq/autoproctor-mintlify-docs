@@ -10,7 +10,7 @@ Se o seu teste exibe uma página em branco ou tela cinza em vez de carregar as p
 Quando um administrador de testes restringe o acesso a endereços de e-mail específicos, o Google Forms bloqueia qualquer pessoa conectada com uma conta diferente. O AutoProctor carrega o Google Form dentro de sua própria interface, então você vê uma tela em branco ou cinza em vez da mensagem de erro do próprio formulário.
 
 
-![Página em branco exibida quando a conta Google incorreta está ativa no AutoProctor](images/candidate-issues/blank-page-google-account.png)
+![Página em branco exibida quando a conta Google incorreta está ativa no AutoProctor](../../images/candidate-issues/blank-page-google-account.png)
 *Página em branco causada por estar conectado com a conta Google incorreta*
 
 ## Como Resolver

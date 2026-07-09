@@ -5,7 +5,7 @@ description: "Configure provedores de login, restrições de e-mail, integraçã
 
 As Configurações Avançadas permitem que você controle como os candidatos fazem login, quem pode acessar o teste e como os resultados são compartilhados. Essas opções estão localizadas na parte inferior da página de Configurações do Teste.
 
-![Painel de configurações avançadas](images/creating-tests/advanced-settings.png)
+![Painel de configurações avançadas](../../images/creating-tests/advanced-settings.png)
 *Painel de configurações avançadas*
 
 ## Provedores de Login

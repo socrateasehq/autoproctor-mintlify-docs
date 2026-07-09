@@ -5,7 +5,7 @@ description: "Saiba como a página de instruções pré-teste funciona, o que os
 
 Todo teste do AutoProctor começa com uma página de instruções que explica como a supervisão funciona, quais recursos estão ativos e o que os candidatos devem esperar. O conteúdo da página se adapta automaticamente com base na configuração do seu teste, e os candidatos também podem fazer um teste de demonstração a partir desta página para verificar a compatibilidade do dispositivo.
 
-![Página de instruções do AutoProctor exibida aos candidatos antes do início do teste](images/getting-started/instructions-page.png)
+![Página de instruções do AutoProctor exibida aos candidatos antes do início do teste](../../images/getting-started/instructions-page.png)
 *Página de instruções do AutoProctor exibida aos candidatos*
 
 ## Como a Página de Instruções Funciona
@@ -41,7 +41,7 @@ Salve as configurações do teste. Suas instruções personalizadas agora aparec
 {% endstep %}
 {% endstepper %}
 
-{% embed url="videos/getting-started/additional-instructions-settings.mp4" %}
+{% embed url="../../videos/getting-started/additional-instructions-settings.mp4" %}
 Campo de instruções adicionais nas Configurações Avançadas
 {% endembed %}
 
@@ -53,7 +53,7 @@ Adicionar instruções personalizadas requer uma assinatura do **plano Elite**. 
 
 Você pode usar o recurso **Gather Additional Details** nas Configurações Avançadas para coletar informações extras dos candidatos. Este formulário aparece na página de instruções e os candidatos devem preenchê-lo antes de iniciar o teste.
 
-{% embed url="videos/getting-started/gather-additional-details.mp4" %}
+{% embed url="../../videos/getting-started/gather-additional-details.mp4" %}
 Gather Additional Details nas Configurações Avançadas
 {% endembed %}
 

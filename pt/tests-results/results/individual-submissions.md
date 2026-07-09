@@ -16,7 +16,7 @@ Acesse o [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e 
 ### Clique em Ver nos Resultados
 Clique no botão **View** na seção **Results** do teste correspondente. Isso abre uma lista de todas as submissões dos candidatos.
 
-![Lista de submissões dos candidatos mostrando nomes, pontuações e status de correção](images/results/submissions-list.png)
+![Lista de submissões dos candidatos mostrando nomes, pontuações e status de correção](../../images/results/submissions-list.png)
 *Clique em View Answers para ver as respostas individuais*
 {% endstep %}
 {% step %}
@@ -30,7 +30,7 @@ Cada submissão mostra um de dois estados:
 
 Clicar em qualquer um dos links abre uma página detalhada mostrando todas as respostas, pontos obtidos e informações específicas do candidato.
 
-![Página de detalhes da submissão individual mostrando respostas e pontos obtidos do candidato](images/results/individual-submission-details.png)
+![Página de detalhes da submissão individual mostrando respostas e pontos obtidos do candidato](../../images/results/individual-submission-details.png)
 *Página de detalhes da submissão individual com respostas e pontuações*
 {% endstep %}
 {% endstepper %}

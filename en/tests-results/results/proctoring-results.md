@@ -16,7 +16,7 @@ Proctoring results are only generated when you enable proctoring in your [test s
 ### Open the results page
 Navigate to your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and click the **Results** button for the test you want to review.
 
-![Results button highlighted on the AutoProctor dashboard](images/results/results-button-dashboard.png)
+![Results button highlighted on the AutoProctor dashboard](../../images/results/results-button-dashboard.png)
 *Results button on the AutoProctor dashboard*
 {% endstep %}
 {% step %}
@@ -28,14 +28,14 @@ The results page displays a table listing all submissions. Each row includes:
 - Trust Score (indicating proctoring integrity)
 - Quiz score (for Socratease Quizzes only)
 
-![Results table showing candidate submissions with Trust Scores](images/results/results-table.png)
+![Results table showing candidate submissions with Trust Scores](../../images/results/results-table.png)
 *Results table*
 {% endstep %}
 {% step %}
 ### View the proctoring summary
 Click on a candidate's **Trust Score** to open their detailed proctoring summary. This page lists all violations detected during the test, including screenshots, timestamps, and evidence.
 
-![Proctoring summary page showing detected violations and evidence](images/results/proctoring-summary.png)
+![Proctoring summary page showing detected violations and evidence](../../images/results/proctoring-summary.png)
 *Proctoring summary page*
 {% endstep %}
 {% endstepper %}

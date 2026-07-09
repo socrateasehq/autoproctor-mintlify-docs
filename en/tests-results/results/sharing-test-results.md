@@ -9,7 +9,7 @@ You may need to share test results with other administrators, co-instructors, or
 
 When you share a Google Form with another user, they can gain access to the same AutoProctor test and its results.
 
-{% embed url="videos/settings/timer-proctor-on-gf.mp4" %}
+{% embed url="../../videos/settings/timer-proctor-on-gf.mp4" %}
 Opening the Timer + Proctor add-on on a shared Google Form
 {% endembed %}
 

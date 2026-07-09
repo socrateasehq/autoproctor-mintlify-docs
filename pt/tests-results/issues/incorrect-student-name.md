@@ -20,7 +20,7 @@ Se o nome na conta Google ou Microsoft estiver incorreto, com erro de digitaçã
 O AutoProctor obtém os nomes dos candidatos diretamente do perfil da conta. Se o nome estiver errado nos resultados, o candidato precisa atualizar seu perfil diretamente no AutoProctor.
 {% endhint %}
 
-![Nome incorreto do candidato mostrado na página de resultados do AutoProctor](images/candidate-issues/incorrect-student-name.png)
+![Nome incorreto do candidato mostrado na página de resultados do AutoProctor](../../images/candidate-issues/incorrect-student-name.png)
 *Exemplo de um nome incorreto de candidato exibido nos resultados do AutoProctor*
 
 ## Como Resolver

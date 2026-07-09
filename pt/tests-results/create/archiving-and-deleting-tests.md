@@ -9,7 +9,7 @@ Com o tempo, seu painel acumula testes de demonstração, exames concluídos e a
 
 Arquivar um teste oculta-o do seu painel principal, mantendo-o totalmente acessível em uma seção dedicada. Isso é útil para limpar testes concluídos ou de demonstração sem perder nenhum dado.
 
-{% embed url="videos/creating-tests/archive-test.mp4" %}
+{% embed url="../../videos/creating-tests/archive-test.mp4" %}
 Como arquivar um teste no AutoProctor
 {% endembed %}
 
@@ -32,7 +32,7 @@ Abra a seção **Archived Tests** na barra lateral esquerda para ver todos os se
 
 Você pode retornar um teste arquivado ao seu painel principal a qualquer momento.
 
-{% embed url="videos/creating-tests/restore-test.mp4" %}
+{% embed url="../../videos/creating-tests/restore-test.mp4" %}
 Como restaurar um teste arquivado no AutoProctor
 {% endembed %}
 
@@ -51,7 +51,7 @@ Encontre o teste que deseja restaurar e clique em **Restore**. O teste reaparece
 
 Você pode excluir permanentemente um teste a partir da seção **Archived Tests**. É necessário arquivar um teste antes de poder excluí-lo.
 
-{% embed url="videos/creating-tests/delete-test.mp4" %}
+{% embed url="../../videos/creating-tests/delete-test.mp4" %}
 Como excluir um teste no AutoProctor
 {% endembed %}
 

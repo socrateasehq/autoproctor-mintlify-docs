@@ -11,7 +11,7 @@ This feature is available only on the **Elite Plan** and works exclusively with 
 
 ## How to Set Up Unique Invitation Links
 
-{% embed url="videos/settings/unique-invitation-links.mp4" %}
+{% embed url="../../videos/settings/unique-invitation-links.mp4" %}
 How to set up unique invitation links in AutoProctor
 {% endembed %}
 

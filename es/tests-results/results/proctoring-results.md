@@ -16,7 +16,7 @@ Los resultados de supervisión solo se generan cuando la supervisión está habi
 ### Abra la página de resultados
 Navegue a su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y haga clic en el botón **Resultados** del examen que desea revisar.
 
-![Botón de resultados destacado en el panel de AutoProctor](images/results/results-button-dashboard.png)
+![Botón de resultados destacado en el panel de AutoProctor](../../images/results/results-button-dashboard.png)
 *Botón de resultados en el panel de AutoProctor*
 {% endstep %}
 {% step %}
@@ -28,14 +28,14 @@ La página de resultados muestra una tabla con todas las entregas. Cada fila inc
 - Trust Score (que indica la integridad de la supervisión)
 - Puntuación del cuestionario (solo para Socratease Quizzes)
 
-![Tabla de resultados que muestra las entregas de los candidatos con Trust Scores](images/results/results-table.png)
+![Tabla de resultados que muestra las entregas de los candidatos con Trust Scores](../../images/results/results-table.png)
 *Tabla de resultados*
 {% endstep %}
 {% step %}
 ### Vea el resumen de supervisión
 Haga clic en el **Trust Score** de un candidato para abrir su resumen detallado de supervisión. Esta página muestra todas las infracciones detectadas durante el examen, incluidas capturas de pantalla, marcas de tiempo y evidencia.
 
-![Página de resumen de supervisión que muestra las infracciones detectadas y la evidencia](images/results/proctoring-summary.png)
+![Página de resumen de supervisión que muestra las infracciones detectadas y la evidencia](../../images/results/proctoring-summary.png)
 *Página de resumen de supervisión*
 {% endstep %}
 {% endstepper %}

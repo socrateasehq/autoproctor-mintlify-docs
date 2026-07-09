@@ -41,7 +41,7 @@ También puede usar cualquier otra notación matemática estándar de LaTeX más
 
 ## Habilitar LaTeX
 
-{% embed url="videos/socratease/using-latex.mp4" %}
+{% embed url="../../videos/socratease/using-latex.mp4" %}
 Cómo habilitar y usar LaTeX en Socratease
 {% endembed %}
 

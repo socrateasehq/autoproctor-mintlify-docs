@@ -39,7 +39,7 @@ Candidates can view their attempted quizzes at [autoproctor.co/account/socrateas
 
 ## How to Set the Release Method
 
-{% embed url="videos/socratease/release-method.mp4" %}
+{% embed url="../../videos/socratease/release-method.mp4" %}
 How to set the result release method in Socratease
 {% endembed %}
 

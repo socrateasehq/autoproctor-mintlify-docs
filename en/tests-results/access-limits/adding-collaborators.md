@@ -11,7 +11,7 @@ Only **Premium** and **Elite** plan users can add collaborators. Collaborators m
 
 ## How to Add a Collaborator
 
-{% embed url="videos/creating-tests/collaborators.mp4" %}
+{% embed url="../../videos/creating-tests/collaborators.mp4" %}
 How to add a collaborator to your test
 {% endembed %}
 

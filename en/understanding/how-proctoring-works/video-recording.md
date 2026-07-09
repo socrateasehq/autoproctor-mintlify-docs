@@ -39,7 +39,7 @@ When AutoProctor detects a violation, it captures one or more of the following:
 - **Random photos** -- Periodic snapshots taken at random intervals throughout the exam
 - **Session recording** -- Records of mouse clicks and keyboard activity
 
-![Proctoring report displaying photos, screenshots, audio clips, and activity logs as violation evidence](images/getting-started/sample-proctoring-report.png)
+![Proctoring report displaying photos, screenshots, audio clips, and activity logs as violation evidence](../../images/getting-started/sample-proctoring-report.png)
 *A proctoring report showing different types of violation evidence*
 
 All of this evidence appears in the candidate's [proctoring report](tests-results/results/proctoring-results.md), organized by timestamp and violation type.

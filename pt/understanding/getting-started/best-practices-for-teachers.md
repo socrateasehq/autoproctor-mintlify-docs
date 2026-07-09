@@ -30,7 +30,7 @@ Certifique-se de que sua conta tem tentativas de teste suficientes disponíveis 
 
 Consulte [Pagamentos e Créditos](pricing-account/plans-credits/payments-and-credits.md) para verificar seu saldo e comprar mais se necessário.
 
-![Painel do AutoProctor mostrando a exibição de créditos e saldo da conta](images/getting-started/display-credits.gif)
+![Painel do AutoProctor mostrando a exibição de créditos e saldo da conta](../../images/getting-started/display-credits.gif)
 *Exibição de créditos da conta no painel do AutoProctor*
 {% endstep %}
 {% step %}

@@ -16,7 +16,7 @@ Visit your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) 
 ### Click View under Results
 Click the **View** button under the **Results** section of the relevant test. This opens a list of all candidate submissions.
 
-![List of candidate submissions showing names, scores, and grading status](images/results/submissions-list.png)
+![List of candidate submissions showing names, scores, and grading status](../../images/results/submissions-list.png)
 *Click on View Answers for individual responses*
 {% endstep %}
 {% step %}
@@ -30,7 +30,7 @@ Each submission shows one of two states:
 
 Clicking either link opens a detailed page showing all responses, points scored, and candidate-specific information.
 
-![Individual submission detail page showing candidate responses and points scored](images/results/individual-submission-details.png)
+![Individual submission detail page showing candidate responses and points scored](../../images/results/individual-submission-details.png)
 *Individual submission detail page with responses and scores*
 {% endstep %}
 {% endstepper %}

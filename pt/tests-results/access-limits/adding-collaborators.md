@@ -11,7 +11,7 @@ Apenas usuários dos planos **Premium** e **Elite** podem adicionar colaboradore
 
 ## Como Adicionar um Colaborador
 
-{% embed url="videos/creating-tests/collaborators.mp4" %}
+{% embed url="../../videos/creating-tests/collaborators.mp4" %}
 Como adicionar um colaborador ao seu teste
 {% endembed %}
 

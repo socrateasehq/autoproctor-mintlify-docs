@@ -9,7 +9,7 @@ Se você consegue ver o formulário do teste mas não consegue clicar nas pergun
 
 Quando um Google Form é restrito a endereços de e-mail específicos, ele carrega em modo somente leitura para contas não autorizadas. Você pode ver as perguntas mas não pode interagir com elas. Como o AutoProctor incorpora o Google Form dentro de sua interface, essa restrição aparece dentro da janela de teste do AutoProctor.
 
-![Google Form no AutoProctor que não pode ser clicado porque a conta Google incorreta está ativa](images/candidate-issues/cannot-click-form.png)
+![Google Form no AutoProctor que não pode ser clicado porque a conta Google incorreta está ativa](../../images/candidate-issues/cannot-click-form.png)
 *Formulário do teste carregado em modo somente leitura devido à conta Google incorreta*
 
 ## Como Resolver

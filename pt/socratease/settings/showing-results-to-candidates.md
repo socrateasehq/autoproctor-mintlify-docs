@@ -39,7 +39,7 @@ Os candidatos podem ver seus questionários realizados em [autoproctor.co/accoun
 
 ## Como Definir o Método de Liberação
 
-{% embed url="videos/socratease/release-method.mp4" %}
+{% embed url="../../videos/socratease/release-method.mp4" %}
 Como definir o método de liberação de resultados no Socratease
 {% endembed %}
 

@@ -11,28 +11,28 @@ Question Display Mode is a **Premium** feature. See [Payments and Credits](prici
 
 ## Display Modes
 
-![Question display mode settings panel showing the three available options](images/socratease/question-display-mode.png)
+![Question display mode settings panel showing the three available options](../../images/socratease/question-display-mode.png)
 *Question display mode setting in quiz settings*
 
 ### 1. All-at-once (Google Forms style)
 
 Candidates see all the questions at the same time, one below the other, like a Google Form. The timer applies to the **entire test**. Candidates can scroll freely between questions and answer them in any order.
 
-![Candidate view of all-at-once display mode showing all questions on one page](images/socratease/all-at-once.png)
+![Candidate view of all-at-once display mode showing all questions on one page](../../images/socratease/all-at-once.png)
 *All-at-once display mode*
 
 ### 2. One-by-one with navigation (Typeform style)
 
 Candidates see one question at a time and can navigate back and forth between questions. The timer applies to the **entire test**, not to individual questions. Candidates can revisit and change their answers at any point before submitting.
 
-![Candidate view of one-by-one with navigation display mode showing a single question with Next and Previous buttons](images/socratease/one-by-one-like-typeform.png)
+![Candidate view of one-by-one with navigation display mode showing a single question with Next and Previous buttons](../../images/socratease/one-by-one-like-typeform.png)
 *One-by-one with navigation*
 
 ### 3. One-by-one without navigation
 
 Candidates see one question at a time. Once they submit a question (by attempting or skipping it), they **cannot go back to it**. The timer is set **per question**, not for the entire test.
 
-![Candidate view of one-by-one without navigation display mode showing a single question with Submit and Skip buttons](images/socratease/one-by-one.png)
+![Candidate view of one-by-one without navigation display mode showing a single question with Submit and Skip buttons](../../images/socratease/one-by-one.png)
 *One-by-one without navigation*
 
 ## Key Differences
@@ -61,7 +61,7 @@ For more information on timer configuration, see [Timer Settings](tests-results/
 
 ## How to Set the Display Mode
 
-{% embed url="videos/socratease/question-display-mode.mp4" %}
+{% embed url="../../videos/socratease/question-display-mode.mp4" %}
 How to set the question display mode
 {% endembed %}
 

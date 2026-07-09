@@ -24,7 +24,7 @@ Asegúrese de que la función **Deshabilitar Autoguardado** esté **DESACTIVADA*
 
 
 
-![Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado desactivado, manteniendo el autoguardado activo](images/settings/gforms-autosave-enabled.png)
+![Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado desactivado, manteniendo el autoguardado activo](../../images/settings/gforms-autosave-enabled.png)
 {% endstep %}
 {% step %}
 ### Active la reanudación automática en AutoProctor
@@ -32,7 +32,7 @@ Active la configuración **Habilitar Reanudación Automática** en la configurac
 
 
 
-![Configuración del examen de AutoProctor mostrando Habilitar Reanudación Automática activado](images/settings/gforms-autoresume-enabled.png)
+![Configuración del examen de AutoProctor mostrando Habilitar Reanudación Automática activado](../../images/settings/gforms-autoresume-enabled.png)
 {% endstep %}
 {% endstepper %}
 
@@ -47,7 +47,7 @@ Active la función **Deshabilitar Autoguardado** en la configuración de su exam
 
 
 
-![Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado activado, deshabilitando el autoguardado](images/settings/gforms-autosave-disabled.png)
+![Configuración del examen de Google Forms mostrando Deshabilitar Autoguardado activado, deshabilitando el autoguardado](../../images/settings/gforms-autosave-disabled.png)
 {% endstep %}
 {% step %}
 ### Desactive la reanudación automática en AutoProctor
@@ -55,7 +55,7 @@ Desactive la opción **Habilitar Reanudación Automática** en la configuración
 
 
 
-![Configuración del examen de AutoProctor mostrando Habilitar Reanudación Automática desactivado](images/settings/gforms-autoresume-disabled.png)
+![Configuración del examen de AutoProctor mostrando Habilitar Reanudación Automática desactivado](../../images/settings/gforms-autoresume-disabled.png)
 {% endstep %}
 {% endstepper %}
 

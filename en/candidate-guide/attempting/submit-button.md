@@ -20,7 +20,7 @@ Click the **green submit button** at the top of the page to submit the proctorin
 {% endstep %}
 {% endstepper %}
 
-![Proctored test requiring candidates to click two separate submit buttons](images/taking-tests/submit-buttons-proctored.png)
+![Proctored test requiring candidates to click two separate submit buttons](../../images/taking-tests/submit-buttons-proctored.png)
 *Other platforms: dual submit buttons*
 
 {% hint style="warning" %}
@@ -31,7 +31,7 @@ If you do not submit the quiz answers **first** (purple button), all your answer
 
 Socratease quizzes use a **single submit button**. One click submits both your answers and the proctoring session -- no confusion, no risk of answer loss.
 
-![Socratease quiz showing a single Submit button at the bottom](images/taking-tests/soc-submit-button.png)
+![Socratease quiz showing a single Submit button at the bottom](../../images/taking-tests/soc-submit-button.png)
 *Socratease: single submit button*
 
 {% hint style="info" %}

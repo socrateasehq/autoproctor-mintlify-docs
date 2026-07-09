@@ -7,7 +7,7 @@ Es posible que necesite cerrar sesión en AutoProctor si desea cambiar a una cue
 
 ## Cómo Cerrar Sesión
 
-![Cómo cerrar sesión en AutoProctor](images/taking-tests/how-to-logout.gif)
+![Cómo cerrar sesión en AutoProctor](../../images/taking-tests/how-to-logout.gif)
 *Cómo cerrar sesión en AutoProctor*
 
 {% stepper %}

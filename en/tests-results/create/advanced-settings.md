@@ -5,7 +5,7 @@ description: "Configure login providers, email restrictions, Google Sheets integ
 
 Advanced Settings give you control over how candidates log in, who can access the test, and how results are shared. These options are found at the bottom of the Test Settings page.
 
-![Advanced settings configuration panel](images/creating-tests/advanced-settings.png)
+![Advanced settings configuration panel](../../images/creating-tests/advanced-settings.png)
 *Advanced settings configuration panel*
 
 ## Login Providers

@@ -7,7 +7,7 @@ The **Max Attempts** setting lets you control how many times each candidate can 
 
 ## How to Configure Maximum Attempts
 
-{% embed url="videos/settings/max-attempts-settings.mp4" %}
+{% embed url="../../videos/settings/max-attempts-settings.mp4" %}
 How to configure maximum attempts in AutoProctor
 {% endembed %}
 
@@ -29,7 +29,7 @@ Click **Create** or **Update** to apply the setting.
 When a candidate exceeds their allowed attempts, they see a restriction message and cannot proceed.
 
 
-![Restriction message shown to candidates](images/settings/max-attempts-blocked.png)
+![Restriction message shown to candidates](../../images/settings/max-attempts-blocked.png)
 *Restriction message shown to candidates*
 
 ## Recommended Configuration

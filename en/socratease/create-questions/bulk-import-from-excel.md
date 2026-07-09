@@ -11,7 +11,7 @@ Bulk Import is available to **Elite Plan** customers only. See [Elite Features](
 
 ## How to Import Questions
 
-{% embed url="videos/socratease/import-from-excel.mp4" %}
+{% embed url="../../videos/socratease/import-from-excel.mp4" %}
 How to import questions from Excel into Socratease
 {% endembed %}
 

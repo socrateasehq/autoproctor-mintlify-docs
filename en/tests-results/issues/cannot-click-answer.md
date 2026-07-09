@@ -9,7 +9,7 @@ If you can see the test form but cannot click on questions or select answers, yo
 
 When a Google Form is restricted to specific email addresses, it loads in a read-only preview mode for unauthorized accounts. You can see the questions but cannot interact with them. Since AutoProctor embeds the Google Form within its interface, this restriction appears inside the AutoProctor test window.
 
-![Google Form in AutoProctor that cannot be clicked because the wrong Google account is active](images/candidate-issues/cannot-click-form.png)
+![Google Form in AutoProctor that cannot be clicked because the wrong Google account is active](../../images/candidate-issues/cannot-click-form.png)
 *Test form loaded in read-only mode due to incorrect Google account*
 
 ## How to Fix It

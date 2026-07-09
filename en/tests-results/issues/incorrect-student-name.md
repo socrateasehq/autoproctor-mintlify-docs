@@ -20,7 +20,7 @@ If the name on their Google or Microsoft account is incorrect, misspelled, or us
 AutoProctor pulls candidate names directly from their account profile. If the name is wrong in results, the candidate needs to update their profile on AutoProctor directly.
 {% endhint %}
 
-![Incorrect candidate name shown in AutoProctor results page](images/candidate-issues/incorrect-student-name.png)
+![Incorrect candidate name shown in AutoProctor results page](../../images/candidate-issues/incorrect-student-name.png)
 *Example of an incorrect candidate name displayed in AutoProctor results*
 
 ## How to Fix It

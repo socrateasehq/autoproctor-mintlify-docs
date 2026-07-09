@@ -9,7 +9,7 @@ You must check the **Enable Proctor** checkbox in Main Settings for any of these
 
 ## Basic Proctoring Options
 
-![Proctoring settings panel](images/creating-tests/proctoring-settings.png)
+![Proctoring settings panel](../../images/creating-tests/proctoring-settings.png)
 *Proctoring settings panel*
 
 | Setting | What It Does |
@@ -43,7 +43,7 @@ These settings control how violation evidence is handled and whether candidates 
 | **Me after the Test** | Stores evidence (photos, audio, screenshots) for your review after the test ends. | **Keep enabled** — you need this to review violations. |
 | **User during the Test** | Notifies the candidate during the test when a violation is detected. | **Keep enabled** — helps candidates fix harmless issues like background noise. |
 
-![Communication settings panel](images/settings/communication-settings.png)
+![Communication settings panel](../../images/settings/communication-settings.png)
 *Communication settings panel*
 
 ## Related Resources

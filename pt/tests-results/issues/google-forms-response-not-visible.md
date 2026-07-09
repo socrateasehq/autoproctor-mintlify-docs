@@ -12,7 +12,7 @@ Os candidatos devem clicar em **dois botões de envio separados** para completar
 1. **Botão de envio roxo** (dentro do Google Form) -- envia as respostas para a seção de Respostas do Google Forms
 2. **Botão de envio verde** (no topo da página) -- envia a sessão de supervisão ou cronometrada para o AutoProctor
 
-![Botão de envio roxo do Google Forms e botão de envio verde do AutoProctor mostrados em um teste supervisionado](images/taking-tests/submit-buttons-proctored.png)
+![Botão de envio roxo do Google Forms e botão de envio verde do AutoProctor mostrados em um teste supervisionado](../../images/taking-tests/submit-buttons-proctored.png)
 *Os dois botões de envio: roxo para o Google Forms, verde para o AutoProctor*
 
 ### Se o Candidato Pular o Botão de Envio Verde

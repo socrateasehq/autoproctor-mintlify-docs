@@ -18,14 +18,14 @@ The exported spreadsheet contains a summary of all candidate results:
 | **Trust Score** | Proctoring integrity score (if proctoring is enabled) |
 | **Quiz score** | Candidate's score (for Socratease Quizzes only) |
 
-![Results table on the AutoProctor dashboard with export option](images/results/export-results-table.png)
+![Results table on the AutoProctor dashboard with export option](../../images/results/export-results-table.png)
 *Results table with Export to Excel button*
 
 You can view a [sample exported spreadsheet](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) to see the exact format.
 
 ## How to Export
 
-![GIF showing how to export results to Excel from the AutoProctor dashboard](images/results/export-results-to-excel.gif)
+![GIF showing how to export results to Excel from the AutoProctor dashboard](../../images/results/export-results-to-excel.gif)
 *Exporting results to Excel*
 
 {% stepper %}

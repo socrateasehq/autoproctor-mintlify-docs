@@ -11,7 +11,7 @@ O AutoProctor monitora a conectividade através de pings contínuos ao servidor 
 
 **Exemplo:** Se os pings falharam às 11:00:30, 11:00:35 e 11:00:40 mas foram retomados às 11:00:45, o relatório indicaria um período offline de aproximadamente 10 segundos, de 11:00:30 a 11:00:40.
 
-![Entrada de duração offline exibida em um relatório de supervisão do AutoProctor](images/candidate-issues/went-offline-report.png)
+![Entrada de duração offline exibida em um relatório de supervisão do AutoProctor](../../images/candidate-issues/went-offline-report.png)
 *Entrada de desconexão mostrada em um relatório de supervisão*
 
 ## Perguntas Frequentes

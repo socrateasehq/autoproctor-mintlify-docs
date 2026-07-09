@@ -11,7 +11,7 @@ The times you set are in your local timezone. AutoProctor handles all timezone c
 
 ## How to Configure Timer Settings
 
-{% embed url="videos/settings/config-timer-settings.mp4" %}
+{% embed url="../../videos/settings/config-timer-settings.mp4" %}
 How to configure timer settings in AutoProctor
 {% endembed %}
 

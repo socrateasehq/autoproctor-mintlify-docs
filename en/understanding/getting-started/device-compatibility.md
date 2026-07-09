@@ -41,12 +41,12 @@ When prompted, allow your browser to access the camera and microphone. You will 
 
 <div style={{display: "flex", flexDirection: "column", gap: "16px", alignItems: "center"}}>
   <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
-    ![Browser permission prompt requesting microphone access for autoproctor.co](images/getting-started/audio-permission.png)
+    ![Browser permission prompt requesting microphone access for autoproctor.co](../../images/getting-started/audio-permission.png)
 *Microphone permission prompt*
-    ![Browser permission prompt requesting camera access for autoproctor.co](images/getting-started/video-permission.png)
+    ![Browser permission prompt requesting camera access for autoproctor.co](../../images/getting-started/video-permission.png)
 *Camera permission prompt*
   </div>
-  ![Browser prompt to share entire screen with autoproctor.co](images/getting-started/screen-share-permission.png)
+  ![Browser prompt to share entire screen with autoproctor.co](../../images/getting-started/screen-share-permission.png)
 *Screen share permission prompt*
 </div>
 {% endstep %}

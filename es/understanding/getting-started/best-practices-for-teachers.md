@@ -30,7 +30,7 @@ Asegúrese de que su cuenta tenga suficientes intentos de examen disponibles ant
 
 Consulte [Pagos y Créditos](pricing-account/plans-credits/payments-and-credits.md) para verificar su saldo y comprar más si es necesario.
 
-![Panel de AutoProctor mostrando la visualización de créditos y saldo de la cuenta](images/getting-started/display-credits.gif)
+![Panel de AutoProctor mostrando la visualización de créditos y saldo de la cuenta](../../images/getting-started/display-credits.gif)
 *Visualización de créditos de la cuenta en el panel de AutoProctor*
 {% endstep %}
 {% step %}

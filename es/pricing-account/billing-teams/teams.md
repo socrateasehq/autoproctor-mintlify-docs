@@ -29,7 +29,7 @@ Una vez creado el equipo, haga clic en el enlace **Team** en la barra lateral pa
 - Una lista de **todos los miembros del equipo**
 - Una etiqueta **"Admin"** junto a cada administrador del equipo
 
-![Página de administración del equipo mostrando la lista de miembros y el enlace de invitación](images/pricing/team-management-page.png)
+![Página de administración del equipo mostrando la lista de miembros y el enlace de invitación](../../images/pricing/team-management-page.png)
 *Página de administración del equipo*
 
 ## Rol de Administrador del Equipo
@@ -54,7 +54,7 @@ Los miembros regulares del equipo no pueden acceder a la información de factura
 
 ### Crear un Equipo
 
-{% embed url="videos/pricing/create-team.mp4" %}
+{% embed url="../../videos/pricing/create-team.mp4" %}
 Cómo crear un equipo
 {% endembed %}
 
@@ -76,7 +76,7 @@ Siga las indicaciones para configurar su equipo. Una vez creado, recibirá un en
 ### Obtenga el enlace de invitación
 Solicite a un administrador del equipo el enlace de invitación del equipo.
 
-![Enlace de invitación en la página de administración del equipo](images/pricing/join-team.png)
+![Enlace de invitación en la página de administración del equipo](../../images/pricing/join-team.png)
 *Enlace de invitación en la página de administración del equipo*
 {% endstep %}
 {% step %}

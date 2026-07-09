@@ -6,7 +6,7 @@ description: "Configure detecção de troca de aba, monitoramento por câmera, g
 As Configurações de Supervisão controlam o que o AutoProctor monitora durante um teste — desde a troca de aba e detecção por câmera até o modo de tela cheia obrigatório e captura aleatória de fotos. Essas configurações determinam o quão rigorosamente os candidatos são supervisionados.
 
 
-![Painel de configurações de supervisão](images/creating-tests/proctoring-settings.png)
+![Painel de configurações de supervisão](../../images/creating-tests/proctoring-settings.png)
 *Painel de configurações de supervisão*
 
 {% hint style="info" %}
@@ -36,7 +36,7 @@ A opção **Customize Message** é um recurso Premium.
 
 A supervisão avançada adiciona medidas anti-fraude avançadas. Cada recurso de supervisão avançada requer **4 créditos adicionais por tentativa**.
 
-![Painel de supervisão avançada](images/creating-tests/enhanced-proctoring.png)
+![Painel de supervisão avançada](../../images/creating-tests/enhanced-proctoring.png)
 *Painel de supervisão avançada*
 
 | Recurso | O Que Faz | Créditos |
@@ -54,7 +54,7 @@ Essas configurações controlam como as evidências de infrações são tratadas
 - **Me after the Test** — Armazena evidências (fotos, áudio, capturas de tela) para revisão posterior. Mantenha isso ativado, a menos que você tenha um motivo específico para desativar.
 - **User during the Test** — Notifica o candidato durante o teste quando uma infração é detectada. Isso ajuda os candidatos a corrigir problemas inofensivos (como música de fundo acionando uma infração de ruído).
 
-![Painel de configurações de comunicação](images/settings/communication-settings.png)
+![Painel de configurações de comunicação](../../images/settings/communication-settings.png)
 *Painel de configurações de comunicação*
 
 {% hint style="info" %}

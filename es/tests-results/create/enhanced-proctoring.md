@@ -5,7 +5,7 @@ description: "Configure la verificación de documento de identidad, la detecció
 
 La Supervisión Avanzada agrega funciones avanzadas de verificación de identidad y monitoreo más allá de la supervisión estándar. Estas funciones ayudan a prevenir la suplantación de identidad, detectar herramientas de IA y crear un registro completo de cada intento de examen.
 
-![Panel de configuración de supervisión avanzada](images/creating-tests/enhanced-proctoring.png)
+![Panel de configuración de supervisión avanzada](../../images/creating-tests/enhanced-proctoring.png)
 
 {% hint style="info" %}
 Cada función de supervisión avanzada requiere **4 créditos adicionales por intento**. Si activa múltiples funciones avanzadas, el costo de créditos es acumulativo. Por ejemplo, activar Verificación de Documento de Identidad y Grabación de Sesión cuesta 8 créditos adicionales por intento de candidato.
@@ -32,7 +32,7 @@ El sistema compara la foto y el nombre en el documento de identidad con la Foto 
 {% endstep %}
 {% endstepper %}
 
-![Pantalla de verificación de identidad antes de iniciar el examen](images/taking-tests/id-verification.png)
+![Pantalla de verificación de identidad antes de iniciar el examen](../../images/taking-tests/id-verification.png)
 *Pantalla de verificación de identidad antes de iniciar el examen*
 
 {% hint style="info" %}
@@ -43,7 +43,7 @@ La **Foto Antes del Inicio del Examen** debe estar activada en la configuración
 
 La Detección de Suplantación monitorea si alguien diferente al candidato original intenta o continúa el examen. AutoProctor compara las fotos periódicas tomadas durante el examen con la foto inicial para detectar cambios de rostro.
 
-![Evidencia de suplantación en el informe](images/taking-tests/impersonation-detected.png)
+![Evidencia de suplantación en el informe](../../images/taking-tests/impersonation-detected.png)
 *Evidencia de suplantación en el informe*
 
 ### Dispositivo Auxiliar (Supervisión de 360°)
@@ -59,7 +59,7 @@ Active la opción **Dispositivo Auxiliar** en la configuración de Supervisión 
 ### El candidato empareja su teléfono
 Cuando comienza el examen, el candidato escanea un código QR en la pantalla de su computadora portátil usando la cámara de su teléfono. Esto empareja los dos dispositivos.
 
-![Pantalla de emparejamiento del dispositivo auxiliar antes de iniciar el examen](images/taking-tests/aux-device.png)
+![Pantalla de emparejamiento del dispositivo auxiliar antes de iniciar el examen](../../images/taking-tests/aux-device.png)
 *Pantalla de emparejamiento del dispositivo auxiliar antes de iniciar el examen*
 {% endstep %}
 {% step %}
@@ -68,7 +68,7 @@ La cámara del teléfono captura el escritorio, el entorno y la pantalla del can
 {% endstep %}
 {% endstepper %}
 
-![Capturas de evidencia del dispositivo auxiliar](images/taking-tests/aux-device-evidence.png)
+![Capturas de evidencia del dispositivo auxiliar](../../images/taking-tests/aux-device-evidence.png)
 *Capturas de evidencia del dispositivo auxiliar*
 
 ### Grabación de Sesión

@@ -39,7 +39,7 @@ For non-Socratease quizzes (Google Forms, Microsoft Forms, etc.), there are **tw
 1. **Purple Submit Button** (bottom) -- click this **first** to save your answers to the quiz provider
 2. **Green Submit Button** (top) -- click this **second** to submit the timed session to AutoProctor
 
-![Submit button sequence for timed tests showing purple first then green](images/taking-tests/submit-buttons-timed.gif)
+![Submit button sequence for timed tests showing purple first then green](../../images/taking-tests/submit-buttons-timed.gif)
 *Click the purple button first, then the green button*
 
 {% hint style="warning" %}

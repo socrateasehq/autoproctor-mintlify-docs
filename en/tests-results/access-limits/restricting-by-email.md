@@ -35,7 +35,7 @@ Click **Create** or **Update** to apply the restrictions.
 You can restrict access to candidates whose email addresses end with specific domains. For example, entering `@abc.com` and `@xyz.com` allows only candidates with those email domains to take the test.
 
 
-![Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com entered](images/settings/login-restrictions-domain.png)
+![Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com entered](../../images/settings/login-restrictions-domain.png)
 
 ## Specific Email Restrictions
 
@@ -44,7 +44,7 @@ You can also permit individual email addresses alongside domain restrictions. Th
 For example, you can allow all users whose email ends with `@abc.com` plus specific individual email addresses like `guest@gmail.com`.
 
 
-![Login Restrictions field showing a combination of domain and individual email restrictions](images/settings/login-restrictions-email.png)
+![Login Restrictions field showing a combination of domain and individual email restrictions](../../images/settings/login-restrictions-email.png)
 
 {% hint style="info" %}
 Email restrictions work in conjunction with the candidate's [login method](candidate-guide/attempting/candidate-login-methods.md). The candidate must sign in with an email address that matches one of the allowed domains or addresses you specified.

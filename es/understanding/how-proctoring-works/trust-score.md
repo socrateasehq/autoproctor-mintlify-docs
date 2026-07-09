@@ -5,7 +5,7 @@ description: "Comprenda cómo funciona el Puntaje de Confianza de AutoProctor, c
 
 AutoProctor asigna un Puntaje de Confianza (0--100%) a cada informe de supervisión. El puntaje le brinda un resumen rápido de qué tan probable es que un candidato haya mantenido la integridad del examen, para que pueda enfocar su tiempo de revisión en los intentos que más lo necesitan.
 
-![Visualización del Puntaje de Confianza mostrando un porcentaje en la parte superior de un informe de supervisión de AutoProctor](images/getting-started/trustscore.png)
+![Visualización del Puntaje de Confianza mostrando un porcentaje en la parte superior de un informe de supervisión de AutoProctor](../../images/getting-started/trustscore.png)
 
 Un Puntaje de Confianza más bajo significa que AutoProctor detectó más comportamiento sospechoso durante el examen.
 
@@ -49,7 +49,7 @@ Vaya a su [panel de control de AutoProctor](https://www.autoproctor.co/test-admi
 ### Identifique candidatos para revisión
 Ordene por Puntaje de Confianza y concéntrese en los candidatos con puntuación **inferior al 85%**. Estos intentos son los más propensos a contener infracciones que vale la pena revisar.
 
-{% embed url="videos/getting-started/trustscore-column.mp4" %}
+{% embed url="../../videos/getting-started/trustscore-column.mp4" %}
 Lista de resultados mostrando la columna de Puntaje de Confianza
 {% endembed %}
 {% endstep %}

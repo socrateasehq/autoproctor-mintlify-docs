@@ -69,7 +69,7 @@ For more details, see [Using LaTeX for Math Equations](socratease/settings/latex
 
 ## How to Access Quiz Settings
 
-{% embed url="videos/socratease/soc-quiz-settings.mp4" %}
+{% embed url="../../videos/socratease/soc-quiz-settings.mp4" %}
 How to access and configure Socratease quiz settings
 {% endembed %}
 

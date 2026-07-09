@@ -30,7 +30,7 @@ Ensure your account has enough test attempts available before the exam. If candi
 
 See [Payments and Credits](pricing-account/plans-credits/payments-and-credits.md) to check your balance and purchase more if needed.
 
-![AutoProctor dashboard showing the account credits and balance display](images/getting-started/display-credits.gif)
+![AutoProctor dashboard showing the account credits and balance display](../../images/getting-started/display-credits.gif)
 *Account credits display on the AutoProctor dashboard*
 {% endstep %}
 {% step %}

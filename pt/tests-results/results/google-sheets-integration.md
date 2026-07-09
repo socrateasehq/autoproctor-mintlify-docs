@@ -11,7 +11,7 @@ Esta é uma **Funcionalidade Premium** e requer uma assinatura Premium ou Elite.
 
 ## Instruções de Configuração
 
-![GIF mostrando como configurar a integração com Google Sheets no AutoProctor](images/settings/write-to-gsheet.gif)
+![GIF mostrando como configurar a integração com Google Sheets no AutoProctor](../../images/settings/write-to-gsheet.gif)
 *Configurando a integração com Google Sheets*
 
 {% stepper %}

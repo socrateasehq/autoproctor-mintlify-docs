@@ -31,7 +31,7 @@ Busque y active o desactive la opción **Habilitar Reanudación Automática**.
 
 
 
-![Opción de Habilitar Reanudación Automática en la configuración del examen de AutoProctor](images/settings/enable-auto-resume.png)
+![Opción de Habilitar Reanudación Automática en la configuración del examen de AutoProctor](../../images/settings/enable-auto-resume.png)
 {% endstep %}
 {% endstepper %}
 

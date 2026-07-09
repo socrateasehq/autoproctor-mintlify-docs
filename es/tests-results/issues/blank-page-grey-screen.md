@@ -10,7 +10,7 @@ Si su examen muestra una página en blanco o una pantalla gris en lugar de carga
 Cuando un administrador de exámenes restringe el acceso a direcciones de correo electrónico específicas, Google Forms bloquea a cualquier persona que haya iniciado sesión con una cuenta diferente. AutoProctor carga el formulario de Google Forms dentro de su propia interfaz, por lo que usted ve una pantalla en blanco o gris en lugar del mensaje de error del propio formulario.
 
 
-![Página en blanco mostrada cuando la cuenta de Google incorrecta está activa en AutoProctor](images/candidate-issues/blank-page-google-account.png)
+![Página en blanco mostrada cuando la cuenta de Google incorrecta está activa en AutoProctor](../../images/candidate-issues/blank-page-google-account.png)
 *Página en blanco causada por haber iniciado sesión con la cuenta de Google incorrecta*
 
 ## Cómo Solucionarlo

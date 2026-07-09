@@ -13,7 +13,7 @@ Por exemplo, com 10 créditos você pode ter 10 candidatos realizando 1 teste ca
 
 ## Adquirir uma Assinatura
 
-{% embed url="videos/pricing/subscribe.mp4" %}
+{% embed url="../../videos/pricing/subscribe.mp4" %}
 Como adquirir uma assinatura
 {% endembed %}
 
@@ -41,7 +41,7 @@ Quando você adquire uma assinatura, recebe uma quantidade determinada de crédi
 
 ## Recarregar Sua Assinatura
 
-![GIF mostrando como comprar um Pacote de Testes de recarga no AutoProctor](images/pricing/topup.gif)
+![GIF mostrando como comprar um Pacote de Testes de recarga no AutoProctor](../../images/pricing/topup.gif)
 *Como adicionar créditos*
 
 Se você precisar de mais créditos do que seu plano oferece em um determinado ciclo de cobrança, pode adquirir **Pacotes de Testes**. Cada Pacote de Testes contém uma quantidade fixa de créditos, e você pode comprar quantos forem necessários.

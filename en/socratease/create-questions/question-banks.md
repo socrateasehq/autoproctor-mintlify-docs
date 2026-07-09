@@ -14,7 +14,7 @@ Question Banks are an **Elite** plan feature. You need an Elite subscription to 
 A Question Bank (QB) is a collection of questions organized by subject or topic. Each question in the bank can have a different point value and difficulty level. When candidates take a test, they receive a randomly selected subset from the bank rather than the full set of questions.
 
 
-![Question Bank overview showing a list of questions organized by topic and difficulty](images/socratease/question-bank-overview.png)
+![Question Bank overview showing a list of questions organized by topic and difficulty](../../images/socratease/question-bank-overview.png)
 
 ### Example: Physics and Chemistry Tests
 
@@ -37,7 +37,7 @@ Each candidate receives a different random subset of questions from the respecti
 Candidates cannot attempt a Question Bank directly. You must create a Question Bank Quiz and add it to an AutoProctor test for candidates to take.
 {% endhint %}
 
-![Question Bank Quiz overview showing created QBQs with response counts](images/socratease/question-bank-quiz-overview.png)
+![Question Bank Quiz overview showing created QBQs with response counts](../../images/socratease/question-bank-quiz-overview.png)
 *Question Bank Quiz overview showing created QBQs*
 
 A Question Bank Quiz specifies:
@@ -50,7 +50,7 @@ You can combine multiple Question Banks in a single QBQ, or use one bank to supp
 
 ## How to Create a Question Bank Quiz
 
-{% embed url="videos/socratease/add-qbq.mp4" %}
+{% embed url="../../videos/socratease/add-qbq.mp4" %}
 How to create a Question Bank Quiz
 {% endembed %}
 

@@ -18,14 +18,14 @@ La hoja de cálculo exportada contiene un resumen de todos los resultados de los
 | **Trust Score** | Puntuación de integridad de supervisión (si la supervisión está habilitada) |
 | **Puntuación del cuestionario** | Puntuación del candidato (solo para Socratease Quizzes) |
 
-![Tabla de resultados en el panel de AutoProctor con la opción de exportación](images/results/export-results-table.png)
+![Tabla de resultados en el panel de AutoProctor con la opción de exportación](../../images/results/export-results-table.png)
 *Tabla de resultados con botón Export to Excel*
 
 Puede consultar una [hoja de cálculo de ejemplo exportada](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) para ver el formato exacto.
 
 ## Cómo Exportar
 
-![GIF mostrando cómo exportar resultados a Excel desde el panel de AutoProctor](images/results/export-results-to-excel.gif)
+![GIF mostrando cómo exportar resultados a Excel desde el panel de AutoProctor](../../images/results/export-results-to-excel.gif)
 *Exportando resultados a Excel*
 
 {% stepper %}

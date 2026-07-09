@@ -9,7 +9,7 @@ Pode ser necessário compartilhar os resultados dos testes com outros administra
 
 Quando você compartilha um Google Form com outro usuário, ele pode ter acesso ao mesmo teste do AutoProctor e seus resultados.
 
-{% embed url="videos/settings/timer-proctor-on-gf.mp4" %}
+{% embed url="../../videos/settings/timer-proctor-on-gf.mp4" %}
 Abrindo o complemento Timer + Proctor em um Google Form compartilhado
 {% endembed %}
 

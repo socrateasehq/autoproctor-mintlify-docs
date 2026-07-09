@@ -9,7 +9,7 @@ Over time, your dashboard accumulates demo tests, completed exams, and outdated 
 
 Archiving a test hides it from your main dashboard while keeping it fully accessible in a dedicated section. This is useful for clearing out completed or demo tests without losing any data.
 
-{% embed url="videos/creating-tests/archive-test.mp4" %}
+{% embed url="../../videos/creating-tests/archive-test.mp4" %}
 How to archive a test in AutoProctor
 {% endembed %}
 
@@ -32,7 +32,7 @@ Open the **Archived Tests** section in the left sidebar to view all your archive
 
 You can return an archived test to your main dashboard at any time.
 
-{% embed url="videos/creating-tests/restore-test.mp4" %}
+{% embed url="../../videos/creating-tests/restore-test.mp4" %}
 How to restore an archived test in AutoProctor
 {% endembed %}
 
@@ -51,7 +51,7 @@ Find the test you want to restore and click **Restore**. The test reappears on y
 
 You can permanently delete a test from the **Archived Tests** section. You must archive a test before you can delete it.
 
-{% embed url="videos/creating-tests/delete-test.mp4" %}
+{% embed url="../../videos/creating-tests/delete-test.mp4" %}
 How to delete a test in AutoProctor
 {% endembed %}
 

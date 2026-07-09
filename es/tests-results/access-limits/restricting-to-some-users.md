@@ -43,7 +43,7 @@ Haga clic en **Crear** o **Actualizar** para aplicar las restricciones.
 {% endstep %}
 {% endstepper %}
 
-![Campo de Restricciones de Inicio de Sesión con restricciones de dominio y correo electrónico](images/settings/login-restrictions-email.png)
+![Campo de Restricciones de Inicio de Sesión con restricciones de dominio y correo electrónico](../../images/settings/login-restrictions-email.png)
 *Campo de Restricciones de Inicio de Sesión con restricciones de dominio y correo electrónico*
 
 Consulte [Restringir el Acceso al Examen por Dirección de Correo Electrónico](tests-results/access-limits/restricting-by-email.md) para instrucciones completas de configuración y ejemplos.
@@ -52,7 +52,7 @@ Consulte [Restringir el Acceso al Examen por Dirección de Correo Electrónico](
 
 Genere URLs únicas por candidato vinculadas a direcciones de correo electrónico específicas. Cada candidato recibe su propio enlace con verificación de correo electrónico, de modo que solo el destinatario previsto puede usarlo.
 
-{% embed url="videos/settings/unique-invitation-links.mp4" %}
+{% embed url="../../videos/settings/unique-invitation-links.mp4" %}
 Configuración de enlaces de invitación únicos
 {% endembed %}
 
@@ -98,7 +98,7 @@ En Google Forms, haga clic en el icono de engranaje de **Configuración**.
 ### Restrinja a su organización
 Active la opción para restringir las respuestas a los usuarios de su organización. Esto limita el acceso a candidatos con direcciones de correo electrónico bajo su dominio de Google Workspace.
 
-![Configuración de restricción de acceso de Google Forms](images/settings/google-form-restriction.png)
+![Configuración de restricción de acceso de Google Forms](../../images/settings/google-form-restriction.png)
 *Configuración de restricción de acceso de Google Forms*
 {% endstep %}
 {% endstepper %}

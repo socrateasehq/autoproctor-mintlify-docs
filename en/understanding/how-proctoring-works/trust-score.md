@@ -5,7 +5,7 @@ description: "Understand how AutoProctor's Trust Score works, how it is calculat
 
 AutoProctor assigns a Trust Score (0--100%) to every proctoring report. The score gives you a quick summary of how likely it is that a candidate maintained test integrity, so you can focus your review time on the attempts that need it most.
 
-![Trust Score display showing a percentage at the top of an AutoProctor proctoring report](images/getting-started/trustscore.png)
+![Trust Score display showing a percentage at the top of an AutoProctor proctoring report](../../images/getting-started/trustscore.png)
 *Trust Score displayed at the top of a proctoring report*
 
 A lower Trust Score means AutoProctor detected more suspicious behavior during the test.
@@ -50,7 +50,7 @@ Go to your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/),
 ### Identify candidates for review
 Sort by Trust Score and focus on candidates scoring **below 85%**. These attempts are the most likely to contain violations worth reviewing.
 
-{% embed url="videos/getting-started/trustscore-column.mp4" %}
+{% embed url="../../videos/getting-started/trustscore-column.mp4" %}
 Results list showing the Trust Score column
 {% endembed %}
 {% endstep %}

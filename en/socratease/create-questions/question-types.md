@@ -19,25 +19,25 @@ Not all question types are available on every plan. See [Question Type Availabil
 
 A question with only one correct answer. Candidates select a single option from the available choices.
 
-![MCQ question type showing a single-answer multiple choice question with radio buttons](images/socratease/mcq.png)
+![MCQ question type showing a single-answer multiple choice question with radio buttons](../../images/socratease/mcq.png)
 
 ### 2. MCA (Multiple Correct Answers)
 
 A question with multiple correct answers. Candidates can select more than one option using checkboxes.
 
-![MCA question type showing a multiple correct answers question with checkboxes](images/socratease/mca.png)
+![MCA question type showing a multiple correct answers question with checkboxes](../../images/socratease/mca.png)
 
 ### 3. Short Text
 
 An essay-type question where you can set minimum and maximum character length for the response. Use this for open-ended answers that require more than a single line.
 
-![Short text question type showing a multi-line text area with character limits](images/socratease/short-text.png)
+![Short text question type showing a multi-line text area with character limits](../../images/socratease/short-text.png)
 
 ### 4. Single-line Input
 
 A compact text input field for shorter answers. You can set validations to accept only specific formats like emails, numbers, or dates.
 
-![Single-line input question type showing a text field with validation options](images/socratease/single-line-input.png)
+![Single-line input question type showing a text field with validation options](../../images/socratease/single-line-input.png)
 
 ## Available on Premium and Elite Plans
 
@@ -49,37 +49,37 @@ The following question types require a **Premium** or **Elite** plan. See [Quest
 
 Candidates write code with syntax highlighting and autocomplete. You choose the programming language. The code cannot be executed -- this question type evaluates the candidate's ability to write code, not to run it.
 
-![Coding editor question type showing a code editor with syntax highlighting](images/socratease/coding-editor.png)
+![Coding editor question type showing a code editor with syntax highlighting](../../images/socratease/coding-editor.png)
 
 ### 6. Cloze (Fill-in-the-Blanks)
 
 A fill-in-the-blank format where candidates see the available options (including wrong ones) and drag and drop them into the correct blanks within the text.
 
-![Cloze question type showing fill-in-the-blank with drag-and-drop options](images/socratease/cloze.png)
+![Cloze question type showing fill-in-the-blank with drag-and-drop options](../../images/socratease/cloze.png)
 
 ### 7. Match
 
 A matching exercise where candidates drag and drop items to align related pairs across two columns.
 
-![Match question type showing two columns with drag-and-drop matching](images/socratease/match.png)
+![Match question type showing two columns with drag-and-drop matching](../../images/socratease/match.png)
 
 ### 8. Categorize
 
 Candidates classify a set of items into the correct buckets or categories by dragging and dropping them.
 
-![Categorize question type showing items being sorted into category buckets](images/socratease/categorize.png)
+![Categorize question type showing items being sorted into category buckets](../../images/socratease/categorize.png)
 
 ### 9. Comprehension
 
 A nested question format where you write a passage of text and ask multiple questions based on that passage. All sub-questions appear alongside the comprehension text.
 
-![Comprehension question type showing a text passage with nested sub-questions](images/socratease/comprehension.png)
+![Comprehension question type showing a text passage with nested sub-questions](../../images/socratease/comprehension.png)
 
 ### 10. Document
 
 Upload a PDF document and ask multiple questions based on its content. Candidates view the document alongside the questions.
 
-![Document question type showing a PDF viewer with associated questions](images/socratease/document.png)
+![Document question type showing a PDF viewer with associated questions](../../images/socratease/document.png)
 
 ## Available on Elite Plan Only
 
@@ -91,19 +91,19 @@ The following question types are exclusive to the **Elite** plan. See [Elite Fea
 
 You create a set of questions (for example, 5) and let candidates choose a subset to answer (for example, any 3 out of the 5). This gives candidates flexibility while maintaining assessment rigor.
 
-![Answer Any question type showing a set of questions with selection flexibility](images/socratease/answer-any.png)
+![Answer Any question type showing a set of questions with selection flexibility](../../images/socratease/answer-any.png)
 
 ### 12. Voice Input
 
 You type a piece of text and candidates record themselves speaking that text. This is useful for language assessments, pronunciation evaluations, and oral communication testing.
 
-![Voice input question type showing a text prompt with audio recording controls](images/socratease/voice-input.png)
+![Voice input question type showing a text prompt with audio recording controls](../../images/socratease/voice-input.png)
 
 ### 13. Autograded Text
 
 You type the question text and the expected answer. The candidate's response is automatically marked as correct if it matches the expected answer exactly. This enables instant grading without manual review.
 
-![Autograded text question type showing a text input with automatic answer matching](images/socratease/autograded-text.png)
+![Autograded text question type showing a text input with automatic answer matching](../../images/socratease/autograded-text.png)
 
 ## Related Resources
 

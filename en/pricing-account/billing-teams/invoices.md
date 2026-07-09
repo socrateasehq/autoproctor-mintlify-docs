@@ -46,7 +46,7 @@ You can learn more about the Billing section in the [Editing Billing Information
 Below is an example of what an AutoProctor invoice looks like:
 
 
-![Sample AutoProctor invoice showing billing details, line items, and total amount](images/pricing/sample-invoice.png)
+![Sample AutoProctor invoice showing billing details, line items, and total amount](../../images/pricing/sample-invoice.png)
 
 ## Frequently Asked Questions
 

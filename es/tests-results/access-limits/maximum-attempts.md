@@ -7,7 +7,7 @@ La configuración de **Intentos Máximos** le permite controlar cuántas veces c
 
 ## Cómo Configurar los Intentos Máximos
 
-{% embed url="videos/settings/max-attempts-settings.mp4" %}
+{% embed url="../../videos/settings/max-attempts-settings.mp4" %}
 Cómo configurar los intentos máximos en AutoProctor
 {% endembed %}
 
@@ -29,7 +29,7 @@ Haga clic en **Crear** o **Actualizar** para aplicar la configuración.
 Cuando un candidato excede el número de intentos permitidos, verá un mensaje de restricción y no podrá continuar.
 
 
-![Restriction message shown to candidates](images/settings/max-attempts-blocked.png)
+![Restriction message shown to candidates](../../images/settings/max-attempts-blocked.png)
 *Restriction message shown to candidates*
 
 ## Configuración Recomendada
