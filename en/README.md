@@ -1,7 +1,8 @@
 ---
-title: "AutoProctor Help Center"
-description: "Guides for test setup, proctoring, results, and troubleshooting."
+description: Guides for test setup, proctoring, results, and troubleshooting.
 ---
+
+# AutoProctor Help Center
 
 ## Most Popular
 
