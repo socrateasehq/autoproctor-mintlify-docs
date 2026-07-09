@@ -1,0 +1,39 @@
+---
+title: "AutoProctor Add-On Error"
+description: "Fix the issue where the AutoProctor Google Forms add-on only shows 'Help' instead of 'Settings' or 'Results'."
+---
+
+If the AutoProctor Google Forms add-on displays only a **"Help"** option instead of the expected **"Settings"** or **"Results"** options, you are experiencing a known Google Add-On issue. This happens frequently with Google Workspace add-ons and can usually be resolved by updating Chrome or clearing cached permissions.
+
+
+## How to Fix It
+
+{% stepper %}
+{% step %}
+### Update Google Chrome
+Install the latest version of [Google Chrome](https://www.google.com/intl/en_in/chrome/) to ensure compatibility with Google Workspace add-ons.
+{% endstep %}
+{% step %}
+### Open in Incognito Mode
+Open the Google Form in an **Incognito window** (press `Ctrl+Shift+N` on Windows or `Cmd+Shift+N` on Mac). Incognito mode clears cached permissions that often cause this issue.
+
+
+{% endstep %}
+{% step %}
+### Reinstall the Add-On (If Needed)
+If the issue persists, uninstall and reinstall the [AutoProctor add-on](https://workspace.google.com/marketplace/app/timer_+_proctor_google_forms_autoproctor/691377974459) from the Google Workspace Marketplace.
+
+
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+If none of the steps above resolve the issue, contact us at **hello@autoproctor.co** with a screenshot of the error and we will get back to you.
+{% endhint %}
+
+## Related Resources
+
+- [Quiz Providers](tests-results/create/quiz-providers.md) -- Supported quiz platforms including Google Forms
+- [Contact Us](pricing-account/support/contact-us.md) -- Get in touch with our support team
+- [Best Practices for Test Creators](understanding/getting-started/best-practices-for-teachers.md) -- Tips for running smooth proctored tests
+- [Instructions Page for Candidates](tests-results/create/instructions-page-for-candidates.md) -- What candidates see before starting a test

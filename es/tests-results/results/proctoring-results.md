@@ -1,0 +1,61 @@
+---
+title: "¿Dónde Puedo Ver los Resultados de Supervisión?"
+description: "Acceda y revise los resultados de supervisión de sus exámenes en AutoProctor, incluidos los Trust Scores, detalles de infracciones e informes por candidato."
+---
+
+Una vez que los candidatos completan un examen supervisado, AutoProctor compila sus datos de supervisión en un informe de supervisión. Esta guía le explica cómo acceder a esos resultados e interpretarlos.
+
+{% hint style="info" %}
+Los resultados de supervisión solo se generan cuando la supervisión está habilitada en la [configuración de supervisión](tests-results/create/proctoring-settings.md). Si configuró su examen únicamente con un temporizador, no se dispone de datos de supervisión.
+{% endhint %}
+
+## Cómo Ver los Resultados de Supervisión
+
+{% stepper %}
+{% step %}
+### Abra la página de resultados
+Navegue a su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y haga clic en el botón **Resultados** del examen que desea revisar.
+
+![Botón de resultados destacado en el panel de AutoProctor](images/results/results-button-dashboard.png)
+*Botón de resultados en el panel de AutoProctor*
+{% endstep %}
+{% step %}
+### Revise la tabla de resultados
+La página de resultados muestra una tabla con todas las entregas. Cada fila incluye:
+
+- Nombre y dirección de correo electrónico del candidato
+- Hora de inicio y finalización del examen
+- Trust Score (que indica la integridad de la supervisión)
+- Puntuación del cuestionario (solo para Socratease Quizzes)
+
+![Tabla de resultados que muestra las entregas de los candidatos con Trust Scores](images/results/results-table.png)
+*Tabla de resultados*
+{% endstep %}
+{% step %}
+### Vea el resumen de supervisión
+Haga clic en el **Trust Score** de un candidato para abrir su resumen detallado de supervisión. Esta página muestra todas las infracciones detectadas durante el examen, incluidas capturas de pantalla, marcas de tiempo y evidencia.
+
+![Página de resumen de supervisión que muestra las infracciones detectadas y la evidencia](images/results/proctoring-summary.png)
+*Página de resumen de supervisión*
+{% endstep %}
+{% endstepper %}
+
+## Qué Muestra el Resumen de Supervisión
+
+El resumen de supervisión de cada candidato incluye:
+
+| Dato | Descripción |
+|---|---|
+| **Trust Score** | Una calificación general de integridad basada en las infracciones detectadas |
+| **Lista de infracciones** | Cada tipo de infracción con marca de tiempo y evidencia |
+| **Capturas de pantalla** | Fotos aleatorias capturadas durante la sesión del examen |
+| **Grabaciones** | Grabaciones de pantalla y cámara web (si están habilitadas en la [supervisión avanzada](tests-results/create/enhanced-proctoring.md)) |
+| **Línea de tiempo de la sesión** | Cuándo el candidato inició, pausó o envió el examen |
+
+## Recursos Relacionados
+
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](tests-results/results/how-to-see-results.md) -- Descripción general de los resultados del examen frente a los resultados de supervisión
+- [Trust Score Explicado](understanding/how-proctoring-works/trust-score.md) -- Cómo se calculan los Trust Scores
+- [Qué Se Monitorea](understanding/how-proctoring-works/what-gets-tracked.md) -- Lo que AutoProctor supervisa durante un examen supervisado
+- [Exportar a Excel](tests-results/results/export-to-excel.md) -- Descargar los resultados de supervisión como hoja de cálculo
+- [Exámenes No Enviados](tests-results/results/unsubmitted-tests.md) -- Ver detalles de exámenes iniciados pero no enviados

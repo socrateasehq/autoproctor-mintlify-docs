@@ -1,0 +1,59 @@
+---
+title: "Instruções para Realizar um Questionário Socratease Supervisionado"
+description: "Guia para candidatos realizando um questionário Socratease supervisionado no AutoProctor. Questionários Socratease são mais simples que testes do Google Forms ou Microsoft Forms."
+---
+
+Os questionários Socratease são mais simples de realizar no AutoProctor comparados com testes do Google Forms ou Microsoft Forms. Existe apenas **um botão de envio**, então não há risco de perder suas respostas clicando nos botões na ordem errada.
+
+
+## Faça o Teste de Demonstração Primeiro
+
+Pratique com um questionário Socratease supervisionado de exemplo antes do seu teste real para verificar que tudo funciona no seu dispositivo.
+
+{% stepper %}
+{% step %}
+### Abra o link do teste de demonstração
+Acesse [o teste de demonstração supervisionado do AutoProctor](https://www.autoproctor.co/tests/bj0yv14Ufu/?timer=True&proctor=True) no dispositivo e navegador que você planeja usar para o seu teste real.
+{% endstep %}
+{% step %}
+### Conceda acesso à câmera e microfone
+Quando solicitado, permita que o AutoProctor acesse sua câmera e microfone. Testes supervisionados requerem ambos para funcionar.
+{% endstep %}
+{% step %}
+### Complete a demonstração
+Siga as instruções na tela para confirmar que seu dispositivo, navegador, câmera e microfone são todos compatíveis.
+{% endstep %}
+{% step %}
+### Solucione problemas se necessário
+Se a demonstração não carregar, seu dispositivo pode não atender aos requisitos mínimos. Consulte [Compatibilidade de Dispositivos](understanding/getting-started/device-compatibility.md) para a lista completa de configurações compatíveis.
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+Se o teste de demonstração carregar com sucesso no seu dispositivo, qualquer questionário Socratease que seu administrador designar a você também carregará.
+{% endhint %}
+
+## Requisitos de Navegador e Dispositivo
+
+| Dispositivo | Navegador | Versão Mínima |
+|---|---|---|
+| iPhone / iPad | Safari | 13+ |
+| Windows / Android / Mac | Google Chrome | 83+ |
+
+- Atualize seu navegador para a versão mais recente se estiver usando uma versão antiga.
+- Seu dispositivo deve ter idealmente menos de 3 anos de uso.
+- O AutoProctor executa algoritmos de IA em suas câmeras e feeds de áudio em tempo real, o que requer poder de processamento significativo.
+- Seu dispositivo pode funcionar bem com aplicativos do dia a dia, mas ainda ter dificuldades com as exigências adicionais da supervisão em tempo real. Se o AutoProctor não funcionar no seu dispositivo, você precisará mudar para um dispositivo mais potente.
+
+{% hint style="warning" %}
+Se o teste de demonstração não carregar no seu dispositivo, seu dispositivo não suporta o AutoProctor. Você precisará usar um dispositivo diferente com melhores especificações de hardware.
+{% endhint %}
+
+## Recursos Relacionados
+
+- [Instruções para Socratease Cronometrado](candidate-guide/attempting/timed-socratease-instructions.md) — Instruções para questionários Socratease sem supervisão
+- [Diferenças do Botão de Envio](candidate-guide/attempting/submit-button.md) — Por que o Socratease é mais simples que outros tipos de questionários
+- [Teste Travado na Tela de Carregamento](tests-results/issues/loading-screen.md) — Solucione problemas de carregamento
+- [Compatibilidade de Dispositivos](understanding/getting-started/device-compatibility.md) — Lista completa de navegadores e dispositivos compatíveis
+- [Como Fazer Logout](candidate-guide/attempting/how-to-logout.md) — Troque entre contas se necessário
+- [Fale Conosco](pricing-account/support/contact-us.md) — Entre em contato se precisar de ajuda adicional

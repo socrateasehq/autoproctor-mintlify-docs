@@ -1,0 +1,63 @@
+---
+title: "Mostrar Resultados a los Candidatos"
+description: "Controle cuándo y cómo los candidatos ven sus puntuaciones y resultados del cuestionario en Socratease."
+---
+
+Puede controlar si los candidatos ven sus puntuaciones y las respuestas correctas, y cuándo lo hacen. Esto le brinda total flexibilidad — desde retroalimentación instantánea hasta retener los resultados por completo.
+
+## Opciones de Publicación de Resultados
+
+Socratease proporciona cuatro formas de publicar las puntuaciones y los resultados para los candidatos:
+
+### 1. Inmediatamente, al Enviar
+
+Los candidatos ven su puntuación inmediatamente después de enviar el cuestionario. Para las preguntas con evaluación automática (como MCQ, MCA y Texto con Calificación Automática), también pueden ver las respuestas correctas y si acertaron en cada pregunta.
+
+### 2. Cuando Se Publica la Puntuación Individual
+
+Usted hace clic en un botón de publicación dentro de los resultados de cada candidato para compartir la puntuación con ese candidato específico. Esto le permite revisar y publicar los resultados uno por uno, a su propio ritmo.
+
+### 3. Cuando Se Publican Todas las Puntuaciones
+
+Usted publica las puntuaciones de todos los candidatos del examen a la vez. Esto es útil cuando desea que todos vean sus resultados al mismo tiempo, por ejemplo, una vez que la calificación esté completa.
+
+### 4. Nunca Ven los Resultados
+
+Una vez que los candidatos envían el cuestionario, ven una confirmación de que pueden cerrar la pestaña. Los resultados nunca se les revelan.
+
+## Ocultar Preguntas y Respuestas del Informe del Candidato
+
+Cuando los resultados son visibles para los candidatos (cualquier opción que no sea "nunca"), puede opcionalmente **ocultar las preguntas y respuestas específicas** mientras sigue mostrando la puntuación. Los candidatos ven cómo se desempeñaron en general pero no pueden revisar las preguntas individuales o las respuestas correctas.
+
+{% hint style="info" %}
+Esta opción no está disponible cuando selecciona "Nunca ven los resultados", ya que en ese caso no se muestra el informe del candidato en absoluto.
+{% endhint %}
+
+## Acceso del Candidato
+
+Los candidatos pueden ver los cuestionarios que han realizado en [autoproctor.co/account/socratease-history/](https://www.autoproctor.co/account/socratease-history/). Lo que ven depende del estado de publicación de la puntuación que usted haya configurado.
+
+## Cómo Establecer el Método de Publicación
+
+{% embed url="videos/socratease/release-method.mp4" %}
+Cómo configurar el método de publicación de resultados en Socratease
+{% endembed %}
+
+{% stepper %}
+{% step %}
+### Abra la Configuración del Cuestionario
+Abra el cuestionario que contiene sus preguntas y haga clic en el ícono de **Configuración** (engranaje).
+{% endstep %}
+{% step %}
+### Seleccione el Método de Publicación
+Elija su método de publicación preferido en el menú desplegable de **Visibilidad de Resultados**. La configuración se actualiza inmediatamente.
+{% endstep %}
+{% endstepper %}
+
+## Recursos Relacionados
+
+- [Configuración del Cuestionario](socratease/settings/quiz-settings.md) — Todas las opciones de configuración de cuestionarios Socratease
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](tests-results/results/how-to-see-results.md) — Vea los resultados del examen en AutoProctor
+- [Exportar a Excel](tests-results/results/export-to-excel.md) — Exporte los resultados de los candidatos a una hoja de cálculo
+- [Acceder a Respuestas y Entregas del Candidato](tests-results/results/individual-submissions.md) — Revise las respuestas individuales de los candidatos
+- [Compartir Resultados del Examen](tests-results/results/sharing-test-results.md) — Comparta resultados con otras partes interesadas

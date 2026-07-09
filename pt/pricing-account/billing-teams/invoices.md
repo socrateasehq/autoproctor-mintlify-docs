@@ -1,0 +1,77 @@
+---
+title: "Faturas e Recibos de Pagamentos"
+description: "Aprenda a acessar, baixar e gerenciar faturas e recibos de todas as suas compras de assinaturas e créditos do AutoProctor."
+---
+
+O AutoProctor gera automaticamente uma fatura e um recibo para cada pagamento bem-sucedido. Este artigo explica como acessar suas faturas e responde a perguntas comuns sobre documentos de cobrança.
+
+## Quando as Faturas São Geradas?
+
+As faturas são geradas para dois tipos de pagamentos:
+
+| Tipo de Pagamento | Quando Acontece |
+|---|---|
+| **Criação e renovação de assinatura** | Quando você assina pela primeira vez ou quando seu plano é renovado automaticamente |
+| **Recargas de créditos** | Quando você adquire créditos adicionais através de Pacotes de Testes |
+
+Para cada pagamento, uma fatura e um recibo são enviados automaticamente por e-mail ao titular da conta.
+
+{% hint style="info" %}
+Se você faz parte de um [Time](pricing-account/billing-teams/teams.md), a pessoa que fez a compra inicial recebe os e-mails de fatura. Todos os Administradores do Time também podem baixar faturas na seção de Cobrança.
+{% endhint %}
+
+## Baixando Faturas
+
+Se você não encontra o e-mail da fatura ou precisa baixar uma cópia:
+
+{% stepper %}
+{% step %}
+### Abra a seção de cobrança
+Clique no link **Billing** na barra lateral esquerda.
+{% endstep %}
+{% step %}
+### Localize a fatura
+Role até a área de histórico de pagamentos. Cada entrada de pagamento inclui um link de download para a fatura correspondente.
+{% endstep %}
+{% step %}
+### Baixe a fatura
+Clique no link de download para salvar a fatura como PDF no seu dispositivo.
+{% endstep %}
+{% endstepper %}
+
+Você pode saber mais sobre a seção de Cobrança no artigo [Editar Informações de Cobrança](pricing-account/billing-teams/billing-information.md).
+
+## Exemplo de Fatura
+
+Abaixo está um exemplo de como é uma fatura do AutoProctor:
+
+
+![Exemplo de fatura do AutoProctor mostrando dados de cobrança, itens e valor total](images/pricing/sample-invoice.png)
+
+## Perguntas Frequentes
+
+<AccordionGroup>
+  <Accordion title="Não recebi um e-mail com a fatura. O que devo fazer?">
+    Verifique sua pasta de spam ou lixo eletrônico. Se você faz parte de um Time, a fatura pode ter sido enviada ao Administrador do Time que fez a compra original. Você também pode baixar a fatura diretamente na seção **Billing**.
+  </Accordion>
+
+  <Accordion title="Posso alterar os dados de cobrança em uma fatura?">
+    Você pode atualizar suas informações de cobrança (nome da empresa, endereço, GST, etc.) na seção **Billing**, mas as alterações se aplicam apenas a **faturas futuras**. Para alterações em uma fatura já emitida, envie um e-mail para **hello@autoproctor.co** com os detalhes.
+  </Accordion>
+
+  <Accordion title="As faturas estão disponíveis para assinaturas expiradas?">
+    Sim. Os registros de faturas são mantidos mesmo após a expiração da sua assinatura. Você pode acessá-los assinando novamente ou entrando em contato com o suporte em **hello@autoproctor.co**.
+  </Accordion>
+
+  <Accordion title="Posso obter uma fatura consolidada de múltiplos pagamentos?">
+    O AutoProctor gera faturas individuais por pagamento. Se você precisar de um extrato consolidado, entre em contato com o suporte em **hello@autoproctor.co** com seus requisitos.
+  </Accordion>
+</AccordionGroup>
+
+## Recursos Relacionados
+
+- [Editar Informações de Cobrança](pricing-account/billing-teams/billing-information.md) -- Atualize o nome da empresa, endereço e método de pagamento
+- [Pagamentos e Créditos Explicados](pricing-account/plans-credits/payments-and-credits.md) -- Entenda as assinaturas e compras de créditos
+- [O Que É um Time?](pricing-account/billing-teams/teams.md) -- Conheça a cobrança do time e o acesso de administradores
+- [Como Cancelar Sua Assinatura](pricing-account/plans-credits/cancel-subscription.md) -- Baixe faturas antes do cancelamento
+- [Fale Conosco](pricing-account/support/contact-us.md) -- Obtenha ajuda com problemas de faturamento

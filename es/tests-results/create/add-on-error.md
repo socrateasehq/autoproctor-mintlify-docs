@@ -1,0 +1,39 @@
+---
+title: "Error del Complemento de AutoProctor"
+description: "Solucione el problema en el que el complemento de AutoProctor para Google Forms solo muestra 'Help' en lugar de 'Settings' o 'Results'."
+---
+
+Si el complemento de AutoProctor para Google Forms muestra únicamente la opción **"Help"** en lugar de las opciones esperadas **"Settings"** o **"Results"**, se trata de un problema conocido de los complementos de Google. Esto ocurre frecuentemente con los complementos de Google Workspace y generalmente se puede resolver actualizando Chrome o limpiando los permisos almacenados en caché.
+
+
+## Cómo Solucionarlo
+
+{% stepper %}
+{% step %}
+### Actualice Google Chrome
+Instale la versión más reciente de [Google Chrome](https://www.google.com/intl/en_in/chrome/) para garantizar la compatibilidad con los complementos de Google Workspace.
+{% endstep %}
+{% step %}
+### Abra en Modo Incógnito
+Abra el Google Form en una **ventana de incógnito** (presione `Ctrl+Shift+N` en Windows o `Cmd+Shift+N` en Mac). El modo incógnito limpia los permisos almacenados en caché que frecuentemente causan este problema.
+
+
+{% endstep %}
+{% step %}
+### Reinstale el Complemento (Si Es Necesario)
+Si el problema persiste, desinstale y reinstale el [complemento de AutoProctor](https://workspace.google.com/marketplace/app/timer_+_proctor_google_forms_autoproctor/691377974459) desde el Google Workspace Marketplace.
+
+
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+Si ninguno de los pasos anteriores resuelve el problema, [contáctenos](pricing-account/support/contact-us.md) a **hello@autoproctor.co** con una captura de pantalla del error y le responderemos.
+{% endhint %}
+
+## Recursos Relacionados
+
+- [Proveedores de Cuestionarios](tests-results/create/quiz-providers.md) — Plataformas de cuestionarios compatibles incluyendo Google Forms
+- [Contáctenos](pricing-account/support/contact-us.md) — Comuníquese con nuestro equipo de soporte
+- [Mejores Prácticas para Creadores de Exámenes](understanding/getting-started/best-practices-for-teachers.md) — Consejos para realizar exámenes supervisados fluidos
+- [Página de Instrucciones para Candidatos](tests-results/create/instructions-page-for-candidates.md) — Lo que ven los candidatos antes de iniciar un examen

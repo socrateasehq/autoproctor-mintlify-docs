@@ -1,0 +1,80 @@
+---
+title: "Compatibilidade de Dispositivos"
+description: "Verifique quais navegadores, sistemas operacionais e dispositivos são compatíveis para realizar testes supervisionados no AutoProctor."
+---
+
+O AutoProctor executa algoritmos de monitoramento por IA diretamente no dispositivo do candidato, o que requer recursos específicos do navegador e poder de processamento adequado. Antes de realizar um teste supervisionado, os candidatos devem confirmar que seu navegador e dispositivo atendem aos requisitos mínimos listados abaixo.
+
+## Navegadores e Dispositivos Compatíveis
+
+| Sistema Operacional | Navegador | Versão Mínima |
+|---|---|---|
+| Windows | Chrome | 82 |
+| Windows | Firefox | 78 |
+| Windows | Edge | 88 |
+| Linux | Chrome | 82 |
+| macOS | Safari | 12 |
+| macOS | Chrome | 82 |
+| macOS | Firefox | 78 |
+| Android | Chrome | 82 |
+| iOS (iPad/iPhone) | Safari | 14.1 |
+| iOS (iPad/iPhone) OS 16.1+ | Chrome | 82 |
+
+{% hint style="warning" %}
+Qualquer combinação de navegador e sistema operacional **não listada** na tabela acima não é compatível. Candidatos usando configurações não compatíveis (por exemplo, Brave no Windows ou Opera no Android) podem enfrentar falhas de carregamento ou funcionalidades de supervisão comprometidas.
+{% endhint %}
+
+## Como Verificar Seu Dispositivo
+
+{% stepper %}
+{% step %}
+### Abra o link do teste de demonstração
+Acesse o teste de demonstração para confirmar que seu dispositivo e navegador são compatíveis:
+
+[Fazer o Teste de Demonstração](https://autoproctor.co/tests/bj0yv14Ufu/load/)
+
+
+{% endstep %}
+{% step %}
+### Conceda permissões de câmera, microfone e compartilhamento de tela
+Quando solicitado, permita que seu navegador acesse a câmera e o microfone. Você também será solicitado a compartilhar sua tela — selecione **Tela inteira** e clique em **Compartilhar**. Se alguma dessas permissões falhar, seu navegador ou dispositivo pode não ser compatível.
+
+<div style={{display: "flex", flexDirection: "column", gap: "16px", alignItems: "center"}}>
+  <div style={{display: "flex", gap: "16px", justifyContent: "center"}}>
+    ![Solicitação de permissão do navegador para acesso ao microfone em autoproctor.co](images/getting-started/audio-permission.png)
+*Solicitação de permissão para o microfone*
+    ![Solicitação de permissão do navegador para acesso à câmera em autoproctor.co](images/getting-started/video-permission.png)
+*Solicitação de permissão para a câmera*
+  </div>
+  ![Solicitação do navegador para compartilhar a tela inteira com autoproctor.co](images/getting-started/screen-share-permission.png)
+*Solicitação de permissão para compartilhamento de tela*
+</div>
+{% endstep %}
+{% step %}
+### Complete a demonstração
+Conclua o teste de demonstração para confirmar que todos os recursos de supervisão carregam corretamente, incluindo a visualização da câmera, a solicitação de compartilhamento de tela e o modo de tela cheia.
+
+
+{% endstep %}
+{% endstepper %}
+
+{% hint style="info" %}
+O teste de demonstração não consome créditos de teste de nenhuma conta. Os candidatos podem realizá-lo quantas vezes precisarem.
+{% endhint %}
+
+## Problemas Comuns de Compatibilidade
+
+| Problema | Causa Provável | Solução |
+|---|---|---|
+| Teste travado na tela de carregamento | Navegador não compatível ou versão desatualizada | Atualize o navegador ou mude para o Chrome |
+| Câmera não detectada | Permissões do navegador bloqueadas | Permita o acesso à câmera nas configurações do navegador |
+| Teste funciona lentamente ou trava | Dispositivo muito antigo ou com poucos recursos | Feche outros aplicativos ou use um dispositivo mais novo |
+| Solicitação de compartilhamento de tela ausente | Navegador não compatível com a API de captura de tela | Mude para Chrome ou Edge no desktop |
+
+## Recursos Relacionados
+
+- [Teste Travado na Tela de Carregamento](tests-results/issues/loading-screen.md) — Solucione problemas de carregamento
+- [Teste Lento e com Travamentos](tests-results/issues/slow-and-laggy.md) — Corrija problemas de desempenho
+- [Página em Branco ou Tela Cinza](tests-results/issues/blank-page-grey-screen.md) — Resolva problemas de exibição
+- [Instruções para Testes Supervisionados](candidate-guide/attempting/proctored-test-instructions.md) — O que os candidatos precisam saber antes de começar
+- [Boas Práticas para Criadores de Testes](understanding/getting-started/best-practices-for-teachers.md) — Dicas incluindo o compartilhamento do teste de demonstração com antecedência

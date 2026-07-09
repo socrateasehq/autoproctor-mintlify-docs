@@ -1,0 +1,47 @@
+---
+title: "Evidência de Violações Ausente no Relatório"
+description: "Saiba por que algumas violações no relatório de supervisão podem não ter arquivos de evidência associados e como isso afeta os cálculos do Trust Score."
+---
+
+Cada tentativa de teste tem um número máximo de arquivos de evidência que pode armazenar. Se algumas violações em um relatório de supervisão não possuem evidência, o número total de violações excedeu esse limite de armazenamento.
+
+## Entendendo Violações vs. Evidência
+
+<CardGroup cols={2}>
+  <Card title="Violação">
+    Um evento que o AutoProctor detecta como anômalo. Por exemplo, ausência de rosto detectado na imagem da câmera, ou o candidato mudando para uma aba diferente.
+  </Card>
+  <Card title="Evidência">
+    Documentação de suporte da violação. Por exemplo, uma foto da imagem da câmera quando nenhum rosto foi detectado, ou uma captura de tela da aba que o candidato visitou.
+  </Card>
+</CardGroup>
+
+O Trust Score é calculado com base no tipo, na frequência e na duração das violações. Os arquivos de evidência são fornecidos no relatório de supervisão para que você possa revisar o que aconteceu durante o teste.
+
+## Três Razões para Evidência Ausente
+
+### 1. Limite de Armazenamento Atingido (Mais Comum)
+
+Quando um teste começa, o AutoProctor atribui um número fixo de URLs de armazenamento para arquivos de evidência. Uma vez atingida essa capacidade, o sistema decide aleatoriamente se deve substituir a evidência existente ou pular o armazenamento de nova evidência (50% de probabilidade cada).
+
+{% hint style="info" %}
+O Trust Score depende das violações, não de se a evidência foi armazenada. **Todas as violações são rastreadas e afetam o Trust Score** mesmo quando os arquivos de evidência não estão disponíveis para visualização.
+{% endhint %}
+
+### 2. Problemas do Dispositivo ou Internet
+
+O dispositivo ou a conexão de internet do candidato podem ter impedido que a captura de tela fosse realizada ou transmitida aos servidores do AutoProctor. Isso é comum quando os candidatos experimentam breves quedas de conectividade durante o teste.
+
+### 3. Configurações de Supervisão do Teste
+
+O administrador do teste pode ter desativado o armazenamento de evidência através da configuração de supervisão do teste. Verifique suas [configurações de supervisão](tests-results/create/proctoring-settings.md) para confirmar que a gravação de evidência está ativada.
+
+
+## Recursos Relacionados
+
+- [Resultados de Supervisão](tests-results/results/proctoring-results.md) -- Como revisar relatórios de supervisão
+- [Entendendo o Trust Score](understanding/how-proctoring-works/trust-score.md) -- Como os Trust Scores são calculados
+- [Fotos Aleatórias Ausentes](tests-results/issues/missing-random-photos.md) -- Por que as fotos aleatórias podem estar ausentes
+- [Imagens e Gravações Ausentes](tests-results/issues/missing-images-and-recordings.md) -- Evidência ausente nos relatórios
+- [Configurações de Supervisão](tests-results/create/proctoring-settings.md) -- Configure o armazenamento de evidência e as opções de supervisão
+- [Fale Conosco](pricing-account/support/contact-us.md) -- Entre em contato se precisar de ajuda adicional

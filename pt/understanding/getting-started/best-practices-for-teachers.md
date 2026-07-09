@@ -1,0 +1,92 @@
+---
+title: "Boas Práticas para Criadores de Testes"
+description: "Siga estas boas práticas ao administrar testes supervisionados no AutoProctor para garantir uma experiência tranquila para você e seus candidatos."
+---
+
+
+## Lista de Verificação Pré-Teste
+
+{% stepper %}
+{% step %}
+### Peça que os candidatos façam um teste de demonstração
+Compartilhe o link do teste de demonstração do seu tipo de teste com os candidatos pelo menos **24 horas** antes do teste real. A demonstração ajuda os candidatos a entender a plataforma, conceder as permissões necessárias do navegador e confirmar que o dispositivo atende aos requisitos técnicos.
+
+Links de demonstração para cada tipo de teste:
+
+- [Teste do Socratease](https://www.autoproctor.co/tests/bj0yv14Ufu/load/)
+- [Teste do Google Forms](https://www.autoproctor.co/tests/GFICZZZA/load/)
+- [Teste do Microsoft Forms](https://www.autoproctor.co/tests/gToT6XfaO1/instructions/)
+- [Teste de outras plataformas de questionários](https://www.autoproctor.co/tests/UAIJ2bcQ1i/instructions/)
+
+{% hint style="info" %}
+O teste de demonstração não consome créditos de teste da sua conta. Os candidatos podem realizá-lo quantas vezes precisarem.
+{% endhint %}
+
+
+{% endstep %}
+{% step %}
+### Verifique se sua conta tem créditos suficientes
+Certifique-se de que sua conta tem tentativas de teste suficientes disponíveis antes do exame. Se os candidatos tentarem carregar um teste e sua conta não tiver créditos, eles não poderão prosseguir.
+
+Consulte [Pagamentos e Créditos](pricing-account/plans-credits/payments-and-credits.md) para verificar seu saldo e comprar mais se necessário.
+
+![Painel do AutoProctor mostrando a exibição de créditos e saldo da conta](images/getting-started/display-credits.gif)
+*Exibição de créditos da conta no painel do AutoProctor*
+{% endstep %}
+{% step %}
+### Configure o tempo do teste com margem de tolerância
+Defina um Buffer Time para que os candidatos tenham um período de carência após o limite "Can't Start After" para configurar o dispositivo.
+
+Consulte [Configurações de Tempo](tests-results/create/timer-settings.md) para detalhes de configuração.
+{% endstep %}
+{% step %}
+### Teste o link pessoalmente
+Antes de compartilhar o link do teste, clique nele você mesmo para verificar a experiência do candidato. Confirme que a página de instruções, a verificação da câmera e a configuração da supervisão carregam corretamente.
+{% endstep %}
+{% endstepper %}
+
+## Distribuição de Links de Teste
+
+A forma como você compartilha o link do teste importa. Alguns métodos de distribuição causam problemas de compatibilidade.
+
+| Método | Recomendado? | Observações |
+|---|---|---|
+| **E-mail (Gmail, Outlook)** | Sim | Os links abrem no navegador padrão, o que funciona de forma confiável |
+| **LMS (Moodle, Canvas, etc.)** | Sim | Os links abrem no navegador do sistema |
+| **Telegram, Facebook, WhatsApp** | Não | Os navegadores internos dos aplicativos são frequentemente incompatíveis com a supervisão do AutoProctor |
+
+{% hint style="warning" %}
+Se os candidatos receberem links de teste por aplicativos de mensagens (como Telegram, WhatsApp ou Facebook Messenger), oriente-os a **copiar o link** e abri-lo diretamente no **Chrome** ou **Firefox**. Os navegadores internos dos aplicativos não possuem os recursos que o AutoProctor precisa para a supervisão.
+{% endhint %}
+
+{% hint style="info" %}
+Envie o link da demonstração pelo menos 24 horas antes do teste real. Envie o link do teste real mais próximo do horário agendado para evitar acesso antecipado.
+{% endhint %}
+
+## Durante o Teste
+
+- **Esteja disponível** — Permaneça acessível por um canal de comunicação (como Google Meet, Zoom ou WhatsApp) durante a janela do teste para que os candidatos possam procurá-lo caso enfrentem problemas técnicos.
+
+## Após o Teste
+
+{% stepper %}
+{% step %}
+### Revise os resultados de supervisão
+Verifique os [Trust Scores](understanding/how-proctoring-works/trust-score.md) e os relatórios de supervisão de cada candidato. Concentre sua revisão nos candidatos com pontuação inferior a 85%.
+
+
+{% endstep %}
+{% step %}
+### Ajude os candidatos com problemas técnicos
+Se os candidatos enfrentarem algum problema técnico durante o teste, peça que sigam [este artigo](pricing-account/support/contact-us.md).
+{% endstep %}
+{% endstepper %}
+
+## Recursos Relacionados
+
+- [Coisas que Você Precisa Saber](understanding/getting-started/things-you-need-to-know.md) — Requisitos essenciais para usar o AutoProctor
+- [Onde Posso Ver os Resultados do Meu Teste?](tests-results/results/how-to-see-results.md) — Visão geral dos resultados do teste vs. resultados de supervisão
+- [Trust Score](understanding/how-proctoring-works/trust-score.md) — Como os Trust Scores são calculados
+- [Configurações de Supervisão](tests-results/create/proctoring-settings.md) — Configure o que é monitorado durante os testes
+- [Concorrência](tests-results/access-limits/concurrency.md) — Entenda os limites de candidatos simultâneos
+- [Compatibilidade de Dispositivos](understanding/getting-started/device-compatibility.md) — Navegadores e dispositivos compatíveis
