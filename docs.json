@@ -1306,59 +1306,54 @@
               {
                 "group": "Create",
                 "pages": [
-                  "create-proctored-exam",
-                  "supported-quiz-providers",
-                  "proctoring-settings",
-                  "enhanced-proctoring",
-                  "timer-settings",
-                  "advanced-exam-settings",
-                  "resume-exam-attempts",
-                  "resume-google-forms-exam",
-                  "candidate-instructions-page",
-                  "archive-and-delete-exams",
-                  "iframe-query-arguments",
-                  "google-forms-addon-error"
+                  "articles/create/create-proctored-exam",
+                  "articles/create/supported-quiz-providers",
+                  "articles/create/proctoring-settings",
+                  "articles/create/enhanced-proctoring",
+                  "articles/create/timer-settings",
+                  "articles/create/advanced-exam-settings",
+                  "articles/create/resume-exam-attempts",
+                  "articles/create/resume-google-forms-exam",
+                  "articles/create/candidate-instructions-page",
+                  "articles/create/archive-and-delete-exams",
+                  "articles/create/iframe-query-arguments",
+                  "articles/create/google-forms-addon-error"
                 ]
               },
               {
                 "group": "Results",
                 "pages": [
-                  "where-to-find-quiz-results",
-                  "where-to-find-proctoring-results",
-                  "access-candidate-responses",
-                  "view-unsubmitted-exams",
-                  "export-results-to-excel",
-                  "write-results-to-google-sheets",
-                  "share-exam-results"
+                  "articles/results/where-to-find-quiz-results",
+                  "articles/results/where-to-find-proctoring-results",
+                  "articles/results/access-candidate-responses",
+                  "articles/results/view-unsubmitted-exams",
+                  "articles/results/export-results-to-excel",
+                  "articles/results/write-results-to-google-sheets",
+                  "articles/results/share-exam-results"
                 ]
               },
               {
                 "group": "Access & Limits",
                 "pages": [
-                  "restrict-access-by-email",
-                  "restrict-access-to-candidates",
-                  "invite-candidates-via-email",
-                  "maximum-exam-attempts",
-                  "max-simultaneous-candidates",
-                  "add-collaborators"
+                  "articles/access/restrict-access-by-email",
+                  "articles/access/restrict-access-to-candidates",
+                  "articles/access/invite-candidates-via-email",
+                  "articles/access/maximum-exam-attempts",
+                  "articles/access/max-simultaneous-candidates",
+                  "articles/access/add-collaborators"
                 ]
               },
               {
                 "group": "Issues",
                 "pages": [
-                  "test-stuck-at-loading-screen",
-                  "blank-screen-during-test",
-                  "test-slow-and-laggy",
-                  "cannot-click-answers-during-test",
-                  "google-forms-questions-not-visible",
-                  "false-app-switch-alert",
-                  "no-face-or-multiple-faces-detected",
-                  "missing-violation-evidence",
-                  "missing-random-photos",
-                  "missing-images-and-recordings",
-                  "what-does-went-offline-mean",
-                  "incorrect-candidate-name-in-results",
-                  "google-forms-response-not-visible"
+                  "articles/issues/false-app-switch-alert",
+                  "articles/issues/no-face-or-multiple-faces-detected",
+                  "articles/issues/missing-violation-evidence",
+                  "articles/issues/missing-random-photos",
+                  "articles/issues/missing-images-and-recordings",
+                  "articles/issues/what-does-went-offline-mean",
+                  "articles/issues/incorrect-candidate-name-in-results",
+                  "articles/issues/google-forms-response-not-visible"
                 ]
               }
             ]
@@ -1371,13 +1366,23 @@
               {
                 "group": "Attempting Tests",
                 "pages": [
-                  "take-proctored-exam",
-                  "take-timed-exam",
-                  "take-proctored-socratease-quiz",
-                  "take-timed-socratease-quiz",
-                  "how-to-submit-quiz",
-                  "candidate-login-methods",
-                  "how-to-logout"
+                  "articles/candidate/take-proctored-exam",
+                  "articles/candidate/take-timed-exam",
+                  "articles/candidate/take-proctored-socratease-quiz",
+                  "articles/candidate/take-timed-socratease-quiz",
+                  "articles/candidate/how-to-submit-quiz",
+                  "articles/candidate/candidate-login-methods",
+                  "articles/candidate/how-to-logout"
+                ]
+              },
+              {
+                "group": "Issues",
+                "pages": [
+                  "articles/candidate-issues/test-stuck-at-loading-screen",
+                  "articles/candidate-issues/blank-screen-during-test",
+                  "articles/candidate-issues/test-slow-and-laggy",
+                  "articles/candidate-issues/cannot-click-answers-during-test",
+                  "articles/candidate-issues/google-forms-questions-not-visible"
                 ]
               }
             ]
@@ -1390,18 +1395,18 @@
               {
                 "group": "Getting Started",
                 "pages": [
-                  "before-you-get-started",
-                  "device-compatibility",
-                  "best-practices-for-exam-creators",
-                  "faqs"
+                  "articles/understanding/before-you-get-started",
+                  "articles/understanding/device-compatibility",
+                  "articles/understanding/best-practices-for-exam-creators",
+                  "articles/understanding/faqs"
                 ]
               },
               {
                 "group": "How Proctoring Works",
                 "pages": [
-                  "what-gets-tracked-during-proctoring",
-                  "what-is-trust-score",
-                  "does-autoproctor-record-video"
+                  "articles/understanding/what-gets-tracked-during-proctoring",
+                  "articles/understanding/what-is-trust-score",
+                  "articles/understanding/does-autoproctor-record-video"
                 ]
               }
             ]
@@ -1414,22 +1419,22 @@
               {
                 "group": "Create & Questions",
                 "pages": [
-                  "why-socratease",
-                  "create-socratease-quiz",
-                  "socratease-question-types",
-                  "question-type-availability",
-                  "import-questions-from-excel",
-                  "question-banks"
+                  "articles/socratease/why-socratease",
+                  "articles/socratease/create-socratease-quiz",
+                  "articles/socratease/socratease-question-types",
+                  "articles/socratease/question-type-availability",
+                  "articles/socratease/import-questions-from-excel",
+                  "articles/socratease/question-banks"
                 ]
               },
               {
                 "group": "Settings",
                 "pages": [
-                  "socratease-quiz-settings",
-                  "question-display-mode",
-                  "show-results-to-candidates",
-                  "using-tags",
-                  "latex-math-equations"
+                  "articles/socratease/socratease-quiz-settings",
+                  "articles/socratease/question-display-mode",
+                  "articles/socratease/show-results-to-candidates",
+                  "articles/socratease/using-tags",
+                  "articles/socratease/latex-math-equations"
                 ]
               }
             ]
@@ -1442,28 +1447,28 @@
               {
                 "group": "Plans & Credits",
                 "pages": [
-                  "payments-and-credits",
-                  "feature-comparison",
-                  "elite-plan-features",
-                  "one-time-subscription",
-                  "cancel-subscription"
+                  "articles/pricing/payments-and-credits",
+                  "articles/pricing/feature-comparison",
+                  "articles/pricing/elite-plan-features",
+                  "articles/pricing/one-time-subscription",
+                  "articles/pricing/cancel-subscription"
                 ]
               },
               {
                 "group": "Billing & Teams",
                 "pages": [
-                  "what-is-a-team",
-                  "purchased-packs-not-showing",
-                  "track-credit-usage",
-                  "invoices-and-receipts",
-                  "edit-billing-information"
+                  "articles/pricing/what-is-a-team",
+                  "articles/pricing/purchased-packs-not-showing",
+                  "articles/pricing/track-credit-usage",
+                  "articles/pricing/invoices-and-receipts",
+                  "articles/pricing/edit-billing-information"
                 ]
               },
               {
                 "group": "Support",
                 "pages": [
-                  "contact-us",
-                  "book-a-demo"
+                  "articles/pricing/contact-us",
+                  "articles/pricing/book-a-demo"
                 ]
               }
             ]
@@ -1481,59 +1486,54 @@
               {
                 "group": "Crear",
                 "pages": [
-                  "es/create-proctored-exam",
-                  "es/supported-quiz-providers",
-                  "es/proctoring-settings",
-                  "es/enhanced-proctoring",
-                  "es/timer-settings",
-                  "es/advanced-exam-settings",
-                  "es/resume-exam-attempts",
-                  "es/resume-google-forms-exam",
-                  "es/candidate-instructions-page",
-                  "es/archive-and-delete-exams",
-                  "es/iframe-query-arguments",
-                  "es/google-forms-addon-error"
+                  "es/articles/create/create-proctored-exam",
+                  "es/articles/create/supported-quiz-providers",
+                  "es/articles/create/proctoring-settings",
+                  "es/articles/create/enhanced-proctoring",
+                  "es/articles/create/timer-settings",
+                  "es/articles/create/advanced-exam-settings",
+                  "es/articles/create/resume-exam-attempts",
+                  "es/articles/create/resume-google-forms-exam",
+                  "es/articles/create/candidate-instructions-page",
+                  "es/articles/create/archive-and-delete-exams",
+                  "es/articles/create/iframe-query-arguments",
+                  "es/articles/create/google-forms-addon-error"
                 ]
               },
               {
                 "group": "Resultados",
                 "pages": [
-                  "es/where-to-find-quiz-results",
-                  "es/where-to-find-proctoring-results",
-                  "es/access-candidate-responses",
-                  "es/view-unsubmitted-exams",
-                  "es/export-results-to-excel",
-                  "es/write-results-to-google-sheets",
-                  "es/share-exam-results"
+                  "es/articles/results/where-to-find-quiz-results",
+                  "es/articles/results/where-to-find-proctoring-results",
+                  "es/articles/results/access-candidate-responses",
+                  "es/articles/results/view-unsubmitted-exams",
+                  "es/articles/results/export-results-to-excel",
+                  "es/articles/results/write-results-to-google-sheets",
+                  "es/articles/results/share-exam-results"
                 ]
               },
               {
                 "group": "Acceso y Límites",
                 "pages": [
-                  "es/restrict-access-by-email",
-                  "es/restrict-access-to-candidates",
-                  "es/invite-candidates-via-email",
-                  "es/maximum-exam-attempts",
-                  "es/max-simultaneous-candidates",
-                  "es/add-collaborators"
+                  "es/articles/access/restrict-access-by-email",
+                  "es/articles/access/restrict-access-to-candidates",
+                  "es/articles/access/invite-candidates-via-email",
+                  "es/articles/access/maximum-exam-attempts",
+                  "es/articles/access/max-simultaneous-candidates",
+                  "es/articles/access/add-collaborators"
                 ]
               },
               {
                 "group": "Problemas",
                 "pages": [
-                  "es/test-stuck-at-loading-screen",
-                  "es/blank-screen-during-test",
-                  "es/test-slow-and-laggy",
-                  "es/cannot-click-answers-during-test",
-                  "es/google-forms-questions-not-visible",
-                  "es/false-app-switch-alert",
-                  "es/no-face-or-multiple-faces-detected",
-                  "es/missing-violation-evidence",
-                  "es/missing-random-photos",
-                  "es/missing-images-and-recordings",
-                  "es/what-does-went-offline-mean",
-                  "es/incorrect-candidate-name-in-results",
-                  "es/google-forms-response-not-visible"
+                  "es/articles/issues/false-app-switch-alert",
+                  "es/articles/issues/no-face-or-multiple-faces-detected",
+                  "es/articles/issues/missing-violation-evidence",
+                  "es/articles/issues/missing-random-photos",
+                  "es/articles/issues/missing-images-and-recordings",
+                  "es/articles/issues/what-does-went-offline-mean",
+                  "es/articles/issues/incorrect-candidate-name-in-results",
+                  "es/articles/issues/google-forms-response-not-visible"
                 ]
               }
             ]
@@ -1546,13 +1546,23 @@
               {
                 "group": "Intentar Exámenes",
                 "pages": [
-                  "es/take-proctored-exam",
-                  "es/take-timed-exam",
-                  "es/take-proctored-socratease-quiz",
-                  "es/take-timed-socratease-quiz",
-                  "es/how-to-submit-quiz",
-                  "es/candidate-login-methods",
-                  "es/how-to-logout"
+                  "es/articles/candidate/take-proctored-exam",
+                  "es/articles/candidate/take-timed-exam",
+                  "es/articles/candidate/take-proctored-socratease-quiz",
+                  "es/articles/candidate/take-timed-socratease-quiz",
+                  "es/articles/candidate/how-to-submit-quiz",
+                  "es/articles/candidate/candidate-login-methods",
+                  "es/articles/candidate/how-to-logout"
+                ]
+              },
+              {
+                "group": "Problemas",
+                "pages": [
+                  "es/articles/candidate-issues/test-stuck-at-loading-screen",
+                  "es/articles/candidate-issues/blank-screen-during-test",
+                  "es/articles/candidate-issues/test-slow-and-laggy",
+                  "es/articles/candidate-issues/cannot-click-answers-during-test",
+                  "es/articles/candidate-issues/google-forms-questions-not-visible"
                 ]
               }
             ]
@@ -1565,18 +1575,18 @@
               {
                 "group": "Primeros Pasos",
                 "pages": [
-                  "es/before-you-get-started",
-                  "es/device-compatibility",
-                  "es/best-practices-for-exam-creators",
-                  "es/faqs"
+                  "es/articles/understanding/before-you-get-started",
+                  "es/articles/understanding/device-compatibility",
+                  "es/articles/understanding/best-practices-for-exam-creators",
+                  "es/articles/understanding/faqs"
                 ]
               },
               {
                 "group": "Cómo Funciona la Supervisión",
                 "pages": [
-                  "es/what-gets-tracked-during-proctoring",
-                  "es/what-is-trust-score",
-                  "es/does-autoproctor-record-video"
+                  "es/articles/understanding/what-gets-tracked-during-proctoring",
+                  "es/articles/understanding/what-is-trust-score",
+                  "es/articles/understanding/does-autoproctor-record-video"
                 ]
               }
             ]
@@ -1589,22 +1599,22 @@
               {
                 "group": "Crear y Preguntas",
                 "pages": [
-                  "es/why-socratease",
-                  "es/create-socratease-quiz",
-                  "es/socratease-question-types",
-                  "es/question-type-availability",
-                  "es/import-questions-from-excel",
-                  "es/question-banks"
+                  "es/articles/socratease/why-socratease",
+                  "es/articles/socratease/create-socratease-quiz",
+                  "es/articles/socratease/socratease-question-types",
+                  "es/articles/socratease/question-type-availability",
+                  "es/articles/socratease/import-questions-from-excel",
+                  "es/articles/socratease/question-banks"
                 ]
               },
               {
                 "group": "Configuración",
                 "pages": [
-                  "es/socratease-quiz-settings",
-                  "es/question-display-mode",
-                  "es/show-results-to-candidates",
-                  "es/using-tags",
-                  "es/latex-math-equations"
+                  "es/articles/socratease/socratease-quiz-settings",
+                  "es/articles/socratease/question-display-mode",
+                  "es/articles/socratease/show-results-to-candidates",
+                  "es/articles/socratease/using-tags",
+                  "es/articles/socratease/latex-math-equations"
                 ]
               }
             ]
@@ -1617,28 +1627,28 @@
               {
                 "group": "Planes y Créditos",
                 "pages": [
-                  "es/payments-and-credits",
-                  "es/feature-comparison",
-                  "es/elite-plan-features",
-                  "es/one-time-subscription",
-                  "es/cancel-subscription"
+                  "es/articles/pricing/payments-and-credits",
+                  "es/articles/pricing/feature-comparison",
+                  "es/articles/pricing/elite-plan-features",
+                  "es/articles/pricing/one-time-subscription",
+                  "es/articles/pricing/cancel-subscription"
                 ]
               },
               {
                 "group": "Facturación y Equipos",
                 "pages": [
-                  "es/what-is-a-team",
-                  "es/purchased-packs-not-showing",
-                  "es/track-credit-usage",
-                  "es/invoices-and-receipts",
-                  "es/edit-billing-information"
+                  "es/articles/pricing/what-is-a-team",
+                  "es/articles/pricing/purchased-packs-not-showing",
+                  "es/articles/pricing/track-credit-usage",
+                  "es/articles/pricing/invoices-and-receipts",
+                  "es/articles/pricing/edit-billing-information"
                 ]
               },
               {
                 "group": "Soporte",
                 "pages": [
-                  "es/contact-us",
-                  "es/book-a-demo"
+                  "es/articles/pricing/contact-us",
+                  "es/articles/pricing/book-a-demo"
                 ]
               }
             ]
@@ -1656,59 +1666,54 @@
               {
                 "group": "Criar",
                 "pages": [
-                  "pt/create-proctored-exam",
-                  "pt/supported-quiz-providers",
-                  "pt/proctoring-settings",
-                  "pt/enhanced-proctoring",
-                  "pt/timer-settings",
-                  "pt/advanced-exam-settings",
-                  "pt/resume-exam-attempts",
-                  "pt/resume-google-forms-exam",
-                  "pt/candidate-instructions-page",
-                  "pt/archive-and-delete-exams",
-                  "pt/iframe-query-arguments",
-                  "pt/google-forms-addon-error"
+                  "pt/articles/create/create-proctored-exam",
+                  "pt/articles/create/supported-quiz-providers",
+                  "pt/articles/create/proctoring-settings",
+                  "pt/articles/create/enhanced-proctoring",
+                  "pt/articles/create/timer-settings",
+                  "pt/articles/create/advanced-exam-settings",
+                  "pt/articles/create/resume-exam-attempts",
+                  "pt/articles/create/resume-google-forms-exam",
+                  "pt/articles/create/candidate-instructions-page",
+                  "pt/articles/create/archive-and-delete-exams",
+                  "pt/articles/create/iframe-query-arguments",
+                  "pt/articles/create/google-forms-addon-error"
                 ]
               },
               {
                 "group": "Resultados",
                 "pages": [
-                  "pt/where-to-find-quiz-results",
-                  "pt/where-to-find-proctoring-results",
-                  "pt/access-candidate-responses",
-                  "pt/view-unsubmitted-exams",
-                  "pt/export-results-to-excel",
-                  "pt/write-results-to-google-sheets",
-                  "pt/share-exam-results"
+                  "pt/articles/results/where-to-find-quiz-results",
+                  "pt/articles/results/where-to-find-proctoring-results",
+                  "pt/articles/results/access-candidate-responses",
+                  "pt/articles/results/view-unsubmitted-exams",
+                  "pt/articles/results/export-results-to-excel",
+                  "pt/articles/results/write-results-to-google-sheets",
+                  "pt/articles/results/share-exam-results"
                 ]
               },
               {
                 "group": "Acesso e Limites",
                 "pages": [
-                  "pt/restrict-access-by-email",
-                  "pt/restrict-access-to-candidates",
-                  "pt/invite-candidates-via-email",
-                  "pt/maximum-exam-attempts",
-                  "pt/max-simultaneous-candidates",
-                  "pt/add-collaborators"
+                  "pt/articles/access/restrict-access-by-email",
+                  "pt/articles/access/restrict-access-to-candidates",
+                  "pt/articles/access/invite-candidates-via-email",
+                  "pt/articles/access/maximum-exam-attempts",
+                  "pt/articles/access/max-simultaneous-candidates",
+                  "pt/articles/access/add-collaborators"
                 ]
               },
               {
                 "group": "Problemas",
                 "pages": [
-                  "pt/test-stuck-at-loading-screen",
-                  "pt/blank-screen-during-test",
-                  "pt/test-slow-and-laggy",
-                  "pt/cannot-click-answers-during-test",
-                  "pt/google-forms-questions-not-visible",
-                  "pt/false-app-switch-alert",
-                  "pt/no-face-or-multiple-faces-detected",
-                  "pt/missing-violation-evidence",
-                  "pt/missing-random-photos",
-                  "pt/missing-images-and-recordings",
-                  "pt/what-does-went-offline-mean",
-                  "pt/incorrect-candidate-name-in-results",
-                  "pt/google-forms-response-not-visible"
+                  "pt/articles/issues/false-app-switch-alert",
+                  "pt/articles/issues/no-face-or-multiple-faces-detected",
+                  "pt/articles/issues/missing-violation-evidence",
+                  "pt/articles/issues/missing-random-photos",
+                  "pt/articles/issues/missing-images-and-recordings",
+                  "pt/articles/issues/what-does-went-offline-mean",
+                  "pt/articles/issues/incorrect-candidate-name-in-results",
+                  "pt/articles/issues/google-forms-response-not-visible"
                 ]
               }
             ]
@@ -1721,13 +1726,23 @@
               {
                 "group": "Realizando Testes",
                 "pages": [
-                  "pt/take-proctored-exam",
-                  "pt/take-timed-exam",
-                  "pt/take-proctored-socratease-quiz",
-                  "pt/take-timed-socratease-quiz",
-                  "pt/how-to-submit-quiz",
-                  "pt/candidate-login-methods",
-                  "pt/how-to-logout"
+                  "pt/articles/candidate/take-proctored-exam",
+                  "pt/articles/candidate/take-timed-exam",
+                  "pt/articles/candidate/take-proctored-socratease-quiz",
+                  "pt/articles/candidate/take-timed-socratease-quiz",
+                  "pt/articles/candidate/how-to-submit-quiz",
+                  "pt/articles/candidate/candidate-login-methods",
+                  "pt/articles/candidate/how-to-logout"
+                ]
+              },
+              {
+                "group": "Problemas",
+                "pages": [
+                  "pt/articles/candidate-issues/test-stuck-at-loading-screen",
+                  "pt/articles/candidate-issues/blank-screen-during-test",
+                  "pt/articles/candidate-issues/test-slow-and-laggy",
+                  "pt/articles/candidate-issues/cannot-click-answers-during-test",
+                  "pt/articles/candidate-issues/google-forms-questions-not-visible"
                 ]
               }
             ]
@@ -1740,18 +1755,18 @@
               {
                 "group": "Primeiros Passos",
                 "pages": [
-                  "pt/before-you-get-started",
-                  "pt/device-compatibility",
-                  "pt/best-practices-for-exam-creators",
-                  "pt/faqs"
+                  "pt/articles/understanding/before-you-get-started",
+                  "pt/articles/understanding/device-compatibility",
+                  "pt/articles/understanding/best-practices-for-exam-creators",
+                  "pt/articles/understanding/faqs"
                 ]
               },
               {
                 "group": "Como a Supervisão Funciona",
                 "pages": [
-                  "pt/what-gets-tracked-during-proctoring",
-                  "pt/what-is-trust-score",
-                  "pt/does-autoproctor-record-video"
+                  "pt/articles/understanding/what-gets-tracked-during-proctoring",
+                  "pt/articles/understanding/what-is-trust-score",
+                  "pt/articles/understanding/does-autoproctor-record-video"
                 ]
               }
             ]
@@ -1764,22 +1779,22 @@
               {
                 "group": "Criar e Perguntas",
                 "pages": [
-                  "pt/why-socratease",
-                  "pt/create-socratease-quiz",
-                  "pt/socratease-question-types",
-                  "pt/question-type-availability",
-                  "pt/import-questions-from-excel",
-                  "pt/question-banks"
+                  "pt/articles/socratease/why-socratease",
+                  "pt/articles/socratease/create-socratease-quiz",
+                  "pt/articles/socratease/socratease-question-types",
+                  "pt/articles/socratease/question-type-availability",
+                  "pt/articles/socratease/import-questions-from-excel",
+                  "pt/articles/socratease/question-banks"
                 ]
               },
               {
                 "group": "Configuração",
                 "pages": [
-                  "pt/socratease-quiz-settings",
-                  "pt/question-display-mode",
-                  "pt/show-results-to-candidates",
-                  "pt/using-tags",
-                  "pt/latex-math-equations"
+                  "pt/articles/socratease/socratease-quiz-settings",
+                  "pt/articles/socratease/question-display-mode",
+                  "pt/articles/socratease/show-results-to-candidates",
+                  "pt/articles/socratease/using-tags",
+                  "pt/articles/socratease/latex-math-equations"
                 ]
               }
             ]
@@ -1792,28 +1807,28 @@
               {
                 "group": "Planos e Créditos",
                 "pages": [
-                  "pt/payments-and-credits",
-                  "pt/feature-comparison",
-                  "pt/elite-plan-features",
-                  "pt/one-time-subscription",
-                  "pt/cancel-subscription"
+                  "pt/articles/pricing/payments-and-credits",
+                  "pt/articles/pricing/feature-comparison",
+                  "pt/articles/pricing/elite-plan-features",
+                  "pt/articles/pricing/one-time-subscription",
+                  "pt/articles/pricing/cancel-subscription"
                 ]
               },
               {
                 "group": "Faturamento e Times",
                 "pages": [
-                  "pt/what-is-a-team",
-                  "pt/purchased-packs-not-showing",
-                  "pt/track-credit-usage",
-                  "pt/invoices-and-receipts",
-                  "pt/edit-billing-information"
+                  "pt/articles/pricing/what-is-a-team",
+                  "pt/articles/pricing/purchased-packs-not-showing",
+                  "pt/articles/pricing/track-credit-usage",
+                  "pt/articles/pricing/invoices-and-receipts",
+                  "pt/articles/pricing/edit-billing-information"
                 ]
               },
               {
                 "group": "Suporte",
                 "pages": [
-                  "pt/contact-us",
-                  "pt/book-a-demo"
+                  "pt/articles/pricing/contact-us",
+                  "pt/articles/pricing/book-a-demo"
                 ]
               }
             ]
