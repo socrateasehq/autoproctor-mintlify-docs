@@ -1,0 +1,92 @@
+---
+title: "Su Primer Examen Supervisado"
+description: "Guía paso a paso para crear, configurar y compartir su primer examen supervisado en AutoProctor."
+---
+
+Esta guía le muestra cómo crear su primer examen supervisado en AutoProctor — desde el registro hasta la visualización de sus primeros resultados. Puede tener un examen listo para compartir en menos de 5 minutos.
+
+{/* TODO: Add video walkthrough of the complete quickstart flow */}
+
+## Cree Su Primer Examen
+
+<Steps>
+  <Step title="Inicie sesión en AutoProctor">
+    Vaya a la [página de inicio de sesión de AutoProctor](https://www.autoproctor.co/account/login/role/test-admin) e inicie sesión con su cuenta de **Google**, su cuenta de **Microsoft** o su **correo electrónico**. Llegará a su panel de control, donde se listan todos sus exámenes.
+
+    <Frame caption="Panel de control de AutoProctor para un nuevo usuario">
+      <img src="/images/getting-started/new-user-dashboard.png" alt="Panel de control de AutoProctor para un nuevo usuario" />
+    </Frame>
+  </Step>
+  <Step title="Cree un nuevo examen">
+    Haga clic en el botón **Crear Examen** en su panel de control. Se le pedirá que elija un proveedor de cuestionarios:
+
+    - **Socratease Quizzes** — Cree un cuestionario directamente en AutoProctor
+    - **Google Forms** — Use un Google Form existente
+    - **Microsoft Forms** — Use un Microsoft Form existente
+    - **Otras plataformas de cuestionarios** — Incorpore cualquier cuestionario basado en la web (TypeForm, ProProfs, ClassMarker, etc.)
+
+    <Frame caption="Pantalla de selección de proveedor de cuestionarios">
+      <img className="rounded-xl border" style={{maxHeight: "450px"}} src="/images/creating-tests/all-test-types.png" alt="Pantalla de selección de proveedor de cuestionarios" />
+    </Frame>
+
+    Seleccione su proveedor de cuestionarios y siga las instrucciones para conectar su cuestionario.
+  </Step>
+  <Step title="Configure los ajustes del examen">
+    Después de crear el examen, haga clic en el botón **Configuración** para configurar:
+
+    - **Configuración Principal** — Active el temporizador y la supervisión, establezca los [intentos máximos](/maximum-exam-attempts) y nombre su examen
+    - **[Configuración del Temporizador](/timer-settings)** — Establezca una duración, ventana de inicio y fecha límite de entrega
+    - **[Configuración de Supervisión](/proctoring-settings)** — Active cámara, micrófono, detección de cambio de pestaña y más
+    - **[Configuración Avanzada](/advanced-exam-settings)** — Elija métodos de inicio de sesión y agregue restricciones
+
+    <Note>
+    Para su primer examen, la configuración de supervisión predeterminada funciona bien. Puede ajustarla más adelante según sus necesidades.
+    </Note>
+
+    <Frame caption="Página de configuración del examen con las secciones principales">
+      <img className="rounded-xl border" src="/images/getting-started/configure-test-settings.png" alt="Página de configuración del examen con las secciones principales" />
+    </Frame>
+  </Step>
+  <Step title="Pruebe el enlace usted mismo">
+    Antes de compartir el enlace del examen, haga clic en él usted mismo para verificar la experiencia del candidato. Confirme que la página de instrucciones, la verificación de cámara y la configuración de supervisión se carguen correctamente.
+  </Step>
+  <Step title="Comparta el enlace del examen">
+    Copie el enlace del examen desde su panel de control o la página de Configuración y compártalo con sus candidatos. Puede compartirlo a través de:
+    - Correo electrónico (o use [Invitar por Correo Electrónico](/invite-candidates-via-email) para invitaciones directas)
+    - Su LMS o plataforma de aula
+    - Cualquier herramienta de mensajería — pero pida a los candidatos que copien el enlace y lo abran en **Chrome** o **Firefox**, no en el navegador integrado de la aplicación
+
+    <Frame caption="Copiando el enlace del examen desde el panel de control">
+      <img src="/images/getting-started/copy-test-link.gif" alt="Copiando el enlace del examen desde el panel de control" />
+    </Frame>
+
+    <Note>
+    Consulte [Mejores Prácticas para Creadores de Exámenes](/best-practices-for-exam-creators) para más información sobre cómo distribuir enlaces de exámenes.
+    </Note>
+  </Step>
+  <Step title="Vea los resultados">
+    Una vez que los candidatos completen el examen, vaya a su [panel de control](https://www.autoproctor.co/test-admin/home/) y haga clic en **Resultados** para ver:
+    - Puntajes de confianza para cada candidato
+    - Detalles de infracciones de supervisión
+    - Fotos, grabaciones y evidencia
+    - Puntajes del cuestionario (solo disponibles si utilizó Socratease como proveedor de cuestionarios)
+
+    <Frame caption="Página de resultados de ejemplo mostrando envíos, puntajes de confianza y puntajes del cuestionario">
+      <img
+        className="rounded-xl"
+        src="/images/getting-started/sample-results.png"
+        alt="Página de resultados de AutoProctor mostrando resumen de envíos y puntajes de candidatos"
+      />
+    </Frame>
+
+    Para una guía detallada, consulte [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results).
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Proveedores de Cuestionarios](/supported-quiz-providers) — Todas las plataformas de cuestionarios compatibles
+- [Configuración del Temporizador](/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/proctoring-settings) — Configure qué se supervisa
+- [Preguntas Frecuentes](/faqs) — Preguntas comunes sobre AutoProctor
+- [Mejores Prácticas para Creadores de Exámenes](/best-practices-for-exam-creators) — Consejos para realizar exámenes supervisados
