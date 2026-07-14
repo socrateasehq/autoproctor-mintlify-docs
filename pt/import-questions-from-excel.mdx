@@ -1,0 +1,75 @@
+---
+title: "Importação em Massa de Perguntas a partir de Excel"
+description: "Importe perguntas de múltipla escolha a partir de um arquivo Excel para o seu questionário Socratease."
+---
+
+O recurso de Importação em Massa permite que você importe perguntas de múltipla escolha a partir de um arquivo Excel para os Questionários Socratease. Isso economiza tempo significativo quando você tem muitas perguntas em formato Excel ou Word existente, ou quando várias pessoas colaboram em um grande conjunto de perguntas.
+
+<Note>
+A Importação em Massa está disponível apenas para clientes do **Plano Elite**. Consulte [Recursos Elite](/elite-plan-features) para detalhes.
+</Note>
+
+## Como Importar Perguntas
+
+<Frame caption="Como importar perguntas do Excel para o Socratease">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/socratease/import-from-excel.mp4"
+  ></video>
+</Frame>
+
+<Steps>
+  <Step title="Baixe o Modelo">
+    Abra seu questionário no editor Socratease e baixe o modelo Excel. Este modelo contém os cabeçalhos de coluna e a formatação necessários.
+
+    {/* TODO: Add screenshot of template download button in quiz editor */}
+  </Step>
+  <Step title="Adicione Perguntas ao Arquivo Excel">
+    Preencha o modelo com suas perguntas, opções de resposta e indicadores de resposta correta. Consulte a referência de colunas abaixo para detalhes sobre cada campo.
+
+    {/* TODO: Add screenshot of a filled-in Excel template */}
+  </Step>
+  <Step title="Faça Upload do Arquivo Excel">
+    Faça upload do arquivo Excel preenchido para o seu questionário. As perguntas são importadas automaticamente e aparecem no editor do questionário.
+
+    {/* TODO: Add screenshot of upload button and import confirmation */}
+  </Step>
+</Steps>
+
+## Referência de Colunas do Modelo Excel
+
+| Coluna | Obrigatória | Descrição |
+|---|:---:|---|
+| **Question Type** | Sim | `MCQ` para uma única resposta correta, ou `MCA` para múltiplas respostas corretas |
+| **Question** | Sim | O texto da pergunta |
+| **Opt1 -- Opt5** | Não | Opções de resposta. Use apenas as necessárias (por exemplo, se você tem 3 opções, preencha Opt1, Opt2, Opt3 e deixe Opt4 e Opt5 em branco) |
+| **CorrectAnsInd** | Sim | Para MCQ: um único número indicando a opção correta (por exemplo, `2` para Opt2). Para MCA: números separados por vírgulas sem espaços (por exemplo, `2,3` para Opt2 e Opt3) |
+| **Markdown** | Não | Insira `1` para formatar o texto da pergunta como Markdown |
+| **Points** | Não | Valor em pontos por uma resposta correta |
+| **Time (seconds)** | Não | Limite de tempo por pergunta, em segundos |
+| **Image** | Não | Um URL direto para um arquivo de imagem (.jpg, .png, etc.) para exibir junto com a pergunta |
+
+<Warning>
+A coluna **Image** requer um URL direto para o arquivo de imagem. Links de compartilhamento do Google Drive **não** são suportados. Use um link direto que termine em uma extensão de arquivo como `.jpg` ou `.png`.
+</Warning>
+
+## Dicas para uma Importação Bem-Sucedida
+
+- Os campos marcados com **Obrigatória: Sim** devem ser preenchidos para cada pergunta.
+- Você pode deixar as colunas opcionais em branco se não forem necessárias.
+- Certifique-se de que os cabeçalhos de coluna correspondam exatamente ao modelo — não renomeie nem reordene as colunas.
+- Para perguntas MCA, separe os números das respostas corretas com uma vírgula e **sem espaço** (por exemplo, `2,3` e não `2, 3`).
+- Se você importar um grande número de perguntas, considere dividi-las em lotes menores para facilitar a solução de problemas.
+
+<Note>
+A Importação em Massa atualmente suporta apenas os tipos de perguntas **MCQ** e **MCA**. Para outros tipos de perguntas, adicione-os manualmente pelo editor de questionários. Consulte [Tipos de Perguntas](/socratease-question-types) para a lista completa de formatos disponíveis.
+</Note>
+
+## Recursos Relacionados
+
+- [Tipos de Perguntas](/socratease-question-types) — Todos os formatos de perguntas disponíveis
+- [Bancos de Perguntas](/question-banks) — Crie conjuntos aleatórios de perguntas a partir das perguntas importadas
+- [Configurações do Questionário](/socratease-quiz-settings) — Configure o comportamento do questionário
+- [Modo de Exibição de Perguntas](/question-display-mode) — Controle como as perguntas aparecem para os candidatos
+- [Recursos Elite](/elite-plan-features) — Conheça as capacidades do plano Elite

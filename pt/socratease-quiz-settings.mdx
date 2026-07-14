@@ -1,0 +1,104 @@
+---
+title: "Configurações de Questionários Socratease"
+description: "Configure seu questionário Socratease com configurações de modo de exibição, visibilidade de resultados, aleatorização e mais."
+---
+
+O Socratease possui seu próprio conjunto de configurações, distintas das configurações gerais de Tempo e Supervisão do AutoProctor. Essas configurações controlam como o questionário se comporta para seus candidatos — desde como as perguntas aparecem até se os candidatos podem copiar e colar.
+
+{/* TODO: Add screenshot of the Socratease quiz settings panel */}
+
+## Configurações Disponíveis
+
+### 1. Modo de Exibição de Perguntas (Premium)
+
+Controle como as perguntas aparecem para os candidatos: todas de uma vez (estilo Google Forms), uma por uma com navegação (estilo Typeform) ou uma por uma sem navegação. Essa configuração também afeta como os temporizadores funcionam.
+
+Para mais detalhes, consulte [Modo de Exibição de Perguntas](/question-display-mode).
+
+### 2. Visibilidade dos Resultados
+
+Controle quando os candidatos veem suas pontuações e resultados:
+- **Imediatamente** após o envio
+- **Quando você libera pontuações individuais** (um candidato por vez)
+- **Quando você libera todas as pontuações** (todos de uma vez)
+- **Nunca** — os resultados são retidos por completo
+
+Para mais detalhes, consulte [Mostrar Resultados aos Candidatos](/show-results-to-candidates).
+
+### 3. Aleatorização de Perguntas
+
+Aleatorize a ordem das perguntas para cada candidato. O que o Candidato 1 vê como Pergunta 1 pode ser a Pergunta 10 para o Candidato 2. Isso reduz a oportunidade de os candidatos compartilharem respostas durante um teste.
+
+<Note>
+Esta opção está disponível apenas quando você usa o modo [Todas de uma vez (estilo Google Forms)](/question-display-mode).
+</Note>
+
+{/* TODO: Add screenshot of question randomization toggle */}
+
+### 4. Mistura de Opções
+
+Para perguntas do tipo MCQ e MCA, você pode aleatorizar a ordem das opções de resposta entre os candidatos. Mesmo que dois candidatos vejam a mesma pergunta, as opções aparecem em uma ordem diferente.
+
+{/* TODO: Add screenshot of choice shuffling toggle */}
+
+### 5. Restrição de Copiar e Colar
+
+Quando você ativa essa configuração, os candidatos não podem copiar o texto das perguntas do questionário nem colar texto de outra aba ou aplicativo no questionário. Isso reduz a dependência de ferramentas externas e assistentes de IA.
+
+{/* TODO: Add screenshot of copy-paste restriction toggle */}
+
+### 6. Envio Automático por Troca de Aba
+
+Defina o número máximo de trocas de aba permitidas durante o teste. Se um candidato exceder esse limite, o teste é automaticamente enviado. Isso desencoraja os candidatos de mudar para outras abas para procurar respostas.
+
+<Warning>
+Quando um teste é enviado automaticamente devido ao limite de troca de aba, o candidato não pode retomar o teste. Certifique-se de comunicar a política de troca de aba aos seus candidatos antecipadamente.
+</Warning>
+
+{/* TODO: Add screenshot of tab-switch auto-submit configuration */}
+
+### 7. Instruções Personalizadas
+
+Adicione orientações gerais sobre o teste que são exibidas aos candidatos antes de iniciarem o questionário. Use isso para comunicar regras, instruções ou expectativas importantes.
+
+<Note>
+As instruções personalizadas estão disponíveis apenas quando você usa o modo de exibição de perguntas **todas de uma vez**.
+</Note>
+
+{/* TODO: Add screenshot of custom instructions field */}
+
+### 8. Suporte de LaTeX
+
+Se você deseja incluir equações matemáticas, escreva-as usando a sintaxe LaTeX e elas serão automaticamente renderizadas como equações formatadas. Ative essa configuração para habilitar a renderização de LaTeX no seu questionário.
+
+Para mais detalhes, consulte [Uso de LaTeX para Equações Matemáticas](/latex-math-equations).
+
+## Como Acessar as Configurações do Questionário
+
+<Frame caption="Como acessar e configurar as configurações do questionário Socratease">
+  <video
+    controls
+    className="w-full rounded-xl"
+    src="/videos/socratease/soc-quiz-settings.mp4"
+  ></video>
+</Frame>
+
+<Steps>
+  <Step title="Abra Seu Questionário">
+    Abra o Questionário Socratease que deseja configurar a partir do seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
+  </Step>
+  <Step title="Clique no Ícone de Configurações">
+    Clique no ícone de **Settings** (engrenagem) na barra de ferramentas do editor de questionários.
+  </Step>
+  <Step title="Ajuste Suas Configurações">
+    Modifique qualquer uma das oito configurações listadas acima. As alterações são salvas automaticamente.
+  </Step>
+</Steps>
+
+## Recursos Relacionados
+
+- [Modo de Exibição de Perguntas](/question-display-mode) — Explicação detalhada das opções de exibição
+- [Mostrar Resultados aos Candidatos](/show-results-to-candidates) — Controle a visibilidade dos resultados
+- [Uso de LaTeX para Equações Matemáticas](/latex-math-equations) — Adicione equações matemáticas aos seus questionários
+- [Configurações de Tempo](/timer-settings) — Para configuração geral do temporizador e supervisão do teste (separada das configurações do questionário Socratease)
+- [Criar um Questionário](/create-socratease-quiz) — Guia passo a passo para criar um questionário

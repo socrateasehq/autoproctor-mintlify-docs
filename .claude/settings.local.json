@@ -24,7 +24,13 @@
       "Bash(cat:*)",
       "Bash(bash:*)",
       "Bash(find:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(AWS_PROFILE=autoproctor aws route53:*)",
+      "Bash(AWS_PROFILE=autoproctor aws cloudfront:*)",
+      "Bash(AWS_PROFILE=autoproctor aws lambda:*)",
+      "Bash(AWS_PROFILE=autoproctor aws acm:*)",
+      "Bash(ls:*)",
+      "Bash(dig:*)"
     ]
   }
 }

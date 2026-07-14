@@ -1,0 +1,81 @@
+# Crisp Helpdesk → Mintlify Help Center URL Mapping
+# Generated: 2026-07-14
+#
+# Format: crisp_slug → new_mintlify_slug
+# Crisp URL pattern: https://helpdesk.autoproctor.co/{lang}/article/{crisp_slug}/
+# Mintlify URL pattern: https://help.autoproctor.co/{new_slug}
+#
+# Languages: en-us → / , es → /es/ , pt-br → /pt/
+
+5-faqs-about-autoproctor-dczd4d → /faqs
+adding-collaborators-to-your-tests-1jf4dkj → /add-collaborators
+archiving-and-deleting-tests-1gsrt5z → /archive-and-delete-exams
+automatically-write-test-results-to-google-sheets-1nhzg4u → /write-results-to-google-sheets
+autoproctor-test-settings-124fmjb → /create-proctored-exam
+best-practices-for-teachers-1pc2pil → /best-practices-for-exam-creators
+booking-a-demo-7qhuis → /book-a-demo
+bulk-import-questions-from-excel-r4vs7a → /import-questions-from-excel
+candidate-login-methods-pkwoun → /candidate-login-methods
+cannot-see-response-in-google-form-154hg24 → /google-forms-response-not-visible
+checking-individual-submissions-on-autoproctor-wm8jed → /access-candidate-responses
+concurrency-maximum-simultaneous-candidates-yqte35 → /max-simultaneous-candidates
+contact-us-k2vxnm → /contact-us
+do-you-record-the-video-of-the-candidate-where-can-i-download-the-video-1077c2w → /does-autoproctor-record-video
+editing-your-card-and-billing-information-lbzogr → /edit-billing-information
+elite-features-1872ame → /elite-plan-features
+error-using-autoproctor-add-on-tn9ynj → /google-forms-addon-error
+how-can-i-purchase-a-one-time-subscription-of-autoproctor-and-not-a-recurring-subscription-wkx36g → /one-time-subscription
+how-to-add-query-arguments-to-iframes-on-autoproctor-6s0lv9 → /iframe-query-arguments
+how-to-allow-other-users-to-access-test-results-3okzzs → /share-exam-results
+how-to-cancel-your-autoproctor-subscription-16zl78f → /cancel-subscription
+how-to-create-a-socratease-quiz-1w48uag → /create-socratease-quiz
+how-to-logout-of-autoproctor-1y33j9y → /how-to-logout
+how-to-restrict-autoproctor-to-only-some-users-1i0clwv → /restrict-access-to-candidates
+how-to-see-details-of-unsubmitted-tests-7bwfjp → /view-unsubmitted-exams
+how-to-see-results-on-autoproctor-m6jiyu → /where-to-find-quiz-results
+how-to-track-test-pack-usage-1xmghzb → /track-credit-usage
+i-cannot-see-the-questions-on-google-forms-1ydsjqq → /google-forms-questions-not-visible
+i-purchased-test-packs-but-i-cannot-see-them-in-my-account-1meybkn → /purchased-packs-not-showing
+instructions-for-taking-a-proctored-socratease-quiz-16tp1s5 → /take-proctored-socratease-quiz
+instructions-for-taking-a-proctored-test-enr9pf → /take-proctored-exam
+instructions-for-taking-a-timed-socratease-quiz-1czty9p → /take-timed-socratease-quiz
+instructions-for-taking-a-timed-test-1k26zu3 → /take-timed-exam
+instructions-page-for-candidates-1tazm6g → /candidate-instructions-page
+inviting-candidates-via-email-i98t6m → /invite-candidates-via-email
+invoices-for-payments-irkqxy → /invoices-and-receipts
+maximum-attempts-for-a-test-w7bk1o → /maximum-exam-attempts
+payments-and-credits-explained-1y7iwvu → /payments-and-credits
+question-banks-dwvaft → /question-banks
+question-display-mode-187yci9 → /question-display-mode
+quiz-providers-on-autoproctor-13n5455 → /supported-quiz-providers
+restricting-the-test-based-on-email-id-19hbpn0 → /restrict-access-by-email
+resuming-google-forms-tests-1qb0lxe → /resume-google-forms-exam
+resuming-test-attempts-1amghab → /resume-exam-attempts
+showing-results-to-candidates-1x9hsrj → /show-results-to-candidates
+socratease-question-type-availability-based-on-plan-ya5rw6 → /question-type-availability
+socratease-quiz-question-types-geexzf → /socratease-question-types
+socratease-quiz-settings-yd3vuf → /socratease-quiz-settings
+socratease-vs-other-quizzes-submit-button-1ria8bw → /how-to-submit-quiz
+student-name-is-incorrect-in-results-page-or-excel-i3huzq → /incorrect-candidate-name-in-results
+switched-to-different-application-falsely-showing-in-the-report-1a0supo → /false-app-switch-alert
+test-is-showing-a-blank-page-or-grey-screen-1p5gs18 → /blank-screen-during-test
+test-loads-but-cannot-click-on-answer-1rcl1q6 → /cannot-click-answers-during-test
+test-loads-but-is-very-slow-and-laggy-1n8lqs3 → /test-slow-and-laggy
+test-stuck-at-loading-screen-ihjzg3 → /test-stuck-at-loading-screen
+things-you-need-to-know-8dk1as → /before-you-get-started
+trust-score-what-is-it-how-it-is-calculated-what-is-a-good-score-1yajx7t → /what-is-trust-score
+unable-to-see-images-and-recordings-in-students-test-report-540oww → /missing-images-and-recordings
+using-latex-for-math-equations-1k4u522 → /latex-math-equations
+using-tags-on-autoproctor-up8wkk → /using-tags
+what-devices-are-compatible-with-autoproctors-proctoring-1bcwsde → /device-compatibility
+what-does-went-offline-in-the-proctoring-report-mean-pxpbzv → /what-does-went-offline-mean
+what-gets-tracked-and-recorded-during-proctoring-kn393g → /what-gets-tracked-during-proctoring
+what-is-a-team-on-autoproctor-1rfhqaa → /what-is-a-team
+what-is-export-to-excel-1hdze8z → /export-results-to-excel
+where-can-i-see-proctoring-results-1s5ru8g → /where-to-find-proctoring-results
+where-do-i-find-the-answers-of-an-autoproctor-test-1vcyp8w → /access-candidate-responses
+why-do-i-not-see-random-photos-in-the-report-n08f91 → /missing-random-photos
+why-do-some-violations-have-missing-evidence-19rjxbi → /missing-violation-evidence
+why-no-face-or-multiple-faces-detected-even-though-clearly-there-is-only-one-face-aqm7fq → /no-face-or-multiple-faces-detected
+why-socratease-quiz-1i82ch9 → /why-socratease
+why-we-recommend-equip-for-hiring-1jkgl7x → /
