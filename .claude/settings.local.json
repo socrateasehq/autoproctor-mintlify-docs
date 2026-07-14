@@ -30,7 +30,10 @@
       "Bash(AWS_PROFILE=autoproctor aws lambda:*)",
       "Bash(AWS_PROFILE=autoproctor aws acm:*)",
       "Bash(ls:*)",
-      "Bash(dig:*)"
+      "Bash(dig:*)",
+      "Bash(npx mintlify:*)",
+      "Bash(echo WARNING: $dir still exists:*)",
+      "Bash(mkdir:*)"
     ]
   }
 }
