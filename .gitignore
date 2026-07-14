@@ -1,2 +1,48 @@
 # Scratch/reference folder (not part of docs)
 _scratch/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Migration scripts
+flatten-urls.py
+organize-folders.py
+download-socratease-images.sh
+
+# Planning docs
+PRD.md
+MEDIA-TODO.md
+AGENTS.md
+CONTRIBUTING.md
+
+# AI tool configs
+.agent/
+.agents/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.goose/
+.junie/
+.kilocode/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.windsurf/
+.zencoder/
+skills/
+skills-lock.json
+
+# OS files
+.DS_Store
