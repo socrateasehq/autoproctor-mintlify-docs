@@ -1479,7 +1479,7 @@
         "language": "es",
         "groups": [
           {
-            "group": "Exámenes y Resultados",
+            "group": "Ex\u00e1menes y Resultados",
             "icon": "clipboard-list",
             "expanded": true,
             "pages": [
@@ -1513,7 +1513,7 @@
                 ]
               },
               {
-                "group": "Acceso y Límites",
+                "group": "Acceso y L\u00edmites",
                 "pages": [
                   "es/access/restrict-access-by-email",
                   "es/access/restrict-access-to-candidates",
@@ -1539,12 +1539,12 @@
             ]
           },
           {
-            "group": "Guía del Candidato",
+            "group": "Gu\u00eda del Candidato",
             "icon": "life-ring",
             "expanded": true,
             "pages": [
               {
-                "group": "Intentar Exámenes",
+                "group": "Intentar Ex\u00e1menes",
                 "pages": [
                   "es/candidate/take-proctored-exam",
                   "es/candidate/take-timed-exam",
@@ -1582,7 +1582,7 @@
                 ]
               },
               {
-                "group": "Cómo Funciona la Supervisión",
+                "group": "C\u00f3mo Funciona la Supervisi\u00f3n",
                 "pages": [
                   "es/understanding/what-gets-tracked-during-proctoring",
                   "es/understanding/what-is-trust-score",
@@ -1608,7 +1608,7 @@
                 ]
               },
               {
-                "group": "Configuración",
+                "group": "Configuraci\u00f3n",
                 "pages": [
                   "es/socratease/socratease-quiz-settings",
                   "es/socratease/question-display-mode",
@@ -1625,7 +1625,7 @@
             "expanded": true,
             "pages": [
               {
-                "group": "Planes y Créditos",
+                "group": "Planes y Cr\u00e9ditos",
                 "pages": [
                   "es/pricing/payments-and-credits",
                   "es/pricing/feature-comparison",
@@ -1635,7 +1635,7 @@
                 ]
               },
               {
-                "group": "Facturación y Equipos",
+                "group": "Facturaci\u00f3n y Equipos",
                 "pages": [
                   "es/pricing/what-is-a-team",
                   "es/pricing/purchased-packs-not-showing",
@@ -1762,7 +1762,7 @@
                 ]
               },
               {
-                "group": "Como a Supervisão Funciona",
+                "group": "Como a Supervis\u00e3o Funciona",
                 "pages": [
                   "pt/understanding/what-gets-tracked-during-proctoring",
                   "pt/understanding/what-is-trust-score",
@@ -1772,7 +1772,7 @@
             ]
           },
           {
-            "group": "Questionários Socratease",
+            "group": "Question\u00e1rios Socratease",
             "icon": "graduation-cap",
             "expanded": true,
             "pages": [
@@ -1788,7 +1788,7 @@
                 ]
               },
               {
-                "group": "Configuração",
+                "group": "Configura\u00e7\u00e3o",
                 "pages": [
                   "pt/socratease/socratease-quiz-settings",
                   "pt/socratease/question-display-mode",
@@ -1800,12 +1800,12 @@
             ]
           },
           {
-            "group": "Preços e Conta",
+            "group": "Pre\u00e7os e Conta",
             "icon": "credit-card",
             "expanded": true,
             "pages": [
               {
-                "group": "Planos e Créditos",
+                "group": "Planos e Cr\u00e9ditos",
                 "pages": [
                   "pt/pricing/payments-and-credits",
                   "pt/pricing/feature-comparison",
