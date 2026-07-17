@@ -1,5 +1,5 @@
 // Add language selector and home icon to the sidebar logo row.
-// Uses MutationObserver to re-apply after client-side navigation.
+// Anchors off img.nav-logo to find the logo row (stable across Mintlify DOM changes).
 (function () {
   var LANGUAGES = [
     { code: 'en', label: 'EN', fullLabel: 'English', prefix: '' },
@@ -14,42 +14,43 @@
         return LANGUAGES[i];
       }
     }
-    return LANGUAGES[0]; // English (default)
+    return LANGUAGES[0];
   }
 
   function switchLanguage(targetLang) {
     var currentLang = getCurrentLang();
     var path = window.location.pathname;
-
-    // Strip current language prefix.
     if (currentLang.prefix) {
       path = path.substring(currentLang.prefix.length);
     }
-
-    // Add target language prefix.
     var newPath = targetLang.prefix + path;
     window.location.href = newPath || '/';
   }
 
-  function setup() {
-    var sidebar = document.querySelector('nav[aria-label="Pages"]');
-    if (!sidebar) return false;
+  function getLogoRow() {
+    var logo = document.querySelector('img.nav-logo');
+    if (!logo) return null;
+    var link = logo.parentElement;
+    if (!link) return null;
+    return link.parentElement;
+  }
 
-    var logoRow = sidebar.querySelector('#sidebar-content > div:first-child');
+  function setup() {
+    var logoRow = getLogoRow();
     if (!logoRow) return false;
 
-    // Remove previous instance if it exists (handles re-renders).
     var existing = logoRow.querySelector('.custom-sidebar-icons');
     if (existing) existing.remove();
 
     var currentLang = getCurrentLang();
 
-    // Create container.
+    logoRow.style.cssText = 'display:flex;align-items:center;justify-content:space-between;gap:0.25rem;overflow:visible;';
+
     var icons = document.createElement('div');
     icons.className = 'custom-sidebar-icons';
     icons.style.cssText = 'display:flex;align-items:center;gap:0.375rem;flex-shrink:0;';
 
-    // --- Language selector (dropdown) ---
+    // --- Language selector ---
     var langContainer = document.createElement('div');
     langContainer.style.cssText = 'position:relative;';
 
@@ -59,7 +60,6 @@
     langBtn.style.cssText = 'font-size:0.75rem;color:#6b7280;cursor:pointer;display:flex;align-items:center;gap:0.25rem;border:none;background:none;padding:0.25rem 0.375rem;border-radius:0.375rem;transition:background .15s;line-height:1;';
     langBtn.onmouseenter = function () { this.style.background = '#f3f4f6'; };
     langBtn.onmouseleave = function () { this.style.background = 'none'; };
-    // Globe SVG icon.
     langBtn.innerHTML =
       '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
       '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>' +
@@ -90,7 +90,6 @@
       dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
     };
 
-    // Close dropdown on outside click.
     document.addEventListener('click', function () {
       dropdown.style.display = 'none';
     });
@@ -114,22 +113,19 @@
       '</svg>';
 
     icons.appendChild(homeLink);
-
     logoRow.appendChild(icons);
     return true;
   }
 
-  // Initial setup with retry.
   var attempts = 0;
   var interval = setInterval(function () {
     if (setup() || attempts > 50) clearInterval(interval);
     attempts++;
   }, 200);
 
-  // Re-apply after client-side navigations.
   var observer = new MutationObserver(function () {
-    var sidebar = document.querySelector('nav[aria-label="Pages"]');
-    if (sidebar && !sidebar.querySelector('.custom-sidebar-icons')) {
+    var logoRow = getLogoRow();
+    if (logoRow && !logoRow.querySelector('.custom-sidebar-icons')) {
       setup();
     }
   });

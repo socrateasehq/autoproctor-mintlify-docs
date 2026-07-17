@@ -54,7 +54,7 @@ main .mt-2.text-lg.prose {
   margin-bottom: 0.5rem;
 }
 
-/* Hide the sidebar bottom bar (language + Go to AutoProctor are moved to the logo row via custom.js). */
+/* Hide the native sidebar language bar (custom.js adds a compact one to the logo row). */
 nav[aria-label="Pages"] > ul {
   display: none !important;
 }
@@ -64,16 +64,7 @@ img.nav-logo {
   height: 2rem !important; /* 32px, up from 24px */
 }
 
-/* Ensure the sidebar logo row spaces logo and icons properly. */
-#sidebar-content > div:first-child {
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.25rem;
-  overflow: visible;
-}
-
-/* Prevent the icons from being clipped. */
+/* Prevent the custom icons from being clipped. */
 .custom-sidebar-icons {
   flex-shrink: 0;
 }
