@@ -4,14 +4,16 @@ description: "Why issues inside the quiz window come from your quiz provider, no
 ---
 
 <Tip>
-Issues inside the quiz frame come from your quiz provider's servers, not AutoProctor. AutoProctor cannot read, modify, or fix anything inside the quiz.
+Issues inside the quiz frame come from your quiz provider, not AutoProctor. AutoProctor cannot read, modify, or fix anything inside the quiz.
 </Tip>
 
 ## How Embedding Works
 
 When you create an **IFrame test** on AutoProctor, you provide a URL to your quiz (hosted on JotForm, Typeform, ProProfs, or any other platform). AutoProctor loads that URL inside an **iframe** -- a browser window within a window.
 
-Everything inside the iframe comes directly from the quiz provider's servers. AutoProctor wraps the proctoring layer around it but has no access to the quiz content itself.
+Everything inside the iframe comes directly from the quiz provider. AutoProctor wraps the proctoring layer around it but has no access to the quiz content itself.
+
+You know how a blog post can embed a YouTube video? The blog controls the page layout, but the video itself comes from YouTube. If the video is unavailable, the blog cannot fix it. IFrame tests work the same way -- AutoProctor is the blog, and your quiz provider is YouTube.
 
 Think of it like a picture frame. The frame (AutoProctor) holds the picture, but it does not control what is printed on it.
 
@@ -30,7 +32,7 @@ If participants report problems **inside the quiz area**, the issue is almost ce
 | Issue | What's Happening |
 |---|---|
 | **"Form not found" or blank quiz** | The quiz URL changed, the form was deleted, or the provider is experiencing downtime. Check the form on the provider's website directly. |
-| **Questions not loading or loading slowly** | The provider's servers are slow or the form is too large. Test the quiz URL in a normal browser tab outside AutoProctor. |
+| **Questions not loading or loading slowly** | The provider is slow or the form is too large. Test the quiz URL in a normal browser tab outside AutoProctor. |
 | **Submission errors** | The provider rejected the response -- often due to required fields, validation rules, or server timeouts. This is configured in the provider's form settings. |
 | **"Form closed" or "No longer accepting responses"** | The form creator (or the provider) closed the form. Reopen it in your provider's dashboard. |
 | **CAPTCHA or login prompts** | Some providers require authentication or bot verification. These appear inside the iframe and are controlled by the provider. |

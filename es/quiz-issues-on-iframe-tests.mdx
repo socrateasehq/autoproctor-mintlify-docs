@@ -4,14 +4,16 @@ description: "Por qué los problemas dentro de la ventana del cuestionario provi
 ---
 
 <Tip>
-Los problemas dentro del marco del cuestionario provienen de los servidores de su proveedor, no de AutoProctor. AutoProctor no puede leer, modificar ni corregir nada dentro del cuestionario.
+Los problemas dentro del marco del cuestionario provienen de su proveedor, no de AutoProctor. AutoProctor no puede leer, modificar ni corregir nada dentro del cuestionario.
 </Tip>
 
 ## Cómo Funciona la Integración
 
 Cuando crea un **test IFrame** en AutoProctor, usted proporciona una URL a su cuestionario (alojado en JotForm, Typeform, ProProfs o cualquier otra plataforma). AutoProctor carga esa URL dentro de un **iframe** -- una ventana del navegador dentro de otra ventana.
 
-Todo dentro del iframe proviene directamente de los servidores del proveedor del cuestionario. AutoProctor envuelve la capa de supervisión alrededor pero no tiene acceso al contenido del cuestionario en sí.
+Todo dentro del iframe proviene directamente del proveedor del cuestionario. AutoProctor envuelve la capa de supervisión alrededor pero no tiene acceso al contenido del cuestionario en sí.
+
+Es como cuando una publicación de blog incluye un video de YouTube. El blog controla el diseño de la página, pero el video proviene de YouTube. Si el video no está disponible, el blog no puede arreglarlo. Los tests IFrame funcionan de la misma manera -- AutoProctor es el blog, y su proveedor de cuestionarios es YouTube.
 
 Piense en ello como un marco de fotos. El marco (AutoProctor) sostiene la foto, pero no controla lo que está impreso en ella.
 
@@ -30,7 +32,7 @@ Si los participantes reportan problemas **dentro del área del cuestionario**, e
 | Problema | Qué Está Pasando |
 |---|---|
 | **"Formulario no encontrado" o cuestionario en blanco** | La URL del cuestionario cambió, el formulario fue eliminado, o el proveedor está experimentando una caída. Verifique el formulario directamente en el sitio web del proveedor. |
-| **Preguntas que no cargan o cargan lentamente** | Los servidores del proveedor están lentos o el formulario es demasiado grande. Pruebe la URL del cuestionario en una pestaña normal del navegador fuera de AutoProctor. |
+| **Preguntas que no cargan o cargan lentamente** | El proveedor está lento o el formulario es demasiado grande. Pruebe la URL del cuestionario en una pestaña normal del navegador fuera de AutoProctor. |
 | **Errores de envío** | El proveedor rechazó la respuesta -- frecuentemente por campos obligatorios, reglas de validación o tiempos de espera del servidor. Esto se configura en los ajustes del formulario del proveedor. |
 | **"Formulario cerrado" o "Ya no acepta respuestas"** | El creador del formulario (o el proveedor) cerró el formulario. Reábralo en el panel de control de su proveedor. |
 | **CAPTCHA o solicitudes de inicio de sesión** | Algunos proveedores requieren autenticación o verificación de bots. Estos aparecen dentro del iframe y son controlados por el proveedor. |
