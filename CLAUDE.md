@@ -64,7 +64,7 @@ All articles exist in 3 languages: EN (root), ES (`es/`), PT (`pt/`). Changes to
 
 ## Writing Conventions
 
-- **No em-dashes.** Use `--` (double hyphen) instead of `—` (em-dash) everywhere: prose, callouts, list items, Related Resources. Mintlify renders `--` as a proper en-dash.
+- **No em-dashes.** Use a single hyphen `-` instead of `—` (em-dash) or `--` (double hyphen) everywhere: prose, callouts, list items, Related Resources. Mintlify renders `--` as an em-dash, which looks like AI-generated text. A single `-` stays as-is.
 
 ## Product Context
 
