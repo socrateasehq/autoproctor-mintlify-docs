@@ -96,7 +96,8 @@
                   "missing-images-and-recordings",
                   "what-does-went-offline-mean",
                   "incorrect-candidate-name-in-results",
-                  "google-forms-response-not-visible"
+                  "google-forms-response-not-visible",
+                  "quiz-issues-on-iframe-tests"
                 ]
               }
             ]
@@ -276,7 +277,8 @@
                   "es/missing-images-and-recordings",
                   "es/what-does-went-offline-mean",
                   "es/incorrect-candidate-name-in-results",
-                  "es/google-forms-response-not-visible"
+                  "es/google-forms-response-not-visible",
+                  "es/quiz-issues-on-iframe-tests"
                 ]
               }
             ]
@@ -456,7 +458,8 @@
                   "pt/missing-images-and-recordings",
                   "pt/what-does-went-offline-mean",
                   "pt/incorrect-candidate-name-in-results",
-                  "pt/google-forms-response-not-visible"
+                  "pt/google-forms-response-not-visible",
+                  "pt/quiz-issues-on-iframe-tests"
                 ]
               }
             ]
@@ -589,6 +592,7 @@
   "navbar": {},
   "footer": {
     "socials": {
+      "website": "https://www.autoproctor.co/",
       "linkedin": "https://www.linkedin.com/company/autoproctorhq/",
       "youtube": "https://www.youtube.com/@autoproctor1043"
     }

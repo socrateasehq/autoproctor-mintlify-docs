@@ -1,0 +1,82 @@
+---
+title: "Problemas do Questionário em Testes IFrame"
+description: "Por que problemas dentro da janela do questionário vêm do seu provedor de questionários, não do AutoProctor, e o que você pode fazer a respeito."
+---
+
+<Tip>
+Problemas dentro do quadro do questionário vêm dos servidores do seu provedor, não do AutoProctor. O AutoProctor não pode ler, modificar ou corrigir nada dentro do questionário.
+</Tip>
+
+## Como a Incorporação Funciona
+
+Quando você cria um **teste IFrame** no AutoProctor, você fornece uma URL para seu questionário (hospedado no JotForm, Typeform, ProProfs ou qualquer outra plataforma). O AutoProctor carrega essa URL dentro de um **iframe** -- uma janela do navegador dentro de outra janela.
+
+Tudo dentro do iframe vem diretamente dos servidores do provedor do questionário. O AutoProctor envolve a camada de supervisão ao redor mas não tem acesso ao conteúdo do questionário em si.
+
+Pense nisso como uma moldura de foto. A moldura (AutoProctor) segura a foto, mas não controla o que está impresso nela.
+
+<Frame caption="O AutoProctor fornece a camada de supervisão ao redor do questionário. O conteúdo do questionário é servido inteiramente pelo provedor externo.">
+  <img
+    className="rounded-xl"
+    src="/images/issues/iframe-embedding-diagram.png"
+    alt="Diagrama mostrando o AutoProctor como o quadro externo com o conteúdo do provedor de questionários carregado dentro de um iframe"
+  />
+</Frame>
+
+## Problemas Comuns que Vêm do Provedor
+
+Se os participantes relatam problemas **dentro da área do questionário**, o problema é quase certamente do provedor do questionário.
+
+| Problema | O Que Está Acontecendo |
+|---|---|
+| **"Formulário não encontrado" ou questionário em branco** | A URL do questionário mudou, o formulário foi excluído, ou o provedor está passando por uma queda. Verifique o formulário diretamente no site do provedor. |
+| **Perguntas que não carregam ou carregam lentamente** | Os servidores do provedor estão lentos ou o formulário é muito grande. Teste a URL do questionário em uma aba normal do navegador fora do AutoProctor. |
+| **Erros de envio** | O provedor rejeitou a resposta -- frequentemente devido a campos obrigatórios, regras de validação ou tempos limite do servidor. Isso é configurado nas configurações do formulário do provedor. |
+| **"Formulário fechado" ou "Não aceita mais respostas"** | O criador do formulário (ou o provedor) fechou o formulário. Reabra-o no painel do seu provedor. |
+| **CAPTCHA ou solicitações de login** | Alguns provedores exigem autenticação ou verificação de bots. Estes aparecem dentro do iframe e são controlados pelo provedor. |
+
+<Note>
+Abra a URL do questionário diretamente em uma nova aba do navegador (sem o AutoProctor). Se o mesmo problema aparecer lá, é um problema do provedor -- não do AutoProctor.
+</Note>
+
+## Com o Que o AutoProctor Pode e Não Pode Ajudar
+
+| O AutoProctor cuida de | O provedor do questionário cuida de |
+|---|---|
+| Supervisão (monitoramento de câmera, tela, áudio) | Conteúdo do questionário (perguntas, respostas, pontuação) |
+| Links de teste e configurações de acesso | Disponibilidade do formulário, cotas e limites de respostas |
+| Detecção de infrações e evidências | Processamento de envios e armazenamento de respostas |
+| Identidade do candidato e login | CAPTCHA, autenticação do formulário e validação |
+| Resultados e relatórios de supervisão | Mensagens de erro específicas do questionário |
+
+Se você nos contatar sobre um problema dentro do quadro do questionário, não poderemos investigá-lo -- não temos acesso aos sistemas do provedor. Entre em contato diretamente com o provedor do questionário.
+
+## O Que Você Pode Fazer
+
+<Steps>
+  <Step title="Teste a URL do questionário independentemente">
+    Abra a URL do seu questionário em uma aba normal do navegador. Se o erro aparecer lá também, o problema é do provedor.
+  </Step>
+  <Step title="Verifique o painel do seu provedor">
+    Procure limites de respostas, status do formulário, datas de validade ou restrições do plano no site do seu provedor de questionários.
+  </Step>
+  <Step title="Entre em contato com o provedor do questionário">
+    Comunique-se com a equipe de suporte do provedor com a mensagem de erro. Eles controlam o formulário e podem investigar.
+  </Step>
+  <Step title="Entre em contato conosco se o problema estiver fora do questionário">
+    Se o problema for com a supervisão, o link do teste, acesso à câmera ou qualquer coisa fora do quadro do questionário -- [entre em contato conosco](/contact-us) e ajudaremos.
+  </Step>
+</Steps>
+
+## Como Evitar Este Problema com os Questionários Próprios do AutoProctor
+
+Com os **testes IFrame**, o AutoProctor e o provedor do questionário são dois sistemas separados. Quando algo quebra dentro do questionário, não podemos ajudar porque não o controlamos.
+
+O **[Socratease](/why-socratease)** é a ferramenta de questionários integrada do AutoProctor. O questionário e a supervisão fazem parte da mesma plataforma, por isso não há barreira com terceiros. Se algo der errado, podemos investigar e corrigir diretamente.
+
+## Recursos Relacionados
+
+- [Por Que Socratease?](/why-socratease) -- Benefícios de usar a ferramenta de questionários integrada do AutoProctor
+- [Provedores de Questionários](/supported-quiz-providers) -- Todos os tipos de questionários que o AutoProctor suporta
+- [Argumentos de Consulta IFrame](/iframe-query-arguments) -- Personalizar como os questionários IFrame carregam
+- [Entre em Contato](/contact-us) -- Comunique-se para problemas com o AutoProctor (não problemas do provedor de questionários)

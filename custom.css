@@ -106,6 +106,14 @@ img.nav-logo {
   display: block;
 }
 
+/* Iframes (YouTube embeds, etc.) lack intrinsic dimensions, so the
+   fit-content Frame parent collapses. Give them an explicit width. */
+#content-area .frame iframe {
+  width: 500px;
+  width: 70cqi;
+  display: block;
+}
+
 /* Center the sidebar search bar and reduce top spacing. */
 #sidebar-content > div.mt-6 {
   margin-top: 1rem;

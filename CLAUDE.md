@@ -31,7 +31,18 @@ The `<Frame>` container shrinks to wrap the image (`width: fit-content`) and is 
   ```jsx
   <img style={{maxWidth: "56cqi"}} src="/images/..." alt="..." />
   ```
-- **Sizing guidance:** Simple UI elements (dashboard, single panel) → `40cqi`–`56cqi`. Full-page screenshots with dense content → leave at default `70cqi` or go up to `90cqi`. Getting-started tutorial images → `56cqi`.
+- **Sizing by information density:** Choose size based on how much detail the reader needs to parse:
+
+  | Density | Examples | Size |
+  |---|---|---|
+  | Low | Single button, icon, simple dialog, toggle | `40cqi`–`50cqi` |
+  | Medium | Settings panel, form, single dashboard card | `56cqi` |
+  | High (default) | Full-page screenshot, multi-column layout, table-heavy UI | `70cqi` |
+  | Very high | Dense data table, side-by-side comparison, wide workflow | `80cqi`–`90cqi` |
+
+  The test: if the reader would need to squint or zoom to read text in the image, size up.
+
+- **Videos and iframes:** YouTube embeds and other iframes inside `<Frame>` default to `70cqi` via CSS. No inline override needed. Iframes outside a `<Frame>` should use `className="w-full aspect-video"`.
 - Images should always have `alt` text for accessibility.
 
 ## URL Structure
@@ -50,6 +61,10 @@ All articles exist in 3 languages: EN (root), ES (`es/`), PT (`pt/`). Changes to
 - `<Steps>` / `<Step>` — Numbered procedure steps
 - `<Frame>` — Image/video container with optional caption
 - `<CardGroup>` / `<Card>` — Grid of linked cards (used on homepage)
+
+## Writing Conventions
+
+- **No em-dashes.** Use `--` (double hyphen) instead of `—` (em-dash) everywhere: prose, callouts, list items, Related Resources. Mintlify renders `--` as a proper en-dash.
 
 ## Product Context
 

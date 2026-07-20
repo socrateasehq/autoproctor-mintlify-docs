@@ -1,0 +1,82 @@
+---
+title: "Quiz Issues on IFrame Tests"
+description: "Why issues inside the quiz window come from your quiz provider, not AutoProctor, and what you can do about them."
+---
+
+<Tip>
+Issues inside the quiz frame come from your quiz provider's servers, not AutoProctor. AutoProctor cannot read, modify, or fix anything inside the quiz.
+</Tip>
+
+## How Embedding Works
+
+When you create an **IFrame test** on AutoProctor, you provide a URL to your quiz (hosted on JotForm, Typeform, ProProfs, or any other platform). AutoProctor loads that URL inside an **iframe** -- a browser window within a window.
+
+Everything inside the iframe comes directly from the quiz provider's servers. AutoProctor wraps the proctoring layer around it but has no access to the quiz content itself.
+
+Think of it like a picture frame. The frame (AutoProctor) holds the picture, but it does not control what is printed on it.
+
+<Frame caption="AutoProctor provides the proctoring layer around the quiz. The quiz content is served entirely by the external provider.">
+  <img
+    className="rounded-xl"
+    src="/images/issues/iframe-embedding-diagram.png"
+    alt="Diagram showing AutoProctor as the outer frame with the quiz provider content loaded inside an iframe"
+  />
+</Frame>
+
+## Common Issues That Come from the Provider
+
+If participants report problems **inside the quiz area**, the issue is almost certainly with the quiz provider.
+
+| Issue | What's Happening |
+|---|---|
+| **"Form not found" or blank quiz** | The quiz URL changed, the form was deleted, or the provider is experiencing downtime. Check the form on the provider's website directly. |
+| **Questions not loading or loading slowly** | The provider's servers are slow or the form is too large. Test the quiz URL in a normal browser tab outside AutoProctor. |
+| **Submission errors** | The provider rejected the response -- often due to required fields, validation rules, or server timeouts. This is configured in the provider's form settings. |
+| **"Form closed" or "No longer accepting responses"** | The form creator (or the provider) closed the form. Reopen it in your provider's dashboard. |
+| **CAPTCHA or login prompts** | Some providers require authentication or bot verification. These appear inside the iframe and are controlled by the provider. |
+
+<Note>
+Open the quiz URL directly in a new browser tab (without AutoProctor). If the same problem appears there, it is a provider issue -- not an AutoProctor issue.
+</Note>
+
+## What AutoProctor Can and Cannot Help With
+
+| AutoProctor handles | The quiz provider handles |
+|---|---|
+| Proctoring (camera, screen, audio monitoring) | Quiz content (questions, answers, scoring) |
+| Test links and access settings | Form availability, quotas, and response limits |
+| Violation detection and evidence | Submission processing and response storage |
+| Candidate identity and login | CAPTCHA, form authentication, and validation |
+| Results and proctoring reports | Quiz-specific error messages |
+
+If you contact us about an issue inside the quiz frame, we will not be able to investigate it -- we do not have access to the provider's systems. Contact the quiz provider directly.
+
+## What You Can Do
+
+<Steps>
+  <Step title="Test the quiz URL independently">
+    Open your quiz URL in a regular browser tab. If the error appears there too, the problem is with the provider.
+  </Step>
+  <Step title="Check your provider's dashboard">
+    Look for response limits, form status, expiry dates, or plan restrictions on your quiz provider's website.
+  </Step>
+  <Step title="Contact the quiz provider">
+    Reach out to the provider's support team with the error message. They control the form and can investigate.
+  </Step>
+  <Step title="Contact us if the issue is outside the quiz">
+    If the problem is with proctoring, the test link, camera access, or anything outside the quiz frame -- [contact us](/contact-us) and we will help.
+  </Step>
+</Steps>
+
+## How to Avoid This Problem with AutoProctor's Own Quizzes
+
+With **IFrame tests**, AutoProctor and the quiz provider are two separate systems. When something breaks inside the quiz, we cannot help because we do not control it.
+
+**[Socratease](/why-socratease)** is AutoProctor's built-in quiz tool. The quiz and the proctoring are part of the same platform, so there is no third-party boundary. If something goes wrong, we can investigate and fix it directly.
+
+## Related Resources
+
+- [Why Socratease?](/why-socratease) -- Benefits of using AutoProctor's built-in quiz tool
+- [Quiz Providers](/supported-quiz-providers) -- All quiz types AutoProctor supports
+- [IFrame Query Arguments](/iframe-query-arguments) -- Customizing how IFrame quizzes load
+- [Contact Us](/contact-us) -- Reach out for issues with AutoProctor (not quiz provider issues)
