@@ -12,7 +12,7 @@ Una vez que los candidatos completan un examen, puede revisar sus entregas indiv
     Visite su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y localice el examen que desea revisar.
   </Step>
   <Step title="Haga clic en Ver en Resultados">
-    Haga clic en el botón **Ver** en la sección **Resultados** del examen correspondiente. Esto abre una lista de todas las entregas de los candidatos.
+    Haga clic en el botón **Ver** en la sección **Resultados** del examen correspondiente. Esto abre una lista de todas las entregas de los candidatos (Análisis General).
 
     <Frame caption="Haga clic en Ver Respuestas para ver las respuestas individuales">
       <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="Lista de entregas de candidatos que muestra nombres, puntuaciones y estado de la calificación" />
@@ -33,6 +33,53 @@ Una vez que los candidatos completan un examen, puede revisar sus entregas indiv
     </Frame>
   </Step>
 </Steps>
+
+## Calificación Manual de Respuestas
+
+Algunas entregas requieren una acción manual antes de que sus resultados estén disponibles, por ejemplo, cuando un candidato nunca entrega el examen por sí mismo.
+
+<Steps>
+  <Step title="Abra la entrega">
+    Haga clic en **Ver Reporte** junto a la entrega del candidato para abrir su página de detalle de respuestas.
+  </Step>
+  <Step title="Marque la entrega como finalizada">
+    Marque la entrega como finalizada para enviarla en nombre del candidato. Esto libera sus resultados según su [configuración de liberación de resultados](/show-results-to-candidates).
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of marking an attempt as finished */}
+
+Para calificar preguntas individuales y ajustar puntuaciones, consulte **Análisis Individual** más abajo.
+
+## Información de Preguntas y Análisis Individual
+
+Más allá del Análisis General, Socratease ofrece dos vistas de análisis adicionales para un cuestionario.
+
+### Información de Preguntas
+
+Información de Preguntas muestra un desglose por pregunta de cómo respondieron todos los candidatos, con el porcentaje y el número de candidatos que eligieron cada opción.
+
+<Warning>
+Solo las preguntas calificadas automáticamente aparecen en Información de Preguntas. Los tipos de preguntas calificadas manualmente no se incluyen.
+</Warning>
+
+{/* TODO: Add screenshot of the Question Insights view */}
+
+### Análisis Individual
+
+Análisis Individual muestra la entrega completa de un candidato a la vez: puntos obtenidos, preguntas respondidas correctamente, hora de envío y tiempo empleado.
+
+- Use el **ícono de lápiz** junto a los puntos de cualquier pregunta para ajustar la puntuación de ese candidato.
+- Use **Agregar Retroalimentación del Evaluador** para dejar una nota en su entrega.
+- Use **Priorizar No Calificadas** para ir directamente a las entregas que aún necesitan calificación manual.
+- Use **Filtrar por Resultado** para mostrar solo respuestas correctas, incorrectas o no calificadas.
+- Use **Descargar Todas las Respuestas** para exportar las respuestas de todos los candidatos.
+
+<Note>
+Agrupar Por y Filtrar por Etiqueta también están disponibles aquí. Consulte [Uso de Etiquetas](/using-tags) para configurar y usar etiquetas en sus resultados.
+</Note>
+
+{/* TODO: Add screenshot of the Individual Analytics view */}
 
 ## Para Google Forms
 
@@ -63,3 +110,4 @@ Si no puede ver las respuestas en Google Forms, consulte la guía sobre [respues
 - [Exportar a Excel](/export-results-to-excel) -- Descargar todos los resultados como hoja de cálculo
 - [Mostrar Resultados a los Candidatos](/show-results-to-candidates) -- Controlar lo que los candidatos ven después de la entrega
 - [Integración con Google Sheets](/write-results-to-google-sheets) -- Sincronizar resultados automáticamente con una hoja de Google Sheets
+- [Uso de Etiquetas](/using-tags) -- Filtre y agrupe resultados con etiquetas

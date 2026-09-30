@@ -12,7 +12,7 @@ After candidates complete a test, you can review their individual submissions to
     Visit your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and locate the test you want to review.
   </Step>
   <Step title="Click View under Results">
-    Click the **View** button under the **Results** section of the relevant test. This opens a list of all candidate submissions.
+    Click the **View** button under the **Results** section of the relevant test. This opens a list of all candidate submissions (Overall Analytics).
 
     <Frame caption="Click on View Answers for individual responses">
       <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="List of candidate submissions showing names, scores, and grading status" />
@@ -38,6 +38,53 @@ After candidates complete a test, you can review their individual submissions to
 For Google Forms, Microsoft Forms, and IFrame tests, quiz results appear in the platform where you created the quiz — not on AutoProctor. See [Where Can I See My Quiz Results?](/where-to-find-quiz-results) for where to find results for each platform.
 </Note>
 
+## Grading Responses Manually
+
+Some attempts require manual action before their results become available, for example when a candidate never submits the test themselves.
+
+<Steps>
+  <Step title="Open the submission">
+    Click **View Report** next to the candidate's attempt to open their response detail page.
+  </Step>
+  <Step title="Mark the attempt as finished">
+    Mark the attempt as finished to submit it on the candidate's behalf. This releases their results according to your [result release setting](/show-results-to-candidates).
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of marking an attempt as finished */}
+
+For grading individual questions and adjusting scores, see [Individual Analytics](#individual-analytics) below.
+
+## Question Insights and Individual Analytics
+
+Beyond Overall Analytics, Socratease gives you two additional analytics views for a quiz.
+
+### Question Insights
+
+Question Insights shows a per-question breakdown of how all candidates answered, with the percentage and count of candidates who picked each option.
+
+<Warning>
+Only automatically graded questions appear in Question Insights. Manually graded question types are not included.
+</Warning>
+
+{/* TODO: Add screenshot of the Question Insights view */}
+
+### Individual Analytics
+
+Individual Analytics shows one candidate's full submission at a time: points scored, questions answered correctly, submission time, and time taken.
+
+- Use the **pencil icon** next to any question's points to adjust that candidate's score.
+- Use **Add Evaluator Feedback** to leave a note on their submission.
+- Use **Prioritize Ungraded** to jump straight to submissions that still need manual grading.
+- Use **Filter by Result** to show only correct, incorrect, or ungraded responses.
+- Use **Download All Responses** to export every candidate's answers.
+
+<Note>
+Group By and Filter by Tag are also available here. See [Using Tags](/using-tags) for how to set up and use tags in your results.
+</Note>
+
+{/* TODO: Add screenshot of the Individual Analytics view */}
+
 ## Related Resources
 
 - [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
@@ -45,3 +92,4 @@ For Google Forms, Microsoft Forms, and IFrame tests, quiz results appear in the 
 - [Export to Excel](/export-results-to-excel) -- Download all results as a spreadsheet
 - [Showing Results to Candidates](/show-results-to-candidates) -- Control what candidates see after submission
 - [Google Sheets Integration](/write-results-to-google-sheets) -- Automatically sync results to a Google Sheet
+- [Using Tags](/using-tags) -- Filter and group results by tags

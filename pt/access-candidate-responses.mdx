@@ -12,7 +12,7 @@ Após os candidatos concluírem um teste, você pode revisar suas submissões in
     Acesse o [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e localize o teste que deseja revisar.
   </Step>
   <Step title="Clique em Ver nos Resultados">
-    Clique no botão **View** na seção **Results** do teste correspondente. Isso abre uma lista de todas as submissões dos candidatos.
+    Clique no botão **View** na seção **Results** do teste correspondente. Isso abre uma lista de todas as submissões dos candidatos (Overall Analytics).
 
     <Frame caption="Clique em View Answers para ver as respostas individuais">
       <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="Lista de submissões dos candidatos mostrando nomes, pontuações e status de correção" />
@@ -33,6 +33,53 @@ Após os candidatos concluírem um teste, você pode revisar suas submissões in
     </Frame>
   </Step>
 </Steps>
+
+## Correção Manual de Respostas
+
+Algumas submissões exigem uma ação manual antes que seus resultados fiquem disponíveis, por exemplo, quando um candidato nunca envia o teste por conta própria.
+
+<Steps>
+  <Step title="Abra a submissão">
+    Clique em **View Report** ao lado da tentativa do candidato para abrir a página de detalhes da resposta.
+  </Step>
+  <Step title="Marque a tentativa como finalizada">
+    Marque a tentativa como finalizada para enviá-la em nome do candidato. Isso libera os resultados de acordo com sua [configuração de liberação de resultados](/show-results-to-candidates).
+  </Step>
+</Steps>
+
+{/* TODO: Add screenshot of marking an attempt as finished */}
+
+Para corrigir perguntas individuais e ajustar pontuações, consulte **Individual Analytics** mais abaixo.
+
+## Question Insights e Individual Analytics
+
+Além da Overall Analytics, o Socratease oferece duas visualizações de análise adicionais para um questionário.
+
+### Question Insights
+
+Question Insights mostra um detalhamento por pergunta de como todos os candidatos responderam, com o percentual e o número de candidatos que escolheram cada opção.
+
+<Warning>
+Apenas perguntas corrigidas automaticamente aparecem em Question Insights. Tipos de perguntas corrigidas manualmente não são incluídos.
+</Warning>
+
+{/* TODO: Add screenshot of the Question Insights view */}
+
+### Individual Analytics
+
+Individual Analytics mostra a submissão completa de um candidato por vez: pontos obtidos, perguntas respondidas corretamente, horário de envio e tempo gasto.
+
+- Use o **ícone de lápis** ao lado dos pontos de qualquer pergunta para ajustar a pontuação daquele candidato.
+- Use **Add Evaluator Feedback** para deixar uma observação na submissão.
+- Use **Prioritize Ungraded** para ir direto às submissões que ainda precisam de correção manual.
+- Use **Filter by Result** para mostrar apenas respostas corretas, incorretas ou não corrigidas.
+- Use **Download All Responses** para exportar as respostas de todos os candidatos.
+
+<Note>
+Group By e Filter by Tag também estão disponíveis aqui. Consulte [Uso de Etiquetas](/using-tags) para configurar e usar etiquetas em seus resultados.
+</Note>
+
+{/* TODO: Add screenshot of the Individual Analytics view */}
 
 ## Para Google Forms
 
@@ -63,3 +110,4 @@ Se você não consegue ver respostas no Google Forms, consulte o guia sobre [res
 - [Exportar para Excel](/export-results-to-excel) -- Baixe todos os resultados como planilha
 - [Mostrar Resultados aos Candidatos](/show-results-to-candidates) -- Controle o que os candidatos veem após a submissão
 - [Integração com Google Sheets](/write-results-to-google-sheets) -- Sincronize resultados automaticamente em uma planilha Google
+- [Uso de Etiquetas](/using-tags) -- Filtre e agrupe resultados usando etiquetas

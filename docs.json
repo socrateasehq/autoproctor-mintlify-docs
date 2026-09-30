@@ -166,6 +166,7 @@
                   "why-socratease",
                   "create-socratease-quiz",
                   "socratease-question-types",
+                  "socratease-question-settings",
                   "question-type-availability",
                   "import-questions-from-excel",
                   "question-banks"
@@ -347,6 +348,7 @@
                   "es/why-socratease",
                   "es/create-socratease-quiz",
                   "es/socratease-question-types",
+                  "es/socratease-question-settings",
                   "es/question-type-availability",
                   "es/import-questions-from-excel",
                   "es/question-banks"
@@ -528,6 +530,7 @@
                   "pt/why-socratease",
                   "pt/create-socratease-quiz",
                   "pt/socratease-question-types",
+                  "pt/socratease-question-settings",
                   "pt/question-type-availability",
                   "pt/import-questions-from-excel",
                   "pt/question-banks"

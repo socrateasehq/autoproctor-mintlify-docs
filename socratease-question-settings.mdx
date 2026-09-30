@@ -1,0 +1,47 @@
+---
+title: "Question Settings"
+description: "Configure points, negative points, time limits, and other settings available on individual Socratease questions."
+---
+
+Every question in a Socratease quiz has its own settings for scoring, timing, and behavior. These are separate from the quiz-wide settings covered in [Quiz Settings](/socratease-quiz-settings).
+
+## Points and Negative Points
+
+**Points** sets how many points a candidate earns for a correct answer. **Negative Points** lets you deduct points for an incorrect answer, useful for discouraging random guessing on MCQ and MCA questions.
+
+Enter a value manually, or click the **calculator icon** next to Negative Points to auto-calculate it based on the number of options:
+
+<Note>
+Number of Negative Points = (Number of Points Assigned) / (Number of Options)
+</Note>
+
+For example, an MCQ worth 2 points with 4 options gets 2 ÷ 4 = 0.5 Negative Points.
+
+<Warning>
+Auto-calculation is only available for **MCQ** questions. For MCA questions, enter Negative Points manually.
+</Warning>
+
+{/* TODO: Add screenshot of Points and Negative Points fields, including the calculator icon */}
+
+## Advanced Question Settings
+
+Click the **three-dot menu** (⋮) in the top-right corner of any question to open its advanced settings.
+
+{/* TODO: Add screenshot of the three-dot advanced settings menu */}
+
+| Setting | What it does |
+|---|---|
+| **Time Limit** | Sets a per-question timer. This only takes effect when the quiz uses **one-by-one without navigation** display mode. See [How Timer Settings Change](/question-display-mode#how-timer-settings-change). |
+| **Cannot Skip** | Makes the question mandatory. Candidates cannot move to the next question or submit the quiz without answering it. |
+| **Markdown** | Renders the question text and options as [Markdown](https://en.wikipedia.org/wiki/Markdown), useful for formatting code snippets or other structured text. |
+| **Shuffle Choices** | Randomizes the order options appear in for each candidate. See [Choice Shuffling](/socratease-quiz-settings) for how this works at the quiz level. |
+| **Tags** | Label the question for filtering and grouping in results. See [Using Tags](/using-tags). |
+| **Feedback** | Optional text shown to the candidate below their response, if quiz results are visible to them. See [Showing Results to Candidates](/show-results-to-candidates). |
+
+## Related Resources
+
+- [Socratease Question Types](/socratease-question-types) -- All available question formats
+- [Quiz Settings](/socratease-quiz-settings) -- Quiz-wide configuration options
+- [Question Display Mode](/question-display-mode) -- How display mode affects per-question timers
+- [Using Tags](/using-tags) -- Organize questions with tags
+- [Showing Results to Candidates](/show-results-to-candidates) -- Control what candidates see, including feedback

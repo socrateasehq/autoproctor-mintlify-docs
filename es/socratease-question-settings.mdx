@@ -1,0 +1,47 @@
+---
+title: "Configuración de Preguntas"
+description: "Configure puntos, puntos negativos, límites de tiempo y otras opciones disponibles en las preguntas individuales de Socratease."
+---
+
+Cada pregunta de un cuestionario Socratease tiene su propia configuración de puntuación, tiempo y comportamiento. Esto es independiente de las opciones generales del cuestionario, cubiertas en [Configuración de Cuestionarios Socratease](/socratease-quiz-settings).
+
+## Puntos y Puntos Negativos
+
+**Puntos** define cuántos puntos gana un candidato por una respuesta correcta. **Puntos Negativos** le permite descontar puntos por una respuesta incorrecta, útil para desalentar las respuestas al azar en preguntas MCQ y MCA.
+
+Ingrese un valor manualmente, o haga clic en el **ícono de calculadora** junto a Puntos Negativos para calcularlo automáticamente según el número de opciones:
+
+<Note>
+Número de Puntos Negativos = (Número de Puntos Asignados) / (Número de Opciones)
+</Note>
+
+Por ejemplo, una pregunta MCQ con 2 puntos y 4 opciones obtiene 2 ÷ 4 = 0.5 Puntos Negativos.
+
+<Warning>
+El cálculo automático solo está disponible para preguntas **MCQ**. Para preguntas MCA, ingrese los Puntos Negativos manualmente.
+</Warning>
+
+{/* TODO: Add screenshot of Points and Negative Points fields, including the calculator icon */}
+
+## Configuración Avanzada de Preguntas
+
+Haga clic en el **menú de tres puntos** (⋮) en la esquina superior derecha de cualquier pregunta para abrir su configuración avanzada.
+
+{/* TODO: Add screenshot of the three-dot advanced settings menu */}
+
+| Opción | Qué hace |
+|---|---|
+| **Límite de Tiempo** | Establece un temporizador por pregunta. Solo tiene efecto cuando el cuestionario usa el modo de visualización **una por una sin navegación**. Consulte [Cómo Cambia la Configuración del Temporizador](/question-display-mode#how-timer-settings-change). |
+| **No se Puede Omitir** | Hace que la pregunta sea obligatoria. Los candidatos no pueden avanzar a la siguiente pregunta ni enviar el cuestionario sin responderla. |
+| **Markdown** | Renderiza el texto de la pregunta y las opciones como [Markdown](https://en.wikipedia.org/wiki/Markdown), útil para dar formato a fragmentos de código u otro texto estructurado. |
+| **Mezclar Opciones** | Aleatoriza el orden en que aparecen las opciones para cada candidato. Consulte [Mezcla de Opciones](/socratease-quiz-settings) para saber cómo funciona esto a nivel del cuestionario. |
+| **Etiquetas** | Etiquete la pregunta para filtrarla y agruparla en los resultados. Consulte [Uso de Etiquetas](/using-tags). |
+| **Retroalimentación** | Texto opcional que se muestra al candidato debajo de su respuesta, si los resultados del cuestionario son visibles para él. Consulte [Mostrar Resultados a los Candidatos](/show-results-to-candidates). |
+
+## Recursos Relacionados
+
+- [Tipos de Preguntas de Socratease](/socratease-question-types) - Todos los formatos de preguntas disponibles
+- [Configuración de Cuestionarios Socratease](/socratease-quiz-settings) - Opciones de configuración a nivel del cuestionario
+- [Modo de Visualización de Preguntas](/question-display-mode) - Cómo el modo de visualización afecta los temporizadores por pregunta
+- [Uso de Etiquetas](/using-tags) - Organice preguntas con etiquetas
+- [Mostrar Resultados a los Candidatos](/show-results-to-candidates) - Controle lo que ven los candidatos, incluida la retroalimentación
