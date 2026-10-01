@@ -1,33 +1,52 @@
 ---
 title: "Supervisión Avanzada"
-description: "Configure la verificación de documento de identidad, la detección de suplantación, la supervisión de 360 grados y la grabación de sesión para una protección avanzada contra el fraude."
+description: "Configure la verificación de documento de identidad, la detección de suplantación, la supervisión de 360 grados, la grabación de sesión y la grabación del candidato para una protección avanzada contra el fraude."
 ---
 
-La Supervisión Avanzada agrega funciones avanzadas de verificación de identidad y monitoreo más allá de la supervisión estándar. Estas funciones ayudan a prevenir la suplantación de identidad, detectar herramientas de IA y crear un registro completo de cada intento de examen.
-
-<Frame>
-  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Panel de configuración de supervisión avanzada" />
-</Frame>
+La Supervisión Avanzada agrega funciones avanzadas de verificación de identidad y monitoreo más allá de la supervisión estándar. Estas funciones ayudan a prevenir la suplantación de identidad, detectar herramientas de IA y crear un registro completo de cada intento de examen, incluido el video completo del candidato.
 
 <Note>
-Cada función de supervisión avanzada requiere **4 créditos adicionales por intento**. Si activa múltiples funciones avanzadas, el costo de créditos es acumulativo. Por ejemplo, activar Verificación de Documento de Identidad y Grabación de Sesión cuesta 8 créditos adicionales por intento de candidato.
+La mayoría de las funciones de supervisión avanzada cuestan **4 créditos adicionales por intento**. **Candidate recording** (grabación del candidato) cuesta **15 créditos adicionales por intento**. Si activa múltiples funciones avanzadas, el costo de créditos es acumulativo.
 </Note>
+
+## Cómo Activar la Supervisión Avanzada
+
+<Steps>
+  <Step title="Abra la Sección Proctoring">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Proctoring** (supervisión) en la lista de secciones.
+  </Step>
+  <Step title="Active la Supervisión">
+    Active el interruptor en la parte superior derecha de la sección **Proctoring**. Las opciones avanzadas solo se muestran mientras la supervisión está en **On**.
+  </Step>
+  <Step title="Active las Funciones que Necesite">
+    En **Enhanced proctoring** (supervisión avanzada), active cada función que quiera. La etiqueta junto a cada una muestra su costo, por ejemplo **+4 credits / attempt** (4 créditos adicionales por intento).
+  </Step>
+  <Step title="Guarde">
+    Haga clic en **Save settings**.
+  </Step>
+</Steps>
+
+{/* screenshot: "Enhanced proctoring" group of the Proctoring section on a Socratease test, showing the "Special bundle pricing" banner and the five switches "ID card verification", "Impersonation detection", "Auxiliary device", "Session recording" and "Candidate recording" with their credit badges, "ID card verification" On */}
+
+<Frame caption="El grupo Enhanced proctoring en un cuestionario Socratease, con ID card verification activado">
+  <img src="/images/enhanced-proctoring/enhanced-proctoring-group.png" alt="Grupo Enhanced proctoring con el aviso Special bundle pricing sobre cinco interruptores, cada uno con una insignia de créditos por intento. ID card verification está activado y los otros cuatro están desactivados" />
+</Frame>
 
 ## Funciones Disponibles
 
 ### Verificación de Documento de Identidad
 
-La Verificación de Documento de Identidad confirma la identidad del candidato comparando su documento de identidad cargado con su foto del examen y el nombre ingresado.
+**ID card verification** (verificación de documento de identidad) confirma la identidad del candidato comparando su documento de identidad cargado con su foto del examen y el nombre ingresado.
 
 <Steps>
-  <Step title="Active la Verificación de Documento de Identidad">
-    Active la opción **Verificación de Documento de Identidad** en la sección de Supervisión Avanzada de la configuración de su examen.
+  <Step title="Active ID card verification">
+    Active **ID card verification** en **Enhanced proctoring**, dentro de la sección **Proctoring** de la configuración de su examen.
   </Step>
   <Step title="El candidato sube su documento de identidad">
     Al iniciar el examen, se le pide al candidato que suba una foto de su documento de identidad. Los documentos aceptados incluyen credenciales estudiantiles, pasaportes, licencias de conducir e identificaciones oficiales.
   </Step>
   <Step title="AutoProctor verifica la identidad">
-    El sistema compara la foto y el nombre en el documento de identidad con la Foto Antes del Inicio del Examen y el nombre que el candidato ingresó en la plataforma.
+    El sistema compara la foto y el nombre en el documento de identidad con la foto tomada antes del inicio del examen y el nombre que el candidato ingresó en la plataforma.
   </Step>
 </Steps>
 
@@ -36,12 +55,12 @@ La Verificación de Documento de Identidad confirma la identidad del candidato c
 </Frame>
 
 <Note>
-La **Foto Antes del Inicio del Examen** debe estar activada en la configuración de supervisión básica para que la Verificación de Documento de Identidad funcione eficazmente.
+**Photo before test start** (foto antes del inicio del examen) debe estar activado en **What gets tracked** para que la verificación de documento de identidad funcione eficazmente.
 </Note>
 
 ### Detección de Suplantación
 
-La Detección de Suplantación monitorea si alguien diferente al candidato original intenta o continúa el examen. AutoProctor compara las fotos periódicas tomadas durante el examen con la foto inicial para detectar cambios de rostro.
+**Impersonation detection** (detección de suplantación) monitorea si alguien diferente al candidato original intenta o continúa el examen. AutoProctor compara las fotos periódicas tomadas durante el examen con la foto inicial para detectar cambios de rostro.
 
 <Frame caption="Evidencia de suplantación en el informe">
   <img src="/images/taking-tests/impersonation-detected.png" alt="Evidencia de suplantación en el informe" />
@@ -49,11 +68,11 @@ La Detección de Suplantación monitorea si alguien diferente al candidato origi
 
 ### Dispositivo Auxiliar (Supervisión de 360°)
 
-La función de Dispositivo Auxiliar permite la supervisión de 360 grados al emparejar el teléfono del candidato con su computadora portátil. Esto proporciona un ángulo de cámara secundario que captura el entorno físico del candidato.
+La función **Auxiliary device** (dispositivo auxiliar) permite la supervisión de 360 grados al emparejar el teléfono del candidato con su computadora portátil. Esto proporciona un ángulo de cámara secundario que captura el entorno físico del candidato.
 
 <Steps>
-  <Step title="Active el Dispositivo Auxiliar">
-    Active la opción **Dispositivo Auxiliar** en la configuración de Supervisión Avanzada.
+  <Step title="Active Auxiliary device">
+    Active **Auxiliary device** en **Enhanced proctoring**, dentro de la sección **Proctoring**.
   </Step>
   <Step title="El candidato empareja su teléfono">
     Cuando comienza el examen, el candidato escanea un código QR en la pantalla de su computadora portátil usando la cámara de su teléfono. Esto empareja los dos dispositivos.
@@ -67,33 +86,62 @@ La función de Dispositivo Auxiliar permite la supervisión de 360 grados al emp
   </Step>
 </Steps>
 
+Después del examen, el informe del candidato tiene una pestaña **Auxiliary device** con las capturas del teléfono.
+
 <Frame caption="Capturas de evidencia del dispositivo auxiliar">
   <img src="/images/taking-tests/aux-device-evidence.png" alt="Capturas de evidencia del dispositivo auxiliar" />
 </Frame>
 
 ### Grabación de Sesión
 
-La Grabación de Sesión captura un registro completo de la actividad de pantalla del candidato durante todo el examen, incluyendo clics del ratón y entrada del teclado. Esto crea una línea de tiempo revisable de todo el intento de examen.
+**Session recording** (grabación de sesión) captura un registro completo de la actividad de pantalla del candidato durante todo el examen, incluyendo clics del ratón y entrada del teclado. Esto crea una línea de tiempo revisable de todo el intento, que usted reproduce en la pestaña **Session recording** del informe del candidato.
 
-{/* TODO: Add screenshot of a session recording playback in the results page */}
+<Note>
+**Session recording** está disponible solo en cuestionarios Socratease. En los demás exámenes, su interruptor está deshabilitado y muestra **Can be enabled only on Socratease quizzes** (solo se puede activar en cuestionarios Socratease).
+</Note>
+
+{/* screenshot: a candidate's attempt report for a Socratease quiz with the "Session recording" tab selected and the recording player visible */}
+
+### Grabación del Candidato
+
+**Candidate recording** (grabación del candidato) graba de forma continua la cámara del candidato durante todo el examen. Esto permite al examinador observar el comportamiento del candidato durante el examen y ofrece la evidencia más completa de la integridad del examen. Usted la ve en la pestaña **Candidate recording** del informe del candidato.
+
+<Note>
+**Candidate recording** cuesta **15 créditos adicionales por intento** y **no está incluido** en el descuento por paquete de la supervisión avanzada.
+</Note>
 
 [Pruebe la demostración de supervisión avanzada](https://www.autoproctor.co/tests/aux-demo/) para ver estas funciones en acción antes de activarlas en su examen.
 
 ## Resumen de Costos de Créditos
 
-| Función | Créditos por Intento |
-|---|---|
-| Verificación de Documento de Identidad | 4 |
-| Detección de Suplantación | 4 |
-| Dispositivo Auxiliar (360°) | 4 |
-| Grabación de Sesión | 4 |
-| Las 4 funciones combinadas | 12 (25% de descuento por paquete) |
+Estos créditos se suman al **crédito base** de cada intento supervisado.
+
+| Función | Créditos Adicionales por Intento | Disponible En |
+|---|---|---|
+| **ID card verification** | 4 | Todos los exámenes |
+| **Impersonation detection** | 4 | Todos los exámenes |
+| **Auxiliary device** (360°) | 4 | Todos los exámenes |
+| **Session recording** | 4 | Solo cuestionarios Socratease |
+| **Candidate recording** | 15 | Todos los exámenes |
+| Las 4 funciones combinadas (sin Candidate recording) | 12 (25% de descuento por paquete) | Solo cuestionarios Socratease |
+
+<Note>
+El descuento por paquete del 25% se aplica cuando activa **ID card verification**, **Impersonation detection**, **Auxiliary device** y **Session recording** juntos. Los exámenes Socratease lo muestran como **Special bundle pricing** (precio especial por paquete) al inicio del grupo **Enhanced proctoring**. **Candidate recording** se cobra por separado a 15 créditos por intento.
+</Note>
+
+La tarjeta sobre las secciones hace la suma por usted. Con solo **ID card verification** activado, muestra **5 credits per attempt** (5 créditos por intento), con el desglose **1 base + ID card verification (+4)**.
+
+{/* screenshot: the credit card above the Test Settings sections reading "5 credits per attempt" with the line "1 base + ID card verification (+4). Updates live as you change proctoring." */}
+
+<Frame caption="La tarjeta de créditos con ID card verification como única función de Enhanced proctoring">
+  <img src="/images/enhanced-proctoring/credits-per-attempt.png" alt="Tarjeta que dice 5 credits per attempt, con la línea 1 base + ID card verification (+4). Updates live as you change proctoring" />
+</Frame>
 
 ## Recursos Relacionados
 
-- [Configuración de Supervisión](/proctoring-settings) — Opciones básicas de supervisión (cámara, micrófono, cambio de pestaña)
-- [Puntaje de Confianza](/what-is-trust-score) — Cómo los datos de supervisión avanzada afectan el puntaje de confianza
-- [Resultados de Supervisión](/where-to-find-proctoring-results) — Revisión de resultados de supervisión avanzada
-- [Acceder a Respuestas y Entregas del Candidato](/access-candidate-responses) — Visualización de datos detallados para cada candidato
-- [Pagos y Créditos](/payments-and-credits) — Comprenda el uso de créditos y las compras
-- [Funciones Elite](/elite-plan-features) — Descripción general de las funciones Premium y Elite
+- [Configuración de Supervisión](/proctoring-settings) - Opciones básicas de supervisión (cámara, micrófono, cambio de pestaña)
+- [Puntaje de Confianza](/what-is-trust-score) - Cómo los datos de supervisión avanzada afectan el puntaje de confianza
+- [Resultados de Supervisión](/where-to-find-proctoring-results) - Revisión de resultados de supervisión avanzada
+- [Acceder a Respuestas y Entregas del Candidato](/access-candidate-responses) - Visualización de datos detallados para cada candidato
+- [Pagos y Créditos](/payments-and-credits) - Comprenda el uso de créditos y las compras
+- [Funciones Elite](/elite-plan-features) - Descripción general de las funciones Premium y Elite

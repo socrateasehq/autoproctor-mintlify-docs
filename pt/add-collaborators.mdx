@@ -3,59 +3,109 @@ title: "Adicionar Colaboradores aos Seus Testes"
 description: "Compartilhe o acesso de gestão de testes com outros membros da equipe usando o recurso de colaboradores do AutoProctor."
 ---
 
-Os colaboradores podem cogerenciar seus testes visualizando resultados, alterando configurações e acessando todos os dados do teste. Você adiciona colaboradores compartilhando um link exclusivo das Configurações Avançadas do seu teste.
+Os colaboradores podem cogerenciar seus testes visualizando resultados, alterando configurações e acessando todos os dados do teste. Você adiciona colaboradores compartilhando o **Collaborate link** (link de colaboração) do teste, que fica em **Manage** (gerenciar) na página **Settings** do teste.
 
 <Note>
-Apenas usuários dos planos **Premium** e **Elite** podem adicionar colaboradores. Os colaboradores já devem ser membros da sua [equipe](/what-is-a-team). Se alguém ainda não faz parte da sua equipe, convide-o a participar da equipe primeiro.
+Apenas usuários dos planos **Premium** e **Elite** podem gerenciar colaboradores. Os colaboradores já devem ser membros da sua [equipe](/what-is-a-team). Se alguém ainda não faz parte da sua equipe, convide-o a participar da equipe primeiro.
 </Note>
 
 ## Como Adicionar um Colaborador
 
-<Frame caption="Como adicionar um colaborador ao seu teste">
-  <video
-    controls
-    className="w-full aspect-video rounded-xl"
-    src="/videos/creating-tests/collaborators.mp4"
-  ></video>
-</Frame>
-
 <Steps>
-  <Step title="Abra as Configurações Avançadas">
-    Navegue até o seu teste e abra a seção **Advanced Settings** na parte inferior da página de configurações.
+  <Step title="Abrir as Configurações do Teste">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste. O cartão de colaboradores, perto do topo da página, mostra quantos colaboradores o teste tem e quem são.
 
-    {/* TODO: Add screenshot of the Advanced Settings section with the collaborators area visible */}
-  </Step>
-  <Step title="Copie o Link de Colaboração">
-    Localize a seção de colaboradores, que exibe os colaboradores atuais e fornece um link para adicionar novos. Clique no **link de colaboração** para copiá-lo para a área de transferência.
+    {/* screenshot: Test Settings header for any test, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button, the avatar stack and the two names with "(primary admin)" after the first */}
 
-    {/* TODO: Add screenshot of the collaborate link button */}
+    <Frame caption="O cartão de colaboradores em um teste com dois colaboradores">
+      <img src="/images/add-collaborators/collaborators-card.png" alt="Cartão com o texto 2 collaborators, um link Learn More e um botão Manage. Abaixo há dois avatares e os nomes Laura Bennett, primary admin, e Megan Foster" />
+    </Frame>
   </Step>
-  <Step title="Compartilhe o Link">
+  <Step title="Clicar em Manage">
+    Clique em **Manage** no cartão de colaboradores. A caixa de diálogo **Collaborators** abre com a lista de pessoas que administram o teste.
+  </Step>
+  <Step title="Copiar o Collaborate Link">
+    Na parte inferior da caixa de diálogo, clique no ícone de copiar ao lado do **Collaborate link** e depois clique em **Done**.
+
+    {/* screenshot: Collaborators dialog opened from Manage, viewed by the primary admin of a test with 3 admins: the "Primary admin" explainer, the list with "Primary admin" and "You" badges on the first row and "Make primary" and "Remove" buttons on the other two rows, the "Collaborate link" row with its copy icon, and the "Done" button */}
+
+    <Frame caption="A caixa de diálogo Collaborators como o primary admin a vê">
+      <img src="/images/add-collaborators/collaborators-dialog.png" alt="Caixa de diálogo Collaborators de um teste com 3 administradores. Uma nota explica a função Primary admin. Laura Bennett tem os selos Primary admin e You. Daniel Brooks e Megan Foster têm, cada um, os botões Make primary e Remove. Abaixo estão o Collaborate link com um ícone de copiar e um botão Done" />
+    </Frame>
+  </Step>
+  <Step title="Compartilhar o Link">
     Envie o link copiado para o membro da equipe que você deseja adicionar como colaborador.
   </Step>
-  <Step title="O Colaborador Aceita">
-    Quando a pessoa clicar no link, ela obterá acesso ao teste imediatamente. Ela aparecerá na lista de colaboradores daquele teste.
+  <Step title="O Colaborador Abre o Link">
+    Quando a pessoa abre o link conectada à conta dela no AutoProctor, ela obtém acesso ao teste imediatamente e chega aos resultados dele. Ela aparece na lista de colaboradores daquele teste.
   </Step>
 </Steps>
 
+<Warning>
+Qualquer pessoa da sua equipe que abrir o link de colaboração se torna colaboradora. Compartilhe-o apenas com pessoas em quem você confia com acesso total ao teste.
+</Warning>
+
 ## Permissões do Colaborador
 
-Uma vez adicionados, os colaboradores recebem **acesso completo de leitura e edição** ao teste:
+Uma vez adicionados, os colaboradores recebem **acesso completo de leitura e edição** ao teste. Apenas o **primary admin** (administrador principal) pode gerenciar os outros colaboradores.
 
-| Permissão | Acesso |
-|---|---|
-| Ver resultados | Todos os envios de candidatos e dados de supervisão |
-| Alterar configurações | Configurações de tempo, supervisão e avançadas |
-| Gerenciar teste | Arquivar, configurar e compartilhar o teste |
+| Ação | Primary admin | Outros colaboradores |
+|---|---|---|
+| Ver resultados: todos os envios de candidatos e dados de supervisão | Sim | Sim |
+| Alterar configurações: todas as seções de **Settings** do teste | Sim | Sim |
+| Fechar, reabrir e excluir o teste | Sim | Sim |
+| Editar o questionário (questionários Socratease) | Sim | Sim |
+| Remover um colaborador | Sim | Não |
+| Tornar outra pessoa o primary admin | Sim | Não |
+
+## O Primary Admin
+
+O **primary admin** é a conta (ou a equipe) cujos créditos são deduzidos a cada envio. O e-mail dele pode ficar visível para os candidatos. A pessoa que cria um teste é o primary admin dele.
+
+Na caixa de diálogo **Collaborators**, o primary admin aparece primeiro com o selo **Primary admin**, e a sua própria linha leva o selo **You** (você). No cartão de colaboradores, **(primary admin)** vem depois do nome dele.
+
+<Note>
+O primary admin não pode ser removido de um teste. Para tirá-lo do teste, ele precisa primeiro tornar outra pessoa o primary admin.
+</Note>
+
+## Removendo um Colaborador
+
+Apenas o primary admin vê os botões **Remove** (remover) e **Make primary** (tornar principal).
+
+<Steps>
+  <Step title="Abrir a Caixa de Diálogo Collaborators">
+    Na página **Settings** do teste, clique em **Manage** no cartão de colaboradores.
+  </Step>
+  <Step title="Clicar em Remove">
+    Clique em **Remove** ao lado da pessoa e confirme com **Remove**.
+  </Step>
+</Steps>
+
+A pessoa perde o acesso aos resultados e às configurações do teste. Para questionários Socratease, a permissão de edição dela no questionário também é removida.
+
+<Note>
+Um colaborador não pode remover a si mesmo de um teste. Para deixar de ver um teste, ative **Hide from my dashboard** (ocultar do meu painel) na seção **General** do **Settings** dele. Isso afeta apenas a sua própria visualização, e os outros colaboradores continuam vendo o teste.
+</Note>
+
+## Alterando o Primary Admin
+
+<Steps>
+  <Step title="Abrir a Caixa de Diálogo Collaborators">
+    Na página **Settings** do teste, clique em **Manage** no cartão de colaboradores.
+  </Step>
+  <Step title="Clicar em Make Primary">
+    Clique em **Make primary** ao lado do colaborador que deve assumir a função e confirme com **Make primary admin**.
+  </Step>
+</Steps>
 
 <Warning>
-O acesso de colaborador é **permanente**. Atualmente não há como remover um colaborador de um teste após adicioná-lo. Compartilhe links de colaboração apenas com pessoas em quem você confia com acesso total ao teste.
+Após a transferência, os créditos dos novos envios são deduzidos da conta ou da equipe do novo primary admin. Você permanece no teste como colaborador, mas perde a capacidade de remover colaboradores ou de alterar o primary admin.
 </Warning>
 
 ## Recursos Relacionados
 
-- [Configurações Avançadas](/advanced-exam-settings) — Provedores de login, colaboradores e outras opções avançadas
-- [Equipes](/what-is-a-team) — Configure e gerencie sua equipe
-- [Compartilhar Resultados de Testes](/share-exam-results) — Outras formas de compartilhar resultados com interessados
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
-- [Configurações de Supervisão](/proctoring-settings) — Opções de câmera, microfone e troca de aba
+- [Configurações Avançadas](/advanced-exam-settings) - Provedores de login, colaboradores e outras opções avançadas
+- [Equipes](/what-is-a-team) - Configure e gerencie sua equipe
+- [Compartilhar Resultados de Testes](/share-exam-results) - Outras formas de compartilhar resultados com interessados
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/proctoring-settings) - Opções de câmera, microfone e troca de aba

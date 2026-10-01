@@ -11,52 +11,79 @@ Esta es una **Función Premium** y requiere una suscripción Premium o Elite. Co
 
 ## Instrucciones de Configuración
 
-<Frame caption="Configurando la integración con Google Sheets">
-  <img className="border rounded-xl" src="/images/settings/write-to-gsheet.gif" alt="GIF mostrando cómo configurar la integración con Google Sheets en AutoProctor" />
-</Frame>
-
 <Steps>
-  <Step title="Abra la configuración del examen">
-    Visite la **Configuración del Examen** de un examen nuevo o existente en su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/).
-  </Step>
-  <Step title="Ubique el campo ID de Google Sheets">
-    Desplácese hacia abajo hasta la sección **Configuración Avanzada** y ubique el campo **Google Sheets ID**.
-  </Step>
-  <Step title="Cree una hoja de Google Sheets en blanco">
+  <Step title="Cree una Hoja de Google Sheets en Blanco">
     Cree una hoja de Google Sheets vacía en su Google Drive. Utilizará esta hoja para recibir los resultados de AutoProctor.
   </Step>
-  <Step title="Conceda acceso de escritura">
+  <Step title="Conceda Acceso de Escritura">
     Comparta la hoja de Google Sheets con `hello@autoproctor.co` y otorgue permisos de **Editor**. Esto permite que AutoProctor escriba datos en la hoja.
 
     <Warning>
-    Si no comparte la hoja con `hello@autoproctor.co` como Editor, AutoProctor no podrá escribir resultados en ella. Asegúrese de otorgar acceso de Editor, no solo de Lector.
+    Si no comparte la hoja con `hello@autoproctor.co` como Editor, AutoProctor no podrá escribir resultados en ella. Asegúrese de otorgar acceso de Editor, no solo de Lector. Cuando una escritura falla por este motivo, AutoProctor envía un correo a los administradores del examen para pedir el acceso.
     </Warning>
   </Step>
-  <Step title="Pegue la URL de la hoja de Google Sheets">
-    Copie la URL de su hoja de Google Sheets y péguela en el campo **Google Sheets ID** en la configuración del examen de AutoProctor.
+  <Step title="Abra la Sección After the Test">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **After the test** (después del examen) en la lista de secciones.
   </Step>
-  <Step title="Guarde el examen">
-    Haga clic en **Crear** o **Actualizar** para guardar la configuración del examen.
+  <Step title="Pegue el Enlace de la Hoja de Google Sheets">
+    Abra la hoja, copie su dirección desde el navegador y péguela en el campo **Send results to a Google Sheet** (enviar resultados a una hoja de Google Sheets). La dirección comienza con `https://docs.google.com/spreadsheets/d/`.
+
+    Debajo del campo, **Results go to sheet** seguido de un enlace corto confirma en qué hoja escribirá AutoProctor.
   </Step>
-  <Step title="Verifique la integración">
+  <Step title="Guarde">
+    Haga clic en **Save settings**.
+  </Step>
+  <Step title="Verifique la Integración">
     Complete un intento de examen. Aparecerá automáticamente una nueva pestaña denominada **AutoProctor** en su hoja de Google Sheets con los datos de resultados.
   </Step>
 </Steps>
 
+{/* screenshot: After the test section of Test Settings for a test with proctoring on, cropped to the "Send results to a Google Sheet" field with a Google Sheets link pasted in and the "Results go to sheet" hint visible below it */}
+
+<Frame caption="El enlace de una hoja pegado en Send results to a Google Sheet, confirmado por el texto de ayuda debajo">
+  <img src="/images/write-results-to-google-sheets/send-results-to-sheet.png" alt="Campo Send results to a Google Sheet con un enlace de hoja de cálculo de docs.google.com. Debajo, el texto de ayuda dice Results go to sheet, seguido de los últimos caracteres del ID de la hoja y un enlace Set-up help" />
+</Frame>
+
 Los intentos de examen posteriores llenan automáticamente la misma hoja de Google Sheets sin necesidad de configuración adicional.
+
+<Note>
+El enlace de la hoja se lee cuando un candidato **inicia** un intento. Los intentos que comenzaron antes de que usted guardara el enlace no se agregan a la hoja.
+</Note>
+
+## La Supervisión Debe Estar Activada
+
+**Send results to a Google Sheet** funciona solo con la **supervisión activada**. Usted activa la supervisión con el interruptor en la parte superior derecha de la sección **Proctoring**.
+
+<Warning>
+Mientras la supervisión esté desactivada, el campo está deshabilitado y no se escribe nada en la hoja. Guardar la configuración con la supervisión desactivada también elimina el enlace de la hoja del examen. La hoja en sí no se modifica.
+</Warning>
+
+## Qué Se Escribe
+
+Cada intento enviado se agrega como una fila en la pestaña **AutoProctor**.
+
+| Columna | Contenido |
+|---|---|
+| **First Name** | El nombre del candidato |
+| **Last Name** | El apellido del candidato |
+| **Email** | El correo electrónico del candidato |
+| **Trust Score** | El Trust Score (puntuación de confianza) del intento |
+| **Evidence URLs (sample)** | Queda vacía. Abra el Test Report URL para revisar la evidencia |
+| **Test Report URL** | Un enlace al informe de supervisión del intento |
+| **Socratease Percentage Scored (%)** | La puntuación del cuestionario como porcentaje. Solo para cuestionarios de Socratease |
 
 ## Integración con Socratease Quizzes
 
-Para Socratease Quizzes, el sistema escribe tanto las puntuaciones de supervisión como las puntuaciones del cuestionario en la hoja. Sin embargo, las preguntas y respuestas individuales no se incluyen -- solo aparecen los datos de puntuación agregados.
+Para Socratease Quizzes, el sistema escribe tanto las puntuaciones de supervisión como las puntuaciones del cuestionario en la hoja. Sin embargo, las preguntas y respuestas individuales no se incluyen. Solo aparecen los datos de puntuación agregados.
 
 <Note>
-Si necesita datos detallados a nivel de pregunta para Socratease Quizzes, utilice la vista de [entregas individuales](/access-candidate-responses) en el [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/).
+Si necesita datos detallados a nivel de pregunta para Socratease Quizzes, haga clic en **Results** junto al examen en su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y utilice la vista de [entregas individuales](/access-candidate-responses).
 </Note>
 
 ## Recursos Relacionados
 
-- [Exportar a Excel](/export-results-to-excel) -- Descargar resultados manualmente como hoja de cálculo
-- [Acceder a Respuestas y Entregas del Candidato](/access-candidate-responses) -- Ver respuestas detalladas por candidato
-- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) -- Descripción general de los resultados del examen frente a los resultados de supervisión
-- [Pagos y Créditos](/payments-and-credits) -- Detalles del plan y disponibilidad de funciones
-- [Compartir Resultados del Examen](/share-exam-results) -- Conceder a otros usuarios acceso a los resultados del examen
+- [Exportar a Excel](/export-results-to-excel) - Descargar resultados manualmente como hoja de cálculo
+- [Acceder a Respuestas y Entregas del Candidato](/access-candidate-responses) - Ver respuestas detalladas por candidato
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) - Descripción general de los resultados del examen frente a los resultados de supervisión
+- [Pagos y Créditos](/payments-and-credits) - Detalles del plan y disponibilidad de funciones
+- [Compartir Resultados del Examen](/share-exam-results) - Conceder a otros usuarios acceso a los resultados del examen

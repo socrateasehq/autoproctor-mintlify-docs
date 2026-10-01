@@ -1,33 +1,52 @@
 ---
 title: "Enhanced Proctoring"
-description: "Set up ID card verification, impersonation detection, 360-degree proctoring, session recording, and candidate video recording for advanced anti-cheating protection."
+description: "Set up ID card verification, impersonation detection, 360-degree proctoring, session recording, and candidate recording for advanced anti-cheating protection."
 ---
 
 Enhanced Proctoring adds advanced identity verification and monitoring features beyond standard proctoring. These features help prevent impersonation, detect AI tools, and create a comprehensive record of each test attempt, including full candidate video.
 
-<Frame>
-  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Enhanced proctoring settings panel" />
-</Frame>
-
 <Note>
-Most enhanced proctoring features require **4 additional credits per attempt**. Candidate Video Recording costs **15 credits per attempt**. If you enable multiple enhanced features, the credit cost is cumulative.
+Most enhanced proctoring features cost **4 additional credits per attempt**. **Candidate recording** costs **15 additional credits per attempt**. If you turn on multiple enhanced features, the credit cost is cumulative.
 </Note>
+
+## How to Turn On Enhanced Proctoring
+
+<Steps>
+  <Step title="Open the Proctoring Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Proctoring** from the list of sections.
+  </Step>
+  <Step title="Turn Proctoring On">
+    Turn on the switch at the top right of the **Proctoring** section. The enhanced options only show while proctoring is **On**.
+  </Step>
+  <Step title="Turn On the Features You Need">
+    Under **Enhanced proctoring**, turn on each feature you want. The badge next to each one shows its cost, for example **+4 credits / attempt**.
+  </Step>
+  <Step title="Save">
+    Click **Save settings**.
+  </Step>
+</Steps>
+
+{/* screenshot: "Enhanced proctoring" group of the Proctoring section on a Socratease test, showing the "Special bundle pricing" banner and the five switches "ID card verification", "Impersonation detection", "Auxiliary device", "Session recording" and "Candidate recording" with their credit badges, "ID card verification" On */}
+
+<Frame caption="The Enhanced proctoring group on a Socratease quiz, with ID card verification on">
+  <img src="/images/enhanced-proctoring/enhanced-proctoring-group.png" alt="Enhanced proctoring group with the Special bundle pricing banner above five switches, each with a credits per attempt badge. ID card verification is on, the other four are off" />
+</Frame>
 
 ## Available Features
 
 ### ID Card Verification
 
-ID Card Verification confirms the candidate's identity by matching their uploaded ID against their test photo and entered name.
+**ID card verification** confirms the candidate's identity by matching their uploaded ID against their test photo and entered name.
 
 <Steps>
-  <Step title="Enable ID Card Verification">
-    Toggle the **ID Card Verification** option in the Enhanced Proctoring section of your test settings.
+  <Step title="Turn on ID card verification">
+    Turn on **ID card verification** under **Enhanced proctoring** in the **Proctoring** section of your test's Settings.
   </Step>
   <Step title="Candidate uploads their ID">
     When starting the test, the candidate is prompted to upload a photo of their ID card. Accepted documents include candidate ID cards, passports, driver's licenses, and government-issued IDs.
   </Step>
   <Step title="AutoProctor verifies identity">
-    The system compares the photo and name on the ID card against the Photo Before Test Start and the name the candidate entered on the platform.
+    The system compares the photo and name on the ID card against the photo taken before the test starts and the name the candidate entered on the platform.
   </Step>
 </Steps>
 
@@ -36,12 +55,12 @@ ID Card Verification confirms the candidate's identity by matching their uploade
 </Frame>
 
 <Note>
-**Photo Before Test Start** must be enabled in the basic proctoring settings for ID Card Verification to work effectively.
+**Photo before test start** must be on under **What gets tracked** for ID card verification to work effectively.
 </Note>
 
 ### Impersonation Detection
 
-Impersonation Detection monitors whether someone other than the original candidate attempts or continues the test. AutoProctor compares periodic photos taken during the test against the initial photo to detect face changes.
+**Impersonation detection** monitors whether someone other than the original candidate attempts or continues the test. AutoProctor compares periodic photos taken during the test against the initial photo to detect face changes.
 
 <Frame caption="Impersonation evidence on report">
   <img src="/images/taking-tests/impersonation-detected.png" alt="Impersonation evidence on report" />
@@ -49,11 +68,11 @@ Impersonation Detection monitors whether someone other than the original candida
 
 ### Auxiliary Device (360° Proctoring)
 
-The Auxiliary Device feature enables 360-degree proctoring by pairing the candidate's phone with their laptop. This provides a secondary camera angle that captures the candidate's physical environment.
+The **Auxiliary device** feature enables 360-degree proctoring by pairing the candidate's phone with their laptop. This provides a secondary camera angle that captures the candidate's physical environment.
 
 <Steps>
-  <Step title="Enable Auxiliary Device">
-    Toggle the **Auxiliary Device** option in Enhanced Proctoring settings.
+  <Step title="Turn on Auxiliary device">
+    Turn on **Auxiliary device** under **Enhanced proctoring** in the **Proctoring** section.
   </Step>
   <Step title="Candidate pairs their phone">
     When the test starts, the candidate scans a QR code on their laptop screen using their phone camera. This pairs the two devices.
@@ -67,46 +86,62 @@ The Auxiliary Device feature enables 360-degree proctoring by pairing the candid
   </Step>
 </Steps>
 
+After the test, the candidate's report has an **Auxiliary device** tab with the captures from the phone.
+
 <Frame caption="Auxiliary device evidence captures">
   <img src="/images/taking-tests/aux-device-evidence.png" alt="Auxiliary device evidence captures" />
 </Frame>
 
 ### Session Recording
 
-Session Recording captures a complete record of the candidate's screen activity throughout the test, including mouse clicks and keyboard input. This creates a reviewable timeline of the entire test attempt.
-
-{/* TODO: Add screenshot of a session recording playback in the results page */}
-
-### Candidate Video Recording
-
-Candidate Video Recording captures the candidate's full video from their webcam throughout the entire test. This lets the examiner watch the candidate's behavior during the test, providing the most complete evidence of test integrity.
+**Session recording** captures a complete record of the candidate's screen activity throughout the test, including mouse clicks and keyboard input. This creates a reviewable timeline of the entire test attempt, which you play back in the **Session recording** tab of the candidate's report.
 
 <Note>
-Candidate Video Recording costs **15 credits per attempt** and is **not included** in the enhanced proctoring bundle discount.
+**Session recording** is available on Socratease quizzes only. On other tests, its switch is disabled and reads **Can be enabled only on Socratease quizzes**.
+</Note>
+
+{/* screenshot: a candidate's attempt report for a Socratease quiz with the "Session recording" tab selected and the recording player visible */}
+
+### Candidate Recording
+
+**Candidate recording** continuously records the candidate's camera feed throughout the entire test. This lets the examiner watch the candidate's behavior during the test, providing the most complete evidence of test integrity. You watch it in the **Candidate recording** tab of the candidate's report.
+
+<Note>
+**Candidate recording** costs **15 additional credits per attempt** and is **not included** in the enhanced proctoring bundle discount.
 </Note>
 
 [Try the enhanced proctoring demo](https://www.autoproctor.co/tests/aux-demo/) to see these features in action before enabling them on your test.
 
 ## Credit Cost Summary
 
-| Feature | Credits per Attempt |
-|---|---|
-| ID Card Verification | 4 |
-| Impersonation Detection | 4 |
-| Auxiliary Device (360°) | 4 |
-| Session Recording | 4 |
-| Candidate Video Recording | 15 |
-| All 4 features combined (excl. Video) | 12 (25% bundle discount) |
+These credits are added to the **1 base credit** of every proctored attempt.
+
+| Feature | Extra Credits per Attempt | Available On |
+|---|---|---|
+| **ID card verification** | 4 | All tests |
+| **Impersonation detection** | 4 | All tests |
+| **Auxiliary device** (360°) | 4 | All tests |
+| **Session recording** | 4 | Socratease quizzes only |
+| **Candidate recording** | 15 | All tests |
+| All 4 features combined (excl. Candidate recording) | 12 (25% bundle discount) | Socratease quizzes only |
 
 <Note>
-The 25% bundle discount applies when you enable ID Card Verification, Impersonation Detection, Auxiliary Device, and Session Recording together. Candidate Video Recording is billed separately at 15 credits per attempt.
+The 25% bundle discount applies when you turn on **ID card verification**, **Impersonation detection**, **Auxiliary device**, and **Session recording** together. Socratease tests show this as **Special bundle pricing** at the top of the **Enhanced proctoring** group. **Candidate recording** is billed separately at 15 credits per attempt.
 </Note>
+
+The card above the sections adds everything up for you. With only **ID card verification** on, it reads **5 credits per attempt**, with the breakdown **1 base + ID card verification (+4)**.
+
+{/* screenshot: the credit card above the Test Settings sections reading "5 credits per attempt" with the line "1 base + ID card verification (+4). Updates live as you change proctoring." */}
+
+<Frame caption="The credit card with ID card verification as the only enhanced feature">
+  <img src="/images/enhanced-proctoring/credits-per-attempt.png" alt="Card reading 5 credits per attempt, with the line 1 base plus ID card verification, plus 4. Updates live as you change proctoring" />
+</Frame>
 
 ## Related Resources
 
-- [Proctoring Settings](/proctoring-settings) — Basic proctoring options (camera, microphone, tab switching)
-- [Trust Score](/what-is-trust-score) — How enhanced proctoring data affects the trust score
-- [Proctoring Results](/where-to-find-proctoring-results) — Reviewing enhanced proctoring results
-- [Access Answers and Candidate Responses](/access-candidate-responses) — Viewing detailed data for each candidate
-- [Payments and Credits](/payments-and-credits) — Understanding credit usage and purchasing
-- [Elite Features](/elite-plan-features) — Overview of premium and elite features
+- [Proctoring Settings](/proctoring-settings) - Basic proctoring options (camera, microphone, tab switching)
+- [Trust Score](/what-is-trust-score) - How enhanced proctoring data affects the trust score
+- [Proctoring Results](/where-to-find-proctoring-results) - Reviewing enhanced proctoring results
+- [Access Answers and Candidate Responses](/access-candidate-responses) - Viewing detailed data for each candidate
+- [Payments and Credits](/payments-and-credits) - Understanding credit usage and purchasing
+- [Elite Features](/elite-plan-features) - Overview of premium and elite features

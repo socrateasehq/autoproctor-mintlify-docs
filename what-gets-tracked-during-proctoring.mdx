@@ -23,56 +23,58 @@ AutoProctor can access the following feeds on the candidate's device:
 | **Auxiliary device camera feed** | Monitors via a paired secondary device (e.g., phone) |
 
 <Note>
-Which feeds AutoProctor accesses depends entirely on how you configure each test. You enable or disable each feed in your [proctoring settings](/proctoring-settings).
+Which feeds AutoProctor accesses depends entirely on how you configure each test. You turn each feed on or off in your [proctoring settings](/proctoring-settings).
 </Note>
 
 ## What AutoProctor Detects and Records
 
-Unlike traditional proctoring platforms that record full video and audio sessions, AutoProctor detects violations and shows you evidence of only those violations -- so you do not spend hours reviewing each candidate's attempt.
+Unlike traditional proctoring platforms that record full video and audio sessions, AutoProctor detects violations and shows you evidence of only those violations, so you do not spend hours reviewing each candidate's attempt.
 
-| Detection Feature | What It Does |
-|---|---|
-| **Background audio detection** | Records noise and audio cues from the microphone feed |
-| **Face detection** | Captures photos when no face or multiple faces appear on camera |
-| **Tab/app switching** | Captures screenshots when candidates switch tabs or applications |
-| **Random photos** | Takes photos at random intervals throughout the exam |
-| **Multiple monitor detection** | Identifies when additional screens are connected to the device |
-| **Pre-test face capture** | Takes a photo of the candidate's face before the test starts |
-| **Full-screen enforcement** | Ensures the test runs in full-screen mode and flags exits |
-| **Session action recording** | Logs mouse clicks and keyboard activity throughout the test |
-| **Auxiliary device pairing** | Monitors via a paired phone to detect keyboard usage, ensuring candidates are not using ChatGPT or other tools to cheat |
+The last column is the switch that turns each feature on, in the **Proctoring** section of a test's **Settings**.
+
+| Detection Feature | What It Does | Setting |
+|---|---|---|
+| **Background audio detection** | Records noise and audio cues from the microphone feed | **Microphone** |
+| **Face detection** | Captures photos when no face or multiple faces appear on camera | **Camera** |
+| **Tab/app switching** | Captures screenshots when candidates switch tabs or applications | **Tab switching** |
+| **Random photos** | Takes photos at random intervals throughout the exam | **Photos at random** |
+| **Multiple monitor check** | Blocks the test while an extra monitor is connected to the device | **Prevent multiple monitors** |
+| **Multi-session detection** | Detects attempts made from multiple devices or sessions at the same time | **Multi-session detection** |
+| **Pre-test face capture** | Takes a photo of the candidate's face before the test starts | **Photo before test start** |
+| **Full-screen enforcement** | Ensures the test runs in full-screen mode and flags exits | **Enforce full screen** |
+| **Session action recording** | Logs mouse clicks and keyboard activity throughout the test | **Session recording** |
+| **Auxiliary device pairing** | Monitors via a paired phone to detect keyboard usage, ensuring candidates are not using ChatGPT or other tools to cheat | **Auxiliary device** |
 
 <Note>
-All tracking features are configurable per test. Enable only what you need in your [proctoring settings](/proctoring-settings).
+All tracking features are configurable per test. Turn on only what you need in your [proctoring settings](/proctoring-settings).
 </Note>
 
 ## How to Configure Tracking
 
-<Frame caption="How to Configure Tracking Settings">
-  <video
-    controls
-    src="/videos/getting-started/configure-proctor-settings.mp4"
-  ></video>
-</Frame>
-
 <Steps>
   <Step title="Open your test settings">
-    Go to your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/), select a test, and click **Settings**.
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test.
 
-    {/* TODO: Add screenshot of the test dashboard with the Settings button highlighted */}
+    {/* screenshot: one test row on the Tests page, cropped to the row, with the "Settings" button visible */}
+
+    <Frame caption="A test on the Tests page, with its Settings button on the right">
+      <img src="/images/what-gets-tracked-during-proctoring/test-row-settings.png" alt="First row of the Tests page under the column headings Title, Created, Settings, Started and Finished. The test is Chemistry Midterm, Grade 11, with Share and Preview links under its title and Settings and Results buttons at the right" />
+    </Frame>
   </Step>
-  <Step title="Navigate to Proctoring Settings">
-    Click the **Proctoring Settings** tab to see all available tracking options.
-
-    {/* TODO: Add screenshot of the Proctoring Settings tab */}
+  <Step title="Open the Proctoring section">
+    Choose **Proctoring** from the list of sections, and turn on the switch at the top right of the section. While the switch is **Off**, nothing is monitored.
   </Step>
-  <Step title="Enable the features you need">
-    Toggle each tracking feature on or off depending on your requirements. For example, you might enable camera monitoring and tab-switching detection but leave microphone monitoring off.
+  <Step title="Turn on the features you need">
+    Under **What gets tracked** and **Enhanced proctoring**, turn each tracking feature on or off depending on your requirements. For example, you might turn on **Camera** and **Tab switching** but leave **Microphone** off.
 
-    {/* TODO: Add screenshot of proctoring feature toggles */}
+    {/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the "What gets tracked" group with "Tab switching" and "Camera" On and "Microphone" Off */}
+
+    <Frame caption="Tab switching and Camera on, Microphone off">
+      <img src="/images/what-gets-tracked-during-proctoring/tab-and-camera-on.png" alt="What gets tracked group with nine switches. Tab switching, Camera and Photos at random are on. Microphone and the others are off" />
+    </Frame>
   </Step>
   <Step title="Save your settings">
-    Click **Save** to apply your changes. These settings take effect immediately for all future test attempts.
+    Click **Save settings** to apply your changes. These settings take effect immediately for all future test attempts.
   </Step>
 </Steps>
 
@@ -82,9 +84,9 @@ Enabling more tracking features increases the processing load on the candidate's
 
 ## Related Resources
 
-- [Trust Score](/what-is-trust-score) -- How AutoProctor scores candidate integrity
-- [Proctoring Settings](/proctoring-settings) -- Configure which proctoring features to enable
-- [Enhanced Proctoring](/enhanced-proctoring) -- Advanced monitoring options for higher security
-- [Proctoring Results](/where-to-find-proctoring-results) -- View violation evidence and reports
-- [Video Recording](/does-autoproctor-record-video) -- Why AutoProctor does not record full video
-- [Device Compatibility](/device-compatibility) -- Supported browsers and devices
+- [Trust Score](/what-is-trust-score) - How AutoProctor scores candidate integrity
+- [Proctoring Settings](/proctoring-settings) - Configure which proctoring features to enable
+- [Enhanced Proctoring](/enhanced-proctoring) - Advanced monitoring options for higher security
+- [Proctoring Results](/where-to-find-proctoring-results) - View violation evidence and reports
+- [Video Recording](/does-autoproctor-record-video) - Why AutoProctor does not record full video
+- [Device Compatibility](/device-compatibility) - Supported browsers and devices

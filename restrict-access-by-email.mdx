@@ -1,39 +1,49 @@
 ---
 title: "Restrict Test Access by Email Address"
-description: "Limit who can take your test by restricting access to specific email domains or individual email addresses using Login Restrictions."
+description: "Limit who can take your test by restricting access to specific email domains or individual email addresses using Login restrictions."
 ---
 
-Login Restrictions let you control exactly who can take your test by filtering candidates based on their email address. This prevents unauthorized access even if someone shares or discovers your test link.
+**Login restrictions** let you control exactly who can take your test by filtering candidates based on their email address. This prevents unauthorized access even if someone shares or discovers your test link.
 
 ## How to Set Up Email Restrictions
 
 <Steps>
-  <Step title="Open your test settings">
-    Navigate to the test on your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and click the **Settings** button.
-
-    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+  <Step title="Open the Access & login Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Access & login** from the list of sections.
   </Step>
-  <Step title="Go to Advanced Settings">
-    Scroll down to the **Advanced Settings** section and locate the **Login Restrictions** fields.
-
-    {/* TODO: Add screenshot of the Advanced Settings section with Login Restrictions fields visible */}
+  <Step title="Add Domain or Email Restrictions">
+    In **Login restrictions**, enter the email domains or specific email addresses you want to allow, separated by commas. You can combine both types in the same field (see the examples below).
   </Step>
-  <Step title="Add domain or email restrictions">
-    Enter the email domains or specific email addresses you want to allow. You can combine both types of restrictions in a single field (see examples below).
-  </Step>
-  <Step title="Save the test">
-    Click **Create** or **Update** to apply the restrictions.
+  <Step title="Save">
+    Click **Save settings**.
   </Step>
 </Steps>
+
+{/* screenshot: Access & login section of Test Settings for a Google Forms test, cropped to the "Login restrictions" field (empty, showing its placeholder "school.edu, alumni.school.edu") with its "Learn More" link and the hint "Only emails ending with these domains can attempt. Comma-separated." */}
+
+<Frame caption="The Login restrictions field before anything is entered">
+  <img src="/images/restrict-access-by-email/login-restrictions-empty.png" alt="Login restrictions field with a Learn More link, the placeholder school.edu, alumni.school.edu, and the hint Only emails ending with these domains can attempt. Comma-separated" />
+</Frame>
+
+| To allow | Enter in **Login restrictions** |
+|---|---|
+| Everyone at one domain | `@abc.com` |
+| Everyone at several domains | `@abc.com, @xyz.com` |
+| One domain plus specific people | `@abc.com, guest@gmail.com` |
+| Only specific people | `ana@abc.com, guest@gmail.com` |
+
+<Warning>
+Separate entries with commas, not spaces. An entry that contains a space is rejected when you save.
+</Warning>
 
 ## Domain-Based Restrictions
 
 You can restrict access to candidates whose email addresses end with specific domains. For example, entering `@abc.com` and `@xyz.com` allows only candidates with those email domains to take the test.
 
-{/* TODO: Add screenshot of Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com */}
+{/* screenshot: Access & login section of Test Settings for a Google Forms test, cropped to the "Login restrictions" field containing "@abc.com, @xyz.com" */}
 
-<Frame>
-  <img src="/images/settings/login-restrictions-domain.png" alt="Login Restrictions field showing domain-based restrictions with @abc.com and @xyz.com entered" />
+<Frame caption="Two domains entered in Login restrictions">
+  <img src="/images/restrict-access-by-email/login-restrictions-domains.png" alt="Login restrictions field containing @abc.com, @xyz.com" />
 </Frame>
 
 ## Specific Email Restrictions
@@ -42,10 +52,10 @@ You can also permit individual email addresses alongside domain restrictions. Th
 
 For example, you can allow all users whose email ends with `@abc.com` plus specific individual email addresses like `guest@gmail.com`.
 
-{/* TODO: Add screenshot of Login Restrictions field showing a combination of domain and individual email restrictions */}
+{/* screenshot: Access & login section of Test Settings for a Google Forms test, cropped to the "Login restrictions" field containing "@abc.com, guest@gmail.com" */}
 
-<Frame>
-  <img src="/images/settings/login-restrictions-email.png" alt="Login Restrictions field showing a combination of domain and individual email restrictions" />
+<Frame caption="A domain and one specific email address in Login restrictions">
+  <img src="/images/restrict-access-by-email/login-restrictions-domain-and-email.png" alt="Login restrictions field containing @abc.com, guest@gmail.com" />
 </Frame>
 
 <Note>
@@ -54,8 +64,8 @@ Email restrictions work in conjunction with the candidate's [login method](/cand
 
 ## Related Resources
 
-- [Candidate Login Methods](/candidate-login-methods) -- Understand available authentication options for candidates
-- [Restricting to Specific Users](/restrict-access-to-candidates) -- Other methods for limiting test access
-- [Inviting Candidates via Email](/invite-candidates-via-email) -- Generate unique per-candidate test links
-- [Advanced Settings](/advanced-exam-settings) -- Configure Login Restrictions and other advanced test options
-- [Best Practices for Test Creators](/best-practices-for-exam-creators) -- Tips for smooth test administration
+- [Candidate Login Methods](/candidate-login-methods) - Understand available authentication options for candidates
+- [Restricting to Specific Users](/restrict-access-to-candidates) - Other methods for limiting test access
+- [Inviting Candidates via Email](/invite-candidates-via-email) - Generate unique per-candidate test links
+- [Advanced Settings](/advanced-exam-settings) - Configure Login restrictions and other advanced test options
+- [Best Practices for Test Creators](/best-practices-for-exam-creators) - Tips for smooth test administration

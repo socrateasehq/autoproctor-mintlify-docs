@@ -1,102 +1,185 @@
 ---
 title: "Configurações Avançadas"
-description: "Configure provedores de login, restrições de e-mail, integração com Google Sheets, colaboradores e outras opções avançadas de teste."
+description: "Configure provedores de login, restrições de e-mail, URLs únicas de teste, dados do candidato, mensagens de conclusão, integração com Google Sheets e colaboradores de um teste."
 ---
 
-As Configurações Avançadas permitem que você controle como os candidatos fazem login, quem pode acessar o teste e como os resultados são compartilhados. Essas opções estão localizadas na parte inferior da página de Configurações do Teste.
+As configurações avançadas permitem que você controle como os candidatos fazem login, quem pode acessar o teste, o que os candidatos veem antes e depois dele, e como os resultados são compartilhados. Elas ficam nas seções **Access & login** (acesso e login), **Before the test** (antes do teste) e **After the test** (depois do teste) das configurações (**Settings**) de um teste.
 
-<Frame caption="Painel de configurações avançadas">
-  <img src="/images/creating-tests/advanced-settings.png" alt="Painel de configurações avançadas" />
+## Onde Encontrar Cada Configuração
+
+Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste. Depois escolha uma seção na lista de seções.
+
+| Seção | O que você configura ali | Saiba mais |
+|---|---|---|
+| **General** | Título do teste, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Tentativas Máximas](/maximum-exam-attempts), [Retomar Tentativas de Teste](/resume-exam-attempts), [Fechar, Ocultar e Excluir Testes](/archive-and-delete-exams) |
+| **Quiz behaviour** | Apenas questionários Socratease. Abre as configurações próprias do questionário | [Configurações de Questionários Socratease](/socratease-quiz-settings) |
+| **Timer** | Duração e janela de início | [Configurações de Tempo](/timer-settings) |
+| **Proctoring** | O que é monitorado e quem é informado | [Configurações de Supervisão](/proctoring-settings) |
+| **Access & login** | **Login providers**, **Login restrictions**, **Unique test URLs**, **iFrame height**, **iFrame width**, **Query string** | Esta página |
+| **Before the test** | **Collect candidate details**, **Show additional instructions** | Esta página |
+| **After the test** | O que os candidatos veem ao enviar, **Send results to a Google Sheet** | Esta página |
+
+{/* screenshot: Test Settings page for a Socratease test, cropped to the list of sections (General, Quiz behaviour, Timer, Proctoring, Access & login, Before the test, After the test) with "Access & login" selected */}
+
+<Frame caption="As seções de Test Settings em um questionário Socratease, com Access &amp; login selecionada">
+  <img src="/images/advanced-exam-settings/settings-sections.png" alt="Lista de seções com General, Quiz behaviour, Timer, Proctoring, Access &amp; login, Before the test e After the test, com Access &amp; login destacada" />
 </Frame>
 
-## Provedores de Login
+<Note>
+Uma configuração que o seu plano não inclui exibe um selo **Premium** ou **Elite**. Clique em **Save settings** no final da página depois de alterar qualquer seção.
+</Note>
 
-Escolha quais métodos de autenticação os candidatos podem usar para acessar o teste:
+## Acesso e Login
 
-| Provedor | Descrição | Observações |
+A seção **Access & login** controla quem pode abrir o link do teste e como faz login. Os controles que você vê dependem do provedor de questionários do teste.
+
+| Controle | Socratease Quizzes | Google Forms | Microsoft Forms | Testes IFrame |
+|---|---|---|---|---|
+| **Login providers** | Sim | Não | Não | Sim |
+| **Login restrictions** | Sim | Sim | Sim | Sim |
+| **Unique test URLs** | Sim | Sim | Sim | Sim |
+| **iFrame height** e **iFrame width** | Não | Não | Não | Sim |
+| **Query string** | Não | Sim | Sim | Sim |
+
+{/* screenshot: Access & login section of Test Settings for a Socratease test, showing "Login providers" with the Google, Microsoft and Email checkboxes, the "Login restrictions" field and the "Unique test URLs" switch turned off */}
+
+<Frame caption="Login providers, Login restrictions e Unique test URLs na seção Access &amp; login">
+  <img src="/images/advanced-exam-settings/access-and-login.png" alt="Seção Access &amp; login com Google, Microsoft e Email marcados em Login providers, o campo Login restrictions vazio e o interruptor Unique test URLs desativado" />
+</Frame>
+
+### Provedores de Login
+
+Em **Login providers** (provedores de login), escolha quais métodos de autenticação os candidatos podem usar para acessar o teste:
+
+| Provedor | Descrição | Disponibilidade |
 |---|---|---|
-| **Google** | Login com uma conta Google | Obrigatório para testes com Google Forms |
-| **Microsoft** | Login com uma conta Microsoft | Obrigatório para testes com Microsoft Forms |
-| **E-mail** | Login com qualquer endereço de e-mail | Disponível para testes Socratease e Iframe |
+| **Google** | Login com uma conta Google | Sempre usado em testes com Google Forms. Opcional em testes Socratease e IFrame. |
+| **Microsoft** | Login com uma conta Microsoft | Sempre usado em testes com Microsoft Forms. Opcional em testes Socratease e IFrame. |
+| **Email** | Login com qualquer endereço de e-mail | Apenas testes Socratease e IFrame. |
 
-Para testes com Google Forms e Microsoft Forms, o provedor de login é fixo de acordo com a plataforma do questionário. Para Questionários Socratease e Testes Iframe, você pode ativar um ou mais provedores.
+Os testes com Google Forms e Microsoft Forms sempre usam o login da própria plataforma de questionários, por isso **Login providers** não é exibido neles. Nos testes Socratease e IFrame, marque um ou mais provedores, incluindo Google e Microsoft.
 
 Para mais detalhes sobre como cada método de login funciona, consulte [Métodos de Login do Candidato](/candidate-login-methods).
 
-{/* TODO: Add screenshot showing the login provider selection options */}
+### Restrições de Login
 
-## Restrições de Login
+**Login restrictions** (restrições de login) limita quais candidatos podem realizar seu teste com base no endereço de e-mail ou domínio. Insira no campo os domínios ou endereços permitidos, separados por vírgulas.
 
-Restrinja quais candidatos podem realizar seu teste com base no endereço de e-mail ou domínio.
+- **Restringir por domínio**: permita apenas candidatos com endereços de e-mail de domínios específicos (por exemplo, `@universidade.edu`)
+- **Restringir por e-mail**: permita apenas endereços de e-mail específicos para acessar o teste
 
-- **Restringir por E-mail** — Permita apenas endereços de e-mail específicos para acessar o teste
-- **Restringir por Domínio** — Permita apenas candidatos com endereços de e-mail de domínios específicos (por exemplo, @universidade.edu)
+Para instruções detalhadas, consulte [Restringir por E-mail](/restrict-access-by-email).
 
-Para instruções detalhadas, consulte [Restringir por E-mail](/restrict-access-by-email). Se você deseja convidar um conjunto específico de candidatos, consulte [Convidar Candidatos por E-mail](/invite-candidates-via-email).
+### URLs Únicas de Teste (Elite)
 
-{/* TODO: Add screenshot showing login restriction configuration */}
+Por padrão, todos os candidatos compartilham um único link de teste, que pode ser encaminhado para destinatários não previstos. Ativar **Unique test URLs** (URLs únicas de teste) permite gerar um link por candidato, para que apenas as pessoas com quem você compartilhou os links possam realizar o teste.
 
-## Altura do IFrame
-
-Quando seu teste está incorporado como um iframe dentro do AutoProctor, esta configuração permite ajustar a altura (em pixels) desse iframe para corresponder ao conteúdo do seu teste. O valor padrão é 1764px. Aumente-o se o conteúdo do seu teste estiver sendo cortado ou os candidatos tiverem que rolar dentro do iframe, ou diminua-o para remover espaço em branco extra.
-
-## Colaboradores
-
-Adicione colegas como colaboradores no seu teste para que possam editar configurações e visualizar resultados. Você pode definir o Administrador Principal do teste clicando no botão **Manage**.
-
-Para mais detalhes, consulte [Adicionar Colaboradores](/add-collaborators).
-
-## Recursos Premium e Elite
-
-### Integração com Google Sheets (Premium)
-
-Escreva automaticamente os resultados do teste em uma planilha do Google Sheets inserindo a URL da planilha neste campo. Para questionários Socratease, tanto os resultados de supervisão quanto as notas do questionário são exportados. Para questionários que não são do Socratease, apenas os resultados de supervisão são incluídos.
-
-Para instruções de configuração, consulte [Integração com Google Sheets](/write-results-to-google-sheets).
-
-### Ao Concluir o Teste (Premium)
-
-Controla o que os candidatos veem após enviar o teste. Por padrão, todos os usuários veem a página de conclusão padrão do AutoProctor. Usuários Premium e superiores podem personalizar isso com duas opções adicionais:
-
-| Opção | Descrição |
-|---|---|
-| **Mostrar mensagem padrão** | Exibe a página de conclusão padrão do AutoProctor (disponível em todos os planos) |
-| **Mostrar mensagem personalizada** | Exibe sua própria mensagem HTML para os candidatos (por exemplo, "Obrigado por completar a avaliação!") |
-| **Redirecionar para URL** | Envia os candidatos para uma página externa após o envio (por exemplo, o site da sua empresa ou um formulário de feedback) |
-
-### URL Única por Candidato (Elite)
-
-Por padrão, todos os candidatos compartilham um único link de teste, que pode ser encaminhado para destinatários não previstos. Ativar esse recurso gera um link único para cada candidato, garantindo que apenas as pessoas com quem você compartilhou os links possam realizar o teste.
+Ativar essa opção força o login por e-mail: em **Login providers**, apenas **Email** permanece marcado. Depois que a configuração é salva, o link **Generate unique links** aparece abaixo do interruptor e abre a página onde os links são criados.
 
 <Note>
-URL única por candidato é um recurso Elite. Consulte [Recursos Elite](/elite-plan-features) para mais detalhes.
+As URLs únicas de teste são um recurso Elite e funcionam com Socratease Quizzes e Testes IFrame. Não ative o interruptor em um teste com Google Forms ou Microsoft Forms, porque esses testes precisam do login da própria plataforma. Consulte [Convidar Candidatos por E-mail](/invite-candidates-via-email) para o processo completo e [Recursos Elite](/elite-plan-features) para detalhes do plano.
 </Note>
 
-### Coletar Informações Adicionais (Premium)
+### Altura e Largura do IFrame
 
-Colete informações personalizadas dos candidatos antes do início do teste — como número de telefone, nome da instituição ou qualquer pergunta personalizada. Esses campos aparecem na página de instruções e os dados coletados ficam disponíveis nos resultados e nas exportações para Excel.
+Quando seu teste está incorporado como um iframe dentro do AutoProctor, **iFrame height** permite ajustar a altura (em pixels) desse iframe para corresponder ao conteúdo do seu teste. O valor padrão é 1764px. Aumente-o se o conteúdo do seu teste estiver sendo cortado ou os candidatos tiverem que rolar dentro do iframe, ou diminua-o para remover espaço em branco extra.
+
+**iFrame width** define a largura máxima, em pixels, da área que contém o seu teste. Os dois campos aparecem apenas nos testes IFrame.
+
+{/* screenshot: Access & login section of Test Settings for a test on another quizzing platform (IFrame test), cropped to the row with the "iFrame height", "iFrame width" and "Query string" fields and their hints */}
+
+<Frame caption="iFrame height, iFrame width e Query string em um teste de outra plataforma de questionários">
+  <img src="/images/advanced-exam-settings/iframe-size-and-query-string.png" alt="Três campos em uma linha. iFrame height é 1200 px e iFrame width é 960, ambos com o texto de ajuda Iframe tests only. Query string é a=b&amp;c=d com o texto de ajuda Appended to the test URL" />
+</Frame>
+
+### Query String
+
+O valor de **Query string** (string de consulta) é adicionado à URL do teste quando ele é carregado, por exemplo `a=b&c=d`. Consulte [Argumentos de Consulta do IFrame](/iframe-query-arguments) para saber como usá-lo.
+
+## Antes do Teste
+
+A seção **Before the test** controla o que os candidatos veem na página de instruções, que é a página que o link do seu teste abre antes do questionário.
+
+| Configuração | Plano | O que faz |
+|---|---|---|
+| **Collect candidate details** (coletar dados do candidato) | Premium | Pede aos candidatos informações personalizadas antes do início do teste, como número de telefone, nome da instituição ou qualquer pergunta personalizada |
+| **Show additional instructions** (mostrar instruções adicionais) | Elite | Mostra suas próprias instruções na página de instruções, ao lado das instruções padrão |
+
+### Collect Candidate Details (Premium)
+
+Esses campos aparecem na página de instruções e todos são obrigatórios. Os dados coletados ficam disponíveis nos resultados e nas exportações.
 
 <Note>
 Você pode adicionar até 10 campos de informações personalizadas por teste.
 </Note>
 
-{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Collect candidate details" switched on with three fields added and the "Fields (3 of 10)" counter visible */}
 
-### Instruções Adicionais (Elite)
+<Frame caption="Collect candidate details ativado, com três campos adicionados">
+  <img src="/images/advanced-exam-settings/candidate-details-three-fields.png" alt="Grupo Candidate details com Collect candidate details ativado, o contador Fields 3 of 10, os campos Phone Number, Student ID e Homeroom Teacher, um botão Add field e uma linha de sugestões" />
+</Frame>
 
-Adicione instruções personalizadas à página de instruções do candidato. Elas são exibidas para os candidatos antes de iniciarem o teste e podem ser usadas para fornecer diretrizes específicas, regras ou contexto para o seu teste.
+### Show Additional Instructions (Elite)
+
+Adicione instruções personalizadas à página de instruções do candidato. Elas são exibidas para os candidatos antes de iniciarem o teste e podem ser usadas para fornecer diretrizes específicas, regras ou contexto para o seu teste. O texto é texto simples de até 200 palavras.
 
 <Note>
-Instruções Adicionais é um recurso Elite. Consulte a [Página de Instruções para Candidatos](/candidate-instructions-page) para mais informações sobre o que os candidatos veem antes de iniciar.
+As instruções adicionais são um recurso Elite. Consulte a [Página de Instruções para Candidatos](/candidate-instructions-page) para mais informações sobre o que os candidatos veem antes de iniciar.
 </Note>
 
-{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Show additional instructions" switched on with the "Instructions" text box filled in and its word counter visible */}
+
+<Frame caption="Show additional instructions ativado, com o contador de palavras abaixo da caixa">
+  <img src="/images/advanced-exam-settings/additional-instructions.png" alt="Grupo Additional instructions com Show additional instructions ativado e duas linhas de texto na caixa Instructions. O contador abaixo da caixa indica 19 of 200 words" />
+</Frame>
+
+## Depois do Teste
+
+A seção **After the test** controla o que os candidatos veem quando enviam o teste e para onde vão os resultados.
+
+### Ao Concluir o Teste (Premium)
+
+Por padrão, todos os usuários veem a página de conclusão padrão do AutoProctor. Usuários Premium e superiores podem personalizar isso com duas opções adicionais:
+
+| Opção | Descrição |
+|---|---|
+| **Show the default message** (mostrar a mensagem padrão) | Exibe a página de conclusão padrão do AutoProctor (disponível em todos os planos) |
+| **Show a custom message** (mostrar uma mensagem personalizada) | Exibe sua própria mensagem HTML para os candidatos (por exemplo, "Obrigado por completar a avaliação!"). HTML básico de até 1.000 caracteres |
+| **Redirect to a URL** (redirecionar para uma URL) | Envia os candidatos para uma página externa após o envio (por exemplo, o site da sua empresa ou um formulário de feedback). A URL deve começar com `http://` ou `https://` |
+
+{/* screenshot: After the test section of Test Settings, cropped to the three options "Show the default message", "Show a custom message" and "Redirect to a URL" with "Show a custom message" selected and the "Custom message" box filled in */}
+
+<Frame caption="Show a custom message selecionada, com a mensagem escrita em HTML básico">
+  <img src="/images/advanced-exam-settings/on-test-completion.png" alt="Três opções, Show the default message, Show a custom message e Redirect to a URL, com a segunda selecionada. Abaixo, a caixa Custom message contém dois parágrafos curtos em HTML e um contador indica 105 of 1000" />
+</Frame>
+
+### Send Results to a Google Sheet (Premium)
+
+Escreva automaticamente os resultados do teste em uma planilha do Google Sheets colando o link da planilha em **Send results to a Google Sheet** (enviar resultados para uma planilha do Google). Para questionários Socratease, tanto os resultados de supervisão quanto as notas do questionário são exportados. Para questionários que não são do Socratease, apenas os resultados de supervisão são incluídos.
+
+<Warning>
+Isso funciona apenas com a supervisão ativada. Enquanto a supervisão estiver desativada, nada é escrito na planilha, e salvar as configurações remove o link.
+</Warning>
+
+Para instruções de configuração, consulte [Integração com Google Sheets](/write-results-to-google-sheets).
+
+## Colaboradores
+
+Adicione colegas como colaboradores no seu teste para que possam editar configurações e visualizar resultados. O cartão de colaboradores no topo da página Settings lista todas as pessoas do teste. Clique em **Manage** (gerenciar) nesse cartão para copiar o **Collaborate link** (link de colaboração), remover um colaborador ou definir o administrador principal do teste.
+
+{/* screenshot: Test Settings page, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button and the collaborator names with "(primary admin)" */}
+
+<Frame caption="O cartão de colaboradores em um teste com dois colaboradores">
+  <img src="/images/advanced-exam-settings/collaborators-card.png" alt="Cartão com o texto 2 collaborators, um link Learn More e um botão Manage. Abaixo há dois avatares e os nomes Laura Bennett, primary admin, e Megan Foster" />
+</Frame>
+
+Para mais detalhes, consulte [Adicionar Colaboradores](/add-collaborators).
 
 ## Recursos Relacionados
 
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
-- [Configurações de Supervisão](/proctoring-settings) — Opções de câmera, microfone e detecção de troca de aba
-- [Restringir por E-mail](/restrict-access-by-email) — Restrinja o acesso ao teste por endereço de e-mail ou domínio
-- [Convidar Candidatos por E-mail](/invite-candidates-via-email) — Envie convites de teste diretamente
-- [Métodos de Login do Candidato](/candidate-login-methods) — Como cada método de login funciona
-- [Integração com Google Sheets](/write-results-to-google-sheets) — Exportação automática de resultados para planilhas
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/proctoring-settings) - Opções de câmera, microfone e detecção de troca de aba
+- [Restringir por E-mail](/restrict-access-by-email) - Restrinja o acesso ao teste por endereço de e-mail ou domínio
+- [Convidar Candidatos por E-mail](/invite-candidates-via-email) - Envie convites de teste diretamente
+- [Métodos de Login do Candidato](/candidate-login-methods) - Como cada método de login funciona
+- [Integração com Google Sheets](/write-results-to-google-sheets) - Exportação automática de resultados para planilhas

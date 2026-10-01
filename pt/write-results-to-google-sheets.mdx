@@ -11,52 +11,79 @@ Esta é uma **Funcionalidade Premium** e requer uma assinatura Premium ou Elite.
 
 ## Instruções de Configuração
 
-<Frame caption="Configurando a integração com Google Sheets">
-  <img className="border rounded-xl" src="/images/settings/write-to-gsheet.gif" alt="GIF mostrando como configurar a integração com Google Sheets no AutoProctor" />
-</Frame>
-
 <Steps>
-  <Step title="Abra as configurações do teste">
-    Acesse as **Configurações do Teste** de um teste novo ou existente no seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
-  </Step>
-  <Step title="Localize o campo ID do Google Sheets">
-    Role até a seção **Advanced Settings** e localize o campo **Google Sheets ID**.
-  </Step>
-  <Step title="Crie uma planilha Google Sheets em branco">
+  <Step title="Criar uma Planilha Google Sheets em Branco">
     Crie uma planilha Google Sheets vazia no seu Google Drive. Você usará esta planilha para receber os resultados do AutoProctor.
   </Step>
-  <Step title="Conceda acesso de edição">
+  <Step title="Conceder Acesso de Edição">
     Compartilhe a planilha Google Sheets com `hello@autoproctor.co` e conceda permissões de **Editor**. Isso permite que o AutoProctor escreva dados na planilha.
 
     <Warning>
-    Se você não compartilhar a planilha com `hello@autoproctor.co` como Editor, o AutoProctor não conseguirá escrever resultados nela. Certifique-se de conceder acesso de Editor, não apenas de Visualizador.
+    Se você não compartilhar a planilha com `hello@autoproctor.co` como Editor, o AutoProctor não conseguirá escrever resultados nela. Certifique-se de conceder acesso de Editor, não apenas de Visualizador. Quando uma escrita falha por esse motivo, o AutoProctor envia um e-mail aos administradores do teste pedindo o acesso.
     </Warning>
   </Step>
-  <Step title="Cole a URL da planilha Google Sheets">
-    Copie a URL da sua planilha Google Sheets e cole-a no campo **Google Sheets ID** nas configurações do teste do AutoProctor.
+  <Step title="Abrir a Seção After the Test">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **After the test** (depois do teste) na lista de seções.
   </Step>
-  <Step title="Salve o teste">
-    Clique em **Create** ou **Update** para salvar a configuração do teste.
+  <Step title="Colar o Link da Planilha Google Sheets">
+    Abra a planilha, copie o endereço dela no navegador e cole-o no campo **Send results to a Google Sheet** (enviar resultados para uma planilha Google Sheets). O endereço começa com `https://docs.google.com/spreadsheets/d/`.
+
+    Abaixo do campo, **Results go to sheet** seguido de um link curto confirma em qual planilha o AutoProctor vai escrever.
   </Step>
-  <Step title="Verifique a integração">
+  <Step title="Salvar">
+    Clique em **Save settings**.
+  </Step>
+  <Step title="Verificar a Integração">
     Complete uma tentativa de teste. Uma nova aba chamada **AutoProctor** aparecerá automaticamente na sua planilha Google Sheets com os dados dos resultados.
   </Step>
 </Steps>
 
+{/* screenshot: After the test section of Test Settings for a test with proctoring on, cropped to the "Send results to a Google Sheet" field with a Google Sheets link pasted in and the "Results go to sheet" hint visible below it */}
+
+<Frame caption="O link de uma planilha colado em Send results to a Google Sheet, confirmado pelo texto de ajuda logo abaixo">
+  <img src="/images/write-results-to-google-sheets/send-results-to-sheet.png" alt="Campo Send results to a Google Sheet com um link de planilha do docs.google.com. Abaixo, o texto de ajuda diz Results go to sheet, seguido dos últimos caracteres do ID da planilha e de um link Set-up help" />
+</Frame>
+
 As tentativas de teste subsequentes preenchem automaticamente a mesma planilha Google Sheets sem necessidade de configuração adicional.
+
+<Note>
+O link da planilha é lido quando um candidato **inicia** uma tentativa. As tentativas que começaram antes de você salvar o link não são adicionadas à planilha.
+</Note>
+
+## A Supervisão Deve Estar Ativada
+
+**Send results to a Google Sheet** funciona apenas com a **supervisão ativada**. Você ativa a supervisão com o interruptor no canto superior direito da seção **Proctoring**.
+
+<Warning>
+Enquanto a supervisão estiver desativada, o campo fica desabilitado e nada é escrito na planilha. Salvar as configurações com a supervisão desativada também remove o link da planilha do teste. A planilha em si não é alterada.
+</Warning>
+
+## O Que É Escrito
+
+Cada tentativa enviada é adicionada como uma linha na aba **AutoProctor**.
+
+| Coluna | Conteúdo |
+|---|---|
+| **First Name** | O nome do candidato |
+| **Last Name** | O sobrenome do candidato |
+| **Email** | O e-mail do candidato |
+| **Trust Score** | O Trust Score (pontuação de confiança) da tentativa |
+| **Evidence URLs (sample)** | Fica vazia. Abra o Test Report URL para revisar as evidências |
+| **Test Report URL** | Um link para o relatório de supervisão da tentativa |
+| **Socratease Percentage Scored (%)** | A pontuação do questionário em porcentagem. Apenas para questionários Socratease |
 
 ## Integração com Questionários Socratease
 
-Para Questionários Socratease, o sistema escreve tanto as pontuações de supervisão quanto as pontuações do questionário na planilha. No entanto, perguntas e respostas individuais não são incluídas -- apenas dados de pontuação agregados aparecem.
+Para Questionários Socratease, o sistema escreve tanto as pontuações de supervisão quanto as pontuações do questionário na planilha. No entanto, perguntas e respostas individuais não são incluídas. Apenas dados de pontuação agregados aparecem.
 
 <Note>
-Se você precisa de dados detalhados por pergunta para Questionários Socratease, use a visualização de [submissões individuais](/access-candidate-responses) no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
+Se você precisa de dados detalhados por pergunta para Questionários Socratease, clique em **Results** ao lado do teste na sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e use a visualização de [submissões individuais](/access-candidate-responses).
 </Note>
 
 ## Recursos Relacionados
 
-- [Exportar para Excel](/export-results-to-excel) -- Baixe resultados manualmente como planilha
-- [Acessar Respostas e Entregas do Candidato](/access-candidate-responses) -- Veja respostas detalhadas por candidato
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
-- [Pagamentos e Créditos](/payments-and-credits) -- Detalhes dos planos e disponibilidade de funcionalidades
-- [Compartilhar Resultados do Teste](/share-exam-results) -- Conceda acesso aos resultados do teste para outros usuários
+- [Exportar para Excel](/export-results-to-excel) - Baixe resultados manualmente como planilha
+- [Acessar Respostas e Entregas do Candidato](/access-candidate-responses) - Veja respostas detalhadas por candidato
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Visão geral dos resultados do teste vs. resultados de supervisão
+- [Pagamentos e Créditos](/payments-and-credits) - Detalhes dos planos e disponibilidade de funcionalidades
+- [Compartilhar Resultados do Teste](/share-exam-results) - Conceda acesso aos resultados do teste para outros usuários

@@ -1,94 +1,113 @@
 ---
-title: "Archivar y Eliminar Exámenes"
-description: "Aprenda a archivar exámenes para organizar su panel de control o a eliminar permanentemente los exámenes que ya no necesita."
+title: "Cerrar, Ocultar y Eliminar Exámenes"
+description: "Aprenda a cerrar un examen para que no reciba más envíos, a ocultarlo de su panel de control o a eliminar permanentemente un examen que ya no necesita."
 ---
 
-Con el tiempo, su panel de control acumula exámenes de demostración, exámenes completados y evaluaciones desactualizadas. Archivar mueve los exámenes fuera de su vista principal sin eliminarlos, y la eliminación remueve permanentemente los exámenes que ya no necesita.
+<Tip>
+**Resumen:** **Cierre** un examen para detener los envíos para todos, u **ocúltelo** para quitarlo solo de su propio panel de control. Ambos son interruptores en la **Configuración** (Settings) del examen, y ambos se pueden deshacer desde la página [**Tests**](https://www.autoproctor.co/test-admin/home/).
+</Tip>
 
-## Archivar Exámenes
+## Cerrar u Ocultar un Examen
 
-Archivar un examen lo oculta de su panel de control principal mientras lo mantiene completamente accesible en una sección dedicada. Esto es útil para limpiar exámenes completados o de demostración sin perder datos.
+Con el tiempo, su panel de control acumula exámenes de demostración, exámenes completados y evaluaciones desactualizadas. **Cerrar** y **ocultar** sacan un examen de su vista Active, pero hacen cosas distintas.
 
-<Frame caption="Cómo archivar un examen en AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/archive-test.mp4"
-  ></video>
-</Frame>
+| | Cerrar | Ocultar |
+|---|---|---|
+| Nombre del ajuste | **Close test for submissions** | **Hide from my dashboard** |
+| A quién afecta | A usted, a sus colaboradores y a los candidatos | Solo a usted |
+| ¿Los candidatos aún pueden realizar el examen? | No | Sí |
+| Dónde aparece el examen después | Vista **Closed** | Vista **Hidden** |
+| Cómo deshacerlo | **Make open** | **Unhide** |
 
 <Steps>
   <Step title="Abra la Configuración del Examen">
-    Vaya a su [**Panel de Control**](https://www.autoproctor.co/test-admin/home/) y abra la **Configuración** del examen.
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Settings** junto al examen.
   </Step>
-  <Step title="Archive el Examen">
-    Haga clic en **Archivar Examen** para mover el examen fuera de la vista principal de su panel de control.
+  <Step title="Active el Interruptor">
+    En la sección **General**, active **Close test for submissions** (cerrar el examen) o **Hide from my dashboard** (ocultar de mi panel).
   </Step>
-  <Step title="Acceda a los Exámenes Archivados">
-    Abra la sección de **Exámenes Archivados** en la barra lateral izquierda para ver todos sus exámenes archivados.
+  <Step title="Guarde">
+    Haga clic en **Save settings**. El examen sale de su vista Active.
   </Step>
 </Steps>
 
-## Restaurar Exámenes Archivados
+{/* screenshot: General section of Test Settings, showing the "Close test for submissions" and "Hide from my dashboard" switches */}
 
-Puede devolver un examen archivado a su panel de control principal en cualquier momento.
-
-<Frame caption="Cómo restaurar un examen archivado en AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/restore-test.mp4"
-  ></video>
+<Frame caption="Los interruptores Close test for submissions y Hide from my dashboard en la sección General">
+  <img src="/images/archive-and-delete-exams/close-and-hide-switches.png" alt="Sección General de la configuración de un examen titulado Chemistry Midterm, Grade 11, con los interruptores Close test for submissions y Hide from my dashboard desactivados" />
 </Frame>
 
+<Note>
+Puede activar ambos interruptores en el mismo examen. Un examen cerrado y oculto aparece tanto en la vista Closed como en la vista Hidden.
+</Note>
+
+## Encontrar Exámenes Cerrados y Ocultos
+
+La página [**Tests**](https://www.autoproctor.co/test-admin/home/) tiene cuatro vistas en la parte superior: **All**, **Active**, **Closed** y **Hidden**. Active está seleccionada de forma predeterminada.
+
+| Vista | Qué muestra | Enlace directo |
+|---|---|---|
+| **All** | Todos los exámenes que usted creó o en los que colabora, incluidos los cerrados y ocultos | [Abrir](https://www.autoproctor.co/test-admin/home/?t=a) |
+| **Active** | Exámenes abiertos y no ocultos | [Abrir](https://www.autoproctor.co/test-admin/home/) |
+| **Closed** | Exámenes que ya nadie puede realizar | [Abrir](https://www.autoproctor.co/test-admin/home/?t=c) |
+| **Hidden** | Exámenes que usted quitó de su propio panel de control | [Abrir](https://www.autoproctor.co/test-admin/home/?t=h) |
+
+{/* screenshot: Tests page with the All / Active / Closed / Hidden view switch, Closed selected, showing Make open and Delete buttons on each row */}
+
+<Frame caption="La vista Closed de la página Tests, con Make open y Delete en cada fila">
+  <img src="/images/archive-and-delete-exams/closed-view.png" alt="Página Tests con la vista Closed seleccionada, que muestra cuatro exámenes cerrados, cada uno con un botón Make open y un botón Delete" />
+</Frame>
+
+## Reabrir o Mostrar un Examen
+
+Puede recuperar un examen cerrado u oculto en cualquier momento.
+
 <Steps>
-  <Step title="Vaya a Exámenes Archivados">
-    Haga clic en **Exámenes Archivados** en la barra lateral izquierda.
+  <Step title="Abra la Vista Correcta">
+    En la página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c) o en [**Hidden**](https://www.autoproctor.co/test-admin/home/?t=h).
   </Step>
   <Step title="Restaure el Examen">
-    Encuentre el examen que desea restaurar y haga clic en **Restaurar**. El examen reaparecerá en su panel de control principal.
-  </Step>
-</Steps>
-
-## Eliminar Exámenes
-
-Puede eliminar permanentemente un examen desde la sección de **Exámenes Archivados**. Debe archivar un examen antes de poder eliminarlo.
-
-<Frame caption="Cómo eliminar un examen en AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/delete-test.mp4"
-  ></video>
-</Frame>
-
-<Steps>
-  <Step title="Archive el Examen">
-    Si el examen todavía está en su panel de control principal, archívelo primero siguiendo los pasos anteriores.
-  </Step>
-  <Step title="Vaya a Exámenes Archivados">
-    Abra la sección de **Exámenes Archivados** en la barra lateral izquierda.
-  </Step>
-  <Step title="Elimine el Examen">
-    Haga clic en **Eliminar** junto al examen que desea remover permanentemente.
+    Haga clic en **Make open** en un examen cerrado, o en **Unhide** en un examen oculto, y confirme.
   </Step>
 </Steps>
 
 <Warning>
-Eliminar un examen lo remueve de su cuenta permanentemente. Sin embargo, **las respuestas de los candidatos y los registros de supervisión se conservan** — esos datos persisten incluso después de que el examen sea eliminado. Por ejemplo, si carga el complemento de Google Forms después de eliminar el examen, el examen reaparecerá en su panel de control con los resultados anteriores intactos.
+**Make open** reabre el examen para usted y para todos sus colaboradores. Los candidatos que tengan el enlace del examen pueden volver a enviar respuestas.
+</Warning>
+
+## Eliminar un Examen
+
+Puede eliminar permanentemente un examen desde la vista **Closed**. Un examen debe estar cerrado antes de poder eliminarlo.
+
+<Steps>
+  <Step title="Cierre el Examen">
+    Si el examen todavía está abierto, ciérrelo primero siguiendo los pasos anteriores.
+  </Step>
+  <Step title="Abra la Vista Closed">
+    En la página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c).
+  </Step>
+  <Step title="Elimine el Examen">
+    Haga clic en **Delete** junto al examen y confirme.
+  </Step>
+</Steps>
+
+<Warning>
+Eliminar un examen lo quita de su cuenta **y de las cuentas de todos sus colaboradores**. Un examen eliminado no se puede recuperar. Si solo quiere quitar el examen de su propio panel de control, ocúltelo.
 </Warning>
 
 ## Notas Importantes
 
 | Escenario | Qué Sucede |
 |---|---|
-| Elimina un examen de Google Forms y luego reinstala el complemento | El examen reaparece con todos los resultados originales conservados |
-| Un examen tiene múltiples colaboradores y usted lo elimina | La eliminación solo afecta a su cuenta — los demás colaboradores conservan acceso completo |
-| Desea recuperar un examen eliminado | Los exámenes eliminados no se pueden recuperar; archive en lugar de eliminar si podría necesitar el examen más adelante |
+| Cierra un examen que los candidatos están por realizar | El enlace del examen deja de funcionar para todos hasta que haga clic en **Make open** |
+| Oculta un examen que tiene colaboradores | Solo cambia su panel de control. Los colaboradores siguen viendo el examen y los candidatos aún pueden realizarlo |
+| Elimina un examen que tiene colaboradores | El examen se elimina para usted y para cada colaborador |
+| Elimina un examen de Google Forms y quiere volver a usar el mismo formulario | Puede crear un examen nuevo a partir del mismo formulario de Google |
+| Desea recuperar un examen eliminado | Los exámenes eliminados no se pueden recuperar. Cierre u oculte el examen si podría necesitarlo más adelante |
 
 ## Recursos Relacionados
 
-- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) — Acceda a los resultados del examen y de supervisión
-- [Compartir Resultados del Examen](/share-exam-results) — Comparta resultados con las partes interesadas
-- [Agregar Colaboradores](/add-collaborators) — Comparta la gestión del examen con miembros del equipo
-- [Configuración del Temporizador](/timer-settings) — Configure la duración del examen y las ventanas de tiempo
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) - Acceda a los resultados del examen y de supervisión
+- [Compartir Resultados del Examen](/share-exam-results) - Comparta resultados con las partes interesadas
+- [Agregar Colaboradores](/add-collaborators) - Comparta la gestión del examen con miembros del equipo
+- [Configuración del Temporizador](/timer-settings) - Configure la duración del examen y las ventanas de tiempo

@@ -11,40 +11,44 @@ Todo teste do AutoProctor começa com uma página de instruções que explica co
 
 ## Como a Página de Instruções Funciona
 
-A página de instruções é **automaticamente ativa em todos os testes**. Os candidatos a veem imediatamente após clicar no link do teste. Você não pode desativar esta página — ela garante que todos os candidatos entendam as regras do teste antes de começar.
+A página de instruções é **automaticamente ativa em todos os testes**. Os candidatos a veem imediatamente após clicar no link do teste. Você não pode desativar esta página, porque ela garante que todos os candidatos entendam as regras do teste antes de começar.
 
-A página inclui:
-- Uma explicação de quais recursos de supervisão estão ativados para o teste
-- Requisitos de navegador e dispositivo
-- Um link para um teste de demonstração para que os candidatos possam verificar sua configuração
-- Quaisquer instruções personalizadas que você adicionar (plano Elite necessário)
+As configurações (**Settings**) de um teste chamam esta página de **start page** (página inicial). Você controla o que adiciona a ela na seção **Before the test** (antes do teste).
+
+| Na página | De onde vem |
+|---|---|
+| Uma explicação de quais recursos de supervisão estão ativados para o teste | Automático, com base nas configurações de supervisão do teste |
+| Requisitos de navegador e dispositivo | Automático |
+| Um link para um teste de demonstração para que os candidatos possam verificar sua configuração | Automático |
+| Quaisquer instruções personalizadas que você adicionar | **Show additional instructions** (plano Elite necessário) |
+| Campos extras que o candidato deve preencher | **Collect candidate details** (plano Premium necessário) |
 
 ## Adicionando Instruções Personalizadas
 
 Você pode incluir suas próprias instruções (máximo de 200 palavras) que aparecem na página de instruções junto com o conteúdo padrão.
 
 <Steps>
-  <Step title="Abra as configurações do teste">
-    Navegue até a página de configurações do teste no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
+  <Step title="Abrir a Seção Before the Test">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Before the test** na lista de seções.
   </Step>
-  <Step title="Acesse as Configurações Avançadas">
-    Role até a seção **Advanced Settings**.
+  <Step title="Ativar as Instruções Adicionais">
+    Em **Additional instructions** (instruções adicionais), ative **Show additional instructions** (mostrar instruções adicionais).
   </Step>
-  <Step title="Insira suas instruções personalizadas">
-    Digite suas instruções personalizadas no campo **Additional Instructions**. Você pode adicionar até 200 palavras.
+  <Step title="Inserir suas Instruções Personalizadas">
+    Digite seu texto na caixa **Instructions**. Um contador abaixo da caixa mostra quantas das 200 palavras você usou.
   </Step>
-  <Step title="Salve as configurações">
-    Salve as configurações do teste. Suas instruções personalizadas agora aparecerão na página de instruções para todos os candidatos.
+  <Step title="Salvar">
+    Clique em **Save settings**.
   </Step>
 </Steps>
 
-<Frame caption="Campo de instruções adicionais nas Configurações Avançadas">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/getting-started/additional-instructions-settings.mp4"
-  ></video>
+{/* screenshot: Before the test section of Test Settings, cropped to the "Additional instructions" group, with "Show additional instructions" switched on and the "Instructions" box filled with two short lines of text, the "/ 200 words" counter visible */}
+
+<Frame caption="Show additional instructions ativado, com duas linhas de instruções">
+  <img src="/images/candidate-instructions-page/additional-instructions.png" alt="Grupo Additional instructions com Show additional instructions ativado e duas linhas de texto na caixa Instructions. O contador abaixo da caixa indica 19 of 200 words" />
 </Frame>
+
+Os candidatos veem seu texto em um cartão intitulado **Additional Instructions**, ao lado das instruções padrão. O texto é texto simples e as quebras de linha são mantidas. Ele não é exibido dentro do questionário.
 
 <Note>
 Adicionar instruções personalizadas requer uma assinatura do **plano Elite**. Consulte [Recursos Elite](/elite-plan-features) para detalhes sobre o que o plano Elite inclui.
@@ -52,37 +56,67 @@ Adicionar instruções personalizadas requer uma assinatura do **plano Elite**. 
 
 ## Coletando Informações Adicionais dos Candidatos
 
-Você pode usar o recurso **Gather Additional Details** nas Configurações Avançadas para coletar informações extras dos candidatos. Este formulário aparece na página de instruções e os candidatos devem preenchê-lo antes de iniciar o teste.
+Use **Collect candidate details** (coletar dados do candidato) para pedir a cada candidato informações extras, como um número de telefone ou uma matrícula de estudante. Os campos aparecem em **Your Details** na página de instruções, e os candidatos devem preencher todos antes de iniciar o teste.
 
-<Frame caption="Gather Additional Details nas Configurações Avançadas">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/getting-started/gather-additional-details.mp4"
-  ></video>
+<Steps>
+  <Step title="Abrir a Seção Before the Test">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Before the test** na lista de seções.
+  </Step>
+  <Step title="Ativar os Dados do Candidato">
+    Em **Candidate details** (dados do candidato), ative **Collect candidate details**.
+  </Step>
+  <Step title="Adicionar seus Campos">
+    Clique em uma das sugestões (**Suggestions**) para adicioná-la, ou clique em **Add field** (adicionar campo), digite o nome do campo e pressione Enter. Para remover um campo, clique no **x** do campo.
+  </Step>
+  <Step title="Ordenar os Campos (Opcional)">
+    Arraste um campo para movê-lo, ou selecione-o, mantenha a tecla Alt pressionada e pressione uma tecla de seta.
+  </Step>
+  <Step title="Salvar">
+    Clique em **Save settings**.
+  </Step>
+</Steps>
+
+{/* screenshot: Before the test section of Test Settings, cropped to the "Candidate details" group, with "Collect candidate details" switched on, two field chips ("Phone Number" and "Student ID"), the "Add field" button and the "Suggestions:" row visible */}
+
+<Frame caption="Collect candidate details ativado, com dois campos e as sugestões abaixo">
+  <img src="/images/candidate-instructions-page/candidate-details.png" alt="Grupo Candidate details com Collect candidate details ativado, os campos Phone Number e Student ID, um botão Add field e uma linha Suggestions que oferece College Name, Graduation Year e Work Experience in years" />
 </Frame>
+
+| Regra | Detalhe |
+|---|---|
+| Campos por teste | Até 10 |
+| Tamanho do nome de um campo | Até 250 caracteres e 50 palavras |
+| Obrigatório ou opcional | Todos os campos são obrigatórios |
+| Campos sugeridos | **Phone Number**, **Student ID**, **College Name**, **Graduation Year**, **Work Experience (in years)** |
+| Ordem dos campos | A ordem que os candidatos veem e a ordem das colunas na exportação CSV |
+
+As respostas aparecem nos resultados do teste e na exportação.
+
+<Note>
+**Collect candidate details** requer um plano **Premium** ou **Elite**.
+</Note>
 
 ## Perguntas Frequentes
 
 <AccordionGroup>
   <Accordion title="Posso visualizar a página de instruções antes de compartilhar o link do teste?">
-    Sim — clique no seu próprio link de teste para ver exatamente o que os candidatos verão. Visualizar a página de instruções não consome um crédito.
+    Sim. No topo da página **Settings** do teste, clique em **Preview** (pré-visualizar) ao lado de **Copy link**. A página abre em uma nova aba, exatamente como os candidatos a verão. Você também pode abrir o link do seu próprio teste. Visualizar a página de instruções não consome um crédito.
   </Accordion>
 
   <Accordion title="Visualizar a página de instruções usa um crédito?">
-    Não — os créditos só são deduzidos quando um candidato inicia o teste com sucesso, não quando visualiza a página de instruções.
+    Não. Os créditos só são deduzidos quando um candidato inicia o teste com sucesso, não quando visualiza a página de instruções.
   </Accordion>
 
   <Accordion title="Posso remover seções da página de instruções?">
-    Não — as seções padrão são fixas e não podem ser removidas. Você só pode adicionar instruções adicionais ao conteúdo existente.
+    Não. As seções padrão são fixas e não podem ser removidas. Você só pode adicionar instruções adicionais ao conteúdo existente.
   </Accordion>
 </AccordionGroup>
 
 ## Recursos Relacionados
 
-- [Configurações de Tempo](/timer-settings) — Configure o temporizador do teste e configurações relacionadas
-- [Configurações Avançadas](/advanced-exam-settings) — Configure instruções personalizadas e detalhes adicionais
-- [Instruções para Testes Supervisionados](/take-proctored-exam) — O que os candidatos precisam saber para testes supervisionados
-- [Recursos Elite](/elite-plan-features) — Conheça as capacidades do plano Elite
-- [Compatibilidade de Dispositivos](/device-compatibility) — Navegadores e dispositivos compatíveis
-- [Fale Conosco](/contact-us) — Entre em contato se precisar de ajuda adicional
+- [Configurações de Tempo](/timer-settings) - Configure o temporizador do teste e configurações relacionadas
+- [Configurações Avançadas](/advanced-exam-settings) - Configure instruções personalizadas e detalhes adicionais
+- [Instruções para Testes Supervisionados](/take-proctored-exam) - O que os candidatos precisam saber para testes supervisionados
+- [Recursos Elite](/elite-plan-features) - Conheça as capacidades do plano Elite
+- [Compatibilidade de Dispositivos](/device-compatibility) - Navegadores e dispositivos compatíveis
+- [Fale Conosco](/contact-us) - Entre em contato se precisar de ajuda adicional

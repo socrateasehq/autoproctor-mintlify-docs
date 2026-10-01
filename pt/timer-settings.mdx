@@ -1,77 +1,105 @@
 ---
 title: "Configurações de Tempo"
-description: "Configure a duração do teste, envio automático, janelas de tempo e tempo de tolerância para seus testes no AutoProctor."
+description: "Configure a duração do teste, o envio automático, a janela de início, um encerramento definitivo e um período de tolerância para inícios tardios nos seus testes do AutoProctor."
 ---
 
-As Configurações de Tempo permitem que você controle quando os candidatos podem iniciar um teste, quanto tempo têm para concluí-lo e o que acontece quando o tempo se esgota. Você acessa essas configurações pelo botão **Settings** no seu painel.
+As configurações de tempo permitem que você controle quando os candidatos podem iniciar um teste, quanto tempo têm para concluí-lo e o que acontece quando o tempo se esgota. Elas ficam na seção **Timer** (temporizador) das configurações (**Settings**) de um teste.
 
 <Note>
-Os horários que você define são no seu fuso horário local. O AutoProctor faz todas as conversões de fuso horário automaticamente — se seus candidatos estiverem em um fuso horário diferente, eles verão o horário local correto.
+Os horários que você define são no seu fuso horário local. O AutoProctor faz todas as conversões de fuso horário automaticamente. Se seus candidatos estiverem em um fuso horário diferente, eles verão o horário local correto.
 </Note>
 
 ## Como Configurar as Definições de Tempo
 
-<Frame caption="Como configurar as definições de tempo no AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    poster="/thumbnails/settings/config-timer-settings.jpg"
-    src="/videos/settings/config-timer-settings.mp4"
-  ></video>
-</Frame>
-
 <Steps>
+  <Step title="Abrir a Seção Timer">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Timer** na lista de seções.
+  </Step>
   <Step title="Ativar o Temporizador">
-    Na página de Configurações do Teste, marque a caixa **Enable Timer**. Isso ativa todas as configurações relacionadas ao tempo para o seu teste. Desmarcar essa caixa desabilita todas as verificações de tempo.
+    Ative o interruptor no canto superior direito da seção **Timer**. Enquanto o interruptor estiver em **Off**, os candidatos podem levar o tempo que precisarem e nenhuma verificação de tempo se aplica.
   </Step>
   <Step title="Definir a Duração">
-    Insira o tempo máximo que um candidato tem para concluir o teste. A contagem regressiva começa quando o teste é carregado e o candidato visualiza as perguntas.
+    Em **How long do candidates get?** (quanto tempo os candidatos têm?), insira a **Duration** em minutos. A contagem regressiva começa quando o teste é carregado e o candidato visualiza as perguntas.
   </Step>
-  <Step title="Configurar Envio Automático (Opcional)">
-    Ative **Auto-submit Test** para enviar automaticamente o teste quando a duração terminar. Se desativado, os candidatos têm tempo ilimitado para enviar após o temporizador se esgotar.
+  <Step title="Escolher o Que Acontece Quando o Tempo Acaba (Opcional)">
+    Marque **Submit automatically when time runs out** (enviar automaticamente quando o tempo acabar) para enviar o teste quando a duração terminar. Se você deixar desmarcado, os candidatos têm tempo ilimitado para enviar após o temporizador se esgotar.
 
     <Warning>
-    Para questionários que não são do Socratease, o envio automático envia apenas a sessão de supervisão — não as respostas do questionário. Se um candidato não tiver enviado manualmente suas respostas, **todas as respostas serão perdidas**. Para questionários do Socratease, tanto as respostas quanto os dados de supervisão são enviados automaticamente.
+    Para questionários que não são do Socratease, o envio automático envia apenas a sessão de supervisão, não as respostas do questionário. Se um candidato não tiver enviado manualmente suas respostas, **todas as respostas serão perdidas**. Para questionários do Socratease, tanto as respostas quanto os dados de supervisão são enviados automaticamente.
     </Warning>
   </Step>
   <Step title="Definir uma Janela de Início (Opcional)">
-    Use **Can't Start Before** e **Can't Start After** para definir quando os candidatos podem iniciar o teste:
-    - **Can't Start Before** — a data e o horário mais cedo em que um candidato pode iniciar
-    - **Can't Start After** — a data e o horário mais tarde em que um candidato pode iniciar
+    Em **When can candidates start?** (quando os candidatos podem iniciar?), escolha uma data e um horário para um ou ambos os campos:
+    - **Cannot start before**: a data e o horário mais cedo em que um candidato pode iniciar
+    - **Cannot start after**: a data e o horário mais tarde em que um candidato pode iniciar
 
-    Se você definir uma data sem horário, meia-noite será usada como padrão.
+    Deixe ambos vazios para que os candidatos possam iniciar a qualquer momento. Se você definir uma data sem horário, meia-noite será usada como padrão.
   </Step>
-  <Step title="Definir um Prazo de Envio (Opcional)">
-    **Must Submit By** define um prazo final rígido para o envio. Se um candidato iniciar o teste próximo a esse prazo, o tempo disponível será reduzido proporcionalmente.
-
-    Por exemplo, se a duração do teste é de 30 minutos e o horário de Must Submit By é 12:30, um candidato que iniciar às 12:15 terá apenas 15 minutos. Essa configuração usa a mesma data do **Can't Start After**.
-  </Step>
-  <Step title="Configurar Tempo de Tolerância (Opcional)">
-    **Buffer Time** é um período de tolerância após o horário de Can't Start After que permite aos candidatos completar o teste de demonstração e configurar seu dispositivo. O AutoProctor adiciona um tempo de tolerância padrão de 5 minutos quando os horários de início/fim são definidos.
-
-    <Note>
-    O tempo de tolerância não se aplica ao prazo de Must Submit By.
-    </Note>
+  <Step title="Salvar">
+    Clique em **Save settings**.
   </Step>
 </Steps>
+
+{/* screenshot: Timer section of Test Settings with the switch On, Duration set to 60 minutes, "Submit automatically when time runs out" ticked, and "Cannot start before" and "Cannot start after" both filled with a date and time */}
+
+<Frame caption="A seção Timer com duração de 60 minutos, envio automático e uma janela de início">
+  <img src="/images/timer-settings/timer-section.png" alt="Seção Timer ativada, com Duration em 60 minutos, Submit automatically when time runs out marcado, e Cannot start before e Cannot start after preenchidos com data e horário" />
+</Frame>
+
+<Tip>
+Use o seletor **Time format** (formato de hora) ao lado de **When can candidates start?** para escolher os horários como **2:30 PM** ou **14:30**. Ele só muda como os horários são exibidos para você nesta página.
+</Tip>
+
+## Mais Opções
+
+Clique em **More options** (mais opções) no final da seção **Timer** para exibir duas configurações menos comuns. Ambas precisam que uma data em **Cannot start after** seja definida primeiro.
+
+| Configuração | O que faz |
+|---|---|
+| **Hard stop** (encerramento definitivo) | Um horário na data de **Cannot start after**. Nesse horário, o teste de todos que ainda o estiverem realizando é enviado |
+| **Late-start grace period** (período de tolerância para inícios tardios) | Minutos extras que um candidato tem para iniciar após o horário de **Cannot start after**. O mínimo é 5 |
+
+{/* screenshot: Timer section of Test Settings with "More options" expanded, showing the "Hard stop" time and "Late-start grace period" fields filled in, below a "Cannot start after" date */}
+
+<Frame caption="Hard stop e Late-start grace period, os dois campos em More options">
+  <img src="/images/timer-settings/timer-more-options.png" alt="Cannot start before e Cannot start after definidos para a mesma data, com Hard stop às 10:30 AM e Late-start grace period de 10 minutos abaixo" />
+</Frame>
+
+### Hard stop
+
+Um **Hard stop** reduz o tempo dos candidatos que iniciam tarde. Por exemplo, se a duração é de 30 minutos e o Hard stop é às 12:30, um candidato que iniciar às 12:15 terá apenas 15 minutos.
+
+O Hard stop não pode ser anterior a **Cannot start before** nem a **Cannot start after**.
+
+### Late-start grace period
+
+O período de tolerância dá tempo aos candidatos para completar o teste de demonstração e configurar seu dispositivo. O AutoProctor adiciona um período de tolerância padrão de 5 minutos quando os horários de início e fim são definidos.
+
+<Note>
+O período de tolerância não se aplica ao **Hard stop**.
+</Note>
 
 ## Referência das Configurações de Tempo
 
 | Configuração | Descrição | Padrão |
 |---|---|---|
-| **Duration** | Tempo máximo para uma tentativa de teste | Sem limite |
-| **Auto-submit Test** | Enviar automaticamente quando o tempo acabar | Desativado |
-| **Can't Start Before** | Data e horário de início mais cedo | Sem restrição |
-| **Can't Start After** | Data e horário de início mais tarde | Sem restrição |
-| **Must Submit By** | Prazo final rígido de envio | Não definido |
-| **Buffer Time** | Período de tolerância para configuração após Can't Start After | 5 min (quando os horários estão definidos) |
+| **Duration** | Tempo máximo para uma tentativa de teste, em minutos | Sem limite |
+| **Submit automatically when time runs out** | Enviar quando a duração terminar | Desativado |
+| **Cannot start before** | Data e horário de início mais cedo | Sem restrição |
+| **Cannot start after** | Data e horário de início mais tarde | Sem restrição |
+| **Hard stop** | Horário em que o teste de todos que ainda o estiverem realizando é enviado | Não definido |
+| **Late-start grace period** | Minutos extras para iniciar após **Cannot start after** | 5 min (quando os horários estão definidos) |
+
+<Note>
+Se um questionário Socratease exibe as perguntas **uma por uma sem navegação entre perguntas**, cada pergunta é cronometrada separadamente. **Duration**, o envio automático e **Hard stop** não se aplicam a esse questionário, mas a janela de início sim. Você pode mudar o modo de exibição em **Quiz behaviour** nas configurações do teste.
+</Note>
 
 {/* TODO: Add GIF showing the timer countdown experience from the candidate's perspective */}
 
 ## Recursos Relacionados
 
-- [Configurações de Supervisão](/proctoring-settings) — Configure câmera, microfone e detecção de troca de aba
-- [Configurações Avançadas](/advanced-exam-settings) — Provedores de login, restrições e integrações
-- [Configurações do Questionário](/socratease-quiz-settings) — Para configurações específicas de questionários Socratease, consulte a página de Configurações do Questionário do Socratease
-- [Retomar Tentativas de Teste](/resume-exam-attempts) — Como a retomada automática funciona com testes cronometrados
-- [O Que é Monitorado](/what-gets-tracked-during-proctoring) — Visão geral de todas as capacidades de supervisão
+- [Configurações de Supervisão](/proctoring-settings) - Configure câmera, microfone e detecção de troca de aba
+- [Configurações Avançadas](/advanced-exam-settings) - Provedores de login, restrições e integrações
+- [Configurações do Questionário](/socratease-quiz-settings) - Para configurações específicas de questionários Socratease, consulte a página de Configurações do Questionário do Socratease
+- [Retomar Tentativas de Teste](/resume-exam-attempts) - Como a retomada automática funciona com testes cronometrados
+- [O Que é Monitorado](/what-gets-tracked-during-proctoring) - Visão geral de todas as capacidades de supervisão

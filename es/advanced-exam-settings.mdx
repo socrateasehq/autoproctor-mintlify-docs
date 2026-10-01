@@ -1,102 +1,185 @@
 ---
 title: "Configuración Avanzada"
-description: "Configure proveedores de inicio de sesión, restricciones de correo electrónico, integración con Google Sheets, colaboradores y otras opciones avanzadas del examen."
+description: "Configure proveedores de inicio de sesión, restricciones de correo electrónico, URLs únicas de examen, datos del candidato, mensajes de finalización, integración con Google Sheets y colaboradores de un examen."
 ---
 
-La Configuración Avanzada le brinda control sobre cómo inician sesión los candidatos, quién puede acceder al examen y cómo se comparten los resultados. Estas opciones se encuentran en la parte inferior de la página de Configuración del Examen.
+La configuración avanzada le brinda control sobre cómo inician sesión los candidatos, quién puede acceder al examen, qué ven los candidatos antes y después de él, y cómo se comparten los resultados. Se encuentra en las secciones **Access & login** (acceso e inicio de sesión), **Before the test** (antes del examen) y **After the test** (después del examen) de la configuración (**Settings**) de un examen.
 
-<Frame caption="Panel de configuración avanzada">
-  <img src="/images/creating-tests/advanced-settings.png" alt="Panel de configuración avanzada" />
+## Dónde Encontrar Cada Ajuste
+
+Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Settings** junto al examen. Luego elija una sección en la lista de secciones.
+
+| Sección | Qué se configura allí | Más información |
+|---|---|---|
+| **General** | Título del examen, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Intentos Máximos](/maximum-exam-attempts), [Reanudación de Intentos de Examen](/resume-exam-attempts), [Cerrar, Ocultar y Eliminar Exámenes](/archive-and-delete-exams) |
+| **Quiz behaviour** | Solo cuestionarios Socratease. Abre la configuración propia del cuestionario | [Configuración de Cuestionarios Socratease](/socratease-quiz-settings) |
+| **Timer** | Duración y ventana de inicio | [Configuración del Temporizador](/timer-settings) |
+| **Proctoring** | Qué se monitorea y a quién se informa | [Configuración de Supervisión](/proctoring-settings) |
+| **Access & login** | **Login providers**, **Login restrictions**, **Unique test URLs**, **iFrame height**, **iFrame width**, **Query string** | Esta página |
+| **Before the test** | **Collect candidate details**, **Show additional instructions** | Esta página |
+| **After the test** | Qué ven los candidatos al enviar, **Send results to a Google Sheet** | Esta página |
+
+{/* screenshot: Test Settings page for a Socratease test, cropped to the list of sections (General, Quiz behaviour, Timer, Proctoring, Access & login, Before the test, After the test) with "Access & login" selected */}
+
+<Frame caption="Las secciones de Test Settings en un cuestionario Socratease, con Access &amp; login seleccionada">
+  <img src="/images/advanced-exam-settings/settings-sections.png" alt="Lista de secciones con General, Quiz behaviour, Timer, Proctoring, Access &amp; login, Before the test y After the test, con Access &amp; login resaltada" />
 </Frame>
 
-## Proveedores de Inicio de Sesión
+<Note>
+Un ajuste que su plan no incluye muestra una insignia **Premium** o **Elite**. Haga clic en **Save settings** al final de la página después de cambiar cualquier sección.
+</Note>
 
-Elija qué métodos de autenticación pueden usar los candidatos para iniciar sesión en su examen:
+## Acceso e Inicio de Sesión
 
-| Proveedor | Descripción | Notas |
+La sección **Access & login** controla quién puede abrir el enlace del examen y cómo inicia sesión. Los controles que ve dependen del proveedor de cuestionarios del examen.
+
+| Control | Cuestionarios Socratease | Google Forms | Microsoft Forms | Exámenes con IFrame |
+|---|---|---|---|---|
+| **Login providers** | Sí | No | No | Sí |
+| **Login restrictions** | Sí | Sí | Sí | Sí |
+| **Unique test URLs** | Sí | Sí | Sí | Sí |
+| **iFrame height** e **iFrame width** | No | No | No | Sí |
+| **Query string** | No | Sí | Sí | Sí |
+
+{/* screenshot: Access & login section of Test Settings for a Socratease test, showing "Login providers" with the Google, Microsoft and Email checkboxes, the "Login restrictions" field and the "Unique test URLs" switch turned off */}
+
+<Frame caption="Login providers, Login restrictions y Unique test URLs en la sección Access &amp; login">
+  <img src="/images/advanced-exam-settings/access-and-login.png" alt="Sección Access &amp; login con Google, Microsoft y Email marcados en Login providers, el campo Login restrictions vacío y el interruptor Unique test URLs desactivado" />
+</Frame>
+
+### Proveedores de Inicio de Sesión
+
+En **Login providers** (proveedores de inicio de sesión), elija qué métodos de autenticación pueden usar los candidatos para iniciar sesión en su examen:
+
+| Proveedor | Descripción | Disponibilidad |
 |---|---|---|
-| **Google** | Iniciar sesión con una cuenta de Google | Requerido para exámenes de Google Forms |
-| **Microsoft** | Iniciar sesión con una cuenta de Microsoft | Requerido para exámenes de Microsoft Forms |
-| **Correo Electrónico** | Iniciar sesión con cualquier dirección de correo electrónico | Disponible para exámenes de Socratease e Iframe |
+| **Google** | Iniciar sesión con una cuenta de Google | Siempre se usa en exámenes de Google Forms. Opcional en exámenes de Socratease y con IFrame. |
+| **Microsoft** | Iniciar sesión con una cuenta de Microsoft | Siempre se usa en exámenes de Microsoft Forms. Opcional en exámenes de Socratease y con IFrame. |
+| **Email** | Iniciar sesión con cualquier dirección de correo electrónico | Solo exámenes de Socratease y con IFrame. |
 
-Para exámenes de Google Forms y Microsoft Forms, el proveedor de inicio de sesión está bloqueado para coincidir con la plataforma del cuestionario. Para Cuestionarios de Socratease y Exámenes Iframe, puede activar uno o más proveedores.
+Los exámenes de Google Forms y Microsoft Forms siempre usan el inicio de sesión de su propia plataforma de cuestionarios, por lo que **Login providers** no se muestra en ellos. En los exámenes de Socratease y con IFrame, marque uno o más proveedores, incluidos Google y Microsoft.
 
 Para más detalles sobre cómo funciona cada método de inicio de sesión, consulte [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods).
 
-{/* TODO: Add screenshot showing the login provider selection options */}
+### Restricciones de Inicio de Sesión
 
-## Restricciones de Inicio de Sesión
+**Login restrictions** (restricciones de inicio de sesión) limita qué candidatos pueden realizar su examen según su dirección de correo electrónico o dominio. Ingrese en el campo los dominios o las direcciones permitidos, separados por comas.
 
-Restrinja qué candidatos pueden realizar su examen según su dirección de correo electrónico o dominio.
+- **Restringir por dominio**: permita solo candidatos con direcciones de correo electrónico de dominios específicos (por ejemplo, `@universidad.edu`)
+- **Restringir por correo electrónico**: permita solo direcciones de correo electrónico específicas para acceder al examen
 
-- **Restringir por Correo Electrónico** — Permita solo direcciones de correo electrónico específicas para acceder al examen
-- **Restringir por Dominio** — Permita solo candidatos con direcciones de correo electrónico de dominios específicos (por ejemplo, @universidad.edu)
+Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/restrict-access-by-email).
 
-Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/restrict-access-by-email). Si desea invitar a un conjunto específico de candidatos, consulte [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email).
+### URLs Únicas de Examen (Elite)
 
-{/* TODO: Add screenshot showing login restriction configuration */}
+Por defecto, todos los candidatos comparten un único enlace de examen, que podría ser reenviado a destinatarios no deseados. Activar **Unique test URLs** (URLs únicas de examen) le permite generar un enlace por candidato, para que solo las personas con las que comparta los enlaces puedan realizar el examen.
 
-## Altura del IFrame
-
-Cuando su examen está incrustado como un iframe dentro de AutoProctor, esta configuración le permite ajustar la altura (en píxeles) de ese iframe para que coincida con el contenido de su examen. El valor predeterminado es 1764px. Auméntelo si el contenido de su examen se está cortando o los candidatos tienen que desplazarse dentro del iframe, o disminúyalo para eliminar el espacio en blanco adicional.
-
-## Colaboradores
-
-Agregue colegas como colaboradores en su examen para que puedan editar la configuración y ver los resultados. Puede establecer el Administrador Principal del examen haciendo clic en el botón **Gestionar**.
-
-Para más detalles, consulte [Agregar Colaboradores](/add-collaborators).
-
-## Funciones Premium y Elite
-
-### Integración con Google Sheets (Premium)
-
-Escriba automáticamente los resultados del examen en una hoja de Google Sheets ingresando la URL de la hoja en este campo. Para cuestionarios de Socratease, se exportan tanto los resultados de supervisión como las puntuaciones del cuestionario. Para cuestionarios que no son de Socratease, solo se incluyen los resultados de supervisión.
-
-Para instrucciones de configuración, consulte [Integración con Google Sheets](/write-results-to-google-sheets).
-
-### Al Completar el Examen (Premium)
-
-Controla lo que los candidatos ven después de enviar su examen. Por defecto, todos los usuarios ven la página de finalización estándar de AutoProctor. Los usuarios Premium y superiores pueden personalizar esto con dos opciones adicionales:
-
-| Opción | Descripción |
-|---|---|
-| **Mostrar mensaje predeterminado** | Muestra la página de finalización estándar de AutoProctor (disponible en todos los planes) |
-| **Mostrar mensaje personalizado** | Muestra su propio mensaje HTML a los candidatos (por ejemplo, "¡Gracias por completar la evaluación!") |
-| **Redirigir a URL** | Envía a los candidatos a una página externa después del envío (por ejemplo, el sitio web de su empresa o un formulario de retroalimentación) |
-
-### URL Única por Candidato (Elite)
-
-Por defecto, todos los candidatos comparten un único enlace de examen, que podría ser reenviado a destinatarios no deseados. Activar esta función genera un enlace único para cada candidato, asegurando que solo las personas con las que comparta los enlaces puedan realizar el examen.
+Al activarlo se fuerza el inicio de sesión por correo electrónico: en **Login providers**, solo **Email** queda marcado. Una vez guardado el ajuste, aparece el enlace **Generate unique links** debajo del interruptor, que abre la página donde se crean los enlaces.
 
 <Note>
-URL única por candidato es una función Elite. Consulte [Funciones Elite](/elite-plan-features) para más detalles.
+Las URLs únicas de examen son una función Elite y funcionan con Cuestionarios Socratease y Exámenes con IFrame. No active el interruptor en un examen de Google Forms o Microsoft Forms, porque esos exámenes necesitan el inicio de sesión de su propia plataforma. Consulte [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) para el proceso completo y [Funciones Elite](/elite-plan-features) para los detalles del plan.
 </Note>
 
-### Recopilar Información Adicional (Premium)
+### Altura y Ancho del IFrame
 
-Recopile información personalizada de los candidatos antes de que comience el examen — como número de teléfono, nombre de la institución o cualquier pregunta personalizada. Estos campos aparecen en la página de instrucciones y los datos recopilados están disponibles en los resultados y las exportaciones a Excel.
+Cuando su examen está incrustado como un iframe dentro de AutoProctor, **iFrame height** le permite ajustar la altura (en píxeles) de ese iframe para que coincida con el contenido de su examen. El valor predeterminado es 1764px. Auméntelo si el contenido de su examen se está cortando o los candidatos tienen que desplazarse dentro del iframe, o disminúyalo para eliminar el espacio en blanco adicional.
+
+**iFrame width** establece el ancho máximo, en píxeles, del área que contiene su examen. Ambos campos aparecen solo en los exámenes con IFrame.
+
+{/* screenshot: Access & login section of Test Settings for a test on another quizzing platform (IFrame test), cropped to the row with the "iFrame height", "iFrame width" and "Query string" fields and their hints */}
+
+<Frame caption="iFrame height, iFrame width y Query string en un examen de otra plataforma de cuestionarios">
+  <img src="/images/advanced-exam-settings/iframe-size-and-query-string.png" alt="Tres campos en una fila. iFrame height es 1200 px e iFrame width es 960, ambos con el texto de ayuda Iframe tests only. Query string es a=b&amp;c=d con el texto de ayuda Appended to the test URL" />
+</Frame>
+
+### Query String
+
+El valor de **Query string** (cadena de consulta) se agrega a la URL del examen cuando este se carga, por ejemplo `a=b&c=d`. Consulte [Argumentos de Consulta del IFrame](/iframe-query-arguments) para saber cómo usarlo.
+
+## Antes del Examen
+
+La sección **Before the test** controla lo que los candidatos ven en la página de instrucciones, que es la página que abre el enlace de su examen antes del cuestionario.
+
+| Ajuste | Plan | Qué hace |
+|---|---|---|
+| **Collect candidate details** (recopilar datos del candidato) | Premium | Pide a los candidatos información personalizada antes de que comience el examen, como número de teléfono, nombre de la institución o cualquier pregunta personalizada |
+| **Show additional instructions** (mostrar instrucciones adicionales) | Elite | Muestra sus propias instrucciones en la página de instrucciones, junto a las estándar |
+
+### Collect Candidate Details (Premium)
+
+Estos campos aparecen en la página de instrucciones y todos son obligatorios. Los datos recopilados están disponibles en los resultados y las exportaciones.
 
 <Note>
 Puede agregar hasta 10 campos de información personalizada por examen.
 </Note>
 
-{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Collect candidate details" switched on with three fields added and the "Fields (3 of 10)" counter visible */}
 
-### Instrucciones Adicionales (Elite)
+<Frame caption="Collect candidate details activado, con tres campos agregados">
+  <img src="/images/advanced-exam-settings/candidate-details-three-fields.png" alt="Grupo Candidate details con Collect candidate details activado, el contador Fields 3 of 10, los campos Phone Number, Student ID y Homeroom Teacher, un botón Add field y una fila de sugerencias" />
+</Frame>
 
-Agregue instrucciones personalizadas a la página de instrucciones del candidato. Esto se muestra a los candidatos antes de que inicien el examen y puede usarse para proporcionar directrices específicas, reglas o contexto para su examen.
+### Show Additional Instructions (Elite)
+
+Agregue instrucciones personalizadas a la página de instrucciones del candidato. Se muestran a los candidatos antes de que inicien el examen y pueden usarse para proporcionar directrices específicas, reglas o contexto para su examen. El texto es texto sin formato de hasta 200 palabras.
 
 <Note>
-Instrucciones Adicionales es una función Elite. Consulte la [Página de Instrucciones para Candidatos](/candidate-instructions-page) para más información sobre lo que ven los candidatos antes de comenzar.
+Las instrucciones adicionales son una función Elite. Consulte la [Página de Instrucciones para Candidatos](/candidate-instructions-page) para más información sobre lo que ven los candidatos antes de comenzar.
 </Note>
 
-{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Show additional instructions" switched on with the "Instructions" text box filled in and its word counter visible */}
+
+<Frame caption="Show additional instructions activado, con el contador de palabras debajo del cuadro">
+  <img src="/images/advanced-exam-settings/additional-instructions.png" alt="Grupo Additional instructions con Show additional instructions activado y dos líneas de texto en el cuadro Instructions. El contador debajo del cuadro indica 19 of 200 words" />
+</Frame>
+
+## Después del Examen
+
+La sección **After the test** controla lo que los candidatos ven cuando envían el examen y adónde van los resultados.
+
+### Al Completar el Examen (Premium)
+
+Por defecto, todos los usuarios ven la página de finalización estándar de AutoProctor. Los usuarios Premium y superiores pueden personalizar esto con dos opciones adicionales:
+
+| Opción | Descripción |
+|---|---|
+| **Show the default message** (mostrar el mensaje predeterminado) | Muestra la página de finalización estándar de AutoProctor (disponible en todos los planes) |
+| **Show a custom message** (mostrar un mensaje personalizado) | Muestra su propio mensaje HTML a los candidatos (por ejemplo, "¡Gracias por completar la evaluación!"). HTML básico de hasta 1,000 caracteres |
+| **Redirect to a URL** (redirigir a una URL) | Envía a los candidatos a una página externa después del envío (por ejemplo, el sitio web de su empresa o un formulario de retroalimentación). La URL debe comenzar con `http://` o `https://` |
+
+{/* screenshot: After the test section of Test Settings, cropped to the three options "Show the default message", "Show a custom message" and "Redirect to a URL" with "Show a custom message" selected and the "Custom message" box filled in */}
+
+<Frame caption="Show a custom message seleccionada, con el mensaje escrito en HTML básico">
+  <img src="/images/advanced-exam-settings/on-test-completion.png" alt="Tres opciones, Show the default message, Show a custom message y Redirect to a URL, con la segunda seleccionada. Debajo, el cuadro Custom message contiene dos párrafos cortos en HTML y un contador indica 105 of 1000" />
+</Frame>
+
+### Send Results to a Google Sheet (Premium)
+
+Escriba automáticamente los resultados del examen en una hoja de Google Sheets pegando el enlace de la hoja en **Send results to a Google Sheet** (enviar resultados a una hoja de Google). Para cuestionarios de Socratease, se exportan tanto los resultados de supervisión como las puntuaciones del cuestionario. Para cuestionarios que no son de Socratease, solo se incluyen los resultados de supervisión.
+
+<Warning>
+Esto funciona solo con la supervisión activada. Mientras la supervisión esté desactivada, no se escribe nada en la hoja, y al guardar la configuración se elimina el enlace.
+</Warning>
+
+Para instrucciones de configuración, consulte [Integración con Google Sheets](/write-results-to-google-sheets).
+
+## Colaboradores
+
+Agregue colegas como colaboradores en su examen para que puedan editar la configuración y ver los resultados. La tarjeta de colaboradores en la parte superior de la página Settings muestra a todas las personas del examen. Haga clic en **Manage** (gestionar) en esa tarjeta para copiar el **Collaborate link** (enlace de colaboración), quitar a un colaborador o establecer el administrador principal del examen.
+
+{/* screenshot: Test Settings page, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button and the collaborator names with "(primary admin)" */}
+
+<Frame caption="La tarjeta de colaboradores en un examen con dos colaboradores">
+  <img src="/images/advanced-exam-settings/collaborators-card.png" alt="Tarjeta que dice 2 collaborators, con un enlace Learn More y un botón Manage. Debajo hay dos avatares y los nombres Laura Bennett, primary admin, y Megan Foster" />
+</Frame>
+
+Para más detalles, consulte [Agregar Colaboradores](/add-collaborators).
 
 ## Recursos Relacionados
 
-- [Configuración del Temporizador](/timer-settings) — Configure la duración del examen y las ventanas de tiempo
-- [Configuración de Supervisión](/proctoring-settings) — Opciones de cámara, micrófono y cambio de pestaña
-- [Restringir por Correo Electrónico](/restrict-access-by-email) — Restrinja el acceso al examen por dirección de correo electrónico o dominio
-- [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) — Envíe invitaciones al examen directamente
-- [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) — Cómo funciona cada método de inicio de sesión
-- [Integración con Google Sheets](/write-results-to-google-sheets) — Exporte automáticamente los resultados a hojas de cálculo
+- [Configuración del Temporizador](/timer-settings) - Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/proctoring-settings) - Opciones de cámara, micrófono y cambio de pestaña
+- [Restringir por Correo Electrónico](/restrict-access-by-email) - Restrinja el acceso al examen por dirección de correo electrónico o dominio
+- [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) - Envíe invitaciones al examen directamente
+- [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) - Cómo funciona cada método de inicio de sesión
+- [Integración con Google Sheets](/write-results-to-google-sheets) - Exporte automáticamente los resultados a hojas de cálculo

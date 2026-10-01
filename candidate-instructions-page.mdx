@@ -11,40 +11,44 @@ Every AutoProctor test begins with an instructions page that explains how procto
 
 ## How the Instructions Page Works
 
-The instructions page is **automatically active on all tests**. Candidates see it immediately after clicking the test link. You cannot disable this page -- it ensures every candidate understands the test rules before they begin.
+The instructions page is **automatically active on all tests**. Candidates see it immediately after clicking the test link. You cannot disable this page, because it ensures every candidate understands the test rules before they begin.
 
-The page includes:
-- An explanation of which proctoring features are enabled for the test
-- Browser and device requirements
-- A link to a demo test so candidates can verify their setup
-- Any custom instructions you add (Elite plan required)
+A test's **Settings** call this page the **start page**. You control what you add to it from the **Before the test** section.
+
+| On the page | Where it comes from |
+|---|---|
+| An explanation of which proctoring features are enabled for the test | Automatic, based on the test's proctoring settings |
+| Browser and device requirements | Automatic |
+| A link to a demo test so candidates can verify their setup | Automatic |
+| Any custom instructions you add | **Show additional instructions** (Elite plan required) |
+| Extra fields the candidate must fill in | **Collect candidate details** (Premium plan required) |
 
 ## Adding Custom Instructions
 
 You can include your own instructions (maximum 200 words) that appear on the instructions page alongside the default content.
 
 <Steps>
-  <Step title="Open your test settings">
-    Navigate to your test's settings page in the [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/).
+  <Step title="Open the Before the Test Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Before the test** from the list of sections.
   </Step>
-  <Step title="Go to Advanced Settings">
-    Scroll down to the **Advanced Settings** section.
+  <Step title="Turn On Additional Instructions">
+    Under **Additional instructions**, turn on **Show additional instructions**.
   </Step>
-  <Step title="Enter your custom instructions">
-    Type your custom instructions in the **Additional Instructions** field. You can add up to 200 words.
+  <Step title="Enter Your Custom Instructions">
+    Type your text in the **Instructions** box. A counter below the box shows how many of the 200 words you have used.
   </Step>
-  <Step title="Save your settings">
-    Save the test settings. Your custom instructions will now appear on the instructions page for all candidates.
+  <Step title="Save">
+    Click **Save settings**.
   </Step>
 </Steps>
 
-<Frame caption="Additional instructions field in Advanced Settings">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/getting-started/additional-instructions-settings.mp4"
-  ></video>
+{/* screenshot: Before the test section of Test Settings, cropped to the "Additional instructions" group, with "Show additional instructions" switched on and the "Instructions" box filled with two short lines of text, the "/ 200 words" counter visible */}
+
+<Frame caption="Show additional instructions switched on, with two lines of instructions">
+  <img src="/images/candidate-instructions-page/additional-instructions.png" alt="Additional instructions group with Show additional instructions on and two lines of text in the Instructions box. The counter under the box reads 19 of 200 words" />
 </Frame>
+
+Candidates see your text in a card titled **Additional Instructions**, next to the standard instructions. The text is plain text and line breaks are kept. It is not shown inside the quiz itself.
 
 <Note>
 Adding custom instructions requires an **Elite plan** subscription. See [Elite Features](/elite-plan-features) for details on what the Elite plan includes.
@@ -52,37 +56,67 @@ Adding custom instructions requires an **Elite plan** subscription. See [Elite F
 
 ## Gathering Additional Information from Candidates
 
-You can use the **Gather Additional Details** feature in Advanced Settings to collect extra information from candidates. This form appears on the instructions page and candidates must complete it before starting the test.
+Use **Collect candidate details** to ask every candidate for extra information, such as a phone number or a student ID. The fields appear under **Your Details** on the instructions page, and candidates must complete all of them before starting the test.
 
-<Frame caption="Gather Additional Details in Advanced Settings">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/getting-started/gather-additional-details.mp4"
-  ></video>
+<Steps>
+  <Step title="Open the Before the Test Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Before the test** from the list of sections.
+  </Step>
+  <Step title="Turn On Candidate Details">
+    Under **Candidate details**, turn on **Collect candidate details**.
+  </Step>
+  <Step title="Add Your Fields">
+    Click one of the **Suggestions** to add it, or click **Add field**, type a field name and press Enter. To remove a field, click the **x** on it.
+  </Step>
+  <Step title="Put the Fields in Order (Optional)">
+    Drag a field to move it, or select it, hold Alt and press an arrow key.
+  </Step>
+  <Step title="Save">
+    Click **Save settings**.
+  </Step>
+</Steps>
+
+{/* screenshot: Before the test section of Test Settings, cropped to the "Candidate details" group, with "Collect candidate details" switched on, two field chips ("Phone Number" and "Student ID"), the "Add field" button and the "Suggestions:" row visible */}
+
+<Frame caption="Collect candidate details switched on, with two fields and the suggestions below">
+  <img src="/images/candidate-instructions-page/candidate-details.png" alt="Candidate details group with Collect candidate details on, the fields Phone Number and Student ID, an Add field button, and a Suggestions row offering College Name, Graduation Year and Work Experience in years" />
 </Frame>
+
+| Rule | Detail |
+|---|---|
+| Fields per test | Up to 10 |
+| Length of a field name | Up to 250 characters and 50 words |
+| Required or optional | Every field is required |
+| Suggested fields | **Phone Number**, **Student ID**, **College Name**, **Graduation Year**, **Work Experience (in years)** |
+| Field order | The order candidates see, and the column order in the CSV export |
+
+The answers appear on the test's results and in the export.
+
+<Note>
+**Collect candidate details** requires a **Premium** or **Elite** plan.
+</Note>
 
 ## Frequently Asked Questions
 
 <AccordionGroup>
   <Accordion title="Can I preview the instructions page before sharing the test link?">
-    Yes -- click your own test link to see exactly what candidates will see. Viewing the instructions page does not consume a credit.
+    Yes. At the top of the test's **Settings** page, click **Preview** next to **Copy link**. The page opens in a new tab, exactly as candidates will see it. You can also open your own test link. Viewing the instructions page does not consume a credit.
   </Accordion>
 
   <Accordion title="Does viewing the instructions page use a credit?">
-    No -- credits are only deducted when a candidate successfully starts the test, not when they view the instructions page.
+    No. Credits are only deducted when a candidate successfully starts the test, not when they view the instructions page.
   </Accordion>
 
   <Accordion title="Can I remove sections from the instructions page?">
-    No -- the default sections are fixed and cannot be removed. You can only add additional instructions on top of the existing content.
+    No. The default sections are fixed and cannot be removed. You can only add additional instructions on top of the existing content.
   </Accordion>
 </AccordionGroup>
 
 ## Related Resources
 
-- [Timer Settings](/timer-settings) -- Configure test timer and related settings
-- [Advanced Settings](/advanced-exam-settings) -- Configure custom instructions and additional details
-- [Instructions for Taking a Proctored Test](/take-proctored-exam) -- What candidates need to know for proctored tests
-- [Elite Features](/elite-plan-features) -- Learn about Elite plan capabilities
-- [Device Compatibility](/device-compatibility) -- Supported browsers and devices
-- [Contact Us](/contact-us) -- Reach out if you need further help
+- [Timer Settings](/timer-settings) - Configure test timer and related settings
+- [Advanced Settings](/advanced-exam-settings) - Configure custom instructions and additional details
+- [Instructions for Taking a Proctored Test](/take-proctored-exam) - What candidates need to know for proctored tests
+- [Elite Features](/elite-plan-features) - Learn about Elite plan capabilities
+- [Device Compatibility](/device-compatibility) - Supported browsers and devices
+- [Contact Us](/contact-us) - Reach out if you need further help

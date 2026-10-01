@@ -1,57 +1,112 @@
 ---
 title: "Proctoring Settings"
-description: "Configure tab switching detection, camera monitoring, microphone recording, full screen enforcement, and other proctoring options."
+description: "Turn proctoring on for a test and choose what gets tracked: tab switching, camera, microphone, full screen, photos, enhanced proctoring, and who is informed."
 ---
 
+Proctoring settings control what AutoProctor monitors while a candidate takes a test. They live in the **Proctoring** section of a test's **Settings**.
+
+## How to Configure Proctoring
+
+<Steps>
+  <Step title="Open the Proctoring Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Proctoring** from the list of sections.
+  </Step>
+  <Step title="Turn Proctoring On">
+    Turn on the switch at the top right of the **Proctoring** section. While the switch is **Off**, nothing is monitored and candidates take the test without proctoring.
+  </Step>
+  <Step title="Choose What Gets Tracked">
+    Under **What gets tracked**, turn on the checks you need. Each one is described in the table below.
+  </Step>
+  <Step title="Add Enhanced Proctoring (Optional)">
+    Under **Enhanced proctoring**, turn on any extra checks. The badge next to each one shows its cost in credits per attempt.
+  </Step>
+  <Step title="Choose Who Is Informed">
+    Under **Who is informed**, choose whether evidence is stored for you and whether the candidate is warned during the test.
+  </Step>
+  <Step title="Save">
+    Click **Save settings**.
+  </Step>
+</Steps>
+
 <Warning>
-You must check the **Enable Proctor** checkbox in Main Settings for any of these settings to apply. If proctoring is disabled, candidates take the test without monitoring.
+If the test sends results to a Google Sheet, saving with proctoring **Off** removes the Sheet link in the **After the test** section. Results are only sent to a Google Sheet for proctored tests.
 </Warning>
 
-## Basic Proctoring Options
+## What Gets Tracked
 
-<Frame caption="Proctoring settings panel">
-  <img src="/images/creating-tests/proctoring-settings.png" alt="Proctoring settings panel" />
+{/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the section header and the "What gets tracked" group with all nine switches from "Tab switching" to "Photo before test start" */}
+
+<Frame caption="The Proctoring switch and the nine options under What gets tracked">
+  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="Proctoring section switched on, with nine switches under What gets tracked, from Tab switching to Photo before test start. Tab switching, Camera and Photos at random are on" />
 </Frame>
 
 | Setting | What It Does |
 |---|---|
-| **Tab Switching** | Detects when a candidate switches to a different browser tab or application. Captures a screenshot of the tab they switched to. |
-| **Detect Multiple Monitors** | Detects if a candidate has connected external monitors. |
+| **Tab switching** | Detects when a candidate switches to a different browser tab or application. Captures a screenshot of the tab they switched to. |
+| **Prevent multiple monitors** | Blocks the test while an extra monitor is connected. Works on desktop only, in supported browsers. |
 | **Camera** | Detects if no face is visible, or if multiple faces are visible. Captures photos as evidence. |
 | **Microphone** | Monitors the sound environment and records audio when noise is detected. |
-| **Photos at Random** | Captures random photos throughout the test at randomized intervals. |
-| **Enforce Full Screen** | Forces candidates to take the test in full screen mode. Exiting full screen is recorded as a violation. |
-| **Enforce Desktop** | Requires a desktop or laptop computer. The test will not load on tablets or mobile devices. |
-| **Photo Before Test Start** | Captures a photo of the candidate before the test begins. |
-| **Customize Message** | Customize the message candidates see when asked for a photo. Use this to ask candidates to display their ID card. |
+| **Photos at random** | Captures random photos throughout the test at randomized intervals, for you to review. |
+| **Multi-session detection** | Detects attempts made from multiple devices or sessions at the same time. |
+| **Enforce full screen** | Forces candidates to take the test in full screen mode. Exiting full screen is recorded as a violation. |
+| **Enforce desktop** | Requires a desktop or laptop computer. The test will not open on phones or tablets. |
+| **Photo before test start** | Captures a photo of the candidate before the test begins. |
+
+### Customize the photo prompt
+
+When **Photo before test start** is on, a **Customize the photo prompt** switch appears below it. Turn it on to replace the default "Look directly at the camera…" message with your own text, up to 200 characters.
+
+Use this to ask candidates to show their ID card in the photo, for example "Please show your face along with your student ID".
+
+{/* screenshot: "What gets tracked" group of the Proctoring section with "Photo before test start" On and "Customize the photo prompt" On below it, the text box filled with "Please show your face along with your student ID" */}
+
+<Frame caption="Customize the photo prompt, switched on under Photo before test start">
+  <img src="/images/proctoring-settings/photo-prompt.png" alt="What gets tracked group with Photo before test start on and, below it, Customize the photo prompt on with the text Please show your face along with your student ID" />
+</Frame>
 
 <Note>
-**Customize Message** is a Premium feature. See [Feature Comparison](/feature-comparison) for plan details.
+**Customize the photo prompt** is an **Elite** feature. See [Feature Comparison](/feature-comparison) for plan details.
 </Note>
 
 ## Enhanced Proctoring
 
+Each enhanced option costs extra credits per attempt, on top of the 1 base credit of a proctored attempt. See [Enhanced Proctoring](/enhanced-proctoring) for the full setup guide.
+
+| Setting | What It Does | Extra Credits per Attempt |
+|---|---|---|
+| **ID card verification** | Verifies the candidate's identity with a photo of their ID card | 4 |
+| **Impersonation detection** | Detects if someone other than the candidate attempted the test | 4 |
+| **Auxiliary device** | The candidate pairs a phone for 360° proctoring | 4 |
+| **Session recording** | Records the candidate's screen. Socratease quizzes only | 4 |
+| **Candidate recording** | Continuously records the candidate's camera feed | 15 |
+
 <Tip>
-Enhanced proctoring adds ID verification, impersonation detection, 360° auxiliary camera, session recording, and candidate video recording. See [Enhanced Proctoring](/enhanced-proctoring) for the full setup guide and credit costs.
+The card above the sections shows the total cost, for example **1 credit per attempt**. It updates as you change the proctoring options, before you save.
 </Tip>
 
-## Communication Settings
+## Who Is Informed
 
 These settings control how violation evidence is handled and whether candidates are notified:
 
 | Setting | What It Does | Recommendation |
 |---|---|---|
-| **Me after the Test** | Stores evidence (photos, audio, screenshots) for your review after the test ends. | **Keep enabled** — you need this to review violations. |
-| **User during the Test** | Notifies the candidate during the test when a violation is detected. | **Keep enabled** — helps candidates fix harmless issues like background noise. |
+| **Me, after the test** | Stores evidence (photos, audio, screenshots) on the cloud so you can review the report after the test ends. | **Keep on**: you need this to review violations. |
+| **The candidate, during the test** | Warns the candidate in real time when a violation is detected. | **Keep on**: it helps candidates fix harmless issues like background noise. |
 
-<Frame caption="Communication settings panel">
-  <img className="rounded-xl" style={{maxWidth: "56cqi"}} src="/images/settings/communication-settings.png" alt="Communication settings panel" />
+{/* screenshot: "Who is informed" group of the Proctoring section with "Me, after the test" and "The candidate, during the test" both On */}
+
+<Frame caption="Both switches under Who is informed turned on">
+  <img src="/images/proctoring-settings/who-is-informed.png" alt="Who is informed group with Me, after the test and The candidate, during the test both switched on" />
 </Frame>
+
+<Warning>
+Turning off **Me, after the test** also turns off **Photos at random**, **Photo before test start** and **Customize the photo prompt**. They stay locked until you turn **Me, after the test** back on, because these photos are stored on the cloud for you to review.
+</Warning>
 
 ## Related Resources
 
-- [Timer Settings](/timer-settings) — Configure test duration and time windows
-- [Enhanced Proctoring](/enhanced-proctoring) — Detailed guide on ID verification, impersonation detection, and 360° proctoring
-- [What Gets Tracked](/what-gets-tracked-during-proctoring) — Complete list of everything AutoProctor monitors
-- [Proctoring Results](/where-to-find-proctoring-results) — How to review proctoring data after a test
-- [Trust Score](/what-is-trust-score) — How the trust score is calculated from proctoring data
+- [Timer Settings](/timer-settings) - Configure test duration and time windows
+- [Enhanced Proctoring](/enhanced-proctoring) - Detailed guide on ID verification, impersonation detection, and 360° proctoring
+- [What Gets Tracked](/what-gets-tracked-during-proctoring) - Complete list of everything AutoProctor monitors
+- [Proctoring Results](/where-to-find-proctoring-results) - How to review proctoring data after a test
+- [Trust Score](/what-is-trust-score) - How the trust score is calculated from proctoring data

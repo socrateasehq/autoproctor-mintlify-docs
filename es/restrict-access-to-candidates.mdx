@@ -24,22 +24,24 @@ Este método depende de que los candidatos no compartan el enlace con otras pers
 
 ## Método 2: Restricciones Basadas en Correo Electrónico
 
-Utilice las **Restricciones de Inicio de Sesión** integradas en AutoProctor para permitir solo dominios de correo electrónico o direcciones individuales específicas. Esto se configura en la sección de Configuración Avanzada de su examen.
+Utilice **Login restrictions** (restricciones de inicio de sesión), integradas en AutoProctor, para permitir solo dominios de correo electrónico o direcciones individuales específicas. Esto se configura en la sección **Access & login** (acceso e inicio de sesión) de la configuración (**Settings**) del examen.
 
 <Steps>
-  <Step title="Abra la Configuración Avanzada">
-    Navegue a la configuración de su examen y desplácese hasta la sección de **Configuración Avanzada**.
+  <Step title="Abra la Sección Access & login">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Access & login** en la lista de secciones.
   </Step>
   <Step title="Ingrese las Restricciones de Inicio de Sesión">
-    Agregue los dominios de correo electrónico (por ejemplo, `@suescuela.edu`) o las direcciones de correo electrónico específicas que desea permitir.
+    En **Login restrictions**, agregue los dominios de correo electrónico (por ejemplo, `@suescuela.edu`) o las direcciones de correo electrónico específicas que desea permitir, separados por comas.
   </Step>
-  <Step title="Guarde el examen">
-    Haga clic en **Crear** o **Actualizar** para aplicar las restricciones.
+  <Step title="Guarde">
+    Haga clic en **Save settings**.
   </Step>
 </Steps>
 
-<Frame caption="Campo de Restricciones de Inicio de Sesión con restricciones de dominio y correo electrónico">
-  <img src="/images/settings/login-restrictions-email.png" alt="Campo de Restricciones de Inicio de Sesión con restricciones de dominio y correo electrónico" />
+{/* screenshot: Access & login section of Test Settings for a Google Forms test, cropped to the "Login restrictions" field containing "@yourschool.edu, guest@gmail.com" with the hint "Only emails ending with these domains can attempt. Comma-separated." */}
+
+<Frame caption="Login restrictions limita el examen a un dominio escolar y a una dirección de invitado">
+  <img src="/images/restrict-access-to-candidates/login-restrictions-school.png" alt="Campo Login restrictions con @yourschool.edu, guest@gmail.com y el texto de ayuda Only emails ending with these domains can attempt. Comma-separated" />
 </Frame>
 
 Consulte [Restringir el Acceso al Examen por Dirección de Correo Electrónico](/restrict-access-by-email) para instrucciones completas de configuración y ejemplos.
@@ -48,25 +50,27 @@ Consulte [Restringir el Acceso al Examen por Dirección de Correo Electrónico](
 
 Genere URLs únicas por candidato vinculadas a direcciones de correo electrónico específicas. Cada candidato recibe su propio enlace con verificación de correo electrónico, de modo que solo el destinatario previsto puede usarlo.
 
-<Frame caption="Configuración de enlaces de invitación únicos">
-  <video controls className="w-full rounded-xl" src="/videos/settings/unique-invitation-links.mp4"></video>
+{/* screenshot: Unique test URLs page for a Socratease test, Generate tab, cropped to the "Email recipients (max 500)" box holding three addresses, the "Upload CSV" button, the "Login not required" checkbox unticked and the "Generate 3 links" button */}
+
+<Frame caption="Tres direcciones de correo electrónico ingresadas en la pestaña Generate de Unique test URLs">
+  <img src="/images/restrict-access-to-candidates/generate-unique-links.png" alt="Cuadro Email recipients con tres direcciones de correo electrónico, un botón Upload CSV, un enlace Download sample CSV, la casilla Login not required sin marcar y un botón Generate 3 links" />
 </Frame>
 
 <Steps>
-  <Step title="Active la URL Única">
-    Abra la configuración de su examen y active la opción **URL Única**.
+  <Step title="Active Unique test URLs">
+    En la sección **Access & login** de la configuración (**Settings**) del examen, active **Unique test URLs** (URLs únicas de examen) y haga clic en **Save settings**.
   </Step>
-  <Step title="Cargue las direcciones de correo electrónico">
-    Cargue las direcciones de correo electrónico de los candidatos mediante un archivo CSV (hasta 1,000 a la vez).
+  <Step title="Abra la Página Unique test URLs">
+    Haga clic en **Generate unique links** (generar enlaces únicos) debajo del interruptor.
+  </Step>
+  <Step title="Agregue las direcciones de correo electrónico">
+    En la pestaña **Generate**, escriba o pegue las direcciones de correo electrónico de los candidatos, o haga clic en **Upload CSV** (hasta 500 a la vez).
   </Step>
   <Step title="Genere los enlaces únicos">
-    AutoProctor genera un enlace único para cada dirección de correo electrónico como pares separados por comas.
-  </Step>
-  <Step title="Dé formato a los datos">
-    Pegue el resultado en una aplicación de hoja de cálculo y divídalo por el separador de coma para organizar las direcciones de correo electrónico y los enlaces en columnas separadas.
+    Haga clic en **Generate links**. AutoProctor crea un enlace único para cada dirección de correo electrónico y los muestra en la pestaña **Links**.
   </Step>
   <Step title="Distribuya los enlaces únicos">
-    Envíe a cada candidato su enlace único de forma individual utilizando la hoja de cálculo que creó.
+    En la pestaña **Links**, haga clic en **Copy link** junto a un candidato, o haga clic en **Export** para descargar todos los enlaces en un archivo CSV. Envíe a cada candidato su enlace único de forma individual.
   </Step>
 </Steps>
 
@@ -99,15 +103,15 @@ Para más detalles, consulte la [guía de Google sobre restricción de acceso a 
 
 | Método | Fortaleza | Funciona Con | Plan Requerido |
 |---|---|---|---|
-| Distribución selectiva del enlace | Baja — depende de la confianza | Todos los tipos de exámenes | Cualquiera |
-| Restricciones basadas en correo electrónico | Media — bloquea dominios incorrectos | Todos los tipos de exámenes | Cualquiera |
-| Enlaces de invitación únicos | Alta — verificación por candidato | Cuestionarios Socratease, Exámenes con IFrame | Elite |
-| Restricciones de Google Forms | Media — nivel de organización | Solo Google Forms | Cualquiera |
+| Distribución selectiva del enlace | Baja, depende de la confianza | Todos los tipos de exámenes | Cualquiera |
+| Restricciones basadas en correo electrónico | Media, bloquea dominios incorrectos | Todos los tipos de exámenes | Cualquiera |
+| Enlaces de invitación únicos | Alta, verificación por candidato | Cuestionarios Socratease, Exámenes con IFrame | Elite |
+| Restricciones de Google Forms | Media, nivel de organización | Solo Google Forms | Cualquiera |
 
 ## Recursos Relacionados
 
-- [Restringir el Acceso al Examen por Dirección de Correo Electrónico](/restrict-access-by-email) — Configure restricciones basadas en dominio y correo electrónico
-- [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) — Genere enlaces de examen únicos por candidato
-- [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) — Conozca las opciones de autenticación disponibles
-- [Configuración Avanzada](/advanced-exam-settings) — Configure las Restricciones de Inicio de Sesión y otras opciones avanzadas
-- [Mejores Prácticas para Creadores de Exámenes](/best-practices-for-exam-creators) — Consejos para una administración de exámenes fluida
+- [Restringir el Acceso al Examen por Dirección de Correo Electrónico](/restrict-access-by-email) - Configure restricciones basadas en dominio y correo electrónico
+- [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) - Genere enlaces de examen únicos por candidato
+- [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) - Conozca las opciones de autenticación disponibles
+- [Configuración Avanzada](/advanced-exam-settings) - Configure Login restrictions y otras opciones avanzadas
+- [Mejores Prácticas para Creadores de Exámenes](/best-practices-for-exam-creators) - Consejos para una administración de exámenes fluida

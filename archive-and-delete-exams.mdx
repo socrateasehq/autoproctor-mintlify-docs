@@ -1,94 +1,113 @@
 ---
-title: "Archiving and Deleting Tests"
-description: "Learn how to archive tests to declutter your dashboard or permanently delete tests you no longer need."
+title: "Closing, Hiding and Deleting Tests"
+description: "Learn how to close a test for submissions, hide it from your dashboard, or permanently delete a test you no longer need."
 ---
 
-Over time, your dashboard accumulates demo tests, completed exams, and outdated assessments. Archiving moves tests out of your main view without deleting them, and deletion permanently removes tests you no longer need.
+<Tip>
+**TL;DR:** **Close** a test to stop submissions for everyone, or **Hide** it to remove it from your own dashboard only. Both are switches in the test's **Settings**, and both can be undone from the [**Tests**](https://www.autoproctor.co/test-admin/home/) page.
+</Tip>
 
-## Archiving Tests
+## Close or Hide a Test
 
-Archiving a test hides it from your main dashboard while keeping it fully accessible in a dedicated section. This is useful for clearing out completed or demo tests without losing any data.
+Over time, your dashboard collects demo tests, completed exams, and outdated assessments. **Closing** and **hiding** both move a test out of your Active view, but they do different things.
 
-<Frame caption="How to archive a test in AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/archive-test.mp4"
-  ></video>
-</Frame>
+| | Close | Hide |
+|---|---|---|
+| Setting name | **Close test for submissions** | **Hide from my dashboard** |
+| Who is affected | You, your collaborators, and candidates | Only you |
+| Can candidates still take the test? | No | Yes |
+| Where the test appears afterwards | **Closed** view | **Hidden** view |
+| How to undo | **Make open** | **Unhide** |
 
 <Steps>
   <Step title="Open Test Settings">
-    Go to your [**Dashboard**](https://www.autoproctor.co/test-admin/home/) and open the test's **Settings**.
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test.
   </Step>
-  <Step title="Archive the Test">
-    Click **Archive Test** to move the test out of your main dashboard view.
+  <Step title="Turn On the Switch">
+    In the **General** section, turn on **Close test for submissions** or **Hide from my dashboard**.
   </Step>
-  <Step title="Access Archived Tests">
-    Open the **Archived Tests** section in the left sidebar to view all your archived tests.
+  <Step title="Save">
+    Click **Save settings**. The test leaves your Active view.
   </Step>
 </Steps>
 
-## Restoring Archived Tests
+{/* screenshot: General section of Test Settings, showing the "Close test for submissions" and "Hide from my dashboard" switches */}
 
-You can return an archived test to your main dashboard at any time.
-
-<Frame caption="How to restore an archived test in AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/restore-test.mp4"
-  ></video>
+<Frame caption="The Close test for submissions and Hide from my dashboard switches in the General section">
+  <img src="/images/archive-and-delete-exams/close-and-hide-switches.png" alt="General section of Test Settings for a test titled Chemistry Midterm, Grade 11, with the Close test for submissions and Hide from my dashboard switches both off" />
 </Frame>
 
+<Note>
+You can turn on both switches for the same test. A test that is closed and hidden appears in both the Closed and Hidden views.
+</Note>
+
+## Find Closed and Hidden Tests
+
+The [**Tests**](https://www.autoproctor.co/test-admin/home/) page has four views at the top: **All**, **Active**, **Closed**, and **Hidden**. Active is selected by default.
+
+| View | What it shows | Direct link |
+|---|---|---|
+| **All** | Every test you created or collaborate on, including closed and hidden ones | [Open](https://www.autoproctor.co/test-admin/home/?t=a) |
+| **Active** | Tests that are open and not hidden | [Open](https://www.autoproctor.co/test-admin/home/) |
+| **Closed** | Tests that no one can attempt any more | [Open](https://www.autoproctor.co/test-admin/home/?t=c) |
+| **Hidden** | Tests you removed from your own dashboard | [Open](https://www.autoproctor.co/test-admin/home/?t=h) |
+
+{/* screenshot: Tests page with the All / Active / Closed / Hidden view switch, Closed selected, showing Make open and Delete buttons on each row */}
+
+<Frame caption="The Closed view of the Tests page, with Make open and Delete on each row">
+  <img src="/images/archive-and-delete-exams/closed-view.png" alt="Tests page with the Closed view selected, listing four closed tests, each with a Make open button and a Delete button" />
+</Frame>
+
+## Reopen or Unhide a Test
+
+You can bring a closed or hidden test back at any time.
+
 <Steps>
-  <Step title="Go to Archived Tests">
-    Click **Archived Tests** in the left sidebar.
+  <Step title="Open the Right View">
+    On the [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c) or [**Hidden**](https://www.autoproctor.co/test-admin/home/?t=h).
   </Step>
   <Step title="Restore the Test">
-    Find the test you want to restore and click **Restore**. The test reappears on your main dashboard.
-  </Step>
-</Steps>
-
-## Deleting Tests
-
-You can permanently delete a test from the **Archived Tests** section. You must archive a test before you can delete it.
-
-<Frame caption="How to delete a test in AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/delete-test.mp4"
-  ></video>
-</Frame>
-
-<Steps>
-  <Step title="Archive the Test">
-    If the test is still on your main dashboard, archive it first using the steps above.
-  </Step>
-  <Step title="Go to Archived Tests">
-    Open the **Archived Tests** section in the left sidebar.
-  </Step>
-  <Step title="Delete the Test">
-    Click **Delete** next to the test you want to remove permanently.
+    Click **Make open** on a closed test, or **Unhide** on a hidden test, and confirm.
   </Step>
 </Steps>
 
 <Warning>
-Deleting a test removes it from your account permanently. However, **candidate answers and proctoring records are preserved** -- that data persists even after the test is deleted. For example, if you load the Google Forms add-on after you delete the test, the test will re-appear on your dashboard, with the old results intact.
+**Make open** reopens the test for you and for all your collaborators. Candidates with the test link can start submitting again.
+</Warning>
+
+## Delete a Test
+
+You can permanently delete a test from the **Closed** view. A test must be closed before it can be deleted.
+
+<Steps>
+  <Step title="Close the Test">
+    If the test is still open, close it first using the steps above.
+  </Step>
+  <Step title="Open the Closed View">
+    On the [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c).
+  </Step>
+  <Step title="Delete the Test">
+    Click **Delete** next to the test and confirm.
+  </Step>
+</Steps>
+
+<Warning>
+Deleting a test removes it from your account **and from the accounts of all your collaborators**. A deleted test cannot be recovered. If you only want the test off your own dashboard, hide it instead.
 </Warning>
 
 ## Important Notes
 
 | Scenario | What Happens |
 |---|---|
-| You delete a Google Forms test, then reinstall the add-on | The test reappears with all original results preserved |
-| A test has multiple collaborators and you delete it | Deletion only affects your account -- other collaborators retain full access |
-| You want to recover a deleted test | Deleted tests cannot be recovered; archive instead if you may need the test later |
+| You close a test that candidates are about to take | The test link stops working for everyone until you click **Make open** |
+| You hide a test that has collaborators | Only your dashboard changes. Collaborators still see the test, and candidates can still take it |
+| You delete a test that has collaborators | The test is removed for you and for every collaborator |
+| You delete a Google Forms test and want to use the same form again | You can create a new test from the same Google Form |
+| You want to recover a deleted test | Deleted tests cannot be recovered. Close or hide the test instead if you may need it later |
 
 ## Related Resources
 
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Access quiz and proctoring results
-- [Sharing Test Results](/share-exam-results) -- Share results with stakeholders
-- [Adding Collaborators](/add-collaborators) -- Share test management with team members
-- [Timer Settings](/timer-settings) -- Configure test duration and time windows
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Access quiz and proctoring results
+- [Sharing Test Results](/share-exam-results) - Share results with stakeholders
+- [Adding Collaborators](/add-collaborators) - Share test management with team members
+- [Timer Settings](/timer-settings) - Configure test duration and time windows

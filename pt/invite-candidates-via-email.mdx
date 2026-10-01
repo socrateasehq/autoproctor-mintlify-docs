@@ -1,51 +1,87 @@
 ---
 title: "Convidar Candidatos por E-mail"
-description: "Gere links de convite únicos vinculados a endereços de e-mail específicos para acesso controlado ao teste com verificação de e-mail no AutoProctor."
+description: "Gere um link de teste único para o endereço de e-mail de cada candidato na página Unique test URLs, com verificação de e-mail, no AutoProctor."
 ---
 
-Os links de convite únicos permitem que você gere uma URL de teste distinta para cada candidato, vinculada ao endereço de e-mail dele. Quando o candidato abre o link, o AutoProctor envia um código de verificação de uso único para confirmar a identidade antes de conceder acesso ao teste.
+**Unique test URLs** (URLs únicas de teste) dá a cada candidato o seu próprio link de teste, vinculado ao endereço de e-mail dele. Cada link funciona apenas para aquele e-mail e apenas uma vez. Por padrão, o AutoProctor envia ao candidato um código de verificação de uso único para confirmar a identidade antes do início do teste.
 
 <Note>
 Este recurso está disponível apenas no **Plano Elite** e funciona exclusivamente com **Socratease Quizzes** e **Testes IFrame**. Não é compatível com Google Forms nem com Microsoft Forms, pois esses exigem login específico da plataforma. Consulte [Pagamentos e Créditos](/payments-and-credits) para detalhes do plano.
 </Note>
 
-## Como Configurar Links de Convite Únicos
-
-<Frame caption="Como configurar links de convite únicos no AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/settings/unique-invitation-links.mp4"
-  ></video>
-</Frame>
+## Como Gerar Links Únicos
 
 <Steps>
-  <Step title="Ative o URL Único">
-    Abra as configurações do teste e ative a opção **Unique URL**.
+  <Step title="Abra a Seção Access & login">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Access & login** (acesso e login) na lista de seções.
+  </Step>
+  <Step title="Ative Unique test URLs">
+    Ative o interruptor **Unique test URLs** e depois clique em **Save settings**. Os links só podem ser gerados depois que a configuração é salva. Se o seu plano não inclui o recurso, o interruptor exibe um selo **Elite**.
 
-    {/* TODO: Add screenshot of the Unique URL toggle in test settings */}
-  </Step>
-  <Step title="Faça upload dos endereços de e-mail">
-    Faça upload dos endereços de e-mail dos candidatos por meio de um arquivo CSV. Você pode fazer upload de no máximo 1.000 endereços de e-mail por vez.
+    {/* screenshot: Access & login section of Test Settings for a Socratease test, cropped to the "Unique test URLs" switch turned on and saved, with its hint "Generate one link per candidate. Forces email login." and the "Generate unique links" link below it */}
 
-    {/* TODO: Add screenshot of the CSV upload interface for email addresses */}
+    <Frame caption="Unique test URLs ativado e salvo, com o link Generate unique links logo abaixo">
+      <img src="/images/invite-candidates-via-email/unique-test-urls-on.png" alt="Interruptor Unique test URLs ativado, com um link Learn More, o texto de ajuda Generate one link per candidate. Forces email login e um link Generate unique links abaixo" />
+    </Frame>
   </Step>
-  <Step title="Obtenha os links gerados">
-    O AutoProctor gera uma saída de texto contendo os endereços de e-mail e seus links de teste únicos correspondentes como colunas separadas por vírgulas.
+  <Step title="Abra a Página Unique test URLs">
+    Na seção **Access & login**, clique em **Generate unique links** (gerar links únicos) abaixo do interruptor. Você também pode clicar em **Get unique links** ao lado do link do teste no topo da página Settings.
+  </Step>
+  <Step title="Adicione os Endereços de E-mail">
+    Na aba **Generate**, insira os endereços dos candidatos em **Email recipients** (destinatários), separados por vírgulas ou quebras de linha. Para carregá-los de um arquivo, clique em **Upload CSV**. Apenas a primeira coluna do arquivo é lida, e **Download sample CSV** oferece um modelo.
 
-    {/* TODO: Add screenshot of the generated output showing email-link pairs */}
+    Você pode adicionar até 500 endereços em um lote, e cada endereço pode aparecer apenas uma vez.
+
+    {/* screenshot: Unique test URLs page for a Socratease test, Generate tab, cropped to the "Email recipients (max 500)" box holding three addresses, the "Upload CSV" button, the "Download sample CSV" link, the "Login not required" checkbox unticked and the "Generate 3 links" button */}
+
+    <Frame caption="Três endereços de e-mail inseridos na aba Generate de Unique test URLs">
+      <img src="/images/invite-candidates-via-email/generate-unique-links.png" alt="Caixa Email recipients com três endereços de e-mail, um botão Upload CSV, um link Download sample CSV, a caixa de seleção Login not required desmarcada e um botão Generate 3 links" />
+    </Frame>
   </Step>
-  <Step title="Formate os dados">
-    Cole a saída em uma planilha e divida pelo separador de vírgulas para organizar endereços de e-mail e links em colunas separadas.
+  <Step title="Escolha Como os Candidatos Fazem Login (Opcional)">
+    Deixe **Login not required** (login não exigido) desmarcado para que cada candidato verifique o seu e-mail. Marque para que os candidatos façam login automaticamente ao abrir o link.
   </Step>
-  <Step title="Distribua os links">
-    Envie os links únicos para seus candidatos por e-mail, pelo seu sistema de gestão de aprendizagem ou por outro método de distribuição.
+  <Step title="Gere os Links">
+    Clique em **Generate links**. O botão mostra quantos links serão criados, por exemplo **Generate 3 links**. Em seguida, a página abre a aba **Links** com os novos links.
+  </Step>
+  <Step title="Envie os Links">
+    Na aba **Links**, clique em **Copy link** ao lado de um endereço, ou clique em **Export** para baixar todos os links em um arquivo CSV. Envie a cada candidato o seu próprio link por e-mail, pelo seu sistema de gestão de aprendizagem ou por outro canal privado.
   </Step>
 </Steps>
 
+## A Aba Links
+
+A aba **Links** lista todos os links únicos gerados para o teste. Você pode pesquisar por e-mail e filtrar por **Status** ou **Login**.
+
+| Coluna | O que mostra |
+|---|---|
+| **Email** | O endereço ao qual o link pertence |
+| **Status** | **Not used** (não usado), **Started** (iniciado) ou **Submitted** (enviado) |
+| **Login** | **No login** nos links gerados com **Login not required**. Um traço significa que o candidato verifica o e-mail primeiro |
+| **Created** | Quando o link foi gerado |
+| **Used at** | Quando o candidato usou o link |
+| **Link** | O link único, com um botão **Copy link** |
+
+{/* screenshot: Unique test URLs page for a Socratease test, Links tab, cropped to the table with the columns Email, Status, Login, Created, Used at and Link, showing one row each with the statuses "Not used", "Started" and "Submitted", one "No login" badge, and the "Copy link" and "Export" buttons */}
+
+<Frame caption="A aba Links, com uma linha por candidato e o status de cada link">
+  <img src="/images/invite-candidates-via-email/links-tab.png" alt="Tabela de cinco links com as colunas Email, Status, Login, Created, Used at e Link. Os status são Submitted, Not used e Started, uma linha tem o selo No login, cada linha tem um botão Copy link e há um botão Export acima da tabela" />
+</Frame>
+
 ## Como a Verificação Funciona
 
-Quando o candidato clica no seu link único, o AutoProctor envia um código de verificação de uso único para o endereço de e-mail associado àquele link. O candidato deve inserir esse código para acessar o teste. Isso garante que apenas o destinatário pretendido possa usar cada link.
+A forma como um candidato entra no teste depende de você ter marcado **Login not required** ao gerar o link.
+
+| Tipo de link | O que o candidato faz |
+|---|---|
+| Link padrão | Abre o link e depois insere um código de verificação de uso único enviado para o endereço de e-mail vinculado àquele link |
+| Link com **Login not required** | Faz login automaticamente ao abrir o link. Não há verificação de e-mail, e esses links nunca expiram |
+
+O código de verificação garante que apenas o destinatário pretendido possa usar cada link. Um link para de funcionar depois que o candidato envia o teste. Para que um candidato possa realizar o teste de novo, gere um novo link para o mesmo endereço.
+
+<Warning>
+Um link com **Login not required** permite que qualquer pessoa que o tenha inicie o teste como aquele candidato. Compartilhe esses links apenas com o candidato a quem pertencem.
+</Warning>
 
 {/* TODO: Add screenshot of the verification code entry screen candidates see */}
 
@@ -53,13 +89,14 @@ Quando o candidato clica no seu link único, o AutoProctor envia um código de v
 
 | Limitação | Detalhes |
 |---|---|
-| URL padrão desativada | Ao ativar este recurso, a URL compartilhada padrão do teste para de funcionar. Apenas as URLs únicas por candidato concedem acesso. |
+| O link comum é apenas uma prévia | Enquanto **Unique test URLs** estiver ativado, o link compartilhado do teste no topo da página Settings abre apenas uma prévia. Apenas os links únicos por candidato concedem acesso. |
+| Apenas login por e-mail | Os candidatos só podem fazer login com e-mail. Em **Login providers**, Google e Microsoft ficam desativados. |
 | Sem revogação | Você não pode invalidar convites enviados após serem gerados. |
 | Sem teste gratuito | Este recurso não pode ser testado antes de adquirir o Plano Elite. |
-| Limite por lote | Você pode fazer upload de no máximo 1.000 endereços de e-mail por vez. |
+| Limite por lote | Você pode gerar no máximo 500 links por vez. Gere outro lote para mais candidatos. |
 
 <Warning>
-Após ativar URLs únicos, o link comum do teste para de funcionar imediatamente. Certifique-se de que você está pronto para distribuir os links individuais antes de ativar este recurso.
+Depois que você salva o teste com **Unique test URLs** ativado, o link comum do teste para de funcionar para os candidatos. Certifique-se de que você está pronto para distribuir os links individuais antes de salvar.
 </Warning>
 
 ## Serviço de Envio de E-mail em Massa
@@ -68,8 +105,8 @@ Para campanhas em grande escala que excedam 5.000 candidatos, o AutoProctor ofer
 
 ## Recursos Relacionados
 
-- [Restringir o Acesso ao Teste por Endereço de E-mail](/restrict-access-by-email) — Método alternativo usando restrições de domínio de e-mail
-- [Restringir a Candidatos Específicos](/restrict-access-to-candidates) — Visão geral de todos os métodos de controle de acesso
-- [Métodos de Login do Candidato](/candidate-login-methods) — Conheça as opções de autenticação
-- [Pagamentos e Créditos](/payments-and-credits) — Detalhes do plano e recursos do Plano Elite
-- [Recursos Elite](/elite-plan-features) — Todos os recursos disponíveis no Plano Elite
+- [Restringir o Acesso ao Teste por Endereço de E-mail](/restrict-access-by-email) - Método alternativo usando restrições de domínio de e-mail
+- [Restringir a Candidatos Específicos](/restrict-access-to-candidates) - Visão geral de todos os métodos de controle de acesso
+- [Métodos de Login do Candidato](/candidate-login-methods) - Conheça as opções de autenticação
+- [Pagamentos e Créditos](/payments-and-credits) - Detalhes do plano e recursos do Plano Elite
+- [Recursos Elite](/elite-plan-features) - Todos os recursos disponíveis no Plano Elite

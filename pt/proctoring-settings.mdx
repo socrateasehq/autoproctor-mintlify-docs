@@ -1,77 +1,113 @@
 ---
 title: "Configurações de Supervisão"
-description: "Configure detecção de troca de aba, monitoramento por câmera, gravação de microfone, modo de tela cheia obrigatório e outras opções de supervisão."
+description: "Ative a supervisão de um teste e escolha o que é monitorado: troca de aba, câmera, microfone, tela cheia, fotos, supervisão avançada e quem é informado."
 ---
 
-As Configurações de Supervisão controlam o que o AutoProctor monitora durante um teste — desde a troca de aba e detecção por câmera até o modo de tela cheia obrigatório e captura aleatória de fotos. Essas configurações determinam o quão rigorosamente os candidatos são supervisionados.
+As configurações de supervisão controlam o que o AutoProctor monitora enquanto um candidato realiza um teste. Elas ficam na seção **Proctoring** (supervisão) das configurações (**Settings**) de um teste.
 
-{/* TODO: Add screenshot of the full Proctoring Settings section */}
+## Como Configurar a Supervisão
 
-<Frame caption="Painel de configurações de supervisão">
-  <img src="/images/creating-tests/proctoring-settings.png" alt="Painel de configurações de supervisão" />
+<Steps>
+  <Step title="Abrir a Seção Proctoring">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Proctoring** na lista de seções.
+  </Step>
+  <Step title="Ativar a Supervisão">
+    Ative o interruptor no canto superior direito da seção **Proctoring**. Enquanto o interruptor estiver em **Off**, nada é monitorado e os candidatos realizam o teste sem supervisão.
+  </Step>
+  <Step title="Escolher o Que é Monitorado">
+    Em **What gets tracked** (o que é monitorado), ative as verificações de que você precisa. Cada uma está descrita na tabela abaixo.
+  </Step>
+  <Step title="Adicionar Supervisão Avançada (Opcional)">
+    Em **Enhanced proctoring** (supervisão avançada), ative as verificações extras que quiser. A etiqueta ao lado de cada uma mostra o custo em créditos por tentativa.
+  </Step>
+  <Step title="Escolher Quem é Informado">
+    Em **Who is informed** (quem é informado), escolha se as evidências são armazenadas para você e se o candidato é avisado durante o teste.
+  </Step>
+  <Step title="Salvar">
+    Clique em **Save settings**.
+  </Step>
+</Steps>
+
+<Warning>
+Se o teste envia resultados para uma planilha do Google Sheets, salvar com a supervisão em **Off** remove o link da planilha na seção **After the test**. Os resultados só são enviados ao Google Sheets em testes supervisionados.
+</Warning>
+
+## O Que é Monitorado
+
+{/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the section header and the "What gets tracked" group with all nine switches from "Tab switching" to "Photo before test start" */}
+
+<Frame caption="O interruptor Proctoring e as nove opções em What gets tracked">
+  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="Seção Proctoring ativada, com nove interruptores em What gets tracked, de Tab switching a Photo before test start. Tab switching, Camera e Photos at random estão ativados" />
 </Frame>
-
-<Note>
-Para ativar a supervisão, você deve marcar a caixa **Enable Proctor** na seção de Configurações Principais. Se a supervisão estiver desativada, nenhuma dessas configurações será aplicada.
-</Note>
-
-## Opções Básicas de Supervisão
 
 | Configuração | O Que Faz |
 |---|---|
-| **Tab Switching** | Detecta quando um candidato muda para uma aba ou aplicativo diferente no navegador. Captura uma captura de tela da aba para a qual ele mudou. |
-| **Detect Multiple Monitors** | Detecta se um candidato conectou monitores externos ao computador. |
-| **Camera** | Detecta se nenhum rosto é visível na câmera, ou se múltiplos rostos são visíveis. Captura fotos como evidência. |
-| **Microphone** | Monitora o ambiente sonoro e grava áudio quando ruído é detectado. |
-| **Photos at Random** | Captura algumas fotos aleatórias ao longo do teste em intervalos aleatórios. |
-| **Enforce Full Screen** | Obriga os candidatos a realizar o teste em modo de tela cheia. Sair do modo tela cheia é registrado como uma infração. |
-| **Enforce Desktop** | Exige que os candidatos usem um computador desktop ou laptop. O teste não será carregado em tablets ou dispositivos móveis. |
-| **Photo Before Test Start** | Captura uma foto do candidato antes do início do teste. |
-| **Customize Message** | Personalize a mensagem que os candidatos veem ao serem solicitados a tirar uma foto antes do teste. Use isso para pedir aos candidatos que mostrem seu documento de identidade. |
+| **Tab switching** (troca de aba) | Detecta quando um candidato muda para uma aba ou aplicativo diferente no navegador. Faz uma captura de tela da aba para a qual ele mudou. |
+| **Prevent multiple monitors** (impedir múltiplos monitores) | Bloqueia o teste enquanto houver um monitor extra conectado. Funciona apenas em desktop, em navegadores compatíveis. |
+| **Camera** (câmera) | Detecta se nenhum rosto é visível ou se múltiplos rostos são visíveis. Captura fotos como evidência. |
+| **Microphone** (microfone) | Monitora o ambiente sonoro e grava áudio quando ruído é detectado. |
+| **Photos at random** (fotos aleatórias) | Captura fotos aleatórias ao longo do teste em intervalos aleatórios, para você revisar. |
+| **Multi-session detection** (detecção de múltiplas sessões) | Detecta tentativas feitas a partir de vários dispositivos ou sessões ao mesmo tempo. |
+| **Enforce full screen** (tela cheia obrigatória) | Obriga os candidatos a realizar o teste em modo de tela cheia. Sair do modo tela cheia é registrado como uma infração. |
+| **Enforce desktop** (exigir desktop) | Exige um computador desktop ou laptop. O teste não abre em celulares ou tablets. |
+| **Photo before test start** (foto antes do início do teste) | Captura uma foto do candidato antes do início do teste. |
+
+### Customize the photo prompt
+
+Quando **Photo before test start** está ativado, o interruptor **Customize the photo prompt** (personalizar a mensagem da foto) aparece logo abaixo. Ative-o para trocar a mensagem padrão "Look directly at the camera…" pelo seu próprio texto, de até 200 caracteres.
+
+Use isso para pedir aos candidatos que mostrem o documento de identidade na foto, por exemplo "Por favor, mostre seu rosto junto com sua carteira de estudante".
+
+{/* screenshot: "What gets tracked" group of the Proctoring section with "Photo before test start" On and "Customize the photo prompt" On below it, the text box filled with "Please show your face along with your student ID" */}
+
+<Frame caption="Customize the photo prompt, ativado abaixo de Photo before test start">
+  <img src="/images/proctoring-settings/photo-prompt.png" alt="Grupo What gets tracked com Photo before test start ativado e, abaixo, Customize the photo prompt ativado com o texto Please show your face along with your student ID" />
+</Frame>
 
 <Note>
-A opção **Customize Message** é um recurso Premium.
+**Customize the photo prompt** é um recurso **Elite**. Consulte a [Comparação de Recursos](/feature-comparison) para ver os detalhes de cada plano.
 </Note>
-
-{/* TODO: Add GIF showing the candidate experience when Photo Before Test Start is enabled */}
 
 ## Supervisão Avançada
 
-A supervisão avançada adiciona medidas anti-fraude avançadas. Cada recurso de supervisão avançada requer **4 créditos adicionais por tentativa**.
+Cada opção avançada custa créditos adicionais por tentativa, além do crédito base de uma tentativa supervisionada. Consulte [Supervisão Avançada](/enhanced-proctoring) para o guia completo de configuração.
 
-<Frame caption="Painel de supervisão avançada">
-  <img src="/images/creating-tests/enhanced-proctoring.png" alt="Painel de supervisão avançada" />
-</Frame>
-
-| Recurso | O Que Faz | Créditos |
+| Configuração | O Que Faz | Créditos Adicionais por Tentativa |
 |---|---|---|
-| **ID Card Verification** | O candidato faz upload de um documento de identidade (carteira de candidato, passaporte, carteira de motorista, identidade governamental) com foto e nome visíveis. O AutoProctor verifica isso com a Foto Antes do Início do Teste e o nome inserido pelo candidato. | 4 por tentativa |
-| **Impersonation Detection** | Detecta se alguém diferente do candidato original está realizando o teste. | 4 por tentativa |
-| **Auxiliary Device (360°)** | O candidato emparelha seu celular com o laptop para supervisão em 360 graus. Também ajuda a detectar ferramentas de IA que exibem respostas como sobreposições na tela. | 4 por tentativa |
-| **Session Recording** | Grava a tela e as ações do candidato, incluindo cliques do mouse e entrada do teclado. | 4 por tentativa |
+| **ID card verification** (verificação de identidade) | Verifica a identidade do candidato com uma foto do documento de identidade | 4 |
+| **Impersonation detection** (detecção de impostor) | Detecta se alguém diferente do candidato realizou o teste | 4 |
+| **Auxiliary device** (dispositivo auxiliar) | O candidato emparelha um celular para a supervisão em 360° | 4 |
+| **Session recording** (gravação de sessão) | Grava a tela do candidato. Apenas para questionários Socratease | 4 |
+| **Candidate recording** (gravação do candidato) | Grava continuamente a câmera do candidato | 15 |
 
-{/* TODO: Add video walkthrough of the 360-degree auxiliary device pairing process */}
+<Tip>
+O cartão acima das seções mostra o custo total, por exemplo **1 credit per attempt** (1 crédito por tentativa). Ele se atualiza conforme você muda as opções de supervisão, antes de salvar.
+</Tip>
 
-## Configurações de Comunicação
+## Quem é Informado
 
-Essas configurações controlam como as evidências de infrações são tratadas:
+Essas configurações controlam como as evidências de infrações são tratadas e se os candidatos são notificados:
 
-- **Me after the Test** — Armazena evidências (fotos, áudio, capturas de tela) para revisão posterior. Mantenha isso ativado, a menos que você tenha um motivo específico para desativar.
-- **User during the Test** — Notifica o candidato durante o teste quando uma infração é detectada. Isso ajuda os candidatos a corrigir problemas inofensivos (como música de fundo acionando uma infração de ruído).
+| Configuração | O Que Faz | Recomendação |
+|---|---|---|
+| **Me, after the test** (eu, após o teste) | Armazena evidências (fotos, áudio, capturas de tela) na nuvem para que você possa revisar o relatório depois que o teste terminar. | **Mantenha ativado**: você precisa disso para revisar as infrações. |
+| **The candidate, during the test** (o candidato, durante o teste) | Avisa o candidato em tempo real quando uma infração é detectada. | **Mantenha ativado**: ajuda os candidatos a corrigir problemas inofensivos, como ruído de fundo. |
 
-<Frame caption="Painel de configurações de comunicação">
-  <img className="rounded-xl" src="/images/settings/communication-settings.png" alt="Painel de configurações de comunicação" />
+{/* screenshot: "Who is informed" group of the Proctoring section with "Me, after the test" and "The candidate, during the test" both On */}
+
+<Frame caption="Os dois interruptores de Who is informed ativados">
+  <img src="/images/proctoring-settings/who-is-informed.png" alt="Grupo Who is informed com Me, after the test e The candidate, during the test ativados" />
 </Frame>
 
-<Note>
-Recomendamos manter ambas as configurações de comunicação ativadas para a melhor experiência de supervisão.
-</Note>
+<Warning>
+Desativar **Me, after the test** também desativa **Photos at random**, **Photo before test start** e **Customize the photo prompt**. Eles ficam bloqueados até você reativar **Me, after the test**, porque essas fotos são armazenadas na nuvem para você revisar.
+</Warning>
 
 ## Recursos Relacionados
 
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
-- [Supervisão Avançada](/enhanced-proctoring) — Guia detalhado sobre verificação de identidade, detecção de impostor e supervisão em 360°
-- [Configurações do Questionário](/socratease-quiz-settings) — Para configurações específicas de questionários Socratease, consulte a página de Configurações do Questionário do Socratease
-- [O Que é Monitorado](/what-gets-tracked-during-proctoring) — Lista completa de tudo o que o AutoProctor monitora
-- [Resultados de Supervisão](/where-to-find-proctoring-results) — Como revisar os dados de supervisão após um teste
-- [Trust Score](/what-is-trust-score) — Como o Trust Score é calculado a partir dos dados de supervisão
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Supervisão Avançada](/enhanced-proctoring) - Guia detalhado sobre verificação de identidade, detecção de impostor e supervisão em 360°
+- [Configurações do Questionário](/socratease-quiz-settings) - Para configurações específicas de questionários Socratease, consulte a página de Configurações do Questionário do Socratease
+- [O Que é Monitorado](/what-gets-tracked-during-proctoring) - Lista completa de tudo o que o AutoProctor monitora
+- [Resultados de Supervisão](/where-to-find-proctoring-results) - Como revisar os dados de supervisão após um teste
+- [Trust Score](/what-is-trust-score) - Como o Trust Score é calculado a partir dos dados de supervisão

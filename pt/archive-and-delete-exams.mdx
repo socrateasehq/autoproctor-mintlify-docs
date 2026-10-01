@@ -1,94 +1,113 @@
 ---
-title: "Arquivar e Excluir Testes"
-description: "Aprenda a arquivar testes para organizar seu painel ou excluir permanentemente testes que você não precisa mais."
+title: "Fechar, Ocultar e Excluir Testes"
+description: "Aprenda a fechar um teste para novos envios, ocultá-lo do seu painel ou excluir permanentemente um teste que você não precisa mais."
 ---
 
-Com o tempo, seu painel acumula testes de demonstração, exames concluídos e avaliações desatualizadas. Arquivar move os testes para fora da sua visualização principal sem excluí-los, e a exclusão remove permanentemente os testes que você não precisa mais.
+<Tip>
+**Resumo:** **Feche** um teste para interromper os envios para todos, ou **oculte-o** para removê-lo apenas do seu próprio painel. Ambos são chaves nas **Settings** do teste, e ambos podem ser desfeitos na página [**Tests**](https://www.autoproctor.co/test-admin/home/).
+</Tip>
 
-## Arquivar Testes
+## Fechar ou Ocultar um Teste
 
-Arquivar um teste oculta-o do seu painel principal, mantendo-o totalmente acessível em uma seção dedicada. Isso é útil para limpar testes concluídos ou de demonstração sem perder nenhum dado.
+Com o tempo, seu painel acumula testes de demonstração, exames concluídos e avaliações desatualizadas. **Fechar** e **ocultar** tiram um teste da sua visualização Active, mas fazem coisas diferentes.
 
-<Frame caption="Como arquivar um teste no AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/archive-test.mp4"
-  ></video>
-</Frame>
+| | Fechar | Ocultar |
+|---|---|---|
+| Nome da configuração | **Close test for submissions** | **Hide from my dashboard** |
+| Quem é afetado | Você, seus colaboradores e os candidatos | Apenas você |
+| Os candidatos ainda podem fazer o teste? | Não | Sim |
+| Onde o teste aparece depois | Visualização **Closed** | Visualização **Hidden** |
+| Como desfazer | **Make open** | **Unhide** |
 
 <Steps>
   <Step title="Abra as Configurações do Teste">
-    Acesse seu [**Dashboard**](https://www.autoproctor.co/test-admin/home/) e abra as **Settings** do teste.
+    Acesse sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste.
   </Step>
-  <Step title="Arquive o Teste">
-    Clique em **Archive Test** para mover o teste para fora da visualização principal do seu painel.
+  <Step title="Ative a Chave">
+    Na seção **General**, ative **Close test for submissions** (fechar o teste) ou **Hide from my dashboard** (ocultar do meu painel).
   </Step>
-  <Step title="Acesse os Testes Arquivados">
-    Abra a seção **Archived Tests** na barra lateral esquerda para ver todos os seus testes arquivados.
+  <Step title="Salve">
+    Clique em **Save settings**. O teste sai da sua visualização Active.
   </Step>
 </Steps>
 
-## Restaurar Testes Arquivados
+{/* screenshot: General section of Test Settings, showing the "Close test for submissions" and "Hide from my dashboard" switches */}
 
-Você pode retornar um teste arquivado ao seu painel principal a qualquer momento.
-
-<Frame caption="Como restaurar um teste arquivado no AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/restore-test.mp4"
-  ></video>
+<Frame caption="Os interruptores Close test for submissions e Hide from my dashboard na seção General">
+  <img src="/images/archive-and-delete-exams/close-and-hide-switches.png" alt="Seção General das configurações de um teste intitulado Chemistry Midterm, Grade 11, com os interruptores Close test for submissions e Hide from my dashboard desativados" />
 </Frame>
 
+<Note>
+Você pode ativar as duas chaves no mesmo teste. Um teste fechado e oculto aparece tanto na visualização Closed quanto na Hidden.
+</Note>
+
+## Encontrar Testes Fechados e Ocultos
+
+A página [**Tests**](https://www.autoproctor.co/test-admin/home/) tem quatro visualizações no topo: **All**, **Active**, **Closed** e **Hidden**. Active é selecionada por padrão.
+
+| Visualização | O que mostra | Link direto |
+|---|---|---|
+| **All** | Todos os testes que você criou ou nos quais colabora, incluindo os fechados e ocultos | [Abrir](https://www.autoproctor.co/test-admin/home/?t=a) |
+| **Active** | Testes abertos e não ocultos | [Abrir](https://www.autoproctor.co/test-admin/home/) |
+| **Closed** | Testes que ninguém mais pode fazer | [Abrir](https://www.autoproctor.co/test-admin/home/?t=c) |
+| **Hidden** | Testes que você removeu do seu próprio painel | [Abrir](https://www.autoproctor.co/test-admin/home/?t=h) |
+
+{/* screenshot: Tests page with the All / Active / Closed / Hidden view switch, Closed selected, showing Make open and Delete buttons on each row */}
+
+<Frame caption="A visualização Closed da página Tests, com Make open e Delete em cada linha">
+  <img src="/images/archive-and-delete-exams/closed-view.png" alt="Página Tests com a visualização Closed selecionada, listando quatro testes fechados, cada um com um botão Make open e um botão Delete" />
+</Frame>
+
+## Reabrir ou Reexibir um Teste
+
+Você pode trazer de volta um teste fechado ou oculto a qualquer momento.
+
 <Steps>
-  <Step title="Acesse os Testes Arquivados">
-    Clique em **Archived Tests** na barra lateral esquerda.
+  <Step title="Abra a Visualização Correta">
+    Na página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c) ou em [**Hidden**](https://www.autoproctor.co/test-admin/home/?t=h).
   </Step>
   <Step title="Restaure o Teste">
-    Encontre o teste que deseja restaurar e clique em **Restore**. O teste reaparecerá no seu painel principal.
-  </Step>
-</Steps>
-
-## Excluir Testes
-
-Você pode excluir permanentemente um teste a partir da seção **Archived Tests**. É necessário arquivar um teste antes de poder excluí-lo.
-
-<Frame caption="Como excluir um teste no AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/delete-test.mp4"
-  ></video>
-</Frame>
-
-<Steps>
-  <Step title="Arquive o Teste">
-    Se o teste ainda está no seu painel principal, arquive-o primeiro usando os passos acima.
-  </Step>
-  <Step title="Acesse os Testes Arquivados">
-    Abra a seção **Archived Tests** na barra lateral esquerda.
-  </Step>
-  <Step title="Exclua o Teste">
-    Clique em **Delete** ao lado do teste que deseja remover permanentemente.
+    Clique em **Make open** em um teste fechado, ou em **Unhide** em um teste oculto, e confirme.
   </Step>
 </Steps>
 
 <Warning>
-Excluir um teste remove-o da sua conta permanentemente. No entanto, **as respostas dos candidatos e os registros de supervisão são preservados** — esses dados persistem mesmo após o teste ser excluído. Por exemplo, se você carregar o complemento do Google Forms após excluir o teste, o teste reaparecerá no seu painel com os resultados antigos intactos.
+**Make open** reabre o teste para você e para todos os seus colaboradores. Os candidatos que têm o link do teste podem voltar a enviar respostas.
+</Warning>
+
+## Excluir um Teste
+
+Você pode excluir permanentemente um teste a partir da visualização **Closed**. Um teste precisa estar fechado antes de poder ser excluído.
+
+<Steps>
+  <Step title="Feche o Teste">
+    Se o teste ainda está aberto, feche-o primeiro usando os passos acima.
+  </Step>
+  <Step title="Abra a Visualização Closed">
+    Na página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em [**Closed**](https://www.autoproctor.co/test-admin/home/?t=c).
+  </Step>
+  <Step title="Exclua o Teste">
+    Clique em **Delete** ao lado do teste e confirme.
+  </Step>
+</Steps>
+
+<Warning>
+Excluir um teste remove-o da sua conta **e das contas de todos os seus colaboradores**. Um teste excluído não pode ser recuperado. Se você só quer tirar o teste do seu próprio painel, oculte-o.
 </Warning>
 
 ## Observações Importantes
 
 | Cenário | O Que Acontece |
 |---|---|
-| Você exclui um teste do Google Forms e depois reinstala o complemento | O teste reaparece com todos os resultados originais preservados |
-| Um teste tem múltiplos colaboradores e você o exclui | A exclusão afeta apenas a sua conta — os outros colaboradores mantêm acesso total |
-| Você quer recuperar um teste excluído | Testes excluídos não podem ser recuperados; use o arquivamento se puder precisar do teste futuramente |
+| Você fecha um teste que os candidatos estão prestes a fazer | O link do teste para de funcionar para todos até você clicar em **Make open** |
+| Você oculta um teste que tem colaboradores | Apenas o seu painel muda. Os colaboradores continuam vendo o teste e os candidatos ainda podem fazê-lo |
+| Você exclui um teste que tem colaboradores | O teste é removido para você e para cada colaborador |
+| Você exclui um teste do Google Forms e quer usar o mesmo formulário de novo | Você pode criar um novo teste a partir do mesmo formulário do Google |
+| Você quer recuperar um teste excluído | Testes excluídos não podem ser recuperados. Feche ou oculte o teste se puder precisar dele futuramente |
 
 ## Recursos Relacionados
 
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) — Acesse resultados de testes e supervisão
-- [Compartilhar Resultados de Testes](/share-exam-results) — Compartilhe resultados com interessados
-- [Adicionar Colaboradores](/add-collaborators) — Compartilhe a gestão de testes com membros da equipe
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Acesse resultados de testes e supervisão
+- [Compartilhar Resultados de Testes](/share-exam-results) - Compartilhe resultados com interessados
+- [Adicionar Colaboradores](/add-collaborators) - Compartilhe a gestão de testes com membros da equipe
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo

@@ -3,59 +3,109 @@ title: "Agregar Colaboradores a Sus Exámenes"
 description: "Comparta el acceso de gestión de exámenes con otros miembros del equipo utilizando la función de colaboradores de AutoProctor."
 ---
 
-Los colaboradores pueden cogestionar sus exámenes viendo resultados, cambiando configuraciones y accediendo a todos los datos del examen. Usted agrega colaboradores compartiendo un enlace único desde la Configuración Avanzada de su examen.
+Los colaboradores pueden cogestionar sus exámenes viendo resultados, cambiando configuraciones y accediendo a todos los datos del examen. Usted agrega colaboradores compartiendo el **Collaborate link** (enlace de colaboración) del examen, que se encuentra en **Manage** (gestionar) en la página **Settings** del examen.
 
 <Note>
-Solo los usuarios de los planes **Premium** y **Elite** pueden agregar colaboradores. Los colaboradores ya deben ser miembros de su [equipo](/what-is-a-team). Si alguien aún no está en su equipo, invítelo a unirse primero.
+Solo los usuarios de los planes **Premium** y **Elite** pueden gestionar colaboradores. Los colaboradores ya deben ser miembros de su [equipo](/what-is-a-team). Si alguien aún no está en su equipo, invítelo a unirse primero.
 </Note>
 
 ## Cómo Agregar un Colaborador
 
-<Frame caption="Cómo agregar un colaborador a su examen">
-  <video
-    controls
-    className="w-full aspect-video rounded-xl"
-    src="/videos/creating-tests/collaborators.mp4"
-  ></video>
-</Frame>
-
 <Steps>
-  <Step title="Abra la Configuración Avanzada">
-    Navegue a su examen y abra la sección de **Configuración Avanzada** en la parte inferior de la página de configuración.
+  <Step title="Abra la Configuración del Examen">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Settings** junto al examen. La tarjeta de colaboradores, cerca de la parte superior de la página, muestra cuántos colaboradores tiene el examen y quiénes son.
 
-    {/* TODO: Add screenshot of the Advanced Settings section with the collaborators area visible */}
+    {/* screenshot: Test Settings header for any test, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button, the avatar stack and the two names with "(primary admin)" after the first */}
+
+    <Frame caption="La tarjeta de colaboradores en un examen con dos colaboradores">
+      <img src="/images/add-collaborators/collaborators-card.png" alt="Tarjeta que dice 2 collaborators, con un enlace Learn More y un botón Manage. Debajo hay dos avatares y los nombres Laura Bennett, primary admin, y Megan Foster" />
+    </Frame>
   </Step>
-  <Step title="Copie el Enlace de Colaboración">
-    Localice la sección de colaboradores, que muestra los colaboradores actuales y proporciona un enlace para agregar nuevos. Haga clic en el **enlace de colaboración** para copiarlo a su portapapeles.
+  <Step title="Haga Clic en Manage">
+    Haga clic en **Manage** en la tarjeta de colaboradores. Se abre el cuadro de diálogo **Collaborators** con la lista de personas que administran el examen.
+  </Step>
+  <Step title="Copie el Collaborate Link">
+    En la parte inferior del cuadro de diálogo, haga clic en el icono de copiar junto al **Collaborate link** y luego haga clic en **Done**.
 
-    {/* TODO: Add screenshot of the collaborate link button */}
+    {/* screenshot: Collaborators dialog opened from Manage, viewed by the primary admin of a test with 3 admins: the "Primary admin" explainer, the list with "Primary admin" and "You" badges on the first row and "Make primary" and "Remove" buttons on the other two rows, the "Collaborate link" row with its copy icon, and the "Done" button */}
+
+    <Frame caption="El cuadro de diálogo Collaborators tal como lo ve el primary admin">
+      <img src="/images/add-collaborators/collaborators-dialog.png" alt="Cuadro de diálogo Collaborators de un examen con 3 administradores. Una nota explica el rol Primary admin. Laura Bennett tiene las insignias Primary admin y You. Daniel Brooks y Megan Foster tienen cada uno los botones Make primary y Remove. Debajo están el Collaborate link con un icono de copiar y un botón Done" />
+    </Frame>
   </Step>
   <Step title="Comparta el Enlace">
     Envíe el enlace copiado al miembro del equipo que desea agregar como colaborador.
   </Step>
-  <Step title="El Colaborador Acepta">
-    Cuando la persona haga clic en el enlace, obtendrá acceso al examen de inmediato. Aparecerá en la lista de colaboradores de ese examen.
+  <Step title="El Colaborador Abre el Enlace">
+    Cuando la persona abre el enlace con su sesión de AutoProctor iniciada, obtiene acceso al examen de inmediato y llega a sus resultados. Aparece en la lista de colaboradores de ese examen.
   </Step>
 </Steps>
 
+<Warning>
+Cualquier persona de su equipo que abra el enlace de colaboración se convierte en colaborador. Compártalo solo con personas en las que confíe con acceso completo al examen.
+</Warning>
+
 ## Permisos del Colaborador
 
-Una vez agregados, los colaboradores reciben **acceso completo de lectura y edición** del examen:
+Una vez agregados, los colaboradores reciben **acceso completo de lectura y edición** del examen. Solo el **primary admin** (administrador principal) puede gestionar a los demás colaboradores.
 
-| Permiso | Acceso |
-|---|---|
-| Ver resultados | Todos los envíos de candidatos y datos de supervisión |
-| Cambiar configuración | Configuración del temporizador, supervisión y configuración avanzada |
-| Gestionar examen | Archivar, configurar y compartir el examen |
+| Acción | Primary admin | Otros colaboradores |
+|---|---|---|
+| Ver resultados: todos los envíos de candidatos y datos de supervisión | Sí | Sí |
+| Cambiar configuración: todas las secciones de **Settings** del examen | Sí | Sí |
+| Cerrar, reabrir y eliminar el examen | Sí | Sí |
+| Editar el cuestionario (cuestionarios de Socratease) | Sí | Sí |
+| Eliminar a un colaborador | Sí | No |
+| Convertir a otra persona en primary admin | Sí | No |
+
+## El Primary Admin
+
+El **primary admin** es la cuenta (o el equipo) cuyos créditos se descuentan en cada envío. Su correo electrónico puede ser visible para los candidatos. La persona que crea un examen es su primary admin.
+
+En el cuadro de diálogo **Collaborators**, el primary admin aparece primero con la insignia **Primary admin**, y su propia fila lleva la insignia **You** (usted). En la tarjeta de colaboradores, **(primary admin)** sigue a su nombre.
+
+<Note>
+El primary admin no puede ser eliminado de un examen. Para quitarlo del examen, primero debe convertir a otra persona en primary admin.
+</Note>
+
+## Eliminar a un Colaborador
+
+Solo el primary admin ve los botones **Remove** (eliminar) y **Make primary** (hacer principal).
+
+<Steps>
+  <Step title="Abra el Cuadro de Diálogo Collaborators">
+    En la página **Settings** del examen, haga clic en **Manage** en la tarjeta de colaboradores.
+  </Step>
+  <Step title="Haga Clic en Remove">
+    Haga clic en **Remove** junto a la persona y confirme con **Remove**.
+  </Step>
+</Steps>
+
+La persona pierde el acceso a los resultados y a la configuración del examen. Para cuestionarios de Socratease, también se elimina su permiso de edición del cuestionario.
+
+<Note>
+Un colaborador no puede eliminarse a sí mismo de un examen. Para dejar de ver un examen, active **Hide from my dashboard** (ocultar de mi panel) en la sección **General** de su **Settings**. Solo afecta su propia vista, y los demás colaboradores siguen viendo el examen.
+</Note>
+
+## Cambiar el Primary Admin
+
+<Steps>
+  <Step title="Abra el Cuadro de Diálogo Collaborators">
+    En la página **Settings** del examen, haga clic en **Manage** en la tarjeta de colaboradores.
+  </Step>
+  <Step title="Haga Clic en Make Primary">
+    Haga clic en **Make primary** junto al colaborador que debe asumir el rol y confirme con **Make primary admin**.
+  </Step>
+</Steps>
 
 <Warning>
-El acceso de colaborador es **permanente**. Actualmente no existe forma de eliminar a un colaborador de un examen una vez agregado. Comparta enlaces de colaboración solo con personas en las que confíe con acceso completo al examen.
+Después del traspaso, los créditos de los nuevos envíos se descuentan de la cuenta o del equipo del nuevo primary admin. Usted permanece en el examen como colaborador, pero pierde la capacidad de eliminar colaboradores o de cambiar el primary admin.
 </Warning>
 
 ## Recursos Relacionados
 
-- [Configuración Avanzada](/advanced-exam-settings) — Proveedores de inicio de sesión, colaboradores y otras opciones avanzadas
-- [Equipos](/what-is-a-team) — Configure y gestione su equipo
-- [Compartir Resultados del Examen](/share-exam-results) — Otras formas de compartir resultados con las partes interesadas
-- [Configuración del Temporizador](/timer-settings) — Configure la duración del examen y las ventanas de tiempo
-- [Configuración de Supervisión](/proctoring-settings) — Opciones de cámara, micrófono y cambio de pestaña
+- [Configuración Avanzada](/advanced-exam-settings) - Proveedores de inicio de sesión, colaboradores y otras opciones avanzadas
+- [Equipos](/what-is-a-team) - Configure y gestione su equipo
+- [Compartir Resultados del Examen](/share-exam-results) - Otras formas de compartir resultados con las partes interesadas
+- [Configuración del Temporizador](/timer-settings) - Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/proctoring-settings) - Opciones de cámara, micrófono y cambio de pestaña

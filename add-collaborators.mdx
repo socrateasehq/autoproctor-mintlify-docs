@@ -3,59 +3,109 @@ title: "Adding Collaborators to Your Tests"
 description: "Share test management access with other team members using AutoProctor's collaborator feature."
 ---
 
-Collaborators can co-manage your tests by viewing results, changing settings, and accessing all test data. You add collaborators by sharing a unique link from your test's Advanced Settings.
+Collaborators can co-manage your tests by viewing results, changing settings, and accessing all test data. You add collaborators by sharing the test's **Collaborate link**, which you find under **Manage** on the test's **Settings** page.
 
 <Note>
-Only **Premium** and **Elite** plan users can add collaborators. Collaborators must already be members of your [team](/what-is-a-team). If someone is not yet on your team, invite them to join your team first.
+Only **Premium** and **Elite** plan users can manage collaborators. Collaborators must already be members of your [team](/what-is-a-team). If someone is not yet on your team, invite them to join your team first.
 </Note>
 
 ## How to Add a Collaborator
 
-<Frame caption="How to add a collaborator to your test">
-  <video
-    controls
-    className="w-full aspect-video rounded-xl"
-    src="/videos/creating-tests/collaborators.mp4"
-  ></video>
-</Frame>
-
 <Steps>
-  <Step title="Open Advanced Settings">
-    Navigate to your test and open the **Advanced Settings** section at the bottom of the settings page.
+  <Step title="Open the Test's Settings">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test. The collaborators card near the top of the page shows how many collaborators the test has and who they are.
 
-    {/* TODO: Add screenshot of the Advanced Settings section with the collaborators area visible */}
+    {/* screenshot: Test Settings header for any test, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button, the avatar stack and the two names with "(primary admin)" after the first */}
+
+    <Frame caption="The collaborators card on a test with two collaborators">
+      <img src="/images/add-collaborators/collaborators-card.png" alt="Card reading 2 collaborators with a Learn More link and a Manage button. Below are two avatars and the names Laura Bennett, primary admin, and Megan Foster" />
+    </Frame>
+  </Step>
+  <Step title="Click Manage">
+    Click **Manage** on the collaborators card. The **Collaborators** dialog opens with the list of people who administer the test.
   </Step>
   <Step title="Copy the Collaborate Link">
-    Locate the collaborators section, which displays current collaborators and provides a link to add new ones. Click the **collaborate link** to copy it to your clipboard.
+    At the bottom of the dialog, click the copy icon next to the **Collaborate link**, then click **Done**.
 
-    {/* TODO: Add screenshot of the collaborate link button */}
+    {/* screenshot: Collaborators dialog opened from Manage, viewed by the primary admin of a test with 3 admins: the "Primary admin" explainer, the list with "Primary admin" and "You" badges on the first row and "Make primary" and "Remove" buttons on the other two rows, the "Collaborate link" row with its copy icon, and the "Done" button */}
+
+    <Frame caption="The Collaborators dialog as the primary admin sees it">
+      <img src="/images/add-collaborators/collaborators-dialog.png" alt="Collaborators dialog for a test with 3 admins. A note explains the Primary admin role. Laura Bennett has Primary admin and You badges. Daniel Brooks and Megan Foster each have Make primary and Remove buttons. Below are the Collaborate link with a copy icon and a Done button" />
+    </Frame>
   </Step>
   <Step title="Share the Link">
     Send the copied link to the team member you want to add as a collaborator.
   </Step>
-  <Step title="Collaborator Accepts">
-    When the person clicks the link, they gain access to the test immediately. They appear in the collaborators list for that test.
+  <Step title="Collaborator Opens the Link">
+    When the person opens the link while signed in to AutoProctor, they gain access to the test immediately and land on its results. They appear in the collaborators list for that test.
   </Step>
 </Steps>
 
+<Warning>
+Anyone on your team who opens the collaborate link becomes a collaborator. Share it only with people you trust with full test access.
+</Warning>
+
 ## Collaborator Permissions
 
-Once added, collaborators receive **full read and edit access** to the test:
+Once added, collaborators receive **full read and edit access** to the test. Only the **primary admin** can manage the other collaborators.
 
-| Permission | Access |
-|---|---|
-| View results | All candidate submissions and proctoring data |
-| Change settings | Timer, proctoring, and advanced settings |
-| Manage test | Archive, configure, and share the test |
+| Action | Primary admin | Other collaborators |
+|---|---|---|
+| View results: all candidate submissions and proctoring data | Yes | Yes |
+| Change settings: every section of the test's **Settings** | Yes | Yes |
+| Close, reopen and delete the test | Yes | Yes |
+| Edit the quiz (Socratease quizzes) | Yes | Yes |
+| Remove a collaborator | Yes | No |
+| Make someone else the primary admin | Yes | No |
+
+## The Primary Admin
+
+The **primary admin** is the account (or team) whose credits are deducted on every submission. Their email may be visible to candidates. The person who creates a test is its primary admin.
+
+In the **Collaborators** dialog, the primary admin is listed first with a **Primary admin** badge, and your own row carries a **You** badge. On the collaborators card, **(primary admin)** follows their name.
+
+<Note>
+The primary admin cannot be removed from a test. To take them off the test, they must first make someone else the primary admin.
+</Note>
+
+## Removing a Collaborator
+
+Only the primary admin sees the **Remove** and **Make primary** buttons.
+
+<Steps>
+  <Step title="Open the Collaborators Dialog">
+    On the test's **Settings** page, click **Manage** on the collaborators card.
+  </Step>
+  <Step title="Click Remove">
+    Click **Remove** next to the person, then confirm with **Remove**.
+  </Step>
+</Steps>
+
+The person loses access to the test's results and settings. For Socratease quizzes, their edit permission on the quiz is removed too.
+
+<Note>
+A collaborator cannot remove themselves from a test. To stop seeing a test, turn on **Hide from my dashboard** in the **General** section of its **Settings**. It only affects your own view, and the other collaborators still see the test.
+</Note>
+
+## Changing the Primary Admin
+
+<Steps>
+  <Step title="Open the Collaborators Dialog">
+    On the test's **Settings** page, click **Manage** on the collaborators card.
+  </Step>
+  <Step title="Click Make Primary">
+    Click **Make primary** next to the collaborator who should take over, then confirm with **Make primary admin**.
+  </Step>
+</Steps>
 
 <Warning>
-Collaborator access is **permanent**. There is currently no way to remove a collaborator from a test once added. Share collaborate links only with people you trust with full test access.
+After the handover, credits for new submissions are deducted from the new primary admin's account or team. You stay on the test as a collaborator, but you lose the ability to remove collaborators or change the primary admin.
 </Warning>
 
 ## Related Resources
 
-- [Advanced Settings](/advanced-exam-settings) -- Login providers, collaborators, and other advanced options
-- [Teams](/what-is-a-team) -- Set up and manage your team
-- [Sharing Test Results](/share-exam-results) -- Other ways to share results with stakeholders
-- [Timer Settings](/timer-settings) -- Configure test duration and time windows
-- [Proctoring Settings](/proctoring-settings) -- Camera, microphone, and tab-switching options
+- [Advanced Settings](/advanced-exam-settings) - Login providers, collaborators, and other advanced options
+- [Teams](/what-is-a-team) - Set up and manage your team
+- [Sharing Test Results](/share-exam-results) - Other ways to share results with stakeholders
+- [Timer Settings](/timer-settings) - Configure test duration and time windows
+- [Proctoring Settings](/proctoring-settings) - Camera, microphone, and tab-switching options

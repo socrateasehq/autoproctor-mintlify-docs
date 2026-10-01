@@ -28,19 +28,22 @@ Quais fontes o AutoProctor acessa depende inteiramente de como você configura c
 
 ## O Que o AutoProctor Detecta e Registra
 
-Ao contrário das plataformas de supervisão tradicionais que gravam sessões completas de vídeo e áudio, o AutoProctor detecta infrações e mostra a você evidências apenas dessas infrações — de modo que você não precise dedicar horas revisando a tentativa de cada candidato.
+Ao contrário das plataformas de supervisão tradicionais que gravam sessões completas de vídeo e áudio, o AutoProctor detecta infrações e mostra a você evidências apenas dessas infrações, de modo que você não precise dedicar horas revisando a tentativa de cada candidato.
 
-| Recurso de Detecção | O Que Faz |
-|---|---|
-| **Detecção de áudio de fundo** | Registra ruído e sinais de áudio do microfone |
-| **Detecção facial** | Captura fotos quando nenhum rosto ou múltiplos rostos aparecem na câmera |
-| **Troca de aba/aplicativo** | Captura capturas de tela quando os candidatos trocam de aba ou aplicativo |
-| **Fotos aleatórias** | Tira fotos em intervalos aleatórios durante o exame |
-| **Detecção de múltiplos monitores** | Identifica quando telas adicionais estão conectadas ao dispositivo |
-| **Captura facial pré-teste** | Tira uma foto do rosto do candidato antes do início do teste |
-| **Modo de tela cheia obrigatório** | Garante que o teste seja executado em modo de tela cheia e sinaliza saídas |
-| **Registro de ações da sessão** | Registra cliques do mouse e atividade do teclado durante todo o teste |
-| **Emparelhamento de dispositivo auxiliar** | Monitora por meio de um celular emparelhado para detectar o uso do teclado, garantindo que os candidatos não usem ChatGPT ou outras ferramentas para trapacear |
+A última coluna é o interruptor que ativa cada recurso, na seção **Proctoring** (supervisão) das configurações (**Settings**) de um teste.
+
+| Recurso de Detecção | O Que Faz | Configuração |
+|---|---|---|
+| **Detecção de áudio de fundo** | Registra ruído e sinais de áudio do microfone | **Microphone** |
+| **Detecção facial** | Captura fotos quando nenhum rosto ou múltiplos rostos aparecem na câmera | **Camera** |
+| **Troca de aba/aplicativo** | Captura capturas de tela quando os candidatos trocam de aba ou aplicativo | **Tab switching** |
+| **Fotos aleatórias** | Tira fotos em intervalos aleatórios durante o exame | **Photos at random** |
+| **Verificação de múltiplos monitores** | Bloqueia o teste enquanto houver um monitor extra conectado ao dispositivo | **Prevent multiple monitors** |
+| **Detecção de múltiplas sessões** | Detecta tentativas feitas a partir de vários dispositivos ou sessões ao mesmo tempo | **Multi-session detection** |
+| **Captura facial pré-teste** | Tira uma foto do rosto do candidato antes do início do teste | **Photo before test start** |
+| **Modo de tela cheia obrigatório** | Garante que o teste seja executado em modo de tela cheia e sinaliza saídas | **Enforce full screen** |
+| **Registro de ações da sessão** | Registra cliques do mouse e atividade do teclado durante todo o teste | **Session recording** |
+| **Emparelhamento de dispositivo auxiliar** | Monitora por meio de um celular emparelhado para detectar o uso do teclado, garantindo que os candidatos não usem ChatGPT ou outras ferramentas para trapacear | **Auxiliary device** |
 
 <Note>
 Todas as funções de monitoramento são configuráveis por teste. Ative apenas o que você precisa nas suas [configurações de supervisão](/proctoring-settings).
@@ -50,32 +53,30 @@ Todas as funções de monitoramento são configuráveis por teste. Ative apenas 
 
 <Steps>
   <Step title="Abra as configurações do teste">
-    Acesse seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/), selecione um teste e clique em **Settings**.
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste.
 
-    {/* TODO: Add screenshot of the test dashboard with the Settings button highlighted */}
+    {/* screenshot: one test row on the Tests page, cropped to the row, with the "Settings" button visible */}
+
+    <Frame caption="Um teste na página Tests, com o botão Settings à direita">
+      <img src="/images/what-gets-tracked-during-proctoring/test-row-settings.png" alt="Primeira linha da página Tests sob os cabeçalhos de coluna Title, Created, Settings, Started e Finished. O teste é Chemistry Midterm, Grade 11, com os links Share e Preview abaixo do título e os botões Settings e Results à direita" />
+    </Frame>
   </Step>
-  <Step title="Navegue até as Configurações de Supervisão">
-    Clique na aba **Proctoring Settings** para ver todas as opções de monitoramento disponíveis.
-
-    {/* TODO: Add screenshot of the Proctoring Settings tab */}
+  <Step title="Abra a seção Proctoring">
+    Escolha **Proctoring** na lista de seções e ative o interruptor no canto superior direito da seção. Enquanto o interruptor estiver em **Off**, nada é monitorado.
   </Step>
   <Step title="Ative os recursos necessários">
-    Ative ou desative cada recurso de monitoramento de acordo com suas necessidades. Por exemplo, você pode ativar o monitoramento por câmera e a detecção de troca de aba, mas deixar o monitoramento por microfone desativado.
+    Em **What gets tracked** (o que é monitorado) e **Enhanced proctoring** (supervisão avançada), ative ou desative cada recurso de monitoramento de acordo com suas necessidades. Por exemplo, você pode ativar **Camera** e **Tab switching**, mas deixar **Microphone** desativado.
 
-    {/* TODO: Add screenshot of proctoring feature toggles */}
+    {/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the "What gets tracked" group with "Tab switching" and "Camera" On and "Microphone" Off */}
+
+    <Frame caption="Tab switching e Camera ativados, Microphone desativado">
+      <img src="/images/what-gets-tracked-during-proctoring/tab-and-camera-on.png" alt="Grupo What gets tracked com nove interruptores. Tab switching, Camera e Photos at random estão ativados. Microphone e os demais estão desativados" />
+    </Frame>
   </Step>
   <Step title="Salve suas configurações">
-    Clique em **Save** para aplicar suas alterações. Essas configurações entram em vigor imediatamente para todas as tentativas futuras de teste.
+    Clique em **Save settings** para aplicar suas alterações. Essas configurações entram em vigor imediatamente para todas as tentativas futuras de teste.
   </Step>
 </Steps>
-
-<Frame caption="Como configurar as configurações de supervisão no AutoProctor">
-  <video
-    controls
-    className="w-full aspect-video rounded-xl"
-    src="/videos/getting-started/configure-proctor-settings.mp4"
-  ></video>
-</Frame>
 
 <Warning>
 Ativar mais recursos de monitoramento aumenta a carga de processamento no dispositivo do candidato. Se seus candidatos usam hardware mais antigo, considere ativar apenas os recursos mais necessários. Consulte [Compatibilidade de Dispositivos](/device-compatibility) para os requisitos mínimos.
@@ -83,9 +84,9 @@ Ativar mais recursos de monitoramento aumenta a carga de processamento no dispos
 
 ## Recursos Relacionados
 
-- [Trust Score](/what-is-trust-score) — Como o AutoProctor classifica a integridade do candidato
-- [Configurações de Supervisão](/proctoring-settings) — Configure quais recursos de supervisão ativar
-- [Supervisão Avançada](/enhanced-proctoring) — Opções avançadas de monitoramento para maior segurança
-- [Resultados de Supervisão](/where-to-find-proctoring-results) — Veja as evidências de infrações e os relatórios
-- [Gravação de Vídeo](/does-autoproctor-record-video) — Por que o AutoProctor não grava vídeo completo
-- [Compatibilidade de Dispositivos](/device-compatibility) — Navegadores e dispositivos compatíveis
+- [Trust Score](/what-is-trust-score) - Como o AutoProctor classifica a integridade do candidato
+- [Configurações de Supervisão](/proctoring-settings) - Configure quais recursos de supervisão ativar
+- [Supervisão Avançada](/enhanced-proctoring) - Opções avançadas de monitoramento para maior segurança
+- [Resultados de Supervisão](/where-to-find-proctoring-results) - Veja as evidências de infrações e os relatórios
+- [Gravação de Vídeo](/does-autoproctor-record-video) - Por que o AutoProctor não grava vídeo completo
+- [Compatibilidade de Dispositivos](/device-compatibility) - Navegadores e dispositivos compatíveis

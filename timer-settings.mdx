@@ -1,77 +1,105 @@
 ---
 title: "Timer Settings"
-description: "Configure test duration, auto-submit behavior, time windows, and buffer time for your AutoProctor tests."
+description: "Configure test duration, auto-submit behavior, the start window, a hard stop, and a late-start grace period for your AutoProctor tests."
 ---
 
-Timer Settings let you control when candidates can start a test, how long they have to complete it, and what happens when time runs out. You access these settings from the **Settings** button on your dashboard.
+Timer settings let you control when candidates can start a test, how long they have to complete it, and what happens when time runs out. They live in the **Timer** section of a test's **Settings**.
 
 <Note>
-The times you set are in your local timezone. AutoProctor handles all timezone conversions automatically — if your candidates are in a different timezone, they will see the correct local time on their end.
+The times you set are in your local timezone. AutoProctor handles all timezone conversions automatically. If your candidates are in a different timezone, they will see the correct local time on their end.
 </Note>
 
 ## How to Configure Timer Settings
 
-<Frame caption="How to configure timer settings in AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    poster="/thumbnails/settings/config-timer-settings.jpg"
-    src="/videos/settings/config-timer-settings.mp4"
-  ></video>
-</Frame>
-
 <Steps>
-  <Step title="Enable the Timer">
-    On the Test Settings page, check the **Enable Timer** checkbox. This activates all time-related settings for your test. Unchecking this box disables all time-related checks.
+  <Step title="Open the Timer Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Timer** from the list of sections.
+  </Step>
+  <Step title="Turn the Timer On">
+    Turn on the switch at the top right of the **Timer** section. While the switch is **Off**, candidates can take as long as they need and no time checks apply.
   </Step>
   <Step title="Set the Duration">
-    Enter the maximum time a candidate has to complete the test. The countdown starts when the test loads and the candidate sees the questions.
+    Under **How long do candidates get?**, enter the **Duration** in minutes. The countdown starts when the test loads and the candidate sees the questions.
   </Step>
-  <Step title="Configure Auto-Submit (Optional)">
-    Toggle **Auto-submit Test** to automatically submit the test when the duration ends. If disabled, candidates get unlimited time to submit after the timer runs out.
+  <Step title="Choose What Happens When Time Runs Out (Optional)">
+    Tick **Submit automatically when time runs out** to submit the test when the duration ends. If you leave it unticked, candidates get unlimited time to submit after the timer runs out.
 
     <Warning>
-    For non-Socratease quizzes, auto-submit only submits the proctoring session — not the quiz answers. If a candidate hasn't manually submitted their answers, **all responses will be lost**. For Socratease quizzes, both answers and proctoring data are submitted automatically.
+    For non-Socratease quizzes, auto-submit only submits the proctoring session, not the quiz answers. If a candidate hasn't manually submitted their answers, **all responses will be lost**. For Socratease quizzes, both answers and proctoring data are submitted automatically.
     </Warning>
   </Step>
   <Step title="Set a Start Window (Optional)">
-    Use **Can't Start Before** and **Can't Start After** to define when candidates can begin the test:
-    - **Can't Start Before** — the earliest date and time a candidate can start
-    - **Can't Start After** — the latest date and time a candidate can start
+    Under **When can candidates start?**, pick a date and time for either or both of these:
+    - **Cannot start before**: the earliest date and time a candidate can start
+    - **Cannot start after**: the latest date and time a candidate can start
 
-    If you set a date without a time, midnight is used as the default.
+    Leave both empty to let candidates start any time. If you set a date without a time, midnight is used as the default.
   </Step>
-  <Step title="Set a Submission Deadline (Optional)">
-    **Must Submit By** sets a hard deadline for submission. If a candidate starts the test close to this deadline, their available time is reduced accordingly.
-
-    For example, if the test duration is 30 minutes and the Must Submit By time is 12:30 PM, a candidate starting at 12:15 PM gets only 15 minutes. This uses the same date as **Can't Start After**.
-  </Step>
-  <Step title="Configure Buffer Time (Optional)">
-    **Buffer Time** is a grace period after the Can't Start After time that allows candidates to complete the demo test and set up their device. AutoProctor adds a default 5-minute buffer when start/end times are set.
-
-    <Note>
-    Buffer time does not apply to the Must Submit By deadline.
-    </Note>
+  <Step title="Save">
+    Click **Save settings**.
   </Step>
 </Steps>
+
+{/* screenshot: Timer section of Test Settings with the switch On, Duration set to 60 minutes, "Submit automatically when time runs out" ticked, and "Cannot start before" and "Cannot start after" both filled with a date and time */}
+
+<Frame caption="The Timer section with a 60-minute duration, automatic submission and a start window">
+  <img src="/images/timer-settings/timer-section.png" alt="Timer section switched on, with Duration set to 60 minutes, Submit automatically when time runs out ticked, and Cannot start before and Cannot start after each filled with a date and time" />
+</Frame>
+
+<Tip>
+Use the **Time format** switch next to **When can candidates start?** to pick times as **2:30 PM** or **14:30**. It only changes how times are shown to you on this page.
+</Tip>
+
+## More Options
+
+Click **More options** at the bottom of the **Timer** section to show two less common settings. Both need a **Cannot start after** date to be set first.
+
+| Setting | What it does |
+|---|---|
+| **Hard stop** | A time on the **Cannot start after** date. Everyone still taking the test is submitted at this time |
+| **Late-start grace period** | Extra minutes a candidate has to start after the **Cannot start after** time. The minimum is 5 |
+
+{/* screenshot: Timer section of Test Settings with "More options" expanded, showing the "Hard stop" time and "Late-start grace period" fields filled in, below a "Cannot start after" date */}
+
+<Frame caption="Hard stop and Late-start grace period, the two fields under More options">
+  <img src="/images/timer-settings/timer-more-options.png" alt="Cannot start before and Cannot start after set to the same date, with Hard stop set to 10:30 AM and Late-start grace period set to 10 minutes below them" />
+</Frame>
+
+### Hard stop
+
+A **Hard stop** shortens the time of candidates who start late. For example, if the duration is 30 minutes and the Hard stop is 12:30 PM, a candidate starting at 12:15 PM gets only 15 minutes.
+
+The Hard stop cannot be earlier than **Cannot start before** or **Cannot start after**.
+
+### Late-start grace period
+
+The grace period gives candidates time to complete the demo test and set up their device. AutoProctor adds a default 5-minute grace period when start and end times are set.
+
+<Note>
+The grace period does not apply to the **Hard stop**.
+</Note>
 
 ## Timer Settings Reference
 
 | Setting | Description | Default |
 |---|---|---|
-| **Duration** | Maximum time for a test attempt | No limit |
-| **Auto-submit Test** | Submit automatically when time runs out | Off |
-| **Can't Start Before** | Earliest start date and time | No restriction |
-| **Can't Start After** | Latest start date and time | No restriction |
-| **Must Submit By** | Hard submission deadline | Not set |
-| **Buffer Time** | Grace period for setup after Can't Start After | 5 min (when times are set) |
+| **Duration** | Maximum time for a test attempt, in minutes | No limit |
+| **Submit automatically when time runs out** | Submit when the duration ends | Off |
+| **Cannot start before** | Earliest start date and time | No restriction |
+| **Cannot start after** | Latest start date and time | No restriction |
+| **Hard stop** | Time at which everyone still in the test is submitted | Not set |
+| **Late-start grace period** | Extra minutes to start after **Cannot start after** | 5 min (when times are set) |
+
+<Note>
+If a Socratease quiz shows questions **one-by-one with no question navigation**, each question is timed separately. **Duration**, auto-submit and **Hard stop** do not apply to that quiz, but the start window still does. You can change the display mode from **Quiz behaviour** in the test's Settings.
+</Note>
 
 {/* TODO: Add GIF showing the timer countdown experience from the candidate's perspective */}
 
 ## Related Resources
 
-- [Proctoring Settings](/proctoring-settings) — Configure camera, microphone, and tab-switching detection
-- [Advanced Settings](/advanced-exam-settings) — Login providers, restrictions, and integrations
-- [Quiz Settings](/socratease-quiz-settings) — For Socratease quiz-specific settings, see the Socratease Quiz Settings page
-- [Resuming Test Attempts](/resume-exam-attempts) — How auto-resume works with timed tests
-- [What Gets Tracked](/what-gets-tracked-during-proctoring) — Overview of all proctoring capabilities
+- [Proctoring Settings](/proctoring-settings) - Configure camera, microphone, and tab-switching detection
+- [Advanced Settings](/advanced-exam-settings) - Login providers, restrictions, and integrations
+- [Quiz Settings](/socratease-quiz-settings) - For Socratease quiz-specific settings, see the Socratease Quiz Settings page
+- [Resuming Test Attempts](/resume-exam-attempts) - How auto-resume works with timed tests
+- [What Gets Tracked](/what-gets-tracked-during-proctoring) - Overview of all proctoring capabilities

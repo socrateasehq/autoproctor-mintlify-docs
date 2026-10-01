@@ -1,102 +1,185 @@
 ---
 title: "Advanced Settings"
-description: "Configure login providers, email restrictions, Google Sheets integration, collaborators, and other advanced test options."
+description: "Configure login providers, email restrictions, unique test URLs, candidate details, completion messages, Google Sheets integration, and collaborators for a test."
 ---
 
-Advanced Settings give you control over how candidates log in, who can access the test, and how results are shared. These options are found at the bottom of the Test Settings page.
+Advanced settings give you control over how candidates log in, who can access the test, what candidates see before and after it, and how results are shared. They live in the **Access & login**, **Before the test** and **After the test** sections of a test's **Settings**.
 
-<Frame caption="Advanced settings configuration panel">
-  <img src="/images/creating-tests/advanced-settings.png" alt="Advanced settings configuration panel" />
+## Where to Find Each Setting
+
+Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test. Then choose a section from the list of sections.
+
+| Section | What you set there | Read more |
+|---|---|---|
+| **General** | Test title, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Maximum Attempts](/maximum-exam-attempts), [Resuming Test Attempts](/resume-exam-attempts), [Closing, Hiding and Deleting Tests](/archive-and-delete-exams) |
+| **Quiz behaviour** | Socratease quizzes only. Opens the quiz's own settings | [Socratease Quiz Settings](/socratease-quiz-settings) |
+| **Timer** | Duration and start window | [Timer Settings](/timer-settings) |
+| **Proctoring** | What gets tracked and who is informed | [Proctoring Settings](/proctoring-settings) |
+| **Access & login** | **Login providers**, **Login restrictions**, **Unique test URLs**, **iFrame height**, **iFrame width**, **Query string** | This page |
+| **Before the test** | **Collect candidate details**, **Show additional instructions** | This page |
+| **After the test** | What candidates see on submission, **Send results to a Google Sheet** | This page |
+
+{/* screenshot: Test Settings page for a Socratease test, cropped to the list of sections (General, Quiz behaviour, Timer, Proctoring, Access & login, Before the test, After the test) with "Access & login" selected */}
+
+<Frame caption="The sections of Test Settings for a Socratease quiz, with Access &amp; login selected">
+  <img src="/images/advanced-exam-settings/settings-sections.png" alt="List of sections reading General, Quiz behaviour, Timer, Proctoring, Access &amp; login, Before the test and After the test, with Access &amp; login highlighted" />
 </Frame>
 
-## Login Providers
+<Note>
+A setting that your plan does not include shows a **Premium** or **Elite** badge. Click **Save settings** at the bottom of the page after changing any section.
+</Note>
+
+## Access & Login
+
+The **Access & login** section controls who can open the test link and how they sign in. Which controls you see depends on the quiz provider of the test.
+
+| Control | Socratease Quizzes | Google Forms | Microsoft Forms | IFrame Tests |
+|---|---|---|---|---|
+| **Login providers** | Yes | No | No | Yes |
+| **Login restrictions** | Yes | Yes | Yes | Yes |
+| **Unique test URLs** | Yes | Yes | Yes | Yes |
+| **iFrame height** and **iFrame width** | No | No | No | Yes |
+| **Query string** | No | Yes | Yes | Yes |
+
+{/* screenshot: Access & login section of Test Settings for a Socratease test, showing "Login providers" with the Google, Microsoft and Email checkboxes, the "Login restrictions" field and the "Unique test URLs" switch turned off */}
+
+<Frame caption="Login providers, Login restrictions and Unique test URLs in the Access &amp; login section">
+  <img src="/images/advanced-exam-settings/access-and-login.png" alt="Access &amp; login section with Google, Microsoft and Email ticked under Login providers, an empty Login restrictions field, and the Unique test URLs switch off" />
+</Frame>
+
+### Login Providers
 
 Choose which authentication methods candidates can use to sign in to your test:
 
 | Provider | Description | Availability |
 |---|---|---|
-| **Google** | Sign in with a Google account | **Required** for Google Forms tests. Optional for Socratease and IFrame tests. |
-| **Microsoft** | Sign in with a Microsoft account | **Required** for Microsoft Forms tests. Optional for Socratease and IFrame tests. |
+| **Google** | Sign in with a Google account | Always used for Google Forms tests. Optional for Socratease and IFrame tests. |
+| **Microsoft** | Sign in with a Microsoft account | Always used for Microsoft Forms tests. Optional for Socratease and IFrame tests. |
 | **Email** | Sign in with any email address | Socratease and IFrame tests only. |
 
-For Google Forms and Microsoft Forms tests, the login provider is locked to match the quiz platform. For Socratease and IFrame tests, you can enable one or more providers — including Google and Microsoft login.
+Google Forms and Microsoft Forms tests always use the login of their own quiz platform, so **Login providers** is not shown for them. For Socratease and IFrame tests, tick one or more providers, including Google and Microsoft login.
 
 For more details on how each login method works, see [Candidate Login Methods](/candidate-login-methods).
 
-{/* TODO: Add screenshot showing the login provider selection options */}
+### Login Restrictions
 
-## Login Restrictions
+**Login restrictions** limit which candidates can take your test based on their email address or domain. Enter the allowed domains or addresses in the field, separated by commas.
 
-Restrict which candidates can take your test based on their email address or domain.
+- **Restrict by domain**: allow only candidates with email addresses from specific domains (e.g., `@university.edu`)
+- **Restrict by email**: allow only specific email addresses to access the test
 
-- **Restrict by Email** — Allow only specific email addresses to access the test
-- **Restrict by Domain** — Allow only candidates with email addresses from specific domains (e.g., @university.edu)
+For detailed instructions, see [Restricting by Email](/restrict-access-by-email).
 
-For detailed instructions, see [Restricting by Email](/restrict-access-by-email). If you want to invite a specific set of candidates, see [Inviting Candidates via Email](/invite-candidates-via-email).
+### Unique Test URLs (Elite)
 
-{/* TODO: Add screenshot showing login restriction configuration */}
+By default, all candidates share a single test link, which could be forwarded to unintended recipients. Turning on **Unique test URLs** lets you generate one link per candidate, so only the people you share links with can take the test.
 
-## IFrame Height
-
-When your test is embedded as an iframe inside AutoProctor, this setting lets you adjust the height (in pixels) of that iframe to match your test content. The default is 1764px. Increase it if your test content is getting cut off or candidates have to scroll within the iframe, or decrease it to remove extra whitespace.
-
-## Collaborators
-
-Add colleagues as collaborators on your test so they can edit settings and view results. You can set the test's Primary Admin by clicking the **Manage** button.
-
-For more details, see [Adding Collaborators](/add-collaborators).
-
-## Premium and Elite Features
-
-### Google Sheets Integration (Premium)
-
-Automatically write test results in a Google Sheet by entering the sheet URL in this field. For Socratease quizzes, both proctoring results and quiz scores are exported. For non-Socratease quizzes, only proctoring results are included.
-
-For setup instructions, see [Google Sheets Integration](/write-results-to-google-sheets).
-
-### On Test Completion (Premium)
-
-Controls what candidates see after they submit their test. By default, all users see the standard AutoProctor completion page. Premium and above users can customize this with two additional options:
-
-| Option | Description |
-|---|---|
-| **Show default message** | Display the standard AutoProctor completion page (available on all plans) |
-| **Show custom message** | Display your own HTML message to candidates (e.g., "Thank you for completing the assessment!") |
-| **Redirect to URL** | Send candidates to an external page after submission (e.g., your company's website or a feedback form) |
-
-### Unique URL per Candidate (Elite)
-
-By default, all candidates share a single test link, which could be forwarded to unintended recipients. Enabling this feature generates a unique link for each candidate, ensuring only the people you share links with can take the test.
+Turning it on forces email login: under **Login providers**, only **Email** stays ticked. Once the setting is saved, a **Generate unique links** link appears under the switch and opens the page where you create the links.
 
 <Note>
-Unique URL per candidate is an Elite feature. See [Elite Features](/elite-plan-features) for more details.
+Unique test URLs are an Elite feature and work with Socratease Quizzes and IFrame Tests. Do not turn the switch on for a Google Forms or Microsoft Forms test, because those tests need the sign-in of their own platform. See [Inviting Candidates via Email](/invite-candidates-via-email) for the full process and [Elite Features](/elite-plan-features) for plan details.
 </Note>
 
-### Gather Additional Details (Premium)
+### IFrame Height and Width
 
-Collect custom information from candidates before the test starts — such as phone number, college name, or any custom question. These fields appear on the instructions page and the collected data is available in results and Excel exports.
+When your test is embedded as an iframe inside AutoProctor, **iFrame height** lets you adjust the height (in pixels) of that iframe to match your test content. The default is 1764px. Increase it if your test content is getting cut off or candidates have to scroll within the iframe, or decrease it to remove extra whitespace.
+
+**iFrame width** sets the maximum width of the area that holds your test, in pixels. Both fields appear only for IFrame tests.
+
+{/* screenshot: Access & login section of Test Settings for a test on another quizzing platform (IFrame test), cropped to the row with the "iFrame height", "iFrame width" and "Query string" fields and their hints */}
+
+<Frame caption="iFrame height, iFrame width and Query string on a test from another quizzing platform">
+  <img src="/images/advanced-exam-settings/iframe-size-and-query-string.png" alt="Three fields in a row. iFrame height is 1200 px, iFrame width is 960, both with the hint Iframe tests only. Query string is a=b&amp;c=d with the hint Appended to the test URL" />
+</Frame>
+
+### Query String
+
+The **Query string** is appended to the test URL when the test loads, for example `a=b&c=d`. See [IFrame Query Arguments](/iframe-query-arguments) for how to use it.
+
+## Before the Test
+
+The **Before the test** section controls what candidates see on the instructions page, which is the page your test link opens before the quiz.
+
+| Setting | Plan | What it does |
+|---|---|---|
+| **Collect candidate details** | Premium | Asks candidates for custom information before the test starts, such as phone number, college name, or any custom question |
+| **Show additional instructions** | Elite | Shows your own instructions on the instructions page, next to the standard ones |
+
+### Collect Candidate Details (Premium)
+
+These fields appear on the instructions page, and every field is required. The collected data is available in results and exports.
 
 <Note>
 You can add up to 10 custom information fields per test.
 </Note>
 
-{/* TODO: Add screenshot showing the Gather Additional Details configuration */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Collect candidate details" switched on with three fields added and the "Fields (3 of 10)" counter visible */}
 
-### Additional Instructions (Elite)
+<Frame caption="Collect candidate details switched on, with three fields added">
+  <img src="/images/advanced-exam-settings/candidate-details-three-fields.png" alt="Candidate details group with Collect candidate details on, the counter Fields 3 of 10, the fields Phone Number, Student ID and Homeroom Teacher, an Add field button and a row of suggestions" />
+</Frame>
 
-Add custom instructions to the candidate instructions page. This is shown to candidates before they start the test and can be used to provide specific guidelines, rules, or context for your test.
+### Show Additional Instructions (Elite)
+
+Add custom instructions to the candidate instructions page. They are shown to candidates before they start the test, and can give specific guidelines, rules, or context for your test. The text is plain text of up to 200 words.
 
 <Note>
-Additional Instructions is an Elite feature. See the [Instructions Page for Candidates](/candidate-instructions-page) for more on what candidates see before starting.
+Additional instructions are an Elite feature. See the [Instructions Page for Candidates](/candidate-instructions-page) for more on what candidates see before starting.
 </Note>
 
-{/* TODO: Add screenshot showing the Additional Instructions field and how it appears to candidates */}
+{/* screenshot: Before the test section of Test Settings, cropped to "Show additional instructions" switched on with the "Instructions" text box filled in and its word counter visible */}
+
+<Frame caption="Show additional instructions switched on, with the word counter under the box">
+  <img src="/images/advanced-exam-settings/additional-instructions.png" alt="Additional instructions group with Show additional instructions on and two lines of text in the Instructions box. The counter under the box reads 19 of 200 words" />
+</Frame>
+
+## After the Test
+
+The **After the test** section controls what candidates see when they submit, and where results go.
+
+### On Test Completion (Premium)
+
+By default, all users see the standard AutoProctor completion page. Premium and above users can customize this with two additional options:
+
+| Option | Description |
+|---|---|
+| **Show the default message** | Display the standard AutoProctor completion page (available on all plans) |
+| **Show a custom message** | Display your own HTML message to candidates (e.g., "Thank you for completing the assessment!"). Basic HTML of up to 1,000 characters |
+| **Redirect to a URL** | Send candidates to an external page after submission (e.g., your company's website or a feedback form). The URL must start with `http://` or `https://` |
+
+{/* screenshot: After the test section of Test Settings, cropped to the three options "Show the default message", "Show a custom message" and "Redirect to a URL" with "Show a custom message" selected and the "Custom message" box filled in */}
+
+<Frame caption="Show a custom message selected, with the message written as basic HTML">
+  <img src="/images/advanced-exam-settings/on-test-completion.png" alt="Three options, Show the default message, Show a custom message and Redirect to a URL, with the second selected. Below, the Custom message box holds two short HTML paragraphs and a counter reads 105 of 1000" />
+</Frame>
+
+### Send Results to a Google Sheet (Premium)
+
+Automatically write test results to a Google Sheet by pasting the sheet's link into **Send results to a Google Sheet**. For Socratease quizzes, both proctoring results and quiz scores are exported. For non-Socratease quizzes, only proctoring results are included.
+
+<Warning>
+This works only with proctoring on. While proctoring is off, nothing is written to the sheet, and saving the settings removes the link.
+</Warning>
+
+For setup instructions, see [Google Sheets Integration](/write-results-to-google-sheets).
+
+## Collaborators
+
+Add colleagues as collaborators on your test so they can edit settings and view results. The collaborators card at the top of the Settings page lists everyone on the test. Click **Manage** on that card to copy the **Collaborate link**, remove a collaborator, or set the test's primary admin.
+
+{/* screenshot: Test Settings page, cropped to the collaborators card showing "2 collaborators", the "Learn More" link, the "Manage" button and the collaborator names with "(primary admin)" */}
+
+<Frame caption="The collaborators card on a test with two collaborators">
+  <img src="/images/advanced-exam-settings/collaborators-card.png" alt="Card reading 2 collaborators with a Learn More link and a Manage button. Below are two avatars and the names Laura Bennett, primary admin, and Megan Foster" />
+</Frame>
+
+For more details, see [Adding Collaborators](/add-collaborators).
 
 ## Related Resources
 
-- [Timer Settings](/timer-settings) — Configure test duration and time windows
-- [Proctoring Settings](/proctoring-settings) — Camera, microphone, and tab-switching options
-- [Restricting by Email](/restrict-access-by-email) — Restrict test access by email address or domain
-- [Inviting Candidates via Email](/invite-candidates-via-email) — Send test invitations directly
-- [Candidate Login Methods](/candidate-login-methods) — How each login method works
-- [Google Sheets Integration](/write-results-to-google-sheets) — Auto-export results to spreadsheets
+- [Timer Settings](/timer-settings) - Configure test duration and time windows
+- [Proctoring Settings](/proctoring-settings) - Camera, microphone, and tab-switching options
+- [Restricting by Email](/restrict-access-by-email) - Restrict test access by email address or domain
+- [Inviting Candidates via Email](/invite-candidates-via-email) - Send test invitations directly
+- [Candidate Login Methods](/candidate-login-methods) - How each login method works
+- [Google Sheets Integration](/write-results-to-google-sheets) - Auto-export results to spreadsheets

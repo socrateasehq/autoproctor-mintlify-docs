@@ -11,52 +11,79 @@ This is a **Premium Feature** and requires a Premium or Elite subscription. See 
 
 ## Setup Instructions
 
-<Frame caption="Setting up Google Sheets integration">
-  <img className="border rounded-xl" src="/images/settings/write-to-gsheet.gif" alt="GIF showing how to set up Google Sheets integration in AutoProctor" />
-</Frame>
-
 <Steps>
-  <Step title="Open test settings">
-    Visit the **Test Settings** for a new or existing test on your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/).
-  </Step>
-  <Step title="Find the Google Sheets ID field">
-    Scroll down to the **Advanced Settings** section and locate the **Google Sheets ID** field.
-  </Step>
-  <Step title="Create a blank Google Sheet">
+  <Step title="Create a Blank Google Sheet">
     Create an empty Google Sheet in your Google Drive. You will use this sheet to receive AutoProctor results.
   </Step>
-  <Step title="Grant write access">
+  <Step title="Grant Write Access">
     Share the Google Sheet with `hello@autoproctor.co` and grant **Editor** permissions. This allows AutoProctor to write data to the sheet.
 
     <Warning>
-    If you do not share the sheet with `hello@autoproctor.co` as an Editor, AutoProctor cannot write results to it. Make sure you grant Editor access, not just Viewer.
+    If you do not share the sheet with `hello@autoproctor.co` as an Editor, AutoProctor cannot write results to it. Make sure you grant Editor access, not just Viewer. When a write fails for this reason, AutoProctor emails the test's admins to ask for access.
     </Warning>
   </Step>
-  <Step title="Paste the Google Sheet URL">
-    Copy the URL of your Google Sheet and paste it into the **Google Sheets ID** field in AutoProctor's test settings.
+  <Step title="Open the After the Test Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **After the test** from the list of sections.
   </Step>
-  <Step title="Save the test">
-    Click **Create** or **Update** to save your test configuration.
+  <Step title="Paste the Google Sheet Link">
+    Open the sheet, copy its address from your browser, and paste it into the **Send results to a Google Sheet** field. The address starts with `https://docs.google.com/spreadsheets/d/`.
+
+    Below the field, **Results go to sheet** followed by a short link confirms which sheet AutoProctor will write to.
   </Step>
-  <Step title="Verify the integration">
+  <Step title="Save">
+    Click **Save settings**.
+  </Step>
+  <Step title="Verify the Integration">
     Complete a test attempt. A new sheet tab labeled **AutoProctor** automatically appears in your Google Sheet with the results data.
   </Step>
 </Steps>
 
+{/* screenshot: After the test section of Test Settings for a test with proctoring on, cropped to the "Send results to a Google Sheet" field with a Google Sheets link pasted in and the "Results go to sheet" hint visible below it */}
+
+<Frame caption="A sheet's link pasted into Send results to a Google Sheet, confirmed by the hint below it">
+  <img src="/images/write-results-to-google-sheets/send-results-to-sheet.png" alt="Send results to a Google Sheet field holding a docs.google.com spreadsheet link. Below it, the hint reads Results go to sheet followed by the last characters of the sheet id and a Set-up help link" />
+</Frame>
+
 Subsequent test attempts automatically populate the same Google Sheet without any additional setup.
+
+<Note>
+The sheet link is read when a candidate **starts** an attempt. Attempts that started before you saved the link are not added to the sheet.
+</Note>
+
+## Proctoring Must Be On
+
+**Send results to a Google Sheet** works only with **proctoring on**. You turn proctoring on with the switch at the top right of the **Proctoring** section.
+
+<Warning>
+While proctoring is off, the field is disabled and nothing is written to the sheet. Saving the settings with proctoring off also removes the sheet link from the test. The sheet itself is untouched.
+</Warning>
+
+## What Gets Written
+
+Every submitted attempt is added as one row in the **AutoProctor** tab.
+
+| Column | Contents |
+|---|---|
+| **First Name** | The candidate's first name |
+| **Last Name** | The candidate's last name |
+| **Email** | The candidate's email address |
+| **Trust Score** | The Trust Score of the attempt |
+| **Evidence URLs (sample)** | Left empty. Open the Test Report URL to review the evidence |
+| **Test Report URL** | A link to the proctoring report of the attempt |
+| **Socratease Percentage Scored (%)** | The quiz score as a percentage. Socratease quizzes only |
 
 ## Socratease Quiz Integration
 
-For Socratease Quizzes, the system writes both proctoring scores and quiz scores to the sheet. However, individual questions and answers are not included -- only aggregate scoring data appears.
+For Socratease Quizzes, the system writes both proctoring scores and quiz scores to the sheet. However, individual questions and answers are not included. Only aggregate scoring data appears.
 
 <Note>
-If you need detailed question-level data for Socratease Quizzes, use the [individual submissions](/access-candidate-responses) view on the [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) instead.
+If you need detailed question-level data for Socratease Quizzes, click **Results** next to the test on your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and use the [individual submissions](/access-candidate-responses) view instead.
 </Note>
 
 ## Related Resources
 
-- [Export to Excel](/export-results-to-excel) -- Manually download results as a spreadsheet
-- [Access Answers and Candidate Responses](/access-candidate-responses) -- View detailed per-candidate responses
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
-- [Payments and Credits](/payments-and-credits) -- Plan details and feature availability
-- [Sharing Test Results](/share-exam-results) -- Grant other users access to test results
+- [Export to Excel](/export-results-to-excel) - Manually download results as a spreadsheet
+- [Access Answers and Candidate Responses](/access-candidate-responses) - View detailed per-candidate responses
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Overview of quiz results vs. proctoring results
+- [Payments and Credits](/payments-and-credits) - Plan details and feature availability
+- [Sharing Test Results](/share-exam-results) - Grant other users access to test results

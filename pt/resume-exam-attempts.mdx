@@ -3,73 +3,84 @@ title: "Retomar Tentativas de Teste"
 description: "Entenda como o AutoProctor gerencia a retomada de testes quando os candidatos se desconectam, fecham o navegador ou saem de um teste no meio da tentativa."
 ---
 
-Quando um candidato sai de um teste no meio da tentativa — seja por uma falha do navegador, problema de rede ou fechamento acidental — o AutoProctor determina se deve retomar a tentativa anterior ou criar uma nova. O comportamento depende do tipo de teste e das suas configurações.
+<Tip>
+**Retomar** significa qualquer forma de o candidato voltar ao teste: clicar novamente no link do teste, recarregar a página no navegador, ou voltar depois de um tempo e deixar o navegador recarregar automaticamente.
+</Tip>
+
+Quando um candidato sai de um teste no meio da tentativa, seja por uma falha do navegador, problema de rede ou fechamento acidental, o AutoProctor determina se deve retomar a tentativa anterior ou criar uma nova. O comportamento depende do tipo de teste e das suas configurações.
 
 ## Comportamento de Retomada por Tipo de Teste
 
 | Tipo de Teste | Comportamento de Retomada | Detalhes |
 |---|---|---|
 | Socratease Quiz | Sempre retoma | Carrega as respostas anteriores automaticamente; os candidatos devem completar a tentativa existente antes de iniciar uma nova |
-| Microsoft Forms | Nunca retoma | Cria uma nova tentativa a cada vez devido a limitações da plataforma |
-| Google Forms | Configurável | Controlado pelo botão **Enable Auto Resume** e pela configuração de salvamento automático do Google Forms |
-| Testes IFrame | Configurável | Controlado pelo botão **Enable Auto Resume** |
+| Microsoft Forms | Configurável | Controlado pelo interruptor **Auto-resume**. O AutoProctor reabre a mesma tentativa, mas o Microsoft Forms não mantém as respostas não enviadas |
+| Google Forms | Configurável | Controlado pelo interruptor **Auto-resume** e pela configuração de salvamento automático do Google Forms |
+| Testes IFrame | Configurável | Controlado pelo interruptor **Auto-resume** |
 
 ## Configurando o Recurso de Retomada
 
-Para Google Forms e testes IFrame, você controla o comportamento de retomada pelo botão **Enable Auto Resume** nas configurações do teste.
+Para Google Forms, Microsoft Forms e testes IFrame, você controla o comportamento de retomada pelo interruptor **Auto-resume** (retomada automática) nas configurações do teste.
 
 <Steps>
   <Step title="Abra as configurações do teste">
-    Navegue até o teste no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e clique no botão **Settings**.
-
-    {/* TODO: Add screenshot of the test dashboard showing the Settings button */}
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste.
   </Step>
-  <Step title="Ative o Enable Auto Resume">
-    Encontre e ative ou desative a opção **Enable Auto Resume**.
-
-    {/* TODO: Add screenshot of the Enable Auto Resume toggle in test settings */}
-
-    <Frame>
-      <img src="/images/settings/enable-auto-resume.png" alt="Botão Enable Auto Resume nas configurações de teste do AutoProctor" />
-    </Frame>
+  <Step title="Ative ou desative o Auto-resume">
+    Na seção **General**, use o interruptor **Auto-resume**. O AutoProctor marca essa configuração como **Recommended** (recomendada).
+  </Step>
+  <Step title="Salve">
+    Clique em **Save settings**.
   </Step>
 </Steps>
 
+{/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" (and its Recommended badge) switched on */}
+
+<Frame caption="Auto-resume ativado na seção General de um teste do Google Forms">
+  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="Três linhas de interruptores na seção General. Auto-resume, marcado como Recommended, está ativado. Close test for submissions e Hide from my dashboard estão desativados" />
+</Frame>
+
 <Note>
-Para Google Forms, você também deve manter a configuração de **Save Draft** (salvamento automático) ativada no próprio Google Forms para que a retomada funcione corretamente. Consulte [Retomar Testes do Google Forms](/resume-google-forms-exam) para configuração detalhada.
+O interruptor **Auto-resume** não aparece em questionários Socratease, porque eles sempre são retomados. Para Google Forms, você também deve manter a configuração de **Save Draft** (salvamento automático) ativada no próprio Google Forms para que a retomada funcione corretamente. Consulte [Retomar Testes do Google Forms](/resume-google-forms-exam) para configuração detalhada.
 </Note>
 
 ## Como a Retomada Funciona
 
-Quando um candidato retorna ao link do teste após se desconectar:
+Quando um candidato retorna ao teste após se desconectar:
 
-- **Se a retomada está ativada**: O AutoProctor carrega a tentativa anterior com todas as respostas anteriores intactas. O candidato continua de onde parou.
-- **Se a retomada está desativada**: O AutoProctor cria uma nova tentativa em branco. Todas as respostas anteriores da tentativa interrompida são perdidas (embora a tentativa incompleta ainda apareça nos seus resultados).
+- **Se a retomada está ativada**: O AutoProctor reabre a tentativa anterior. Em questionários **Socratease**, as respostas anteriores são restauradas automaticamente. Em testes **IFrame**, do **Google Forms** e do **Microsoft Forms**, a preservação das respostas depende do salvamento ou salvamento automático da plataforma externa do questionário.
+- **Se a retomada está desativada**: O AutoProctor cria uma nova tentativa em branco. A tentativa incompleta ainda aparece nos seus resultados.
 
 ## Como os Temporizadores Interagem com a Retomada
 
 Se você tem [configurações de tempo](/timer-settings) definidas, elas afetam como a retomada funciona.
 
-### Duração do Teste
+| Configuração de tempo | Efeito sobre um candidato que volta |
+|---|---|
+| **Duration** | O relógio continua correndo enquanto o candidato está ausente |
+| **Cannot start before** / **Cannot start after** | Verificadas em relação ao horário de início original, não ao horário de retorno |
+| **Hard stop** | Verificado em relação ao horário de retorno |
+
+### Duration
 
 O tempo restante da tentativa original é transferido. Por exemplo, se um candidato inicia um teste de 60 minutos às 10:00 e se desconecta às 10:30, retomar às 10:50 dá a ele apenas 10 minutos restantes. Quando a duração total expira (11:00), o teste não pode mais ser retomado.
 
-### Cannot Start Before / Cannot Start After
+### Cannot start before / Cannot start after
 
 Essas restrições se aplicam ao horário de início original, não ao horário de reconexão. Um candidato que iniciou antes do prazo pode retomar depois dele, desde que a duração do teste não tenha expirado.
 
-### Must Submit By
+### Hard stop
 
-Esse prazo é aplicado rigorosamente no momento da reconexão. Se o prazo de **Must Submit By** já passou antes de o candidato tentar retomar, o teste não é carregado — mesmo que o candidato tenha iniciado originalmente antes do prazo.
+Esse limite é aplicado rigorosamente no momento da reconexão. Se o horário de **Hard stop** (encerramento definitivo) já passou antes de o candidato tentar retomar, o teste não é carregado, mesmo que o candidato tenha iniciado originalmente antes do limite.
 
 <Warning>
-O prazo **Must Submit By** sobrepõe todas as outras configurações de tempo no momento da retomada. Se esse prazo já passou, o candidato não pode retomar independentemente do tempo restante de teste.
+O **Hard stop** sobrepõe todas as outras configurações de tempo no momento da retomada. Se ele já passou, o candidato não pode retomar independentemente do tempo restante de teste.
 </Warning>
 
 ## Recursos Relacionados
 
-- [Retomar Testes do Google Forms](/resume-google-forms-exam) — Configuração detalhada de retomada no Google Forms
-- [Tentativas Máximas](/maximum-exam-attempts) — Como os limites de tentativas interagem com a retomada
-- [Testes Não Enviados](/view-unsubmitted-exams) — Veja detalhes de testes iniciados mas não enviados
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste, prazos e janelas de tempo
-- [Boas Práticas para Criadores de Testes](/best-practices-for-exam-creators) — Dicas para uma administração de testes tranquila
+- [Retomar Testes do Google Forms](/resume-google-forms-exam) - Configuração detalhada de retomada no Google Forms
+- [Tentativas Máximas](/maximum-exam-attempts) - Como os limites de tentativas interagem com a retomada
+- [Testes Não Enviados](/view-unsubmitted-exams) - Veja detalhes de testes iniciados mas não enviados
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste, prazos e janelas de tempo
+- [Boas Práticas para Criadores de Testes](/best-practices-for-exam-creators) - Dicas para uma administração de testes tranquila
