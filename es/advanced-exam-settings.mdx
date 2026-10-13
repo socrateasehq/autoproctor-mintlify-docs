@@ -11,10 +11,10 @@ En su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga cli
 
 | Sección | Qué se configura allí | Más información |
 |---|---|---|
-| **General** | Título del examen, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Intentos Máximos](/maximum-exam-attempts), [Reanudación de Intentos de Examen](/resume-exam-attempts), [Cerrar, Ocultar y Eliminar Exámenes](/archive-and-delete-exams) |
-| **Quiz behaviour** | Solo cuestionarios Socratease. Abre la configuración propia del cuestionario | [Configuración de Cuestionarios Socratease](/socratease-quiz-settings) |
-| **Timer** | Duración y ventana de inicio | [Configuración del Temporizador](/timer-settings) |
-| **Proctoring** | Qué se monitorea y a quién se informa | [Configuración de Supervisión](/proctoring-settings) |
+| **General** | Título del examen, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Intentos Máximos](/es/maximum-exam-attempts), [Reanudación de Intentos de Examen](/es/resume-exam-attempts), [Cerrar, Ocultar y Eliminar Exámenes](/es/archive-and-delete-exams) |
+| **Quiz behaviour** | Solo cuestionarios Socratease. Abre la configuración propia del cuestionario | [Configuración de Cuestionarios Socratease](/es/socratease-quiz-settings) |
+| **Timer** | Duración y ventana de inicio | [Configuración del Temporizador](/es/timer-settings) |
+| **Proctoring** | Qué se monitorea y a quién se informa | [Configuración de Supervisión](/es/proctoring-settings) |
 | **Access & login** | **Login providers**, **Login restrictions**, **Unique test URLs**, **iFrame height**, **iFrame width**, **Query string** | Esta página |
 | **Before the test** | **Collect candidate details**, **Show additional instructions** | Esta página |
 | **After the test** | Qué ven los candidatos al enviar, **Send results to a Google Sheet** | Esta página |
@@ -53,13 +53,13 @@ En **Login providers** (proveedores de inicio de sesión), elija qué métodos p
 | **Microsoft** | Siempre se usa en exámenes de Microsoft Forms. Opcional en exámenes de Socratease y con IFrame |
 | **Email** | Solo exámenes de Socratease y con IFrame |
 
-Consulte [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) para saber cómo funciona cada método.
+Consulte [Métodos de Inicio de Sesión del Candidato](/es/candidate-login-methods) para saber cómo funciona cada método.
 
 ### Restricciones de Inicio de Sesión
 
 **Login restrictions** (restricciones de inicio de sesión) limita el examen a direcciones de correo electrónico o dominios específicos, como `@universidad.edu`. Ingréselos en el campo, separados por comas. El campo admite hasta 30 entradas, así que para una lista más larga use [URLs únicas de examen](#urls-únicas-de-examen-elite).
 
-Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/restrict-access-by-email).
+Para instrucciones detalladas, consulte [Restringir por Correo Electrónico](/es/restrict-access-by-email).
 
 ### URLs Únicas de Examen (Elite)
 
@@ -68,7 +68,7 @@ Por defecto, todos los candidatos comparten un único enlace de examen, que podr
 Al activarlo se fuerza el inicio de sesión por correo electrónico. Una vez guardado el ajuste, aparece el enlace **Generate unique links** debajo del interruptor.
 
 <Note>
-Las URLs únicas de examen funcionan con Cuestionarios Socratease y Exámenes con IFrame. No active el interruptor en un examen de Google Forms o Microsoft Forms, porque esos exámenes necesitan el inicio de sesión de su propia plataforma. Consulte [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) para el proceso completo y [Funciones Elite](/elite-plan-features) para los detalles del plan.
+Las URLs únicas de examen funcionan con Cuestionarios Socratease y Exámenes con IFrame. No active el interruptor en un examen de Google Forms o Microsoft Forms, porque esos exámenes necesitan el inicio de sesión de su propia plataforma. Consulte [Invitar Candidatos por Correo Electrónico](/es/invite-candidates-via-email) para el proceso completo y [Funciones Elite](/es/elite-plan-features) para los detalles del plan.
 </Note>
 
 ### Altura y Ancho del IFrame
@@ -83,7 +83,7 @@ Las URLs únicas de examen funcionan con Cuestionarios Socratease y Exámenes co
 
 ### Query String
 
-El valor de **Query string** (cadena de consulta) se agrega a la URL del examen cuando este se carga, por ejemplo `a=b&c=d`. Consulte [Argumentos de Consulta del IFrame](/iframe-query-arguments) para saber cómo usarlo.
+El valor de **Query string** (cadena de consulta) se agrega a la URL del examen cuando este se carga, por ejemplo `a=b&c=d`. Consulte [Argumentos de Consulta del IFrame](/es/iframe-query-arguments) para saber cómo usarlo.
 
 ## Antes del Examen
 
@@ -104,7 +104,7 @@ Puede agregar hasta 10 campos por examen, y todos son obligatorios. Los datos re
 
 ### Show Additional Instructions (Elite)
 
-Las instrucciones son texto sin formato de hasta 200 palabras. Consulte la [Página de Instrucciones para Candidatos](/candidate-instructions-page) para saber qué ven los candidatos antes de comenzar.
+Las instrucciones son texto sin formato de hasta 200 palabras. Consulte la [Página de Instrucciones para Candidatos](/es/candidate-instructions-page) para saber qué ven los candidatos antes de comenzar.
 
 ## Después del Examen
 
@@ -130,7 +130,7 @@ Pegue el enlace de una hoja en **Send results to a Google Sheet** (enviar result
 Esto funciona solo con la supervisión activada. Mientras la supervisión esté desactivada, no se escribe nada en la hoja, y al guardar la configuración se elimina el enlace.
 </Warning>
 
-Para instrucciones de configuración, consulte [Integración con Google Sheets](/write-results-to-google-sheets).
+Para instrucciones de configuración, consulte [Integración con Google Sheets](/es/write-results-to-google-sheets).
 
 ## Colaboradores
 
@@ -140,13 +140,13 @@ Los colaboradores pueden editar la configuración del examen y ver sus resultado
   <img src="/images/advanced-exam-settings/collaborators-card.png" alt="La tarjeta de colaboradores en un examen con dos colaboradores" />
 </Frame>
 
-Para más detalles, consulte [Agregar Colaboradores](/add-collaborators).
+Para más detalles, consulte [Agregar Colaboradores](/es/add-collaborators).
 
 ## Recursos Relacionados
 
-- [Configuración del Temporizador](/timer-settings) - Configure la duración del examen y las ventanas de tiempo
-- [Configuración de Supervisión](/proctoring-settings) - Opciones de cámara, micrófono y cambio de pestaña
-- [Restringir por Correo Electrónico](/restrict-access-by-email) - Restrinja el acceso al examen por dirección de correo electrónico o dominio
-- [Invitar Candidatos por Correo Electrónico](/invite-candidates-via-email) - Envíe invitaciones al examen directamente
-- [Métodos de Inicio de Sesión del Candidato](/candidate-login-methods) - Cómo funciona cada método de inicio de sesión
-- [Integración con Google Sheets](/write-results-to-google-sheets) - Exporte automáticamente los resultados a hojas de cálculo
+- [Configuración del Temporizador](/es/timer-settings) - Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/es/proctoring-settings) - Opciones de cámara, micrófono y cambio de pestaña
+- [Restringir por Correo Electrónico](/es/restrict-access-by-email) - Restrinja el acceso al examen por dirección de correo electrónico o dominio
+- [Invitar Candidatos por Correo Electrónico](/es/invite-candidates-via-email) - Envíe invitaciones al examen directamente
+- [Métodos de Inicio de Sesión del Candidato](/es/candidate-login-methods) - Cómo funciona cada método de inicio de sesión
+- [Integración con Google Sheets](/es/write-results-to-google-sheets) - Exporte automáticamente los resultados a hojas de cálculo

@@ -11,10 +11,10 @@ Na sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique 
 
 | Seção | O que você configura ali | Saiba mais |
 |---|---|---|
-| **General** | Título do teste, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Tentativas Máximas](/maximum-exam-attempts), [Retomar Tentativas de Teste](/resume-exam-attempts), [Fechar, Ocultar e Excluir Testes](/archive-and-delete-exams) |
-| **Quiz behaviour** | Apenas questionários Socratease. Abre as configurações próprias do questionário | [Configurações de Questionários Socratease](/socratease-quiz-settings) |
-| **Timer** | Duração e janela de início | [Configurações de Tempo](/timer-settings) |
-| **Proctoring** | O que é monitorado e quem é informado | [Configurações de Supervisão](/proctoring-settings) |
+| **General** | Título do teste, **Max attempts per candidate**, **Auto-resume**, **Close test for submissions**, **Hide from my dashboard** | [Tentativas Máximas](/pt/maximum-exam-attempts), [Retomar Tentativas de Teste](/pt/resume-exam-attempts), [Fechar, Ocultar e Excluir Testes](/pt/archive-and-delete-exams) |
+| **Quiz behaviour** | Apenas questionários Socratease. Abre as configurações próprias do questionário | [Configurações de Questionários Socratease](/pt/socratease-quiz-settings) |
+| **Timer** | Duração e janela de início | [Configurações de Tempo](/pt/timer-settings) |
+| **Proctoring** | O que é monitorado e quem é informado | [Configurações de Supervisão](/pt/proctoring-settings) |
 | **Access & login** | **Login providers**, **Login restrictions**, **Unique test URLs**, **iFrame height**, **iFrame width**, **Query string** | Esta página |
 | **Before the test** | **Collect candidate details**, **Show additional instructions** | Esta página |
 | **After the test** | O que os candidatos veem ao enviar, **Send results to a Google Sheet** | Esta página |
@@ -53,13 +53,13 @@ Em **Login providers** (provedores de login), escolha quais métodos os candidat
 | **Microsoft** | Sempre usado em testes com Microsoft Forms. Opcional em testes Socratease e IFrame |
 | **Email** | Apenas testes Socratease e IFrame |
 
-Consulte [Métodos de Login do Candidato](/candidate-login-methods) para saber como cada método funciona.
+Consulte [Métodos de Login do Candidato](/pt/candidate-login-methods) para saber como cada método funciona.
 
 ### Restrições de Login
 
 **Login restrictions** (restrições de login) limita o teste a endereços de e-mail ou domínios específicos, como `@universidade.edu`. Insira-os no campo, separados por vírgulas. O campo aceita até 30 entradas, então para uma lista maior use [URLs únicas de teste](#urls-únicas-de-teste-elite).
 
-Para instruções detalhadas, consulte [Restringir por E-mail](/restrict-access-by-email).
+Para instruções detalhadas, consulte [Restringir por E-mail](/pt/restrict-access-by-email).
 
 ### URLs Únicas de Teste (Elite)
 
@@ -68,7 +68,7 @@ Por padrão, todos os candidatos compartilham um único link de teste, que pode 
 Ativar essa opção força o login por e-mail. Depois que a configuração é salva, o link **Generate unique links** aparece abaixo do interruptor.
 
 <Note>
-As URLs únicas de teste funcionam com Socratease Quizzes e Testes IFrame. Não ative o interruptor em um teste com Google Forms ou Microsoft Forms, porque esses testes precisam do login da própria plataforma. Consulte [Convidar Candidatos por E-mail](/invite-candidates-via-email) para o processo completo e [Recursos Elite](/elite-plan-features) para detalhes do plano.
+As URLs únicas de teste funcionam com Socratease Quizzes e Testes IFrame. Não ative o interruptor em um teste com Google Forms ou Microsoft Forms, porque esses testes precisam do login da própria plataforma. Consulte [Convidar Candidatos por E-mail](/pt/invite-candidates-via-email) para o processo completo e [Recursos Elite](/pt/elite-plan-features) para detalhes do plano.
 </Note>
 
 ### Altura e Largura do IFrame
@@ -83,7 +83,7 @@ As URLs únicas de teste funcionam com Socratease Quizzes e Testes IFrame. Não 
 
 ### Query String
 
-O valor de **Query string** (string de consulta) é adicionado à URL do teste quando ele é carregado, por exemplo `a=b&c=d`. Consulte [Argumentos de Consulta do IFrame](/iframe-query-arguments) para saber como usá-lo.
+O valor de **Query string** (string de consulta) é adicionado à URL do teste quando ele é carregado, por exemplo `a=b&c=d`. Consulte [Argumentos de Consulta do IFrame](/pt/iframe-query-arguments) para saber como usá-lo.
 
 ## Antes do Teste
 
@@ -104,7 +104,7 @@ Você pode adicionar até 10 campos por teste, e todos são obrigatórios. Os da
 
 ### Show Additional Instructions (Elite)
 
-As instruções são texto simples de até 200 palavras. Consulte a [Página de Instruções para Candidatos](/candidate-instructions-page) para saber o que os candidatos veem antes de iniciar.
+As instruções são texto simples de até 200 palavras. Consulte a [Página de Instruções para Candidatos](/pt/candidate-instructions-page) para saber o que os candidatos veem antes de iniciar.
 
 ## Depois do Teste
 
@@ -130,7 +130,7 @@ Cole o link de uma planilha em **Send results to a Google Sheet** (enviar result
 Isso funciona apenas com a supervisão ativada. Enquanto a supervisão estiver desativada, nada é escrito na planilha, e salvar as configurações remove o link.
 </Warning>
 
-Para instruções de configuração, consulte [Integração com Google Sheets](/write-results-to-google-sheets).
+Para instruções de configuração, consulte [Integração com Google Sheets](/pt/write-results-to-google-sheets).
 
 ## Colaboradores
 
@@ -140,13 +140,13 @@ Os colaboradores podem editar as configurações do teste e visualizar seus resu
   <img src="/images/advanced-exam-settings/collaborators-card.png" alt="O cartão de colaboradores em um teste com dois colaboradores" />
 </Frame>
 
-Para mais detalhes, consulte [Adicionar Colaboradores](/add-collaborators).
+Para mais detalhes, consulte [Adicionar Colaboradores](/pt/add-collaborators).
 
 ## Recursos Relacionados
 
-- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
-- [Configurações de Supervisão](/proctoring-settings) - Opções de câmera, microfone e detecção de troca de aba
-- [Restringir por E-mail](/restrict-access-by-email) - Restrinja o acesso ao teste por endereço de e-mail ou domínio
-- [Convidar Candidatos por E-mail](/invite-candidates-via-email) - Envie convites de teste diretamente
-- [Métodos de Login do Candidato](/candidate-login-methods) - Como cada método de login funciona
-- [Integração com Google Sheets](/write-results-to-google-sheets) - Exportação automática de resultados para planilhas
+- [Configurações de Tempo](/pt/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/pt/proctoring-settings) - Opções de câmera, microfone e detecção de troca de aba
+- [Restringir por E-mail](/pt/restrict-access-by-email) - Restrinja o acesso ao teste por endereço de e-mail ou domínio
+- [Convidar Candidatos por E-mail](/pt/invite-candidates-via-email) - Envie convites de teste diretamente
+- [Métodos de Login do Candidato](/pt/candidate-login-methods) - Como cada método de login funciona
+- [Integração com Google Sheets](/pt/write-results-to-google-sheets) - Exportação automática de resultados para planilhas
