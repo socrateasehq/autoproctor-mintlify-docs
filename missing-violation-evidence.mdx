@@ -3,7 +3,7 @@ title: "Missing Violation Evidence in Report"
 description: "Learn why some violations in a proctoring report may not have associated evidence files, and understand how this affects Trust Score calculations."
 ---
 
-Each test attempt has a maximum number of evidence files it can store. If some violations in a proctoring report are missing their evidence, the total number of violations exceeded this storage limit.
+If some violations in a proctoring report have no evidence, the attempt most often reached its evidence limit. The other causes are below.
 
 ## Understanding Violations vs. Evidence
 
@@ -20,9 +20,9 @@ The Trust Score is calculated based on the type, frequency, and duration of viol
 
 ## Three Reasons for Missing Evidence
 
-### 1. Storage Limit Reached (Most Common)
+### 1. Evidence Limit Reached (Most Common)
 
-When a test starts, AutoProctor allocates a fixed number of storage URLs for evidence files. Once this capacity is reached, the system randomly decides whether to overwrite existing evidence or skip storing new evidence (50% probability each).
+Each attempt can save only a set number of evidence files for each type of event. A long or eventful test can use them all up. See [Evidence Limits](#evidence-limits) for the numbers.
 
 <Note>
 The Trust Score depends on violations, not on whether evidence is stored. **All violations are tracked and affect the Trust Score** even when evidence files are not available for viewing.
@@ -37,6 +37,29 @@ The candidate's device or internet connection may have prevented the screenshot 
 The test administrator may have disabled evidence storage through the test's proctoring configuration. Check your [proctoring settings](/proctoring-settings) to confirm that evidence recording is enabled.
 
 {/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
+
+## Evidence Limits
+
+<Warning>
+**What happens at the limit:** once the files for an event type are used up, AutoProctor still records each new violation. For its evidence, it randomly either replaces an earlier file or skips the new one. This keeps a mix of evidence from early and late in the test.
+</Warning>
+
+Tests on the AutoProctor website use the first column. The second applies only if your developers embed AutoProctor with SDK v5.
+
+| Event | AutoProctor website and SDK v4 | SDK v5 |
+|---|---|---|
+| **No face** | Common pool of 50 | 100, in a pool shared with multiple faces |
+| **Multiple faces** | Common pool of 50 | 100, in a pool shared with no face |
+| **Noise** | Common pool of 50 | 100 |
+| **Phone or object** | Common pool of 50 | No limit |
+| **Multiple monitors** | Common pool of 50 | Logged only, no file |
+| **Tab switch** | 25 | 125 |
+| **Random photos** | 10 by default, up to 300 | 50 by default, up to 300 |
+| **Fullscreen exit** | Logged only, no file | Logged only, no file |
+
+The **common pool** is one set of 50 files for no face, multiple faces, noise, phone and multiple monitors together. Every file one of them uses leaves fewer for the others.
+
+Monitoring stops after 6 hours on the AutoProctor website and SDK v4, and after 5 hours on SDK v5. Nothing is captured after that.
 
 ## Related Resources
 

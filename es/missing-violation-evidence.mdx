@@ -3,7 +3,7 @@ title: "Evidencia de Infracciones Faltante en el Informe"
 description: "Conozca por qué algunas infracciones en el informe de supervisión pueden no tener archivos de evidencia asociados y cómo esto afecta los cálculos del Trust Score."
 ---
 
-Cada intento de examen tiene un número máximo de archivos de evidencia que puede almacenar. Si algunas infracciones en un informe de supervisión no tienen su evidencia, el número total de infracciones excedió este límite de almacenamiento.
+Si algunas infracciones de un informe de supervisión no tienen evidencia, lo más común es que el intento haya alcanzado su límite de evidencia. Las demás causas aparecen a continuación.
 
 ## Comprensión de Infracciones vs. Evidencia
 
@@ -20,9 +20,9 @@ El Trust Score se calcula en función del tipo, la frecuencia y la duración de 
 
 ## Tres Razones para la Evidencia Faltante
 
-### 1. Límite de Almacenamiento Alcanzado (Más Común)
+### 1. Límite de Evidencia Alcanzado (Más Común)
 
-Cuando un examen comienza, AutoProctor asigna un número fijo de URL de almacenamiento para los archivos de evidencia. Una vez que se alcanza esta capacidad, el sistema decide aleatoriamente si sobreescribir la evidencia existente u omitir el almacenamiento de nueva evidencia (50% de probabilidad cada una).
+Cada intento solo puede guardar un número fijo de archivos de evidencia por cada tipo de evento. Un examen largo o con muchas infracciones puede agotarlos. Consulte [Límites de Evidencia](#límites-de-evidencia) para ver las cifras.
 
 <Note>
 El Trust Score depende de las infracciones, no de si la evidencia fue almacenada. **Todas las infracciones se registran y afectan el Trust Score** incluso cuando los archivos de evidencia no están disponibles para su visualización.
@@ -37,6 +37,29 @@ El dispositivo o la conexión a internet del candidato pueden haber impedido que
 El administrador del examen puede haber desactivado el almacenamiento de evidencia a través de la configuración de supervisión del examen. Verifique su [configuración de supervisión](/es/proctoring-settings) para confirmar que la grabación de evidencia está activada.
 
 {/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
+
+## Límites de Evidencia
+
+<Warning>
+**Qué ocurre al llegar al límite:** cuando se agotan los archivos de un tipo de evento, AutoProctor sigue registrando cada nueva infracción. Para su evidencia, decide al azar si reemplaza un archivo anterior o si omite el nuevo. Así se conserva una mezcla de evidencia del inicio y del final del examen.
+</Warning>
+
+Los exámenes en el sitio web de AutoProctor usan la primera columna. La segunda solo aplica si sus desarrolladores integran AutoProctor con el SDK v5.
+
+| Evento | Sitio web de AutoProctor y SDK v4 | SDK v5 |
+|---|---|---|
+| **Sin rostro** | Grupo común de 50 | 100, en un grupo compartido con varios rostros |
+| **Varios rostros** | Grupo común de 50 | 100, en un grupo compartido con sin rostro |
+| **Ruido** | Grupo común de 50 | 100 |
+| **Teléfono u objeto** | Grupo común de 50 | Sin límite |
+| **Varios monitores** | Grupo común de 50 | Solo se registra, sin archivo |
+| **Cambio de pestaña** | 25 | 125 |
+| **Fotos aleatorias** | 10 por defecto, hasta 300 | 50 por defecto, hasta 300 |
+| **Salida de pantalla completa** | Solo se registra, sin archivo | Solo se registra, sin archivo |
+
+El **grupo común** es un único conjunto de 50 archivos para sin rostro, varios rostros, ruido, teléfono y varios monitores juntos. Cada archivo que usa uno de ellos deja menos para los demás.
+
+La supervisión termina tras 6 horas en el sitio web de AutoProctor y el SDK v4, y tras 5 horas en el SDK v5. Después de eso no se captura nada.
 
 ## Recursos Relacionados
 

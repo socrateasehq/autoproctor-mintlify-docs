@@ -3,7 +3,7 @@ title: "Evidência de Violações Ausente no Relatório"
 description: "Saiba por que algumas violações no relatório de supervisão podem não ter arquivos de evidência associados e como isso afeta os cálculos do Trust Score."
 ---
 
-Cada tentativa de teste tem um número máximo de arquivos de evidência que pode armazenar. Se algumas violações em um relatório de supervisão não possuem evidência, o número total de violações excedeu esse limite de armazenamento.
+Se algumas violações de um relatório de supervisão não têm evidência, o mais comum é que a tentativa tenha atingido seu limite de evidências. As outras causas estão abaixo.
 
 ## Entendendo Violações vs. Evidência
 
@@ -20,9 +20,9 @@ O Trust Score é calculado com base no tipo, na frequência e na duração das v
 
 ## Três Razões para Evidência Ausente
 
-### 1. Limite de Armazenamento Atingido (Mais Comum)
+### 1. Limite de Evidências Atingido (Mais Comum)
 
-Quando um teste começa, o AutoProctor atribui um número fixo de URLs de armazenamento para arquivos de evidência. Uma vez atingida essa capacidade, o sistema decide aleatoriamente se deve substituir a evidência existente ou pular o armazenamento de nova evidência (50% de probabilidade cada).
+Cada tentativa só pode salvar um número fixo de arquivos de evidência para cada tipo de evento. Um teste longo ou com muitas violações pode esgotá-los. Consulte [Limites de Evidências](#limites-de-evidências) para ver os números.
 
 <Note>
 O Trust Score depende das violações, não de se a evidência foi armazenada. **Todas as violações são rastreadas e afetam o Trust Score** mesmo quando os arquivos de evidência não estão disponíveis para visualização.
@@ -37,6 +37,29 @@ O dispositivo ou a conexão de internet do candidato podem ter impedido que a ca
 O administrador do teste pode ter desativado o armazenamento de evidência através da configuração de supervisão do teste. Verifique suas [configurações de supervisão](/pt/proctoring-settings) para confirmar que a gravação de evidência está ativada.
 
 {/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
+
+## Limites de Evidências
+
+<Warning>
+**O que acontece no limite:** quando os arquivos de um tipo de evento se esgotam, o AutoProctor continua registrando cada nova violação. Para a evidência, ele decide aleatoriamente se substitui um arquivo anterior ou se descarta o novo. Assim, você mantém uma mistura de evidências do início e do fim do teste.
+</Warning>
+
+Os testes no site do AutoProctor usam a primeira coluna. A segunda só se aplica se seus desenvolvedores integrarem o AutoProctor com o SDK v5.
+
+| Evento | Site do AutoProctor e SDK v4 | SDK v5 |
+|---|---|---|
+| **Nenhum rosto** | Grupo comum de 50 | 100, em um grupo compartilhado com vários rostos |
+| **Vários rostos** | Grupo comum de 50 | 100, em um grupo compartilhado com nenhum rosto |
+| **Ruído** | Grupo comum de 50 | 100 |
+| **Celular ou objeto** | Grupo comum de 50 | Sem limite |
+| **Vários monitores** | Grupo comum de 50 | Apenas registrado, sem arquivo |
+| **Troca de aba** | 25 | 125 |
+| **Fotos aleatórias** | 10 por padrão, até 300 | 50 por padrão, até 300 |
+| **Saída da tela cheia** | Apenas registrado, sem arquivo | Apenas registrado, sem arquivo |
+
+O **grupo comum** é um único conjunto de 50 arquivos para nenhum rosto, vários rostos, ruído, celular e vários monitores juntos. Cada arquivo que um deles usa deixa menos para os outros.
+
+A supervisão para após 6 horas no site do AutoProctor e no SDK v4, e após 5 horas no SDK v5. Depois disso, nada é capturado.
 
 ## Recursos Relacionados
 
