@@ -33,7 +33,10 @@
       "Bash(dig:*)",
       "Bash(npx mintlify:*)",
       "Bash(echo WARNING: $dir still exists:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(pkill -f \"mintlify\")",
+      "Bash(rsvg-convert *)",
+      "Bash(xargs kill -9)"
     ]
   }
 }
