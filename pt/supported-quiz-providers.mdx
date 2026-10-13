@@ -3,34 +3,27 @@ title: "Provedores de Questionários"
 description: "Conheça as plataformas de questionários que você pode utilizar com o AutoProctor para testes online supervisionados."
 ---
 
-O AutoProctor é uma plataforma de supervisão com inteligência artificial que monitora os candidatos durante as avaliações online. Você fornece o seu próprio questionário, e o AutoProctor cuida da supervisão.
-
-Existem dois caminhos:
-
-1. **Use a ferramenta de questionários própria do AutoProctor ([Socratease](/why-socratease))** — você cria e configura as perguntas, a pontuação e a correção diretamente dentro do AutoProctor.
-2. **Use um provedor de questionários externo** (Google Forms, Microsoft Forms, TypeForm, etc.) — suas perguntas, pontuação e configurações permanecem nessa plataforma. O AutoProctor apenas adiciona a supervisão.
+<Tip>
+O AutoProctor adiciona a supervisão ao seu questionário, e você escolhe a plataforma de questionários. Use o **Socratease** para criar questionários dentro do AutoProctor, ou traga o seu do Google Forms, do Microsoft Forms ou de qualquer outra plataforma.
+</Tip>
 
 ## Escolhendo um Provedor de Questionários
 
-<Frame caption="Como criar um teste com diferentes provedores de questionários no AutoProctor. Você só pode selecionar um provedor por teste">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/creating-tests/all-test-types.mp4"
-  ></video>
-</Frame>
+Você escolhe o provedor ao criar um teste. Cada teste tem exatamente um provedor.
 
 <Steps>
-  <Step title="Crie um Novo Teste">
-    Acesse seu [**Dashboard**](https://www.autoproctor.co/test-admin/home/) e clique em **Create Test**.
+  <Step title="Abra a Página Create Test">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Create Test** (criar teste).
   </Step>
-  <Step title="Selecione um Provedor de Questionários">
-    Escolha um dos provedores disponíveis: **Socratease Quizzes**, **Google Forms**, **Microsoft Forms** ou **IFrame/Other**.
+  <Step title="Selecione um Provedor e Conecte Seu Questionário">
+    Clique em um dos quatro provedores. Para **Socratease Quizzes**, clique em **Continue** e crie seu questionário. Para os outros três, cole o link do seu questionário, insira um **Test Title** (título do teste) e clique em **Create Test**.
   </Step>
   <Step title="Configure a Supervisão">
-    Configure as definições de [tempo](/timer-settings) e [supervisão](/proctoring-settings). Se você escolheu o Socratease, também configura as perguntas e a correção dentro do AutoProctor. Para provedores externos, o conteúdo do questionário permanece nessa plataforma.
+    O AutoProctor abre a página de configurações do teste. Configure ali as definições de [tempo](/timer-settings) e [supervisão](/proctoring-settings).
   </Step>
 </Steps>
+
+{/* screenshot: Create Test page, cropped to the four provider cards, all collapsed: "Socratease Quizzes" with its "Recommended" badge, "Google Forms", "Microsoft Forms" and "Other Quizzing Platforms" */}
 
 ## Provedores de Questionários Disponíveis
 
@@ -39,38 +32,70 @@ Existem dois caminhos:
 | **Socratease Quizzes** | Avaliações com recursos completos | Integração nativa com proteção de envio automático |
 | **Google Forms** | Usuários existentes de Google Forms | Complemento dedicado para criação automática de testes |
 | **Microsoft Forms** | Organizações do ecossistema Microsoft | Integração perfeita para avaliações corporativas |
-| **IFrame/Other** | TypeForm, ProProfs, ClassMarker, etc. | Adiciona supervisão a qualquer plataforma de questionários baseada na web |
+| **Other Quizzing Platforms** | TypeForm, ProProfs, ClassMarker, etc. | Adiciona supervisão a qualquer plataforma de questionários baseada na web |
 
-### Questionários do Socratease
+Os testes criados com **Other Quizzing Platforms** são chamados de **testes IFrame** nesta Central de Ajuda, porque o AutoProctor carrega o questionário dentro de um iframe.
 
-O Socratease é a ferramenta nativa de questionários do AutoProctor. Ele oferece a integração mais completa e a melhor experiência para o candidato:
+### O Que Cada Provedor Pede
 
-- **Botão de envio único** evita a perda de respostas por sequenciamento incorreto
-- **Proteção de envio automático** salva as respostas antes de o teste ser encerrado
-- **Múltiplos tipos de perguntas** incluindo múltipla escolha, dissertações, respostas por voz, programação e mais
-- **Importação em massa por Excel** e bancos de questões para montagem rápida de questionários
+| Provedor | O que você insere | Onde obter o link |
+|---|---|---|
+| **Socratease Quizzes** | Nada. Clique em **Continue** | Não é necessário. Você cria o questionário dentro do AutoProctor |
+| **Google Forms** | **Google Form URL**, **Test Title** | Clique no botão **Send** (Enviar) do seu Google Form e copie o link. Não o encurte |
+| **Microsoft Forms** | **Microsoft Form URL**, **Test Title** | Clique no botão **Link** do seu Microsoft Form e depois em **Copy** (Copiar). Não o encurte |
+| **Other Quizzing Platforms** | **Quiz URL**, **Test Title** | O link que você compartilharia com os candidatos se não usasse o AutoProctor. Ele deve começar com `https://` |
+
+<Warning>
+Um link de questionário só pode pertencer a um teste. Se já existir um teste para o link que você cola, criado por você ou por outra pessoa, o AutoProctor não cria um segundo. Verifique a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) ou consulte as pessoas que têm acesso a esse questionário.
+</Warning>
+
+### Socratease Quizzes
+
+O Socratease é a **ferramenta nativa de questionários** do AutoProctor, com a integração mais completa e a melhor experiência para o candidato:
+
+- **Botão de envio único**: evita a perda de respostas por sequenciamento incorreto
+- **Proteção de envio automático**: salva as respostas antes de o teste ser encerrado
+- **Múltiplos tipos de perguntas**: múltipla escolha, dissertações, respostas por voz, programação e mais
+- **Importação em massa por Excel** e **bancos de questões** para montagem rápida de questionários
+
+Consulte [Como Criar um Questionário Socratease](/create-socratease-quiz).
 
 ### Google Forms
 
-O Google Forms é a plataforma de questionários mais utilizada. O AutoProctor oferece um [**complemento dedicado para Google Forms**](https://workspace.google.com/marketplace/app/timer_+_proctor_google_forms_autoproctor/691377974459) que cria um teste supervisionado diretamente de dentro do seu Google Form.
+Você pode criar o teste de duas maneiras:
+
+| Maneira | Como |
+|---|---|
+| Pelo AutoProctor | Cole a **Google Form URL** no cartão **Google Forms**. O link deve ter a forma `https://docs.google.com/forms/d/e/.../viewform` |
+| Pelo seu Google Form | Use o [**complemento para Google Forms**](https://workspace.google.com/marketplace/app/timer_+_proctor_google_forms_autoproctor/691377974459), que cria um teste supervisionado diretamente de dentro do formulário |
+
+{/* screenshot: Create Test page with the "Google Forms" card open, showing the "Google Form URL" field filled with a docs.google.com/forms link, the hint "Click on the Send button on your Google Form and don't shorten the URL", the "Test Title" field filled in, and the "Create Test" and "Cancel" buttons */}
+
+<Note>
+Com provedores externos como o Google Forms, suas perguntas, pontuação e correção permanecem nessa plataforma. O AutoProctor apenas adiciona a camada de supervisão.
+</Note>
 
 ### Microsoft Forms
 
-O Microsoft Forms é a segunda plataforma mais utilizada, especialmente dentro de organizações que dependem do ecossistema Microsoft para avaliações internas e processos de contratação.
+A **Microsoft Form URL** deve ser um link em `forms.office.com`, `forms.microsoft.com` ou `forms.cloud.microsoft`. Use o link destinado a quem responde. Um link para editar o formulário ou colaborar nele não é aceito.
 
-### IFrame/Outros Provedores
+### Other Quizzing Platforms (Testes IFrame)
 
-Existem centenas de plataformas de questionários, incluindo TypeForm, ProProfs e ClassMarker. Embora essas plataformas não possuam supervisão remota integrada, você pode adicionar a supervisão do AutoProctor a qualquer uma delas selecionando a opção **IFrame/Other**. O AutoProctor incorpora seu questionário dentro de uma janela de navegador supervisionada.
+Selecione **Other Quizzing Platforms** para adicionar supervisão a qualquer questionário baseado na web, como TypeForm, ProProfs ou ClassMarker.
+
+Assim que você insere uma **Quiz URL** válida, a caixa **Iframe Preview** (pré-visualização do iframe) abaixo dela carrega seu questionário. Se em vez disso uma página de erro for carregada, o AutoProctor não consegue incorporar esse questionário. A pré-visualização é pequena, mas o teste real usa toda a altura e a largura.
+
+{/* screenshot: Create Test page with the "Other Quizzing Platforms" card open, showing the "Quiz URL" field filled with an https link, the "Test Title" field, and the "Iframe Preview" box with the quiz loaded inside it */}
 
 <Note>
-Ao usar provedores IFrame/Other, você pode personalizar a URL incorporada usando [argumentos de consulta](/iframe-query-arguments).
+Para testes de Google Forms, Microsoft Forms e IFrame, você pode adicionar parâmetros ao link do questionário usando [argumentos de consulta](/iframe-query-arguments).
 </Note>
 
 ## Recursos Relacionados
 
-- [Por Que Socratease?](/why-socratease) — Benefícios de usar a ferramenta nativa de questionários do AutoProctor
-- [Como Criar um Questionário do Socratease](/create-socratease-quiz) — Guia de criação passo a passo
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
-- [Configurações de Supervisão](/proctoring-settings) — Opções de câmera, microfone e troca de aba
-- [Argumentos de Consulta do IFrame](/iframe-query-arguments) — Personalize as URLs de questionários incorporados
-- [Configurações Avançadas](/advanced-exam-settings) — Provedores de login, colaboradores e mais
+- [Por Que Socratease?](/why-socratease) - Benefícios de usar a ferramenta nativa de questionários do AutoProctor
+- [Como Criar um Questionário do Socratease](/create-socratease-quiz) - Guia de criação passo a passo
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Configurações de Supervisão](/proctoring-settings) - Opções de câmera, microfone e troca de aba
+- [Argumentos de Consulta do IFrame](/iframe-query-arguments) - Personalize as URLs de questionários incorporados
+- [Configurações Avançadas](/advanced-exam-settings) - Provedores de login, colaboradores e mais

@@ -3,55 +3,48 @@ title: "O AutoProctor Grava Vídeo?"
 description: "Saiba como o AutoProctor monitora candidatos em tempo real sem gravar sessões completas de vídeo, e por que essa abordagem é mais eficaz."
 ---
 
-**Por padrão, o AutoProctor não grava vídeo.** Em vez disso, ele monitora continuamente a câmera do candidato em tempo real diretamente no dispositivo e captura evidências (fotos, capturas de tela e clipes de áudio) apenas quando detecta uma infração. Isso fornece a você as evidências necessárias sem exigir que assista horas de gravação.
+**Por padrão, o AutoProctor não grava vídeo.** Ele monitora a câmera do candidato no próprio dispositivo e captura evidências, como fotos, capturas de tela e clipes de áudio, apenas quando detecta uma infração.
 
-Você pode habilitar a gravação completa de vídeo por um custo adicional — veja [E Se Eu Ainda Quiser Gravar Vídeo?](#e-se-eu-ainda-quiser-gravar-vídeo) abaixo.
-
-{/* TODO: Add diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach */}
+Se você precisa de vídeo completo, ative **Candidate recording** (gravação do candidato), uma configuração de [supervisão avançada](/enhanced-proctoring) que grava continuamente a câmera do candidato. Veja [E Se Eu Ainda Quiser Gravar Vídeo?](#e-se-eu-ainda-quiser-gravar-vídeo) abaixo.
 
 ## Como Funciona o Monitoramento por IA do AutoProctor
 
-As plataformas de supervisão tradicionais gravam um vídeo da câmera do candidato, fazem upload para seus servidores e depois processam em busca de infrações. Na maioria dos casos, espera-se que você assista o vídeo pessoalmente para verificar os incidentes sinalizados.
+As plataformas de supervisão tradicionais fazem upload de um vídeo do candidato para seus servidores, e muitas vezes espera-se que você o assista para verificar os incidentes sinalizados.
 
-O AutoProctor adota uma abordagem fundamentalmente diferente. Seu software de IA monitora o feed de vídeo **diretamente no dispositivo do candidato** e sinaliza infrações à medida que acontecem. Nenhum vídeo é carregado ou armazenado em qualquer servidor.
+A IA do AutoProctor monitora o feed de vídeo **diretamente no dispositivo do candidato** e sinaliza infrações à medida que acontecem. Com as configurações padrão, nenhum vídeo é carregado ou armazenado em qualquer servidor.
 
 Pense nisso como um detector de fumaça: ele funciona continuamente em segundo plano, monitorando o tempo todo, e só alerta você quando algo é detectado.
-
-{/* TODO: Add illustration of the smoke detector analogy -- on-device monitoring with alert-only output */}
 
 ## Principais Vantagens
 
 | Vantagem | Como Funciona |
 |---|---|
 | **Sem necessidade de revisão de vídeo** | As infrações são sinalizadas automaticamente com evidências de apoio (fotos e capturas de tela), então você não precisa assistir horas de gravação |
-| **Funciona offline** | Como o monitoramento acontece no dispositivo, as infrações são detectadas mesmo se o candidato se desconectar temporariamente da internet |
+| **Funciona offline** | As infrações são detectadas mesmo se o candidato se desconectar, e as evidências são sincronizadas quando ele se reconecta |
 | **Previne fraude com internet desligada** | Com outras plataformas, os candidatos podem desligar a internet para evitar serem gravados. Com o AutoProctor, o monitoramento continua no dispositivo independentemente da conectividade |
-| **Menor carga administrativa** | Você revisa apenas os incidentes sinalizados em vez de gravações completas |
 | **Menores requisitos de largura de banda** | Nenhum arquivo grande de vídeo é carregado durante o teste, reduzindo a pressão sobre a rede para candidatos com conexões lentas |
-
-<Note>
-Como o monitoramento acontece no dispositivo do candidato, o AutoProctor captura evidências de infrações mesmo quando o candidato fica offline. Quando o candidato se reconecta, as evidências são sincronizadas com o servidor. Essa é uma vantagem significativa em relação às plataformas que dependem do upload contínuo de vídeo.
-</Note>
 
 ## Que Evidências Você Recebe em Vez de Vídeo?
 
-Quando o AutoProctor detecta uma infração, ele captura um ou mais dos seguintes itens:
+O AutoProctor captura as evidências abaixo. A última coluna é o interruptor que ativa cada uma, na seção **Proctoring** das configurações (**Settings**) de um teste.
 
-- **Fotos** — Instantâneos da câmera (por exemplo, quando nenhum rosto ou múltiplos rostos são detectados)
-- **Capturas de tela** — Capturas da tela do candidato (por exemplo, quando ele troca de aba ou aplicativo)
-- **Clipes de áudio** — Gravações de ruído de fundo quando o microfone detecta áudio suspeito
-- **Fotos aleatórias** — Instantâneos periódicos tirados em intervalos aleatórios durante o exame
-- **Gravação de sessão** — Registros de cliques do mouse e atividade do teclado
+| Evidência | O que captura | Configuração |
+|---|---|---|
+| **Fotos** | Instantâneos da câmera, por exemplo quando nenhum rosto ou múltiplos rostos são detectados | **Camera** |
+| **Capturas de tela** | Capturas da tela do candidato, por exemplo quando ele troca de aba ou aplicativo | **Tab switching** |
+| **Clipes de áudio** | Gravações de ruído de fundo quando o microfone detecta áudio suspeito | **Microphone** |
+| **Fotos aleatórias** | Instantâneos periódicos tirados em intervalos aleatórios durante o exame | **Photos at random** |
+| **Gravação de sessão** | Registros de cliques do mouse e atividade do teclado. Apenas questionários Socratease | **Session recording** |
 
-<Frame caption="Um relatório de supervisão mostrando diferentes tipos de evidência de infrações">
+<Frame>
   <img
     className="rounded-xl"
     src="/images/getting-started/sample-proctoring-report.png"
-    alt="Relatório de supervisão exibindo fotos, capturas de tela, clipes de áudio e registros de atividade como evidência de infrações"
+    alt="Um relatório de supervisão com fotos, capturas de tela e clipes de áudio"
   />
 </Frame>
 
-Todas essas evidências aparecem no [relatório de supervisão](/where-to-find-proctoring-results) do candidato, organizadas por data/hora e tipo de infração.
+Todas essas evidências aparecem no [relatório de supervisão](/where-to-find-proctoring-results) do candidato, organizadas por data/hora e tipo de infração. Uma gravação de sessão é reproduzida na aba **Session recording** do mesmo relatório.
 
 <Warning>
 As evidências podem ocasionalmente estar ausentes de um relatório se o dispositivo do candidato ficou sem armazenamento ou se o navegador restringiu o acesso à câmera ou ao microfone durante o teste. Consulte [Imagens e Gravações Ausentes](/missing-images-and-recordings) para etapas de solução de problemas.
@@ -59,14 +52,33 @@ As evidências podem ocasionalmente estar ausentes de um relatório se o disposi
 
 ## E Se Eu Ainda Quiser Gravar Vídeo?
 
-Para fins de conformidade ou auditoria, você pode habilitar a **gravação de vídeo** através das suas [Configurações de Supervisão](/proctoring-settings) por um custo adicional. Consulte a [página de preços](https://www.autoproctor.co/pricing) para mais detalhes.
+Para fins de conformidade ou auditoria, você pode ativar **Candidate recording**. Ele grava continuamente a câmera do candidato durante todo o teste e custa **15 créditos adicionais por tentativa**. Consulte a [página de preços](https://www.autoproctor.co/pricing) para mais detalhes.
 
-Quando a gravação de vídeo está habilitada, você recebe **um vídeo e áudio completo de toda a sessão do candidato** além das evidências padrão de infrações.
+<Steps>
+  <Step title="Abra a Seção Proctoring">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Proctoring**.
+  </Step>
+  <Step title="Ative Candidate Recording e Salve">
+    Com o interruptor **Proctoring** ativado, ative **Candidate recording** em **Enhanced proctoring** (supervisão avançada). Depois clique em **Save settings**.
+
+    {/* screenshot: "Enhanced proctoring" group of the Proctoring section on a Socratease test, cropped to the "Session recording" and "Candidate recording" rows with their "+4 credits / attempt" and "+15 credits / attempt" badges, "Candidate recording" On */}
+  </Step>
+</Steps>
+
+Você então recebe **um vídeo e áudio completo da sessão** junto com as evidências habituais. O AutoProctor tem duas opções de gravação, e cada uma grava algo diferente:
+
+| Opção | O que grava | Onde você assiste | Créditos adicionais por tentativa | Disponível em |
+|---|---|---|---|---|
+| **Candidate recording** | A câmera do candidato, continuamente | Aba **Candidate recording** do relatório | 15 | Todos os testes |
+| **Session recording** | A atividade na tela do candidato, incluindo cliques do mouse e uso do teclado | Aba **Session recording** do relatório | 4 | Apenas questionários Socratease |
+
+Consulte [Supervisão Avançada](/enhanced-proctoring) para ver as duas opções e seus custos em créditos.
 
 ## Recursos Relacionados
 
-- [O Que é Monitorado](/what-gets-tracked-during-proctoring) — Todas as capacidades de monitoramento disponíveis durante a supervisão
-- [Trust Score](/what-is-trust-score) — Como as evidências de infrações são resumidas em uma pontuação
-- [Resultados de Supervisão](/where-to-find-proctoring-results) — Como ver as evidências de infrações e os relatórios
-- [Imagens e Gravações Ausentes](/missing-images-and-recordings) — Por que algumas evidências podem não aparecer
-- [Significado de "Ficou Offline"](/what-does-went-offline-mean) — O que acontece quando um candidato fica offline durante um teste
+- [Supervisão Avançada](/enhanced-proctoring) - Candidate recording, Session recording e outras opções avançadas
+- [O Que é Monitorado](/what-gets-tracked-during-proctoring) - Todas as capacidades de monitoramento disponíveis durante a supervisão
+- [Trust Score](/what-is-trust-score) - Como as evidências de infrações são resumidas em uma pontuação
+- [Resultados de Supervisão](/where-to-find-proctoring-results) - Como ver as evidências de infrações e os relatórios
+- [Imagens e Gravações Ausentes](/missing-images-and-recordings) - Por que algumas evidências podem não aparecer
+- [Significado de "Ficou Offline"](/what-does-went-offline-mean) - O que acontece quando um candidato fica offline durante um teste

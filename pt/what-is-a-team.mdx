@@ -3,95 +3,122 @@ title: "O Que É um Time no AutoProctor?"
 description: "Aprenda a criar e gerenciar times no AutoProctor para compartilhar cobrança, agrupar créditos entre usuários e colaborar em testes com membros do time."
 ---
 
-O recurso de Times permite que vários usuários compartilhem uma única conta de cobrança e um grupo de créditos comum. Isso é ideal para organizações onde várias pessoas precisam criar e gerenciar testes supervisionados sem adquirir assinaturas separadas.
+O recurso de Times permite que vários usuários compartilhem uma única conta de cobrança e um grupo de créditos comum.
 
 <Note>
-O recurso de Times está disponível apenas nos planos **Premium** e **Elite**.
+O recurso de Times está disponível nos planos **Premium** e **Elite**, e durante o período de avaliação gratuita. No plano Standard, a página Team mostra no lugar um botão **Upgrade subscription** (fazer upgrade da assinatura).
 </Note>
 
 ## O Que É um Time?
 
-Um Time é um grupo de usuários do AutoProctor (cada um com seu próprio endereço de e-mail) vinculados à mesma conta de cobrança. Os principais benefícios são:
+Um Time é um grupo de usuários do AutoProctor vinculados à mesma conta de cobrança.
 
-- **Cobrança e créditos compartilhados** -- Em vez de cada usuário pagar separadamente, todos os membros do time utilizam um grupo de créditos comum. Qualquer membro do time pode adquirir créditos, e eles ficam disponíveis para todos.
-- **Economia de custos** -- Agrupar créditos na sua organização evita compras duplicadas e permite aproveitar descontos por volume.
-- **Colaboração em testes** -- Você pode adicionar membros do time como [colaboradores](/add-collaborators) nos seus testes. Colaboradores podem ver resultados, editar perguntas de Questionários Socratease e mais.
+| Benefício | O que significa |
+|---|---|
+| **Um grupo de créditos compartilhado** | Todos os membros usam o mesmo saldo de créditos, que os Administradores do Time recarregam na página **Billing** |
+| **Economia de custos** | Agrupar créditos evita compras duplicadas e permite aproveitar descontos por volume |
+| **Colaboração em testes** | Adicione membros do time como [colaboradores](/add-collaborators) nos seus testes |
+| **O uso em um só lugar** | A página Team mostra as tentativas de teste de cada membro, e os Administradores do Time veem os créditos usados por todo o time |
 
-**Exemplo:** Se você for uma escola, em vez de cada criador de testes adquirir sua própria assinatura, pode criar um time. Uma única compra cobre todos, e todos os criadores de testes compartilham o mesmo grupo de créditos.
+**Exemplo:** uma escola cria um time, assim todos os seus criadores de testes compartilham uma assinatura e um grupo de créditos.
 
-## Visualizando Membros do Time
+## Criando um Time
 
-Após criar um time, clique no link **Team** na barra lateral para ver a página de gerenciamento do time. Você verá:
+<Steps>
+  <Step title="Abra a página Team">
+    Clique em [**Team**](https://www.autoproctor.co/test-admin/team/) (time) na barra lateral esquerda.
+  </Step>
+  <Step title="Dê um nome ao seu time">
+    Digite um nome em **Team name** (nome do time) e clique em **Create team** (criar time).
+  </Step>
+</Steps>
 
-- O **nome do time**
-- O **link de convite** -- qualquer usuário do AutoProctor que acessar este link será adicionado ao time
-- Um botão para **sair do time**
-- Uma lista de **todos os membros do time**
-- Uma etiqueta **"Admin"** ao lado de cada administrador do time
+{/* screenshot: Team page before a team exists (Premium or trial account), cropped to the left column: the three benefits "One shared credit pool", "Work on tests together", "Usage and billing in one place", the note that starts "When you create a team", the "Team name" field with a name typed in, and the "Create team" button */}
 
-<Frame caption="Página de gerenciamento do time">
-  <img className="border rounded-xl" src="/images/pricing/team-management-page.png" alt="Página de gerenciamento do time mostrando lista de membros e link de convite" />
-</Frame>
+<Warning>
+Quando você cria um time, a sua assinatura atual e os créditos restantes passam a ser do time. Você se torna o **Administrador do Time**.
+</Warning>
+
+## Convidando Membros
+
+Os membros entram em um time pelo **link de convite**. Todos os membros do time podem ver e compartilhar o link.
+
+<Steps>
+  <Step title="Copie o link de convite">
+    Na página [**Team**](https://www.autoproctor.co/test-admin/team/), clique no link abaixo de **Join link** (link de convite) para copiá-lo. Envie-o para as pessoas que você quer no seu time.
+  </Step>
+  <Step title="O convidado abre o link">
+    O convidado abre o link com a sessão do AutoProctor iniciada e entra no time imediatamente.
+  </Step>
+</Steps>
+
+Um link de convite não funciona nestes casos:
+
+| Situação | O que fazer |
+|---|---|
+| O time não tem uma assinatura ativa | Peça à pessoa que compartilhou o link para verificar o plano do time |
+| Você já faz parte de outro time | Saia do seu time atual na página **Team** e abra o link novamente |
+| Você tem a sua própria assinatura ativa | Primeiro cancele-a na página **Billing**. Você pode continuar usando-a até que expire |
+
+<Warning>
+Enquanto você faz parte de um time, você usa o plano do time e os créditos compartilhados dele, não os seus. Se você sair do time depois, perde o acesso aos créditos e testes do time.
+</Warning>
+
+## A Página Team
+
+Depois que você faz parte de um time, a página [**Team**](https://www.autoproctor.co/test-admin/team/) mostra quatro blocos no topo:
+
+| Bloco | O que mostra |
+|---|---|
+| **Credits remaining** | O saldo compartilhado entre todos os membros |
+| **Plan** | O plano do time e o status dele. Os Administradores do Time também veem um link **Manage on Billing** |
+| **Members** | O número de pessoas no time, dividido em administradores e membros |
+| **Test attempts** | Todas as tentativas do time, com um link **view usage** para a página Usage |
+
+{/* screenshot: Team page of a team admin, top part: the four tiles "Credits remaining", "Plan", "Members", "Test attempts", and the card below them with "Team name" plus the "Update" button, "Join link", and the "Leave team" button */}
+
+A lista **Members** abaixo tem um cartão por membro, com uma etiqueta **Admin** para os Administradores do Time e um link **usage** para os testes dele.
+
+{/* screenshot: Team page of a team admin, "Members" list: the search box, the note "Only team admins can change roles", and three member cards: your own card with "(You)" and the "Admin" badge, another admin's card with "Remove as admin" and "Remove", and a regular member's card with "Make admin" and "Remove"; each card shows an attempts count with the "usage" link */}
 
 ## Função de Administrador do Time
 
-Um Administrador do Time possui privilégios superiores aos de um membro regular:
+Um **Administrador do Time** pode fazer mais do que um membro regular:
 
 | Capacidade | Administrador do Time | Membro Regular |
 |---|---|---|
-| Renomear o time | Sim | Não |
-| Promover membros a administrador | Sim | Não |
-| Rebaixar outros administradores | Sim | Não |
-| Remover membros do time | Sim | Não |
-| Acessar informações de cobrança | Sim | Não |
-| Ver uso de créditos de todo o time | Sim | Não |
+| Renomear o time (**Update** ao lado de **Team name**) | Sim | Não |
+| Promover um membro com **Make admin** | Sim | Não |
+| Rebaixar outro administrador com **Remove as admin** | Sim | Não |
+| Tirar um membro do time com **Remove** | Sim | Não |
+| Abrir a página **Billing** | Sim | Não |
+| Ver **Team Credit Usage** e os testes de qualquer membro | Sim | Não |
+| Ver o nome do time, o link de convite, os membros e os números de tentativas | Sim | Sim |
 | Usar créditos compartilhados para testes | Sim | Sim |
 
+Um time sempre tem pelo menos um administrador. O único administrador de um time não pode ser rebaixado nem removido.
+
 <Note>
-Membros regulares do time não podem acessar informações de cobrança nem gerenciar outros membros. Se você precisar de acesso à cobrança, peça a um Administrador do Time existente para promovê-lo.
+Membros regulares do time não veem **Billing** na barra lateral. Se você precisar de acesso à cobrança, peça a um Administrador do Time para promovê-lo.
 </Note>
 
-## Criando e Entrando em um Time
+## Removendo Membros e Saindo de um Time
 
-### Criando um Time
-
-<Frame caption="Como criar um time">
-  <video controls className="w-full rounded-xl" src="/videos/pricing/create-team.mp4"></video>
-</Frame>
-
-<Steps>
-  <Step title="Navegue até a seção Team">
-    Clique no link **Team** na barra lateral esquerda. Esta opção aparece apenas se você estiver em um plano Premium ou Elite.
-  </Step>
-  <Step title="Crie seu time">
-    Siga as instruções para configurar seu time. Após a criação, você receberá um link de convite único para compartilhar com outros.
-  </Step>
-</Steps>
-
-### Entrando em um Time
-
-<Steps>
-  <Step title="Obtenha o link de convite">
-    Peça a um Administrador do Time o link de convite do time.
-
-    <Frame caption="Link de convite na página de gerenciamento do time">
-      <img className="border rounded-xl" src="/images/pricing/join-team.png" alt="Link de convite na página de gerenciamento do time" />
-    </Frame>
-  </Step>
-  <Step title="Acesse o link">
-    Abra o link de convite no seu navegador. Você será adicionado ao time imediatamente e terá acesso ao grupo de créditos compartilhados.
-  </Step>
-</Steps>
+| Ação | Quem pode fazer | O que acontece |
+|---|---|---|
+| **Remove** no cartão de um membro | Administradores do Time | O membro perde o acesso aos créditos e testes compartilhados do time, e passa para a sua própria conta sem créditos |
+| **Leave team** | Qualquer membro | Você perde o acesso aos créditos e testes compartilhados do time. O time mantém o seu próprio saldo |
+| **Leave team** como último membro | O último membro | O time é excluído |
 
 <Warning>
-Quando você entra em um time, sua assinatura e créditos individuais são substituídos pela assinatura compartilhada do time. Se você sair do time depois, não terá mais acesso aos créditos do time.
+Se você for o único membro de um time com uma assinatura ativa, **Leave team** fica desabilitado. Altere o plano na página **Billing** antes de sair. Se o seu time tiver credenciais de desenvolvedor e você for o último membro, ao sair essas credenciais param de funcionar, e isso não pode ser desfeito.
 </Warning>
 
 ## Recursos Relacionados
 
-- [Pagamentos e Créditos Explicados](/payments-and-credits) -- Como funcionam os créditos e as assinaturas
-- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) -- Monitore o uso de créditos no seu time
-- [Editar Informações de Cobrança](/edit-billing-information) -- Atualize dados de pagamento e cobrança
-- [Faturas de Pagamentos](/invoices-and-receipts) -- Acesse faturas das compras do time
-- [Funcionalidades do Plano Elite](/elite-plan-features) -- Funcionalidades adicionais do plano Elite
-- [Fale Conosco](/contact-us) -- Obtenha ajuda com a configuração do time
+- [Pagamentos e Créditos Explicados](/payments-and-credits) - Como funcionam os créditos e as assinaturas
+- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) - Monitore o uso de créditos no seu time
+- [Editar Informações de Cobrança](/edit-billing-information) - Atualize dados de pagamento e cobrança
+- [Faturas de Pagamentos](/invoices-and-receipts) - Acesse faturas das compras do time
+- [Funcionalidades do Plano Elite](/elite-plan-features) - Funcionalidades adicionais do plano Elite
+- [Fale Conosco](/contact-us) - Obtenha ajuda com a configuração do time

@@ -3,15 +3,15 @@ title: "Página de Instrucciones para Candidatos"
 description: "Conozca cómo funciona la página de instrucciones previa al examen, qué ven los candidatos antes de comenzar un examen y cómo agregar instrucciones personalizadas."
 ---
 
-Cada examen de AutoProctor comienza con una página de instrucciones que explica cómo funciona la supervisión, qué funciones están activas y qué pueden esperar los candidatos. El contenido de la página se adapta automáticamente según la configuración de su examen, y los candidatos también pueden realizar un examen de demostración desde esta página para verificar la compatibilidad del dispositivo.
+Cada examen de AutoProctor comienza con una página de instrucciones que explica cómo funciona la supervisión y qué funciones están activas. Los candidatos también pueden realizar un examen de demostración desde esta página para verificar su dispositivo.
 
-<Frame caption="Página de instrucciones de AutoProctor mostrada a los candidatos">
+<Frame>
   <img className="border rounded-xl" src="/images/getting-started/instructions-page.png" alt="Página de instrucciones de AutoProctor mostrada a los candidatos antes de comenzar un examen" />
 </Frame>
 
 ## Cómo Funciona la Página de Instrucciones
 
-La página de instrucciones está **activa automáticamente en todos los exámenes**. Los candidatos la ven inmediatamente después de hacer clic en el enlace del examen. No puede desactivar esta página, porque garantiza que cada candidato comprenda las reglas del examen antes de comenzar.
+Los candidatos ven la página de instrucciones justo después de hacer clic en el enlace del examen. Está **activa en todos los exámenes** y no se puede desactivar.
 
 La configuración (**Settings**) de un examen llama a esta página **start page** (página de inicio). Usted controla lo que agrega a ella desde la sección **Before the test** (antes del examen).
 
@@ -25,61 +25,46 @@ La configuración (**Settings**) de un examen llama a esta página **start page*
 
 ## Agregar Instrucciones Personalizadas
 
-Puede incluir sus propias instrucciones (máximo 200 palabras) que aparecen en la página de instrucciones junto con el contenido predeterminado.
+Puede agregar sus propias instrucciones (máximo 200 palabras). Aparecen en la página de instrucciones junto con el contenido predeterminado.
 
 <Steps>
   <Step title="Abra la Sección Before the Test">
-    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Before the test** en la lista de secciones.
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Before the test**.
   </Step>
   <Step title="Active las Instrucciones Adicionales">
-    En **Additional instructions** (instrucciones adicionales), active **Show additional instructions** (mostrar instrucciones adicionales).
+    Active **Show additional instructions** (mostrar instrucciones adicionales).
   </Step>
   <Step title="Ingrese sus Instrucciones Personalizadas">
-    Escriba su texto en el cuadro **Instructions**. Un contador debajo del cuadro muestra cuántas de las 200 palabras ha usado.
-  </Step>
-  <Step title="Guarde">
-    Haga clic en **Save settings**.
+    Escriba su texto en el cuadro **Instructions** y haga clic en **Save settings**. El texto es texto sin formato y los saltos de línea se conservan.
   </Step>
 </Steps>
 
-{/* screenshot: Before the test section of Test Settings, cropped to the "Additional instructions" group, with "Show additional instructions" switched on and the "Instructions" box filled with two short lines of text, the "/ 200 words" counter visible */}
-
-<Frame caption="Show additional instructions activado, con dos líneas de instrucciones">
-  <img src="/images/candidate-instructions-page/additional-instructions.png" alt="Grupo Additional instructions con Show additional instructions activado y dos líneas de texto en el cuadro Instructions. El contador debajo del cuadro indica 19 of 200 words" />
+<Frame>
+  <img src="/images/candidate-instructions-page/additional-instructions.png" alt="Show additional instructions activado, con texto en el cuadro Instructions" />
 </Frame>
 
-Los candidatos ven su texto en una tarjeta titulada **Additional Instructions**, junto a las instrucciones estándar. El texto es texto sin formato y los saltos de línea se conservan. No se muestra dentro del cuestionario.
-
 <Note>
-Agregar instrucciones personalizadas requiere una suscripción al plan **Elite**. Consulte [Funciones Elite](/elite-plan-features) para detalles sobre lo que incluye el plan Elite.
+Agregar instrucciones personalizadas requiere una suscripción al plan **Elite**. Consulte [Funciones Elite](/elite-plan-features) para ver lo que incluye el plan.
 </Note>
 
 ## Recopilar Información Adicional de los Candidatos
 
-Use **Collect candidate details** (recopilar datos del candidato) para pedir a cada candidato información adicional, como un número de teléfono o un número de estudiante. Los campos aparecen en **Your Details** en la página de instrucciones, y los candidatos deben completarlos todos antes de comenzar el examen.
+Use **Collect candidate details** (recopilar datos del candidato) para pedir a cada candidato información adicional, como un número de teléfono o un número de estudiante. Los candidatos deben completar todos los campos antes de comenzar el examen.
 
 <Steps>
   <Step title="Abra la Sección Before the Test">
-    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Before the test** en la lista de secciones.
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Before the test**.
   </Step>
   <Step title="Active los Datos del Candidato">
-    En **Candidate details** (datos del candidato), active **Collect candidate details**.
+    Active **Collect candidate details**.
   </Step>
   <Step title="Agregue sus Campos">
-    Haga clic en una de las sugerencias (**Suggestions**) para agregarla, o haga clic en **Add field** (agregar campo), escriba el nombre del campo y presione Enter. Para eliminar un campo, haga clic en la **x** del campo.
-  </Step>
-  <Step title="Ordene los Campos (Opcional)">
-    Arrastre un campo para moverlo, o selecciónelo, mantenga presionada la tecla Alt y presione una tecla de flecha.
-  </Step>
-  <Step title="Guarde">
-    Haga clic en **Save settings**.
+    Haga clic en una sugerencia, o haga clic en **Add field** (agregar campo) y escriba el nombre del campo. Arrastre los campos para ordenarlos y luego haga clic en **Save settings**.
   </Step>
 </Steps>
 
-{/* screenshot: Before the test section of Test Settings, cropped to the "Candidate details" group, with "Collect candidate details" switched on, two field chips ("Phone Number" and "Student ID"), the "Add field" button and the "Suggestions:" row visible */}
-
-<Frame caption="Collect candidate details activado, con dos campos y las sugerencias debajo">
-  <img src="/images/candidate-instructions-page/candidate-details.png" alt="Grupo Candidate details con Collect candidate details activado, los campos Phone Number y Student ID, un botón Add field y una fila Suggestions que ofrece College Name, Graduation Year y Work Experience in years" />
+<Frame>
+  <img src="/images/candidate-instructions-page/candidate-details.png" alt="Collect candidate details activado, con dos campos y las sugerencias debajo" />
 </Frame>
 
 | Regla | Detalle |
@@ -87,7 +72,6 @@ Use **Collect candidate details** (recopilar datos del candidato) para pedir a c
 | Campos por examen | Hasta 10 |
 | Longitud del nombre de un campo | Hasta 250 caracteres y 50 palabras |
 | Obligatorio u opcional | Todos los campos son obligatorios |
-| Campos sugeridos | **Phone Number**, **Student ID**, **College Name**, **Graduation Year**, **Work Experience (in years)** |
 | Orden de los campos | El orden que ven los candidatos y el orden de las columnas en la exportación CSV |
 
 Las respuestas aparecen en los resultados del examen y en la exportación.
@@ -100,7 +84,7 @@ Las respuestas aparecen en los resultados del examen y en la exportación.
 
 <AccordionGroup>
   <Accordion title="¿Puedo previsualizar la página de instrucciones antes de compartir el enlace del examen?">
-    Sí. En la parte superior de la página **Settings** del examen, haga clic en **Preview** (vista previa) junto a **Copy link**. La página se abre en una pestaña nueva, exactamente como la verán los candidatos. También puede abrir el enlace de su propio examen. Ver la página de instrucciones no consume un crédito.
+    Sí. En la parte superior de la página **Settings** del examen, haga clic en **Preview** (vista previa) junto a **Copy link**. La página se abre en una pestaña nueva, exactamente como la verán los candidatos.
   </Accordion>
 
   <Accordion title="¿Ver la página de instrucciones consume un crédito?">

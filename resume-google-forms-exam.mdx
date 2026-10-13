@@ -3,87 +3,67 @@ title: "Resuming Google Forms Tests"
 description: "Configure whether candidates can resume Google Forms tests after closing them mid-attempt by managing autosave and auto-resume settings."
 ---
 
-Google Forms tests require two settings to work together for correct resume behavior: the **autosave** setting in Google Forms and the **auto-resume** setting in AutoProctor. Mismatching these settings causes unexpected behavior for candidates.
-
-<Note>
-Two settings control Google Forms test resumption:
-1. **Disable Autosave** in Google Forms -- Controls whether draft responses are saved as the candidate fills out the form.
-2. **Enable Auto-resume** in AutoProctor -- Controls whether AutoProctor loads the previous attempt when a candidate returns to the test link.
-
-You must configure both settings together for the intended behavior.
-</Note>
+Resuming a Google Forms test depends on two settings that must match: **Disable auto-save for all respondents** in Google Forms and **Auto-resume** in AutoProctor.
 
 ## To Allow Test Resumption
 
-If you want candidates to pick up where they left off after closing the test:
+Candidates pick up where they left off after closing the test.
 
 <Steps>
   <Step title="Keep autosave enabled in Google Forms">
-    Make sure the **Disable Autosave** feature is **OFF** in your Google Forms test settings. This is the default setting, so you only need to verify it has not been changed.
-
-    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled OFF */}
+    Make sure **Disable auto-save for all respondents** is **OFF** in your Google Forms settings. This is the default.
 
     <Frame>
-      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-enabled.png" alt="Google Forms test settings showing Disable Autosave toggled OFF, keeping autosave active" />
+      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-enabled.png" alt="Google Forms settings with Disable auto-save turned off" />
     </Frame>
   </Step>
   <Step title="Enable auto-resume in AutoProctor">
-    Turn on the **Enable Auto-resume** setting in your AutoProctor test settings.
-
-    {/* TODO: Add screenshot of AutoProctor test settings showing Enable Auto-resume toggled ON */}
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test. In the **General** section, turn **Auto-resume** on and click **Save settings**.
 
     <Frame>
-      <img style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autoresume-enabled.png" alt="AutoProctor test settings showing Enable Auto-resume toggled ON" />
+      <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="The Auto-resume switch in the General section of Test Settings" />
     </Frame>
   </Step>
 </Steps>
 
 ## To Prevent Test Resumption
 
-If you want each visit to the test link to create a new, blank attempt:
+Each visit to the test link creates a new, blank attempt.
 
 <Steps>
   <Step title="Disable autosave in Google Forms">
-    Turn **ON** the **Disable Autosave** feature in your Google Forms test settings. This prevents Google Forms from saving draft responses.
-
-    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled ON */}
+    Turn **Disable auto-save for all respondents** **ON** in your Google Forms settings.
 
     <Frame>
-      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-disabled.png" alt="Google Forms test settings showing Disable Autosave toggled ON, disabling autosave" />
+      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-disabled.png" alt="Google Forms settings with Disable auto-save turned on" />
     </Frame>
   </Step>
   <Step title="Disable auto-resume in AutoProctor">
-    Turn **OFF** the **Enable Auto-resume** option in your AutoProctor test settings.
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test. In the **General** section, turn **Auto-resume** off and click **Save settings**.
 
-    {/* TODO: Add screenshot of AutoProctor test settings showing Enable Auto-resume toggled OFF */}
-
-    <Frame>
-      <img style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autoresume-disabled.png" alt="AutoProctor test settings showing Enable Auto-resume toggled OFF" />
-    </Frame>
+    {/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" switched off */}
   </Step>
 </Steps>
 
 ## Settings Combination Reference
 
-| Disable Autosave (Google Forms) | Enable Auto-resume (AutoProctor) | Result |
+| Disable auto-save (Google Forms) | Auto-resume (AutoProctor) | Result |
 |---|---|---|
 | OFF (default) | ON (default) | Candidates resume where they left off |
 | ON | OFF | Each visit starts a fresh, blank attempt |
-| OFF | OFF | New attempt loads, but Google Forms may show previously saved answers -- confusing for candidates |
-| ON | ON | AutoProctor tries to resume, but Google Forms has no saved draft -- candidate sees a blank form with reduced time |
+| OFF | OFF | New attempt loads, but Google Forms may show previously saved answers, which confuses candidates |
+| ON | ON | AutoProctor tries to resume, but Google Forms has no saved draft, so the candidate sees a blank form with reduced time |
+
+Tests resume by default unless you change either setting.
 
 <Warning>
-If the two settings are mismatched (for example, autosave is enabled but auto-resume is disabled), candidates may experience unexpected behavior such as seeing a partially filled form on a new attempt or losing their saved progress. Always configure both settings to match.
+If the two settings are mismatched, candidates may see a partially filled form on a new attempt or lose their saved progress. Always configure both settings to match.
 </Warning>
-
-## Default Settings
-
-Google Forms has autosave enabled by default, and AutoProctor's corresponding default setting allows resuming unsubmitted test attempts. This means tests resume by default unless you explicitly change either setting.
 
 ## Related Resources
 
-- [Resuming Test Attempts](/resume-exam-attempts) -- General resume behavior across all test types
-- [Maximum Attempts](/maximum-exam-attempts) -- Configure how many attempts candidates are allowed
-- [Unsubmitted Tests](/view-unsubmitted-exams) -- View tests started but not submitted
-- [Timer Settings](/timer-settings) -- Configure test duration and time windows
-- [Best Practices for Test Creators](/best-practices-for-exam-creators) -- Tips for smooth test administration
+- [Resuming Test Attempts](/resume-exam-attempts) - General resume behavior across all test types
+- [Maximum Attempts](/maximum-exam-attempts) - Configure how many attempts candidates are allowed
+- [Unsubmitted Tests](/view-unsubmitted-exams) - View tests started but not submitted
+- [Timer Settings](/timer-settings) - Configure test duration and time windows
+- [Best Practices for Test Creators](/best-practices-for-exam-creators) - Tips for smooth test administration

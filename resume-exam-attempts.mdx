@@ -7,7 +7,7 @@ description: "Understand how AutoProctor handles test resumption when candidates
 **Resuming** means any way the candidate returns to the test: clicking the test link again, reloading the page in the browser, or coming back after a while and letting the browser auto-reload.
 </Tip>
 
-When a candidate leaves a test mid-attempt, whether due to a browser crash, network issue, or accidental closure, AutoProctor determines whether to resume the previous attempt or create a new one. The behavior depends on your test type and settings.
+When a candidate leaves a test mid-attempt, AutoProctor either resumes the previous attempt or creates a new one. Which one depends on your test type and settings.
 
 ## Resume Behavior by Test Type
 
@@ -20,58 +20,41 @@ When a candidate leaves a test mid-attempt, whether due to a browser crash, netw
 
 ## Configuring the Resume Feature
 
-For Google Forms, Microsoft Forms and IFrame tests, you control resume behavior through the **Auto-resume** switch in your test settings.
+For Google Forms, Microsoft Forms and IFrame tests, the **Auto-resume** switch controls resume behavior.
 
 <Steps>
   <Step title="Open test settings">
     Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Settings** next to the test.
   </Step>
   <Step title="Turn Auto-resume on or off">
-    In the **General** section, use the **Auto-resume** switch. AutoProctor marks this setting as **Recommended**.
-  </Step>
-  <Step title="Save">
-    Click **Save settings**.
+    In the **General** section, use the **Auto-resume** switch, then click **Save settings**.
   </Step>
 </Steps>
 
-{/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" (and its Recommended badge) switched on */}
-
-<Frame caption="Auto-resume switched on in the General section of a Google Forms test">
-  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="Three switch rows in the General section. Auto-resume, marked Recommended, is on. Close test for submissions and Hide from my dashboard are off" />
+<Frame>
+  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="The Auto-resume switch in the General section of Test Settings" />
 </Frame>
 
+| Auto-resume | When the candidate returns |
+|---|---|
+| **On** | AutoProctor reopens the previous attempt. Whether answers are kept depends on the quiz platform's own autosave |
+| **Off** | AutoProctor creates a new, blank attempt. The incomplete attempt still appears in your results |
+
 <Note>
-The **Auto-resume** switch does not appear for Socratease quizzes, because they always resume. For Google Forms, you must also keep the **Save Draft** (autosave) setting enabled in Google Forms itself for resume to work properly. See [Resuming Google Forms Tests](/resume-google-forms-exam) for detailed configuration.
+The **Auto-resume** switch does not appear for Socratease quizzes, because they always resume. For Google Forms, you must also leave **Disable auto-save for all respondents** off in Google Forms itself. See [Resuming Google Forms Tests](/resume-google-forms-exam) for detailed configuration.
 </Note>
-
-## How Resumption Works
-
-When a candidate returns to the test after disconnecting:
-
-- **If resume is enabled**: AutoProctor reopens the previous attempt. For **Socratease** quizzes, prior responses are restored automatically. For **IFrame**, **Google Forms** and **Microsoft Forms** tests, whether responses are preserved depends on the external quiz platform's own save/autosave behavior.
-- **If resume is disabled**: AutoProctor creates a new, blank attempt. The incomplete attempt still appears in your results.
 
 ## How Timers Interact with Resumption
 
-If you have [timer settings](/timer-settings) configured, they affect how resumption works.
+[Timer settings](/timer-settings) change what happens when a candidate comes back.
 
 | Timer setting | Effect on a candidate who comes back |
 |---|---|
-| **Duration** | The clock keeps running while the candidate is away |
-| **Cannot start before** / **Cannot start after** | Checked against the original start time, not the time of return |
-| **Hard stop** | Checked against the time of return |
+| **Duration** | The clock keeps running while the candidate is away. Once the duration expires, the test can no longer be resumed |
+| **Cannot start before** / **Cannot start after** | Checked against the original start time, not the time of return. A candidate who started in time can still resume after the deadline |
+| **Hard stop** | Checked against the time of return. Once it has passed, the test does not load |
 
-### Duration
-
-The remaining time from the original attempt carries over. For example, if a candidate starts a 60-minute test at 10:00 AM and disconnects at 10:30 AM, resuming at 10:50 AM gives them only 10 minutes remaining. Once the full duration expires (11:00 AM), the test can no longer be resumed.
-
-### Cannot start before / Cannot start after
-
-These constraints apply to the original start time, not the reconnection time. A candidate who started before the deadline can still resume after it, as long as the test duration has not expired.
-
-### Hard stop
-
-This deadline is strictly enforced at reconnection time. If the **Hard stop** time has passed before the candidate tries to resume, the test does not load, even if the candidate originally started before the deadline.
+For example, a candidate starts a 60-minute test at 10:00 AM and disconnects at 10:30 AM. Resuming at 10:50 AM leaves only 10 minutes.
 
 <Warning>
 The **Hard stop** overrides all other timer settings at resumption time. If it has passed, the candidate cannot resume regardless of remaining test duration.

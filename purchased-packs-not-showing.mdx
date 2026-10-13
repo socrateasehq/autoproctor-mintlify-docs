@@ -1,25 +1,24 @@
 ---
 title: "Purchased Packs Not Showing Up"
-description: "Troubleshoot why your purchased test packs or subscription credits are not appearing in your AutoProctor account, with step-by-step solutions."
+description: "Troubleshoot why your purchased credit packs or subscription credits are not appearing in your AutoProctor account, with step-by-step solutions."
 ---
 
-If you purchased a subscription or test pack top-up but your account balance has not updated, there are a few common reasons. Follow the troubleshooting steps below, listed in order of likelihood.
+If your balance has not updated a few minutes after a purchase, work through these reasons, most likely first.
 
 ## 1. You Are Logged In to a Different Account
 
-This is **the most common reason**. If you purchased credits using one email address but are logged in with a different one, the credits do not appear.
+This is **the most common reason**. You paid with one email address but are signed in with another.
 
 <Steps>
   <Step title="Check your current email">
-    Visit the **Your Account** page. Your logged-in email address is displayed there.
+    Check the **Email** field on your [**Profile**](https://www.autoproctor.co/test-admin/profile/) page.
 
-    {/* TODO: Add screenshot of the Your Account page showing the email address */}
-  </Step>
-  <Step title="Find the purchase confirmation email">
-    AutoProctor sends a receipt and invoice for every purchase. Search your inbox to identify which email address received the confirmation.
+    <Frame>
+      <img src="/images/purchased-packs-not-showing/profile-email.png" alt="The Email field on the Profile page" />
+    </Frame>
   </Step>
   <Step title="Log in with the correct account">
-    If the confirmation went to a different email address, log out and sign in with that account to see your credits.
+    AutoProctor emails a receipt for every purchase. If it went to a different address, log out and sign in with that account.
   </Step>
 </Steps>
 
@@ -29,25 +28,36 @@ If you are part of a [Team](/what-is-a-team), the Team Admin receives the confir
 
 ## 2. Your Subscription Has Expired
 
-AutoProctor is a subscription-based product. When your subscription is due for renewal, your card is charged automatically. If the charge fails after multiple attempts, your subscription is cancelled and **your credit balance resets to 0**.
+If a renewal payment fails, your subscription is cancelled and **your credit balance resets to 0**.
 
 <Steps>
   <Step title="Check your subscription status">
-    Go to the **Billing** section in your sidebar. Your subscription status is displayed in the **Plan Details** area.
+    On the **Overview** tab of the [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/) page, check the badge in the **Plan** tile.
   </Step>
   <Step title="Verify your payment method">
-    Confirm that the credit card on file is valid and has sufficient funds. You can update it via [Editing Billing Information](/edit-billing-information).
+    Make sure the card on file is valid. You can update it via [Editing Billing Information](/edit-billing-information).
+
+    If the badge reads **Past due**, click **Clear payment** at the top right to pay the pending invoice.
   </Step>
   <Step title="Resubscribe if needed">
-    If your subscription has expired, purchase a new subscription from the [Pricing Page](https://www.autoproctor.co/pricing/) to restore access.
+    If your plan has ended, click **Subscribe again** and choose a plan on the [Pricing Page](https://www.autoproctor.co/pricing/).
   </Step>
 </Steps>
 
+| Badge | What It Means | What to Do |
+|---|---|---|
+| **Active** | Your subscription is running and you can top up | Check the other reasons on this page |
+| **Past due** | Your last payment did not go through. Top up is paused until it is cleared | Click **Clear payment** |
+| **Canceled** or **Inactive** | Your plan has ended and its credits were reset | Click **Subscribe again** |
+| **Trial** | You are on the free trial and have not subscribed with this account | Click **Subscribe** |
+
+<Frame>
+  <img src="/images/purchased-packs-not-showing/plan-ended.png" alt="The Overview tab after a plan has ended" />
+</Frame>
+
 ## 3. Your Team Association Changed
 
-On AutoProctor, you can join and leave a [Team](/what-is-a-team). If you are part of a team, you share the subscription and credit balance with other team members.
-
-If you have left a team (or been removed), you no longer see the team's credit balance. Check your team status by visiting the **Team** section in your sidebar.
+Team members share one subscription and credit balance. If you left a [Team](/what-is-a-team) or were removed, you no longer see its credits. Check your status on the [**Team**](https://www.autoproctor.co/test-admin/team/) page.
 
 <Warning>
 Leaving a team means you lose access to the team's shared credits. Make sure this is intentional before you leave.
@@ -55,24 +65,21 @@ Leaving a team means you lose access to the team's shared credits. Make sure thi
 
 ## 4. Error at AutoProctor's End
 
-If none of the above apply, the issue may be on our side. Follow these steps to report it:
+If none of the above apply, the issue may be on our side.
 
 <Steps>
-  <Step title="Gather your purchase details">
-    Locate the purchase confirmation email with the transaction details.
-  </Step>
   <Step title="Take a screenshot">
-    Capture a screenshot of your **Your Account** page showing the current balance.
+    Take a screenshot of the **Overview** tab of the [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/) page, showing **Credits remaining** and the **Payments** list.
   </Step>
   <Step title="Contact support">
-    Forward the purchase email and screenshot to **hello@autoproctor.co**. Our team will investigate and resolve the issue.
+    Send the screenshot and your purchase confirmation email to **hello@autoproctor.co**. Our team will investigate and resolve the issue.
   </Step>
 </Steps>
 
 ## Related Resources
 
-- [Payments and Credits Explained](/payments-and-credits) -- How credits and subscriptions work
-- [Track Test Pack Usage](/track-credit-usage) -- Monitor your credit consumption
-- [What is a Team?](/what-is-a-team) -- Understand team billing and shared credits
-- [Editing Billing Information](/edit-billing-information) -- Update your payment method
-- [Contact Us](/contact-us) -- Reach AutoProctor support
+- [Payments and Credits Explained](/payments-and-credits) - How credits and subscriptions work
+- [Track Test Pack Usage](/track-credit-usage) - Monitor your credit consumption
+- [What is a Team?](/what-is-a-team) - Understand team billing and shared credits
+- [Editing Billing Information](/edit-billing-information) - Update your payment method
+- [Contact Us](/contact-us) - Reach AutoProctor support

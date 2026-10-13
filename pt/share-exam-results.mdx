@@ -3,61 +3,66 @@ title: "Compartilhar Resultados do Teste"
 description: "Conceda a outros administradores ou colegas acesso aos resultados dos testes no AutoProctor, incluindo métodos para todas as plataformas de questionários compatíveis."
 ---
 
-Pode ser necessário compartilhar os resultados dos testes com outros administradores, co-instrutores ou colegas que não criaram o teste original. O método depende da plataforma de questionários que você utiliza.
+Dê a um colega acesso aos resultados de um teste na própria conta do AutoProctor, ou envie um arquivo.
+
+| Método | Funciona para | O que a outra pessoa recebe |
+|---|---|---|
+| **Adicionar um colaborador** | Todos os tipos de teste | O teste na própria página **Tests**, com seus resultados, relatórios e configurações |
+| **Compartilhar o Google Form** | Testes do Google Forms | O teste na própria página **Tests**, com seus resultados, relatórios e configurações |
+| [**Exportar os resultados**](/export-results-to-excel) | Todos os tipos de teste | Um arquivo CSV com os resultados |
+| [**Escrever os resultados no Google Sheets**](/write-results-to-google-sheets) | Todos os tipos de teste | Uma planilha Google que você compartilha com ela. Exige um plano **Premium** ou **Elite** |
+
+<Warning>
+O link **Share** (compartilhar) que aparece abaixo de um teste na página [**Tests**](https://www.autoproctor.co/test-admin/home/) copia o link do teste que os candidatos usam para realizá-lo. Ele não dá a ninguém acesso aos resultados.
+</Warning>
+
+## Adicionar um Colaborador
+
+Um **colaborador** vê o teste na própria página **Tests** e pode abrir seus resultados e relatórios de supervisão.
+
+<Steps>
+  <Step title="Abra as Configurações do Teste">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste.
+  </Step>
+  <Step title="Copie o Collaborate Link">
+    Clique em **Manage** (gerenciar) no cartão de colaboradores e copie o **Collaborate link** (link de colaboração) no final do diálogo.
+
+    {/* screenshot: "Collaborators" dialog opened from "Manage" on the Test Settings page of any test, cropped to the bottom of the dialog showing the "Collaborate link" row with its copy icon and the "Done" button */}
+  </Step>
+  <Step title="Envie o Link">
+    Quando a pessoa abre o link conectada ao AutoProctor, ela é adicionada ao teste e chega aos resultados dele.
+  </Step>
+</Steps>
+
+<Note>
+Gerenciar colaboradores exige um plano **Premium** ou **Elite**, e a pessoa precisa ser membro da sua [equipe](/what-is-a-team). Os colaboradores recebem acesso completo ao teste, incluindo as configurações. Consulte [Adicionar Colaboradores](/add-collaborators) para ver os detalhes.
+</Note>
 
 ## Para Google Forms
 
-Quando você compartilha um Google Form com outro usuário, ele pode ter acesso ao mesmo teste do AutoProctor e seus resultados.
+Qualquer pessoa com permissão de edição no Google Form pode acessar o mesmo teste do AutoProctor e seus resultados.
 
-<Frame caption="Abrindo o complemento Timer + Proctor em um Google Form compartilhado">
+<Frame>
   <video controls className="w-full rounded-xl" src="/videos/settings/timer-proctor-on-gf.mp4"></video>
 </Frame>
 
 <Steps>
   <Step title="Compartilhe o Google Form">
-    Compartilhe o link do Google Form com os usuários que precisam de acesso. Certifique-se de que eles tenham permissões de **Editor** no próprio formulário.
+    Compartilhe o Google Form com permissões de **Editor**.
   </Step>
   <Step title="Abra o complemento Timer + Proctor">
-    Peça aos outros usuários que abram o complemento **Timer + Proctor** a partir do Google Form compartilhado.
-  </Step>
-  <Step title="Verifique o acesso">
-    Assim que abrirem o complemento, os outros usuários ficam associados ao mesmo teste. Eles verão o mesmo link do teste e poderão ver os resultados no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
-
+    Peça aos outros usuários que abram o complemento **Timer + Proctor** a partir do formulário compartilhado. O teste então aparece na própria página [**Tests**](https://www.autoproctor.co/test-admin/home/), onde clicam em **Results**.
   </Step>
 </Steps>
 
 <Note>
-Os outros usuários devem abrir o complemento Timer + Proctor pelo menos uma vez a partir do Google Form compartilhado. Simplesmente compartilhar o link do Google Form não é suficiente -- eles devem iniciar o complemento para ficarem associados ao teste.
+Compartilhar o formulário não é suficiente. Cada pessoa deve abrir o complemento pelo menos uma vez para ficar associada ao teste.
 </Note>
-
-## Para Questionários Socratease
-
-Use o recurso **Colaboradores** para conceder a outros usuários acesso ao seu teste e seus resultados.
-
-<Steps>
-  <Step title="Abra as configurações do teste">
-    Navegue até o teste no seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e abra suas configurações.
-  </Step>
-  <Step title="Adicione colaboradores">
-    Adicione os endereços de e-mail dos usuários aos quais deseja conceder acesso. Consulte [Adicionar Colaboradores](/add-collaborators) para instruções detalhadas.
-  </Step>
-</Steps>
-
-Os colaboradores podem ver resultados, relatórios de supervisão e gerenciar o teste dependendo das permissões que você atribuir.
-
-## Para Todos os Tipos de Teste
-
-Você também pode compartilhar resultados exportando-os:
-
-| Método | Descrição |
-|---|---|
-| **Exportação para Excel** | Baixe os resultados e compartilhe o arquivo diretamente. Consulte [Exportar para Excel](/export-results-to-excel) |
-| **Google Sheets** | Configure a exportação automática para uma planilha Google compartilhada. Consulte [Integração com Google Sheets](/write-results-to-google-sheets) |
 
 ## Recursos Relacionados
 
-- [Adicionar Colaboradores](/add-collaborators) -- Conceda acesso de gerenciamento do teste a outros usuários
-- [Exportar para Excel](/export-results-to-excel) -- Baixe resultados como planilha
-- [Integração com Google Sheets](/write-results-to-google-sheets) -- Sincronize resultados automaticamente com Google Sheets
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
-- [O Que é um Time?](/what-is-a-team) -- Compartilhe cobrança e colabore em toda sua organização
+- [Adicionar Colaboradores](/add-collaborators) - Conceda acesso de gerenciamento do teste a outros usuários
+- [Exportar para Excel](/export-results-to-excel) - Baixe resultados como planilha
+- [Integração com Google Sheets](/write-results-to-google-sheets) - Sincronize resultados automaticamente com Google Sheets
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Visão geral dos resultados do teste vs. resultados de supervisão
+- [O Que é um Time?](/what-is-a-team) - Compartilhe cobrança e colabore em toda sua organização

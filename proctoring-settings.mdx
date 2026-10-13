@@ -12,19 +12,10 @@ Proctoring settings control what AutoProctor monitors while a candidate takes a 
     Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Proctoring** from the list of sections.
   </Step>
   <Step title="Turn Proctoring On">
-    Turn on the switch at the top right of the **Proctoring** section. While the switch is **Off**, nothing is monitored and candidates take the test without proctoring.
+    Turn on the switch at the top right of the **Proctoring** section.
   </Step>
-  <Step title="Choose What Gets Tracked">
-    Under **What gets tracked**, turn on the checks you need. Each one is described in the table below.
-  </Step>
-  <Step title="Add Enhanced Proctoring (Optional)">
-    Under **Enhanced proctoring**, turn on any extra checks. The badge next to each one shows its cost in credits per attempt.
-  </Step>
-  <Step title="Choose Who Is Informed">
-    Under **Who is informed**, choose whether evidence is stored for you and whether the candidate is warned during the test.
-  </Step>
-  <Step title="Save">
-    Click **Save settings**.
+  <Step title="Choose Your Settings and Save">
+    Turn on the checks you need under **What gets tracked**, **Enhanced proctoring** and **Who is informed**. Each group is described below. Then click **Save settings**.
   </Step>
 </Steps>
 
@@ -34,10 +25,8 @@ If the test sends results to a Google Sheet, saving with proctoring **Off** remo
 
 ## What Gets Tracked
 
-{/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the section header and the "What gets tracked" group with all nine switches from "Tab switching" to "Photo before test start" */}
-
-<Frame caption="The Proctoring switch and the nine options under What gets tracked">
-  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="Proctoring section switched on, with nine switches under What gets tracked, from Tab switching to Photo before test start. Tab switching, Camera and Photos at random are on" />
+<Frame>
+  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="The Proctoring section switched on, with the options under What gets tracked" />
 </Frame>
 
 | Setting | What It Does |
@@ -58,10 +47,8 @@ When **Photo before test start** is on, a **Customize the photo prompt** switch 
 
 Use this to ask candidates to show their ID card in the photo, for example "Please show your face along with your student ID".
 
-{/* screenshot: "What gets tracked" group of the Proctoring section with "Photo before test start" On and "Customize the photo prompt" On below it, the text box filled with "Please show your face along with your student ID" */}
-
-<Frame caption="Customize the photo prompt, switched on under Photo before test start">
-  <img src="/images/proctoring-settings/photo-prompt.png" alt="What gets tracked group with Photo before test start on and, below it, Customize the photo prompt on with the text Please show your face along with your student ID" />
+<Frame>
+  <img src="/images/proctoring-settings/photo-prompt.png" alt="Customize the photo prompt switched on under Photo before test start" />
 </Frame>
 
 <Note>
@@ -86,18 +73,10 @@ The card above the sections shows the total cost, for example **1 credit per att
 
 ## Who Is Informed
 
-These settings control how violation evidence is handled and whether candidates are notified:
-
 | Setting | What It Does | Recommendation |
 |---|---|---|
 | **Me, after the test** | Stores evidence (photos, audio, screenshots) on the cloud so you can review the report after the test ends. | **Keep on**: you need this to review violations. |
 | **The candidate, during the test** | Warns the candidate in real time when a violation is detected. | **Keep on**: it helps candidates fix harmless issues like background noise. |
-
-{/* screenshot: "Who is informed" group of the Proctoring section with "Me, after the test" and "The candidate, during the test" both On */}
-
-<Frame caption="Both switches under Who is informed turned on">
-  <img src="/images/proctoring-settings/who-is-informed.png" alt="Who is informed group with Me, after the test and The candidate, during the test both switched on" />
-</Frame>
 
 <Warning>
 Turning off **Me, after the test** also turns off **Photos at random**, **Photo before test start** and **Customize the photo prompt**. They stay locked until you turn **Me, after the test** back on, because these photos are stored on the cloud for you to review.
@@ -107,6 +86,7 @@ Turning off **Me, after the test** also turns off **Photos at random**, **Photo 
 
 - [Timer Settings](/timer-settings) - Configure test duration and time windows
 - [Enhanced Proctoring](/enhanced-proctoring) - Detailed guide on ID verification, impersonation detection, and 360° proctoring
+- [Quiz Settings](/socratease-quiz-settings) - Settings specific to Socratease quizzes
 - [What Gets Tracked](/what-gets-tracked-during-proctoring) - Complete list of everything AutoProctor monitors
 - [Proctoring Results](/where-to-find-proctoring-results) - How to review proctoring data after a test
 - [Trust Score](/what-is-trust-score) - How the trust score is calculated from proctoring data

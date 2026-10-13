@@ -7,7 +7,7 @@ description: "Entenda como o AutoProctor gerencia a retomada de testes quando os
 **Retomar** significa qualquer forma de o candidato voltar ao teste: clicar novamente no link do teste, recarregar a página no navegador, ou voltar depois de um tempo e deixar o navegador recarregar automaticamente.
 </Tip>
 
-Quando um candidato sai de um teste no meio da tentativa, seja por uma falha do navegador, problema de rede ou fechamento acidental, o AutoProctor determina se deve retomar a tentativa anterior ou criar uma nova. O comportamento depende do tipo de teste e das suas configurações.
+Quando um candidato sai de um teste no meio da tentativa, o AutoProctor retoma a tentativa anterior ou cria uma nova. Qual das duas depende do tipo de teste e das suas configurações.
 
 ## Comportamento de Retomada por Tipo de Teste
 
@@ -20,58 +20,41 @@ Quando um candidato sai de um teste no meio da tentativa, seja por uma falha do 
 
 ## Configurando o Recurso de Retomada
 
-Para Google Forms, Microsoft Forms e testes IFrame, você controla o comportamento de retomada pelo interruptor **Auto-resume** (retomada automática) nas configurações do teste.
+Para Google Forms, Microsoft Forms e testes IFrame, o interruptor **Auto-resume** (retomada automática) controla o comportamento de retomada.
 
 <Steps>
   <Step title="Abra as configurações do teste">
     Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste.
   </Step>
   <Step title="Ative ou desative o Auto-resume">
-    Na seção **General**, use o interruptor **Auto-resume**. O AutoProctor marca essa configuração como **Recommended** (recomendada).
-  </Step>
-  <Step title="Salve">
-    Clique em **Save settings**.
+    Na seção **General**, use o interruptor **Auto-resume** e depois clique em **Save settings**.
   </Step>
 </Steps>
 
-{/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" (and its Recommended badge) switched on */}
-
-<Frame caption="Auto-resume ativado na seção General de um teste do Google Forms">
-  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="Três linhas de interruptores na seção General. Auto-resume, marcado como Recommended, está ativado. Close test for submissions e Hide from my dashboard estão desativados" />
+<Frame>
+  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="O interruptor Auto-resume na seção General de Test Settings" />
 </Frame>
 
+| Auto-resume | Quando o candidato volta |
+|---|---|
+| **Ativado** | O AutoProctor reabre a tentativa anterior. A preservação das respostas depende do salvamento automático da plataforma do questionário |
+| **Desativado** | O AutoProctor cria uma nova tentativa em branco. A tentativa incompleta ainda aparece nos seus resultados |
+
 <Note>
-O interruptor **Auto-resume** não aparece em questionários Socratease, porque eles sempre são retomados. Para Google Forms, você também deve manter a configuração de **Save Draft** (salvamento automático) ativada no próprio Google Forms para que a retomada funcione corretamente. Consulte [Retomar Testes do Google Forms](/resume-google-forms-exam) para configuração detalhada.
+O interruptor **Auto-resume** não aparece em questionários Socratease, porque eles sempre são retomados. Para Google Forms, você também deve deixar a opção **Disable auto-save for all respondents** desativada no próprio Google Forms. Consulte [Retomar Testes do Google Forms](/resume-google-forms-exam) para configuração detalhada.
 </Note>
-
-## Como a Retomada Funciona
-
-Quando um candidato retorna ao teste após se desconectar:
-
-- **Se a retomada está ativada**: O AutoProctor reabre a tentativa anterior. Em questionários **Socratease**, as respostas anteriores são restauradas automaticamente. Em testes **IFrame**, do **Google Forms** e do **Microsoft Forms**, a preservação das respostas depende do salvamento ou salvamento automático da plataforma externa do questionário.
-- **Se a retomada está desativada**: O AutoProctor cria uma nova tentativa em branco. A tentativa incompleta ainda aparece nos seus resultados.
 
 ## Como os Temporizadores Interagem com a Retomada
 
-Se você tem [configurações de tempo](/timer-settings) definidas, elas afetam como a retomada funciona.
+As [configurações de tempo](/timer-settings) mudam o que acontece quando um candidato volta.
 
 | Configuração de tempo | Efeito sobre um candidato que volta |
 |---|---|
-| **Duration** | O relógio continua correndo enquanto o candidato está ausente |
-| **Cannot start before** / **Cannot start after** | Verificadas em relação ao horário de início original, não ao horário de retorno |
-| **Hard stop** | Verificado em relação ao horário de retorno |
+| **Duration** | O relógio continua correndo enquanto o candidato está ausente. Quando a duração expira, o teste não pode mais ser retomado |
+| **Cannot start before** / **Cannot start after** | Verificadas em relação ao horário de início original, não ao horário de retorno. Um candidato que iniciou a tempo pode retomar depois do prazo |
+| **Hard stop** | Verificado em relação ao horário de retorno. Depois que ele passa, o teste não é carregado |
 
-### Duration
-
-O tempo restante da tentativa original é transferido. Por exemplo, se um candidato inicia um teste de 60 minutos às 10:00 e se desconecta às 10:30, retomar às 10:50 dá a ele apenas 10 minutos restantes. Quando a duração total expira (11:00), o teste não pode mais ser retomado.
-
-### Cannot start before / Cannot start after
-
-Essas restrições se aplicam ao horário de início original, não ao horário de reconexão. Um candidato que iniciou antes do prazo pode retomar depois dele, desde que a duração do teste não tenha expirado.
-
-### Hard stop
-
-Esse limite é aplicado rigorosamente no momento da reconexão. Se o horário de **Hard stop** (encerramento definitivo) já passou antes de o candidato tentar retomar, o teste não é carregado, mesmo que o candidato tenha iniciado originalmente antes do limite.
+Por exemplo, um candidato inicia um teste de 60 minutos às 10:00 e se desconecta às 10:30. Ao retomar às 10:50, restam apenas 10 minutos.
 
 <Warning>
 O **Hard stop** sobrepõe todas as outras configurações de tempo no momento da retomada. Se ele já passou, o candidato não pode retomar independentemente do tempo restante de teste.

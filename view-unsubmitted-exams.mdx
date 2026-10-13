@@ -5,37 +5,53 @@ description: "Learn how to identify, view, and manage tests that candidates star
 
 An unsubmitted test occurs when a candidate starts a test but does not click the green **Submit** button at the top of the test window. The candidate may have viewed questions and entered answers, but their test was never formally submitted.
 
-<Frame caption="The green Submit button candidates must click">
-  <img style={{maxWidth: "190px"}} className="border rounded-xl" src="/images/results/click-after-submitting.png" alt="Green Submit button that candidates must click after submitting the test" />
+<Frame>
+  <img style={{maxWidth: "190px"}} className="border rounded-xl" src="/images/results/click-after-submitting.png" alt="The green Submit button candidates must click" />
 </Frame>
 
 ## Viewing Unsubmitted Tests on the Results Page
 
-When you open the results page for a test, unsubmitted tests are included alongside submitted results by default. A yellow banner at the top indicates that the table includes unsubmitted test attempts.
+<Steps>
+  <Step title="Open the Results Page">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Results** next to the test.
+  </Step>
+  <Step title="Check the Unsubmitted Tile">
+    The tiles at the top of the page count the attempts that were **Started**, **Submitted** and **Unsubmitted**.
 
-<Frame caption="Results page showing unsubmitted tests">
-  <img className="border rounded-xl" src="/images/results/results-hide-unsubmitted.png" alt="Results page showing submitted and unsubmitted tests with Hide unsubmitted button" />
+    <Frame>
+      <img src="/images/view-unsubmitted-exams/unsubmitted-tile.png" alt="The Unsubmitted tile with its Show in table link" />
+    </Frame>
+  </Step>
+  <Step title="Click Show in Table">
+    Click **Show in table** on the **Unsubmitted** tile. The **Submissions** table below then lists only the unsubmitted attempts.
+  </Step>
+</Steps>
+
+**Show in table** sets the **Submitted** filter above the table to **No**. To go back to the full list, click the **×** on the **Submitted** filter.
+
+## How an Unsubmitted Attempt Appears in the Table
+
+An unsubmitted attempt has a start time and nothing else. Its other columns show a dash until the candidate submits. On a proctored test, it still has a **View report** button.
+
+<Frame>
+  <img src="/images/view-unsubmitted-exams/unsubmitted-rows.png" alt="Submissions table filtered to unsubmitted attempts" />
 </Frame>
 
-To view only submitted results, click the **Hide unsubmitted** button in the yellow banner. The unsubmitted entries are removed from the table, and the button changes to **Show unsubmitted** so you can bring them back at any time.
+To remove an attempt, click the delete icon at the end of its row and confirm with **Yes, delete**. This permanently deletes the attempt and its evidence.
 
-<Frame caption="Results page with unsubmitted tests hidden">
-  <img className="border rounded-xl" src="/images/results/results-show-unsubmitted.png" alt="Results page showing only submitted tests with Show unsubmitted button" />
-</Frame>
+<Note>
+The [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) page lists submitted attempts only. Unsubmitted attempts appear only on the **Results** page of their own test.
+</Note>
 
 ## Proctoring Report for an Unsubmitted Test
 
-When you click **View Report** for an unsubmitted test attempt, you see a page indicating that the test has not been marked as finished yet. Proctoring results are not available until the attempt is marked as finished.
+The proctoring report is created after an attempt is submitted. Click **View report** on an unsubmitted attempt, and its **Proctoring** tab says the test has not been marked as finished yet.
 
-<Frame caption="Proctoring report for an unsubmitted test">
-  <img className="border rounded-xl" src="/images/results/mark-as-finished.png" alt="Proctoring report showing the test has not been marked as finished yet with a Mark as Finished button" />
-</Frame>
+{/* screenshot: attempt report of an unsubmitted attempt on a proctored Google Forms test, showing the "Submitted" card reading "Not submitted", the "Proctoring" tab, and the message "The test has not been marked as finished yet" and the "Mark as Finished" button */}
 
-To generate the proctoring report, click the **Mark as Finished** button. A confirmation message appears and the report loads automatically after a few seconds.
+An attempt counts as submitted once the candidate submits it, or once the timer submits it automatically. See [Timer Settings](/timer-settings) for automatic submission.
 
-<Frame caption="Confirmation after marking a test as finished">
-  <img className="border rounded-xl" src="/images/results/mark-as-finished-redirection-swal.png" alt="Confirmation dialog showing the test has been marked as finished" />
-</Frame>
+To generate the proctoring report, click **Mark as Finished**. The report loads a few seconds later.
 
 <Warning>
 If you mark a test as finished and the candidate is still attempting the test, newer violations will be ignored.
@@ -43,15 +59,15 @@ If you mark a test as finished and the candidate is still attempting the test, n
 
 ## Quiz Answers for an Unsubmitted Test
 
-When you click **View Answers** for an unsubmitted test, the individual results page shows all questions as **Not Attempted** with 0 points scored.
+For Socratease quizzes, an unsubmitted attempt has no answers to view. Its report's **Results** tab reads "No answers recorded for this attempt yet."
 
-<Frame caption="Quiz answers for an unsubmitted test">
-  <img className="border rounded-xl" src="/images/results/unattempted-indivisual-result-page.png" alt="Individual results page showing all questions as Not Attempted for an unsubmitted test" />
+<Frame>
+  <img src="/images/view-unsubmitted-exams/no-answers-recorded.png" alt="Results tab of an unsubmitted attempt with no answers recorded" />
 </Frame>
 
 ## Related Resources
 
-- [Resuming Test Attempts](/resume-exam-attempts) -- How test resumption works when candidates leave mid-test
-- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) -- View submitted proctoring reports
-- [Before You Get Started](/before-you-get-started) -- Critical requirements including the submit button process
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
+- [Resuming Test Attempts](/resume-exam-attempts) - How test resumption works when candidates leave mid-test
+- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) - View submitted proctoring reports
+- [Before You Get Started](/before-you-get-started) - Critical requirements including the submit button process
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Overview of quiz results vs. proctoring results

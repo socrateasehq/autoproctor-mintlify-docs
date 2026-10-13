@@ -3,55 +3,48 @@ title: "¿AutoProctor Graba Video?"
 description: "Conozca cómo AutoProctor monitorea a los candidatos en tiempo real sin grabar sesiones de video completas, y por qué este enfoque es más efectivo."
 ---
 
-**Por defecto, AutoProctor no graba video.** En su lugar, monitorea continuamente la cámara del candidato en tiempo real directamente en su dispositivo y solo captura evidencia (fotos, capturas de pantalla y clips de audio) cuando detecta una infracción. Esto le proporciona la evidencia que necesita sin requerir que vea horas de grabación.
+**Por defecto, AutoProctor no graba video.** Monitorea la cámara del candidato en su propio dispositivo y captura evidencia, como fotos, capturas de pantalla y clips de audio, solo cuando detecta una infracción.
 
-Puede habilitar la grabación completa de video por un costo adicional — consulte [¿Y si aún quiero grabar video?](#y-si-aún-quiero-grabar-video) a continuación.
-
-{/* TODO: Add diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach */}
+Si necesita video completo, active **Candidate recording** (grabación del candidato), un ajuste de [supervisión avanzada](/enhanced-proctoring) que graba de forma continua la cámara del candidato. Consulte [¿Y si aún quiero grabar video?](#y-si-aún-quiero-grabar-video) a continuación.
 
 ## Cómo Funciona el Monitoreo con IA de AutoProctor
 
-Las plataformas de supervisión tradicionales graban un video de la cámara del candidato, lo cargan a sus servidores y luego lo procesan en busca de infracciones. En la mayoría de los casos, se espera que usted vea el video para verificar los incidentes señalados.
+Las plataformas de supervisión tradicionales cargan un video del candidato a sus servidores, y a menudo se espera que usted lo vea para verificar los incidentes señalados.
 
-AutoProctor adopta un enfoque fundamentalmente diferente. Su software de inteligencia artificial monitorea la transmisión de video **directamente en el dispositivo del candidato** y señala infracciones a medida que ocurren. No se carga ni almacena video en ningún servidor.
+La IA de AutoProctor monitorea la transmisión de video **directamente en el dispositivo del candidato** y señala infracciones a medida que ocurren. Con la configuración predeterminada, no se carga ni almacena video en ningún servidor.
 
 Piense en ello como un detector de humo: funciona continuamente en segundo plano, monitoreando todo el tiempo, y solo le alerta cuando se detecta algo.
-
-{/* TODO: Add illustration of the smoke detector analogy -- on-device monitoring with alert-only output */}
 
 ## Ventajas Principales
 
 | Ventaja | Cómo Funciona |
 |---|---|
 | **No es necesario revisar videos** | Las infracciones se señalan automáticamente con evidencia de respaldo (fotos y capturas de pantalla), por lo que no necesita ver horas de grabación |
-| **Funciona sin conexión** | Dado que el monitoreo ocurre en el dispositivo, las infracciones se detectan incluso si el candidato se desconecta temporalmente de internet |
+| **Funciona sin conexión** | Las infracciones se detectan aunque el candidato se desconecte, y la evidencia se sincroniza cuando se reconecta |
 | **Previene trampas al desconectar internet** | Con otras plataformas, los candidatos pueden apagar su internet para evitar ser grabados. Con AutoProctor, el monitoreo continúa en el dispositivo independientemente de la conectividad |
-| **Reducción de la carga administrativa** | Revise solo los incidentes señalados en lugar de grabaciones completas |
 | **Menores requisitos de ancho de banda** | No se cargan archivos de video grandes durante el examen, reduciendo la exigencia de red para candidatos con conexiones lentas |
-
-<Note>
-Debido a que el monitoreo ocurre en el dispositivo del candidato, AutoProctor captura evidencia de infracciones incluso cuando el candidato se desconecta. Cuando el candidato se reconecta, la evidencia se sincroniza con el servidor. Esta es una ventaja significativa sobre las plataformas que dependen de la carga continua de video.
-</Note>
 
 ## ¿Qué Evidencia Recibe en Lugar de Video?
 
-Cuando AutoProctor detecta una infracción, captura uno o más de los siguientes elementos:
+AutoProctor captura la evidencia siguiente. La última columna es el interruptor que activa cada una, en la sección **Proctoring** de la configuración (**Settings**) de un examen.
 
-- **Fotos** — Instantáneas de la cámara (por ejemplo, cuando no se detecta ningún rostro o se detectan múltiples rostros)
-- **Capturas de pantalla** — Capturas de la pantalla del candidato (por ejemplo, cuando cambia de pestaña o aplicación)
-- **Clips de audio** — Grabaciones de ruido de fondo cuando el micrófono detecta audio sospechoso
-- **Fotos aleatorias** — Instantáneas periódicas tomadas a intervalos aleatorios durante el examen
-- **Grabación de sesión** — Registros de clics del ratón y actividad del teclado
+| Evidencia | Qué captura | Ajuste |
+|---|---|---|
+| **Fotos** | Instantáneas de la cámara, por ejemplo cuando no se detecta ningún rostro o se detectan múltiples rostros | **Camera** |
+| **Capturas de pantalla** | Capturas de la pantalla del candidato, por ejemplo cuando cambia de pestaña o aplicación | **Tab switching** |
+| **Clips de audio** | Grabaciones de ruido de fondo cuando el micrófono detecta audio sospechoso | **Microphone** |
+| **Fotos aleatorias** | Instantáneas periódicas tomadas a intervalos aleatorios durante el examen | **Photos at random** |
+| **Grabación de sesión** | Registros de clics del ratón y actividad del teclado. Solo cuestionarios Socratease | **Session recording** |
 
-<Frame caption="Un informe de supervisión mostrando diferentes tipos de evidencia de infracciones">
+<Frame>
   <img
     className="rounded-xl"
     src="/images/getting-started/sample-proctoring-report.png"
-    alt="Informe de supervisión mostrando fotos, capturas de pantalla, clips de audio y registros de actividad como evidencia de infracciones"
+    alt="Un informe de supervisión con fotos, capturas de pantalla y clips de audio"
   />
 </Frame>
 
-Toda esta evidencia aparece en el [informe de supervisión](/where-to-find-proctoring-results) del candidato, organizada por marca de tiempo y tipo de infracción.
+Toda esta evidencia aparece en el [informe de supervisión](/where-to-find-proctoring-results) del candidato, organizada por marca de tiempo y tipo de infracción. Una grabación de sesión se reproduce en la pestaña **Session recording** del mismo informe.
 
 <Warning>
 En ocasiones, la evidencia puede faltar en un informe si el dispositivo del candidato se quedó sin almacenamiento o si el navegador restringió el acceso a la cámara o al micrófono durante el examen. Consulte [Imágenes y Grabaciones Faltantes](/missing-images-and-recordings) para pasos de resolución de problemas.
@@ -59,14 +52,33 @@ En ocasiones, la evidencia puede faltar en un informe si el dispositivo del cand
 
 ## ¿Y Si Aún Quiero Grabar Video?
 
-Para fines de cumplimiento o auditoría, puede habilitar la **grabación de video** a través de su [Configuración de Supervisión](/proctoring-settings) por un costo adicional. Consulte la [página de precios](https://www.autoproctor.co/pricing) para más detalles.
+Para fines de cumplimiento o auditoría, puede activar **Candidate recording**. Graba de forma continua la cámara del candidato durante todo el examen y cuesta **15 créditos adicionales por intento**. Consulte la [página de precios](https://www.autoproctor.co/pricing) para más detalles.
 
-Cuando la grabación de video está habilitada, usted recibe **un video y audio completo de toda la sesión del candidato** además de la evidencia estándar de infracciones.
+<Steps>
+  <Step title="Abra la Sección Proctoring">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Proctoring**.
+  </Step>
+  <Step title="Active Candidate Recording y Guarde">
+    Con el interruptor **Proctoring** activado, active **Candidate recording** en **Enhanced proctoring** (supervisión avanzada). Luego haga clic en **Save settings**.
+
+    {/* screenshot: "Enhanced proctoring" group of the Proctoring section on a Socratease test, cropped to the "Session recording" and "Candidate recording" rows with their "+4 credits / attempt" and "+15 credits / attempt" badges, "Candidate recording" On */}
+  </Step>
+</Steps>
+
+Entonces recibe **un video y audio completo de la sesión** junto con la evidencia habitual. AutoProctor tiene dos opciones de grabación, y cada una graba algo distinto:
+
+| Opción | Qué graba | Dónde se ve | Créditos adicionales por intento | Disponible en |
+|---|---|---|---|---|
+| **Candidate recording** | La cámara del candidato, de forma continua | Pestaña **Candidate recording** del informe | 15 | Todos los exámenes |
+| **Session recording** | La actividad en la pantalla del candidato, incluidos los clics del ratón y el uso del teclado | Pestaña **Session recording** del informe | 4 | Solo cuestionarios Socratease |
+
+Consulte [Supervisión Avanzada](/enhanced-proctoring) para ver ambas opciones y sus costos en créditos.
 
 ## Recursos Relacionados
 
-- [Qué Se Monitorea](/what-gets-tracked-during-proctoring) — Todas las capacidades de monitoreo disponibles durante la supervisión
-- [Puntaje de Confianza](/what-is-trust-score) — Cómo se resume la evidencia de infracciones en un puntaje
-- [Resultados de Supervisión](/where-to-find-proctoring-results) — Cómo ver la evidencia de infracciones y los informes
-- [Imágenes y Grabaciones Faltantes](/missing-images-and-recordings) — Por qué parte de la evidencia puede no aparecer
-- [Significado de "Se Desconectó"](/what-does-went-offline-mean) — Qué sucede cuando un candidato se desconecta durante un examen
+- [Supervisión Avanzada](/enhanced-proctoring) - Candidate recording, Session recording y otras opciones avanzadas
+- [Qué Se Monitorea](/what-gets-tracked-during-proctoring) - Todas las capacidades de monitoreo disponibles durante la supervisión
+- [Puntaje de Confianza](/what-is-trust-score) - Cómo se resume la evidencia de infracciones en un puntaje
+- [Resultados de Supervisión](/where-to-find-proctoring-results) - Cómo ver la evidencia de infracciones y los informes
+- [Imágenes y Grabaciones Faltantes](/missing-images-and-recordings) - Por qué parte de la evidencia puede no aparecer
+- [Significado de "Se Desconectó"](/what-does-went-offline-mean) - Qué sucede cuando un candidato se desconecta durante un examen

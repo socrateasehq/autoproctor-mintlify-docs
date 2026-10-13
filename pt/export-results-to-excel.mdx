@@ -1,54 +1,71 @@
 ---
 title: "Exportar Resultados para Excel"
-description: "Baixe os resultados dos seus testes do AutoProctor como uma planilha Excel para registro, compartilhamento com colegas e fins de auditoria."
+description: "Baixe os resultados dos seus testes do AutoProctor como um arquivo CSV que abre no Excel, para registro, compartilhamento com colegas e fins de auditoria."
 ---
 
-O AutoProctor permite exportar os resultados dos seus testes para uma planilha Excel. Isso é útil para compartilhar resultados com colegas, manter registros de auditoria ou armazenar documentação para sua instituição.
-
-## O Que a Exportação Inclui
-
-A planilha exportada contém um resumo de todos os resultados dos candidatos:
-
-| Coluna | Descrição |
-|---|---|
-| **Nome do candidato** | Nome do participante do teste |
-| **Endereço de e-mail** | E-mail usado para realizar o teste |
-| **Hora de início do teste** | Quando o candidato iniciou o teste |
-| **Hora de envio** | Quando o candidato enviou o teste |
-| **Trust Score** | Pontuação de integridade da supervisão (se a supervisão estiver ativada) |
-| **Pontuação do questionário** | Pontuação do candidato (apenas para Questionários Socratease) |
-
-<Frame caption="Tabela de resultados com botão Export to Excel">
-  <img className="border rounded-xl" src="/images/results/export-results-table.png" alt="Tabela de resultados no painel do AutoProctor com opção de exportação" />
-</Frame>
-
-Você pode consultar uma [planilha de exemplo exportada](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) para ver o formato exato.
+Exporte os resultados de um teste como um **arquivo CSV** que abre no Microsoft Excel, no Google Sheets ou em qualquer aplicativo de planilhas.
 
 ## Como Exportar
 
-<Frame caption="Exportando resultados para Excel">
-  <img className="border rounded-xl" src="/images/results/export-results-to-excel.gif" alt="GIF mostrando como exportar resultados para Excel no painel do AutoProctor" />
-</Frame>
-
 <Steps>
-  <Step title="Abra a página de resultados">
-    Navegue até o seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e clique em **Results** do teste que deseja exportar.
+  <Step title="Abra a Página de Resultados">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Results** (resultados) ao lado do teste que deseja exportar.
   </Step>
-  <Step title="Clique no botão Exportar">
-    Clique no botão **Export to Excel** no topo da tabela de resultados. O arquivo é baixado automaticamente para o seu dispositivo.
+  <Step title="Escolha Quais Tentativas Exportar (Opcional)">
+    O arquivo contém as tentativas listadas na tabela **Submissions**, na mesma ordem. Use primeiro a caixa de busca, os filtros e **Sort** (ordenar) acima da tabela para reduzir a lista. Por exemplo, defina o filtro **Submitted** como **Yes** para deixar de fora as tentativas não enviadas.
   </Step>
-  <Step title="Abra o arquivo">
-    Abra o arquivo `.xlsx` baixado no Microsoft Excel, Google Sheets ou qualquer aplicativo de planilhas compatível.
+  <Step title="Clique em Export">
+    Clique em **Export** acima da tabela **Submissions**.
+
+    {/* screenshot: Results page of a proctored Google Forms test, cropped to the bar above the "Submissions" table showing the search box, the "Started", "Submitted" and "Trust score" filters, "Sort", "Columns" and the "Export" button, with the first two table rows below */}
+  </Step>
+  <Step title="Escolha as Colunas">
+    Marque as colunas que deseja no arquivo e depois clique em **Export**.
+
+    {/* screenshot: "Export to CSV" dialog on a proctored Socratease test, showing "Select the columns you want to include in your export.", the "of columns selected" counter, the "Select All" and "Reset" links, the column checklist with "Duration" and "Attempt Label" unticked, and the "Cancel" and "Export" buttons */}
+  </Step>
+  <Step title="Abra o Arquivo">
+    O arquivo é baixado para o seu dispositivo, com o nome do teste e a terminação `_results.csv`.
   </Step>
 </Steps>
 
 <Note>
-Para exportações automáticas e contínuas sem downloads manuais, considere configurar a [integração com Google Sheets](/write-results-to-google-sheets).
+**Export** baixa todas as tentativas que correspondem à sua busca e aos seus filtros, não apenas as linhas carregadas na tela. O botão fica oculto em contas sem um plano ativo ou período de teste.
+</Note>
+
+## O Que a Exportação Inclui
+
+Cada linha do arquivo é uma tentativa. Estas colunas vêm marcadas por padrão:
+
+| Coluna | Descrição | Incluída em |
+|---|---|---|
+| **Name** | Nome e sobrenome do candidato | Todos os testes |
+| **Email** | E-mail usado para realizar o teste | Todos os testes |
+| Uma coluna para cada dado do candidato | A resposta do candidato a cada campo de **Collect candidate details** | Testes com **Collect candidate details** ativado |
+| **Started At (In UTC)** | Quando o candidato iniciou o teste, escrito no fuso horário do seu navegador | Todos os testes |
+| **Submitted At (In UTC)** | Quando o candidato enviou o teste, escrito no fuso horário do seu navegador. Vazio para uma tentativa não enviada | Todos os testes |
+| **Trust Score** | Trust Score como porcentagem, ou `NA` quando não há pontuação | Testes com a supervisão ativada |
+| **Device Type** | Tipo de dispositivo que o candidato usou | Testes com a supervisão ativada |
+| **Finished In Time** | `True` se o candidato enviou dentro da duração do temporizador. Sempre `True` para uma tentativa enviada em um teste sem temporizador | Todos os testes |
+| **Socratease Percentage Scored** | Pontuação do questionário como porcentagem | Questionários Socratease |
+| **Proctoring Report Link** | Link para o relatório de supervisão da tentativa | Questionários Socratease com a supervisão ativada |
+
+Há mais duas colunas disponíveis no diálogo, desmarcadas por padrão:
+
+| Coluna | Descrição |
+|---|---|
+| **Duration** | Tempo entre o início e o envio |
+| **Attempt Label** | O identificador único da tentativa |
+
+Você pode consultar uma [planilha de exemplo exportada](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) para ver o formato.
+
+<Note>
+Para exportações automáticas sem downloads manuais, use a [integração com Google Sheets](/write-results-to-google-sheets).
 </Note>
 
 ## Recursos Relacionados
 
-- [Integração com Google Sheets](/write-results-to-google-sheets) -- Escreva resultados automaticamente em uma planilha Google
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
-- [Compartilhar Resultados do Teste](/share-exam-results) -- Conceda acesso aos resultados do teste para outros usuários
-- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) -- Veja relatórios detalhados de supervisão
+- [Integração com Google Sheets](/write-results-to-google-sheets) - Escreva resultados automaticamente em uma planilha Google
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Visão geral dos resultados do teste vs. resultados de supervisão
+- [Compartilhar Resultados do Teste](/share-exam-results) - Conceda acesso aos resultados do teste para outros usuários
+- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) - Veja relatórios detalhados de supervisão

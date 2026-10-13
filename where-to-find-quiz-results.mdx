@@ -1,17 +1,11 @@
 ---
 title: "Where Can I See My Quiz Results?"
-description: "Understand the two types of results available on AutoProctor -- quiz results showing candidate performance and proctoring results tracking integrity."
+description: "Find quiz scores and answers for your AutoProctor tests: on the Results page for Socratease Quizzes, or in the quiz platform for Google Forms, Microsoft Forms, and IFrame tests."
 ---
 
-AutoProctor provides two distinct types of results for every test: **quiz results** (how candidates performed) and **proctoring results** (whether candidates maintained integrity).
-
-<Frame caption="Results page showing Trust Score column">
-  <img className="border rounded-xl" src="/images/getting-started/sample-results.png" alt="AutoProctor results page showing Trust Score column for each candidate" />
-</Frame>
+AutoProctor provides two distinct types of results for every test: **quiz results** (how candidates performed) and **proctoring results** (whether candidates maintained integrity). Where the quiz results live depends on the quiz platform you used.
 
 ## Quiz Results
-
-Quiz results show each candidate's answers and scores. Unless you use Socratease Quizzes, these results appear in your original quiz platform — not on the [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/).
 
 <Warning>
 Unless you use Socratease Quizzes, you cannot view quiz results directly on AutoProctor. Quiz results appear in the platform where you created the quiz.
@@ -19,29 +13,60 @@ Unless you use Socratease Quizzes, you cannot view quiz results directly on Auto
 
 | Quiz Platform | Where to Find Quiz Results |
 |---|---|
-| **Google Forms** | Open your Google Form and click the **Responses** tab to see all submissions |
-| **Microsoft Forms** | Check the **Responses** section in Microsoft Forms as you normally would |
-| **IFrame Tests** | View results in the platform you embedded within the IFrame |
-| **Socratease Quizzes** | View results directly on your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) under the test's **Results** section |
+| **Google Forms** | The **Responses** tab of your Google Form |
+| **Microsoft Forms** | The **Responses** section of your Microsoft Form |
+| **IFrame Tests** | The platform you embedded within the IFrame |
+| **Socratease Quizzes** | The **Quiz score** column on the test's **Results** page in AutoProctor |
 
 <Note>
 If you use Google Forms and cannot see responses, refer to the troubleshooting guide on [missing Google Forms responses](/google-forms-response-not-visible).
 </Note>
 
+## Quiz Scores for Socratease Quizzes
+
+<Steps>
+  <Step title="Open the Results Page">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Results** next to the test.
+  </Step>
+  <Step title="Find the Candidate">
+    The **Quiz score** column shows each candidate's percentage and points, for example **88% (7/8)**. Search by name or email to find one candidate.
+
+    <Frame>
+      <img src="/images/where-to-find-quiz-results/quiz-score-column.png" alt="Submissions table with the Trust score and Quiz score columns" />
+    </Frame>
+  </Step>
+  <Step title="Open the Answers">
+    Click **View answers** under the score to see every response and the points scored. If the attempt still needs grading, the link reads **Grade quiz** instead.
+  </Step>
+</Steps>
+
+For grading and the analytics views, see [Access Answers and Candidate Responses](/access-candidate-responses).
+
+## Results Across All Your Tests
+
+The [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) page lists every submitted attempt across all your tests, newest first. Its **Quiz score** column depends on the quiz platform of each test:
+
+| Quiz Platform | What the Quiz score column shows |
+|---|---|
+| **Socratease Quizzes** | The percentage scored, with a **Graded** or **Not fully graded** badge. Click the percentage to open the candidate's answers |
+| **Google Forms**, **Microsoft Forms**, **IFrame Tests** | A dash with a help icon. The scores are in the quiz platform, not in AutoProctor |
+
+<Frame>
+  <img src="/images/where-to-find-quiz-results/latest-attempts-quiz-score.png" alt="Latest attempts table with a quiz score on a Socratease attempt and dashes on Google Forms attempts" />
+</Frame>
+
 ## Proctoring Results
 
-As a candidate takes the test, AutoProctor monitors their testing environment and records evidence of possible cheating or malpractice. This data compiles into a proctoring report with a [Trust Score](/what-is-trust-score).
+Proctoring results are a separate report for each attempt, with a [Trust Score](/what-is-trust-score). See [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) to open them.
 
 <Note>
 Proctoring results are only available when you enable proctoring in your [test settings](/proctoring-settings). Tests configured with only a timer do not generate proctoring reports.
 </Note>
 
-To learn how to access proctoring results step by step, see [Where Can I See Proctoring Results?](/where-to-find-proctoring-results).
-
 ## Related Resources
 
-- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) -- Step-by-step guide to viewing proctoring reports
-- [Access Answers and Candidate Responses](/access-candidate-responses) -- View specific candidate responses and scores
-- [Export to Excel](/export-results-to-excel) -- Download results as a spreadsheet
-- [Trust Score Explained](/what-is-trust-score) -- Understand how Trust Scores are calculated
-- [What Gets Tracked](/what-gets-tracked-during-proctoring) -- Learn what AutoProctor monitors during a test
+- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) - Step-by-step guide to viewing proctoring reports
+- [Access Answers and Candidate Responses](/access-candidate-responses) - View specific candidate responses and scores
+- [Export to Excel](/export-results-to-excel) - Download results as a spreadsheet
+- [Trust Score Explained](/what-is-trust-score) - Understand how Trust Scores are calculated
+- [What Gets Tracked](/what-gets-tracked-during-proctoring) - Learn what AutoProctor monitors during a test

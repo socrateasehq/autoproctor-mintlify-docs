@@ -1,62 +1,97 @@
 ---
 title: "Seguimiento del Uso de Créditos de Paquetes de Pruebas"
-description: "Controle cómo se consumen sus créditos en los distintos exámenes y miembros del equipo usando el panel de uso en su cuenta de AutoProctor."
+description: "Controle cómo se consumen sus créditos en los distintos exámenes, candidatos y miembros del equipo usando la página Usage en su cuenta de AutoProctor."
 ---
 
-AutoProctor proporciona un panel de uso dedicado que muestra exactamente cómo se consumen sus créditos. Puede realizar un seguimiento del uso por examen y, si forma parte de un equipo, por miembro del equipo.
+La página **Usage** (uso) muestra hacia dónde van sus créditos. Puede ver el uso por examen, por intento de cada candidato y, si forma parte de un equipo, por miembro del equipo.
 
-## Cómo Funcionan los Créditos
-
-Los créditos se agregan a su cuenta cuando crea una suscripción, cuando esta se renueva, o cuando adquiere recargas de Paquetes de Pruebas. Cada vez que un candidato inicia un examen, se deduce un crédito. La página de Uso le brinda una vista clara de hacia dónde van esos créditos.
-
-## Ver el Uso de Sus Créditos
+## Ver Su Uso
 
 <Steps>
-  <Step title="Abra la página de uso">
-    Haga clic en la pestaña **Usage** en su barra lateral izquierda.
-
-    <Frame caption="Enlace de uso en la barra lateral">
-      <img className="max-h-[300px] border rounded-xl" src="/images/pricing/usage-sidebar-link.png" alt="Enlace de uso resaltado en la barra de navegación lateral izquierda" />
-    </Frame>
-  </Step>
-  <Step title="Revise la tabla de uso">
-    Verá una tabla que muestra la cantidad de créditos utilizados por examen. Haga clic en el título de cualquier examen para abrir los resultados de todos los intentos de ese examen.
-
-    <Frame caption="Tabla de uso">
-      <img className="border rounded-xl" src="/images/pricing/usage-table.png" alt="Tabla de uso que muestra los créditos consumidos por examen" />
-    </Frame>
+  <Step title="Abra la página Usage">
+    Haga clic en [**Usage**](https://www.autoproctor.co/test-admin/usage/) en la barra lateral izquierda y elija la pestaña **Tests** (exámenes) o **Credits** (créditos).
   </Step>
 </Steps>
 
+| Pestaña | Una fila por | Úsela para |
+|---|---|---|
+| **Tests** | Cada examen que usted creó y que tiene al menos un intento | Ver cuántos candidatos intentaron cada examen |
+| [**Credits**](https://www.autoproctor.co/test-admin/usage/?t=c) | Cada intento de un candidato que usó créditos | Ver cuántos créditos usó cada intento y el saldo posterior |
+
+<Tip>
+Haga clic en **Add credits** (agregar créditos) en la esquina superior derecha de la página Usage para comprar más créditos.
+</Tip>
+
+## La Pestaña Tests
+
+La pestaña **Tests** lista sus exámenes con su número de intentos. Haga clic en el título de un examen para abrir sus resultados.
+
+{/* screenshot: Usage page with the Tests tab selected, cropped to the content area without the sidebar: the line "You have N credits remaining.", the "Add credits" button, the Tests / Credits switch, the "Search tests" box, the Sort control, and the table with columns Title, Proctoring, Number of Attempts, Created showing three or four tests */}
+
 <Note>
-Si un examen ha sido compartido con varios administradores de exámenes, solo el **administrador principal (el creador del examen)** lo verá listado en su página de uso.
+Si un examen ha sido compartido con varios administradores de exámenes, solo el **administrador principal (el creador del examen)** lo verá listado en su página Usage.
 </Note>
+
+## La Pestaña Credits
+
+La pestaña **Credits** tiene una fila por cada intento que usó créditos, del más reciente al más antiguo.
+
+| Columna | Qué muestra |
+|---|---|
+| **Date & Time** | Cuándo el candidato inició el examen |
+| **Transaction Reason** | El correo electrónico del candidato y el examen que inició, junto con las funciones de supervisión avanzada que estaban activadas |
+| **Credits Used** | Los créditos deducidos por el intento, mostrados como un número negativo |
+| **Balance Remaining** | Su saldo de créditos justo después del intento |
+
+{/* screenshot: Usage page with the Credits tab selected, cropped to the table card: the "Candidate email" search box, the "Date & Time" filter, the Sort control, the "Columns" and "Export" buttons, and the table with columns Date & Time, Transaction Reason, Credits Used, Balance Remaining showing a few rows, at least one with Credits Used greater than 1 */}
+
+Los créditos se deducen cuando un candidato **inicia** un examen. Las funciones de [supervisión avanzada](/enhanced-proctoring) agregan créditos por intento, por eso una fila puede mostrar más de 1. Consulte [Pagos y Créditos Explicados](/payments-and-credits) para conocer todas las reglas de créditos.
+
+Busque por **Candidate email**, filtre por **Date & Time** o haga clic en **Export** para descargar las filas como un archivo CSV.
 
 ## Uso del Equipo
 
-Si forma parte de un [Equipo](/what-is-a-team), la página de uso muestra sus datos de exámenes personales de forma predeterminada. Para ver el consumo de créditos de todo el equipo:
+Si forma parte de un [Equipo](/what-is-a-team), la página Usage muestra sus propios exámenes e intentos de forma predeterminada. Los **administradores del equipo** también pueden ver el uso de todo el equipo.
+
+### Créditos Usados por Todo el Equipo
 
 <Steps>
-  <Step title="Haga clic en Team Usage">
-    Haga clic en el botón **Team Usage** en la esquina superior derecha de la página de Uso.
+  <Step title="Abra la pestaña Credits">
+    Vaya a la página [**Usage**](https://www.autoproctor.co/test-admin/usage/?t=c) y seleccione **Credits**.
   </Step>
-  <Step title="Revise el consumo de todo el equipo">
-    La vista de uso del equipo muestra una tabla con **todos los miembros del equipo y la cantidad total de créditos que cada miembro ha utilizado**. Haga clic en cualquier miembro para ver en detalle su uso a nivel de examen individual.
+  <Step title="Cambie a Team Credit Usage">
+    Haga clic en **Team Credit Usage** (uso de créditos del equipo) sobre la tabla. La tabla lista los intentos de los **exámenes de todos los miembros del equipo**, con una columna **Test Admin** que muestra quién creó cada examen. Haga clic en **My Credit Usage** (mi uso de créditos) para volver a sus propios intentos.
 
-    <Frame caption="Tabla de uso del equipo">
-      <img className="border rounded-xl" src="/images/pricing/team-usage-table.png" alt="Tabla de uso del equipo mostrando el consumo de créditos por miembro del equipo" />
-    </Frame>
+    {/* screenshot: Usage page of a team admin on the team view, cropped to the table card: the "My Credit Usage" / "Team Credit Usage" switch with "Team Credit Usage" selected, and the table with columns Date & Time, Test Admin, Transaction Reason, Credits Used, Balance Remaining showing rows from two different test admins */}
   </Step>
 </Steps>
 
-<Note>
-Solo los administradores del equipo y el propio miembro pueden ver el uso detallado por examen. Los miembros regulares del equipo pueden ver la vista resumida pero no los desgloses individuales de otros miembros.
-</Note>
+### Exámenes de un Miembro del Equipo
+
+<Steps>
+  <Step title="Abra la página Team">
+    Haga clic en [**Team**](https://www.autoproctor.co/test-admin/team/) en la barra lateral izquierda.
+  </Step>
+  <Step title="Haga clic en usage en la tarjeta de un miembro">
+    Haga clic en **usage** junto al número de intentos de un miembro. Se abre la página **Test Usage** con los exámenes de ese miembro.
+
+    {/* screenshot: Team page of a team admin, tight crop of two member cards in the "Members" list, each showing the member name, email, an attempts count and the "usage" link next to it */}
+  </Step>
+</Steps>
+
+### Quién Puede Ver Qué
+
+| Vista | Administrador del Equipo | Miembro Regular |
+|---|---|---|
+| Sus propias pestañas **Tests** y **Credits** | Sí | Sí |
+| **Team Credit Usage** | Sí | No |
+| Número de intentos en la tarjeta de cada miembro | Sí | Sí |
+| Enlace **usage** en la tarjeta de un miembro | Todos los miembros | Solo su propia tarjeta |
 
 ## Recursos Relacionados
 
-- [Pagos y Créditos Explicados](/payments-and-credits) -- Cómo funcionan los créditos, las suscripciones y las recargas
-- [¿Qué Es un Equipo?](/what-is-a-team) -- Comprenda la facturación del equipo y los créditos compartidos
-- [Los Paquetes Adquiridos No Aparecen](/purchased-packs-not-showing) -- Solucione problemas con créditos faltantes
-- [Concurrencia](/max-simultaneous-candidates) -- Comprenda los límites de intentos de examen simultáneos
-- [Contáctenos](/contact-us) -- Obtenga ayuda con discrepancias en el uso
+- [Pagos y Créditos Explicados](/payments-and-credits) - Cómo funcionan los créditos, las suscripciones y las recargas
+- [¿Qué Es un Equipo?](/what-is-a-team) - Comprenda la facturación del equipo y los créditos compartidos
+- [Los Paquetes Adquiridos No Aparecen](/purchased-packs-not-showing) - Solucione problemas con créditos faltantes
+- [Concurrencia](/max-simultaneous-candidates) - Comprenda los límites de intentos de examen simultáneos
+- [Contáctenos](/contact-us) - Obtenga ayuda con discrepancias en el uso

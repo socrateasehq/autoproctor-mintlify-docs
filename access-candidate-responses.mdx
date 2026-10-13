@@ -3,49 +3,58 @@ title: "Access Answers and Candidate Responses"
 description: "View individual candidate submissions, scores, and responses on AutoProctor for Socratease Quizzes and Google Forms tests."
 ---
 
-After candidates complete a test, you can review their individual submissions to see detailed responses, scores, and grading status. The process differs depending on which quiz platform you use.
+You can review each candidate's responses, scores and grading status. Where you do it depends on the quiz platform you use.
 
 ## For Socratease Quizzes
 
 <Steps>
-  <Step title="Go to your dashboard">
-    Visit your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and locate the test you want to review.
+  <Step title="Open the Results Page">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Results** next to the test.
   </Step>
-  <Step title="Click View under Results">
-    Click the **View** button under the **Results** section of the relevant test. This opens a list of all candidate submissions (Overall Analytics).
+  <Step title="Find the Candidate">
+    The **Quiz score** column shows each candidate's score, with a link under it.
 
-    <Frame caption="Click on View Answers for individual responses">
-      <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="List of candidate submissions showing names, scores, and grading status" />
+    <Frame>
+      <img src="/images/access-candidate-responses/quiz-score-column.png" alt="Quiz score column with View answers under one score and Grade quiz under another" />
     </Frame>
   </Step>
-  <Step title="Check scores and responses">
-    Each submission shows one of two states:
+  <Step title="Check Scores and Responses">
+    The link under the score shows one of two states:
 
-    | State | What It Means | Action |
+    | Link | What It Means | Action |
     |---|---|---|
-    | **Score link with percentage** | The candidate finished the test and it has been graded | Click the score link to view their full responses |
-    | **Blue Grade button** | The candidate has not finished the test, or it has not yet been graded | Click **Grade** to review and grade their responses |
+    | **View answers** | The attempt has been graded | Click **View answers** to see the candidate's full responses |
+    | **Grade quiz** | The candidate submitted the test and it has not been fully graded | Click **Grade quiz** to review and grade their responses |
 
-    Clicking either link opens a detailed page showing all responses, points scored, and candidate-specific information.
+    Either link opens the candidate's report on the **Results** tab.
 
-    <Frame caption="Individual submission detail page with responses and scores">
-      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="Individual submission detail page showing candidate responses and points scored" />
+    <Frame>
+      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="A candidate's responses and points scored" />
     </Frame>
   </Step>
 </Steps>
+
+<Tip>
+To find a candidate without opening a test first, go to [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/). Click the percentage in the **Quiz score** column to open that candidate's answers.
+</Tip>
 
 ## Grading Responses Manually
 
-Some attempts require manual action before their results become available, for example when a candidate never submits the test themselves.
+The Results page of a Socratease quiz gives you three ways to start grading.
 
-<Steps>
-  <Step title="Open the submission">
-    Click **View Report** next to the candidate's attempt to open their response detail page.
-  </Step>
-  <Step title="Mark the attempt as finished">
-    Mark the attempt as finished to submit it on the candidate's behalf. This releases their results according to your [result release setting](/show-results-to-candidates).
-  </Step>
-</Steps>
+| Where | What to click |
+|---|---|
+| The banner **You have N ungraded submissions** | **Grade now in Socratease** opens the quiz's Individual Analytics |
+| The **Ungraded** tile | **Grade now** opens the quiz's Individual Analytics |
+| The **Quiz score** column of an attempt | **Grade quiz** opens that candidate's report on the **Results** tab |
+
+To list only the attempts that need grading, click the **Graded** filter above the table and choose **Not graded**.
+
+<Frame>
+  <img src="/images/access-candidate-responses/ungraded-submissions.png" alt="The ungraded submissions banner and the Ungraded tile" />
+</Frame>
+
+On a proctored test, if a candidate never submits, click **View report** on their attempt and then **Mark as Finished** to submit it on their behalf. This releases their results according to your [result release setting](/show-results-to-candidates).
 
 {/* TODO: Add screenshot of marking an attempt as finished */}
 
@@ -53,7 +62,11 @@ For grading individual questions and adjusting scores, see [Individual Analytics
 
 ## Question Insights and Individual Analytics
 
-Beyond Overall Analytics, Socratease gives you two additional analytics views for a quiz.
+Socratease gives you three analytics views for a quiz: Overall Analytics, Question Insights and Individual Analytics. To open them, click **Users' answers** at the top right of the test's Results page.
+
+<Frame>
+  <img src="/images/access-candidate-responses/results-page-links.png" alt="Edit settings, Open quiz and Users' answers at the top of the Results page" />
+</Frame>
 
 ### Question Insights
 
@@ -83,31 +96,28 @@ Group By and Filter by Tag are also available here. See [Using Tags](/using-tags
 
 ## For Google Forms
 
-Google Forms, Microsoft Forms, and IFrame tests manage their own response data independently of AutoProctor. For Google Forms specifically, to view individual candidate responses:
+Google Forms keeps its own responses, outside AutoProctor.
 
 <Steps>
-  <Step title="Open Your Google Form">
-    Go to the Google Form you used for the test.
-  </Step>
   <Step title="Click the Responses Tab">
-    Select the **Responses** tab at the top of the form editor.
+    Open the Google Form you used for the test and click **Responses** at the top.
   </Step>
   <Step title="View Individual Responses">
-    Click the **Individual** tab to browse through each candidate's responses one at a time. Use the arrow buttons to move between submissions.
+    Click **Individual** and use the arrows to move between candidates.
   </Step>
 </Steps>
 
 For more details on Google Forms' response features, see the [official Google documentation](https://support.google.com/docs/answer/139706).
 
 <Note>
-If you can't see responses in Google Forms, see the guide on [Google Forms responses not visible](/google-forms-response-not-visible). For Microsoft Forms and IFrame tests, check the Responses section in that platform as you normally would. See [Where Can I See My Quiz Results?](/where-to-find-quiz-results) for an overview of where to find results on each platform.
+If you can't see responses in Google Forms, see the guide on [Google Forms responses not visible](/google-forms-response-not-visible). For Microsoft Forms and IFrame tests, see [Where Can I See My Quiz Results?](/where-to-find-quiz-results).
 </Note>
 
 ## Related Resources
 
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
-- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) -- View proctoring reports for candidates
-- [Export to Excel](/export-results-to-excel) -- Download all results as a spreadsheet
-- [Showing Results to Candidates](/show-results-to-candidates) -- Control what candidates see after submission
-- [Google Sheets Integration](/write-results-to-google-sheets) -- Automatically sync results to a Google Sheet
-- [Using Tags](/using-tags) -- Filter and group results by tags
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Overview of quiz results vs. proctoring results
+- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) - View proctoring reports for candidates
+- [Export to Excel](/export-results-to-excel) - Download all results as a spreadsheet
+- [Showing Results to Candidates](/show-results-to-candidates) - Control what candidates see after submission
+- [Google Sheets Integration](/write-results-to-google-sheets) - Automatically sync results to a Google Sheet
+- [Using Tags](/using-tags) - Filter and group results by tags

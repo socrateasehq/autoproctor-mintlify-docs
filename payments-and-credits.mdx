@@ -1,21 +1,50 @@
 ---
 title: "Payments and Credits Explained"
-description: "Understand how payments, subscriptions, and credits work on AutoProctor, including top-ups, test packs, and credit rollover policies."
+description: "Understand how payments, subscriptions, and credits work on AutoProctor, including top-ups, credit packs, and credit rollover policies."
 ---
 
-AutoProctor uses a credit-based billing system. Every test attempt by a candidate consumes one credit, and you purchase credits through subscriptions and optional top-ups. This page explains the full billing model so you can plan your credit needs.
+Every test attempt by a candidate uses credits. You get credits from a subscription and from optional top-ups.
+
+Your plan, your credit balance and your payments are on the [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/) page.
 
 ## Free Credits
 
-When you create a Test Admin account on AutoProctor, you get **10 free credits**. Each credit corresponds to a single test attempt.
+A new Test Admin account starts on a trial with **10 free credits** and every Premium feature. Once you use them up, you need a subscription to continue.
 
-For example, with 10 credits you can have 10 candidates attempt 1 test each, or 5 candidates attempt 2 tests each. Once you use up the free credits, you must purchase a subscription to continue.
+<Frame>
+  <img src="/images/payments-and-credits/trial-overview.png" alt="The Overview tab of Subscription & Billing during the free trial" />
+</Frame>
+
+## How Credits Are Used
+
+Every proctored attempt uses **1 credit**. Enhanced proctoring features add extra credits to each attempt.
+
+| What the attempt uses | Credits per attempt |
+|---|---|
+| **Proctored attempt** | 1 |
+| **Timed-only attempt** | 1 during the trial, free with a subscription |
+| **Session recording** | +4 |
+| **Auxiliary device** | +4 |
+| **ID card verification** | +4 |
+| **Impersonation detection** | +4 |
+| **Test-taker recording** (**Candidate recording** in Test Settings) | +15 |
+
+If you turn on the four +4 features together, they add **12 credits**, not 16. See [Enhanced Proctoring](/enhanced-proctoring) for what each feature does.
 
 ## Purchase a Subscription
 
-<Frame caption="How to purchase a subscription">
-  <video controls className="w-full rounded-xl" src="/videos/pricing/subscribe.mp4"></video>
-</Frame>
+<Steps>
+  <Step title="Click Subscribe">
+    Click **Subscribe** below the credits card at the bottom of the sidebar. It opens the Pricing page.
+
+    <Frame>
+      <img src="/images/payments-and-credits/sidebar-credits-trial.png" alt="The credits card and Subscribe button at the bottom of the sidebar" />
+    </Frame>
+  </Step>
+  <Step title="Choose a Plan and Pay">
+    On the [Pricing Page](https://www.autoproctor.co/pricing/), choose a plan and a billing frequency, then pay. Any trial credits you still have carry over to your new plan.
+  </Step>
+</Steps>
 
 AutoProctor offers **3 plans** and **3 billing frequencies**:
 
@@ -31,52 +60,64 @@ AutoProctor offers **3 plans** and **3 billing frequencies**:
 | **Quarterly** | Renews every 3 months |
 | **Yearly** | Renews every 12 months |
 
-**Example:** If you purchase the Monthly Standard plan on March 5th, you pay X dollars. You are then charged X dollars on the 5th of each subsequent month. If you choose a different frequency (Quarterly, Yearly), the renewal date adjusts accordingly.
-
 <Warning>
 Subscriptions auto-renew. To stop the auto-deduction, you must [cancel your subscription](/cancel-subscription) before the renewal date.
 </Warning>
 
-When you purchase a subscription, you receive a set number of credits (for example, 150). Every time the subscription renews, the same number of credits are added to your account.
+Each plan comes with a set number of credits, for example 150. The same number is added every time the subscription renews. The **Renews on** tile on the **Overview** tab shows the date of your next charge.
+
+<Frame>
+  <img src="/images/payments-and-credits/active-overview.png" alt="The Overview tab of Subscription & Billing on an active subscription" />
+</Frame>
 
 ## Top Up Your Subscription
 
-<Frame caption="How to add credits">
-  <img className="border rounded-xl" src="/images/pricing/topup.gif" alt="GIF showing how to purchase a Test Pack top-up on AutoProctor" />
+If you need more credits than your plan provides, buy **credit packs**. You can buy from 1 to 1,000 packs in one purchase.
+
+<Steps>
+  <Step title="Open the Top up Tab">
+    Go to the [**Top up**](https://www.autoproctor.co/test-admin/billing/?t=t) tab of the **Subscription & Billing** page.
+  </Step>
+  <Step title="Enter the Number of Packs">
+    Enter the **Number of packs**. The **Order summary** shows the credits you get and the total.
+  </Step>
+  <Step title="Pay">
+    Click **Continue to payment** and pay on Stripe's checkout page. The credits are added to your balance a moment after you return.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/payments-and-credits/top-up.png" alt="The Top up tab with the number of packs and the order summary" />
 </Frame>
 
-If you need more credits than your plan provides in a given billing cycle, you can purchase **Test Packs**. Each Test Pack contains a fixed number of credits, and you can buy as many as you need.
-
-Top-ups are a **one-time cost**. The credits remain available as long as your subscription is active.
+Top-ups are a **one-time cost**, and they need an active plan. The credits stay available as long as your subscription is active.
 
 <Note>
-If you purchased Test Packs but cannot see them in your account, see [Purchased Packs Not Showing Up](/purchased-packs-not-showing) for troubleshooting steps.
+If you purchased credit packs but cannot see them in your account, see [Purchased Packs Not Showing Up](/purchased-packs-not-showing).
 </Note>
 
 ## Credit Rollover
 
 <Note>
-As long as you maintain an active subscription (meaning you pay each month, quarter, or year), **credits do not expire -- they roll over** into subsequent billing periods.
+As long as you maintain an active subscription, **credits do not expire. They roll over** into the next billing period, on top of your renewal credits.
 </Note>
-
-If you purchased 600 extra credits in one month but only used half of them, the remaining credits carry forward. In the next billing period, you have those unused credits plus your renewal credits, all available for immediate use.
 
 ## Discounts
 
-AutoProctor offers discounts on longer billing frequencies (Quarterly and Yearly vs. Monthly) as well as bulk top-up purchases:
+Quarterly and Yearly plans cost less than Monthly. Large top-ups also get a **volume discount**, applied automatically in the order summary.
 
-| Top-Up Credits | Discount |
-|---|---|
-| 1,500 – 2,999 | 5% off |
-| 3,000+ | 10% off |
+| Packs in One Purchase | Top-Up Credits | Discount |
+|---|---|---|
+| 10 to 19 | 1,500 to 2,850 | 5% off |
+| 20 or more | 3,000 or more | 10% off |
 
-Visit the [Pricing Page](https://www.autoproctor.co/pricing/) for details and use the Pricing Calculator to estimate your costs.
+See the [Pricing Page](https://www.autoproctor.co/pricing/) for prices and the Pricing Calculator.
 
 ## Related Resources
 
-- [Track Test Pack Usage](/track-credit-usage) -- Monitor how your credits are being consumed
-- [How to Cancel Your Subscription](/cancel-subscription) -- Step-by-step cancellation instructions
-- [One-Time Subscription](/one-time-subscription) -- Use AutoProctor for a single event
-- [Elite Features](/elite-plan-features) -- Features available on the Elite plan
-- [Invoices for Payments](/invoices-and-receipts) -- Access and download your invoices
-- [FAQs](/faqs) -- Common questions about AutoProctor
+- [Track Test Pack Usage](/track-credit-usage) - Monitor how your credits are being consumed
+- [How to Cancel Your Subscription](/cancel-subscription) - Step-by-step cancellation instructions
+- [One-Time Subscription](/one-time-subscription) - Use AutoProctor for a single event
+- [Elite Features](/elite-plan-features) - Features available on the Elite plan
+- [Invoices for Payments](/invoices-and-receipts) - Access and download your invoices
+- [FAQs](/faqs) - Common questions about AutoProctor

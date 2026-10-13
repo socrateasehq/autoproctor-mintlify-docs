@@ -3,95 +3,128 @@ title: "What is a Team on AutoProctor?"
 description: "Learn how to create and manage teams on AutoProctor to share billing, pool credits across users, and collaborate on tests with team members."
 ---
 
-The Team feature lets multiple users share a single billing account and credit pool. This is ideal for organizations where several people need to create and manage proctored tests without purchasing separate subscriptions.
+The Team feature lets multiple users share a single billing account and credit pool.
 
 <Note>
-The Team feature is available only on the **Premium** and **Elite** plans.
+The Team feature is available on the **Premium** and **Elite** plans, and during the free trial. On the Standard plan, the Team page shows an **Upgrade subscription** button instead.
 </Note>
 
 ## What is a Team?
 
-A Team is a group of AutoProctor users (each with their own email address) linked to the same billing account. The primary benefits are:
+A Team is a group of AutoProctor users linked to the same billing account.
 
-- **Shared billing and credits** -- Instead of each user paying separately, all team members draw from a common credit pool. Any team member can purchase credits, and the credits are available to everyone on the team.
-- **Cost savings** -- Pooling credits across your organization avoids duplicate purchases and lets you take advantage of bulk discounts.
-- **Test collaboration** -- You can add team members as [collaborators](/add-collaborators) on your tests. Collaborators can view results, edit Socratease quiz questions, and more.
+| Benefit | What it means |
+|---|---|
+| **One shared credit pool** | All members draw from the same credit balance, which team admins top up from the **Billing** page |
+| **Cost savings** | Pooling credits avoids duplicate purchases and lets you use bulk discounts |
+| **Test collaboration** | Add team members as [collaborators](/add-collaborators) on your tests |
+| **Usage in one place** | The Team page shows every member's test attempts, and team admins see the credits used by the whole team |
 
-**Example:** If you are a school, instead of each test creator purchasing their own subscription, you can create a team. One purchase covers everyone, and all test creators share the same credit pool.
+**Example:** a school creates one team, so all its test creators share one subscription and one credit pool.
 
-## Viewing Team Members
+## Creating a Team
 
-Once you create a team, click on the **Team** link in the sidebar to view the team management page. You see:
+<Steps>
+  <Step title="Open the Team page">
+    Click [**Team**](https://www.autoproctor.co/test-admin/team/) in the left sidebar.
+  </Step>
+  <Step title="Name your team">
+    Type a name under **Team name** and click **Create team**.
+  </Step>
+</Steps>
 
-- The **team name**
-- The **join link** -- any AutoProctor user who visits this link is added to the team
-- A button to **leave the team**
-- A list of **all team members**
-- An **"Admin" tag** next to each team admin
+<Frame>
+  <img src="/images/what-is-a-team/create-team.png" alt="The Team page before a team exists, with the Team name field and the Create team button" />
+</Frame>
 
-<Frame caption="Team management page">
-  <img className="border rounded-xl" src="/images/pricing/team-management-page.png" alt="Team management page showing member list and join link" />
+<Warning>
+When you create a team, your current subscription and remaining credits become the team's. You become the **team admin**.
+</Warning>
+
+## Inviting Members
+
+Members join a team through its **join link**. Every member of the team can see and share the link.
+
+<Steps>
+  <Step title="Copy the join link">
+    On the [**Team**](https://www.autoproctor.co/test-admin/team/) page, click the link under **Join link** to copy it. Send it to the people you want on your team.
+  </Step>
+  <Step title="The invitee opens the link">
+    The invitee opens the link while signed in to AutoProctor and joins the team immediately.
+  </Step>
+</Steps>
+
+A join link does not work in these cases:
+
+| Situation | What to do |
+|---|---|
+| The team does not have an active subscription | Ask the person who shared the link to check the team's plan |
+| You are already part of another team | Leave your current team from the **Team** page, then open the link again |
+| You have your own active subscription | Cancel it from the **Billing** page first. You can keep using it until it expires |
+
+<Warning>
+While you are in a team, you use the team's plan and its shared credits, not your own. If you leave the team later, you lose access to the team's credits and tests.
+</Warning>
+
+## The Team Page
+
+Once you are in a team, the [**Team**](https://www.autoproctor.co/test-admin/team/) page shows four tiles at the top:
+
+| Tile | What it shows |
+|---|---|
+| **Credits remaining** | The balance shared across all members |
+| **Plan** | The team's plan and its status. Team admins also get a **Manage on Billing** link |
+| **Members** | The number of people in the team, split into admins and members |
+| **Test attempts** | All attempts across the team, with a **view usage** link to the Usage page |
+
+<Frame>
+  <img src="/images/what-is-a-team/team-overview.png" alt="The top of the Team page, with four tiles above the Team name, Join link and Leave team button" />
+</Frame>
+
+The **Members** list below has a card for each member, with an **Admin** badge for team admins and a **usage** link to their tests.
+
+<Frame>
+  <img src="/images/what-is-a-team/members-list.png" alt="The Members list on the Team page, with member cards and admin controls" />
 </Frame>
 
 ## Team Admin Role
 
-A Team Admin has elevated privileges beyond those of a regular team member:
+A **Team Admin** can do more than a regular member:
 
 | Capability | Team Admin | Regular Member |
 |---|---|---|
-| Rename the team | Yes | No |
-| Promote members to admin | Yes | No |
-| Demote other admins | Yes | No |
-| Remove members from the team | Yes | No |
-| Access billing information | Yes | No |
-| View team-wide credit usage | Yes | No |
+| Rename the team (**Update** next to **Team name**) | Yes | No |
+| Promote a member with **Make admin** | Yes | No |
+| Demote another admin with **Remove as admin** | Yes | No |
+| Take a member off the team with **Remove** | Yes | No |
+| Open the **Billing** page | Yes | No |
+| View **Team Credit Usage** and any member's tests | Yes | No |
+| See the team name, join link, members and attempt counts | Yes | Yes |
 | Use shared credits for tests | Yes | Yes |
 
+A team always has at least one admin. The only admin of a team cannot be demoted or removed.
+
 <Note>
-Regular team members cannot access billing information or manage other members. If you need billing access, ask an existing Team Admin to promote you.
+Regular team members do not see **Billing** in the sidebar. If you need billing access, ask a Team Admin to promote you.
 </Note>
 
-## Creating and Joining a Team
+## Removing Members and Leaving a Team
 
-### Creating a Team
-
-<Frame caption="How to create a team">
-  <video controls className="w-full rounded-xl" src="/videos/pricing/create-team.mp4"></video>
-</Frame>
-
-<Steps>
-  <Step title="Navigate to the Team section">
-    Click on the **Team** link in your left sidebar. This option appears only if you are on a Premium or Elite plan.
-  </Step>
-  <Step title="Create your team">
-    Follow the prompts to set up your team. Once created, you receive a unique join link to share with others.
-  </Step>
-</Steps>
-
-### Joining a Team
-
-<Steps>
-  <Step title="Get the join link">
-    Ask a Team Admin for the team's join link.
-
-    <Frame caption="Join link on the team management page">
-      <img className="border rounded-xl" src="/images/pricing/join-team.png" alt="Join link on the team management page" />
-    </Frame>
-  </Step>
-  <Step title="Visit the link">
-    Open the join link in your browser. You are added to the team immediately and gain access to the shared credit pool.
-  </Step>
-</Steps>
+| Action | Who can do it | What happens |
+|---|---|---|
+| **Remove** on a member card | Team admins | The member loses access to the team's shared credits and tests, and is moved to their own account with no credits |
+| **Leave team** | Any member | You lose access to the team's shared credits and tests. The team keeps its own balance |
+| **Leave team** as the last member | The last member | The team is deleted |
 
 <Warning>
-When you join a team, your individual subscription and credits are replaced by the team's shared subscription. If you leave the team later, you no longer have access to the team's credits.
+If you are the only member of a team with an active subscription, **Leave team** is disabled. Change the plan from the **Billing** page before leaving. If your team has developer credentials and you are its last member, leaving stops those credentials from working, and this cannot be undone.
 </Warning>
 
 ## Related Resources
 
-- [Payments and Credits Explained](/payments-and-credits) -- How credits and subscriptions work
-- [Track Test Pack Usage](/track-credit-usage) -- Monitor credit usage across your team
-- [Editing Billing Information](/edit-billing-information) -- Update payment and billing details
-- [Invoices for Payments](/invoices-and-receipts) -- Access invoices for your team's purchases
-- [Elite Features](/elite-plan-features) -- Additional features on the Elite plan
-- [Contact Us](/contact-us) -- Get help with team setup
+- [Payments and Credits Explained](/payments-and-credits) - How credits and subscriptions work
+- [Track Test Pack Usage](/track-credit-usage) - Monitor credit usage across your team
+- [Editing Billing Information](/edit-billing-information) - Update payment and billing details
+- [Invoices for Payments](/invoices-and-receipts) - Access invoices for your team's purchases
+- [Elite Features](/elite-plan-features) - Additional features on the Elite plan
+- [Contact Us](/contact-us) - Get help with team setup

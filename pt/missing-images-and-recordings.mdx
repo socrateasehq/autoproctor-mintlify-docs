@@ -3,41 +3,41 @@ title: "Imagens e Gravações Ausentes no Relatório"
 description: "Entenda por que imagens ou gravações de áudio podem não aparecer no relatório do teste de um candidato apesar das violações estarem listadas, e como resolver."
 ---
 
-Se você consegue ver violações listadas no relatório do teste de um candidato mas não consegue ver a evidência de suporte (imagens ou gravações de áudio), existem dois cenários possíveis, cada um com uma causa e resolução diferente.
+Se o relatório de um candidato lista violações, mas não as imagens ou gravações que as comprovam, há duas causas possíveis.
 
 ## Cenário 1: Nenhuma Imagem ou Gravação
 
-Se nenhuma imagem ou gravação aparece apesar das violações estarem listadas, o recurso de gravação de evidência provavelmente foi desativado nas configurações do seu teste.
+Se nenhuma evidência aparece, a chave **Me, after the test** provavelmente estava desativada na seção **Proctoring** das configurações do teste.
 
 <Steps>
-  <Step title="Verifique as configurações do seu teste">
-    Navegue até a configuração de supervisão do seu teste no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e verifique que a gravação de evidência está ativada. Consulte [Configurações de Supervisão](/proctoring-settings) para detalhes sobre cada opção.
+  <Step title="Abra a seção Proctoring">
+    Na sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Proctoring** (supervisão).
   </Step>
-  <Step title="Ative a gravação de evidência para futuros testes">
-    Se a gravação de evidência estava desativada, ative-a para futuros testes. Note que esta alteração não adicionará retroativamente evidência a testes que já foram realizados.
+  <Step title="Verifique quem é informado">
+    Em **Who is informed** (quem é informado), verifique se **Me, after the test** (eu, após o teste) está ativado. Essa chave armazena a evidência para que você possa revisá-la no relatório. Consulte [Configurações de Supervisão](/proctoring-settings) para cada opção.
+  </Step>
+  <Step title="Ative para futuras tentativas">
+    Se a chave estava desativada, ative-a e clique em **Save settings**. Isso não adiciona evidência a tentativas já realizadas.
   </Step>
 </Steps>
 
-{/* TODO: Add screenshot of proctoring settings showing evidence recording toggle */}
+<Frame>
+  <img src="/images/proctoring-settings/who-is-informed.png" alt="A chave Me, after the test na seção Proctoring" />
+</Frame>
 
 ## Cenário 2: Algumas Violações Têm Evidência, Outras Não
 
-Se algumas violações mostram arquivos de evidência enquanto outras não, esse é o comportamento esperado. O AutoProctor armazena um número fixo (aproximadamente 20) de imagens e arquivos de áudio por tentativa de teste. Quando as violações excedem esse limite, nem todas as violações terão um arquivo de evidência associado.
-
-| O Que Você Vê | O Que Significa |
-|---|---|
-| Nenhum arquivo de evidência | A gravação de evidência provavelmente está desativada nas configurações do teste |
-| Algumas violações têm arquivos, outras não | Limite de armazenamento atingido -- comportamento normal |
+Isso é o esperado. O AutoProctor armazena cerca de 20 imagens e arquivos de áudio por tentativa, então quando há mais violações, algumas ficam sem arquivo de evidência.
 
 <Warning>
-**Todas as violações são rastreadas e afetam o Trust Score**, mesmo quando os arquivos de evidência não são armazenados para visualização. Os arquivos de evidência são um subconjunto -- existem para que você possa revisar o que aconteceu, mas o cálculo do Trust Score considera cada violação detectada independentemente de a evidência ter sido armazenada.
+**Todas as violações são rastreadas e afetam o Trust Score**, mesmo quando nenhum arquivo de evidência é armazenado para elas.
 </Warning>
 
 ## Recursos Relacionados
 
-- [Configurações de Supervisão](/proctoring-settings) -- Configure o armazenamento de evidência e as opções de supervisão
-- [Evidência de Violações Ausente](/missing-violation-evidence) -- Explicação detalhada dos limites de armazenamento de evidência
-- [Fotos Aleatórias Ausentes](/missing-random-photos) -- Por que as fotos aleatórias podem estar ausentes
-- [Resultados de Supervisão](/where-to-find-proctoring-results) -- Como revisar relatórios de supervisão
-- [Entendendo o Trust Score](/what-is-trust-score) -- Como os Trust Scores são calculados
-- [Fale Conosco](/contact-us) -- Entre em contato se precisar de ajuda adicional
+- [Configurações de Supervisão](/proctoring-settings) - Configure o armazenamento de evidência e as opções de supervisão
+- [Evidência de Violações Ausente](/missing-violation-evidence) - Explicação detalhada dos limites de armazenamento de evidência
+- [Fotos Aleatórias Ausentes](/missing-random-photos) - Por que as fotos aleatórias podem estar ausentes
+- [Resultados de Supervisão](/where-to-find-proctoring-results) - Como revisar relatórios de supervisão
+- [Entendendo o Trust Score](/what-is-trust-score) - Como os Trust Scores são calculados
+- [Fale Conosco](/contact-us) - Entre em contato se precisar de ajuda adicional

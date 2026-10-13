@@ -1,33 +1,44 @@
 ---
 title: "Editar Suas Informações de Cobrança"
-description: "Aprenda a atualizar seu cartão de crédito, endereço de cobrança, nome da empresa e outros dados de cobrança no AutoProctor na seção de Cobrança."
+description: "Aprenda a atualizar seu cartão de crédito, endereço de cobrança, nome da empresa e outros dados de cobrança no AutoProctor na página Billing."
 ---
 
-Todos os seus dados de cobrança são gerenciados na seção **Billing** do AutoProctor. Você pode atualizar seu método de pagamento, informações da empresa e endereço de cobrança a qualquer momento para manter suas faturas corretas e sua assinatura ativa.
+Você atualiza seu método de pagamento, os dados da empresa e o endereço de cobrança no **portal de cobrança**, que você abre na página **Billing** (cobrança) do AutoProctor.
 
 <Note>
-Se você faz parte de um [Time](/what-is-a-team), apenas os Administradores do Time podem acessar e editar informações de cobrança. Membros regulares do time não têm acesso à seção de Cobrança.
+Se você faz parte de um [Time](/what-is-a-team), apenas os Administradores do Time podem acessar e editar informações de cobrança. Membros regulares do time não veem **Billing** na barra lateral.
 </Note>
 
 ## Como Atualizar as Informações de Cobrança
 
-<Frame caption="Como editar as informações de cobrança">
-  <iframe className="w-full rounded-xl" style={{aspectRatio: "16/9"}} src="https://www.youtube.com/embed/d4vqixMkaJU?si=KKoUzTMD4GwszoRm&rel=0" title="Como editar as informações de cobrança" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</Frame>
-
 <Steps>
-  <Step title="Abra a seção de cobrança">
-    Clique no link [**Billing**](https://www.autoproctor.co/test-admin/billing/) na barra lateral esquerda para acessar seus dados de cobrança.
+  <Step title="Abra a página Billing">
+    Clique em [**Billing**](https://www.autoproctor.co/test-admin/billing/) na barra lateral esquerda.
   </Step>
-  <Step title="Clique em Manage Subscription">
-    Na área **Plan Details**, clique no botão **Manage Subscription** para abrir o portal de gerenciamento de cobrança.
+  <Step title="Clique em Manage subscription">
+    Clique em **Manage subscription** (gerenciar assinatura) no canto superior direito. O portal de cobrança abre em uma nova aba.
+
+    {/* screenshot: Subscription & Billing page of an account with an active plan, tight crop of the page header: the title "Subscription & Billing", the Overview / Top up tabs, and the "Manage subscription" button at the top right */}
   </Step>
   <Step title="Edite seus dados">
     No portal de cobrança, atualize qualquer um dos campos listados abaixo e salve suas alterações.
   </Step>
 </Steps>
 
+O que a página Billing oferece depende do estado do seu plano:
+
+| Estado do plano | O que a página Billing oferece |
+|---|---|
+| Ativo | **Manage subscription**, que abre o portal de cobrança |
+| O último pagamento falhou | **Clear payment** (quitar pagamento), que abre a fatura pendente para você pagar |
+| Período de avaliação gratuita | **Subscribe** (assinar). Ainda não há dados de cobrança para editar |
+| Plano encerrado | **Subscribe again** (assinar novamente) |
+
 ## Campos Editáveis
+
+<Frame>
+  <iframe className="w-full rounded-xl" style={{aspectRatio: "16/9"}} src="https://www.youtube.com/embed/d4vqixMkaJU?si=KKoUzTMD4GwszoRm&rel=0" title="Como editar as informações de cobrança" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</Frame>
 
 | Campo | Descrição |
 |---|---|
@@ -38,22 +49,24 @@ Se você faz parte de um [Time](/what-is-a-team), apenas os Administradores do T
 | **Número de GST** | Seu número de identificação GST (aplicável apenas a clientes na Índia) |
 
 <Warning>
-Quaisquer alterações que você fizer afetarão apenas **faturas futuras**. Se você precisar de uma correção em uma fatura já emitida, envie um e-mail para **hello@autoproctor.co** com o número da fatura e as correções necessárias.
+Quaisquer alterações que você fizer afetarão apenas **faturas futuras**. Se você precisar de uma correção em uma fatura emitida, envie um e-mail para **hello@autoproctor.co** com o número da fatura e as correções necessárias.
 </Warning>
 
 ## Manter Seu Método de Pagamento Atualizado
 
-Mantenha os dados do seu cartão de crédito atualizados. Se seu cartão expirar ou for recusado quando sua assinatura for renovada automaticamente, o AutoProctor tentará cobrá-lo várias vezes. Se todas as tentativas falharem, sua assinatura será cancelada e seu saldo de créditos será zerado.
+Se uma cobrança de renovação continuar falhando após várias tentativas, sua assinatura é cancelada e seu saldo de créditos é zerado. Enquanto um pagamento está pendente, clique em **Clear payment** na página **Billing** para pagar a fatura e manter o seu plano ativo.
+
+{/* screenshot: Subscription & Billing page, Overview tab of an account with an active plan, tight crop of the four tiles "Plan", "Credits remaining", "Renews on" and "Billed in", with a renewal date visible in "Renews on" */}
 
 <Note>
-Atualize seu método de pagamento antes da data de renovação para evitar qualquer interrupção no serviço. Você pode encontrar a próxima data de renovação na seção **Plan Details** da página de Cobrança.
+Atualize seu método de pagamento antes da data do bloco **Renews on** (renova em) para evitar qualquer interrupção no serviço.
 </Note>
 
 ## Recursos Relacionados
 
-- [Faturas de Pagamentos](/invoices-and-receipts) -- Acesse e baixe suas faturas
-- [Pagamentos e Créditos Explicados](/payments-and-credits) -- Entenda as assinaturas e compras de créditos
-- [Como Cancelar Sua Assinatura](/cancel-subscription) -- Cancele ou modifique seu plano
-- [O Que É um Time?](/what-is-a-team) -- Entenda o acesso de cobrança do administrador do time
-- [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing) -- Resolva problemas com créditos ausentes após pagamento
-- [Fale Conosco](/contact-us) -- Obtenha ajuda com problemas de cobrança
+- [Faturas de Pagamentos](/invoices-and-receipts) - Acesse e baixe suas faturas
+- [Pagamentos e Créditos Explicados](/payments-and-credits) - Entenda as assinaturas e compras de créditos
+- [Como Cancelar Sua Assinatura](/cancel-subscription) - Cancele ou modifique seu plano
+- [O Que É um Time?](/what-is-a-team) - Entenda o acesso de cobrança do administrador do time
+- [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing) - Resolva problemas com créditos ausentes após pagamento
+- [Fale Conosco](/contact-us) - Obtenha ajuda com problemas de cobrança

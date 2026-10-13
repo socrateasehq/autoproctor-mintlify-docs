@@ -3,67 +3,71 @@ title: "Como Criar um Questionário Socratease"
 description: "Guia passo a passo para criar seu primeiro questionário Socratease no AutoProctor."
 ---
 
-O Socratease é a plataforma de questionários integrada do AutoProctor, projetada para ser tão fácil quanto o Google Forms, mas desenvolvida especificamente para exames online. Você pode criar questionários, distribuí-los aos candidatos e revisar resultados, tudo a partir de um único painel.
+O **Socratease** é a ferramenta de questionários integrada do AutoProctor. Você cria o questionário, supervisiona e revisa os resultados em um só lugar.
 
-Os principais destaques incluem:
-- Um **único [botão de envio](/how-to-submit-quiz)** — sem confusão entre enviar o questionário e o teste supervisionado
-- **Criação e visualização de resultados integradas** em um único painel
-- Suporte para **14 formatos de perguntas** juntamente com recursos avançados como importações de Excel e bancos de perguntas
+- Um **único [botão de envio](/how-to-submit-quiz)**, para que os candidatos não confundam enviar o questionário com enviar o teste supervisionado
+- **14 formatos de perguntas**, além de importação de Excel e bancos de perguntas
 
 ## Como Criar um Questionário Socratease
 
-<Frame caption="Tutorial em vídeo para criar um questionário Socratease">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/socratease/create-soc-test.mp4"
-  ></video>
-</Frame>
-
 <Steps>
   <Step title="Acesse o AutoProctor">
-    Visite [autoproctor.co](https://www.autoproctor.co/) e faça login na sua conta.
-
-    {/* TODO: Add screenshot of AutoProctor login page */}
+    Faça login em [autoproctor.co](https://www.autoproctor.co/).
   </Step>
   <Step title="Crie um Novo Teste">
-    Clique em **Create Test** e selecione a opção **Socratease Quizzes** como provedor de questionários.
+    Na sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Create Test** (criar teste), depois em **Socratease Quizzes** e depois em **Continue**.
 
-    {/* TODO: Add screenshot of quiz provider selection screen */}
+    {/* screenshot: Create Test page with the "Socratease Quizzes" card open, showing the "Recommended" badge, the "Why use Socratease?" box, and the "Continue" and "Cancel" buttons */}
   </Step>
   <Step title="Adicione Perguntas">
-    Adicione suas perguntas usando qualquer um dos [tipos de perguntas suportados](/socratease-question-types). Configure pontos, limites de tempo e outras configurações para cada pergunta.
-
-    {/* TODO: Add screenshot of question editor interface */}
+    Adicione suas perguntas com qualquer um dos [tipos de perguntas suportados](/socratease-question-types), com pontos e limites de tempo para cada uma.
   </Step>
   <Step title="Configure as Definições">
-    Configure as [configurações do questionário](/socratease-quiz-settings) incluindo modo de exibição das perguntas, visibilidade dos resultados, aleatorização e mais.
+    Defina as [configurações do questionário](/socratease-quiz-settings), como modo de exibição, visibilidade dos resultados e aleatorização.
+  </Step>
+  <Step title="Salve e Prossiga">
+    Clique em **Save & Proceed** (salvar e prosseguir) no editor do questionário. O AutoProctor cria o teste supervisionado e abre as configurações dele, onde você define o [tempo](/timer-settings) e a [supervisão](/proctoring-settings).
 
-    {/* TODO: Add screenshot of quiz settings panel */}
+    {/* screenshot: Socratease quiz editor with a quiz open, cropped to the "Save" and "Save & Proceed" buttons side by side, with the tooltip "Continue to AutoProctor Settings" showing on "Save & Proceed" */}
   </Step>
   <Step title="Compartilhe o Teste">
-    Compartilhe o link do teste com seus candidatos. Eles podem acessar o questionário pelo link que você fornecer.
+    Clique em **Copy link** (copiar link) no topo da página de configurações e compartilhe o link com seus candidatos.
 
-    {/* TODO: Add screenshot of test link sharing interface */}
+    {/* screenshot: Test Settings page for a Socratease test, cropped to the header: the test title, the "Socratease Quiz" chip, the "Edit quiz" and "View results" links, and the test link with the "Copy link" and "Preview" buttons */}
   </Step>
   <Step title="Veja os Resultados">
-    Depois que os candidatos completarem o teste, veja os resultados e relatórios de supervisão no mesmo painel.
+    Na sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Results** ao lado do teste. As pontuações do questionário e os relatórios de supervisão ficam em um só lugar.
 
-    <Frame caption="Painel de resultados mostrando envios, pontuações de confiança e notas do teste">
-      <img
-        className="rounded-xl"
-        src="/images/getting-started/sample-results.png"
-        alt="Painel de resultados do AutoProctor mostrando resumo de envios e pontuações dos candidatos"
-      />
-    </Frame>
+    {/* screenshot: Test Results page for a Socratease test with proctoring on, cropped to the Started / Submitted / Unsubmitted stat cards and the first rows of the "Submissions" table with the Candidate, Started, Submitted, Duration, Trust score and Quiz score columns and a "View report" link */}
   </Step>
 </Steps>
 
+<Warning>
+**Save** mantém você no editor do questionário e não cria um teste supervisionado. Até você clicar em **Save & Proceed**, o questionário não tem link de teste e não aparece na sua página **Tests**.
+</Warning>
+
+## Socratease Quizzes na Barra Lateral
+
+Clique em **Socratease Quizzes** na barra lateral para ver todos os questionários que você criou, ou para começar um novo.
+
+Um questionário que ainda não é um teste supervisionado leva a etiqueta **Not Added** (não adicionado). Abra-o e clique em **Save & Proceed** para criar o teste dele.
+
+{/* screenshot: Socratease Quizzes page opened from the sidebar, cropped to the notice that explains the "Not Added" tag and the quiz cards below it, with at least one card carrying the "Not Added" tag */}
+
+## Editar um Questionário Mais Tarde
+
+| Onde | Em que clicar |
+|---|---|
+| A página [**Tests**](https://www.autoproctor.co/test-admin/home/) | **Edit**, abaixo do título do teste |
+| A página de configurações do teste | **Edit quiz**, abaixo do título do teste |
+
+{/* screenshot: Tests page, cropped to one row of a Socratease test: the test title with the "Share", "Preview" and "Edit" links under it, the Created date, the Settings icons, the Started and Finished counts, and the "Settings" and "Results" buttons */}
+
 ## Recursos Relacionados
 
-- [Por Que Socratease Quiz?](/why-socratease) — Benefícios de usar o Socratease
-- [Tipos de Perguntas](/socratease-question-types) — Todos os formatos de perguntas disponíveis
-- [Disponibilidade de Tipos de Perguntas](/question-type-availability) — Quais tipos de perguntas estão disponíveis no seu plano
-- [Configurações do Questionário](/socratease-quiz-settings) — Configure o comportamento do questionário
-- [Importação em Massa a partir de Excel](/import-questions-from-excel) — Importe perguntas em massa
-- [Mostrar Resultados aos Candidatos](/show-results-to-candidates) — Gerencie a visibilidade dos resultados
+- [Por Que Socratease Quiz?](/why-socratease) - Benefícios de usar o Socratease
+- [Tipos de Perguntas](/socratease-question-types) - Todos os formatos de perguntas disponíveis
+- [Disponibilidade de Tipos de Perguntas](/question-type-availability) - Quais tipos de perguntas estão disponíveis no seu plano
+- [Configurações do Questionário](/socratease-quiz-settings) - Configure o comportamento do questionário
+- [Importação em Massa a partir de Excel](/import-questions-from-excel) - Importe perguntas em massa
+- [Mostrar Resultados aos Candidatos](/show-results-to-candidates) - Gerencie a visibilidade dos resultados

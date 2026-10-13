@@ -1,62 +1,97 @@
 ---
 title: "Acompanhe o Uso de Créditos dos Pacotes de Testes"
-description: "Monitore como seus créditos estão sendo consumidos nos diferentes testes e membros do time usando o painel de uso na sua conta do AutoProctor."
+description: "Monitore como seus créditos estão sendo consumidos nos diferentes testes, candidatos e membros do time usando a página Usage na sua conta do AutoProctor."
 ---
 
-O AutoProctor disponibiliza um painel de uso dedicado que mostra exatamente como seus créditos estão sendo consumidos. Você pode acompanhar o uso por teste e, se fizer parte de um time, por membro do time.
+A página **Usage** (uso) mostra para onde vão os seus créditos. Você pode ver o uso por teste, por tentativa de cada candidato e, se fizer parte de um time, por membro do time.
 
-## Como os Créditos Funcionam
-
-Os créditos são adicionados à sua conta quando você cria uma assinatura, quando ela é renovada, ou quando você adquire recargas de Pacotes de Testes. Cada vez que um candidato inicia um teste, um crédito é deduzido. A página de Uso oferece uma visão clara de para onde esses créditos vão.
-
-## Visualizando o Uso dos Seus Créditos
+## Visualizando o Seu Uso
 
 <Steps>
-  <Step title="Abra a página de Uso">
-    Clique na aba **Usage** na barra lateral esquerda.
-
-    <Frame caption="Link de Uso na barra lateral">
-      <img className="max-h-[300px] border rounded-xl" src="/images/pricing/usage-sidebar-link.png" alt="Link de Uso destacado na barra de navegação lateral esquerda" />
-    </Frame>
-  </Step>
-  <Step title="Revise a tabela de uso">
-    Você verá uma tabela mostrando a quantidade de créditos utilizados por teste. Clique no título de qualquer teste para abrir os resultados de todas as tentativas desse teste.
-
-    <Frame caption="Tabela de uso">
-      <img className="border rounded-xl" src="/images/pricing/usage-table.png" alt="Tabela de uso exibindo créditos consumidos por teste" />
-    </Frame>
+  <Step title="Abra a página Usage">
+    Clique em [**Usage**](https://www.autoproctor.co/test-admin/usage/) na barra lateral esquerda e escolha a aba **Tests** (testes) ou **Credits** (créditos).
   </Step>
 </Steps>
 
+| Aba | Uma linha para | Use para |
+|---|---|---|
+| **Tests** | Cada teste que você criou e que tem pelo menos uma tentativa | Ver quantos candidatos fizeram cada teste |
+| [**Credits**](https://www.autoproctor.co/test-admin/usage/?t=c) | Cada tentativa de um candidato que usou créditos | Ver quantos créditos cada tentativa usou e o saldo depois dela |
+
+<Tip>
+Clique em **Add credits** (adicionar créditos) no canto superior direito da página Usage para comprar mais créditos.
+</Tip>
+
+## A Aba Tests
+
+A aba **Tests** lista os seus testes com o número de tentativas de cada um. Clique no título de um teste para abrir os resultados dele.
+
+{/* screenshot: Usage page with the Tests tab selected, cropped to the content area without the sidebar: the line "You have N credits remaining.", the "Add credits" button, the Tests / Credits switch, the "Search tests" box, the Sort control, and the table with columns Title, Proctoring, Number of Attempts, Created showing three or four tests */}
+
 <Note>
-Se um teste foi compartilhado com vários administradores de testes, apenas o **administrador principal (o criador do teste)** o verá listado na sua página de uso.
+Se um teste foi compartilhado com vários administradores de testes, apenas o **administrador principal (o criador do teste)** o verá listado na sua página Usage.
 </Note>
+
+## A Aba Credits
+
+A aba **Credits** tem uma linha para cada tentativa que usou créditos, da mais recente para a mais antiga.
+
+| Coluna | O que mostra |
+|---|---|
+| **Date & Time** | Quando o candidato iniciou o teste |
+| **Transaction Reason** | O e-mail do candidato e o teste que ele iniciou, junto com os recursos de supervisão avançada que estavam ativados |
+| **Credits Used** | Os créditos deduzidos pela tentativa, mostrados como um número negativo |
+| **Balance Remaining** | O seu saldo de créditos logo após a tentativa |
+
+{/* screenshot: Usage page with the Credits tab selected, cropped to the table card: the "Candidate email" search box, the "Date & Time" filter, the Sort control, the "Columns" and "Export" buttons, and the table with columns Date & Time, Transaction Reason, Credits Used, Balance Remaining showing a few rows, at least one with Credits Used greater than 1 */}
+
+Os créditos são deduzidos quando um candidato **inicia** um teste. Os recursos de [supervisão avançada](/enhanced-proctoring) adicionam créditos por tentativa, por isso uma linha pode mostrar mais de 1. Consulte [Pagamentos e Créditos Explicados](/payments-and-credits) para conhecer todas as regras de créditos.
+
+Busque por **Candidate email**, filtre por **Date & Time** ou clique em **Export** para baixar as linhas como um arquivo CSV.
 
 ## Uso do Time
 
-Se você faz parte de um [Time](/what-is-a-team), a página de uso mostra seus dados de testes pessoais por padrão. Para ver o consumo de créditos de todo o time:
+Se você faz parte de um [Time](/what-is-a-team), a página Usage mostra os seus próprios testes e tentativas por padrão. Os **Administradores do Time** também podem ver o uso de todo o time.
+
+### Créditos Usados por Todo o Time
 
 <Steps>
-  <Step title="Clique em Team Usage">
-    Clique no botão **Team Usage** no canto superior direito da página de Uso.
+  <Step title="Abra a aba Credits">
+    Acesse a página [**Usage**](https://www.autoproctor.co/test-admin/usage/?t=c) e selecione **Credits**.
   </Step>
-  <Step title="Revise o consumo de todo o time">
-    A visualização de uso do time exibe uma tabela com **todos os membros do time e a quantidade total de créditos que cada membro utilizou**. Clique em qualquer membro para ver em detalhe o uso por teste individual.
+  <Step title="Mude para Team Credit Usage">
+    Clique em **Team Credit Usage** (uso de créditos do time) acima da tabela. A tabela lista as tentativas dos **testes de todos os membros do time**, com uma coluna **Test Admin** que mostra quem criou cada teste. Clique em **My Credit Usage** (meu uso de créditos) para voltar às suas próprias tentativas.
 
-    <Frame caption="Tabela de uso do time">
-      <img className="border rounded-xl" src="/images/pricing/team-usage-table.png" alt="Tabela de uso do time mostrando consumo de créditos por membro do time" />
-    </Frame>
+    {/* screenshot: Usage page of a team admin on the team view, cropped to the table card: the "My Credit Usage" / "Team Credit Usage" switch with "Team Credit Usage" selected, and the table with columns Date & Time, Test Admin, Transaction Reason, Credits Used, Balance Remaining showing rows from two different test admins */}
   </Step>
 </Steps>
 
-<Note>
-Apenas os Administradores do Time e o próprio membro podem ver o uso detalhado por teste. Membros regulares do time podem ver a visualização resumida mas não os detalhes individuais de outros membros.
-</Note>
+### Testes de um Membro do Time
+
+<Steps>
+  <Step title="Abra a página Team">
+    Clique em [**Team**](https://www.autoproctor.co/test-admin/team/) na barra lateral esquerda.
+  </Step>
+  <Step title="Clique em usage no cartão de um membro">
+    Clique em **usage** ao lado do número de tentativas de um membro. A página **Test Usage** abre com os testes desse membro.
+
+    {/* screenshot: Team page of a team admin, tight crop of two member cards in the "Members" list, each showing the member name, email, an attempts count and the "usage" link next to it */}
+  </Step>
+</Steps>
+
+### Quem Pode Ver o Quê
+
+| Visualização | Administrador do Time | Membro Regular |
+|---|---|---|
+| As suas próprias abas **Tests** e **Credits** | Sim | Sim |
+| **Team Credit Usage** | Sim | Não |
+| Número de tentativas no cartão de cada membro | Sim | Sim |
+| Link **usage** no cartão de um membro | Todos os membros | Apenas o seu próprio cartão |
 
 ## Recursos Relacionados
 
-- [Pagamentos e Créditos Explicados](/payments-and-credits) -- Como funcionam os créditos, as assinaturas e as recargas
-- [O Que É um Time?](/what-is-a-team) -- Entenda a cobrança do time e créditos compartilhados
-- [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing) -- Resolva problemas com créditos ausentes
-- [Concorrência](/max-simultaneous-candidates) -- Entenda os limites de tentativas de teste simultâneas
-- [Fale Conosco](/contact-us) -- Obtenha ajuda com discrepâncias no uso
+- [Pagamentos e Créditos Explicados](/payments-and-credits) - Como funcionam os créditos, as assinaturas e as recargas
+- [O Que É um Time?](/what-is-a-team) - Entenda a cobrança do time e créditos compartilhados
+- [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing) - Resolva problemas com créditos ausentes
+- [Concorrência](/max-simultaneous-candidates) - Entenda os limites de tentativas de teste simultâneas
+- [Fale Conosco](/contact-us) - Obtenha ajuda com discrepâncias no uso

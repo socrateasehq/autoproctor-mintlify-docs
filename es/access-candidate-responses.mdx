@@ -3,111 +3,115 @@ title: "Acceder a Respuestas y Entregas del Candidato"
 description: "Vea las entregas individuales de los candidatos, puntuaciones y respuestas en AutoProctor para Socratease Quizzes y exámenes de Google Forms."
 ---
 
-Una vez que los candidatos completan un examen, puede revisar sus entregas individuales para ver las respuestas detalladas, las puntuaciones y el estado de la calificación. El proceso varía según la plataforma de cuestionarios que utilice.
+Puede revisar las respuestas, puntuaciones y el estado de calificación de cada candidato. Dónde hacerlo depende de la plataforma de cuestionarios que utilice.
 
 ## Para Socratease Quizzes
 
 <Steps>
-  <Step title="Vaya a su panel">
-    Visite su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y localice el examen que desea revisar.
+  <Step title="Abra la Página Results">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Results** (resultados) junto al examen.
   </Step>
-  <Step title="Haga clic en Ver en Resultados">
-    Haga clic en el botón **Ver** en la sección **Resultados** del examen correspondiente. Esto abre una lista de todas las entregas de los candidatos (Análisis General).
+  <Step title="Busque al Candidato">
+    La columna **Quiz score** (puntuación del cuestionario) muestra la puntuación de cada candidato, con un enlace debajo.
 
-    <Frame caption="Haga clic en Ver Respuestas para ver las respuestas individuales">
-      <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="Lista de entregas de candidatos que muestra nombres, puntuaciones y estado de la calificación" />
-    </Frame>
+    {/* screenshot: Submissions table on the Results page of a Socratease test, cropped to the column headers and two rows, showing the "Quiz score" column with a percentage and points and "View answers" under one score and "Grade quiz" under the other */}
   </Step>
-  <Step title="Revise las puntuaciones y respuestas">
-    Cada entrega muestra uno de dos estados:
+  <Step title="Revise las Puntuaciones y Respuestas">
+    El enlace debajo de la puntuación muestra uno de dos estados:
 
-    | Estado | Lo Que Significa | Acción |
+    | Enlace | Lo Que Significa | Acción |
     |---|---|---|
-    | **Enlace de puntuación con porcentaje** | El candidato terminó el examen y ha sido calificado | Haga clic en el enlace de puntuación para ver todas sus respuestas |
-    | **Botón Calificar en azul** | El candidato no ha terminado el examen, o aún no ha sido calificado | Haga clic en **Calificar** para revisar y calificar sus respuestas |
+    | **View answers** (ver respuestas) | El intento ha sido calificado | Haga clic en **View answers** para ver todas las respuestas del candidato |
+    | **Grade quiz** (calificar cuestionario) | El candidato envió el examen y no ha sido calificado por completo | Haga clic en **Grade quiz** para revisar y calificar sus respuestas |
 
-    Al hacer clic en cualquiera de los enlaces, se abre una página detallada con todas las respuestas, los puntos obtenidos y la información específica del candidato.
+    Cualquiera de los dos enlaces abre el informe del candidato en la pestaña **Results**.
 
-    <Frame caption="Página de detalle de la entrega individual con respuestas y puntuaciones">
-      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="Página de detalle de la entrega individual que muestra las respuestas del candidato y los puntos obtenidos" />
+    <Frame>
+      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="Las respuestas de un candidato y los puntos obtenidos" />
     </Frame>
   </Step>
 </Steps>
+
+<Tip>
+Para encontrar a un candidato sin abrir primero un examen, vaya a [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) (últimos intentos). Haga clic en el porcentaje de la columna **Quiz score** para abrir las respuestas de ese candidato.
+</Tip>
 
 ## Calificación Manual de Respuestas
 
-Algunas entregas requieren una acción manual antes de que sus resultados estén disponibles, por ejemplo, cuando un candidato nunca entrega el examen por sí mismo.
+La página Results de un cuestionario Socratease le ofrece tres formas de comenzar a calificar.
 
-<Steps>
-  <Step title="Abra la entrega">
-    Haga clic en **Ver Reporte** junto a la entrega del candidato para abrir su página de detalle de respuestas.
-  </Step>
-  <Step title="Marque la entrega como finalizada">
-    Marque la entrega como finalizada para enviarla en nombre del candidato. Esto libera sus resultados según su [configuración de liberación de resultados](/show-results-to-candidates).
-  </Step>
-</Steps>
+| Dónde | En qué hacer clic |
+|---|---|
+| El aviso **You have N ungraded submissions** (tiene N entregas sin calificar) | **Grade now in Socratease** abre Individual Analytics del cuestionario |
+| El recuadro **Ungraded** (sin calificar) | **Grade now** abre Individual Analytics del cuestionario |
+| La columna **Quiz score** de un intento | **Grade quiz** abre el informe de ese candidato en la pestaña **Results** |
+
+Para ver solo los intentos que necesitan calificación, haga clic en el filtro **Graded** sobre la tabla y elija **Not graded** (sin calificar).
+
+{/* screenshot: Results page of a Socratease test with ungraded submissions, cropped to the "You have N ungraded submissions" banner with its "Grade now in Socratease" button and the row of tiles below it, with the "Ungraded" tile and its "Grade now" link visible */}
+
+En un examen supervisado, si un candidato nunca entrega el examen, haga clic en **View report** en su intento y luego en **Mark as Finished** para enviarlo en su nombre. Esto libera sus resultados según su [configuración de liberación de resultados](/show-results-to-candidates).
 
 {/* TODO: Add screenshot of marking an attempt as finished */}
 
-Para calificar preguntas individuales y ajustar puntuaciones, consulte **Análisis Individual** más abajo.
+Para calificar preguntas individuales y ajustar puntuaciones, consulte **Individual Analytics** más abajo.
 
-## Información de Preguntas y Análisis Individual
+## Question Insights e Individual Analytics
 
-Más allá del Análisis General, Socratease ofrece dos vistas de análisis adicionales para un cuestionario.
+Socratease le ofrece tres vistas de análisis para un cuestionario: Overall Analytics (análisis general), Question Insights (información de preguntas) e Individual Analytics (análisis individual). Para abrirlas, haga clic en **Users' answers** (respuestas de los usuarios) en la parte superior derecha de la página Results del examen.
 
-### Información de Preguntas
+{/* screenshot: top of the Results page of a Socratease test, cropped to the test title, the provider, proctoring and timer line under it, and the "Edit settings", "Open quiz" and "Users' answers" links at the right */}
 
-Información de Preguntas muestra un desglose por pregunta de cómo respondieron todos los candidatos, con el porcentaje y el número de candidatos que eligieron cada opción.
+### Question Insights
+
+Question Insights muestra un desglose por pregunta de cómo respondieron todos los candidatos, con el porcentaje y el número de candidatos que eligieron cada opción.
 
 <Warning>
-Solo las preguntas calificadas automáticamente aparecen en Información de Preguntas. Los tipos de preguntas calificadas manualmente no se incluyen.
+Solo las preguntas calificadas automáticamente aparecen en Question Insights. Los tipos de preguntas calificadas manualmente no se incluyen.
 </Warning>
 
 {/* TODO: Add screenshot of the Question Insights view */}
 
-### Análisis Individual
+### Individual Analytics
 
-Análisis Individual muestra la entrega completa de un candidato a la vez: puntos obtenidos, preguntas respondidas correctamente, hora de envío y tiempo empleado.
+Individual Analytics muestra la entrega completa de un candidato a la vez: puntos obtenidos, preguntas respondidas correctamente, hora de envío y tiempo empleado.
 
 - Use el **ícono de lápiz** junto a los puntos de cualquier pregunta para ajustar la puntuación de ese candidato.
-- Use **Agregar Retroalimentación del Evaluador** para dejar una nota en su entrega.
-- Use **Priorizar No Calificadas** para ir directamente a las entregas que aún necesitan calificación manual.
-- Use **Filtrar por Resultado** para mostrar solo respuestas correctas, incorrectas o no calificadas.
-- Use **Descargar Todas las Respuestas** para exportar las respuestas de todos los candidatos.
+- Use **Add Evaluator Feedback** (agregar retroalimentación del evaluador) para dejar una nota en su entrega.
+- Use **Prioritize Ungraded** (priorizar no calificadas) para ir directamente a las entregas que aún necesitan calificación manual.
+- Use **Filter by Result** (filtrar por resultado) para mostrar solo respuestas correctas, incorrectas o no calificadas.
+- Use **Download All Responses** (descargar todas las respuestas) para exportar las respuestas de todos los candidatos.
 
 <Note>
-Agrupar Por y Filtrar por Etiqueta también están disponibles aquí. Consulte [Uso de Etiquetas](/using-tags) para configurar y usar etiquetas en sus resultados.
+Group By y Filter by Tag también están disponibles aquí. Consulte [Uso de Etiquetas](/using-tags) para configurar y usar etiquetas en sus resultados.
 </Note>
 
 {/* TODO: Add screenshot of the Individual Analytics view */}
 
 ## Para Google Forms
 
-Google Forms gestiona sus propios datos de respuestas de forma independiente de AutoProctor. Para ver las respuestas individuales de los candidatos:
+Google Forms guarda sus propias respuestas, fuera de AutoProctor.
 
 <Steps>
-  <Step title="Abra su Google Form">
-    Vaya al Google Form que utilizó para el examen.
-  </Step>
   <Step title="Haga clic en la pestaña Respuestas">
-    Seleccione la pestaña **Respuestas** en la parte superior del editor del formulario.
+    Abra el Google Form que utilizó para el examen y haga clic en **Respuestas** en la parte superior.
   </Step>
   <Step title="Vea las respuestas individuales">
-    Haga clic en la pestaña **Individual** para navegar por las respuestas de cada candidato una a una. Use los botones de flecha para pasar de una entrega a otra.
+    Haga clic en **Individual** y use las flechas para pasar de un candidato a otro.
   </Step>
 </Steps>
 
 Para más detalles sobre las funciones de respuesta de Google Forms, consulte la [documentación oficial de Google](https://support.google.com/docs/answer/139706).
 
 <Note>
-Si no puede ver las respuestas en Google Forms, consulte la guía sobre [respuestas de Google Forms no visibles](/google-forms-response-not-visible).
+Si no puede ver las respuestas en Google Forms, consulte la guía sobre [respuestas de Google Forms no visibles](/google-forms-response-not-visible). Para Microsoft Forms y los exámenes IFrame, consulte [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results).
 </Note>
 
 ## Recursos Relacionados
 
-- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) -- Descripción general de los resultados del examen frente a los resultados de supervisión
-- [¿Dónde Puedo Ver los Resultados de Supervisión?](/where-to-find-proctoring-results) -- Ver los informes de supervisión de los candidatos
-- [Exportar a Excel](/export-results-to-excel) -- Descargar todos los resultados como hoja de cálculo
-- [Mostrar Resultados a los Candidatos](/show-results-to-candidates) -- Controlar lo que los candidatos ven después de la entrega
-- [Integración con Google Sheets](/write-results-to-google-sheets) -- Sincronizar resultados automáticamente con una hoja de Google Sheets
-- [Uso de Etiquetas](/using-tags) -- Filtre y agrupe resultados con etiquetas
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) - Descripción general de los resultados del examen frente a los resultados de supervisión
+- [¿Dónde Puedo Ver los Resultados de Supervisión?](/where-to-find-proctoring-results) - Ver los informes de supervisión de los candidatos
+- [Exportar a Excel](/export-results-to-excel) - Descargar todos los resultados como hoja de cálculo
+- [Mostrar Resultados a los Candidatos](/show-results-to-candidates) - Controlar lo que los candidatos ven después de la entrega
+- [Integración con Google Sheets](/write-results-to-google-sheets) - Sincronizar resultados automáticamente con una hoja de Google Sheets
+- [Uso de Etiquetas](/using-tags) - Filtre y agrupe resultados con etiquetas

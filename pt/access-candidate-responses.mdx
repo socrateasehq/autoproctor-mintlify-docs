@@ -3,49 +3,54 @@ title: "Acessar Respostas e Entregas do Candidato"
 description: "Veja as submissões individuais dos candidatos, pontuações e respostas no AutoProctor para Questionários Socratease e testes do Google Forms."
 ---
 
-Após os candidatos concluírem um teste, você pode revisar suas submissões individuais para ver respostas detalhadas, pontuações e status de correção. O processo varia dependendo da plataforma de questionários que você usa.
+Você pode revisar as respostas, pontuações e o status de correção de cada candidato. Onde fazer isso depende da plataforma de questionários que você usa.
 
 ## Para Questionários Socratease
 
 <Steps>
-  <Step title="Acesse seu painel">
-    Acesse o [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e localize o teste que deseja revisar.
+  <Step title="Abra a Página Results">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Results** (resultados) ao lado do teste.
   </Step>
-  <Step title="Clique em Ver nos Resultados">
-    Clique no botão **View** na seção **Results** do teste correspondente. Isso abre uma lista de todas as submissões dos candidatos (Overall Analytics).
+  <Step title="Encontre o Candidato">
+    A coluna **Quiz score** (pontuação do questionário) mostra a pontuação de cada candidato, com um link abaixo.
 
-    <Frame caption="Clique em View Answers para ver as respostas individuais">
-      <img className="border rounded-xl" src="/images/results/submissions-list.png" alt="Lista de submissões dos candidatos mostrando nomes, pontuações e status de correção" />
-    </Frame>
+    {/* screenshot: Submissions table on the Results page of a Socratease test, cropped to the column headers and two rows, showing the "Quiz score" column with a percentage and points and "View answers" under one score and "Grade quiz" under the other */}
   </Step>
-  <Step title="Verifique pontuações e respostas">
-    Cada submissão mostra um de dois estados:
+  <Step title="Verifique Pontuações e Respostas">
+    O link abaixo da pontuação mostra um de dois estados:
 
-    | Estado | O Que Significa | Ação |
+    | Link | O Que Significa | Ação |
     |---|---|---|
-    | **Link da pontuação com percentual** | O candidato terminou o teste e ele foi corrigido | Clique no link da pontuação para ver todas as respostas |
-    | **Botão azul Grade** | O candidato não terminou o teste, ou ainda não foi corrigido | Clique em **Grade** para revisar e corrigir as respostas |
+    | **View answers** (ver respostas) | A tentativa foi corrigida | Clique em **View answers** para ver todas as respostas do candidato |
+    | **Grade quiz** (corrigir questionário) | O candidato enviou o teste e ele não foi totalmente corrigido | Clique em **Grade quiz** para revisar e corrigir as respostas |
 
-    Clicar em qualquer um dos links abre uma página detalhada mostrando todas as respostas, pontos obtidos e informações específicas do candidato.
+    Qualquer um dos links abre o relatório do candidato na aba **Results**.
 
-    <Frame caption="Página de detalhes da submissão individual com respostas e pontuações">
-      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="Página de detalhes da submissão individual mostrando respostas e pontos obtidos do candidato" />
+    <Frame>
+      <img className="border rounded-xl max-w-xs" src="/images/results/individual-submission-details.png" alt="As respostas de um candidato e os pontos obtidos" />
     </Frame>
   </Step>
 </Steps>
+
+<Tip>
+Para encontrar um candidato sem abrir um teste primeiro, acesse [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) (últimas tentativas). Clique na porcentagem da coluna **Quiz score** para abrir as respostas desse candidato.
+</Tip>
 
 ## Correção Manual de Respostas
 
-Algumas submissões exigem uma ação manual antes que seus resultados fiquem disponíveis, por exemplo, quando um candidato nunca envia o teste por conta própria.
+A página Results de um questionário Socratease oferece três formas de começar a corrigir.
 
-<Steps>
-  <Step title="Abra a submissão">
-    Clique em **View Report** ao lado da tentativa do candidato para abrir a página de detalhes da resposta.
-  </Step>
-  <Step title="Marque a tentativa como finalizada">
-    Marque a tentativa como finalizada para enviá-la em nome do candidato. Isso libera os resultados de acordo com sua [configuração de liberação de resultados](/show-results-to-candidates).
-  </Step>
-</Steps>
+| Onde | Em que clicar |
+|---|---|
+| O aviso **You have N ungraded submissions** (você tem N submissões não corrigidas) | **Grade now in Socratease** abre a Individual Analytics do questionário |
+| O cartão **Ungraded** (não corrigidas) | **Grade now** abre a Individual Analytics do questionário |
+| A coluna **Quiz score** de uma tentativa | **Grade quiz** abre o relatório desse candidato na aba **Results** |
+
+Para listar apenas as tentativas que precisam de correção, clique no filtro **Graded** acima da tabela e escolha **Not graded** (não corrigido).
+
+{/* screenshot: Results page of a Socratease test with ungraded submissions, cropped to the "You have N ungraded submissions" banner with its "Grade now in Socratease" button and the row of tiles below it, with the "Ungraded" tile and its "Grade now" link visible */}
+
+Em um teste supervisionado, se um candidato nunca enviar o teste, clique em **View report** na tentativa e depois em **Mark as Finished** para enviá-la em nome dele. Isso libera os resultados de acordo com sua [configuração de liberação de resultados](/show-results-to-candidates).
 
 {/* TODO: Add screenshot of marking an attempt as finished */}
 
@@ -53,7 +58,9 @@ Para corrigir perguntas individuais e ajustar pontuações, consulte **Individua
 
 ## Question Insights e Individual Analytics
 
-Além da Overall Analytics, o Socratease oferece duas visualizações de análise adicionais para um questionário.
+O Socratease oferece três visualizações de análise para um questionário: Overall Analytics (análise geral), Question Insights (análise por pergunta) e Individual Analytics (análise individual). Para abri-las, clique em **Users' answers** (respostas dos usuários) no canto superior direito da página Results do teste.
+
+{/* screenshot: top of the Results page of a Socratease test, cropped to the test title, the provider, proctoring and timer line under it, and the "Edit settings", "Open quiz" and "Users' answers" links at the right */}
 
 ### Question Insights
 
@@ -83,31 +90,28 @@ Group By e Filter by Tag também estão disponíveis aqui. Consulte [Uso de Etiq
 
 ## Para Google Forms
 
-O Google Forms gerencia seus próprios dados de respostas de forma independente do AutoProctor. Para ver as respostas individuais dos candidatos:
+O Google Forms guarda as próprias respostas, fora do AutoProctor.
 
 <Steps>
-  <Step title="Abra seu Google Form">
-    Acesse o Google Form que você usou para o teste.
-  </Step>
   <Step title="Clique na aba Respostas">
-    Selecione a aba **Respostas** no topo do editor do formulário.
+    Abra o Google Form que você usou para o teste e clique em **Respostas** no topo.
   </Step>
   <Step title="Veja as respostas individuais">
-    Clique na aba **Individual** para navegar pelas respostas de cada candidato uma por uma. Use os botões de seta para alternar entre as submissões.
+    Clique em **Individual** e use as setas para alternar entre os candidatos.
   </Step>
 </Steps>
 
 Para mais detalhes sobre os recursos de respostas do Google Forms, consulte a [documentação oficial do Google](https://support.google.com/docs/answer/139706).
 
 <Note>
-Se você não consegue ver respostas no Google Forms, consulte o guia sobre [respostas do Google Forms não visíveis](/google-forms-response-not-visible).
+Se você não consegue ver respostas no Google Forms, consulte o guia sobre [respostas do Google Forms não visíveis](/google-forms-response-not-visible). Para o Microsoft Forms e os testes IFrame, consulte [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results).
 </Note>
 
 ## Recursos Relacionados
 
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
-- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) -- Veja relatórios de supervisão dos candidatos
-- [Exportar para Excel](/export-results-to-excel) -- Baixe todos os resultados como planilha
-- [Mostrar Resultados aos Candidatos](/show-results-to-candidates) -- Controle o que os candidatos veem após a submissão
-- [Integração com Google Sheets](/write-results-to-google-sheets) -- Sincronize resultados automaticamente em uma planilha Google
-- [Uso de Etiquetas](/using-tags) -- Filtre e agrupe resultados usando etiquetas
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Visão geral dos resultados do teste vs. resultados de supervisão
+- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) - Veja relatórios de supervisão dos candidatos
+- [Exportar para Excel](/export-results-to-excel) - Baixe todos os resultados como planilha
+- [Mostrar Resultados aos Candidatos](/show-results-to-candidates) - Controle o que os candidatos veem após a submissão
+- [Integração com Google Sheets](/write-results-to-google-sheets) - Sincronize resultados automaticamente em uma planilha Google
+- [Uso de Etiquetas](/using-tags) - Filtre e agrupe resultados usando etiquetas

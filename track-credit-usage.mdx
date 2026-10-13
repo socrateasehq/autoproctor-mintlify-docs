@@ -1,62 +1,105 @@
 ---
 title: "Track Your Test Pack Credit Usage"
-description: "Monitor how your credits are being consumed across tests and team members using the Usage dashboard in your AutoProctor account."
+description: "Monitor how your credits are being consumed across tests, candidates, and team members using the Usage page in your AutoProctor account."
 ---
 
-AutoProctor provides a dedicated Usage dashboard that shows exactly how your credits are being consumed. You can track usage per test and, if you are part of a team, per team member.
+The **Usage** page shows where your credits go. You can see usage per test, per candidate attempt and, if you are part of a team, per team member.
 
-## How Credits Work
-
-Credits are added to your account when you create a subscription, when it renews, or when you purchase Test Pack top-ups. Each time a candidate starts a test, one credit is deducted. The Usage page gives you a clear view of where those credits go.
-
-## Viewing Your Credit Usage
+## Viewing Your Usage
 
 <Steps>
   <Step title="Open the Usage page">
-    Click on the **Usage** tab in your left sidebar.
-
-    <Frame caption="Usage link in the sidebar">
-      <img className="max-h-[300px] border rounded-xl" src="/images/pricing/usage-sidebar-link.png" alt="Usage link highlighted in the left sidebar navigation" />
-    </Frame>
-  </Step>
-  <Step title="Review the usage table">
-    You see a table showing the number of credits used per test. Click on any test title to open the results for all attempts of that test.
-
-    <Frame caption="Usage table">
-      <img className="border rounded-xl" src="/images/pricing/usage-table.png" alt="Usage table displaying credits consumed per test" />
-    </Frame>
+    Click [**Usage**](https://www.autoproctor.co/test-admin/usage/) in the left sidebar, then pick the **Tests** or **Credits** tab.
   </Step>
 </Steps>
+
+| Tab | One row for | Use it to |
+|---|---|---|
+| **Tests** | Each test you created that has at least one attempt | See how many candidates attempted each test |
+| [**Credits**](https://www.autoproctor.co/test-admin/usage/?t=c) | Each candidate's attempt that used credits | See how many credits each attempt used and the balance after it |
+
+<Tip>
+Click **Add credits** at the top right of the Usage page to buy more credits.
+</Tip>
+
+## The Tests Tab
+
+The **Tests** tab lists your tests with their number of attempts. Click a test's title to open its results.
+
+<Frame>
+  <img src="/images/track-credit-usage/usage-tests.png" alt="The Tests tab of the Usage page" />
+</Frame>
 
 <Note>
 If a test has been shared with multiple test administrators, only the **primary admin (the test creator)** sees it listed on their Usage page.
 </Note>
 
+## The Credits Tab
+
+The **Credits** tab has one row for every attempt that used credits, newest first.
+
+| Column | What it shows |
+|---|---|
+| **Date & Time** | When the candidate started the test |
+| **Transaction Reason** | The candidate's email and the test they started, along with any enhanced proctoring features that were on |
+| **Credits Used** | The credits deducted for the attempt, shown as a negative number |
+| **Balance Remaining** | Your credit balance right after the attempt |
+
+<Frame>
+  <img src="/images/track-credit-usage/usage-credits.png" alt="The Credits tab of the Usage page" />
+</Frame>
+
+Credits are deducted when a candidate **starts** a test. [Enhanced proctoring](/enhanced-proctoring) features add credits per attempt, so a row can show more than 1. See [Payments and Credits Explained](/payments-and-credits) for the full credit rules.
+
+Search by **Candidate email**, filter by **Date & Time**, or click **Export** to download the rows as a CSV file.
+
 ## Team Usage
 
-If you are part of a [Team](/what-is-a-team), the Usage page shows your personal test data by default. To view credit consumption across the entire team:
+If you are part of a [Team](/what-is-a-team), the Usage page shows your own tests and attempts by default. **Team admins** can also see usage across the whole team.
+
+### Credits Used by the Whole Team
 
 <Steps>
-  <Step title="Click Team Usage">
-    Click the **Team Usage** button at the top right of the Usage page.
+  <Step title="Open the Credits tab">
+    Go to the [**Usage**](https://www.autoproctor.co/test-admin/usage/?t=c) page and select **Credits**.
   </Step>
-  <Step title="Review team-wide consumption">
-    The team usage view displays a table with **all team members and the total number of credits each member has used**. Click on any member to drill down into their individual test-level usage.
+  <Step title="Switch to Team Credit Usage">
+    Click **Team Credit Usage** above the table. The table lists the attempts of **every team member's tests**, with a **Test Admin** column showing who created each test. Click **My Credit Usage** to go back to your own attempts.
 
-    <Frame caption="Team usage table">
-      <img className="border rounded-xl" src="/images/pricing/team-usage-table.png" alt="Team usage table showing credit consumption per team member" />
+    <Frame>
+      <img src="/images/track-credit-usage/team-credit-usage.png" alt="Team Credit Usage selected on the Credits tab" />
     </Frame>
   </Step>
 </Steps>
 
-<Note>
-Only Team Admins and the individual member themselves can view detailed per-test usage. Regular team members can see the summary view but not other members' individual breakdowns.
-</Note>
+### Tests of One Team Member
+
+<Steps>
+  <Step title="Open the Team page">
+    Click [**Team**](https://www.autoproctor.co/test-admin/team/) in the left sidebar.
+  </Step>
+  <Step title="Click usage on a member card">
+    Click **usage** next to a member's attempt count. The **Test Usage** page opens with that member's tests.
+
+    <Frame>
+      <img src="/images/track-credit-usage/member-usage-links.png" alt="Member cards on the Team page, each with a usage link" />
+    </Frame>
+  </Step>
+</Steps>
+
+### Who Can See What
+
+| View | Team Admin | Regular Member |
+|---|---|---|
+| Your own **Tests** and **Credits** tabs | Yes | Yes |
+| **Team Credit Usage** | Yes | No |
+| Attempt count on every member card | Yes | Yes |
+| **usage** link on a member card | Every member | Your own card only |
 
 ## Related Resources
 
-- [Payments and Credits Explained](/payments-and-credits) -- How credits, subscriptions, and top-ups work
-- [What is a Team?](/what-is-a-team) -- Understand team billing and shared credits
-- [Purchased Packs Not Showing Up](/purchased-packs-not-showing) -- Troubleshoot missing credits
-- [Concurrency](/max-simultaneous-candidates) -- Understand concurrent test attempt limits
-- [Contact Us](/contact-us) -- Get help with usage discrepancies
+- [Payments and Credits Explained](/payments-and-credits) - How credits, subscriptions, and top-ups work
+- [What is a Team?](/what-is-a-team) - Understand team billing and shared credits
+- [Purchased Packs Not Showing Up](/purchased-packs-not-showing) - Troubleshoot missing credits
+- [Concurrency](/max-simultaneous-candidates) - Understand concurrent test attempt limits
+- [Contact Us](/contact-us) - Get help with usage discrepancies

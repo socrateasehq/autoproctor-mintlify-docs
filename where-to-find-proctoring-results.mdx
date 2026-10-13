@@ -3,7 +3,7 @@ title: "Where Can I See Proctoring Results?"
 description: "Access and review proctoring results for your tests on AutoProctor, including Trust Scores, violation details, and candidate-level reports."
 ---
 
-After candidates complete a proctored test, AutoProctor compiles their monitoring data into a proctoring report. This guide walks you through accessing and interpreting those results.
+After candidates complete a proctored test, AutoProctor compiles their monitoring data into a proctoring report for each attempt.
 
 <Warning>
 Proctoring results are only generated when you enable proctoring in your [test settings](/proctoring-settings). If you configured your test with only a timer, no proctoring data is available.
@@ -12,50 +12,92 @@ Proctoring results are only generated when you enable proctoring in your [test s
 ## Viewing Proctoring Results
 
 <Steps>
-  <Step title="Open the results page">
-    Navigate to your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and click the **Results** button for the test you want to review.
+  <Step title="Open the Results Page">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Results** next to the test.
 
-    <Frame caption="Results button on the AutoProctor dashboard">
-      <img className="border rounded-xl" src="/images/results/results-button-dashboard.png" alt="Results button highlighted on the AutoProctor dashboard" />
+    <Frame>
+      <img src="/images/where-to-find-proctoring-results/test-row.png" alt="A test on the Tests page with the Results button" />
     </Frame>
   </Step>
-  <Step title="Review the results table">
-    The results page displays a table listing all submissions. Each row includes:
+  <Step title="Review the Submissions Table">
+    The **Submissions** table lists one row per attempt, with the [Trust Score](/what-is-trust-score) of each attempt when proctoring is on.
 
-    - Candidate name and email address
-    - Test start and finish time
-    - Trust Score (indicating proctoring integrity)
-    - Quiz score (for Socratease Quizzes only)
-
-    <Frame caption="Results table">
-      <img className="border rounded-xl" src="/images/results/results-table.png" alt="Results table showing candidate submissions with Trust Scores" />
+    <Frame>
+      <img src="/images/where-to-find-proctoring-results/submissions-table.png" alt="Submissions table with a trust score and View report on each row" />
     </Frame>
   </Step>
-  <Step title="View the proctoring summary">
-    Click on a candidate's **Trust Score** to open their detailed proctoring summary. This page lists all violations detected during the test, including screenshots, timestamps, and evidence.
+  <Step title="Open the Report">
+    Click a candidate's **Trust score**, or click **View report** at the end of the row. The report opens on the **Proctoring** tab.
 
-    <Frame caption="Proctoring summary page">
-      <img className="border rounded-xl" src="/images/results/proctoring-summary.png" alt="Proctoring summary page showing detected violations and evidence" />
+    <Frame>
+      <img className="border rounded-xl" src="/images/results/proctoring-summary.png" alt="Proctoring tab of a report with detected violations and evidence" />
     </Frame>
   </Step>
 </Steps>
 
-## What the Proctoring Summary Shows
+The **Trust score** cell tells you whether a report is ready:
 
-The proctoring summary for each candidate includes:
+| Trust score shows | What it means |
+|---|---|
+| A percentage | The attempt is scored. Click the percentage to open the report |
+| **Pending** | The attempt is submitted and its score is still being calculated. **View report** already opens the evidence |
+| A dash | The attempt is not submitted yet, or it was not proctored |
+
+<Note>
+The proctoring report appears a few minutes after the attempt is submitted. For attempts that were started but never submitted, see [Unsubmitted Tests](/view-unsubmitted-exams).
+</Note>
+
+## Finding the Attempts to Review
+
+The controls above the **Submissions** table narrow and reorder the list.
+
+| Control | What it does |
+|---|---|
+| **Started** filter | Shows attempts started on, before, after or between the dates you pick |
+| **Submitted** filter | Shows only submitted attempts (**Yes**) or only unsubmitted ones (**No**) |
+| **Trust score** filter | Shows attempts above a percentage, below a percentage, or between two percentages |
+| **Sort** | Orders the table by **Started**, **Submitted** or **Trust score** |
+| **Columns** | Shows or hides columns. **Device type** and **Attempt label** are hidden until you turn them on |
+
+## What the Report Shows
+
+The report is split into tabs, one for each kind of evidence.
+
+| Tab | What it shows | When it appears |
+|---|---|---|
+| **Results** | The candidate's answers and points scored | Socratease Quizzes only |
+| **Proctoring** | The Trust Score and the list of violations with evidence | Proctoring was on for the attempt |
+| **Auxiliary device** | Captures from the candidate's phone | **Auxiliary device** was on |
+| **Session recording** | A replay of the candidate's screen activity | **Session recording** was on |
+| **Candidate recording** | The continuous recording of the candidate's camera | **Candidate recording** was on |
+
+The last three tabs belong to [enhanced proctoring](/enhanced-proctoring).
+
+<Frame>
+  <img src="/images/where-to-find-proctoring-results/report-header.png" alt="Top of an attempt report with its summary cards and tabs" />
+</Frame>
+
+The **Proctoring** tab for each candidate includes:
 
 | Data Point | Description |
 |---|---|
 | **Trust Score** | An overall integrity rating based on detected violations |
 | **Violations list** | Each violation type with timestamp and evidence |
 | **Screenshots** | Random photos captured during the test session |
-| **Recordings** | Screen and webcam recordings (if enabled in [enhanced proctoring](/enhanced-proctoring)) |
 | **Session timeline** | When the candidate started, paused, or submitted the test |
+
+## Proctoring Results Across All Your Tests
+
+The [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) page lists every submitted attempt across all your tests, newest first. Click the **Trust score**, or **View report** under the test title, to open that attempt's report.
+
+<Frame>
+  <img src="/images/where-to-find-proctoring-results/latest-attempts.png" alt="Latest attempts page with View report under each test title" />
+</Frame>
 
 ## Related Resources
 
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
-- [Trust Score Explained](/what-is-trust-score) -- How Trust Scores are calculated
-- [What Gets Tracked](/what-gets-tracked-during-proctoring) -- What AutoProctor monitors during a proctored test
-- [Export to Excel](/export-results-to-excel) -- Download proctoring results as a spreadsheet
-- [Unsubmitted Tests](/view-unsubmitted-exams) -- View details of tests started but not submitted
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Overview of quiz results vs. proctoring results
+- [Trust Score Explained](/what-is-trust-score) - How Trust Scores are calculated
+- [What Gets Tracked](/what-gets-tracked-during-proctoring) - What AutoProctor monitors during a proctored test
+- [Export to Excel](/export-results-to-excel) - Download proctoring results as a spreadsheet
+- [Unsubmitted Tests](/view-unsubmitted-exams) - View details of tests started but not submitted

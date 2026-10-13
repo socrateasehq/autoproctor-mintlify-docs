@@ -12,19 +12,10 @@ As configurações de supervisão controlam o que o AutoProctor monitora enquant
     Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/), clique em **Settings** ao lado do teste e escolha **Proctoring** na lista de seções.
   </Step>
   <Step title="Ativar a Supervisão">
-    Ative o interruptor no canto superior direito da seção **Proctoring**. Enquanto o interruptor estiver em **Off**, nada é monitorado e os candidatos realizam o teste sem supervisão.
+    Ative o interruptor no canto superior direito da seção **Proctoring**.
   </Step>
-  <Step title="Escolher o Que é Monitorado">
-    Em **What gets tracked** (o que é monitorado), ative as verificações de que você precisa. Cada uma está descrita na tabela abaixo.
-  </Step>
-  <Step title="Adicionar Supervisão Avançada (Opcional)">
-    Em **Enhanced proctoring** (supervisão avançada), ative as verificações extras que quiser. A etiqueta ao lado de cada uma mostra o custo em créditos por tentativa.
-  </Step>
-  <Step title="Escolher Quem é Informado">
-    Em **Who is informed** (quem é informado), escolha se as evidências são armazenadas para você e se o candidato é avisado durante o teste.
-  </Step>
-  <Step title="Salvar">
-    Clique em **Save settings**.
+  <Step title="Escolher Suas Configurações e Salvar">
+    Ative as verificações de que você precisa em **What gets tracked** (o que é monitorado), **Enhanced proctoring** (supervisão avançada) e **Who is informed** (quem é informado). Cada grupo está descrito abaixo. Depois clique em **Save settings**.
   </Step>
 </Steps>
 
@@ -34,10 +25,8 @@ Se o teste envia resultados para uma planilha do Google Sheets, salvar com a sup
 
 ## O Que é Monitorado
 
-{/* screenshot: Proctoring section of Test Settings on a Google Forms test, switch On, cropped to the section header and the "What gets tracked" group with all nine switches from "Tab switching" to "Photo before test start" */}
-
-<Frame caption="O interruptor Proctoring e as nove opções em What gets tracked">
-  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="Seção Proctoring ativada, com nove interruptores em What gets tracked, de Tab switching a Photo before test start. Tab switching, Camera e Photos at random estão ativados" />
+<Frame>
+  <img src="/images/proctoring-settings/what-gets-tracked.png" alt="A seção Proctoring ativada, com as opções em What gets tracked" />
 </Frame>
 
 | Configuração | O Que Faz |
@@ -58,10 +47,8 @@ Quando **Photo before test start** está ativado, o interruptor **Customize the 
 
 Use isso para pedir aos candidatos que mostrem o documento de identidade na foto, por exemplo "Por favor, mostre seu rosto junto com sua carteira de estudante".
 
-{/* screenshot: "What gets tracked" group of the Proctoring section with "Photo before test start" On and "Customize the photo prompt" On below it, the text box filled with "Please show your face along with your student ID" */}
-
-<Frame caption="Customize the photo prompt, ativado abaixo de Photo before test start">
-  <img src="/images/proctoring-settings/photo-prompt.png" alt="Grupo What gets tracked com Photo before test start ativado e, abaixo, Customize the photo prompt ativado com o texto Please show your face along with your student ID" />
+<Frame>
+  <img src="/images/proctoring-settings/photo-prompt.png" alt="Customize the photo prompt ativado abaixo de Photo before test start" />
 </Frame>
 
 <Note>
@@ -86,18 +73,10 @@ O cartão acima das seções mostra o custo total, por exemplo **1 credit per at
 
 ## Quem é Informado
 
-Essas configurações controlam como as evidências de infrações são tratadas e se os candidatos são notificados:
-
 | Configuração | O Que Faz | Recomendação |
 |---|---|---|
 | **Me, after the test** (eu, após o teste) | Armazena evidências (fotos, áudio, capturas de tela) na nuvem para que você possa revisar o relatório depois que o teste terminar. | **Mantenha ativado**: você precisa disso para revisar as infrações. |
 | **The candidate, during the test** (o candidato, durante o teste) | Avisa o candidato em tempo real quando uma infração é detectada. | **Mantenha ativado**: ajuda os candidatos a corrigir problemas inofensivos, como ruído de fundo. |
-
-{/* screenshot: "Who is informed" group of the Proctoring section with "Me, after the test" and "The candidate, during the test" both On */}
-
-<Frame caption="Os dois interruptores de Who is informed ativados">
-  <img src="/images/proctoring-settings/who-is-informed.png" alt="Grupo Who is informed com Me, after the test e The candidate, during the test ativados" />
-</Frame>
 
 <Warning>
 Desativar **Me, after the test** também desativa **Photos at random**, **Photo before test start** e **Customize the photo prompt**. Eles ficam bloqueados até você reativar **Me, after the test**, porque essas fotos são armazenadas na nuvem para você revisar.

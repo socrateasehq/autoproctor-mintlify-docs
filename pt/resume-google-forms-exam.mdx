@@ -3,87 +3,67 @@ title: "Retomar Testes do Google Forms"
 description: "Configure se os candidatos podem retomar testes do Google Forms após fechá-los no meio da tentativa, gerenciando as configurações de salvamento automático e retomada automática."
 ---
 
-Os testes do Google Forms requerem que duas configurações estejam alinhadas para o comportamento correto de retomada: a configuração de **salvamento automático** no Google Forms e a configuração de **retomada automática** no AutoProctor. A incompatibilidade dessas configurações causa comportamento inesperado para os candidatos.
-
-<Note>
-Duas configurações controlam a retomada de testes do Google Forms:
-1. **Disable Autosave** no Google Forms — Controla se os rascunhos de respostas são salvos enquanto o candidato preenche o formulário.
-2. **Enable Auto-resume** no AutoProctor — Controla se o AutoProctor carrega a tentativa anterior quando o candidato retorna ao link do teste.
-
-Você deve configurar ambas as configurações juntas para o comportamento pretendido.
-</Note>
+A retomada de um teste do Google Forms depende de duas configurações que devem estar alinhadas: **Disable auto-save for all respondents** (desativar o salvamento automático) no Google Forms e **Auto-resume** (retomada automática) no AutoProctor.
 
 ## Para Permitir a Retomada do Teste
 
-Se você quer que os candidatos continuem de onde pararam após fechar o teste:
+Os candidatos continuam de onde pararam após fechar o teste.
 
 <Steps>
   <Step title="Mantenha o salvamento automático ativado no Google Forms">
-    Certifique-se de que o recurso **Disable Autosave** está **DESLIGADO** nas configurações do teste do Google Forms. Essa é a configuração padrão, então você só precisa verificar se ela não foi alterada.
-
-    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled OFF */}
+    Certifique-se de que **Disable auto-save for all respondents** está **DESLIGADO** nas configurações do Google Forms. Essa é a configuração padrão.
 
     <Frame>
-      <img className="border rounded-xl h-96" src="/images/settings/gforms-autosave-enabled.png" alt="Configurações do teste do Google Forms mostrando Disable Autosave desligado, mantendo o salvamento automático ativo" />
+      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-enabled.png" alt="Configurações do Google Forms com Disable auto-save desligado" />
     </Frame>
   </Step>
   <Step title="Ative a retomada automática no AutoProctor">
-    Ative a configuração **Enable Auto-resume** nas configurações do teste do AutoProctor.
-
-    {/* TODO: Add screenshot of AutoProctor test settings showing Enable Auto-resume toggled ON */}
+    Acesse sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste. Na seção **General**, ative **Auto-resume** e clique em **Save settings**.
 
     <Frame>
-      <img src="/images/settings/gforms-autoresume-enabled.png" alt="Configurações do teste do AutoProctor mostrando Enable Auto-resume ativado" />
+      <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="O interruptor Auto-resume na seção General de Test Settings" />
     </Frame>
   </Step>
 </Steps>
 
 ## Para Impedir a Retomada do Teste
 
-Se você quer que cada visita ao link do teste crie uma nova tentativa em branco:
+Cada visita ao link do teste cria uma nova tentativa em branco.
 
 <Steps>
   <Step title="Desative o salvamento automático no Google Forms">
-    Ative o recurso **Disable Autosave** nas configurações do teste do Google Forms. Isso impede que o Google Forms salve rascunhos de respostas.
-
-    {/* TODO: Add screenshot of Google Forms test settings showing Disable Autosave toggled ON */}
+    **LIGUE** o **Disable auto-save for all respondents** nas configurações do Google Forms.
 
     <Frame>
-      <img className="border rounded-xl h-96" src="/images/settings/gforms-autosave-disabled.png" alt="Configurações do teste do Google Forms mostrando Disable Autosave ligado, desativando o salvamento automático" />
+      <img className="border rounded-xl" style={{maxWidth: "49cqi"}} src="/images/settings/gforms-autosave-disabled.png" alt="Configurações do Google Forms com Disable auto-save ligado" />
     </Frame>
   </Step>
   <Step title="Desative a retomada automática no AutoProctor">
-    Desative a opção **Enable Auto-resume** nas configurações do teste do AutoProctor.
+    Acesse sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Settings** ao lado do teste. Na seção **General**, desative **Auto-resume** e clique em **Save settings**.
 
-    {/* TODO: Add screenshot of AutoProctor test settings showing Enable Auto-resume toggled OFF */}
-
-    <Frame>
-      <img src="/images/settings/gforms-autoresume-disabled.png" alt="Configurações do teste do AutoProctor mostrando Enable Auto-resume desativado" />
-    </Frame>
+    {/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" switched off */}
   </Step>
 </Steps>
 
 ## Referência de Combinação de Configurações
 
-| Disable Autosave (Google Forms) | Enable Auto-resume (AutoProctor) | Resultado |
+| Disable auto-save (Google Forms) | Auto-resume (AutoProctor) | Resultado |
 |---|---|---|
 | OFF (padrão) | ON (padrão) | Os candidatos retomam de onde pararam |
 | ON | OFF | Cada visita inicia uma tentativa nova e em branco |
-| OFF | OFF | Nova tentativa é carregada, mas o Google Forms pode mostrar respostas previamente salvas — confuso para os candidatos |
-| ON | ON | O AutoProctor tenta retomar, mas o Google Forms não tem rascunho salvo — o candidato vê um formulário em branco com tempo reduzido |
+| OFF | OFF | Nova tentativa é carregada, mas o Google Forms pode mostrar respostas previamente salvas, o que confunde os candidatos |
+| ON | ON | O AutoProctor tenta retomar, mas o Google Forms não tem rascunho salvo, então o candidato vê um formulário em branco com tempo reduzido |
+
+Os testes são retomados por padrão, a menos que você altere uma das duas configurações.
 
 <Warning>
-Se as duas configurações estiverem incompatíveis (por exemplo, salvamento automático está ativado mas retomada automática está desativada), os candidatos podem experimentar comportamento inesperado, como ver um formulário parcialmente preenchido em uma nova tentativa ou perder o progresso salvo. Sempre configure ambas as configurações de forma alinhada.
+Se as duas configurações estiverem incompatíveis, os candidatos podem ver um formulário parcialmente preenchido em uma nova tentativa ou perder o progresso salvo. Sempre configure ambas de forma alinhada.
 </Warning>
-
-## Configurações Padrão
-
-O Google Forms tem o salvamento automático ativado por padrão, e a configuração padrão correspondente do AutoProctor permite retomar tentativas de teste não enviadas. Isso significa que os testes são retomados por padrão, a menos que você altere explicitamente uma das configurações.
 
 ## Recursos Relacionados
 
-- [Retomar Tentativas de Teste](/resume-exam-attempts) — Comportamento geral de retomada em todos os tipos de teste
-- [Tentativas Máximas](/maximum-exam-attempts) — Configure quantas tentativas os candidatos podem realizar
-- [Testes Não Enviados](/view-unsubmitted-exams) — Veja testes iniciados mas não enviados
-- [Configurações de Tempo](/timer-settings) — Configure a duração do teste e janelas de tempo
-- [Boas Práticas para Criadores de Testes](/best-practices-for-exam-creators) — Dicas para uma administração de testes tranquila
+- [Retomar Tentativas de Teste](/resume-exam-attempts) - Comportamento geral de retomada em todos os tipos de teste
+- [Tentativas Máximas](/maximum-exam-attempts) - Configure quantas tentativas os candidatos podem realizar
+- [Testes Não Enviados](/view-unsubmitted-exams) - Veja testes iniciados mas não enviados
+- [Configurações de Tempo](/timer-settings) - Configure a duração do teste e janelas de tempo
+- [Boas Práticas para Criadores de Testes](/best-practices-for-exam-creators) - Dicas para uma administração de testes tranquila

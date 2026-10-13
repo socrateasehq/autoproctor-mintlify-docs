@@ -3,55 +3,48 @@ title: "Does AutoProctor Record Video?"
 description: "Learn how AutoProctor monitors candidates in real time without recording full video sessions, and why this approach is more effective."
 ---
 
-**By default, AutoProctor does not record video.** Instead, it continuously monitors the candidate's camera feed in real time directly on their device and only captures evidence (photos, screenshots, and audio clips) when it detects a violation. This gives you the evidence you need without requiring you to watch hours of footage.
+**By default, AutoProctor does not record video.** It monitors the candidate's camera on their own device and captures evidence, such as photos, screenshots and audio clips, only when it detects a violation.
 
-You can enable full video recording for an additional fee — see [What If I Still Want to Record Video?](#what-if-i-still-want-to-record-video) below.
-
-{/* TODO: Add diagram comparing traditional video-based proctoring vs. AutoProctor's on-device monitoring approach */}
+If you need full video, turn on **Candidate recording**, an [enhanced proctoring](/enhanced-proctoring) setting that continuously records the candidate's camera. See [What If I Still Want to Record Video?](#what-if-i-still-want-to-record-video) below.
 
 ## How AutoProctor's AI Monitoring Works
 
-Traditional proctoring platforms record a video from the candidate's camera feed, upload it to their servers, and then process it for violations. In most cases, you are expected to watch the video yourself to verify flagged incidents.
+Traditional proctoring platforms upload a video of the candidate to their servers, and you are often expected to watch it to verify flagged incidents.
 
-AutoProctor takes a fundamentally different approach. Its AI software monitors the video feed **directly on the candidate's device** and flags violations as they happen. No video is uploaded or stored on any server.
+AutoProctor's AI monitors the video feed **directly on the candidate's device** and flags violations as they happen. With the default settings, no video is uploaded or stored on any server.
 
 Think of it like a smoke detector: it runs continuously in the background, monitoring all the time, and only alerts you when something is detected.
-
-{/* TODO: Add illustration of the smoke detector analogy -- on-device monitoring with alert-only output */}
 
 ## Key Advantages
 
 | Advantage | How It Works |
 |---|---|
 | **No video review needed** | Violations are flagged automatically with supporting evidence (photos and screenshots), so you do not need to watch hours of footage |
-| **Works offline** | Since monitoring happens on-device, violations are detected even if the candidate temporarily disconnects from the internet |
+| **Works offline** | Violations are detected even if the candidate disconnects, and the evidence syncs when they reconnect |
 | **Prevents internet-off cheating** | With other platforms, candidates can turn off their internet to avoid being recorded. With AutoProctor, monitoring continues on-device regardless of connectivity |
-| **Reduced administrative burden** | You review only flagged incidents instead of full recordings |
 | **Lower bandwidth requirements** | No large video files are uploaded during the test, reducing network strain for candidates with slow connections |
-
-<Note>
-Because monitoring happens on the candidate's device, AutoProctor captures violation evidence even when the candidate goes offline. When the candidate reconnects, the evidence syncs to the server. This is a significant advantage over platforms that rely on continuous video upload.
-</Note>
 
 ## What Evidence Do You Receive Instead of Video?
 
-When AutoProctor detects a violation, it captures one or more of the following:
+AutoProctor captures the evidence below. The last column is the switch that turns each one on, in the **Proctoring** section of a test's **Settings**.
 
-- **Photos** -- Snapshots from the camera feed (e.g., when no face or multiple faces are detected)
-- **Screenshots** -- Captures of the candidate's screen (e.g., when they switch tabs or applications)
-- **Audio clips** -- Recordings of background noise when the microphone detects suspicious audio
-- **Random photos** -- Periodic snapshots taken at random intervals throughout the exam
-- **Session recording** -- Records of mouse clicks and keyboard activity
+| Evidence | What it captures | Setting |
+|---|---|---|
+| **Photos** | Snapshots from the camera feed, for example when no face or multiple faces are detected | **Camera** |
+| **Screenshots** | Captures of the candidate's screen, for example when they switch tabs or applications | **Tab switching** |
+| **Audio clips** | Recordings of background noise when the microphone detects suspicious audio | **Microphone** |
+| **Random photos** | Periodic snapshots taken at random intervals throughout the exam | **Photos at random** |
+| **Session recording** | Records of mouse clicks and keyboard activity. Socratease quizzes only | **Session recording** |
 
-<Frame caption="A proctoring report showing different types of violation evidence">
+<Frame>
   <img
     className="rounded-xl"
     src="/images/getting-started/sample-proctoring-report.png"
-    alt="Proctoring report displaying photos, screenshots, audio clips, and activity logs as violation evidence"
+    alt="A proctoring report with photos, screenshots and audio clips"
   />
 </Frame>
 
-All of this evidence appears in the candidate's [proctoring report](/where-to-find-proctoring-results), organized by timestamp and violation type.
+All of this evidence appears in the candidate's [proctoring report](/where-to-find-proctoring-results), organized by timestamp and violation type. A session recording plays in the **Session recording** tab of the same report.
 
 <Warning>
 Evidence may occasionally be missing from a report if the candidate's device ran out of storage or if the browser restricted access to the camera or microphone mid-test. See [Missing Images and Recordings](/missing-images-and-recordings) for troubleshooting steps.
@@ -59,14 +52,35 @@ Evidence may occasionally be missing from a report if the candidate's device ran
 
 ## What If I Still Want to Record Video?
 
-For compliance or audit purposes, you can enable **video recording** through your [Proctoring Settings](/proctoring-settings) for an additional fee. See the [pricing page](https://www.autoproctor.co/pricing) for details.
+For compliance or audit purposes, you can turn on **Candidate recording**. It continuously records the candidate's camera feed for the whole test and costs **15 additional credits per attempt**. See the [pricing page](https://www.autoproctor.co/pricing) for details.
 
-When video recording is enabled, you receive **a full video and audio recording of the candidate's entire session** in addition to the standard violation evidence.
+<Steps>
+  <Step title="Open the Proctoring Section">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Settings** next to the test, and choose **Proctoring**.
+  </Step>
+  <Step title="Turn On Candidate Recording and Save">
+    With the **Proctoring** switch on, turn on **Candidate recording** under **Enhanced proctoring**. Then click **Save settings**.
+
+    <Frame>
+      <img src="/images/does-autoproctor-record-video/recording-options.png" alt="Candidate recording switched on under Enhanced proctoring" />
+    </Frame>
+  </Step>
+</Steps>
+
+You then get **a full video and audio recording of the session** alongside the usual evidence. AutoProctor has two recording options, and they record different things:
+
+| Option | What it records | Where you watch it | Extra credits per attempt | Available on |
+|---|---|---|---|---|
+| **Candidate recording** | The candidate's camera feed, continuously | **Candidate recording** tab of the report | 15 | All tests |
+| **Session recording** | The candidate's screen activity, including mouse clicks and keyboard input | **Session recording** tab of the report | 4 | Socratease quizzes only |
+
+See [Enhanced Proctoring](/enhanced-proctoring) for both options and their credit costs.
 
 ## Related Resources
 
-- [What Gets Tracked](/what-gets-tracked-during-proctoring) -- All monitoring capabilities available during proctoring
-- [Trust Score](/what-is-trust-score) -- How violation evidence is summarized into a score
-- [Proctoring Results](/where-to-find-proctoring-results) -- How to view violation evidence and reports
-- [Missing Images and Recordings](/missing-images-and-recordings) -- Why some evidence may not appear
-- [Went Offline Meaning](/what-does-went-offline-mean) -- What happens when a candidate goes offline during a test
+- [Enhanced Proctoring](/enhanced-proctoring) - Candidate recording, session recording, and other advanced options
+- [What Gets Tracked](/what-gets-tracked-during-proctoring) - All monitoring capabilities available during proctoring
+- [Trust Score](/what-is-trust-score) - How violation evidence is summarized into a score
+- [Proctoring Results](/where-to-find-proctoring-results) - How to view violation evidence and reports
+- [Missing Images and Recordings](/missing-images-and-recordings) - Why some evidence may not appear
+- [Went Offline Meaning](/what-does-went-offline-mean) - What happens when a candidate goes offline during a test

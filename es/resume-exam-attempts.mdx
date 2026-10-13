@@ -7,7 +7,7 @@ description: "Comprenda cómo AutoProctor gestiona la reanudación de exámenes 
 **Reanudar** significa cualquier forma en que el candidato vuelve al examen: hacer clic de nuevo en el enlace del examen, recargar la página en el navegador, o volver después de un rato y dejar que el navegador recargue automáticamente.
 </Tip>
 
-Cuando un candidato abandona un examen a mitad del intento, ya sea por un fallo del navegador, un problema de red o un cierre accidental, AutoProctor determina si debe reanudar el intento anterior o crear uno nuevo. El comportamiento depende del tipo de examen y de su configuración.
+Cuando un candidato abandona un examen a mitad del intento, AutoProctor reanuda el intento anterior o crea uno nuevo. Cuál de los dos depende del tipo de examen y de su configuración.
 
 ## Comportamiento de Reanudación por Tipo de Examen
 
@@ -20,58 +20,41 @@ Cuando un candidato abandona un examen a mitad del intento, ya sea por un fallo 
 
 ## Configurar la Función de Reanudación
 
-Para Google Forms, Microsoft Forms y Exámenes con IFrame, usted controla el comportamiento de reanudación mediante el interruptor **Auto-resume** (reanudación automática) en la configuración de su examen.
+Para Google Forms, Microsoft Forms y Exámenes con IFrame, el interruptor **Auto-resume** (reanudación automática) controla el comportamiento de reanudación.
 
 <Steps>
   <Step title="Abra la configuración del examen">
     Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Settings** junto al examen.
   </Step>
   <Step title="Active o desactive Auto-resume">
-    En la sección **General**, use el interruptor **Auto-resume**. AutoProctor marca este ajuste como **Recommended** (recomendado).
-  </Step>
-  <Step title="Guarde">
-    Haga clic en **Save settings**.
+    En la sección **General**, use el interruptor **Auto-resume** y luego haga clic en **Save settings**.
   </Step>
 </Steps>
 
-{/* screenshot: General section of Test Settings for a Google Forms test, cropped to the switch rows, with "Auto-resume" (and its Recommended badge) switched on */}
-
-<Frame caption="Auto-resume activado en la sección General de un examen de Google Forms">
-  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="Tres filas de interruptores en la sección General. Auto-resume, marcado como Recommended, está activado. Close test for submissions y Hide from my dashboard están desactivados" />
+<Frame>
+  <img src="/images/resume-exam-attempts/auto-resume-switch.png" alt="El interruptor Auto-resume en la sección General de Test Settings" />
 </Frame>
 
+| Auto-resume | Cuando el candidato regresa |
+|---|---|
+| **Activado** | AutoProctor vuelve a abrir el intento anterior. Que las respuestas se conserven depende del autoguardado de la plataforma del cuestionario |
+| **Desactivado** | AutoProctor crea un nuevo intento en blanco. El intento incompleto sigue apareciendo en sus resultados |
+
 <Note>
-El interruptor **Auto-resume** no aparece en los cuestionarios Socratease, porque estos siempre se reanudan. Para Google Forms, también debe mantener habilitada la configuración de **Guardar Borrador** (autoguardado) en el propio Google Forms para que la reanudación funcione correctamente. Consulte [Reanudación de Exámenes de Google Forms](/resume-google-forms-exam) para una configuración detallada.
+El interruptor **Auto-resume** no aparece en los cuestionarios Socratease, porque estos siempre se reanudan. Para Google Forms, también debe dejar desactivada la opción **Disable auto-save for all respondents** en el propio Google Forms. Consulte [Reanudación de Exámenes de Google Forms](/resume-google-forms-exam) para una configuración detallada.
 </Note>
-
-## Cómo Funciona la Reanudación
-
-Cuando un candidato regresa al examen después de desconectarse:
-
-- **Si la reanudación está habilitada**: AutoProctor vuelve a abrir el intento anterior. En los cuestionarios **Socratease**, las respuestas previas se restauran automáticamente. En los exámenes con **IFrame**, de **Google Forms** y de **Microsoft Forms**, que las respuestas se conserven depende del guardado o autoguardado de la plataforma externa del cuestionario.
-- **Si la reanudación está deshabilitada**: AutoProctor crea un nuevo intento en blanco. El intento incompleto sigue apareciendo en sus resultados.
 
 ## Cómo Interactúan los Temporizadores con la Reanudación
 
-Si tiene [configuración del temporizador](/timer-settings) configurada, esta afecta el funcionamiento de la reanudación.
+La [configuración del temporizador](/timer-settings) cambia lo que sucede cuando un candidato regresa.
 
 | Ajuste del temporizador | Efecto sobre un candidato que regresa |
 |---|---|
-| **Duration** | El reloj sigue corriendo mientras el candidato está ausente |
-| **Cannot start before** / **Cannot start after** | Se comprueban contra la hora de inicio original, no contra la hora de regreso |
-| **Hard stop** | Se comprueba contra la hora de regreso |
+| **Duration** | El reloj sigue corriendo mientras el candidato está ausente. Una vez que la duración expira, el examen ya no puede reanudarse |
+| **Cannot start before** / **Cannot start after** | Se comprueban contra la hora de inicio original, no contra la hora de regreso. Un candidato que inició a tiempo puede reanudar después de la fecha límite |
+| **Hard stop** | Se comprueba contra la hora de regreso. Una vez que ha pasado, el examen no se carga |
 
-### Duration
-
-El tiempo restante del intento original se transfiere. Por ejemplo, si un candidato comienza un examen de 60 minutos a las 10:00 AM y se desconecta a las 10:30 AM, al reanudar a las 10:50 AM le quedarán solo 10 minutos. Una vez que la duración total expire (11:00 AM), el examen ya no puede reanudarse.
-
-### Cannot start before / Cannot start after
-
-Estas restricciones se aplican a la hora de inicio original, no a la hora de reconexión. Un candidato que inició antes de la fecha límite puede reanudar después de esta, siempre que la duración del examen no haya expirado.
-
-### Hard stop
-
-Este límite se aplica estrictamente en el momento de la reconexión. Si la hora de **Hard stop** (cierre definitivo) ya pasó antes de que el candidato intente reanudar, el examen no se carga, incluso si el candidato inició originalmente antes del límite.
+Por ejemplo, un candidato comienza un examen de 60 minutos a las 10:00 AM y se desconecta a las 10:30 AM. Al reanudar a las 10:50 AM le quedan solo 10 minutos.
 
 <Warning>
 El **Hard stop** anula todas las demás configuraciones del temporizador en el momento de la reanudación. Si ya pasó, el candidato no puede reanudar independientemente del tiempo de examen restante.

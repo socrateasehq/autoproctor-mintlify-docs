@@ -3,95 +3,57 @@ title: "Your First Proctored Test"
 description: "A step-by-step guide to creating, configuring, and sharing your first proctored test on AutoProctor."
 ---
 
-<Tip>
-Create a proctored test, share the link with candidates, and view results — all in under 5 minutes.
-</Tip>
-
 ## Create Your First Test
 
 <Steps>
   <Step title="Sign in to AutoProctor">
-    Go to the [AutoProctor sign-in page](https://www.autoproctor.co/account/login/role/test-admin) and sign in with your **Google** account, **Microsoft** account, or **email address**. You'll land on your dashboard, where all your tests are listed.
+    Sign in at [AutoProctor](https://www.autoproctor.co/account/login/role/test-admin). You land on the [**Tests**](https://www.autoproctor.co/test-admin/home/) page.
 
-    <Frame caption="AutoProctor dashboard for a new user">
-      <img style={{maxWidth: "56cqi"}} src="/images/getting-started/new-user-dashboard.png" alt="AutoProctor dashboard for a new user" />
+    <Frame>
+      <img src="/images/create-proctored-exam/tests-page.png" alt="The Tests page with the Create Test button at the top right" />
     </Frame>
   </Step>
-  <Step title="Create a new test">
-    Click **Create Test** on your dashboard. Choose a quiz provider:
+  <Step title="Click Create Test">
+    Click **Create Test** at the top right. Pick a quiz provider, paste your quiz link and give the test a title. For [Socratease](/create-socratease-quiz), you build the quiz on the next screen instead.
 
-    | Provider | When to Use |
-    |---|---|
-    | **Socratease Quizzes** | You want to create a quiz directly on AutoProctor |
-    | **Google Forms** | You already have a Google Form |
-    | **Microsoft Forms** | You already have a Microsoft Form |
-    | **Other Quizzing Platforms** | You use another platform (TypeForm, ProProfs, ClassMarker, etc.) |
-
-    <Frame caption="Quiz provider selection screen">
-      <img className="rounded-xl border" style={{maxWidth: "56cqi"}} src="/images/creating-tests/all-test-types.png" alt="Quiz provider selection screen" />
+    <Frame>
+      <img src="/images/create-proctored-exam/quiz-providers.png" alt="The four quiz providers on the Create Test page" />
     </Frame>
 
-    Select your provider and follow the prompts to connect your quiz.
+    See [Quiz Providers](/supported-quiz-providers) for which link to paste for each provider.
   </Step>
-  <Step title="Configure test settings">
-    Click **Settings** on the test to configure:
+  <Step title="Review the test settings">
+    The test's settings page opens. Open [**Timer**](/timer-settings) and [**Proctoring**](/proctoring-settings) to adjust them, then click **Save settings**. The defaults work for a first test.
 
-    - **Main Settings** — Enable the timer and proctoring, set [maximum attempts](/maximum-exam-attempts), and name your test
-    - **[Timer Settings](/timer-settings)** — Set a duration, start window, and submission deadline
-    - **[Proctoring Settings](/proctoring-settings)** — Enable camera, microphone, tab-switching detection, and more
-    - **[Advanced Settings](/advanced-exam-settings)** — Choose login methods and add restrictions
-
-    <Frame caption="Test settings page with key sections">
-      <img className="border rounded-xl" style={{maxWidth: "56cqi"}} src="/images/getting-started/configure-test-settings.png" alt="Test settings page with key sections" />
+    <Frame>
+      <img src="/images/create-proctored-exam/test-settings-page.png" alt="The settings page of a test, with the test link at the top and the sections on the left" />
     </Frame>
 
     <Note>
-    For your first test, the default proctoring settings work well. You can fine-tune them later based on your needs.
+    **General** holds the [maximum attempts per candidate](/maximum-exam-attempts). Login methods, restrictions and candidate instructions are under [Advanced Settings](/advanced-exam-settings).
     </Note>
-  </Step>
-  <Step title="Test the link yourself">
-    Before sharing, click the test link yourself to verify the candidate experience. Confirm that the **instructions page**, **camera check**, and **proctoring setup** all load correctly.
   </Step>
   <Step title="Share the test link">
-    Copy the test link from your dashboard and share it with candidates via:
+    Click **Preview** next to the test link to check it the way a candidate sees it, then click **Copy link**.
 
-    - **Email** — or use [Invite via Email](/invite-candidates-via-email) for direct invitations
-    - **Your LMS** or classroom platform
-    - **Any messaging tool** — but tell candidates to copy the link and open it in **Chrome** or **Firefox**, not the app's built-in browser
-
-    <Frame caption="Copying the test link from the dashboard">
-      <img style={{maxWidth: "56cqi"}} src="/images/getting-started/copy-test-link.gif" alt="Copying the test link from the dashboard" />
-    </Frame>
-
-    <Note>
-    See [Best Practices for Test Creators](/best-practices-for-exam-creators) for more on distributing test links.
-    </Note>
+    Share the link however you reach your candidates, or use [Invite via Email](/invite-candidates-via-email). See [Best Practices](/best-practices-for-exam-creators) for tips on distributing links.
   </Step>
   <Step title="View results">
-    Once candidates complete the test, go to your [dashboard](https://www.autoproctor.co/test-admin/home/) and click **Results** to see:
+    On the [**Tests**](https://www.autoproctor.co/test-admin/home/) page, click **Results** next to the test. Each attempt has a **Trust score** and a report with its proctoring evidence.
 
-    - **Trust scores** for each candidate
-    - **Proctoring violation** details
-    - **Photos, recordings, and evidence**
-    - **Quiz scores** (only if you used Socratease)
-
-    <Frame caption="Sample results page showing submissions, trust scores, and quiz scores">
-      <img
-        className="rounded-xl"
-        style={{maxWidth: "56cqi"}}
-        src="/images/getting-started/sample-results.png"
-        alt="AutoProctor results page showing submission summary and candidate scores"
-      />
+    <Frame>
+      <img src="/images/create-proctored-exam/test-results.png" alt="Test results page with summary tiles and the Submissions table" />
     </Frame>
 
-    For a detailed guide, see [Where Can I See My Quiz Results?](/where-to-find-quiz-results).
+    See [Where Can I See My Quiz Results?](/where-to-find-quiz-results) for a detailed guide.
   </Step>
 </Steps>
 
 ## Related Resources
 
-- [Quiz Providers](/supported-quiz-providers) — All supported quiz platforms
-- [Timer Settings](/timer-settings) — Configure test duration and time windows
-- [Proctoring Settings](/proctoring-settings) — Configure what gets monitored
-- [FAQs](/faqs) — Common questions about AutoProctor
-- [Best Practices for Test Creators](/best-practices-for-exam-creators) — Tips for running proctored tests
+- [Quiz Providers](/supported-quiz-providers) - All supported quiz platforms
+- [Timer Settings](/timer-settings) - Configure test duration and time windows
+- [Proctoring Settings](/proctoring-settings) - Configure what gets monitored
+- [Closing, Hiding and Deleting Tests](/archive-and-delete-exams) - Manage the tests on your Tests page
+- [FAQs](/faqs) - Common questions about AutoProctor
+- [Best Practices for Test Creators](/best-practices-for-exam-creators) - Tips for running proctored tests

@@ -3,61 +3,66 @@ title: "Compartir Resultados del Examen"
 description: "Conceda a otros administradores o colegas acceso a los resultados del examen en AutoProctor, incluidos métodos para todas las plataformas de cuestionarios compatibles."
 ---
 
-Es posible que necesite compartir los resultados del examen con otros administradores, coinstructores o colegas que no crearon el examen original. El método depende de la plataforma de cuestionarios que utilice.
+Dé a un colega acceso a los resultados de un examen en su propia cuenta de AutoProctor, o envíele un archivo.
+
+| Método | Funciona para | Qué obtiene la otra persona |
+|---|---|---|
+| **Agregar un colaborador** | Todos los tipos de examen | El examen en su propia página **Tests**, con sus resultados, informes y configuración |
+| **Compartir el Google Form** | Exámenes de Google Forms | El examen en su propia página **Tests**, con sus resultados, informes y configuración |
+| [**Exportar los resultados**](/export-results-to-excel) | Todos los tipos de examen | Un archivo CSV con los resultados |
+| [**Escribir los resultados en Google Sheets**](/write-results-to-google-sheets) | Todos los tipos de examen | Una hoja de Google Sheets que usted comparte con ella. Requiere un plan **Premium** o **Elite** |
+
+<Warning>
+El enlace **Share** (compartir) que aparece debajo de un examen en la página [**Tests**](https://www.autoproctor.co/test-admin/home/) copia el enlace del examen que usan los candidatos para realizarlo. No da a nadie acceso a los resultados.
+</Warning>
+
+## Agregar un Colaborador
+
+Un **colaborador** ve el examen en su propia página **Tests** y puede abrir sus resultados e informes de supervisión.
+
+<Steps>
+  <Step title="Abra la Configuración del Examen">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/) y haga clic en **Settings** junto al examen.
+  </Step>
+  <Step title="Copie el Collaborate Link">
+    Haga clic en **Manage** (administrar) en la tarjeta de colaboradores y copie el **Collaborate link** (enlace de colaboración) al final del diálogo.
+
+    {/* screenshot: "Collaborators" dialog opened from "Manage" on the Test Settings page of any test, cropped to the bottom of the dialog showing the "Collaborate link" row with its copy icon and the "Done" button */}
+  </Step>
+  <Step title="Envíe el Enlace">
+    Cuando la persona abre el enlace con la sesión iniciada en AutoProctor, queda agregada al examen y llega a sus resultados.
+  </Step>
+</Steps>
+
+<Note>
+Administrar colaboradores requiere un plan **Premium** o **Elite**, y la persona debe ser miembro de su [equipo](/what-is-a-team). Los colaboradores obtienen acceso completo al examen, incluida su configuración. Consulte [Agregar Colaboradores](/add-collaborators) para ver los detalles.
+</Note>
 
 ## Para Google Forms
 
-Cuando comparte un Google Form con otro usuario, este puede obtener acceso al mismo examen de AutoProctor y sus resultados.
+Cualquier persona con permiso de edición en el Google Form puede acceder al mismo examen de AutoProctor y sus resultados.
 
-<Frame caption="Abriendo el complemento Timer + Proctor en un Google Form compartido">
+<Frame>
   <video controls className="w-full rounded-xl" src="/videos/settings/timer-proctor-on-gf.mp4"></video>
 </Frame>
 
 <Steps>
   <Step title="Comparta el Google Form">
-    Comparta el enlace del Google Form con los usuarios que necesitan acceso. Asegúrese de que tengan permisos de **Editor** en el formulario.
+    Comparta el Google Form con permisos de **Editor**.
   </Step>
   <Step title="Abra el complemento Timer + Proctor">
-    Indique a los otros usuarios que abran el complemento **Timer + Proctor** desde el Google Form compartido.
-  </Step>
-  <Step title="Verifique el acceso">
-    Una vez que abran el complemento, los otros usuarios quedan asociados al mismo examen. Verán el mismo enlace de examen y podrán ver los resultados en su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/).
-
+    Pida a los otros usuarios que abran el complemento **Timer + Proctor** desde el formulario compartido. El examen aparece entonces en su propia página [**Tests**](https://www.autoproctor.co/test-admin/home/), donde hacen clic en **Results**.
   </Step>
 </Steps>
 
 <Note>
-Los otros usuarios deben abrir el complemento Timer + Proctor al menos una vez desde el Google Form compartido. Simplemente compartir el enlace del Google Form no es suficiente -- deben iniciar el complemento para quedar asociados al examen.
+Compartir el formulario no es suficiente. Cada persona debe abrir el complemento al menos una vez para quedar asociada al examen.
 </Note>
-
-## Para Socratease Quizzes
-
-Utilice la función **Colaboradores** para conceder a otros usuarios acceso a su examen y sus resultados.
-
-<Steps>
-  <Step title="Abra la configuración del examen">
-    Navegue al examen en su [panel de AutoProctor](https://www.autoproctor.co/test-admin/home/) y abra su configuración.
-  </Step>
-  <Step title="Agregue colaboradores">
-    Agregue las direcciones de correo electrónico de los usuarios a los que desea conceder acceso. Consulte [Agregar Colaboradores](/add-collaborators) para obtener instrucciones detalladas.
-  </Step>
-</Steps>
-
-Los colaboradores pueden ver resultados, informes de supervisión y gestionar el examen según los permisos que usted les asigne.
-
-## Para Todos los Tipos de Examen
-
-También puede compartir los resultados exportándolos:
-
-| Método | Descripción |
-|---|---|
-| **Exportación a Excel** | Descargue los resultados y comparta el archivo directamente. Consulte [Exportar a Excel](/export-results-to-excel) |
-| **Google Sheets** | Configure la exportación automática a una hoja de Google Sheets compartida. Consulte [Integración con Google Sheets](/write-results-to-google-sheets) |
 
 ## Recursos Relacionados
 
-- [Agregar Colaboradores](/add-collaborators) -- Conceder acceso de gestión del examen a otros usuarios
-- [Exportar a Excel](/export-results-to-excel) -- Descargar resultados como hoja de cálculo
-- [Integración con Google Sheets](/write-results-to-google-sheets) -- Sincronizar resultados automáticamente con Google Sheets
-- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) -- Descripción general de los resultados del examen frente a los resultados de supervisión
-- [¿Qué Es un Equipo?](/what-is-a-team) -- Comparta facturación y colabore dentro de su organización
+- [Agregar Colaboradores](/add-collaborators) - Conceder acceso de gestión del examen a otros usuarios
+- [Exportar a Excel](/export-results-to-excel) - Descargar resultados como hoja de cálculo
+- [Integración con Google Sheets](/write-results-to-google-sheets) - Sincronizar resultados automáticamente con Google Sheets
+- [¿Dónde Puedo Ver los Resultados de Mi Examen?](/where-to-find-quiz-results) - Descripción general de los resultados del examen frente a los resultados de supervisión
+- [¿Qué Es un Equipo?](/what-is-a-team) - Comparta facturación y colabore dentro de su organización

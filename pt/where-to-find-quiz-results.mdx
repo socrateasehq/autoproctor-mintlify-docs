@@ -1,47 +1,68 @@
 ---
 title: "Onde Posso Ver os Resultados do Meu Teste?"
-description: "Conheça os dois tipos de resultados disponíveis no AutoProctor -- resultados do teste mostrando o desempenho dos candidatos e resultados de supervisão registrando a integridade."
+description: "Encontre as pontuações e respostas dos seus testes do AutoProctor: na página Results para Questionários Socratease, ou na plataforma de questionários para Google Forms, Microsoft Forms e testes IFrame."
 ---
 
-O AutoProctor fornece dois tipos distintos de resultados para cada teste: **resultados do teste** (como os candidatos se saíram) e **resultados de supervisão** (se os candidatos mantiveram a integridade). Conhecer a diferença ajuda a encontrar os dados corretos rapidamente.
-
-<Frame caption="Página de resultados mostrando a coluna Trust Score">
-  <img className="border rounded-xl" src="/images/getting-started/sample-results.png" alt="Página de resultados do AutoProctor mostrando a coluna Trust Score para cada candidato" />
-</Frame>
+O AutoProctor fornece dois tipos distintos de resultados para cada teste: **resultados do teste** (como os candidatos se saíram) e **resultados de supervisão** (se os candidatos mantiveram a integridade). O local onde ficam os resultados do teste depende da plataforma de questionários que você usou.
 
 ## Resultados do Teste
 
-Os resultados do teste mostram as respostas e pontuações de cada candidato. A menos que você use os Questionários Socratease, esses resultados aparecem na sua plataforma de questionários original -- não no [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/).
-
-<Note>
+<Warning>
 A menos que você use Questionários Socratease, não é possível ver os resultados do teste diretamente no AutoProctor. Os resultados do teste aparecem na plataforma onde você criou o teste.
-</Note>
+</Warning>
 
 | Plataforma de Questionários | Onde Encontrar os Resultados do Teste |
 |---|---|
-| **Google Forms** | Abra seu Google Form e clique na aba **Respostas** para ver todas as submissões |
-| **Microsoft Forms** | Verifique a seção **Respostas** no Microsoft Forms como faria normalmente |
-| **Testes IFrame** | Veja os resultados na plataforma que você incorporou no IFrame |
-| **Questionários Socratease** | Veja os resultados diretamente no seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) na seção **Resultados** do teste |
+| **Google Forms** | A aba **Respostas** do seu Google Form |
+| **Microsoft Forms** | A seção **Respostas** do seu Microsoft Form |
+| **Testes IFrame** | A plataforma que você incorporou no IFrame |
+| **Questionários Socratease** | A coluna **Quiz score** (pontuação do questionário) na página **Results** (resultados) do teste no AutoProctor |
 
 <Note>
 Se você usa Google Forms e não consegue ver as respostas, consulte o guia de resolução de problemas sobre [respostas do Google Forms não visíveis](/google-forms-response-not-visible).
 </Note>
 
+## Pontuações dos Questionários Socratease
+
+<Steps>
+  <Step title="Abra a Página Results">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Results** ao lado do teste.
+  </Step>
+  <Step title="Encontre o Candidato">
+    A coluna **Quiz score** mostra a porcentagem e os pontos de cada candidato, por exemplo **88% (7/8)**. Busque pelo nome ou e-mail para encontrar um candidato.
+
+    {/* screenshot: Submissions table on the Results page of a Socratease test with proctoring on, cropped to the column headers and two rows, showing the "Trust score" and "Quiz score" columns with "View answers" under one quiz score and "Grade quiz" under the other */}
+  </Step>
+  <Step title="Abra as Respostas">
+    Clique em **View answers** (ver respostas) abaixo da pontuação para ver cada resposta e os pontos obtidos. Se a tentativa ainda precisa de correção, o link diz **Grade quiz** (corrigir questionário).
+  </Step>
+</Steps>
+
+Para a correção e as visualizações de análise, consulte [Acessar Respostas e Entregas do Candidato](/access-candidate-responses).
+
+## Resultados de Todos os Seus Testes
+
+A página [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) (últimas tentativas) lista cada tentativa enviada de todos os seus testes, da mais recente para a mais antiga. A coluna **Quiz score** dessa página depende da plataforma de questionários de cada teste:
+
+| Plataforma de Questionários | O que a coluna Quiz score mostra |
+|---|---|
+| **Questionários Socratease** | A porcentagem obtida, com um selo **Graded** (corrigido) ou **Not fully graded** (não totalmente corrigido). Clique na porcentagem para abrir as respostas do candidato |
+| **Google Forms**, **Microsoft Forms**, **Testes IFrame** | Um traço com um ícone de ajuda. As pontuações ficam na plataforma de questionários, não no AutoProctor |
+
+{/* screenshot: Latest attempts page cropped to the table's column headers and three rows, one row for a Socratease test showing a percentage and a "Graded" badge in the "Quiz score" column, and one row for a Google Forms test showing a dash and the help icon in the same column */}
+
 ## Resultados de Supervisão
 
-À medida que um candidato realiza o teste, o AutoProctor monitora o ambiente de teste e registra evidências de possíveis irregularidades ou condutas indevidas. Esses dados são compilados em um relatório de supervisão com um [Trust Score](/what-is-trust-score).
+Os resultados de supervisão são um relatório separado para cada tentativa, com um [Trust Score](/what-is-trust-score). Consulte [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) para abri-los.
 
 <Note>
 Os resultados de supervisão só estão disponíveis quando a supervisão está ativada nas [configurações do teste](/proctoring-settings). Testes configurados apenas com temporizador não geram relatórios de supervisão.
 </Note>
 
-Para saber como acessar os resultados de supervisão passo a passo, consulte [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results).
-
 ## Recursos Relacionados
 
-- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) -- Guia passo a passo para ver relatórios de supervisão
-- [Acessar Respostas e Entregas do Candidato](/access-candidate-responses) -- Veja respostas e pontuações de candidatos específicos
-- [Exportar para Excel](/export-results-to-excel) -- Baixe os resultados como planilha
-- [Trust Score Explicado](/what-is-trust-score) -- Entenda como os Trust Scores são calculados
-- [O Que É Monitorado](/what-gets-tracked-during-proctoring) -- Saiba o que o AutoProctor supervisiona durante um teste
+- [Onde Posso Ver os Resultados de Supervisão?](/where-to-find-proctoring-results) - Guia passo a passo para ver relatórios de supervisão
+- [Acessar Respostas e Entregas do Candidato](/access-candidate-responses) - Veja respostas e pontuações de candidatos específicos
+- [Exportar para Excel](/export-results-to-excel) - Baixe os resultados como planilha
+- [Trust Score Explicado](/what-is-trust-score) - Entenda como os Trust Scores são calculados
+- [O Que É Monitorado](/what-gets-tracked-during-proctoring) - Saiba o que o AutoProctor supervisiona durante um teste

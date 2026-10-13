@@ -1,21 +1,46 @@
 ---
 title: "Pagamentos e Créditos Explicados"
-description: "Entenda como funcionam os pagamentos, as assinaturas e os créditos no AutoProctor, incluindo recargas, pacotes de testes e políticas de acumulação de créditos."
+description: "Entenda como funcionam os pagamentos, as assinaturas e os créditos no AutoProctor, incluindo recargas, pacotes de créditos e políticas de acumulação de créditos."
 ---
 
-O AutoProctor utiliza um sistema de cobrança baseado em créditos. Cada tentativa de teste por parte de um candidato consome um crédito, e você adquire créditos através de assinaturas e recargas opcionais. Esta página explica o modelo de cobrança completo para que você possa planejar suas necessidades de créditos.
+Cada tentativa de teste de um candidato consome créditos. Você obtém créditos com uma assinatura e com recargas opcionais.
+
+Seu plano, seu saldo de créditos e seus pagamentos ficam na página [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/) (assinatura e cobrança).
 
 ## Créditos Gratuitos
 
-Quando você cria uma conta de Administrador de Testes no AutoProctor, recebe **10 créditos gratuitos**. Cada crédito corresponde a uma única tentativa de teste.
+Uma nova conta de Administrador de Testes começa com um período de avaliação com **10 créditos gratuitos** e todas as funcionalidades Premium. Quando eles acabarem, você precisa de uma assinatura para continuar.
 
-Por exemplo, com 10 créditos você pode ter 10 candidatos realizando 1 teste cada, ou 5 candidatos realizando 2 testes cada. Após esgotar os créditos gratuitos, será necessário adquirir uma assinatura para continuar.
+{/* screenshot: Overview tab of the Subscription & Billing page on a trial account, cropped to the three tiles "Plan" (Premium trial with the Trial badge), "Credits remaining" (with the progress bar and the "trial credits used" line) and "Attempts during trial" */}
+
+## Como os Créditos São Usados
+
+Cada tentativa supervisionada consome **1 crédito**. As funcionalidades de supervisão avançada adicionam créditos extras a cada tentativa.
+
+| O que a tentativa usa | Créditos por tentativa |
+|---|---|
+| **Proctored attempt** (tentativa supervisionada) | 1 |
+| **Timed-only attempt** (tentativa apenas com temporizador) | 1 durante o período de avaliação, gratuita com uma assinatura |
+| **Session recording** | +4 |
+| **Auxiliary device** | +4 |
+| **ID card verification** | +4 |
+| **Impersonation detection** | +4 |
+| **Test-taker recording** (**Candidate recording** nas configurações do teste) | +15 |
+
+Se você ativar juntas as quatro funcionalidades de +4, elas somam **12 créditos**, não 16. Consulte [Supervisão Avançada](/enhanced-proctoring) para saber o que cada funcionalidade faz.
 
 ## Adquirir uma Assinatura
 
-<Frame caption="Como adquirir uma assinatura">
-  <video controls className="w-full rounded-xl" src="/videos/pricing/subscribe.mp4"></video>
-</Frame>
+<Steps>
+  <Step title="Clique em Subscribe">
+    Clique em **Subscribe** (assinar) abaixo do cartão de créditos no final da barra lateral. A Página de Preços é aberta.
+
+    {/* screenshot: bottom of the sidebar on a trial account, cropped to the credits card reading "credits remaining" with "Premium · Trial" below it and the "Subscribe" button under the card */}
+  </Step>
+  <Step title="Escolha um Plano e Pague">
+    Na [Página de Preços](https://www.autoproctor.co/pricing/), escolha um plano e uma frequência de cobrança e depois pague. Os créditos do período de avaliação que você ainda tiver são transferidos para o seu novo plano.
+  </Step>
+</Steps>
 
 O AutoProctor oferece **3 planos** e **3 frequências de cobrança**:
 
@@ -31,52 +56,60 @@ O AutoProctor oferece **3 planos** e **3 frequências de cobrança**:
 | **Trimestral** | Renova a cada 3 meses |
 | **Anual** | Renova a cada 12 meses |
 
-**Exemplo:** Se você adquirir o plano mensal Standard no dia 5 de março, paga X dólares. Depois será cobrado X dólares no dia 5 de cada mês subsequente. Se escolher uma frequência diferente (Trimestral, Anual), a data de renovação será ajustada de acordo.
-
 <Warning>
 As assinaturas são renovadas automaticamente. Para interromper a cobrança automática, você deve [cancelar sua assinatura](/cancel-subscription) antes da data de renovação.
 </Warning>
 
-Quando você adquire uma assinatura, recebe uma quantidade determinada de créditos (por exemplo, 150). Cada vez que a assinatura é renovada, a mesma quantidade de créditos é adicionada à sua conta.
+Cada plano inclui uma quantidade determinada de créditos, por exemplo 150. A mesma quantidade é adicionada a cada renovação da assinatura. O bloco **Renews on** (renova em) da aba **Overview** (visão geral) mostra a data da sua próxima cobrança.
+
+{/* screenshot: Overview tab of the Subscription & Billing page on an account with an active subscription, cropped to the four tiles "Plan" (with the Active badge), "Credits remaining", "Renews on" and "Billed in" */}
 
 ## Recarregar Sua Assinatura
 
-<Frame caption="Como adicionar créditos">
-  <img className="border rounded-xl" src="/images/pricing/topup.gif" alt="GIF mostrando como comprar um Pacote de Testes de recarga no AutoProctor" />
-</Frame>
+Se você precisar de mais créditos do que seu plano oferece, compre **pacotes de créditos**. Você pode comprar de 1 a 1.000 pacotes em uma única compra.
 
-Se você precisar de mais créditos do que seu plano oferece em um determinado ciclo de cobrança, pode adquirir **Pacotes de Testes**. Cada Pacote de Testes contém uma quantidade fixa de créditos, e você pode comprar quantos forem necessários.
+<Steps>
+  <Step title="Abra a Aba Top up">
+    Acesse a aba [**Top up**](https://www.autoproctor.co/test-admin/billing/?t=t) (recarregar) da página **Subscription & Billing**.
+  </Step>
+  <Step title="Insira o Número de Pacotes">
+    Insira o **Number of packs** (número de pacotes). O **Order summary** (resumo do pedido) mostra os créditos que você recebe e o total.
+  </Step>
+  <Step title="Pague">
+    Clique em **Continue to payment** (continuar para o pagamento) e pague na página de checkout da Stripe. Os créditos são adicionados ao seu saldo um momento depois que você volta.
+  </Step>
+</Steps>
 
-As recargas têm **custo único**. Os créditos permanecem disponíveis enquanto sua assinatura estiver ativa.
+{/* screenshot: Top up tab of the Subscription & Billing page on an account with an active subscription, cropped to the "Top up credits" card and the "Order summary" card, with "Number of packs" set to 10, the first "Volume discounts" row marked "Applied", and the "Discount · 5%" row and "Continue to payment" button visible */}
+
+As recargas têm **custo único** e exigem um plano ativo. Os créditos permanecem disponíveis enquanto sua assinatura estiver ativa.
 
 <Note>
-Se você adquiriu Pacotes de Testes mas não consegue vê-los na sua conta, consulte [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing) para passos de resolução de problemas.
+Se você adquiriu pacotes de créditos mas não consegue vê-los na sua conta, consulte [Pacotes Adquiridos Não Aparecem](/purchased-packs-not-showing).
 </Note>
 
 ## Acumulação de Créditos
 
 <Note>
-Enquanto você mantiver uma assinatura ativa (ou seja, pagar a cada mês, trimestre ou ano), **os créditos não expiram -- eles se acumulam** nos períodos de cobrança seguintes.
+Enquanto você mantiver uma assinatura ativa, **os créditos não expiram. Eles se acumulam** no período de cobrança seguinte, somados aos créditos da renovação.
 </Note>
-
-Se você adquiriu 600 créditos extras em um mês mas usou apenas metade, os créditos restantes são transferidos para o próximo período. No período de cobrança seguinte, você terá esses créditos não utilizados mais os créditos da renovação, todos disponíveis para uso imediato.
 
 ## Descontos
 
-O AutoProctor oferece descontos em frequências de cobrança mais longas (Trimestral e Anual vs. Mensal), bem como em compras de recargas em volume:
+Os planos Trimestral e Anual custam menos que o Mensal. Recargas grandes também recebem um **desconto por volume**, aplicado automaticamente no resumo do pedido.
 
-| Créditos de Recarga | Desconto |
-|---|---|
-| 1.500 – 2.999 | 5% de desconto |
-| 3.000+ | 10% de desconto |
+| Pacotes em Uma Compra | Créditos de Recarga | Desconto |
+|---|---|---|
+| 10 a 19 | 1.500 a 2.850 | 5% de desconto |
+| 20 ou mais | 3.000 ou mais | 10% de desconto |
 
-Visite a [Página de Preços](https://www.autoproctor.co/pricing/) para detalhes e use a Calculadora de Preços para estimar seus custos.
+Consulte a [Página de Preços](https://www.autoproctor.co/pricing/) para ver os preços e a Calculadora de Preços.
 
 ## Recursos Relacionados
 
-- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) -- Monitore como seus créditos estão sendo consumidos
-- [Como Cancelar Sua Assinatura](/cancel-subscription) -- Instruções passo a passo para cancelamento
-- [Assinatura de Uso Único](/one-time-subscription) -- Use o AutoProctor para um evento único
-- [Funcionalidades do Plano Elite](/elite-plan-features) -- Funcionalidades disponíveis no plano Elite
-- [Faturas de Pagamentos](/invoices-and-receipts) -- Acesse e baixe suas faturas
-- [Perguntas Frequentes](/faqs) -- Perguntas comuns sobre o AutoProctor
+- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) - Monitore como seus créditos estão sendo consumidos
+- [Como Cancelar Sua Assinatura](/cancel-subscription) - Instruções passo a passo para cancelamento
+- [Assinatura de Uso Único](/one-time-subscription) - Use o AutoProctor para um evento único
+- [Funcionalidades do Plano Elite](/elite-plan-features) - Funcionalidades disponíveis no plano Elite
+- [Faturas de Pagamentos](/invoices-and-receipts) - Acesse e baixe suas faturas
+- [Perguntas Frequentes](/faqs) - Perguntas comuns sobre o AutoProctor

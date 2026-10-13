@@ -1,25 +1,22 @@
 ---
 title: "Pacotes Adquiridos Não Aparecem"
-description: "Resolva problemas de pacotes de testes ou créditos de assinatura adquiridos que não aparecem na sua conta do AutoProctor, com soluções passo a passo."
+description: "Resolva problemas de pacotes de créditos ou créditos de assinatura adquiridos que não aparecem na sua conta do AutoProctor, com soluções passo a passo."
 ---
 
-Se você adquiriu uma assinatura ou uma recarga de pacotes de testes mas o saldo da sua conta não foi atualizado, existem algumas razões comuns. Siga os passos de resolução de problemas abaixo, listados por ordem de probabilidade.
+Se o seu saldo não foi atualizado alguns minutos depois de uma compra, confira estas razões, da mais provável para a menos provável.
 
 ## 1. Você Está Conectado com uma Conta Diferente
 
-Esta é **a razão mais comum**. Se você adquiriu créditos usando um endereço de e-mail mas está conectado com outro, os créditos não aparecerão.
+Esta é **a razão mais comum**. Você pagou com um endereço de e-mail mas está conectado com outro.
 
 <Steps>
   <Step title="Verifique seu e-mail atual">
-    Acesse a página **Your Account**. Seu endereço de e-mail da sessão ativa é exibido ali.
+    Confira o campo **Email** na sua página [**Profile**](https://www.autoproctor.co/test-admin/profile/) (perfil).
 
-    {/* TODO: Add screenshot of the Your Account page showing the email address */}
-  </Step>
-  <Step title="Encontre o e-mail de confirmação de compra">
-    O AutoProctor envia um recibo e uma fatura para cada compra. Pesquise na sua caixa de entrada para identificar qual endereço de e-mail recebeu a confirmação.
+    {/* screenshot: Profile page cropped to the "Profile" card, showing the read-only "Email" field with the line "You cannot change your email" below it */}
   </Step>
   <Step title="Faça login com a conta correta">
-    Se a confirmação foi enviada para um endereço de e-mail diferente, saia e faça login com essa conta para ver seus créditos.
+    O AutoProctor envia um recibo por e-mail para cada compra. Se ele foi para outro endereço, saia e faça login com essa conta.
   </Step>
 </Steps>
 
@@ -29,25 +26,34 @@ Se você faz parte de um [Time](/what-is-a-team), o Administrador do Time recebe
 
 ## 2. Sua Assinatura Expirou
 
-O AutoProctor é um produto baseado em assinatura. Quando sua assinatura deve ser renovada, seu cartão é cobrado automaticamente. Se a cobrança falhar após múltiplas tentativas, sua assinatura é cancelada e **seu saldo de créditos é zerado**.
+Se um pagamento de renovação falhar, sua assinatura é cancelada e **seu saldo de créditos é zerado**.
 
 <Steps>
   <Step title="Verifique o status da sua assinatura">
-    Acesse a seção **Billing** na sua barra lateral. O status da sua assinatura é exibido na área **Plan Details**.
+    Na aba **Overview** (visão geral) da página [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/) (assinatura e cobrança), confira a etiqueta do bloco **Plan**.
   </Step>
   <Step title="Verifique seu método de pagamento">
-    Confirme que o cartão de crédito cadastrado é válido e tem fundos suficientes. Você pode atualizá-lo em [Editar Informações de Cobrança](/edit-billing-information).
+    Certifique-se de que o cartão cadastrado é válido. Você pode atualizá-lo em [Editar Informações de Cobrança](/edit-billing-information).
+
+    Se a etiqueta mostrar **Past due** (pagamento em atraso), clique em **Clear payment** (quitar o pagamento) no canto superior direito para pagar a fatura pendente.
   </Step>
   <Step title="Assine novamente se necessário">
-    Se sua assinatura expirou, adquira uma nova assinatura na [Página de Preços](https://www.autoproctor.co/pricing/) para restaurar o acesso.
+    Se o seu plano terminou, clique em **Subscribe again** (assinar novamente) e escolha um plano na [Página de Preços](https://www.autoproctor.co/pricing/).
   </Step>
 </Steps>
 
+| Etiqueta | O Que Significa | O Que Fazer |
+|---|---|---|
+| **Active** | Sua assinatura está em vigor e você pode recarregar | Confira as outras razões desta página |
+| **Past due** | Seu último pagamento não foi processado. A recarga fica pausada até que ele seja quitado | Clique em **Clear payment** |
+| **Canceled** ou **Inactive** | Seu plano terminou e os créditos dele foram zerados | Clique em **Subscribe again** |
+| **Trial** | Você está no período de avaliação gratuita e não assinou com esta conta | Clique em **Subscribe** |
+
+{/* screenshot: Overview tab of the Subscription & Billing page on an account whose plan has ended, cropped to the notice that starts with "Your plan ended on", the "Plan" tile with the Canceled badge, the "Credits remaining" tile reading 0 and the "Subscribe again to keep testing" card */}
+
 ## 3. Sua Associação ao Time Mudou
 
-No AutoProctor, você pode entrar e sair de um [Time](/what-is-a-team). Se você faz parte de um time, compartilha a assinatura e o saldo de créditos com outros membros do time.
-
-Se você saiu de um time (ou foi removido), não verá mais o saldo de créditos do time. Verifique seu status no time visitando a seção **Team** na sua barra lateral.
+Os membros de um time compartilham uma assinatura e um saldo de créditos. Se você saiu de um [Time](/what-is-a-team) ou foi removido, deixa de ver os créditos dele. Verifique seu status na página [**Team**](https://www.autoproctor.co/test-admin/team/) (time).
 
 <Warning>
 Sair de um time significa que você perde acesso aos créditos compartilhados do time. Certifique-se de que esta ação é intencional antes de sair.
@@ -55,24 +61,21 @@ Sair de um time significa que você perde acesso aos créditos compartilhados do
 
 ## 4. Erro do Lado do AutoProctor
 
-Se nenhuma das opções acima se aplicar, o problema pode ser do nosso lado. Siga estes passos para reportar:
+Se nenhuma das opções acima se aplicar, o problema pode ser do nosso lado.
 
 <Steps>
-  <Step title="Reúna os detalhes da sua compra">
-    Localize o e-mail de confirmação de compra com os detalhes da transação.
-  </Step>
   <Step title="Tire uma captura de tela">
-    Capture uma captura de tela da sua página **Your Account** mostrando o saldo atual.
+    Tire uma captura de tela da aba **Overview** da página [**Subscription & Billing**](https://www.autoproctor.co/test-admin/billing/), mostrando **Credits remaining** (créditos restantes) e a lista **Payments** (pagamentos).
   </Step>
   <Step title="Entre em contato com o suporte">
-    Encaminhe o e-mail de compra e a captura de tela para **hello@autoproctor.co**. Nossa equipe investigará e resolverá o problema.
+    Envie a captura de tela e o e-mail de confirmação de compra para **hello@autoproctor.co**. Nossa equipe investigará e resolverá o problema.
   </Step>
 </Steps>
 
 ## Recursos Relacionados
 
-- [Pagamentos e Créditos Explicados](/payments-and-credits) -- Como funcionam os créditos e as assinaturas
-- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) -- Monitore seu consumo de créditos
-- [O Que É um Time?](/what-is-a-team) -- Entenda a cobrança do time e créditos compartilhados
-- [Editar Informações de Cobrança](/edit-billing-information) -- Atualize seu método de pagamento
-- [Fale Conosco](/contact-us) -- Entre em contato com o suporte do AutoProctor
+- [Pagamentos e Créditos Explicados](/payments-and-credits) - Como funcionam os créditos e as assinaturas
+- [Acompanhamento do Uso de Pacotes de Testes](/track-credit-usage) - Monitore seu consumo de créditos
+- [O Que É um Time?](/what-is-a-team) - Entenda a cobrança do time e créditos compartilhados
+- [Editar Informações de Cobrança](/edit-billing-information) - Atualize seu método de pagamento
+- [Fale Conosco](/contact-us) - Entre em contato com o suporte do AutoProctor

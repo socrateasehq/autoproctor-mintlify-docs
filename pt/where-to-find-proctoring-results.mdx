@@ -3,59 +3,93 @@ title: "Onde Posso Ver os Resultados de Supervisão?"
 description: "Acesse e revise os resultados de supervisão dos seus testes no AutoProctor, incluindo Trust Scores, detalhes de violações e relatórios por candidato."
 ---
 
-Após os candidatos concluírem um teste supervisionado, o AutoProctor compila os dados de monitoramento em um relatório de supervisão. Este guia explica como acessar e interpretar esses resultados.
+Após os candidatos concluírem um teste supervisionado, o AutoProctor compila os dados de monitoramento em um relatório de supervisão para cada tentativa.
 
-<Note>
+<Warning>
 Os resultados de supervisão só são gerados quando a supervisão está ativada nas [configurações do teste](/proctoring-settings). Se você configurou o teste apenas com temporizador, não há dados de supervisão disponíveis.
-</Note>
+</Warning>
 
 ## Visualizando os Resultados de Supervisão
 
 <Steps>
-  <Step title="Abra a página de resultados">
-    Navegue até o seu [painel do AutoProctor](https://www.autoproctor.co/test-admin/home/) e clique no botão **Results** do teste que deseja revisar.
+  <Step title="Abra a Página Results">
+    Acesse a sua página [**Tests**](https://www.autoproctor.co/test-admin/home/) e clique em **Results** (resultados) ao lado do teste.
 
-    <Frame caption="Botão de resultados no painel do AutoProctor">
-      <img className="border rounded-xl" src="/images/results/results-button-dashboard.png" alt="Botão de resultados destacado no painel do AutoProctor" />
-    </Frame>
+    {/* screenshot: one test row on the Tests page, cropped to the row, showing the test title and the "Settings" and "Results" buttons at the right */}
   </Step>
-  <Step title="Revise a tabela de resultados">
-    A página de resultados exibe uma tabela listando todas as submissões. Cada linha inclui:
+  <Step title="Revise a Tabela Submissions">
+    A tabela **Submissions** (envios) lista uma linha por tentativa, com o [Trust Score](/what-is-trust-score) de cada tentativa quando a supervisão está ativada.
 
-    - Nome e endereço de e-mail do candidato
-    - Hora de início e término do teste
-    - Trust Score (indicando a integridade da supervisão)
-    - Pontuação do questionário (apenas para Questionários Socratease)
-
-    <Frame caption="Tabela de resultados">
-      <img className="border rounded-xl" src="/images/results/results-table.png" alt="Tabela de resultados mostrando submissões dos candidatos com Trust Scores" />
-    </Frame>
+    {/* screenshot: Submissions table on the Results page of a Google Forms test with proctoring on, cropped to the search box, the "Started", "Submitted" and "Trust score" filters, the column headers and three rows, with a Trust score percentage and a "View report" button visible on at least one row */}
   </Step>
-  <Step title="Veja o resumo de supervisão">
-    Clique no **Trust Score** de um candidato para abrir o resumo detalhado de supervisão. Esta página lista todas as violações detectadas durante o teste, incluindo capturas de tela, timestamps e evidências.
+  <Step title="Abra o Relatório">
+    Clique no **Trust score** de um candidato, ou em **View report** (ver relatório) no final da linha. O relatório abre na aba **Proctoring**.
 
-    <Frame caption="Página de resumo de supervisão">
-      <img className="border rounded-xl" src="/images/results/proctoring-summary.png" alt="Página de resumo de supervisão mostrando violações detectadas e evidências" />
+    <Frame>
+      <img className="border rounded-xl" src="/images/results/proctoring-summary.png" alt="Aba Proctoring de um relatório com violações detectadas e evidências" />
     </Frame>
   </Step>
 </Steps>
 
-## O Que o Resumo de Supervisão Mostra
+A célula **Trust score** indica se um relatório está pronto:
 
-O resumo de supervisão de cada candidato inclui:
+| Trust score mostra | O que significa |
+|---|---|
+| Uma porcentagem | A tentativa tem pontuação. Clique na porcentagem para abrir o relatório |
+| **Pending** (pendente) | A tentativa foi enviada e a pontuação ainda está sendo calculada. **View report** já abre as evidências |
+| Um traço | A tentativa ainda não foi enviada, ou não foi supervisionada |
+
+<Note>
+O relatório de supervisão aparece alguns minutos depois que a tentativa é enviada. Para tentativas que foram iniciadas mas nunca enviadas, consulte [Testes Não Enviados](/view-unsubmitted-exams).
+</Note>
+
+## Como Encontrar as Tentativas a Revisar
+
+Os controles acima da tabela **Submissions** reduzem e reordenam a lista.
+
+| Controle | O que faz |
+|---|---|
+| Filtro **Started** | Mostra as tentativas iniciadas em, antes de, depois de ou entre as datas que você escolher |
+| Filtro **Submitted** | Mostra apenas as tentativas enviadas (**Yes**) ou apenas as não enviadas (**No**) |
+| Filtro **Trust score** | Mostra as tentativas acima de uma porcentagem, abaixo de uma porcentagem ou entre duas porcentagens |
+| **Sort** (ordenar) | Ordena a tabela por **Started**, **Submitted** ou **Trust score** |
+| **Columns** (colunas) | Mostra ou oculta colunas. **Device type** e **Attempt label** ficam ocultas até você ativá-las |
+
+## O Que o Relatório Mostra
+
+O relatório é dividido em abas, uma para cada tipo de evidência.
+
+| Aba | O que mostra | Quando aparece |
+|---|---|---|
+| **Results** | As respostas do candidato e os pontos obtidos | Apenas Questionários Socratease |
+| **Proctoring** | O Trust Score e a lista de violações com evidências | A supervisão estava ativada na tentativa |
+| **Auxiliary device** | Capturas do celular do candidato | **Auxiliary device** estava ativado |
+| **Session recording** | Uma reprodução da atividade na tela do candidato | **Session recording** estava ativado |
+| **Candidate recording** | A gravação contínua da câmera do candidato | **Candidate recording** estava ativado |
+
+As três últimas abas pertencem à [supervisão avançada](/enhanced-proctoring).
+
+{/* screenshot: top of a candidate's attempt report for a Socratease test with proctoring and all enhanced proctoring features on, cropped to the candidate name, the "Started", "Submitted", "Trust score", "Device" and "Quiz score" cards, and the tab strip showing "Results", "Proctoring", "Auxiliary device", "Session recording" and "Candidate recording" with "Proctoring" selected */}
+
+A aba **Proctoring** de cada candidato inclui:
 
 | Dado | Descrição |
 |---|---|
 | **Trust Score** | Classificação geral de integridade baseada nas violações detectadas |
 | **Lista de violações** | Cada tipo de violação com timestamp e evidência |
 | **Capturas de tela** | Fotos aleatórias capturadas durante a sessão do teste |
-| **Gravações** | Gravações de tela e webcam (se ativadas na [supervisão avançada](/enhanced-proctoring)) |
 | **Linha do tempo da sessão** | Quando o candidato iniciou, pausou ou enviou o teste |
+
+## Resultados de Supervisão de Todos os Seus Testes
+
+A página [**Latest attempts**](https://www.autoproctor.co/test-admin/latest-attempts/) (últimas tentativas) lista cada tentativa enviada de todos os seus testes, da mais recente para a mais antiga. Clique no **Trust score**, ou em **View report** abaixo do título do teste, para abrir o relatório dessa tentativa.
+
+{/* screenshot: Latest attempts page cropped to the page heading, the "Name, email, or test" search box, the column headers and three rows of proctored attempts, each with a "View report" link under the test title and a percentage in the "Trust score" column */}
 
 ## Recursos Relacionados
 
-- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) -- Visão geral dos resultados do teste vs. resultados de supervisão
-- [Trust Score Explicado](/what-is-trust-score) -- Como os Trust Scores são calculados
-- [O Que É Monitorado](/what-gets-tracked-during-proctoring) -- O que o AutoProctor supervisiona durante um teste supervisionado
-- [Exportar para Excel](/export-results-to-excel) -- Baixe os resultados de supervisão como planilha
-- [Testes Não Enviados](/view-unsubmitted-exams) -- Veja detalhes de testes iniciados mas não enviados
+- [Onde Posso Ver os Resultados do Meu Teste?](/where-to-find-quiz-results) - Visão geral dos resultados do teste vs. resultados de supervisão
+- [Trust Score Explicado](/what-is-trust-score) - Como os Trust Scores são calculados
+- [O Que É Monitorado](/what-gets-tracked-during-proctoring) - O que o AutoProctor supervisiona durante um teste supervisionado
+- [Exportar para Excel](/export-results-to-excel) - Baixe os resultados de supervisão como planilha
+- [Testes Não Enviados](/view-unsubmitted-exams) - Veja detalhes de testes iniciados mas não enviados

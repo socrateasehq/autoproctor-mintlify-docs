@@ -1,54 +1,75 @@
 ---
 title: "Export Results to Excel"
-description: "Download your AutoProctor test results as an Excel spreadsheet for record-keeping, sharing with colleagues, and audit purposes."
+description: "Download your AutoProctor test results as a CSV file that opens in Excel, for record-keeping, sharing with colleagues, and audit purposes."
 ---
 
-AutoProctor lets you export your test results to an Excel spreadsheet. This is useful for sharing results with colleagues, maintaining audit records, or storing documentation for your institution.
-
-## What the Export Includes
-
-The exported spreadsheet contains a summary of all candidate results:
-
-| Column | Description |
-|---|---|
-| **Candidate name** | Name of the test taker |
-| **Email address** | Email used to take the test |
-| **Test start time** | When the candidate started the test |
-| **Submit time** | When the candidate submitted the test |
-| **Trust Score** | Proctoring integrity score (if proctoring is enabled) |
-| **Quiz score** | Candidate's score (for Socratease Quizzes only) |
-
-<Frame caption="Results table with Export to Excel button">
-  <img className="border rounded-xl" src="/images/results/export-results-table.png" alt="Results table on the AutoProctor dashboard with export option" />
-</Frame>
-
-You can view a [sample exported spreadsheet](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) to see the exact format.
+Export a test's results as a **CSV file** that opens in Microsoft Excel, Google Sheets, or any spreadsheet application.
 
 ## How to Export
 
-<Frame caption="Exporting results to Excel">
-  <img className="border rounded-xl" src="/images/results/export-results-to-excel.gif" alt="GIF showing how to export results to Excel from the AutoProctor dashboard" />
-</Frame>
-
 <Steps>
-  <Step title="Open the results page">
-    Navigate to your [AutoProctor dashboard](https://www.autoproctor.co/test-admin/home/) and click **Results** for the test you want to export.
+  <Step title="Open the Results Page">
+    Go to your [**Tests**](https://www.autoproctor.co/test-admin/home/) page and click **Results** next to the test you want to export.
   </Step>
-  <Step title="Click the Export button">
-    Click the **Export to Excel** button at the top of the results table. The file downloads automatically to your device.
+  <Step title="Choose Which Attempts to Export (Optional)">
+    The file contains the attempts listed in the **Submissions** table, in the same order. Use the search box, the filters and **Sort** above the table to narrow the list first. For example, set the **Submitted** filter to **Yes** to leave out unsubmitted attempts.
   </Step>
-  <Step title="Open the file">
-    Open the downloaded `.xlsx` file in Microsoft Excel, Google Sheets, or any compatible spreadsheet application.
+  <Step title="Click Export">
+    Click **Export** above the **Submissions** table.
+
+    <Frame>
+      <img src="/images/export-results-to-excel/export-button.png" alt="The Export button above the Submissions table" />
+    </Frame>
+  </Step>
+  <Step title="Pick the Columns">
+    Tick the columns you want in the file, then click **Export**.
+
+    <Frame>
+      <img src="/images/export-results-to-excel/export-dialog.png" alt="The Export to CSV dialog with its column checklist" />
+    </Frame>
+  </Step>
+  <Step title="Open the File">
+    The file downloads to your device, named after the test and ending in `_results.csv`.
   </Step>
 </Steps>
 
 <Note>
-For automatic, ongoing exports without manual downloads, consider setting up the [Google Sheets integration](/write-results-to-google-sheets) instead.
+**Export** downloads every attempt that matches your search and filters, not only the rows loaded on screen. The button is hidden on accounts without an active plan or trial.
+</Note>
+
+## What the Export Includes
+
+Each row of the file is one attempt. These columns are ticked by default:
+
+| Column | Description | Included for |
+|---|---|---|
+| **Name** | Candidate's first and last name | All tests |
+| **Email** | Email used to take the test | All tests |
+| One column per candidate detail | The candidate's answer to each field of **Collect candidate details** | Tests with **Collect candidate details** on |
+| **Started At (In UTC)** | When the candidate started the test, written in your browser's timezone | All tests |
+| **Submitted At (In UTC)** | When the candidate submitted the test, written in your browser's timezone. Empty for an unsubmitted attempt | All tests |
+| **Trust Score** | Trust score as a percentage, or `NA` when there is no score | Tests with proctoring on |
+| **Device Type** | Type of device the candidate used | Tests with proctoring on |
+| **Finished In Time** | `True` if the candidate submitted within the timer's duration. Always `True` for a submitted attempt on a test without a timer | All tests |
+| **Socratease Percentage Scored** | Quiz score as a percentage | Socratease quizzes |
+| **Proctoring Report Link** | Link to the attempt's proctoring report | Socratease quizzes with proctoring on |
+
+Two more columns are available in the dialog and are unticked by default:
+
+| Column | Description |
+|---|---|
+| **Duration** | Time between start and submission |
+| **Attempt Label** | The unique ID of the attempt |
+
+You can view a [sample exported spreadsheet](https://docs.google.com/spreadsheets/d/1lvkt7n7ZkOushCFYd0ZrTv5YgBAex4CJV78LG88mLx4/edit#gid=0) to see the format.
+
+<Note>
+For automatic exports without manual downloads, use the [Google Sheets integration](/write-results-to-google-sheets).
 </Note>
 
 ## Related Resources
 
-- [Google Sheets Integration](/write-results-to-google-sheets) -- Automatically write results to a Google Sheet
-- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) -- Overview of quiz results vs. proctoring results
-- [Sharing Test Results](/share-exam-results) -- Grant other users access to test results
-- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) -- View detailed proctoring reports
+- [Google Sheets Integration](/write-results-to-google-sheets) - Automatically write results to a Google Sheet
+- [Where Can I See My Quiz Results?](/where-to-find-quiz-results) - Overview of quiz results vs. proctoring results
+- [Sharing Test Results](/share-exam-results) - Grant other users access to test results
+- [Where Can I See Proctoring Results?](/where-to-find-proctoring-results) - View detailed proctoring reports

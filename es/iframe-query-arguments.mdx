@@ -1,69 +1,49 @@
 ---
 title: "Argumentos de Consulta del IFrame"
-description: "Agregue parámetros de consulta a las URL de iframe en la Configuración Avanzada de AutoProctor para personalizar el contenido incorporado."
+description: "Agregue parámetros de consulta al enlace de su cuestionario desde la sección Access & login de la configuración de un examen para personalizar el cuestionario incorporado."
 ---
 
-Al usar el proveedor de cuestionarios **IFrame/Otros**, puede agregar parámetros de consulta a la URL de su cuestionario incorporado a través de la **Configuración Avanzada** de AutoProctor. Esto le permite personalizar cómo se comporta el contenido incorporado — por ejemplo, forzar un idioma específico o habilitar el modo incorporado — sin modificar la URL original.
+AutoProctor carga su cuestionario dentro de un iframe. El campo **Query string** (cadena de consulta) le permite agregar parámetros de consulta al enlace del cuestionario, por ejemplo para forzar un idioma o habilitar el modo incorporado, sin modificar el enlace original.
 
-## Cómo Funciona
+El campo aparece en los exámenes de Google Forms, Microsoft Forms e IFrame. Los cuestionarios Socratease no lo tienen.
 
-AutoProctor construye la URL final agregando sus argumentos de consulta a la URL original del cuestionario. Usted proporciona solo los parámetros; AutoProctor agrega el prefijo `?` automáticamente.
-
-<Frame caption="Cómo usar argumentos de consulta en la Configuración Avanzada de AutoProctor">
-  <video
-    controls
-    className="w-full rounded-xl"
-    src="/videos/settings/query-arguments.mp4"
-  ></video>
-</Frame>
+## Cómo Agregar Argumentos de Consulta
 
 <Steps>
-  <Step title="Abra la Configuración Avanzada">
-    Navegue a su examen y abra la sección de **Configuración Avanzada**.
+  <Step title="Abra la Sección Access & Login">
+    Vaya a su página [**Tests**](https://www.autoproctor.co/test-admin/home/), haga clic en **Settings** junto al examen y elija **Access & login** (acceso e inicio de sesión).
   </Step>
   <Step title="Ingrese Sus Argumentos de Consulta">
-    Escriba sus parámetros en el campo **Argumentos de Consulta**. Use el formato `key1=val1&key2=val2`.
-  </Step>
-  <Step title="Guarde la Configuración">
-    Guarde la configuración de su examen. AutoProctor agrega sus parámetros a la URL del cuestionario al renderizar el iframe.
+    Escriba sus parámetros en el campo **Query string**, con el formato `key1=val1&key2=val2`. Luego haga clic en **Save settings**.
   </Step>
 </Steps>
 
-### Ejemplo
-
-Si su URL original es:
-
-```
-www.website.com
-```
-
-Y usted ingresa lo siguiente en el campo **Argumentos de Consulta**:
-
-```
-key1=val1&key2=val2
-```
-
-AutoProctor renderiza el iframe como:
-
-```
-www.website.com?key1=val1&key2=val2
-```
+{/* screenshot: Access & login section of Test Settings for a Google Forms test, cropped to the "Query string" field with "hl=en" typed in, its "Learn More" link and the hint "Appended to the test URL" */}
 
 <Note>
-No incluya el prefijo `?` en sus argumentos de consulta. AutoProctor lo agrega automáticamente al construir la URL.
+No incluya el prefijo `?` en sus argumentos de consulta. AutoProctor lo agrega automáticamente al construir el enlace.
 </Note>
+
+## Cómo Funciona
+
+AutoProctor agrega sus parámetros al enlace del cuestionario cuando carga el iframe.
+
+| Enlace original | Query string | Enlace que carga AutoProctor |
+|---|---|---|
+| `www.website.com` | `key1=val1&key2=val2` | `www.website.com?key1=val1&key2=val2` |
+
+Si el enlace del cuestionario ya tiene parámetros, estos se conservan. Cuando uno de sus parámetros tiene el mismo nombre que uno existente, se usa el valor de usted.
 
 ## Parámetros Comunes
 
 | Parámetro | Propósito | Ejemplo de Uso |
 |---|---|---|
-| `hl=en` | Establecer el idioma a inglés | Renderizar un Google Form en inglés para candidatos internacionales |
-| `hl=fr` | Establecer el idioma a francés | Renderizar un Google Form en francés |
+| `hl=en` | Establecer el idioma a inglés. Use `hl=fr` para francés | Renderizar un Google Form en inglés para candidatos internacionales |
 | `embedded=true` | Forzar modo incorporado | Asegurar que ciertas plataformas se muestren correctamente dentro del iframe |
 
 ## Recursos Relacionados
 
-- [Proveedores de Cuestionarios](/supported-quiz-providers) — Todas las plataformas de cuestionarios compatibles
-- [Configuración Avanzada](/advanced-exam-settings) — Proveedores de inicio de sesión, colaboradores y otras opciones avanzadas
-- [Configuración del Temporizador](/timer-settings) — Configure la duración del examen y las ventanas de tiempo
-- [Configuración de Supervisión](/proctoring-settings) — Opciones de cámara, micrófono y cambio de pestaña
+- [Proveedores de Cuestionarios](/supported-quiz-providers) - Todas las plataformas de cuestionarios compatibles
+- [Configuración Avanzada](/advanced-exam-settings) - Proveedores de inicio de sesión, colaboradores y otras opciones avanzadas
+- [Configuración del Temporizador](/timer-settings) - Configure la duración del examen y las ventanas de tiempo
+- [Configuración de Supervisión](/proctoring-settings) - Opciones de cámara, micrófono y cambio de pestaña
