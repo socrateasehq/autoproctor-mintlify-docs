@@ -69,6 +69,18 @@ img.nav-logo {
   flex-shrink: 0;
 }
 
+/* Article links: blue, so they read as clickable against the body text.
+   Mintlify's default is near-black with a coloured underline. */
+#content-area a.link {
+  color: #2563eb; /* blue-600 */
+  text-decoration-color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+#content-area a.link:hover {
+  color: #1d4ed8; /* blue-700 */
+}
+
 /* Visually separate the "Related Resources" section from the main article. */
 #related-resources {
   margin-top: 3.5rem;
