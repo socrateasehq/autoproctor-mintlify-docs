@@ -196,7 +196,8 @@
                   "feature-comparison",
                   "elite-plan-features",
                   "one-time-subscription",
-                  "cancel-subscription"
+                  "cancel-subscription",
+                  "delete-account-and-data"
                 ]
               },
               {
@@ -378,7 +379,8 @@
                   "es/feature-comparison",
                   "es/elite-plan-features",
                   "es/one-time-subscription",
-                  "es/cancel-subscription"
+                  "es/cancel-subscription",
+                  "es/delete-account-and-data"
                 ]
               },
               {
@@ -560,7 +562,8 @@
                   "pt/feature-comparison",
                   "pt/elite-plan-features",
                   "pt/one-time-subscription",
-                  "pt/cancel-subscription"
+                  "pt/cancel-subscription",
+                  "pt/delete-account-and-data"
                 ]
               },
               {
